@@ -1,0 +1,58 @@
+[project]
+name = "geometor-pappus"
+dynamic = ["version"]
+authors = [
+  { name = "geometor", email = "github@geometor.com" },
+]
+description = "Symbolic projective geometry investigations into Pappus's Hexagon Theorem, Steiner's six-line configuration, cross-ratios, and harmonic ranges."
+readme = "README.rst"
+requires-python = ">=3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "sympy",
+    "rich",
+    "geometor-model",
+    "geometor-divine",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[project.scripts]
+pappus = "geometor.pappus.__main__:main"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["geometor"]
+namespaces = true
+
+[tool.setuptools.dynamic]
+version = {attr = "geometor.pappus.__version__"}
+
+[project.urls]
+"Website" = "https://geometor.github.io/pappus"
+"Repository" = "https://github.com/geometor/pappus"
+"Issues" = "https://github.com/geometor/pappus/issues"
+
+[tool.ruff]
+lint.select = ["E", "F", "I", "ANN", "D"]
+lint.ignore = ["E501"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+

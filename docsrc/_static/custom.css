@@ -1,1 +1,187 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+/* =========================================================================
+   GEOMETOR • Pappus Semantic Projective SVG Palette (Light & Dark Mode)
+   Complements foundation theme's _geometor.scss & geometor_interactive.js
+   ========================================================================= */
+
+:root {
+  --pappus-carrier: #475569;
+  --pappus-cross: #0e7490;
+  --pappus-quad: #4338ca;
+  --pappus-even: #d97706;
+  --pappus-odd: #db2777;
+  --pappus-steiner: #7c3aed;
+  --pappus-harmonic: #059669;
+  --pappus-golden: #b45309;
+  --pappus-pt-a: #0369a1;
+  --pappus-pt-b: #0f766e;
+  --pappus-tri-square: #d97706;
+  --pappus-tri-circle: #0284c7;
+  --pappus-tri-diamond: #db2777;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pappus-carrier: #94a3b8;
+    --pappus-cross: #38bdf8;
+    --pappus-quad: #818cf8;
+    --pappus-even: #fbbf24;
+    --pappus-odd: #f472b6;
+    --pappus-steiner: #c084fc;
+    --pappus-harmonic: #34d399;
+    --pappus-golden: #facc15;
+    --pappus-pt-a: #38bdf8;
+    --pappus-pt-b: #2dd4bf;
+    --pappus-tri-square: #fbbf24;
+    --pappus-tri-circle: #38bdf8;
+    --pappus-tri-diamond: #f472b6;
+  }
+}
+
+html[data-theme="dark"] {
+  --pappus-carrier: #94a3b8;
+  --pappus-cross: #38bdf8;
+  --pappus-quad: #818cf8;
+  --pappus-even: #fbbf24;
+  --pappus-odd: #f472b6;
+  --pappus-steiner: #c084fc;
+  --pappus-harmonic: #34d399;
+  --pappus-golden: #facc15;
+  --pappus-pt-a: #38bdf8;
+  --pappus-pt-b: #2dd4bf;
+  --pappus-tri-square: #fbbf24;
+  --pappus-tri-circle: #38bdf8;
+  --pappus-tri-diamond: #f472b6;
+}
+
+html[data-theme="light"] {
+  --pappus-carrier: #475569;
+  --pappus-cross: #0e7490;
+  --pappus-quad: #4338ca;
+  --pappus-even: #d97706;
+  --pappus-odd: #db2777;
+  --pappus-steiner: #7c3aed;
+  --pappus-harmonic: #059669;
+  --pappus-golden: #b45309;
+  --pappus-pt-a: #0369a1;
+  --pappus-pt-b: #0f766e;
+  --pappus-tri-square: #d97706;
+  --pappus-tri-circle: #0284c7;
+  --pappus-tri-diamond: #db2777;
+}
+
+svg.euclid-graphic .svg-bg {
+  fill: none;
+}
+
+svg.euclid-graphic .carrier-line:not(.is-highlighted) {
+  stroke: var(--pappus-carrier);
+  stroke-width: 2.1;
+}
+
+svg.euclid-graphic .cross-line:not(.is-highlighted) {
+  stroke: var(--pappus-cross);
+  stroke-width: 1.25;
+  stroke-opacity: 0.58;
+}
+
+svg.euclid-graphic .quad-line:not(.is-highlighted) {
+  stroke: var(--pappus-quad);
+  stroke-width: 1.45;
+  stroke-opacity: 0.78;
+}
+
+svg.euclid-graphic .diagonal-line {
+  stroke-dasharray: 5 3.5;
+}
+
+svg.euclid-graphic .pappus-line:not(.is-highlighted) {
+  stroke-width: 2.7;
+}
+
+svg.euclid-graphic .pappus-line.pappus-even:not(.is-highlighted) {
+  stroke: var(--pappus-even);
+}
+
+svg.euclid-graphic .pappus-line.pappus-odd:not(.is-highlighted) {
+  stroke: var(--pappus-odd);
+}
+
+svg.euclid-graphic .steiner-line:not(.is-highlighted) {
+  stroke: var(--pappus-steiner);
+  stroke-width: 2.5;
+  stroke-dasharray: 7 4;
+}
+
+svg.euclid-graphic .harmonic-line:not(.is-highlighted) {
+  stroke: var(--pappus-harmonic);
+  stroke-width: 2.5;
+}
+
+svg.euclid-graphic .geom-segment.golden-segment:not(.is-highlighted) {
+  fill: none;
+  stroke: var(--pappus-golden);
+  stroke-width: 3.6;
+  stroke-linecap: round;
+  opacity: 0.85;
+}
+
+svg.euclid-graphic .geom-segment.harmonic-segment:not(.is-highlighted) {
+  fill: none;
+  stroke: var(--pappus-harmonic);
+  stroke-width: 3.2;
+  stroke-linecap: round;
+  opacity: 0.78;
+}
+
+svg.euclid-graphic .geom-polygon.hexagon-poly:not(.is-highlighted) {
+  fill: var(--pappus-cross);
+  fill-opacity: 0.06;
+  stroke: var(--pappus-cross);
+  stroke-width: 1.4;
+  stroke-opacity: 0.38;
+}
+
+svg.euclid-graphic .geom-polygon.tri-square:not(.is-highlighted) {
+  fill: var(--pappus-tri-square);
+  fill-opacity: 0.09;
+  stroke: var(--pappus-tri-square);
+  stroke-width: 1.85;
+}
+
+svg.euclid-graphic .geom-polygon.tri-circle:not(.is-highlighted) {
+  fill: var(--pappus-tri-circle);
+  fill-opacity: 0.09;
+  stroke: var(--pappus-tri-circle);
+  stroke-width: 1.85;
+}
+
+svg.euclid-graphic .geom-polygon.tri-diamond:not(.is-highlighted) {
+  fill: var(--pappus-tri-diamond);
+  fill-opacity: 0.09;
+  stroke: var(--pappus-tri-diamond);
+  stroke-width: 1.85;
+}
+
+svg.euclid-graphic .geom-point.pt-a:not(.is-highlighted) {
+  fill: var(--pappus-pt-a);
+}
+
+svg.euclid-graphic .geom-point.pt-b:not(.is-highlighted) {
+  fill: var(--pappus-pt-b);
+}
+
+svg.euclid-graphic .geom-point.meet-point.pappus-even:not(.is-highlighted) {
+  fill: var(--pappus-even);
+}
+
+svg.euclid-graphic .geom-point.meet-point.pappus-odd:not(.is-highlighted) {
+  fill: var(--pappus-odd);
+}
+
+svg.euclid-graphic .geom-point.steiner-point:not(.is-highlighted) {
+  fill: var(--pappus-steiner);
+}
+
+svg.euclid-graphic .geom-point.harmonic-point:not(.is-highlighted) {
+  fill: var(--pappus-harmonic);
+}

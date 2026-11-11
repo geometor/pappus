@@ -1,8 +1,9 @@
+:date: 2022-12-22
+:type: log
+:summary: Initial repository scaffold for GEOMETOR Pappus projective geometry investigations.
+
 Welcome
 =======
 
-.. post::  22.356-152519
-   :tags: 
-   :category: STATUS
-
-first log entry for the system
+First log entry initializing the ``geometor/pappus`` repository for symbolic explorations of
+Pappus of Alexandria's Hexagon Theorem, harmonic ranges, and projective incidence in SymPy.
