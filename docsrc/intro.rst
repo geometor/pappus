@@ -1,4 +1,4 @@
-**Symbolic projective geometry investigations into Pappus of Alexandria's Hexagon Theorem, Steiner's six-line configuration, cross-ratios, harmonic conjugates, and golden perspectivities.**
+**Symbolic projective geometry investigations into Pappus of Alexandria's Hexagon Theorem, Blaise Pascal's Hexagrammum Mysticum, Steiner's six-line configuration, cross-ratios, harmonic conjugates, and golden perspectivities.**
 
 Around 340 CE in Alexandria, **Pappus** compiled Book VII (*On the Domain of Analysis*)
 of his *Synagoge* (*Collection*)—preserving lemmas to the lost treatises of Euclid's
@@ -6,9 +6,11 @@ of his *Synagoge* (*Collection*)—preserving lemmas to the lost treatises of Eu
 oldest and deepest incidence theorem of projective geometry: **three collinear points on each
 of two lines determine three opposite cross-join intersections that are themselves collinear**,
 established by straightedge incidence alone without a single circle or metric measurement.
+Thirteen centuries later, **Blaise Pascal** (1640) generalized Pappus's pair of lines to any
+smooth conic section, unveiling the sixty-line *Hexagrammum Mysticum*.
 
-``geometor.pappus`` models Pappus's projective canon in **100% exact symbolic algebra** using
-`SymPy <https://www.sympy.org/>`_, ``geometor.model``, and ``geometor.divine``. Hover over
+``geometor.pappus`` models the Pappus–Pascal projective canon in **100% exact symbolic algebra**
+using `SymPy <https://www.sympy.org/>`_, ``geometor.model``, and ``geometor.divine``. Hover over
 any highlighted symbol below—or use the **Play / Step** controls beneath the diagram—to trace
 the construction interactively.
 

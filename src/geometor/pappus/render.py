@@ -35,6 +35,7 @@ EMBEDDED_SVG_STYLE: str = """
     --ink: #1c1917;
     --label-halo: rgba(250, 250, 249, 0.92);
     --carrier: #475569;
+    --conic: #0284c7;
     --cross: #0e7490;
     --quad: #4338ca;
     --pappus-even: #d97706;
@@ -60,6 +61,7 @@ EMBEDDED_SVG_STYLE: str = """
       --ink: #f4f4f5;
       --label-halo: rgba(20, 20, 23, 0.92);
       --carrier: #94a3b8;
+      --conic: #38bdf8;
       --cross: #38bdf8;
       --quad: #818cf8;
       --pappus-even: #fbbf24;
@@ -80,6 +82,7 @@ EMBEDDED_SVG_STYLE: str = """
     }
   }
   .euclid-graphic .svg-bg { fill: var(--svg-bg); }
+  .euclid-graphic .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88; }
   .euclid-graphic .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round; }
   .euclid-graphic .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92; }
   .euclid-graphic .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58; }
@@ -339,13 +342,28 @@ def render_svg_string(
         for sec in model
         if isinstance(sec, Section) and (include_guides or not model[sec].guide)
     ]
+    visible_conics: list[tuple[spg.Ellipse, str]] = [
+        (curve, model[curve].ID)
+        for curve in model
+        if isinstance(curve, spg.Circle) and (include_guides or not model[curve].guide)
+    ]
+    for extra_curve, extra_id in getattr(model, "_extra_conics", ()):
+        visible_conics.append((extra_curve, extra_id))
 
     frame_pts = list(focus_points) if focus_points else visible_points
     if bbox is not None:
         xmin_m, xmax_m, ymin_m, ymax_m = bbox
-    elif frame_pts:
+    elif frame_pts or visible_conics:
         xs = [float(p.x.evalf()) for p in frame_pts]
         ys = [float(p.y.evalf()) for p in frame_pts]
+        if focus_points is None:
+            for curve, _ in visible_conics:
+                ccx = float(curve.center.x.evalf())
+                ccy = float(curve.center.y.evalf())
+                hr = float(curve.hradius.evalf())
+                vr = float(curve.vradius.evalf())
+                xs.extend((ccx - hr, ccx + hr))
+                ys.extend((ccy - vr, ccy + vr))
         xmin_m, xmax_m = min(xs), max(xs)
         ymin_m, ymax_m = min(ys), max(ys)
         span_x = max(xmax_m - xmin_m, 1.0)
@@ -383,6 +401,47 @@ def render_svg_string(
     pt_svg_coords: dict[spg.Point, tuple[float, float]] = {}
     for pt in visible_points:
         pt_svg_coords[pt] = to_svg(float(pt.x.evalf()), float(pt.y.evalf()))
+
+    # Build circles and ellipses
+    conic_elems: list[str] = []
+    for curve, primary_c_ref in visible_conics:
+        ccx_s, ccy_s = to_svg(float(curve.center.x.evalf()), float(curve.center.y.evalf()))
+        on_curve_ids = [
+            model[pt].ID
+            for pt in visible_points
+            if model[pt].ID and not model[pt].ID.startswith("X") and curve.contains(pt)
+        ]
+        c_aliases: list[str] = []
+        if curve.center in model and model[curve.center].ID:
+            cid = model[curve.center].ID
+            for pid in on_curve_ids:
+                cand2 = f"( {cid} {pid} )"
+                if cand2 != primary_c_ref:
+                    c_aliases.append(cand2)
+        if len(on_curve_ids) >= 3:
+            cand3 = f"( {on_curve_ids[0]} {on_curve_ids[1]} {on_curve_ids[2]} )"
+            if cand3 != primary_c_ref:
+                c_aliases.append(cand3)
+        c_alias_attr = f' data-aliases="{html.escape(" | ".join(c_aliases))}"' if c_aliases else ""
+        c_ref_attr = f' data-ref="{html.escape(primary_c_ref)}"' if primary_c_ref else ""
+        eq_c_str = str(curve.equation())
+        if isinstance(curve, spg.Circle):
+            r_px = float(curve.radius.evalf()) * scale
+            conic_elems.append(
+                f'      <circle class="geom-circle conic-curve" '
+                f'cx="{_fmt(ccx_s)}" cy="{_fmt(ccy_s)}" r="{_fmt(r_px)}"'
+                f'{c_ref_attr}{c_alias_attr} fill="none">'
+                f"<title>{html.escape(primary_c_ref)}: {html.escape(eq_c_str)} = 0</title></circle>"
+            )
+        else:
+            rx_px = float(curve.hradius.evalf()) * scale
+            ry_px = float(curve.vradius.evalf()) * scale
+            conic_elems.append(
+                f'      <ellipse class="geom-circle conic-curve" '
+                f'cx="{_fmt(ccx_s)}" cy="{_fmt(ccy_s)}" rx="{_fmt(rx_px)}" ry="{_fmt(ry_px)}"'
+                f'{c_ref_attr}{c_alias_attr} fill="none">'
+                f"<title>{html.escape(primary_c_ref)}: {html.escape(eq_c_str)} = 0</title></ellipse>"
+            )
 
     # Build polygons
     polygon_elems: list[str] = []
@@ -613,6 +672,7 @@ def render_svg_string(
         f'  <rect class="svg-bg" x="0" y="0" width="{width}" height="{height}" rx="6" fill="none" />',
         '  <g id="elements">',
         '    <g id="graphics">',
+        *conic_elems,
         *polygon_elems,
         *line_elems,
         *section_elems,

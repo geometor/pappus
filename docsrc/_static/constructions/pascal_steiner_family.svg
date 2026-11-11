@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 700 480" data-graphic-id="g3" role="img" aria-label="Bi-Triangle S_3 Pascal Lines Concurring at Steiner Points G+ and G-">
+  <title>Bi-Triangle S_3 Pascal Lines Concurring at Steiner Points G+ and G-</title>
+  <style>
+.euclid-graphic {
+    --svg-bg: #fafaf9;
+    --ink: #1c1917;
+    --label-halo: rgba(250, 250, 249, 0.92);
+    --carrier: #475569;
+    --conic: #0284c7;
+    --cross: #0e7490;
+    --quad: #4338ca;
+    --pappus-even: #d97706;
+    --pappus-odd: #db2777;
+    --steiner: #7c3aed;
+    --harmonic: #059669;
+    --golden: #b45309;
+    --pt-given: #0f172a;
+    --pt-a: #0369a1;
+    --pt-b: #0f766e;
+    --pt-meet-even: #d97706;
+    --pt-meet-odd: #db2777;
+    --pt-steiner: #7c3aed;
+    --pt-harmonic: #059669;
+    --tri-square: #d97706;
+    --tri-circle: #0284c7;
+    --tri-diamond: #db2777;
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic {
+      --svg-bg: #141417;
+      --ink: #f4f4f5;
+      --label-halo: rgba(20, 20, 23, 0.92);
+      --carrier: #94a3b8;
+      --conic: #38bdf8;
+      --cross: #38bdf8;
+      --quad: #818cf8;
+      --pappus-even: #fbbf24;
+      --pappus-odd: #f472b6;
+      --steiner: #c084fc;
+      --harmonic: #34d399;
+      --golden: #facc15;
+      --pt-given: #e2e8f0;
+      --pt-a: #38bdf8;
+      --pt-b: #2dd4bf;
+      --pt-meet-even: #fbbf24;
+      --pt-meet-odd: #f472b6;
+      --pt-steiner: #c084fc;
+      --pt-harmonic: #34d399;
+      --tri-square: #fbbf24;
+      --tri-circle: #38bdf8;
+      --tri-diamond: #f472b6;
+    }
+  }
+  .euclid-graphic .svg-bg { fill: var(--svg-bg); }
+  .euclid-graphic .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88; }
+  .euclid-graphic .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round; }
+  .euclid-graphic .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92; }
+  .euclid-graphic .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58; }
+  .euclid-graphic .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78; }
+  .euclid-graphic .diagonal-line { stroke-dasharray: 5 3.5; }
+  .euclid-graphic .pappus-line { stroke-width: 2.7; opacity: 0.96; }
+  .euclid-graphic .pappus-even { stroke: var(--pappus-even); }
+  .euclid-graphic .pappus-odd { stroke: var(--pappus-odd); }
+  .euclid-graphic .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4; }
+  .euclid-graphic .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5; }
+  .euclid-graphic .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85; }
+  .euclid-graphic .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75; }
+  .euclid-graphic .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round; }
+  .euclid-graphic .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5; }
+  .euclid-graphic .pt-a { fill: var(--pt-a); }
+  .euclid-graphic .pt-b { fill: var(--pt-b); }
+  .euclid-graphic .meet-point.pappus-even { fill: var(--pt-meet-even); }
+  .euclid-graphic .meet-point.pappus-odd { fill: var(--pt-meet-odd); }
+  .euclid-graphic .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0; }
+  .euclid-graphic .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8; }
+  .euclid-graphic .aux-point { opacity: 0.78; }
+  .euclid-graphic .geom-label {
+    fill: var(--ink);
+    font-size: 13.5px;
+    font-weight: 600;
+    paint-order: stroke fill;
+    stroke: var(--label-halo);
+    stroke-width: 3.6px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .geom-label-sub { font-size: 10px; font-weight: 600; }
+  </style>
+  <rect class="svg-bg" x="0" y="0" width="700" height="480" rx="6" fill="none" />
+  <g id="elements">
+    <g id="graphics">
+      <circle class="geom-circle conic-curve" cx="225.27" cy="275.64" r="118.79" data-ref="( O P0 )" data-aliases="( O P1 ) | ( O P2 ) | ( O P3 ) | ( O P4 ) | ( O P5 ) | ( P0 P1 P2 )" fill="none"><title>( O P0 ): x**2 + y**2 - 1 = 0</title></circle>
+      <path class="geom-line cross-line" d="M 407.52 466 L 332.18 240 L 256.85 14" data-ref="[ P0 P1 ]" data-aliases="[ P0 M0145 ] | [ P0 M2301 ] | [ P1 M0145 ] | [ P1 M2301 ] | [ M0145 M2301 ]" fill="none"><title>[ P0 P1 ]: -3*x/5 - y/5 + 3/5 = 0</title></path>
+      <path class="geom-line cross-line" d="M 14 165.62 L 350 277.62 L 686 389.62" data-ref="[ P0 P3 ]" data-aliases="[ P0 M2503 ] | [ P0 M0341 ] | [ P0 M0345 ] | [ P3 M2503 ] | [ P3 M0341 ] | [ P3 M0345 ] | [ M2503 M0341 ] | [ M2503 M0345 ] | [ M0341 M0345 ]" fill="none"><title>[ P0 P3 ]: -3*x/5 - 9*y/5 + 3/5 = 0</title></path>
+      <path class="geom-line cross-line" d="M 248.88 466 L 361.88 240 L 474.88 14" data-ref="[ P0 P5 ]" data-aliases="[ P0 M2305 ] | [ P0 M2105 ] | [ P0 M0541 ] | [ P5 M2305 ] | [ P5 M2105 ] | [ P5 M0541 ] | [ M2305 M2105 ] | [ M2305 M0541 ] | [ M2105 M0541 ]" fill="none"><title>[ P0 P5 ]: 4*x/5 - 2*y/5 - 4/5 = 0</title></path>
+      <path class="geom-line cross-line" d="M 14 51.21 L 350 219.21 L 686 387.21" data-ref="[ P2 P1 ]" data-aliases="[ P1 P2 ] | [ P1 M2145 ] | [ P1 M2143 ] | [ P1 M2105 ] | [ P2 M2145 ] | [ P2 M2143 ] | [ P2 M2105 ] | [ M2145 M2143 ] | [ M2145 M2105 ] | [ M2143 M2105 ]" fill="none"><title>[ P2 P1 ]: 2*x/5 + 4*y/5 - 4/5 = 0</title></path>
+      <path class="geom-line cross-line" d="M 14 262.48 L 262.48 138.24 L 510.97 14" data-ref="[ P2 P3 ]" data-aliases="[ P2 M2305 ] | [ P2 M2341 ] | [ P2 M2301 ] | [ P3 M2305 ] | [ P3 M2341 ] | [ P3 M2301 ] | [ M2305 M2341 ] | [ M2305 M2301 ] | [ M2341 M2301 ]" fill="none"><title>[ P2 P3 ]: 2*x/5 - 4*y/5 + 4/5 = 0</title></path>
+      <path class="geom-line cross-line" d="M 328.32 466 L 252.99 240 L 177.66 14" data-ref="[ P2 P5 ]" data-aliases="[ P2 M2503 ] | [ P2 M2541 ] | [ P5 M2503 ] | [ P5 M2541 ] | [ M2503 M2541 ]" fill="none"><title>[ P2 P5 ]: 9*x/5 + 3*y/5 - 3/5 = 0</title></path>
+      <path class="geom-line cross-line" d="M 58.67 466 L 284.67 240 L 510.67 14" data-ref="[ P4 P1 ]" data-aliases="[ P1 P4 ] | [ P1 M0341 ] | [ P1 M2341 ] | [ P1 M0541 ] | [ P1 M2541 ] | [ P4 M0341 ] | [ P4 M2341 ] | [ P4 M0541 ] | [ P4 M2541 ] | [ M0341 M2341 ] | [ M0341 M0541 ] | [ M0341 M2541 ] | [ M2341 M0541 ] | [ M2341 M2541 ] | [ M0541 M2541 ]" fill="none"><title>[ P4 P1 ]: -7*x/5 + 7*y/5 + 7/25 = 0</title></path>
+      <path class="geom-line cross-line" d="M 167.62 466 L 135.33 240 L 103.05 14" data-ref="[ P4 P3 ]" data-aliases="[ P3 P4 ] | [ P3 M2143 ] | [ P4 M2143 ]" fill="none"><title>[ P4 P3 ]: -7*x/5 - y/5 - 1 = 0</title></path>
+      <path class="geom-line cross-line" d="M 14 370.67 L 350 370.67 L 686 370.67" data-ref="[ P4 P5 ]" data-aliases="[ P4 M2145 ] | [ P4 M0145 ] | [ P4 M0345 ] | [ P5 M2145 ] | [ P5 M0145 ] | [ P5 M0345 ] | [ M2145 M0145 ] | [ M2145 M0345 ] | [ M0145 M0345 ]" fill="none"><title>[ P4 P5 ]: y + 4/5 = 0</title></path>
+      <path class="geom-line pappus-line pappus-even" d="M 686 428.58 L 567.55 221.29 L 449.1 14" data-ref="[ M0143 M2145 ]" data-aliases="[ M2145 M2305 ] | [ M2145 S1 ] | [ M2305 S1 ]" fill="none"><title>[ M0143 M2145 ]: 49*x/5 + 28*y/5 - 154/5 = 0</title></path>
+      <path class="geom-line pappus-line pappus-odd" d="M 468.04 466 L 249.22 240 L 30.39 14" data-ref="[ M0145 M2143 ]" data-aliases="[ M0145 M2503 ] | [ M0145 S2 ] | [ M2143 M2503 ] | [ M2143 S2 ] | [ M2503 S2 ]" fill="none"><title>[ M0145 M2143 ]: -147*x/65 - 427*y/195 + 217/195 = 0</title></path>
+      <path class="geom-line pappus-line pappus-odd" d="M 14 316.58 L 350 232.58 L 686 148.58" data-ref="[ M0341 M2345 ]" data-aliases="[ M0341 M2105 ] | [ M0341 S2 ] | [ M2105 S2 ]" fill="none"><title>[ M0341 M2345 ]: x - 4*y + 2/5 = 0</title></path>
+      <path class="geom-line pappus-line pappus-even" d="M 660.93 466 L 585.6 240 L 510.26 14" data-ref="[ M0345 M2341 ]" data-aliases="[ M0345 S1 ] | [ M2341 S1 ]" fill="none"><title>[ M0345 M2341 ]: -3*x - y + 47/5 = 0</title></path>
+      <path class="geom-line pappus-line pappus-even" d="M 686 377.38 L 532.26 195.69 L 378.53 14" data-ref="[ M0541 M2543 ]" data-aliases="[ M0541 S1 ]" fill="none"><title>[ M0541 M2543 ]: -39*x/10 - 33*y/10 + 123/10 = 0</title></path>
+      <path class="geom-line pappus-line pappus-odd" d="M 214.61 466 L 266.35 240 L 318.08 14" data-ref="[ M0543 M2541 ]" data-aliases="[ M2541 M2301 ] | [ M2541 S2 ] | [ M2301 S2 ]" fill="none"><title>[ M0543 M2541 ]: -83*x/30 + 19*y/30 + 23/30 = 0</title></path>
+      <path class="geom-line steiner-line" d="M 14 241.9 L 350 258.64 L 686 275.37" data-ref="[ S1 S2 ]" fill="none"><title>[ S1 S2 ]: -1092*x/7825 - 21924*y/7825 + 4284/7825 = 0</title></path>
+    </g>
+    <g id="highlights"></g>
+    <g id="points">
+      <circle class="geom-point" cx="225.27" cy="275.64" r="3.8" data-ref="O" data-latex-x="0" data-latex-y="0"><title>O = (0, 0)</title></circle>
+      <circle class="geom-point given-point" cx="344.06" cy="275.64" r="4.2" data-ref="P0" data-latex-x="1" data-latex-y="0"><title>P0 = (1, 0)</title></circle>
+      <circle class="geom-point given-point" cx="320.3" cy="204.36" r="4.2" data-ref="P1" data-latex-x="\frac{4}{5}" data-latex-y="\frac{3}{5}"><title>P1 = (4/5, 3/5)</title></circle>
+      <circle class="geom-point given-point" cx="225.27" cy="156.85" r="4.2" data-ref="P2" data-latex-x="0" data-latex-y="1"><title>P2 = (0, 1)</title></circle>
+      <circle class="geom-point given-point" cx="130.24" cy="204.36" r="4.2" data-ref="P3" data-latex-x="- \frac{4}{5}" data-latex-y="\frac{3}{5}"><title>P3 = (-4/5, 3/5)</title></circle>
+      <circle class="geom-point given-point" cx="154" cy="370.67" r="4.2" data-ref="P4" data-latex-x="- \frac{3}{5}" data-latex-y="- \frac{4}{5}"><title>P4 = (-3/5, -4/5)</title></circle>
+      <circle class="geom-point given-point" cx="296.55" cy="370.67" r="4.2" data-ref="P5" data-latex-x="\frac{3}{5}" data-latex-y="- \frac{4}{5}"><title>P5 = (3/5, -4/5)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="652.91" cy="370.67" r="4.7" data-ref="M2145" data-latex-x="\frac{18}{5}" data-latex-y="- \frac{4}{5}"><title>M2145 = (18/5, -4/5)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="462.85" cy="38.06" r="4.7" data-ref="M2305" data-latex-x="2" data-latex-y="2"><title>M2305 = (2, 2)</title></circle>
+      <circle class="geom-point meet-point pappus-odd" cx="375.74" cy="370.67" r="4.7" data-ref="M0145" data-latex-x="\frac{19}{15}" data-latex-y="- \frac{4}{5}"><title>M0145 = (19/15, -4/5)</title></circle>
+      <circle class="geom-point meet-point pappus-odd" cx="115.62" cy="102.02" r="4.7" data-ref="M2143" data-latex-x="- \frac{12}{13}" data-latex-y="\frac{19}{13}"><title>M2143 = (-12/13, 19/13)</title></circle>
+      <circle class="geom-point meet-point pappus-odd" cx="254.97" cy="245.94" r="4.7" data-ref="M2503" data-latex-x="\frac{1}{4}" data-latex-y="\frac{1}{4}"><title>M2503 = (1/4, 1/4)</title></circle>
+      <circle class="geom-point meet-point pappus-odd" cx="272.79" cy="251.88" r="4.7" data-ref="M0341" data-latex-x="\frac{2}{5}" data-latex-y="\frac{1}{5}"><title>M0341 = (2/5, 1/5)</title></circle>
+      <circle class="geom-point meet-point pappus-odd" cx="367.82" cy="228.12" r="4.7" data-ref="M2105" data-latex-x="\frac{6}{5}" data-latex-y="\frac{2}{5}"><title>M2105 = (6/5, 2/5)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="629.15" cy="370.67" r="4.7" data-ref="M0345" data-latex-x="\frac{17}{5}" data-latex-y="- \frac{4}{5}"><title>M0345 = (17/5, -4/5)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="510.36" cy="14.3" r="4.7" data-ref="M2341" data-latex-x="\frac{12}{5}" data-latex-y="\frac{11}{5}"><title>M2341 = (12/5, 11/5)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="439.09" cy="85.58" r="4.7" data-ref="M0541" data-latex-x="\frac{9}{5}" data-latex-y="\frac{8}{5}"><title>M0541 = (9/5, 8/5)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="700.42" cy="394.42" r="4.7" data-ref="M2103" data-latex-x="4" data-latex-y="-1"><title>M2103 = (4, -1)</title></circle>
+      <circle class="geom-point meet-point pappus-odd" cx="260.91" cy="263.76" r="4.7" data-ref="M2541" data-latex-x="\frac{3}{10}" data-latex-y="\frac{1}{10}"><title>M2541 = (3/10, 1/10)</title></circle>
+      <circle class="geom-point meet-point pappus-odd" cx="293.15" cy="122.91" r="4.7" data-ref="M2301" data-latex-x="\frac{4}{7}" data-latex-y="\frac{9}{7}"><title>M2301 = (4/7, 9/7)</title></circle>
+      <circle class="geom-point-halo" cx="595.89" cy="270.88" r="10.2" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+      <circle class="geom-point steiner-point" cx="595.89" cy="270.88" r="6" data-ref="S1" data-latex-x="\frac{78}{25}" data-latex-y="\frac{1}{25}"><title>S1 = (78/25, 1/25)</title></circle>
+      <circle class="geom-point-halo" cx="263.07" cy="254.31" r="10.2" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+      <circle class="geom-point steiner-point" cx="263.07" cy="254.31" r="6" data-ref="S2" data-latex-x="\frac{498}{1565}" data-latex-y="\frac{281}{1565}"><title>S2 = (498/1565, 281/1565)</title></circle>
+    </g>
+    <g id="labels">
+      <text class="geom-label" x="206.77" y="294.88" data-ref="O">O</text>
+      <text class="geom-label" x="357.84" y="280.4" data-ref="P0">P<tspan class="geom-label-sub" dy="3">0</tspan></text>
+      <text class="geom-label" x="334.08" y="209.12" data-ref="P1">P<tspan class="geom-label-sub" dy="3">1</tspan></text>
+      <text class="geom-label" x="239.05" y="161.61" data-ref="P2">P<tspan class="geom-label-sub" dy="3">2</tspan></text>
+      <text class="geom-label" x="107.31" y="194.33" data-ref="P3">P<tspan class="geom-label-sub" dy="3">3</tspan></text>
+      <text class="geom-label" x="131.07" y="360.63" data-ref="P4">P<tspan class="geom-label-sub" dy="3">4</tspan></text>
+      <text class="geom-label" x="273.61" y="360.63" data-ref="P5">P<tspan class="geom-label-sub" dy="3">5</tspan></text>
+      <text class="geom-label" x="602.69" y="259.46" data-ref="S1">S<tspan class="geom-label-sub" dy="3">+</tspan></text>
+      <text class="geom-label" x="269.87" y="242.89" data-ref="S2">S<tspan class="geom-label-sub" dy="3">−</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -35,6 +35,10 @@ __all__ = [
     "find_harmonic_ranges",
     "find_golden_sections",
     "enable_divine_analysis",
+    "circle_stereographic_point",
+    "conic_equation_through_points",
+    "are_coconic",
+    "conic_cross_ratio",
 ]
 
 
@@ -501,3 +505,145 @@ def enable_divine_analysis(model: Model) -> Model:
     """
     register_divine_hook(model)
     return model
+
+
+def circle_stereographic_point(
+    t: sp.Expr | int,
+    *,
+    center: spg.Point | tuple[sp.Expr | int, sp.Expr | int] = (0, 0),
+    radius: sp.Expr | int = 1,
+) -> spg.Point:
+    r"""Compute an exact point on $(x - x_0)^2 + (y - y_0)^2 = R^2$ via rational stereographic slope $t$.
+
+    Uses the classical Weierstrass / stereographic parameterization from $(-R + x_0, y_0)$:
+
+    .. math::
+
+       P(t) = \left(x_0 + R \frac{1 - t^2}{1 + t^2},\; y_0 + R \frac{2 t}{1 + t^2}\right).
+
+    Every $t \in \mathbb{Q}$ yields an exact rational point in $\mathbb{Q}^2$, and
+    every $t \in \mathbb{Q}(\phi)$ yields an exact point in $\mathbb{Q}(\sqrt{5})^2$.
+
+    Args:
+        t: Exact symbolic or integer stereographic parameter.
+        center: Circle center $(x_0, y_0)$.
+        radius: Exact positive circle radius $R$.
+
+    Returns:
+        Exact :class:`~sympy.geometry.point.Point` on the circle.
+    """
+    t_sym = sp.sympify(t)
+    r_sym = sp.sympify(radius)
+    c_pt = center if isinstance(center, spg.Point) else spg.Point(sp.sympify(center[0]), sp.sympify(center[1]))
+    denom = 1 + t_sym**2
+    x_coord = sp.simplify(c_pt.x + r_sym * (1 - t_sym**2) / denom)
+    y_coord = sp.simplify(c_pt.y + r_sym * (2 * t_sym) / denom)
+    return spg.Point(x_coord, y_coord)
+
+
+def conic_equation_through_points(
+    points: Sequence[spg.Point | tuple[sp.Expr | int, sp.Expr | int]],
+) -> sp.Expr:
+    r"""Construct the exact quadratic conic polynomial $C(x, y)$ through five points.
+
+    Evaluates the $6 \times 6$ Veronese determinant
+
+    .. math::
+
+       \det \begin{bmatrix}
+       x^2 & x y & y^2 & x & y & 1 \\
+       x_0^2 & x_0 y_0 & y_0^2 & x_0 & y_0 & 1 \\
+       \vdots & \vdots & \vdots & \vdots & \vdots & \vdots \\
+       x_4^2 & x_4 y_4 & y_4^2 & x_4 & y_4 & 1
+       \end{bmatrix}
+
+    in the symbols ``x, y``.
+
+    Args:
+        points: Sequence of 5 points in the plane.
+
+    Returns:
+        Expanded SymPy polynomial in ``x`` and ``y`` (zero iff the 5 points are
+        degenerate with 4+ collinear in a way that fails to determine a unique conic).
+
+    Raises:
+        ValueError: If ``len(points) != 5``.
+    """
+    if len(points) != 5:
+        raise ValueError(f"Expected exactly 5 points to determine a conic, got {len(points)}.")
+    x_sym, y_sym = sp.Symbol("x"), sp.Symbol("y")
+    rows: list[list[sp.Expr]] = [[x_sym**2, x_sym * y_sym, y_sym**2, x_sym, y_sym, sp.Integer(1)]]
+    for raw in points:
+        pt = raw if isinstance(raw, spg.Point) else spg.Point(sp.sympify(raw[0]), sp.sympify(raw[1]))
+        rows.append([pt.x**2, pt.x * pt.y, pt.y**2, pt.x, pt.y, sp.Integer(1)])
+    return sp.expand(sp.Matrix(rows).det())
+
+
+def are_coconic(
+    points: Sequence[spg.Point | tuple[sp.Expr | int, sp.Expr | int]],
+) -> bool:
+    r"""Return True iff all given points lie on a single conic (smooth or degenerate line-pair).
+
+    Unifies Pappus's degenerate two-line configuration ($L_a \cdot L_b = 0$) and
+    Pascal's smooth conic configuration ($A x^2 + B x y + C y^2 + D x + E y + F = 0$)
+    via the rank of the $N \times 6$ Veronese matrix $[x_k^2, x_k y_k, y_k^2, x_k, y_k, 1]$.
+
+    Args:
+        points: Sequence of planar points (any $\le 5$ points trivially lie on at least one conic).
+
+    Returns:
+        ``True`` if the Veronese matrix has rank $\le 5$, else ``False``.
+    """
+    if len(points) <= 5:
+        return True
+    rows: list[list[sp.Expr]] = []
+    for raw in points:
+        pt = raw if isinstance(raw, spg.Point) else spg.Point(sp.sympify(raw[0]), sp.sympify(raw[1]))
+        rows.append([pt.x**2, pt.x * pt.y, pt.y**2, pt.x, pt.y, sp.Integer(1)])
+    return int(sp.Matrix(rows).rank()) <= 5
+
+
+def conic_cross_ratio(
+    p1: spg.Point,
+    p2: spg.Point,
+    p3: spg.Point,
+    p4: spg.Point,
+    observer: spg.Point,
+) -> sp.Expr:
+    r"""Compute Michel Chasles's projective cross-ratio $(P_1, P_2; P_3, P_4)_{\mathcal{C}}$ on a conic.
+
+    By Chasles's Theorem, for four distinct points $P_1, P_2, P_3, P_4$ on an irreducible
+    conic $\mathcal{C}$, the cross-ratio of the pencil of four rays
+    $[V P_1], [V P_2], [V P_3], [V P_4]$ cut by any transversal line is **independent**
+    of the fifth point $V = \text{observer} \in \mathcal{C}$.
+
+    Args:
+        p1: First conic point.
+        p2: Second conic point.
+        p3: Third conic point.
+        p4: Fourth conic point.
+        observer: Distinct fifth point $V$ on the same conic.
+
+    Returns:
+        Exact simplified SymPy cross-ratio expression (or ``sp.oo``).
+
+    Raises:
+        ValueError: If the 5 points are not distinct or not coconic.
+    """
+    pts5 = (p1, p2, p3, p4, observer)
+    if len(set(pts5)) != 5:
+        raise ValueError("All four target points and observer must be distinct.")
+    if not are_coconic(pts5):
+        raise ValueError("Points do not lie on a common conic.")
+
+    rays = [spg.Line(observer, pk) for pk in (p1, p2, p3, p4)]
+    # Pick a clean transversal line not passing through observer
+    candidates = (
+        spg.Line(spg.Point(0, 0), spg.Point(1, 0)),
+        spg.Line(spg.Point(0, 1), spg.Point(1, 1)),
+        spg.Line(spg.Point(0, 2), spg.Point(1, 5)),
+    )
+    transversal = next(ln for ln in candidates if not ln.contains(observer))
+    cuts = [exact_line_meet(ray, transversal) for ray in rays]
+    return cross_ratio(cuts[0], cuts[1], cuts[2], cuts[3])
+

@@ -4,7 +4,7 @@
 Demos
 =====
 
-Four standalone runnable scripts in ``demos/`` showcase every layer of ``geometor.pappus`` with
+Five standalone runnable scripts in ``demos/`` showcase every layer of ``geometor.pappus`` with
 formatted Rich terminal tables—reviving and extending the repository's original 2023 ``pappus.py``
 and ``pappus-3.py`` explorations without requiring a GUI window.
 
@@ -62,4 +62,19 @@ anharmonic power orbit, the harmonic-golden identity $(0, \phi; 1, \phi^3) = -1$
    uv run python demos/golden_pappus.py
 
 .. literalinclude:: ../../demos/golden_pappus.py
+   :language: python
+
+5. ``demos/pascal_hexagrammum.py`` — Pascal's *Hexagrammum Mysticum* (1640)
+---------------------------------------------------------------------------
+
+Proves Pascal's smooth-conic theorem universally over $\mathbb{Z}[t_0, \dots, t_5]$, compares
+the Pythagorean unit circle and stretched affine ellipse $\frac{x^2}{4} + y^2 = 1$, enumerates all
+**60 Pascal lines, 20 Steiner points, 60 Kirkman points, and 15 Plücker lines**, and uncovers the
+emergent golden conic section ``/ M25 P4 P0 /`` in $\mathbb{Q}(\phi)$.
+
+.. code-block:: bash
+
+   uv run python demos/pascal_hexagrammum.py
+
+.. literalinclude:: ../../demos/pascal_hexagrammum.py
    :language: python

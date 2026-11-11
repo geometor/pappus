@@ -5,6 +5,7 @@
 
 :root {
   --pappus-carrier: #475569;
+  --pappus-conic: #0284c7;
   --pappus-cross: #0e7490;
   --pappus-quad: #4338ca;
   --pappus-even: #d97706;
@@ -22,6 +23,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --pappus-carrier: #94a3b8;
+    --pappus-conic: #38bdf8;
     --pappus-cross: #38bdf8;
     --pappus-quad: #818cf8;
     --pappus-even: #fbbf24;
@@ -39,6 +41,7 @@
 
 html[data-theme="dark"] {
   --pappus-carrier: #94a3b8;
+  --pappus-conic: #38bdf8;
   --pappus-cross: #38bdf8;
   --pappus-quad: #818cf8;
   --pappus-even: #fbbf24;
@@ -55,6 +58,7 @@ html[data-theme="dark"] {
 
 html[data-theme="light"] {
   --pappus-carrier: #475569;
+  --pappus-conic: #0284c7;
   --pappus-cross: #0e7490;
   --pappus-quad: #4338ca;
   --pappus-even: #d97706;
@@ -71,6 +75,13 @@ html[data-theme="light"] {
 
 svg.euclid-graphic .svg-bg {
   fill: none;
+}
+
+svg.euclid-graphic .geom-circle.conic-curve:not(.is-highlighted) {
+  fill: none;
+  stroke: var(--pappus-conic);
+  stroke-width: 2.15;
+  opacity: 0.88;
 }
 
 svg.euclid-graphic .carrier-line:not(.is-highlighted) {

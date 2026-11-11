@@ -22,7 +22,15 @@ from geometor.pappus.constructions import (
     construct_pappus_hexagon,
     verify_pappus_symbolic,
 )
+from geometor.pappus.pascal import (
+    PASCAL_PRESETS,
+    construct_pascal_hexagon,
+    construct_pascal_steiner_family,
+    enumerate_hexagrammum_mysticum,
+    verify_pascal_symbolic,
+)
 from geometor.pappus.projective import (
+    conic_cross_ratio,
     cross_ratio,
     find_golden_sections,
     find_harmonic_ranges,
@@ -34,6 +42,7 @@ __all__ = [
     "cmd_build",
     "cmd_inspect",
     "cmd_harmonics",
+    "cmd_pascal",
     "build_parser",
     "main",
 ]
@@ -186,6 +195,68 @@ def build_gallery(output_dir: str | Path = "docsrc/_static/constructions") -> li
         )
     )
 
+    # 10. Pascal's Mystic Star Hexagram on the Pythagorean Unit Circle
+    pas_hex = construct_pascal_hexagon(preset="hexagrammum")
+    written.append(
+        export_svg(
+            pas_hex.model,
+            out / "pascal_hexagrammum.svg",
+            graphic_id="g1",
+            title="Pascal's Hexagrammum Mysticum (1640) on the Unit Circle",
+            width=680,
+            height=480,
+            bbox=(-1.45, 2.25, -1.35, 1.95),
+            highlight_point_ids=["M03", "M14", "M25"],
+        )
+    )
+
+    # 11. Pascal's Hexagrammum on the General Ellipse x^2/4 + y^2 = 1
+    pas_ell = construct_pascal_hexagon(preset="ellipse")
+    written.append(
+        export_svg(
+            pas_ell.model,
+            out / "pascal_ellipse.svg",
+            graphic_id="g2",
+            title="Pascal's Hexagrammum Mysticum on the Ellipse x^2/4 + y^2 = 1",
+            width=680,
+            height=440,
+            bbox=(-2.5, 4.1, -1.35, 1.95),
+            highlight_point_ids=["M03", "M14", "M25"],
+        )
+    )
+
+    # 12. Bi-Triangle S_3 Pascal–Steiner Family (G+, G-)
+    pas_st = construct_pascal_steiner_family(preset="hexagrammum")
+    written.append(
+        export_svg(
+            pas_st.model,
+            out / "pascal_steiner_family.svg",
+            graphic_id="g3",
+            title="Bi-Triangle S_3 Pascal Lines Concurring at Steiner Points G+ and G-",
+            width=700,
+            height=480,
+            bbox=(-1.45, 3.55, -1.35, 1.95),
+            show_meet_labels=False,
+            highlight_point_ids=["S1", "S2"],
+        )
+    )
+
+    # 13. Golden Hexagrammum Mysticum in Q(phi)
+    gold_pas = construct_pascal_hexagon(preset="golden_conic")
+    find_golden_sections(gold_pas.model, register_sections=True)
+    written.append(
+        export_svg(
+            gold_pas.model,
+            out / "golden_pascal.svg",
+            graphic_id="g4",
+            title="Golden Hexagrammum Mysticum in Q(phi) — Emergent Section / M25 P4 P0 /",
+            width=680,
+            height=480,
+            bbox=(-1.45, 1.45, -1.9, 1.35),
+            highlight_point_ids=["P0", "P4", "M03", "M14", "M25"],
+        )
+    )
+
     return written
 
 
@@ -297,11 +368,64 @@ def cmd_harmonics(args: argparse.Namespace, console: Console) -> int:
     return 0
 
 
+def cmd_pascal(args: argparse.Namespace, console: Console) -> int:
+    """Execute ``pappus pascal``."""
+    preset_name: str = args.preset
+    if args.full_60:
+        cat = enumerate_hexagrammum_mysticum(preset=preset_name)
+        c_table = Table(title=f"60-Line Hexagrammum Mysticum Catalog — {PASCAL_PRESETS[preset_name].title}")
+        c_table.add_column("Family", style="cyan bold")
+        c_table.add_column("Exact Count", justify="right", style="bold yellow")
+        c_table.add_row("Chords [Pi Pj]", str(len(cat.chords)))
+        c_table.add_row("Pascal Diagonal Points", str(len(set(cat.diagonal_points.values()))))
+        c_table.add_row("Pascal Lines", str(len(set(cat.pascal_lines.values()))))
+        c_table.add_row("Jakob Steiner Points", str(len(set(cat.steiner_points.values()))))
+        c_table.add_row("Thomas Kirkman Points", str(len(set(cat.kirkman_points.values()))))
+        c_table.add_row("Julius Plücker Lines", str(len(cat.plucker_lines)))
+        console.print(c_table)
+    elif args.steiner_family:
+        st_res = construct_pascal_steiner_family(preset=preset_name)
+        s_table = Table(title=f"Bi-Triangle S_3 Pascal–Steiner Family — {PASCAL_PRESETS[preset_name].title}")
+        s_table.add_column("Perm / Point", style="cyan bold")
+        s_table.add_column("Exact Value", style="green")
+        for perm in PERMUTATIONS_S3:
+            parity = "even" if st_res.pascal_lines[perm] in st_res.even_pascal_lines else "odd"
+            s_table.add_row(f"{perm} [{parity}]", f"{st_res.pascal_lines[perm].equation()} = 0")
+        s_table.add_row(
+            "G+ (S1, even A_3)",
+            str((st_res.steiner_even.x, st_res.steiner_even.y)) if st_res.steiner_even else "Ideal (∞)",
+        )
+        s_table.add_row(
+            "G- (S2, odd S_3 \\ A_3)",
+            str((st_res.steiner_odd.x, st_res.steiner_odd.y)) if st_res.steiner_odd else "Ideal (∞)",
+        )
+        console.print(s_table)
+    else:
+        pas_res = construct_pascal_hexagon(preset=preset_name)
+        sym_det = verify_pascal_symbolic()
+        pts = pas_res.points
+        cr_val = conic_cross_ratio(pts[0], pts[1], pts[2], pts[3], observer=pts[4])
+        table = Table(title=f"Pascal Hexagrammum Inspection — {PASCAL_PRESETS[preset_name].title}")
+        table.add_column("Element", style="cyan bold")
+        table.add_column("Exact Symbolic Value", style="green")
+        for idx, pt in enumerate(pts):
+            table.add_row(f"P{idx}", f"({pt.x}, {pt.y})")
+        table.add_row("6-Cycle", str(pas_res.cycle))
+        for m_id, m_pt in pas_res.meets.items():
+            table.add_row(m_id, f"({m_pt.x}, {m_pt.y})" if m_pt is not None else "Ideal (∞)")
+        table.add_row("Pascal Line", f"{pas_res.pascal_line.equation()} = 0")
+        table.add_row("Chasles Conic CR (P0, P1; P2, P3)", str(cr_val))
+        table.add_row("Collinear & Coconic?", f"{pas_res.is_collinear} / {pas_res.is_coconic}")
+        table.add_row("Universal Symbolic Det", str(sym_det))
+        console.print(table)
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     """Build the ``pappus`` CLI argument parser."""
     parser = argparse.ArgumentParser(
         prog="pappus",
-        description="Symbolic projective geometry toolkit for Pappus's Hexagon Theorem & harmonic cross-ratios.",
+        description="Symbolic projective geometry toolkit for Pappus, Pascal's Hexagrammum Mysticum & cross-ratios.",
     )
     sub = parser.add_subparsers(dest="command")
 
@@ -347,6 +471,27 @@ def build_parser() -> argparse.ArgumentParser:
         help="Include all pairwise line-line intersections when scanning.",
     )
 
+    p_pascal = sub.add_parser("pascal", help="Inspect Blaise Pascal's Hexagrammum Mysticum on conics.")
+    p_pascal.add_argument(
+        "-p",
+        "--preset",
+        choices=sorted(PASCAL_PRESETS),
+        default="hexagrammum",
+        help="Pascal conic preset to inspect (default: hexagrammum).",
+    )
+    p_pascal.add_argument(
+        "-s",
+        "--steiner-family",
+        action="store_true",
+        help="Construct the 6-line bi-triangle S_3 Pascal family and Steiner points (G+, G-).",
+    )
+    p_pascal.add_argument(
+        "-f",
+        "--full-60",
+        action="store_true",
+        help="Enumerate all 60 Pascal lines, 20 Steiner points, 60 Kirkman points, and 15 Plücker lines.",
+    )
+
     return parser
 
 
@@ -362,6 +507,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         return cmd_harmonics(args, console)
     if args.command == "inspect":
         return cmd_inspect(args, console)
+    if args.command == "pascal":
+        return cmd_pascal(args, console)
 
     # Default when invoked with no subcommand: inspect canonical hexagon
     default_args = argparse.Namespace(preset="hexagon", all_permutations=False, discover_all=False)
