@@ -1,0 +1,262 @@
+{
+  "pappus": {
+    "name": "Pappus of Alexandria",
+    "greek": "Πάππος ὁ Ἀλεξανδρεύς",
+    "dates": "fl. c. 320–340 CE",
+    "sort_year": 330,
+    "era": "late-antique",
+    "role": "Alexandrian geometer & author of the Synagoge (Mathematical Collection)",
+    "summary": "Last great synthetic geometer of Greek antiquity; compiled the eight-book Synagoge preserving and extending the Treasury of Analysis, projective cross-ratio and hexagon theorems, arbelos circle chains, honeycomb isoperimetry, and Alexandrian mechanics.",
+    "hultsch_loci": "I–III passim (pp. 2–1115)"
+  },
+  "pandrosion": {
+    "name": "Pandrosion of Alexandria",
+    "greek": "Πανδροσίων",
+    "dates": "fl. c. 330 CE",
+    "sort_year": 330,
+    "era": "late-antique",
+    "role": "Alexandrian woman mathematician & teacher of geometry, dedicatee of Synagoge Book III",
+    "summary": "Addressed by Pappus at the opening of Book III (ὦ κρατίστη Πανδροσίων, restored by Hultsch from feminine vocative manuscript readings where Commandino had assumed masculine); taught advanced solid-problem geometry in fourth-century Alexandria.",
+    "hultsch_loci": "I p. 30, 3; pp. 30–175"
+  },
+  "megethius": {
+    "name": "Megethius",
+    "greek": "Μεγέθιος",
+    "dates": "fl. c. 335 CE",
+    "sort_year": 335,
+    "era": "late-antique",
+    "role": "Dedicatee of Synagoge Book V (On Isoperimetric Figures)",
+    "summary": "Addressed by Pappus in the celebrated Preface on the geometrical forethought of bees and plane/solid isoperimetry opening Book V.",
+    "hultsch_loci": "I p. 304, 2"
+  },
+  "hermodorus": {
+    "name": "Hermodorus",
+    "greek": "Ἑρμόδωρος",
+    "dates": "fl. c. 340 CE",
+    "sort_year": 340,
+    "era": "late-antique",
+    "role": "Son of Pappus & dedicatee of Synagoge Books VII and VIII",
+    "summary": "Pappus's son ('ὦ τέκνον Ἑρμόδωρε'), for whose advanced mathematical studies Pappus composed both Book VII (Treasury of Analysis) and Book VIII (Mechanics).",
+    "hultsch_loci": "II p. 634, 3; III p. 1022, 3"
+  },
+  "hierius": {
+    "name": "Hierius",
+    "greek": "Ἱέριος",
+    "dates": "fl. c. 330 CE",
+    "sort_year": 330,
+    "era": "late-antique",
+    "role": "Philosopher & friend of Pappus mentioned in Book III",
+    "summary": "Philosophical colleague who proposed mean-proportional constructions examined by Pappus in Book III.",
+    "hultsch_loci": "I p. 68"
+  },
+  "euclid": {
+    "name": "Euclid",
+    "greek": "Εὐκλείδης",
+    "dates": "fl. c. 300 BCE",
+    "sort_year": -300,
+    "era": "hellenistic",
+    "role": "Author of the Elements, Data, Porisms & Surface Loci",
+    "summary": "Praised by Pappus in Book VII for gentle modesty toward predecessors; author of Elements (generalized in IV.1), Data, the lost three-book Porisms (source of VII.129–139), and the lost two-book Surface Loci (source of VII.238 focus–directrix).",
+    "hultsch_loci": "I pp. 72, 176–179; II pp. 636–660, 676, 866–918, 1004–1014"
+  },
+  "apollonius": {
+    "name": "Apollonius of Perga",
+    "greek": "Ἀπολλώνιος ὁ Περγαῖος",
+    "dates": "c. 240–190 BCE",
+    "sort_year": -210,
+    "era": "hellenistic",
+    "role": "The 'Great Geometer'; author of Conics and six analytical treatises in Book VII",
+    "summary": "Central author of Pappus's Treasury of Analysis (20 of the 33 books) as well as Book II's tetrad arithmetic; expounded across Cutting Off a Ratio/Area, Determinate Section, Tangencies, Inclinations, Plane Loci, and the eight-book Conics.",
+    "hultsch_loci": "I pp. 2–29; II pp. 636–1004"
+  },
+  "archimedes": {
+    "name": "Archimedes of Syracuse",
+    "greek": "Ἀρχιμήδης ὁ Συρακούσιος",
+    "dates": "c. 287–212 BCE",
+    "sort_year": -250,
+    "era": "hellenistic",
+    "role": "Geometer & mechanician of Syracuse",
+    "summary": "Revered throughout Books IV, V, and VIII: source of the arbelos ('shoemaker's knife'), spiral quadrature, the 13 semi-regular solids preserved solely in Book V, center-of-gravity mechanics, and the famous saying 'δός μοι ποῦ στῶ καὶ κινῶ τὴν γῆν' (VIII p. 1060).",
+    "hultsch_loci": "I pp. 208–245, 312, 352–358; III pp. 1024, 1060"
+  },
+  "aristaeus": {
+    "name": "Aristaeus the Elder",
+    "greek": "Ἀρισταῖος ὁ πρεσβύτερος",
+    "dates": "fl. c. 320 BCE",
+    "sort_year": -320,
+    "era": "classical",
+    "role": "Author of Five Books of Solid Loci & comparison of the five regular solids",
+    "summary": "Elder contemporary of Euclid who authored Five Books of Solid Loci (conic sections) in the Treasury of Analysis and investigated the five Platonic polyhedra.",
+    "hultsch_loci": "I p. 132; II pp. 636, 672–678"
+  },
+  "eratosthenes": {
+    "name": "Eratosthenes of Cyrene",
+    "greek": "Ἐρατοσθένης ὁ Κυρηναῖος",
+    "dates": "c. 276–194 BCE",
+    "sort_year": -235,
+    "era": "hellenistic",
+    "role": "Alexandrian polymath & author of On Means (Περὶ μεσοτήτων)",
+    "summary": "Invented the mesolabe for two mean proportionals (Book III pp. 56–58) and composed two lost books On Means included at the close of Pappus's 33-book Treasury of Analysis (Book VII p. 636).",
+    "hultsch_loci": "I pp. 56–58; II pp. 636, 662, 672"
+  },
+  "nicomedes": {
+    "name": "Nicomedes",
+    "greek": "Νικομήδης",
+    "dates": "3rd cent. BCE",
+    "sort_year": -220,
+    "era": "hellenistic",
+    "role": "Discoverer of the conchoid curve for neusis, cube duplication & angle trisection",
+    "summary": "Introduced the conchoidal curves (κογχοειδεῖς γραμμαί) presented in Synagoge Books III and IV for solving solid neusis problems, duplicating the cube, and trisecting rectilinear angles.",
+    "hultsch_loci": "I pp. 56–62, 242–250"
+  },
+  "dinostratus": {
+    "name": "Dinostratus",
+    "greek": "Δεινόστρατος",
+    "dates": "fl. c. 350 BCE",
+    "sort_year": -350,
+    "era": "classical",
+    "role": "Geometer who applied Hippias's quadratrix to circle quadrature",
+    "summary": "Brother of Menaechmus; demonstrated the rectification and quadrature of the circle by means of the quadratrix (τετραγωνίζουσα), analyzed critically (with Sporus's objection) in Synagoge Book IV.",
+    "hultsch_loci": "I pp. 250–258"
+  },
+  "zenodorus": {
+    "name": "Zenodorus",
+    "greek": "Ζηνόδωρος",
+    "dates": "2nd cent. BCE",
+    "sort_year": -180,
+    "era": "hellenistic",
+    "role": "Author of On Isoperimetric Figures",
+    "summary": "Established that among isoperimetric n-gons the regular one has greatest area, that a greater-numbered regular polygon exceeds a lesser-numbered one of equal perimeter, and that the circle exceeds every regular polygon—recast and extended by Pappus in Book V.",
+    "hultsch_loci": "I pp. 308–350"
+  },
+  "nicomachus": {
+    "name": "Nicomachus of Gerasa",
+    "greek": "Νικόμαχος ὁ Γερασηνός",
+    "dates": "c. 60–120 CE",
+    "sort_year": 100,
+    "era": "imperial",
+    "role": "Neo-Pythagorean arithmetician",
+    "summary": "Classified ten numerical proportions/means in his Introduction to Arithmetic; cited explicitly by Pappus in Book III (p. 68–70) before Pappus's single-semicircle geometric constructions.",
+    "hultsch_loci": "I pp. 68–85"
+  },
+  "heron": {
+    "name": "Hero of Alexandria",
+    "greek": "Ἥρων ὁ Ἀλεξανδρεύς",
+    "dates": "1st cent. CE",
+    "sort_year": 60,
+    "era": "imperial",
+    "role": "Alexandrian mechanician, geometer & author of the Mechanics and Baroulkos",
+    "summary": "Chief authority of Pappus's Book VIII on theoretical and practical mechanics, centers of gravity, the five simple machines, toothed gear-trains, the endless screw, and the Baroulkos weight-hauler.",
+    "hultsch_loci": "I pp. 62–64; III pp. 1022–1073, 1104–1115"
+  },
+  "carpus": {
+    "name": "Carpus of Antioch",
+    "greek": "Κάρπος ὁ Ἀντιοχεύς",
+    "dates": "1st/2nd cent. CE",
+    "sort_year": 110,
+    "era": "imperial",
+    "role": "Mechanician ('Carpus the Engineer') cited in Book VIII Preface",
+    "summary": "Praised alongside Archimedes, Philo, and Hero in Pappus's Book VIII Preface for applying geometry fruitfully to mechanical arts.",
+    "hultsch_loci": "III p. 1026"
+  },
+  "proclus": {
+    "name": "Proclus Lycius Diadochus",
+    "greek": "Πρόκλος ὁ Διάδοχος",
+    "dates": "412–485 CE",
+    "sort_year": 450,
+    "era": "late-antique",
+    "role": "Neoplatonic scholarch & author of Commentary on Euclid Book I (geometor/proclus)",
+    "summary": "Preserves Pappus's famous zero-construction symmetry proof of Elements I.5 (pons asinorum) and complements Book VII of the Synagoge on the epistemology of geometric analysis and porisms.",
+    "hultsch_loci": "cf. Friedlein 189, 197, 249–250, 429"
+  },
+  "commandino": {
+    "name": "Federico Commandino",
+    "greek": "",
+    "dates": "1509–1575",
+    "sort_year": 1570,
+    "era": "modern",
+    "role": "Renaissance humanist mathematician & translator of the 1588 Latin editio princeps",
+    "summary": "Translated Books III–VIII of Pappus's Synagoge into Latin with geometric diagrams and commentary (published posthumously at Pesaro in 1588), igniting the seventeenth-century rebirth of analytic and projective geometry.",
+    "hultsch_loci": "ed. 1588"
+  },
+  "guldin": {
+    "name": "Paul Guldin, S.J.",
+    "greek": "",
+    "dates": "1577–1643",
+    "sort_year": 1635,
+    "era": "modern",
+    "role": "Mathematician who independently rediscovered the Centroid Theorem (1635–1641)",
+    "summary": "Published the volume-of-revolution centroid rule in his Centrobaryca (1635–1641), unaware or sceptical of the ancient passage already standing in Synagoge VII (Hultsch II p. 682), giving rise to the name Pappus–Guldinus Theorem.",
+    "hultsch_loci": "cf. II p. 682"
+  },
+  "descartes": {
+    "name": "René Descartes",
+    "greek": "",
+    "dates": "1596–1650",
+    "sort_year": 1637,
+    "era": "modern",
+    "role": "Founder of analytic geometry via the Pappus Locus Problem (1637)",
+    "summary": "Made Pappus's Three-, Four-, and n-Line Locus problem (Synagoge VII, Hultsch II pp. 676–680) the centerpiece of his 1637 La Géométrie, proving the power of algebraic coordinates where ancient solid loci had halted.",
+    "hultsch_loci": "cf. II pp. 676–680"
+  },
+  "desargues": {
+    "name": "Girard Desargues",
+    "greek": "",
+    "dates": "1591–1661",
+    "sort_year": 1639,
+    "era": "modern",
+    "role": "Pioneer of synthetic projective geometry & involution",
+    "summary": "Revived Pappus's Book VII projective lemmas on cross-ratio, harmonic division, and involution in his 1639 Brouillon project, inspiring young Blaise Pascal.",
+    "hultsch_loci": "cf. II pp. 870–918"
+  },
+  "pascal": {
+    "name": "Blaise Pascal",
+    "greek": "",
+    "dates": "1623–1662",
+    "sort_year": 1640,
+    "era": "modern",
+    "role": "Discoverer of the Hexagrammum Mysticum conic theorem (1640)",
+    "summary": "At age sixteen generalized Pappus's degenerate two-line Hexagon Theorem (Synagoge VII.138–139) to an arbitrary smooth conic section in his Essai pour les coniques.",
+    "hultsch_loci": "cf. II pp. 884–889"
+  },
+  "steiner": {
+    "name": "Jakob Steiner",
+    "greek": "",
+    "dates": "1796–1863",
+    "sort_year": 1832,
+    "era": "modern",
+    "role": "Architect of nineteenth-century synthetic projective geometry",
+    "summary": "Demonstrated that the six S_3 permutations of Pappus's hexagon generate six Pappus lines concurring three-by-three at two Steiner Star points, and extended Pascal's 60 lines into 20 Steiner points.",
+    "hultsch_loci": "cf. II pp. 884–889"
+  },
+  "hultsch": {
+    "name": "Friedrich Otto Hultsch",
+    "greek": "",
+    "dates": "1833–1906",
+    "sort_year": 1876,
+    "era": "modern",
+    "role": "Editor of the authoritative 3-volume critical Greek text of Pappus (1876–1878)",
+    "summary": "Established the definitive Weidmann Greek text, apparatus criticus from Codex Vaticanus Graecus 218, Latin translation, and Index Graecitatis for all surviving books of Pappus's Synagoge.",
+    "hultsch_loci": "ed. 1876–1878"
+  },
+  "heath": {
+    "name": "Sir Thomas Little Heath",
+    "greek": "",
+    "dates": "1861–1940",
+    "sort_year": 1921,
+    "era": "modern",
+    "role": "Historian of Greek mathematics & commentator on Euclid and Pappus",
+    "summary": "Authored the comprehensive English mathematical exposition of Pappus's Collection in History of Greek Mathematics Vol. II (1921) and cross-referenced Hultsch's Pappus throughout geometor/euclid.",
+    "hultsch_loci": "Heath 1921 II pp. 355–439"
+  },
+  "hilbert": {
+    "name": "David Hilbert",
+    "greek": "",
+    "dates": "1862–1943",
+    "sort_year": 1899,
+    "era": "modern",
+    "role": "Author of Grundlagen der Geometrie (1899, geometor/hilbert)",
+    "summary": "Revealed the foundational algebraic role of Pappus's Hexagon Theorem ('Pascal's theorem for two intersecting lines'): in an incidence plane, Pappus's theorem holds if and only if coordinate multiplication is commutative.",
+    "hultsch_loci": "cf. II pp. 886–889"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "synagoge": {
+    "headword": "synagoge (συναγωγή)",
+    "translation": "Collection / Mathematical Synthesis",
+    "term": "synagoge",
+    "greek": "συναγωγή",
+    "latin": "collectio mathematica",
+    "english": "Collection / Mathematical Synthesis",
+    "definition": "Pappus's eight-book compendium gathering, repairing, generalizing, and supplying missing lemmas across seven centuries of classical and Hellenistic Greek geometry and mechanics.",
+    "hultsch_loci": "I–III passim"
+  },
+  "topos-analyomenos": {
+    "headword": "topos analyomenos (τόπος ἀναλυόμενος)",
+    "translation": "Treasury / Domain of Analysis",
+    "term": "topos analyomenos",
+    "greek": "ὁ καλούμενος ἀναλυόμενος τόπος",
+    "latin": "locus resolutus",
+    "english": "Treasury / Domain of Analysis",
+    "definition": "Special body of 33 advanced Greek geometric books (by Euclid, Apollonius, Aristaeus, and Eratosthenes) equipping the geometer, after mastering the Elements, with the power to solve proposed problems via analysis and synthesis.",
+    "hultsch_loci": "II pp. 634–638"
+  },
+  "analysis": {
+    "headword": "analysis (ἀνάλυσις)",
+    "translation": "geometric analysis (resolution)",
+    "term": "analysis",
+    "greek": "ἀνάλυσις",
+    "latin": "resolutio / analysis",
+    "english": "geometric analysis",
+    "definition": "Assuming that which is sought as if already admitted, and advancing through its consequences to something already known or ranked among first principles; divided by Pappus into theoretical (zetetic) and problematic (poristic) analysis.",
+    "hultsch_loci": "II pp. 634–636"
+  },
+  "synthesis": {
+    "headword": "synthesis (σύνθεσις)",
+    "translation": "geometric synthesis (composition)",
+    "term": "synthesis",
+    "greek": "σύνθεσις",
+    "latin": "compositio / synthesis",
+    "english": "geometric synthesis",
+    "definition": "Reversing the path of analysis: taking as starting point the last principle reached in analysis, ordering its antecedents in their natural deductive sequence, and arriving at the construction or proof of what was sought.",
+    "hultsch_loci": "II pp. 634–636"
+  },
+  "diorismos": {
+    "headword": "diorismos (διορισμός)",
+    "translation": "determination / condition of solvability",
+    "term": "diorismos",
+    "greek": "διορισμός",
+    "latin": "determinatio",
+    "english": "determination / condition of possibility",
+    "definition": "Necessary and sufficient criterion distinguishing when, how, and in how many ways a proposed geometric problem admits a solution.",
+    "hultsch_loci": "II pp. 636, 642–650"
+  },
+  "porisma": {
+    "headword": "porisma (πόρισμα)",
+    "translation": "porism",
+    "term": "porisma",
+    "greek": "πόρισμα",
+    "latin": "porisma",
+    "english": "porism",
+    "definition": "According to the ancients (as defended by Pappus against later redefinitions), something proposed for the 'finding' (πορισμός) of the very thing proposed—intermediate between a theorem (proving an attribute) and a problem (constructing a figure).",
+    "hultsch_loci": "II pp. 648–660"
+  },
+  "lemma": {
+    "headword": "lemma (λῆμμα)",
+    "translation": "auxiliary proposition",
+    "term": "lemma",
+    "greek": "λῆμμα",
+    "latin": "lemma / assumptum",
+    "english": "auxiliary lemma",
+    "definition": "Auxiliary geometric proposition supplied by Pappus across Book VII (242 lemmas in total) to bridge tacit steps in the analytical treatises of Euclid and Apollonius—including the Hexagon Theorems VII.138–139.",
+    "hultsch_loci": "II pp. 684–1014"
+  },
+  "topos-epipedos-stereos-grammikos": {
+    "headword": "epipedos / stereos / grammikos (ἐπίπεδος / στερεός / γραμμικός)",
+    "translation": "plane, solid, and linear problems/loci",
+    "term": "plane, solid, and linear problems",
+    "greek": "ἐπίπεδα, στερεά, γραμμικὰ προβλήματα",
+    "latin": "problemata plana, solida, linearia",
+    "english": "plane, solid, and linear problems",
+    "definition": "Pappus's canonical threefold methodological hierarchy (Books III & IV): plane problems solved by straight lines and circles alone; solid problems requiring sections of the cone; and linear problems requiring higher curves (spirals, quadratrices, conchoids, cissoids).",
+    "hultsch_loci": "I pp. 54–56, 270–272"
+  },
+  "mesotes": {
+    "headword": "mesotes (μεσότης)",
+    "translation": "mean / mediety",
+    "term": "mesotes",
+    "greek": "μεσότης (ἀριθμητική, γεωμετρική, ἁρμονική)",
+    "latin": "medietas",
+    "english": "proportional mean (arithmetic, geometric, harmonic)",
+    "definition": "Ordered triple (a, m, b) governed by an invariant difference/ratio law; in Book III Pappus exhibits the three classical means A = (a+b)/2, G = sqrt(ab), H = 2ab/(a+b) simultaneously within a single semicircle and catalogs all ten ancient medieties.",
+    "hultsch_loci": "I pp. 68–105"
+  },
+  "harmonike-mesotes": {
+    "headword": "harmonike analogia (ἁρμονικὴ μεσότης / διαίρεσις)",
+    "translation": "harmonic mean & harmonic division",
+    "term": "harmonike mesotes",
+    "greek": "ἁρμονικὴ μεσότης",
+    "latin": "divisio harmonica",
+    "english": "harmonic division",
+    "definition": "Four collinear points (A, C; D, T) or segments where AB : BC = AD : DC, equivalent to cross-ratio (A, C; D, T) = -1; unites Book III's semicircle mean construction with Book VII Prop. 131's complete-quadrilateral harmonic range.",
+    "hultsch_loci": "I pp. 70–83; II p. 874"
+  },
+  "neusis": {
+    "headword": "neusis (νεῦσις)",
+    "translation": "verging / inclination construction",
+    "term": "neusis",
+    "greek": "νεῦσις",
+    "latin": "inclinatio",
+    "english": "verging construction (neusis)",
+    "definition": "Inserting a straight segment of given length between two given lines or curves so that its prolongation passes through ('verges toward', νεύει) a given pole; subject of Apollonius's Inclinations and Book IV's angle-trisection analyses.",
+    "hultsch_loci": "I pp. 242–250, 272–285; II pp. 670, 778–824"
+  },
+  "arbelos": {
+    "headword": "arbelos (ἄρβηλος)",
+    "translation": "shoemaker's knife",
+    "term": "arbelos",
+    "greek": "τὸ καλούμενον ἄρβηλον",
+    "latin": "arbelus / scalprum sutorium",
+    "english": "arbelos (shoemaker's knife)",
+    "definition": "Curvilinear region bounded by three mutually tangent semicircles on a common diameter; in Book IV Props. 14–18 Pappus proves the 'ancient proposition' (ἀρχαία πρότασις) that the n-th inscribed tangent circle has center altitude h_n = n * d_n.",
+    "hultsch_loci": "I pp. 208–232"
+  },
+  "isoperimetros": {
+    "headword": "isoperimetros (ἰσοπερίμετρος)",
+    "translation": "of equal perimeter (isoperimetric)",
+    "term": "isoperimetros",
+    "greek": "ἰσοπερίμετρος",
+    "latin": "isoperimeter",
+    "english": "isoperimetric",
+    "definition": "Having equal bounding perimeter (in the plane) or equal bounding surface area (in space); Book V proves that among regular tiling polygons of equal perimeter, the bees' regular hexagon encloses strictly greater area than the square or equilateral triangle.",
+    "hultsch_loci": "I pp. 304–350"
+  },
+  "kentron-barous": {
+    "headword": "kentron barous (κέντρον βάρους)",
+    "translation": "center of gravity (centroid)",
+    "term": "kentron barous",
+    "greek": "κέντρον τοῦ βάρους",
+    "latin": "centrum gravitatis",
+    "english": "center of gravity (centroid)",
+    "definition": "Unique point within or associated with a body or plane figure such that, if suspended from that point, the figure remains in equilibrium in every orientation; foundation of both the Pappus–Guldinus revolution rule (VII p. 682) and Book VIII mechanics (VIII p. 1030).",
+    "hultsch_loci": "II p. 682; III pp. 1030–1048"
+  },
+  "baroulkos": {
+    "headword": "baroulkos (βαρουλκός)",
+    "translation": "weight-hauler (geared winch)",
+    "term": "baroulkos",
+    "greek": "βαρουλκός",
+    "latin": "barulcus",
+    "english": "Baroulkos (Hero's geared weight-hauler)",
+    "definition": "Hero of Alexandria's compound reduction gear-train (τύμπανα ὀδοντωτά) coupled with an endless screw (κοχλίας), presented in Synagoge VIII to move a given great weight (1,000 talents) by a small given force (5 talents).",
+    "hultsch_loci": "III pp. 1060–1068, 1104–1115"
+  },
+  "heni-diastemati": {
+    "headword": "heni diastemati (ἑνὶ διαστήματι)",
+    "translation": "with a single compass opening ('rusty compass')",
+    "term": "heni diastemati",
+    "greek": "τὰ ἑνὶ διαστήματι γραφόμενα",
+    "latin": "uno circini intervallo descripta",
+    "english": "single-opening ('rusty') compass constructions",
+    "definition": "Instrumental geometric problems solved in Synagoge Book VIII (p. 1074 ff.) using a fixed compass aperture that may neither expand nor contract, inaugurating the fixed-compass tradition later celebrated by Abu'l-Wafa, Tartaglia, Cardano, and Poncelet–Steiner.",
+    "hultsch_loci": "III pp. 1074–1078"
+  }
+}

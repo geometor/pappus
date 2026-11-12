@@ -1,0 +1,92 @@
+{
+  "work": {
+    "author": "Pappus of Alexandria",
+    "greek_author": "Πάππος ὁ Ἀλεξανδρεύς",
+    "dates": "fl. c. 320–340 CE",
+    "latin_title": "Mathematicae Collectiones (Pappi Alexandrini Collectionis quae supersunt)",
+    "greek_title": "Συναγωγή",
+    "english_title": "Synagoge (Mathematical Collection, Books II–VIII)",
+    "cts_urn": "urn:cts:greekLit:tlg2032.tlg001",
+    "composed": "c. 340 CE (Alexandria)"
+  },
+  "copyright_compliance": {
+    "policy": "100% Public-Domain Primary Sources & Original GEOMETOR Translations",
+    "english_translation_provenance": "Fresh original English translations authored directly by GEOMETOR from Friedrich Hultsch's 1876–1878 critical Greek text (verified page-by-page against 300 DPI archival scans) and Federico Commandino's 1588 Renaissance Latin edition, supplemented only where explicitly noted by Sir Thomas Little Heath's public-domain 1921 History of Greek Mathematics (Vol. II, Ch. XIX, pp. 355–439). Zero copyrighted modern translations (Jones 1986, Sefrin-Weis 2010, Cuomo 2000, Ver Eecke 1933) were consulted or reproduced."
+  },
+  "sources": [
+    {
+      "id": "hultsch-1876-vol1-grc-lat",
+      "language": "el",
+      "role": "Critical Greek text and Latin translation of Synagoge Books II, III, IV, and V (Hultsch pp. 2–473)",
+      "title": "Pappi Alexandrini Collectionis quae supersunt, e libris manu scriptis edidit Latina interpretatione et commentariis instruxit Fridericus Hultsch — Volumen I (Insunt Librorum II, III, IV, V reliquiae)",
+      "editor": "Friedrich Hultsch",
+      "publisher": "Apud Weidmannos",
+      "place": "Berlin",
+      "year": 1876,
+      "hultsch_pages": "2–473",
+      "cts_urn": "urn:cts:greekLit:tlg2032.tlg001.1st1K-grc1",
+      "archive_item_url": "https://archive.org/details/pappialexandrini01pappuoft",
+      "license": "Public Domain (published 1876)"
+    },
+    {
+      "id": "hultsch-1877-vol2-grc-lat",
+      "language": "el",
+      "role": "Critical Greek text and Latin translation of Synagoge Books VI and VII (Treasury of Analysis, Hultsch pp. 474–1016)",
+      "title": "Pappi Alexandrini Collectionis quae supersunt — Volumen II (Insunt Librorum VI et VII reliquiae)",
+      "editor": "Friedrich Hultsch",
+      "publisher": "Apud Weidmannos",
+      "place": "Berlin",
+      "year": 1877,
+      "hultsch_pages": "474–1016",
+      "archive_item_url": "https://archive.org/details/pappialexandrini02pappuoft",
+      "license": "Public Domain (published 1877)"
+    },
+    {
+      "id": "hultsch-1878-vol3-grc-lat",
+      "language": "el",
+      "role": "Critical Greek text and Latin translation of Synagoge Book VIII (Mechanics & Single-Compass Constructions, Hultsch pp. 1022–1115) with Index Graecitatis",
+      "title": "Pappi Alexandrini Collectionis quae supersunt — Volumen III, Tomus I (Insunt Libri VIII reliquiae et supplementa) & Tomus II (Index Graecitatis)",
+      "editor": "Friedrich Hultsch",
+      "publisher": "Apud Weidmannos",
+      "place": "Berlin",
+      "year": 1878,
+      "hultsch_pages": "1022–1289",
+      "archive_item_url": "https://archive.org/details/pappialexandrini03pappuoft",
+      "license": "Public Domain (published 1878)"
+    },
+    {
+      "id": "first1kgreek-tlg2032-tlg001",
+      "language": "el",
+      "role": "Open Greek and Latin First1KGreek TEI XML digitization of Hultsch Volume I (cross-checked and corrected against 300 DPI Weidmann page scans)",
+      "title": "OpenGreekAndLatin / First1KGreek — tlg2032.tlg001.1st1K-grc1.xml",
+      "editor": "Friedrich Hultsch (digitized by Open Greek and Latin Project)",
+      "year": 1876,
+      "cts_urn": "urn:cts:greekLit:tlg2032.tlg001.1st1K-grc1",
+      "provenance_url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/master/data/tlg2032/tlg001/tlg2032.tlg001.1st1K-grc1.xml",
+      "license": "CC BY-SA 4.0 / Public Domain underlying 1876 edition"
+    },
+    {
+      "id": "commandino-1588-lat",
+      "language": "la",
+      "role": "Editio princeps (Latin translation with geometric woodcuts) that transmitted Pappus's Collection to Descartes, Guldin, Desargues, Fermat, and Pascal",
+      "title": "Pappi Alexandrini Mathematicae Collectiones a Federico Commandino Urbinate in Latinum conversae et commentariis illustratae",
+      "translator": "Federico Commandino",
+      "publisher": "Apud Hieronymum Concordiam",
+      "place": "Pesaro (Pisauri)",
+      "year": 1588,
+      "license": "Public Domain (published 1588)"
+    },
+    {
+      "id": "heath-1921-hgm-vol2",
+      "language": "en",
+      "role": "Public-domain historical analysis and selected translations of Pappus's Synagoge Books II–VIII",
+      "title": "A History of Greek Mathematics, Volume II: From Aristarchus to Diophantus (Chapter XIX: Pappus of Alexandria, pp. 355–439)",
+      "author": "Sir Thomas Little Heath",
+      "publisher": "Clarendon Press",
+      "place": "Oxford",
+      "year": 1921,
+      "archive_item_url": "https://archive.org/details/historyofgreekma02heat",
+      "license": "Public Domain (published 1921)"
+    }
+  ]
+}

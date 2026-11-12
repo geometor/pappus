@@ -263,6 +263,10 @@ def build_gallery(output_dir: str | Path = "docsrc/_static/constructions") -> li
 def cmd_build(args: argparse.Namespace, console: Console) -> int:
     """Execute ``pappus build``."""
     written = build_gallery(args.output_dir)
+    if getattr(args, "synagoge", False):
+        from geometor.pappus.synagoge_demos import build_synagoge_gallery
+
+        written.extend(build_synagoge_gallery(args.output_dir))
     table = Table(title="Generated Interactive SVG Figures")
     table.add_column("#", justify="right", style="dim")
     table.add_column("Filename", style="cyan bold")
@@ -436,6 +440,34 @@ def build_parser() -> argparse.ArgumentParser:
         default="docsrc/_static/constructions",
         help="Destination folder for generated SVGs (default: docsrc/_static/constructions).",
     )
+    p_build.add_argument(
+        "--synagoge",
+        action="store_true",
+        help="Also generate the six Synagoge Books III–V & VIII SVG figures.",
+    )
+
+    p_syn = sub.add_parser(
+        "synagoge",
+        help="Inspect or render Synagoge Books III, IV, V & VIII constructions.",
+    )
+    p_syn.add_argument(
+        "-d",
+        "--demo",
+        choices=("all", "means", "area", "arbelos", "honeycomb"),
+        default="all",
+        help="Synagoge proposition group to inspect (default: all).",
+    )
+    p_syn.add_argument(
+        "--build",
+        action="store_true",
+        help="Render the six Synagoge interactive SVG figures to --output-dir.",
+    )
+    p_syn.add_argument(
+        "-o",
+        "--output-dir",
+        default="docsrc/_static/constructions",
+        help="Destination folder when --build is passed (default: docsrc/_static/constructions).",
+    )
 
     p_inspect = sub.add_parser("inspect", help="Inspect exact coordinates, Pappus lines, and Steiner points.")
     p_inspect.add_argument(
@@ -495,6 +527,110 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
+def cmd_synagoge(args: argparse.Namespace, console: Console) -> int:
+    """Execute ``pappus synagoge``."""
+    from geometor.pappus.projective import PHI
+    from geometor.pappus.synagoge_demos import (
+        build_synagoge_gallery,
+        construct_pappus_arbelos_chain,
+        construct_pappus_area_theorem,
+        construct_three_means,
+        verify_arbelos_chain_symbolic,
+        verify_honeycomb_isoperimetry,
+        verify_pappus_area_symbolic,
+    )
+
+    if args.build:
+        written = build_synagoge_gallery(args.output_dir)
+        b_table = Table(title="Generated Synagoge Interactive SVG Figures")
+        b_table.add_column("#", justify="right", style="dim")
+        b_table.add_column("Filename", style="cyan bold")
+        b_table.add_column("Path", style="green")
+        for idx, path in enumerate(written, start=1):
+            b_table.add_row(str(idx), path.name, str(path))
+        console.print(b_table)
+
+    demo_sel: str = args.demo
+    if demo_sel in ("all", "means"):
+        m_rat = construct_three_means(9, 16)
+        m_phi = construct_three_means(1, PHI**2)
+        m_table = Table(title="Synagoge III.5–16 — Three Classical Means in One Semicircle")
+        m_table.add_column("Pair (a, b)", style="cyan bold")
+        m_table.add_column("Arithmetic A", style="yellow")
+        m_table.add_column("Geometric G", style="green")
+        m_table.add_column("Harmonic H", style="magenta")
+        m_table.add_column("(A, C; D, T)", style="white")
+        for label, res in (("(9, 16)", m_rat), ("(1, phi^2)", m_phi)):
+            m_table.add_row(
+                label,
+                str(res.arithmetic_mean),
+                str(res.geometric_mean),
+                str(res.harmonic_mean),
+                str(res.harmonic_cross_ratio),
+            )
+        console.print(m_table)
+
+    if demo_sel in ("all", "area"):
+        a_scal = construct_pappus_area_theorem(preset="scalene")
+        a_pyth = construct_pappus_area_theorem(preset="pythagoras")
+        sym_res = verify_pappus_area_symbolic()
+        a_table = Table(title="Synagoge IV.1 — Pappus's Area Theorem")
+        a_table.add_column("Preset", style="cyan bold")
+        a_table.add_column("Area(ABDE)", style="yellow")
+        a_table.add_column("Area(ACFG)", style="yellow")
+        a_table.add_column("Area(BCML)", style="green bold")
+        a_table.add_column("Residual", style="white")
+        for res in (a_scal, a_pyth):
+            a_table.add_row(
+                res.preset,
+                str(res.area_ab),
+                str(res.area_ac),
+                str(res.area_bc),
+                str(res.area_residual),
+            )
+        a_table.add_row("Universal Z[x,y,u,v]", "det(A-B,u)", "det(v,A-C)", "det(B-C,A-H)", str(sym_res))
+        console.print(a_table)
+
+    if demo_sel in ("all", "arbelos"):
+        arb = construct_pappus_arbelos_chain(2, 1, 4)
+        arb_sym = verify_arbelos_chain_symbolic()
+        c_table = Table(title="Synagoge IV.14–18 — Infinite Arbelos Circle Chain (r1=2, r2=1)")
+        c_table.add_column("n", justify="right", style="cyan bold")
+        c_table.add_column("Center K_n", style="white")
+        c_table.add_column("Diameter d_n = 2r_n", style="yellow")
+        c_table.add_column("Height y_n", style="green")
+        c_table.add_column("y_n / d_n", justify="right", style="magenta bold")
+        for item in arb.chain:
+            c_table.add_row(
+                str(item.index),
+                f"({item.center.x}, {item.center.y})",
+                str(item.diameter),
+                str(item.height),
+                str(item.height_over_diameter),
+            )
+        console.print(c_table)
+        console.print(f"[dim]Symbolic residuals over Q(r1, r2, n): {arb_sym}[/dim]")
+
+    if demo_sel in ("all", "honeycomb"):
+        hon = verify_honeycomb_isoperimetry(12)
+        h_table = Table(title="Synagoge V.1 — Sagacity of Bees & Equal-Perimeter Tiling Polygons (P = 12)")
+        h_table.add_column("n-gon", style="cyan bold")
+        h_table.add_column("Angle (deg)", justify="right", style="white")
+        h_table.add_column("Valence k", justify="right", style="yellow")
+        h_table.add_column("Side s_n", justify="right", style="white")
+        h_table.add_column("Exact Area", style="green bold")
+        for n_gon in hon.tiling_polygons:
+            h_table.add_row(
+                f"n = {n_gon}",
+                str(hon.interior_angles_deg[n_gon]),
+                str(hon.polygons_per_vertex[n_gon]),
+                str(hon.side_lengths[n_gon]),
+                str(hon.areas[n_gon]),
+            )
+        console.print(h_table)
+    return 0
+
+
 def main(argv: Sequence[str] | None = None) -> int:
     """Entry point for the ``pappus`` CLI."""
     parser = build_parser()
@@ -503,6 +639,8 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     if args.command == "build":
         return cmd_build(args, console)
+    if args.command == "synagoge":
+        return cmd_synagoge(args, console)
     if args.command == "harmonics":
         return cmd_harmonics(args, console)
     if args.command == "inspect":

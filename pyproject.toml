@@ -4,7 +4,7 @@ dynamic = ["version"]
 authors = [
   { name = "geometor", email = "github@geometor.com" },
 ]
-description = "Symbolic projective geometry investigations into Pappus's Hexagon Theorem, Steiner's six-line configuration, cross-ratios, and harmonic ranges."
+description = "Pappus of Alexandria's Synagoge (Mathematical Collection) Multi-Track Book Codex and exact symbolic constructions in SymPy."
 readme = "README.rst"
 requires-python = ">=3.13"
 classifiers = [
@@ -34,7 +34,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["geometor"]
+include = ["geometor*"]
 namespaces = true
 
 [tool.setuptools.dynamic]

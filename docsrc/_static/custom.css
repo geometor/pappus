@@ -196,3 +196,24 @@ svg.euclid-graphic .geom-point.steiner-point:not(.is-highlighted) {
 svg.euclid-graphic .geom-point.harmonic-point:not(.is-highlighted) {
   fill: var(--pappus-harmonic);
 }
+
+/* Polytonic Greek typography for Hultsch (1876–1878) Synagoge companion tracks */
+.greek-text,
+[lang="el"],
+[lang="grc"] {
+  font-family:
+    "Gentium Plus",
+    "GFS Didot",
+    "GFS Porson",
+    "New Athena Unicode",
+    "Noto Serif",
+    "DejaVu Serif",
+    Georgia,
+    serif;
+  line-height: 1.82;
+  letter-spacing: 0.01em;
+}
+
+.greek-text p {
+  margin-bottom: 1.15rem;
+}

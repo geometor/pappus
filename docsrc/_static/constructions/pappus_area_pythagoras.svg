@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 520" data-graphic-id="g2" role="img" aria-label="Synagoge IV.1 Specialization — Reduction of Pappus&#x27;s Area Theorem to Euclid I.47">
+  <title>Synagoge IV.1 Specialization — Reduction of Pappus&#x27;s Area Theorem to Euclid I.47</title>
+  <style>
+.euclid-graphic {
+    --svg-bg: #fafaf9;
+    --ink: #1c1917;
+    --label-halo: rgba(250, 250, 249, 0.92);
+    --carrier: #475569;
+    --conic: #0284c7;
+    --cross: #0e7490;
+    --quad: #4338ca;
+    --pappus-even: #d97706;
+    --pappus-odd: #db2777;
+    --steiner: #7c3aed;
+    --harmonic: #059669;
+    --golden: #b45309;
+    --pt-given: #0f172a;
+    --pt-a: #0369a1;
+    --pt-b: #0f766e;
+    --pt-meet-even: #d97706;
+    --pt-meet-odd: #db2777;
+    --pt-steiner: #7c3aed;
+    --pt-harmonic: #059669;
+    --tri-square: #d97706;
+    --tri-circle: #0284c7;
+    --tri-diamond: #db2777;
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic {
+      --svg-bg: #141417;
+      --ink: #f4f4f5;
+      --label-halo: rgba(20, 20, 23, 0.92);
+      --carrier: #94a3b8;
+      --conic: #38bdf8;
+      --cross: #38bdf8;
+      --quad: #818cf8;
+      --pappus-even: #fbbf24;
+      --pappus-odd: #f472b6;
+      --steiner: #c084fc;
+      --harmonic: #34d399;
+      --golden: #facc15;
+      --pt-given: #e2e8f0;
+      --pt-a: #38bdf8;
+      --pt-b: #2dd4bf;
+      --pt-meet-even: #fbbf24;
+      --pt-meet-odd: #f472b6;
+      --pt-steiner: #c084fc;
+      --pt-harmonic: #34d399;
+      --tri-square: #fbbf24;
+      --tri-circle: #38bdf8;
+      --tri-diamond: #f472b6;
+    }
+  }
+  .euclid-graphic .svg-bg { fill: var(--svg-bg); }
+  .euclid-graphic .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88; }
+  .euclid-graphic .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round; }
+  .euclid-graphic .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92; }
+  .euclid-graphic .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58; }
+  .euclid-graphic .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78; }
+  .euclid-graphic .diagonal-line { stroke-dasharray: 5 3.5; }
+  .euclid-graphic .pappus-line { stroke-width: 2.7; opacity: 0.96; }
+  .euclid-graphic .pappus-even { stroke: var(--pappus-even); }
+  .euclid-graphic .pappus-odd { stroke: var(--pappus-odd); }
+  .euclid-graphic .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4; }
+  .euclid-graphic .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5; }
+  .euclid-graphic .geom-segment { fill: none; stroke: var(--carrier); stroke-width: 2.3; stroke-linecap: round; }
+  .euclid-graphic .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85; }
+  .euclid-graphic .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.85; }
+  .euclid-graphic .geom-segment.arithmetic-segment { fill: none; stroke: var(--pappus-even); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92; }
+  .euclid-graphic .geom-segment.geometric-segment { fill: none; stroke: var(--conic); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92; }
+  .euclid-graphic .geom-segment.vector-segment { fill: none; stroke: var(--steiner); stroke-width: 2.4; stroke-dasharray: 6 3.5; stroke-linecap: round; opacity: 0.88; }
+  .euclid-graphic .geom-segment.altitude-segment { fill: none; stroke: var(--pappus-odd); stroke-width: 2.2; stroke-dasharray: 4.5 3; stroke-linecap: round; opacity: 0.85; }
+  .euclid-graphic .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round; }
+  .euclid-graphic .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5; }
+  .euclid-graphic .pt-a { fill: var(--pt-a); }
+  .euclid-graphic .pt-b { fill: var(--pt-b); }
+  .euclid-graphic .meet-point.pappus-even { fill: var(--pt-meet-even); }
+  .euclid-graphic .meet-point.pappus-odd { fill: var(--pt-meet-odd); }
+  .euclid-graphic .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0; }
+  .euclid-graphic .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8; }
+  .euclid-graphic .aux-point { opacity: 0.78; }
+  .euclid-graphic .geom-label {
+    fill: var(--ink);
+    font-size: 13.5px;
+    font-weight: 600;
+    paint-order: stroke fill;
+    stroke: var(--label-halo);
+    stroke-width: 3.6px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .geom-label-sub { font-size: 10px; font-weight: 600; }
+  </style>
+  <rect class="svg-bg" x="0" y="0" width="680" height="520" rx="6" fill="none" />
+  <g id="elements">
+    <g id="graphics">
+      <polygon class="geom-polygon hexagon-poly" points="320.95,227.34 271.96,292.66 408.04,292.66" data-ref="&lt; A B C &gt;" fill="none" />
+      <polygon class="geom-polygon tri-circle" points="320.95,227.34 271.96,292.66 206.63,243.67 255.62,178.35" data-ref="&lt; A B D E &gt;" fill="none" />
+      <polygon class="geom-polygon tri-diamond" points="320.95,227.34 408.04,292.66 473.37,205.56 386.27,140.24" data-ref="&lt; A C F G &gt;" fill="none" />
+      <polygon class="geom-polygon tri-square" points="271.96,292.66 408.04,292.66 408.04,428.75 271.96,428.75" data-ref="&lt; B C M L &gt;" fill="none" />
+      <path class="geom-line cross-line diagonal-line" d="M 14 500.51 L 196.44 257.26 L 378.89 14" data-ref="[ D E ]" data-aliases="[ D H ] | [ E H ]" fill="none"><title>[ D E ]: -12*x/5 + 9*y/5 - 9 = 0</title></path>
+      <path class="geom-line cross-line diagonal-line" d="M 666 350.04 L 441.97 182.02 L 217.95 14" data-ref="[ F G ]" data-aliases="[ F H ] | [ G H ]" fill="none"><title>[ F G ]: -12*x/5 - 16*y/5 + 28 = 0</title></path>
+      <path class="geom-line steiner-line" d="M 320.95 506 L 320.95 260 L 320.95 14" data-ref="[ H A ]" data-aliases="[ A H ] | [ A J ] | [ A N ] | [ H J ] | [ H N ] | [ J N ]" fill="none"><title>[ H A ]: x - 9/5 = 0</title></path>
+      <path class="geom-segment arithmetic-segment" d="M 271.96 292.66 L 271.96 360.71 L 271.96 428.75" data-ref="[ B L ]" data-aliases="[ L B ] | / B L /" fill="none" />
+      <path class="geom-segment arithmetic-segment" d="M 408.04 292.66 L 408.04 360.71 L 408.04 428.75" data-ref="[ C M ]" data-aliases="[ M C ] | / C M /" fill="none" />
+      <path class="geom-segment harmonic-segment" d="M 320.95 292.66 L 320.95 360.71 L 320.95 428.75" data-ref="[ J N ]" data-aliases="[ N J ] | / J N /" fill="none" />
+    </g>
+    <g id="highlights"></g>
+    <g id="points">
+      <circle class="geom-point pt-b" cx="206.63" cy="243.67" r="3.8" data-ref="D" data-latex-x="- \frac{12}{5}" data-latex-y="\frac{9}{5}"><title>D = (-12/5, 9/5)</title></circle>
+      <circle class="geom-point pt-b" cx="255.62" cy="178.35" r="3.8" data-ref="E" data-latex-x="- \frac{3}{5}" data-latex-y="\frac{21}{5}"><title>E = (-3/5, 21/5)</title></circle>
+      <circle class="geom-point pt-b" cx="473.37" cy="205.56" r="3.8" data-ref="F" data-latex-x="\frac{37}{5}" data-latex-y="\frac{16}{5}"><title>F = (37/5, 16/5)</title></circle>
+      <circle class="geom-point pt-b" cx="386.27" cy="140.24" r="3.8" data-ref="G" data-latex-x="\frac{21}{5}" data-latex-y="\frac{28}{5}"><title>G = (21/5, 28/5)</title></circle>
+      <circle class="geom-point-halo" cx="320.95" cy="292.66" r="9.4" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+      <circle class="geom-point harmonic-point" cx="320.95" cy="292.66" r="5.2" data-ref="J" data-latex-x="\frac{9}{5}" data-latex-y="0"><title>J = (9/5, 0)</title></circle>
+      <circle class="geom-point aux-point" cx="320.95" cy="428.75" r="3.1" data-ref="N" data-latex-x="\frac{9}{5}" data-latex-y="-5"><title>N = (9/5, -5)</title></circle>
+      <circle class="geom-point-halo" cx="320.95" cy="227.34" r="8" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+      <circle class="geom-point given-point apex-point" cx="320.95" cy="227.34" r="3.8" data-ref="A" data-latex-x="\frac{9}{5}" data-latex-y="\frac{12}{5}"><title>A = (9/5, 12/5)</title></circle>
+      <circle class="geom-point given-point pt-a" cx="271.96" cy="292.66" r="4.2" data-ref="B" data-latex-x="0" data-latex-y="0"><title>B = (0, 0)</title></circle>
+      <circle class="geom-point given-point pt-a" cx="408.04" cy="292.66" r="4.2" data-ref="C" data-latex-x="5" data-latex-y="0"><title>C = (5, 0)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="271.96" cy="428.75" r="4.7" data-ref="L" data-latex-x="0" data-latex-y="-5"><title>L = (0, -5)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="408.04" cy="428.75" r="4.7" data-ref="M" data-latex-x="5" data-latex-y="-5"><title>M = (5, -5)</title></circle>
+      <circle class="geom-point-halo" cx="320.95" cy="91.25" r="10.2" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+      <circle class="geom-point steiner-point" cx="320.95" cy="91.25" r="6" data-ref="H" data-latex-x="\frac{9}{5}" data-latex-y="\frac{37}{5}"><title>H = (9/5, 37/5)</title></circle>
+    </g>
+    <g id="labels">
+      <text class="geom-label" x="188.13" y="233.94" data-ref="D">D</text>
+      <text class="geom-label" x="237.12" y="168.62" data-ref="E">E</text>
+      <text class="geom-label" x="467.52" y="191.52" data-ref="F">F</text>
+      <text class="geom-label" x="380.42" y="126.2" data-ref="G">G</text>
+      <text class="geom-label" x="328.64" y="281.86" data-ref="J">J</text>
+      <text class="geom-label" x="327.3" y="419.56" data-ref="N">N</text>
+      <text class="geom-label" x="327.75" y="217.61" data-ref="A">A</text>
+      <text class="geom-label" x="266.11" y="278.22" data-ref="B">B</text>
+      <text class="geom-label" x="402.19" y="278.22" data-ref="C">C</text>
+      <text class="geom-label" x="266.11" y="453.21" data-ref="L">L</text>
+      <text class="geom-label" x="402.19" y="453.21" data-ref="M">M</text>
+      <text class="geom-label" x="337.15" y="96.01" data-ref="H">H</text>
+    </g>
+  </g>
+</svg>
