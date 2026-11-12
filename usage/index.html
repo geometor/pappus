@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
   <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=66998e95" />
   <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
-  <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=911ccb65" />
+  <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=f442dd77" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
@@ -37,6 +37,9 @@
       <input type="checkbox" id="nav-Header-toggle" >
       <label for="nav-Header-toggle" >Header</label>
       <ul>
+        <li>
+          <a href="../synagoge/index.html"  >Synagoge (Μαθηματικὴ Συναγωγή) — Multi-Track Book Codex</a>
+        </li>
         <li>
           <a href="../mission/index.html"  >Mission</a>
         </li>
@@ -81,17 +84,51 @@
         <h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
         <p>Inside the <code class="docutils literal notranslate"><span class="pre">geometor</span></code> <code class="docutils literal notranslate"><span class="pre">uv</span></code> workspace (Python <code class="docutils literal notranslate"><span class="pre">&gt;=3.13</span></code>):</p>
         <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>sync
-        uv<span class="w"> </span>run<span class="w"> </span>pytest
+        uv<span class="w"> </span>run<span class="w"> </span>--no-sync<span class="w"> </span>pytest
         </pre></div>
         </div>
         </section>
         <section class="level-2" id="quickstart-python-api">
         <h2>Quickstart Python API<a class="headerlink" href="#quickstart-python-api" title="Link to this heading">¶</a></h2>
+        <section class="level-3" id="synagoge-classical-constructions-books-iii-iv-v-viii">
+        <h3><em>Synagoge</em> Classical Constructions (Books III, IV, V &amp; VIII)<a class="headerlink" href="#synagoge-classical-constructions-books-iii-iv-v-viii" title="Link to this heading">¶</a></h3>
+        <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">geometor.pappus</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+            <span class="n">PHI</span><span class="p">,</span>
+            <span class="n">construct_pappus_arbelos_chain</span><span class="p">,</span>
+            <span class="n">construct_pappus_area_theorem</span><span class="p">,</span>
+            <span class="n">construct_three_means</span><span class="p">,</span>
+            <span class="n">verify_arbelos_chain_symbolic</span><span class="p">,</span>
+            <span class="n">verify_honeycomb_isoperimetry</span><span class="p">,</span>
+            <span class="n">verify_pappus_area_symbolic</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Book III: Arithmetic, Geometric, and Harmonic Means in one semicircle</span>
+        <span class="n">means</span> <span class="o">=</span> <span class="n">construct_three_means</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">means</span><span class="o">.</span><span class="n">arithmetic_mean</span><span class="p">,</span> <span class="n">means</span><span class="o">.</span><span class="n">geometric_mean</span><span class="p">,</span> <span class="n">means</span><span class="o">.</span><span class="n">harmonic_mean</span><span class="p">)</span>  <span class="c1"># 25/2, 12, 288/25</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Harmonic tangent CR (A, C; D, T):"</span><span class="p">,</span> <span class="n">means</span><span class="o">.</span><span class="n">harmonic_cross_ratio</span><span class="p">)</span>   <span class="c1"># -1</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Golden semicircle G on (1, phi^2):"</span><span class="p">,</span> <span class="n">construct_three_means</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">PHI</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">geometric_mean</span><span class="p">)</span>
+
+        <span class="c1"># Book IV.1: Pappus's Parallelogram Area Theorem (13 + 15 = 28)</span>
+        <span class="n">area</span> <span class="o">=</span> <span class="n">construct_pappus_area_theorem</span><span class="p">(</span><span class="n">preset</span><span class="o">=</span><span class="s2">"scalene"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">area</span><span class="o">.</span><span class="n">area_ab</span><span class="p">,</span> <span class="n">area</span><span class="o">.</span><span class="n">area_ac</span><span class="p">,</span> <span class="n">area</span><span class="o">.</span><span class="n">area_bc</span><span class="p">,</span> <span class="n">verify_pappus_area_symbolic</span><span class="p">())</span>
+
+        <span class="c1"># Book IV.14-18: Infinite Arbelos tangent circle chain (y_n = n * d_n)</span>
+        <span class="n">arb</span> <span class="o">=</span> <span class="n">construct_pappus_arbelos_chain</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">([(</span><span class="n">c</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">c</span><span class="o">.</span><span class="n">height</span><span class="p">,</span> <span class="n">c</span><span class="o">.</span><span class="n">diameter</span><span class="p">,</span> <span class="n">c</span><span class="o">.</span><span class="n">height_over_diameter</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">arb</span><span class="o">.</span><span class="n">chain</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Symbolic arbelos residuals:"</span><span class="p">,</span> <span class="n">verify_arbelos_chain_symbolic</span><span class="p">())</span>
+
+        <span class="c1"># Book V.1 &amp; Book VIII.23: Honeycomb isoperimetry &amp; 7-hexagon circumradius R = s_6 * sqrt(7)</span>
+        <span class="n">hon</span> <span class="o">=</span> <span class="n">verify_honeycomb_isoperimetry</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="n">build_model</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Tiling n-gons:"</span><span class="p">,</span> <span class="n">hon</span><span class="o">.</span><span class="n">tiling_polygons</span><span class="p">,</span> <span class="s2">"Areas:"</span><span class="p">,</span> <span class="n">hon</span><span class="o">.</span><span class="n">areas</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"7-hexagon radius:"</span><span class="p">,</span> <span class="n">hon</span><span class="o">.</span><span class="n">circumradius_seven_hexagons</span><span class="p">)</span>  <span class="c1"># 2*sqrt(7)</span>
+        </pre></div>
+        </div>
+        </section>
         <section class="level-3" id="constructing-pappus-s-hexagon-synagoge-vii-139-universal-proof">
         <h3>Constructing Pappus’s Hexagon (<em>Synagoge</em> VII.139) &amp; Universal Proof<a class="headerlink" href="#constructing-pappus-s-hexagon-synagoge-vii-139-universal-proof" title="Link to this heading">¶</a></h3>
         <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">geometor.pappus</span><span class="w"> </span><span class="kn">import</span> <span class="n">construct_pappus_hexagon</span><span class="p">,</span> <span class="n">verify_pappus_symbolic</span>
 
-        <span class="n">res</span> <span class="o">=</span> <span class="n">construct_pappus_hexagon</span><span class="p">(</span><span class="n">preset</span><span class="o">=</span><span class="s2">"hexagon"</span><span class="p">,</span> <span class="n">include_triangles</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="n">construct_pappus_hexagon</span><span class="p">(</span><span class="n">preset</span><span class="o">=</span><span class="s2">"hexagon"</span><span class="p">,</span> <span class="n">include_type_triangles</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Meets:"</span><span class="p">,</span> <span class="p">[(</span><span class="n">m</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">res</span><span class="o">.</span><span class="n">finite_meets</span><span class="p">])</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Pappus line:"</span><span class="p">,</span> <span class="n">res</span><span class="o">.</span><span class="n">pappus_line</span><span class="o">.</span><span class="n">equation</span><span class="p">(),</span> <span class="s2">"= 0"</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Symbolic 8-variable determinant:"</span><span class="p">,</span> <span class="n">verify_pappus_symbolic</span><span class="p">())</span>  <span class="c1"># 0</span>
@@ -229,22 +266,26 @@
         <section class="level-2" id="command-line-interface-pappus">
         <h2>Command-Line Interface (<code class="docutils literal notranslate"><span class="pre">pappus</span></code>)<a class="headerlink" href="#command-line-interface-pappus" title="Link to this heading">¶</a></h2>
         <p><code class="docutils literal notranslate"><span class="pre">geometor-pappus</span></code> installs the <code class="docutils literal notranslate"><span class="pre">pappus</span></code> console entry point with Rich tabular output:</p>
-        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build all 18 interactive SVG figures into docsrc/_static/constructions/</span>
-        uv<span class="w"> </span>run<span class="w"> </span>pappus<span class="w"> </span>build
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build all 24 interactive SVG figures (18 projective + 6 Synagoge Books III-V &amp; VIII)</span>
+        pappus<span class="w"> </span>build<span class="w"> </span>--synagoge
+
+        <span class="c1"># Inspect Synagoge Books III, IV, V &amp; VIII exact tables (or filter: means, area, arbelos, honeycomb)</span>
+        pappus<span class="w"> </span>synagoge
+        pappus<span class="w"> </span>synagoge<span class="w"> </span>--demo<span class="w"> </span>arbelos
 
         <span class="c1"># Inspect single-hexagon meets, quadrances, spreads, and 8-symbol determinant</span>
-        uv<span class="w"> </span>run<span class="w"> </span>pappus<span class="w"> </span>inspect<span class="w"> </span>--preset<span class="w"> </span>hexagon
+        pappus<span class="w"> </span>inspect<span class="w"> </span>--preset<span class="w"> </span>hexagon
 
         <span class="c1"># Inspect all 6 S_3 Pappus lines and Steiner Star points (S+, S-)</span>
-        uv<span class="w"> </span>run<span class="w"> </span>pappus<span class="w"> </span>inspect<span class="w"> </span>--preset<span class="w"> </span>steiner<span class="w"> </span>--all-permutations
+        pappus<span class="w"> </span>inspect<span class="w"> </span>--preset<span class="w"> </span>steiner<span class="w"> </span>--all-permutations
 
         <span class="c1"># Inspect Pascal's Hexagrammum Mysticum, bi-triangle Steiner pair, and full 60-line web</span>
-        uv<span class="w"> </span>run<span class="w"> </span>pappus<span class="w"> </span>pascal<span class="w"> </span>--preset<span class="w"> </span>hexagrammum<span class="w"> </span>--steiner-family<span class="w"> </span>--full-60
-        uv<span class="w"> </span>run<span class="w"> </span>pappus<span class="w"> </span>pascal<span class="w"> </span>--preset<span class="w"> </span>golden_conic
+        pappus<span class="w"> </span>pascal<span class="w"> </span>--preset<span class="w"> </span>hexagrammum<span class="w"> </span>--steiner-family<span class="w"> </span>--full-60
+        pappus<span class="w"> </span>pascal<span class="w"> </span>--preset<span class="w"> </span>golden_conic
 
         <span class="c1"># Scan a configuration for emergent harmonic tetrads and golden sections</span>
-        uv<span class="w"> </span>run<span class="w"> </span>pappus<span class="w"> </span>harmonics<span class="w"> </span>--preset<span class="w"> </span>harmonic<span class="w"> </span>--discover-all
-        uv<span class="w"> </span>run<span class="w"> </span>pappus<span class="w"> </span>harmonics<span class="w"> </span>--preset<span class="w"> </span>golden
+        pappus<span class="w"> </span>harmonics<span class="w"> </span>--preset<span class="w"> </span>harmonic<span class="w"> </span>--discover-all
+        pappus<span class="w"> </span>harmonics<span class="w"> </span>--preset<span class="w"> </span>golden
         </pre></div>
         </div>
         </section>
@@ -296,6 +337,7 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
+        <li><a href="../types/apparatus.html">apparatus</a></li>
         <li><a href="../types/log.html">log</a></li>
         <li><a href="../types/theorem.html">theorem</a></li>
       </ul>
@@ -313,14 +355,14 @@
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright 2026, GEOMETOR.
+        &copy; Copyright c. 340 CE (Hultsch 1876–1878 / Commandino 1588) • Original English Translation & Exact Symbolic Edition GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../_static/jquery.js?v=5d32c60e"></script>
   <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../_static/documentation_options.js?v=938c9ccc"></script>
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>

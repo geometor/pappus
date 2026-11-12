@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
   <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=66998e95" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
-  <link rel="stylesheet" type="text/css" href="_static/custom.css?v=911ccb65" />
+  <link rel="stylesheet" type="text/css" href="_static/custom.css?v=f442dd77" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
@@ -37,6 +37,9 @@
       <input type="checkbox" id="nav-Header-toggle" >
       <label for="nav-Header-toggle" >Header</label>
       <ul>
+        <li>
+          <a href="synagoge/index.html"  >Synagoge (Μαθηματικὴ Συναγωγή) — Multi-Track Book Codex</a>
+        </li>
         <li>
           <a href="mission/index.html"  >Mission</a>
         </li>
@@ -74,19 +77,21 @@
       <div class="content body book-content" role="main">
         <section class="level-1" id="pappus">
         <h1>pappus<a class="headerlink" href="#pappus" title="Link to this heading">¶</a></h1>
-        <p><strong>Symbolic projective geometry investigations into Pappus of Alexandria’s Hexagon Theorem, Blaise Pascal’s Hexagrammum Mysticum, Steiner’s six-line configuration, cross-ratios, harmonic conjugates, and golden perspectivities.</strong></p>
-        <p>Around 340 CE in Alexandria, <strong>Pappus</strong> compiled Book VII (<em>On the Domain of Analysis</em>)
-        of his <em>Synagoge</em> (<em>Collection</em>)—preserving lemmas to the lost treatises of Euclid’s
-        <em>Porisms</em> and Apollonius. Hidden among those lemmas (Propositions 138 and 139) stands the
-        oldest and deepest incidence theorem of projective geometry: <strong>three collinear points on each
-        of two lines determine three opposite cross-join intersections that are themselves collinear</strong>,
-        established by straightedge incidence alone without a single circle or metric measurement.
-        Thirteen centuries later, <strong>Blaise Pascal</strong> (1640) generalized Pappus’s pair of lines to any
-        smooth conic section, unveiling the sixty-line <em>Hexagrammum Mysticum</em>.</p>
-        <p><code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code> models the Pappus–Pascal projective canon in <strong>100% exact symbolic algebra</strong>
-        using <a class="reference external" href="https://www.sympy.org/">SymPy</a>, <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>, and <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code>. Hover over
-        any highlighted symbol below—or use the <strong>Play / Step</strong> controls beneath the diagram—to trace
-        the construction interactively.</p>
+        <p><strong>Pappus of Alexandria’s *Synagoge* (*Μαθηματικὴ Συναγωγή*) Multi-Track Book Codex (Books III, IV, V, VII &amp; VIII) and exact symbolic projective geometry investigations into the Hexagon Theorem, Blaise Pascal’s *Hexagrammum Mysticum*, Steiner’s six-line configuration, cross-ratios, harmonic conjugates, and golden perspectivities.</strong></p>
+        <p>Around 340 CE in Alexandria, <strong>Pappus</strong> compiled his eight-book <em>Synagoge</em> (<em>Collection</em>)—gathering
+        three classical means inside a single semicircle (Book III), generalizing Euclid’s Pythagorean area
+        theorem to arbitrary parallelograms and proving the <em>arbelos</em> circle-chain altitude law $y_n = n,d_n$
+        (Book IV), demonstrating the isoperimetric optimality of the bees’ hexagonal honeycomb (Book V),
+        synthesizing Alexandrian mechanics and Hero’s <em>Baroulkos</em> (Book VIII), and preserving Book VII’s
+        <em>Treasury of Analysis</em> (<em>Τόπος ἀναλυόμενος</em>). Hidden among Book VII’s lemmas to Euclid’s <em>Porisms</em>
+        (Propositions 138 and 139) stands the oldest incidence theorem of projective geometry: <strong>three
+        collinear points on each of two lines determine three opposite cross-join intersections that are
+        themselves collinear</strong>, generalized thirteen centuries later by <strong>Blaise Pascal</strong> (1640) to the
+        sixty-line <em>Hexagrammum Mysticum</em> on any smooth conic.</p>
+        <p><code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code> unites a <strong>four-track Greek/English Book Codex</strong> (<a class="reference internal" href="synagoge/index.html"><span class="doc">Synagoge (Μαθηματικὴ Συναγωγή) — Multi-Track Book Codex</span></a>) with
+        <strong>100% exact symbolic constructions</strong> in <a class="reference external" href="https://www.sympy.org/">SymPy</a>, <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>, and
+        <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code>. Hover over any highlighted symbol below—or use the <strong>Play / Step</strong> controls
+        beneath the diagram—to trace the construction interactively.</p>
         <figure class="photon-picture photon-svg">
             <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 440" data-graphic-id="g1" role="img" aria-label="Pappus&#x27;s Hexagon Theorem (Synagoge VII.139)">
           <title>Pappus&#x27;s Hexagon Theorem (Synagoge VII.139)</title>
@@ -156,8 +161,50 @@
         <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Join <span class="geom-ref" data-ref="g1:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g1:M20" title="M20">M<sub>20</sub></span>, and <span class="geom-ref" data-ref="g1:M12" title="M12">M<sub>12</sub></span>: all three
         points satisfy the exact linear equation $-7x + 38y = 40$, proving collinearity along
         the <strong>Pappus line</strong> <span class="geom-ref" data-ref="g1:[ M01 M12 ]" title="[ M01 M12 ]">M<sub>01</sub>M<sub>12</sub></span>.</div>
-        <section class="level-2" id="theorems-explorations">
-        <h2>Theorems &amp; Explorations<a class="headerlink" href="#theorems-explorations" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="synagoge-multi-track-book-codex">
+        <h2><em>Synagoge</em> Multi-Track Book Codex<a class="headerlink" href="#synagoge-multi-track-book-codex" title="Link to this heading">¶</a></h2>
+        <p>Explore <strong>Pappus of Alexandria’s</strong> <em>Synagoge</em> (<em>Μαθηματικὴ Συναγωγή</em>, c. 340 CE) in the
+        <a class="reference internal" href="synagoge/index.html"><span class="doc">five-unit Multi-Track Book Codex</span></a>—pairing <strong>Friedrich Hultsch’s</strong>
+        critical polytonic Greek text (<em>1876–1878</em>), <strong>original GEOMETOR English translations</strong>,
+        exact algebraic summaries, philological notes, and interactive <code class="docutils literal notranslate"><span class="pre">:g:</span></code> vector diagrams:</p>
+        <table class="docutils align-default">
+        <colgroup>
+        <col style="width: 20.0%" />
+        <col style="width: 52.0%" />
+        <col style="width: 28.0%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p>Codex Unit</p></th>
+        <th class="head"><p>Classical &amp; Projective Theorems</p></th>
+        <th class="head"><p>Entry Track</p></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-even"><td><p><strong>Book III</strong></p></td>
+        <td><p>Problem Hierarchy (<em>Plane / Solid / Linear</em>), Pandrosion &amp; <strong>Three Means in One Semicircle</strong> ($A \cdot H = G^2$)</p></td>
+        <td><p><a class="reference internal" href="synagoge/book-3-three-means/book-3-three-means-en.html"><span class="doc">Book III Codex</span></a></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>Book IV</strong></p></td>
+        <td><p><strong>Pappus’s Parallelogram Area Theorem</strong> &amp; <strong>Infinite Arbelos Circle Chain</strong> ($y_n = n\,d_n$)</p></td>
+        <td><p><a class="reference internal" href="synagoge/book-4-area-and-arbelos/book-4-area-and-arbelos-en.html"><span class="doc">Book IV Codex</span></a></p></td>
+        </tr>
+        <tr class="row-even"><td><p><strong>Book V</strong></p></td>
+        <td><p><strong>On the Sagacity of Bees</strong>, Planar Tessellations ($n \in \{3,4,6\}$) &amp; <strong>Honeycomb Isoperimetry</strong></p></td>
+        <td><p><a class="reference internal" href="synagoge/book-5-sagacity-of-bees/book-5-sagacity-of-bees-en.html"><span class="doc">Book V Codex</span></a></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>Book VII</strong></p></td>
+        <td><p><strong>Treasury of Analysis</strong>, <strong>Pappus–Guldinus Centroid Rule</strong>, <strong>Cross-Ratio</strong> (<em>VII.129</em>) &amp; <strong>Hexagon Theorem</strong> (<em>VII.138–139</em>)</p></td>
+        <td><p><a class="reference internal" href="synagoge/book-7-domain-of-analysis/book-7-domain-of-analysis-en.html"><span class="doc">Book VII Codex</span></a></p></td>
+        </tr>
+        <tr class="row-even"><td><p><strong>Book VIII</strong></p></td>
+        <td><p><strong>Architectonic Mechanics</strong>, Archimedes’s Lever Saying, Hero’s <em>Baroulkos</em> &amp; <strong>Seven Hexagons in a Circle</strong> ($R = s_6\sqrt{7}$)</p></td>
+        <td><p><a class="reference internal" href="synagoge/book-8-mechanics/book-8-mechanics-en.html"><span class="doc">Book VIII Codex</span></a></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="projective-theorems-explorations">
+        <h2>Projective Theorems &amp; Explorations<a class="headerlink" href="#projective-theorems-explorations" title="Link to this heading">¶</a></h2>
             <section class="collection ">
               <article class="excerpt">
                 <div class="content">
@@ -352,7 +399,7 @@
                     </a>
                   </figure>
                   <section>
-                    <h2><a href="theorems/six-permutations/index.html">The Six Permutations (PHOTONMATHPLACEHOLDER000564END) & The Two Star Points</a></h2>
+                    <h2><a href="theorems/six-permutations/index.html">The Six Permutations (PHOTONMATHPLACEHOLDER001484END) & The Two Star Points</a></h2>
                       <p>A single instance of Pappus’s Hexagon Theorem fixes an ordering of the two collinear triples
                       $(A_0, A_1, A_2)$ on carrier $a$ and $(B_0, B_1, B_2)$ on carrier $b$. Yet the nine cross-lines
                       $\{[A_i B_j] : 0 \le i, j \le 2\}$ exist independently of how the indices on $b$ are labeled!</p>
@@ -521,6 +568,7 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
+        <li><a href="types/apparatus.html">apparatus</a></li>
         <li><a href="types/log.html">log</a></li>
         <li><a href="types/theorem.html">theorem</a></li>
       </ul>
@@ -538,14 +586,14 @@
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright 2026, GEOMETOR.
+        &copy; Copyright c. 340 CE (Hultsch 1876–1878 / Commandino 1588) • Original English Translation & Exact Symbolic Edition GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="_static/jquery.js?v=5d32c60e"></script>
   <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="_static/documentation_options.js?v=01f34227"></script>
+  <script src="_static/documentation_options.js?v=938c9ccc"></script>
   <script src="_static/doctools.js?v=fd6eb6e6"></script>
   <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="_static/js/collection_controls.js?v=b6b5297a"></script>

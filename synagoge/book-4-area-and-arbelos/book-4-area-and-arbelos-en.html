@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book IV · Generalized Pythagorean Area Theorem &amp; the Arbelos Circle Chain (Translation) &mdash; Synagoge (Μαθηματικὴ Συναγωγή)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=f442dd77" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • pappus</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">pappus</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Synagoge (Μαθηματικὴ Συναγωγή) — Multi-Track Book Codex</a>
+        </li>
+        <li>
+          <a href="../../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../../theorems/index.html"  >Theorems</a>
+        </li>
+        <li>
+          <a href="../../usage/index.html"  >Usage & CLI</a>
+        </li>
+        <li>
+          <a href="../../demos/index.html"  >Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; pappus</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">Synagoge (Μαθηματικὴ Συναγωγή)</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../book-3-three-means/book-3-three-means-en.html" title="Book III · Problem Hierarchy, Cube Duplication &amp; the Three Classical Means (Translation)">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">English</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="book-4-area-and-arbelos-el.html">Greek (Hultsch 1876)</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="book-4-area-and-arbelos-summary.html">Summary</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="book-4-area-and-arbelos-notes.html">Notes</a>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../book-5-sagacity-of-bees/book-5-sagacity-of-bees-en.html" title="Book V · On the Geometric Forethought of Bees &amp; Isoperimetry (Translation)"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="book-iv-generalized-pythagorean-area-theorem-the-arbelos-circle-chain-translation">
+        <span id="synagoge-b4-en"></span><h1>Book IV · Generalized Pythagorean Area Theorem &amp; the Arbelos Circle Chain (<em>Translation</em>)<a class="headerlink" href="#book-iv-generalized-pythagorean-area-theorem-the-arbelos-circle-chain-translation" title="Link to this heading">¶</a></h1>
+        <p class="rubric"><em>Synagoge</em> Book IV, Prop. 1 &amp; Props. 14–18 (<a class="citation-ref" id="occ-cite-hultsch-1876-1" href="../bibliography.html#cite-hultsch-1876" data-cite="hultsch:1876" title="Pappus of Alexandria (ed. Friedrich Hultsch) — Pappi Alexandrini Collectionis quae supersunt, Vol. I (Books II–V) (Berlin: Weidmann, 1876 (pp. 2–473))">Hultsch I, pp. 176–179, 208–232</a>) · Original English Translation from Hultsch’s Greek</p>
+        <section class="level-2" id="proposition-1-pappus-s-parallelogram-generalization-of-the-pythagorean-theorem">
+        <span id="sec-b4-en-area-theorem"></span><h2>1. Proposition 1: Pappus’s Parallelogram Generalization of the Pythagorean Theorem<a class="headerlink" href="#proposition-1-pappus-s-parallelogram-generalization-of-the-pythagorean-theorem" title="Link to this heading">¶</a></h2>
+        <p><em>Hultsch Vol. I, pp. 176–179 (Book IV, Ch. 1 / Prop. 1)</em></p>
+        <p>Book IV opens directly (its preface having been lost in the archetype manuscript) with a striking affine generalization of <a class="citation-ref" id="occ-cite-euclid-elements-1" href="../bibliography.html#cite-euclid-elements" data-cite="euclid:elements" title="Euclid — Elements (Στοιχεῖα, Books I–XIII) (Alexandria, c. 300 BCE (geometor/euclid &amp; geometor/elements))">Euclid's Elements I.47</a> and <span class="justification" data-ref-target="VI.31" title="VI.31">[VI.31]</span>: <strong>neither a right angle in the base triangle nor similarity between the erected figures is required</strong>. Arbitrary parallelograms erected outward upon any two sides of any triangle sum in area to a third parallelogram erected on the remaining side, whose lateral edge is given in both magnitude and direction by the segment joining the outer intersection apex to the vertex of the triangle.</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 720 500" data-graphic-id="g1" role="img" aria-label="Synagoge IV.1 — Pappus&#x27;s Area Theorem on Arbitrary Parallelograms">
+          <title>Synagoge IV.1 — Pappus&#x27;s Area Theorem on Arbitrary Parallelograms</title>
+          <rect class="svg-bg" x="0" y="0" width="720" height="500" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <polygon class="geom-polygon hexagon-poly" points="343.24,196.35 262.77,303.65 450.53,303.65" data-ref="&lt; A B C &gt;" fill="none" />
+              <polygon class="geom-polygon tri-circle" points="343.24,196.35 262.77,303.65 209.12,258.94 289.59,151.65" data-ref="&lt; A B D E &gt;" fill="none" />
+              <polygon class="geom-polygon tri-diamond" points="343.24,196.35 450.53,303.65 510.88,263.41 403.59,156.12" data-ref="&lt; A C F G &gt;" fill="none" />
+              <polygon class="geom-polygon tri-square" points="262.77,303.65 450.53,303.65 457.23,410.94 269.47,410.94" data-ref="&lt; B C M L &gt;" fill="none" />
+              <path class="geom-line cross-line diagonal-line" d="M 38.83 486 L 215.83 250 L 392.83 14" data-ref="[ D E ]" data-aliases="[ D H ] | [ E H ]" fill="none"><title>[ D E ]: -4*x + 3*y - 13 = 0</title></path>
+              <path class="geom-line cross-line diagonal-line" d="M 706 458.53 L 483.73 236.27 L 261.47 14" data-ref="[ F G ]" data-aliases="[ F H ] | [ G H ]" fill="none"><title>[ F G ]: -4*x - 4*y + 43 = 0</title></path>
+              <path class="geom-line steiner-line" d="M 361.34 486 L 346.59 250 L 331.84 14" data-ref="[ H A ]" data-aliases="[ A H ] | [ A J ] | [ A N ] | [ H J ] | [ H N ] | [ J N ]" fill="none"><title>[ H A ]: 4*x + y/4 - 13 = 0</title></path>
+              <path class="geom-segment arithmetic-segment" d="M 262.77 303.65 L 266.12 357.29 L 269.47 410.94" data-ref="[ B L ]" data-aliases="[ L B ] | / B L /" fill="none" />
+              <path class="geom-segment arithmetic-segment" d="M 450.53 303.65 L 453.88 357.29 L 457.23 410.94" data-ref="[ C M ]" data-aliases="[ M C ] | / C M /" fill="none" />
+              <path class="geom-segment harmonic-segment" d="M 349.94 303.65 L 353.29 357.29 L 356.65 410.94" data-ref="[ J N ]" data-aliases="[ N J ] | / J N /" fill="none" />
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point pt-b" cx="209.12" cy="258.94" r="3.8" data-ref="D" data-latex-x="-2" data-latex-y="\frac{5}{3}"><title>D = (-2, 5/3)</title></circle>
+              <circle class="geom-point pt-b" cx="289.59" cy="151.65" r="3.8" data-ref="E" data-latex-x="1" data-latex-y="\frac{17}{3}"><title>E = (1, 17/3)</title></circle>
+              <circle class="geom-point pt-b" cx="510.88" cy="263.41" r="3.8" data-ref="F" data-latex-x="\frac{37}{4}" data-latex-y="\frac{3}{2}"><title>F = (37/4, 3/2)</title></circle>
+              <circle class="geom-point pt-b" cx="403.59" cy="156.12" r="3.8" data-ref="G" data-latex-x="\frac{21}{4}" data-latex-y="\frac{11}{2}"><title>G = (21/4, 11/2)</title></circle>
+              <circle class="geom-point-halo" cx="349.94" cy="303.65" r="9.4" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point harmonic-point" cx="349.94" cy="303.65" r="5.2" data-ref="J" data-latex-x="\frac{13}{4}" data-latex-y="0"><title>J = (13/4, 0)</title></circle>
+              <circle class="geom-point aux-point" cx="356.65" cy="410.94" r="3.1" data-ref="N" data-latex-x="\frac{7}{2}" data-latex-y="-4"><title>N = (7/2, -4)</title></circle>
+              <circle class="geom-point-halo" cx="343.24" cy="196.35" r="8" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point given-point apex-point" cx="343.24" cy="196.35" r="3.8" data-ref="A" data-latex-x="3" data-latex-y="4"><title>A = (3, 4)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="262.77" cy="303.65" r="4.2" data-ref="B" data-latex-x="0" data-latex-y="0"><title>B = (0, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="450.53" cy="303.65" r="4.2" data-ref="C" data-latex-x="7" data-latex-y="0"><title>C = (7, 0)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="269.47" cy="410.94" r="4.7" data-ref="L" data-latex-x="\frac{1}{4}" data-latex-y="-4"><title>L = (1/4, -4)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="457.23" cy="410.94" r="4.7" data-ref="M" data-latex-x="\frac{29}{4}" data-latex-y="-4"><title>M = (29/4, -4)</title></circle>
+              <circle class="geom-point-halo" cx="336.53" cy="89.06" r="10.2" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point steiner-point" cx="336.53" cy="89.06" r="6" data-ref="H" data-latex-x="\frac{11}{4}" data-latex-y="8"><title>H = (11/4, 8)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="190.62" y="249.22" data-ref="D">D</text>
+              <text class="geom-label" x="271.09" y="141.92" data-ref="E">E</text>
+              <text class="geom-label" x="505.03" y="249.37" data-ref="F">F</text>
+              <text class="geom-label" x="397.74" y="142.08" data-ref="G">G</text>
+              <text class="geom-label" x="357.64" y="292.84" data-ref="J">J</text>
+              <text class="geom-label" x="363" y="401.75" data-ref="N">N</text>
+              <text class="geom-label" x="350.04" y="186.63" data-ref="A">A</text>
+              <text class="geom-label" x="256.92" y="289.21" data-ref="B">B</text>
+              <text class="geom-label" x="444.68" y="289.21" data-ref="C">C</text>
+              <text class="geom-label" x="263.62" y="435.4" data-ref="L">L</text>
+              <text class="geom-label" x="451.38" y="435.4" data-ref="M">M</text>
+              <text class="geom-label" x="352.73" y="93.82" data-ref="H">H</text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        <div class="enunciation">If <span class="geom-ref" data-ref="g1:&lt; A B C &gt;" title="&lt; A B C &gt;">ABC</span> be any triangle, and upon its sides $AB, AC$ there be described any parallelograms whatever, <span class="geom-ref" data-ref="g1:&lt; A B D E &gt;" title="&lt; A B D E &gt;">ABDE</span> and <span class="geom-ref" data-ref="g1:&lt; A C F G &gt;" title="&lt; A C F G &gt;">ACFG</span>, and the outer sides <span class="geom-ref" data-ref="g1:[ D E ]" title="[ D E ]">DE</span> and <span class="geom-ref" data-ref="g1:[ F G ]" title="[ F G ]">FG</span> be produced to meet at <span class="geom-ref" data-ref="g1:H" title="H">H</span>, and <span class="geom-ref" data-ref="g1:[ H A ]" title="[ H A ]">HA</span> be joined, then the parallelograms <span class="geom-ref" data-ref="g1:&lt; A B D E &gt;" title="&lt; A B D E &gt;">ABDE</span> and <span class="geom-ref" data-ref="g1:&lt; A C F G &gt;" title="&lt; A C F G &gt;">ACFG</span> together are equal in area to the parallelogram <span class="geom-ref" data-ref="g1:&lt; B C M L &gt;" title="&lt; B C M L &gt;">BCML</span> contained by base $BC$ and lateral edges <span class="geom-ref" data-ref="g1:[ B L ]" title="[ B L ]">BL</span>, <span class="geom-ref" data-ref="g1:[ C M ]" title="[ C M ]">CM</span> equal and parallel to <span class="geom-ref" data-ref="g1:[ H A ]" title="[ H A ]">HA</span>. <em>“And this theorem is far more universal than that proved in the Elements concerning squares on right-angled triangles.”</em></div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Set out scalene <span class="geom-ref" data-ref="g1:&lt; A B C &gt;" title="&lt; A B C &gt;">triangle ABC</span> with <span class="geom-ref" data-ref="g1:A" title="A">A</span> $= (3, 4)$, <span class="geom-ref" data-ref="g1:B" title="B">B</span> $= (0, 0)$, and <span class="geom-ref" data-ref="g1:C" title="C">C</span> $= (7, 0)$, and erect arbitrary outward parallelograms <span class="geom-ref" data-ref="g1:&lt; A B D E &gt;" title="&lt; A B D E &gt;">ABDE</span> (area $13$) and <span class="geom-ref" data-ref="g1:&lt; A C F G &gt;" title="&lt; A C F G &gt;">ACFG</span> (area $15$).</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Produce the outer sides <span class="geom-ref" data-ref="g1:[ D E ]" title="[ D E ]">DE</span> (parallel to $AB$) and <span class="geom-ref" data-ref="g1:[ F G ]" title="[ F G ]">FG</span> (parallel to $AC$) until they intersect at apex <span class="geom-ref" data-ref="g1:H" title="H">H</span>, and draw the transversal line <span class="geom-ref" data-ref="g1:[ H A ]" title="[ H A ]">HA</span> across the vertex <span class="geom-ref" data-ref="g1:A" title="A">A</span> to meet base $BC$ at <span class="geom-ref" data-ref="g1:J" title="J">J</span>.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Through <span class="geom-ref" data-ref="g1:B" title="B">B</span> and <span class="geom-ref" data-ref="g1:C" title="C">C</span> draw <span class="geom-ref" data-ref="g1:[ B L ]" title="[ B L ]">BL</span> and <span class="geom-ref" data-ref="g1:[ C M ]" title="[ C M ]">CM</span> equal and parallel to segment $HA$ ($L - B = M - C = A - H$), and join $LM$ with <span class="geom-ref" data-ref="g1:[ J N ]" title="[ J N ]">JN</span> parallel to $HA$. Because $BL$ and $CM$ are both equal and parallel to $HA$, they are equal and parallel to one another (<span class="justification" data-ref-target="I.30" title="I.30">[I.30]</span>), so <span class="geom-ref" data-ref="g1:&lt; B C M L &gt;" title="&lt; B C M L &gt;">BCML</span> is a parallelogram (<span class="justification" data-ref-target="I.33" title="I.33">[I.33]</span>) partitioned by <span class="geom-ref" data-ref="g1:[ J N ]" title="[ J N ]">JN</span> into sub-parallelograms $BJNL$ and $JCMN$.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Apply <span class="justification" data-ref-target="I.35" title="I.35">[I.35]</span> (shear-invariance of parallelograms on the same base and between the same parallels) twice on the left: parallelogram <span class="geom-ref" data-ref="g1:&lt; A B D E &gt;" title="&lt; A B D E &gt;">ABDE</span> equals the intermediate parallelogram $AB\text{-}HA$ on base $AB$ between parallels $AB$ and <span class="geom-ref" data-ref="g1:[ D E ]" title="[ D E ]">DE</span>, which in turn equals $BJNL$ on parallel base $HA = BL$ between parallels <span class="geom-ref" data-ref="g1:[ B L ]" title="[ B L ]">BL</span> and <span class="geom-ref" data-ref="g1:[ H A ]" title="[ H A ]">HA</span>.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> 
+        <p>By the identical double shear on the right, parallelogram <span class="geom-ref" data-ref="g1:&lt; A C F G &gt;" title="&lt; A C F G &gt;">ACFG</span> equals $JCMN$ between parallels <span class="geom-ref" data-ref="g1:[ H A ]" title="[ H A ]">HA</span> and <span class="geom-ref" data-ref="g1:[ C M ]" title="[ C M ]">CM</span>. Adding the two parts gives</p>
+        <div class="math notranslate nohighlight">
+        \[\operatorname{Area}(ABDE) + \operatorname{Area}(ACFG) = \operatorname{Area}(BJNL) + \operatorname{Area}(JCMN) = \operatorname{Area}(BCML) = 13 + 15 = 28.\]</div>
+        </div>
+        <section class="level-3" id="specialization-to-elements-i-47-right-triangle-squares">
+        <h3>Specialization to <em>Elements</em> I.47 (<em>Right Triangle &amp; Squares</em>)<a class="headerlink" href="#specialization-to-elements-i-47-right-triangle-squares" title="Link to this heading">¶</a></h3>
+        <p>When $\angle BAC = 90^\circ$ in a $3$-$4$-$5$ right triangle and <span class="geom-ref" data-ref="g2:&lt; A B D E &gt;" title="&lt; A B D E &gt;">ABDE</span> (area $9$) and <span class="geom-ref" data-ref="g2:&lt; A C F G &gt;" title="&lt; A C F G &gt;">ACFG</span> (area $16$) are squares, the corner triangle formed at <span class="geom-ref" data-ref="g2:H" title="H">H</span> is congruent to <span class="geom-ref" data-ref="g2:&lt; A B C &gt;" title="&lt; A B C &gt;">ABC</span> rotated by $90^\circ$, making <span class="geom-ref" data-ref="g2:[ H A ]" title="[ H A ]">HA</span> perpendicular to hypotenuse $BC$ with exact length $|HA| = |BC| = 5$. Thus <span class="geom-ref" data-ref="g2:&lt; B C M L &gt;" title="&lt; B C M L &gt;">BCML</span> becomes the $5 \times 5$ hypotenuse square of area $25$ partitioned along altitude <span class="geom-ref" data-ref="g2:[ J N ]" title="[ J N ]">JN</span> into Euclid’s windmill rectangles of areas $\frac{9}{5} \cdot 5 = 9$ and $\frac{16}{5} \cdot 5 = 16$:</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 520" data-graphic-id="g2" role="img" aria-label="Synagoge IV.1 Specialization — Reduction of Pappus&#x27;s Area Theorem to Euclid I.47">
+          <title>Synagoge IV.1 Specialization — Reduction of Pappus&#x27;s Area Theorem to Euclid I.47</title>
+          <rect class="svg-bg" x="0" y="0" width="680" height="520" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <polygon class="geom-polygon hexagon-poly" points="320.95,227.34 271.96,292.66 408.04,292.66" data-ref="&lt; A B C &gt;" fill="none" />
+              <polygon class="geom-polygon tri-circle" points="320.95,227.34 271.96,292.66 206.63,243.67 255.62,178.35" data-ref="&lt; A B D E &gt;" fill="none" />
+              <polygon class="geom-polygon tri-diamond" points="320.95,227.34 408.04,292.66 473.37,205.56 386.27,140.24" data-ref="&lt; A C F G &gt;" fill="none" />
+              <polygon class="geom-polygon tri-square" points="271.96,292.66 408.04,292.66 408.04,428.75 271.96,428.75" data-ref="&lt; B C M L &gt;" fill="none" />
+              <path class="geom-line cross-line diagonal-line" d="M 14 500.51 L 196.44 257.26 L 378.89 14" data-ref="[ D E ]" data-aliases="[ D H ] | [ E H ]" fill="none"><title>[ D E ]: -12*x/5 + 9*y/5 - 9 = 0</title></path>
+              <path class="geom-line cross-line diagonal-line" d="M 666 350.04 L 441.97 182.02 L 217.95 14" data-ref="[ F G ]" data-aliases="[ F H ] | [ G H ]" fill="none"><title>[ F G ]: -12*x/5 - 16*y/5 + 28 = 0</title></path>
+              <path class="geom-line steiner-line" d="M 320.95 506 L 320.95 260 L 320.95 14" data-ref="[ H A ]" data-aliases="[ A H ] | [ A J ] | [ A N ] | [ H J ] | [ H N ] | [ J N ]" fill="none"><title>[ H A ]: x - 9/5 = 0</title></path>
+              <path class="geom-segment arithmetic-segment" d="M 271.96 292.66 L 271.96 360.71 L 271.96 428.75" data-ref="[ B L ]" data-aliases="[ L B ] | / B L /" fill="none" />
+              <path class="geom-segment arithmetic-segment" d="M 408.04 292.66 L 408.04 360.71 L 408.04 428.75" data-ref="[ C M ]" data-aliases="[ M C ] | / C M /" fill="none" />
+              <path class="geom-segment harmonic-segment" d="M 320.95 292.66 L 320.95 360.71 L 320.95 428.75" data-ref="[ J N ]" data-aliases="[ N J ] | / J N /" fill="none" />
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point pt-b" cx="206.63" cy="243.67" r="3.8" data-ref="D" data-latex-x="- \frac{12}{5}" data-latex-y="\frac{9}{5}"><title>D = (-12/5, 9/5)</title></circle>
+              <circle class="geom-point pt-b" cx="255.62" cy="178.35" r="3.8" data-ref="E" data-latex-x="- \frac{3}{5}" data-latex-y="\frac{21}{5}"><title>E = (-3/5, 21/5)</title></circle>
+              <circle class="geom-point pt-b" cx="473.37" cy="205.56" r="3.8" data-ref="F" data-latex-x="\frac{37}{5}" data-latex-y="\frac{16}{5}"><title>F = (37/5, 16/5)</title></circle>
+              <circle class="geom-point pt-b" cx="386.27" cy="140.24" r="3.8" data-ref="G" data-latex-x="\frac{21}{5}" data-latex-y="\frac{28}{5}"><title>G = (21/5, 28/5)</title></circle>
+              <circle class="geom-point-halo" cx="320.95" cy="292.66" r="9.4" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point harmonic-point" cx="320.95" cy="292.66" r="5.2" data-ref="J" data-latex-x="\frac{9}{5}" data-latex-y="0"><title>J = (9/5, 0)</title></circle>
+              <circle class="geom-point aux-point" cx="320.95" cy="428.75" r="3.1" data-ref="N" data-latex-x="\frac{9}{5}" data-latex-y="-5"><title>N = (9/5, -5)</title></circle>
+              <circle class="geom-point-halo" cx="320.95" cy="227.34" r="8" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point given-point apex-point" cx="320.95" cy="227.34" r="3.8" data-ref="A" data-latex-x="\frac{9}{5}" data-latex-y="\frac{12}{5}"><title>A = (9/5, 12/5)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="271.96" cy="292.66" r="4.2" data-ref="B" data-latex-x="0" data-latex-y="0"><title>B = (0, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="408.04" cy="292.66" r="4.2" data-ref="C" data-latex-x="5" data-latex-y="0"><title>C = (5, 0)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="271.96" cy="428.75" r="4.7" data-ref="L" data-latex-x="0" data-latex-y="-5"><title>L = (0, -5)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="408.04" cy="428.75" r="4.7" data-ref="M" data-latex-x="5" data-latex-y="-5"><title>M = (5, -5)</title></circle>
+              <circle class="geom-point-halo" cx="320.95" cy="91.25" r="10.2" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point steiner-point" cx="320.95" cy="91.25" r="6" data-ref="H" data-latex-x="\frac{9}{5}" data-latex-y="\frac{37}{5}"><title>H = (9/5, 37/5)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="188.13" y="233.94" data-ref="D">D</text>
+              <text class="geom-label" x="237.12" y="168.62" data-ref="E">E</text>
+              <text class="geom-label" x="467.52" y="191.52" data-ref="F">F</text>
+              <text class="geom-label" x="380.42" y="126.2" data-ref="G">G</text>
+              <text class="geom-label" x="328.64" y="281.86" data-ref="J">J</text>
+              <text class="geom-label" x="327.3" y="419.56" data-ref="N">N</text>
+              <text class="geom-label" x="327.75" y="217.61" data-ref="A">A</text>
+              <text class="geom-label" x="266.11" y="278.22" data-ref="B">B</text>
+              <text class="geom-label" x="402.19" y="278.22" data-ref="C">C</text>
+              <text class="geom-label" x="266.11" y="453.21" data-ref="L">L</text>
+              <text class="geom-label" x="402.19" y="453.21" data-ref="M">M</text>
+              <text class="geom-label" x="337.15" y="96.01" data-ref="H">H</text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        </section>
+        </section>
+        <section class="level-2" id="propositions-1418-the-ancient-theorem-on-the-arbelos-circle-chain">
+        <span id="sec-b4-en-arbelos-chain"></span><h2>2. Propositions 14–18: The Ancient Theorem on the <em>Arbelos</em> Circle Chain<a class="headerlink" href="#propositions-1418-the-ancient-theorem-on-the-arbelos-circle-chain" title="Link to this heading">¶</a></h2>
+        <p><em>Hultsch Vol. I, pp. 208–232 (Book IV, Chs. 19–26 / Props. 14–18)</em></p>
+        <p><em>“There is set forth in the ancient geometrical inquiries a proposition of the following kind, which appears marvelous to many”</em> (<em>φέρεταί τις ἐν τοῖς ἀρχαίοις πρότασις τοιαύτη</em>, <em>Hultsch I p. 208</em>): Suppose three semicircles be described tangent to one another upon a single straight diameter—forming the curvilinear region bounded by the three arcs which the ancients call the <a class="term-ref glossary-term" id="occ-term-arbelos-1" href="../glossary.html#term-arbelos" data-term="arbelos" title="arbelos (ἄρβηλος) (shoemaker&#x27;s knife): Curvilinear region bounded by three mutually tangent semicircles on a common diameter; in Book IV Props. 14–18 Pappus proves the &#x27;ancient proposition&#x27; (ἀρχαία πρότασις) that the n-th inscribed tangent circle has center altitude h_n = n * d_n.">arbelos</a> (<em>ἄρβηλος</em>, “shoemaker’s knife”)—and into the space between the three circumferences there be inscribed an endless chain of circles tangent both to the bounding semicircles and successively to one another. Then <strong>the perpendicular dropped from the center of the first circle to the base diameter equals its own diameter, that from the center of the second circle is double its diameter, that from the third is triple its diameter, and so on without end according to the natural numbers exceeding one another by unity</strong>:</p>
+        <div class="math notranslate nohighlight">
+        \[y_n = n\,d_n = 2n\,r_n \qquad (n = 1, 2, 3, \dots).\]</div>
+        <p>After stating that the proposition remains equally valid whether the two inner semicircles lie on the same side (the <em>arbelos</em> proper) or embrace one another externally, Pappus establishes three preliminary tangent-circle lemmas (<em>Props. 15–17, Hultsch I pp. 210–224</em>):</p>
+        <ul>
+        <li><p><strong>Lemma 1 (Prop. 15)</strong>: If two circles touch at $\Theta$ and a third circle touches both at $E$ and $P$, the chord $EP$ produced meets the line of centers on the radical tangent at $Z$ where $ZE \cdot ZP = Z\Theta^2$.</p></li>
+        <li><p><strong>Lemma 2 (Prop. 16)</strong>: For any single circle inscribed tangent to two nested semicircles on baseline $AC$, the square of its center’s perpendicular height satisfies a fixed rectangle relation on the base segments cut off by rays from the outer semicircle’s endpoints (<span class="justification" data-ref-target="III.36" title="III.36">[III.36]</span>).</p></li>
+        <li><p><strong>Lemma 3 (Prop. 17)</strong>: If two consecutive circles centered at $K_n$ and $K_{n+1}$ touch both nested semicircles and touch each other externally at $\Theta$, then the sum of the $n$-th altitude and its diameter stands to its diameter in the exact same ratio as the $(n+1)$-th altitude stands to the $(n+1)$-th diameter:</p>
+        <div class="math notranslate nohighlight">
+        \[\frac{y_n + d_n}{d_n} = \frac{y_{n+1}}{d_{n+1}} \quad \Longleftrightarrow \quad \frac{y_{n+1}}{d_{n+1}} = \frac{y_n}{d_n} + 1.\]</div>
+        </li>
+        </ul>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 720 440" data-graphic-id="g3" role="img" aria-label="Synagoge IV.14–18 — Pappus&#x27;s Arbelos Tangent Circle Chain (y_n = n d_n)">
+          <title>Synagoge IV.14–18 — Pappus&#x27;s Arbelos Tangent Circle Chain (y_n = n d_n)</title>
+          <rect class="svg-bg" x="0" y="0" width="720" height="440" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <circle class="geom-circle conic-curve" cx="360" cy="350.29" r="274.29" data-ref="( O0 A )" data-aliases="( P2 A ) | ( P2 C )" fill="none"><title>( O0 A ): y**2 + (x - 3)**2 - 9 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="268.57" cy="350.29" r="182.86" data-ref="( O1 A )" data-aliases="( P3 A ) | ( P3 D )" fill="none"><title>( O1 A ): y**2 + (x - 2)**2 - 4 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="542.86" cy="350.29" r="91.43" data-ref="( O2 D )" data-aliases="( O2 C )" fill="none"><title>( O2 D ): y**2 + (x - 5)**2 - 1 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="477.55" cy="193.55" r="78.37" data-ref="( K1 X1 )" fill="none"><title>( K1 X1 ): (x - 30/7)**2 + (y - 12/7)**2 - 36/49 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="360" cy="130.86" r="54.86" data-ref="( K2 X2 )" fill="none"><title>( K2 X2 ): (x - 3)**2 + (y - 12/5)**2 - 9/25 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="268.57" cy="130.86" r="36.57" data-ref="( K3 X3 )" fill="none"><title>( K3 X3 ): (x - 2)**2 + (y - 12/5)**2 - 4/25 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="210.39" cy="150.81" r="24.94" data-ref="( K4 X4 )" fill="none"><title>( K4 X4 ): (x - 15/11)**2 + (y - 24/11)**2 - 9/121 = 0</title></circle>
+              <path class="geom-line carrier-line" d="M 14 350.29 L 360 350.29 L 706 350.29" data-ref="[ A C ]" data-aliases="[ A D ] | [ A P2 ] | [ A P3 ] | [ A O2 ] | [ A P1 ] | [ A P4 ] | [ D C ] | [ D P2 ] | [ D P3 ] | [ D O2 ] | [ D P1 ] | [ D P4 ] | [ C P2 ] | [ C P3 ] | [ C O2 ] | [ C P1 ] | [ C P4 ] | [ P2 P3 ] | [ P2 O2 ] | [ P2 P1 ] | [ P2 P4 ] | [ P3 O2 ] | [ P3 P1 ] | [ P3 P4 ] | [ O2 P1 ] | [ O2 P4 ] | [ P1 P4 ]" fill="none"><title>[ A C ]: y = 0</title></path>
+              <path class="geom-segment arithmetic-segment" d="M 477.55 350.29 L 477.55 271.92 L 477.55 193.55" data-ref="[ P1 K1 ]" data-aliases="[ K1 P1 ] | / P1 K1 /" fill="none" />
+              <path class="geom-segment harmonic-segment" d="M 360 350.29 L 360 240.57 L 360 130.86" data-ref="[ P2 K2 ]" data-aliases="[ K2 P2 ] | / P2 K2 /" fill="none" />
+              <path class="geom-segment arithmetic-segment" d="M 268.57 350.29 L 268.57 240.57 L 268.57 130.86" data-ref="[ P3 K3 ]" data-aliases="[ K3 P3 ] | / P3 K3 /" fill="none" />
+              <path class="geom-segment harmonic-segment" d="M 210.39 350.29 L 210.39 250.55 L 210.39 150.81" data-ref="[ P4 K4 ]" data-aliases="[ K4 P4 ] | / P4 K4 /" fill="none" />
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point harmonic-point aux-point" cx="268.57" cy="350.29" r="3.1" data-ref="P3" data-latex-x="2" data-latex-y="0"><title>P3 = (2, 0)</title></circle>
+              <circle class="geom-point aux-point" cx="542.86" cy="350.29" r="3.1" data-ref="O2" data-latex-x="5" data-latex-y="0"><title>O2 = (5, 0)</title></circle>
+              <circle class="geom-point aux-point" cx="555.92" cy="193.55" r="3.1" data-ref="X1" data-latex-x="\frac{36}{7}" data-latex-y="\frac{12}{7}"><title>X1 = (36/7, 12/7)</title></circle>
+              <circle class="geom-point harmonic-point" cx="477.55" cy="350.29" r="5.2" data-ref="P1" data-latex-x="\frac{30}{7}" data-latex-y="0"><title>P1 = (30/7, 0)</title></circle>
+              <circle class="geom-point aux-point" cx="414.86" cy="130.86" r="3.1" data-ref="X2" data-latex-x="\frac{18}{5}" data-latex-y="\frac{12}{5}"><title>X2 = (18/5, 12/5)</title></circle>
+              <circle class="geom-point aux-point" cx="305.14" cy="130.86" r="3.1" data-ref="X3" data-latex-x="\frac{12}{5}" data-latex-y="\frac{12}{5}"><title>X3 = (12/5, 12/5)</title></circle>
+              <circle class="geom-point aux-point" cx="235.32" cy="150.81" r="3.1" data-ref="X4" data-latex-x="\frac{18}{11}" data-latex-y="\frac{24}{11}"><title>X4 = (18/11, 24/11)</title></circle>
+              <circle class="geom-point harmonic-point" cx="210.39" cy="350.29" r="5.2" data-ref="P4" data-latex-x="\frac{15}{11}" data-latex-y="0"><title>P4 = (15/11, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="85.71" cy="350.29" r="4.2" data-ref="A" data-latex-x="0" data-latex-y="0"><title>A = (0, 0)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="451.43" cy="350.29" r="4.2" data-ref="D" data-latex-x="4" data-latex-y="0"><title>D = (4, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="634.29" cy="350.29" r="4.2" data-ref="C" data-latex-x="6" data-latex-y="0"><title>C = (6, 0)</title></circle>
+              <circle class="geom-point apex-point harmonic-point" cx="360" cy="350.29" r="5.2" data-ref="P2" data-latex-x="3" data-latex-y="0"><title>P2 = (3, 0)</title></circle>
+              <circle class="geom-point-halo" cx="477.55" cy="193.55" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="477.55" cy="193.55" r="4.7" data-ref="K1" data-latex-x="\frac{30}{7}" data-latex-y="\frac{12}{7}"><title>K1 = (30/7, 12/7)</title></circle>
+              <circle class="geom-point-halo" cx="360" cy="130.86" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-odd" cx="360" cy="130.86" r="4.7" data-ref="K2" data-latex-x="3" data-latex-y="\frac{12}{5}"><title>K2 = (3, 12/5)</title></circle>
+              <circle class="geom-point-halo" cx="268.57" cy="130.86" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="268.57" cy="130.86" r="4.7" data-ref="K3" data-latex-x="2" data-latex-y="\frac{12}{5}"><title>K3 = (2, 12/5)</title></circle>
+              <circle class="geom-point-halo" cx="210.39" cy="150.81" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-odd" cx="210.39" cy="150.81" r="4.7" data-ref="K4" data-latex-x="\frac{15}{11}" data-latex-y="\frac{24}{11}"><title>K4 = (15/11, 24/11)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="259.93" y="373.15" data-ref="P3">P<tspan class="geom-label-sub" dy="3">3</tspan></text>
+              <text class="geom-label" x="534.22" y="336.95" data-ref="O2">O<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="468.91" y="375.25" data-ref="P1">P<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="201.75" y="375.25" data-ref="P4">P<tspan class="geom-label-sub" dy="3">4</tspan></text>
+              <text class="geom-label" x="79.86" y="335.85" data-ref="A">A</text>
+              <text class="geom-label" x="445.58" y="335.85" data-ref="D">D</text>
+              <text class="geom-label" x="628.44" y="335.85" data-ref="C">C</text>
+              <text class="geom-label" x="351.36" y="375.25" data-ref="P2">P<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="468.91" y="178.61" data-ref="K1">K<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="351.36" y="115.92" data-ref="K2">K<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="259.93" y="115.92" data-ref="K3">K<tspan class="geom-label-sub" dy="3">3</tspan></text>
+              <text class="geom-label" x="201.75" y="135.87" data-ref="K4">K<tspan class="geom-label-sub" dy="3">4</tspan></text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        <div class="enunciation">Let outer semicircle <span class="geom-ref" data-ref="g3:( O0 A )" title="( O0 A )">(O0, A)</span> on diameter <span class="geom-ref" data-ref="g3:[ A C ]" title="[ A C ]">AC</span> be divided at <span class="geom-ref" data-ref="g3:D" title="D">D</span> into inner semicircles <span class="geom-ref" data-ref="g3:( O1 A )" title="( O1 A )">(O1, A)</span> of radius $r_1$ and <span class="geom-ref" data-ref="g3:( O2 D )" title="( O2 D )">(O2, D)</span> of radius $r_2$ ($R = r_1 + r_2$). Inscribe circles <span class="geom-ref" data-ref="g3:( K1 X1 )" title="( K1 X1 )">C1</span>, <span class="geom-ref" data-ref="g3:( K2 X2 )" title="( K2 X2 )">C2</span>, <span class="geom-ref" data-ref="g3:( K3 X3 )" title="( K3 X3 )">C3</span>, <span class="geom-ref" data-ref="g3:( K4 X4 )" title="( K4 X4 )">C4</span>, $\dots$ mutually tangent in the <a class="term-ref glossary-term" id="occ-term-arbelos-2" href="../glossary.html#term-arbelos" data-term="arbelos" title="arbelos (ἄρβηλος) (shoemaker&#x27;s knife): Curvilinear region bounded by three mutually tangent semicircles on a common diameter; in Book IV Props. 14–18 Pappus proves the &#x27;ancient proposition&#x27; (ἀρχαία πρότασις) that the n-th inscribed tangent circle has center altitude h_n = n * d_n.">arbelos</a>, and drop altitudes <span class="geom-ref" data-ref="g3:[ P1 K1 ]" title="[ P1 K1 ]">P1K1</span>, <span class="geom-ref" data-ref="g3:[ P2 K2 ]" title="[ P2 K2 ]">P2K2</span>, <span class="geom-ref" data-ref="g3:[ P3 K3 ]" title="[ P3 K3 ]">P3K3</span>, <span class="geom-ref" data-ref="g3:[ P4 K4 ]" title="[ P4 K4 ]">P4K4</span> perpendicular to <span class="geom-ref" data-ref="g3:[ A C ]" title="[ A C ]">AC</span>. Then for every $n \ge 1$, the altitude $y_n = |P_n K_n|$ equals $n$ times the diameter $d_n$ of circle $C_n$.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Along baseline <span class="geom-ref" data-ref="g3:[ A C ]" title="[ A C ]">AC</span> with $r_1 = 2$ and $r_2 = 1$ ($R = 3$), place <span class="geom-ref" data-ref="g3:A" title="A">A</span> $= (0, 0)$, <span class="geom-ref" data-ref="g3:D" title="D">D</span> $= (4, 0)$, and <span class="geom-ref" data-ref="g3:C" title="C">C</span> $= (6, 0)$, and describe outer semicircle <span class="geom-ref" data-ref="g3:( O0 A )" title="( O0 A )">(O0, A)</span> centered at <span class="geom-ref" data-ref="g3:O0" title="O0">O0</span> $= (3, 0)$ together with inner semicircles <span class="geom-ref" data-ref="g3:( O1 A )" title="( O1 A )">(O1, A)</span> and <span class="geom-ref" data-ref="g3:( O2 D )" title="( O2 D )">(O2, D)</span> centered at <span class="geom-ref" data-ref="g3:O1" title="O1">O1</span> $= (2, 0)$ and <span class="geom-ref" data-ref="g3:O2" title="O2">O2</span> $= (5, 0)$.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Inscribe the base circle <span class="geom-ref" data-ref="g3:( K1 X1 )" title="( K1 X1 )">C1</span> tangent to all three semicircles (<em>Prop. 18 base step, Hultsch I pp. 226–228</em>). By Lemma 2, its center <span class="geom-ref" data-ref="g3:K1" title="K1">K1</span> $= \left(\frac{30}{7}, \frac{12}{7}\right)$ above foot <span class="geom-ref" data-ref="g3:P1" title="P1">P1</span> has radius $r_1^{(c)} = \frac{6}{7}$ and diameter $d_1 = \frac{12}{7}$, so altitude <span class="geom-ref" data-ref="g3:[ P1 K1 ]" title="[ P1 K1 ]">P1K1</span> satisfies $y_1 = \frac{12}{7} = 1 \cdot d_1$.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Inscribe <span class="geom-ref" data-ref="g3:( K2 X2 )" title="( K2 X2 )">C2</span> tangent to <span class="geom-ref" data-ref="g3:( O0 A )" title="( O0 A )">(O0, A)</span>, <span class="geom-ref" data-ref="g3:( O1 A )" title="( O1 A )">(O1, A)</span>, and <span class="geom-ref" data-ref="g3:( K1 X1 )" title="( K1 X1 )">C1</span>. By Lemma 3 (<em>Prop. 17</em>), $\frac{y_2}{d_2} = \frac{y_1 + d_1}{d_1} = 1 + 1 = 2$. Indeed <span class="geom-ref" data-ref="g3:K2" title="K2">K2</span> $= \left(3, \frac{12}{5}\right)$ has radius $r_2^{(c)} = \frac{3}{5}$, diameter $d_2 = \frac{6}{5}$, and altitude <span class="geom-ref" data-ref="g3:[ P2 K2 ]" title="[ P2 K2 ]">P2K2</span> $= \frac{12}{5} = 2\,d_2$.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Repeat the inductive recurrence $\frac{y_{n+1}}{d_{n+1}} = \frac{y_n}{d_n} + 1$ (<em>Hultsch I p. 228</em>, <code class="docutils literal notranslate"><span class="pre">καὶ</span> <span class="pre">τοῦτο</span> <span class="pre">συμβαῖνον</span> <span class="pre">ἐπὶ</span> <span class="pre">τὸ</span> <span class="pre">ἄπειρον</span> <span class="pre">ἀποδειχθήσεται</span></code>): circle <span class="geom-ref" data-ref="g3:( K3 X3 )" title="( K3 X3 )">C3</span> at <span class="geom-ref" data-ref="g3:K3" title="K3">K3</span> $= \left(2, \frac{12}{5}\right)$ ($\Delta_3 = 15$) has diameter $d_3 = \frac{4}{5}$ and altitude <span class="geom-ref" data-ref="g3:[ P3 K3 ]" title="[ P3 K3 ]">P3K3</span> $= \frac{12}{5} = 3\,d_3$; and circle <span class="geom-ref" data-ref="g3:( K4 X4 )" title="( K4 X4 )">C4</span> at <span class="geom-ref" data-ref="g3:K4" title="K4">K4</span> $= \left(\frac{15}{11}, \frac{24}{11}\right)$ ($\Delta_4 = 22$) has diameter $d_4 = \frac{6}{11}$ and altitude <span class="geom-ref" data-ref="g3:[ P4 K4 ]" title="[ P4 K4 ]">P4K4</span> $= \frac{24}{11} = 4\,d_4$. Moreover, every center $K_n$ lies on the fixed locus ellipse with foci <span class="geom-ref" data-ref="g3:O1" title="O1">O1</span> and <span class="geom-ref" data-ref="g3:O0" title="O0">O0</span> since $|K_n O_0| + |K_n O_1| = (R - r_n) + (r_1 + r_n) = R + r_1 = 5$.</div>
+        <p><em>In Chapters 29–68 of Book IV (Hultsch I pp. 230–303), Pappus adds the odd-multiple corollary $y_n = (2n - 1)r_n$ when the second inner semicircle degenerates to a point at $A$, and then investigates the linear curves of antiquity—the spiral of :person:`Archimedes &lt;archimedes&gt;` (proving the sector-area one-third theorem), the conchoid of :person:`Nicomedes &lt;nicomedes&gt;`, the quadratrix of :person:`Dinostratus &lt;dinostratus&gt;`, and three solid hyperbola/:term:`neusis &lt;neusis&gt;` constructions for trisecting any rectilinear angle.</em></p>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../book-3-three-means/book-3-three-means-en.html" title="Book III · Problem Hierarchy, Cube Duplication &amp; the Three Classical Means (Translation)">&larr; <span class="nav-label">Book III · Problem Hierarchy, Cube Duplication & the Three Classical Means (Translation)</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">Synagoge (Μαθηματικὴ Συναγωγή)</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../book-5-sagacity-of-bees/book-5-sagacity-of-bees-en.html" title="Book V · On the Geometric Forethought of Bees &amp; Isoperimetry (Translation)"><span class="nav-label">Book V · On the Geometric Forethought of Bees & Isoperimetry (Translation)</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../log/26.315-modernize-pappus/index.html">2026 Modernization: Pappus, Pascal’s Hexagrammum Mysticum & Interactive Dossiers</a></li>
+        <li><a href="../../log/22.356-152519.html">Welcome</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../types/apparatus.html">apparatus</a></li>
+        <li><a href="../../types/log.html">log</a></li>
+        <li><a href="../../types/theorem.html">theorem</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../modules/index.html"  >Modules</a></li>
+        <li><a href="../../refs/index.html"  >References</a></li>
+        <li><a href="../../changelog.html"  >Changelog</a></li>
+        <li><a href="../../log/index.html"  >Log</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 340 CE (Hultsch 1876–1878 / Commandino 1588) • Original English Translation & Exact Symbolic Edition GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script>window.MathJax = {"tex": {"inlineMath": [["\\(", "\\)"], ["$", "$"]], "displayMath": [["\\[", "\\]"], ["$$", "$$"]]}}</script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

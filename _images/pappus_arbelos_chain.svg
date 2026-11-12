@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 720 440" data-graphic-id="g3" role="img" aria-label="Synagoge IV.14–18 — Pappus&#x27;s Arbelos Tangent Circle Chain (y_n = n d_n)">
+  <title>Synagoge IV.14–18 — Pappus&#x27;s Arbelos Tangent Circle Chain (y_n = n d_n)</title>
+  <style>
+.euclid-graphic {
+    --svg-bg: #fafaf9;
+    --ink: #1c1917;
+    --label-halo: rgba(250, 250, 249, 0.92);
+    --carrier: #475569;
+    --conic: #0284c7;
+    --cross: #0e7490;
+    --quad: #4338ca;
+    --pappus-even: #d97706;
+    --pappus-odd: #db2777;
+    --steiner: #7c3aed;
+    --harmonic: #059669;
+    --golden: #b45309;
+    --pt-given: #0f172a;
+    --pt-a: #0369a1;
+    --pt-b: #0f766e;
+    --pt-meet-even: #d97706;
+    --pt-meet-odd: #db2777;
+    --pt-steiner: #7c3aed;
+    --pt-harmonic: #059669;
+    --tri-square: #d97706;
+    --tri-circle: #0284c7;
+    --tri-diamond: #db2777;
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic {
+      --svg-bg: #141417;
+      --ink: #f4f4f5;
+      --label-halo: rgba(20, 20, 23, 0.92);
+      --carrier: #94a3b8;
+      --conic: #38bdf8;
+      --cross: #38bdf8;
+      --quad: #818cf8;
+      --pappus-even: #fbbf24;
+      --pappus-odd: #f472b6;
+      --steiner: #c084fc;
+      --harmonic: #34d399;
+      --golden: #facc15;
+      --pt-given: #e2e8f0;
+      --pt-a: #38bdf8;
+      --pt-b: #2dd4bf;
+      --pt-meet-even: #fbbf24;
+      --pt-meet-odd: #f472b6;
+      --pt-steiner: #c084fc;
+      --pt-harmonic: #34d399;
+      --tri-square: #fbbf24;
+      --tri-circle: #38bdf8;
+      --tri-diamond: #f472b6;
+    }
+  }
+  .euclid-graphic .svg-bg { fill: var(--svg-bg); }
+  .euclid-graphic .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88; }
+  .euclid-graphic .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round; }
+  .euclid-graphic .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92; }
+  .euclid-graphic .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58; }
+  .euclid-graphic .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78; }
+  .euclid-graphic .diagonal-line { stroke-dasharray: 5 3.5; }
+  .euclid-graphic .pappus-line { stroke-width: 2.7; opacity: 0.96; }
+  .euclid-graphic .pappus-even { stroke: var(--pappus-even); }
+  .euclid-graphic .pappus-odd { stroke: var(--pappus-odd); }
+  .euclid-graphic .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4; }
+  .euclid-graphic .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5; }
+  .euclid-graphic .geom-segment { fill: none; stroke: var(--carrier); stroke-width: 2.3; stroke-linecap: round; }
+  .euclid-graphic .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85; }
+  .euclid-graphic .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.85; }
+  .euclid-graphic .geom-segment.arithmetic-segment { fill: none; stroke: var(--pappus-even); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92; }
+  .euclid-graphic .geom-segment.geometric-segment { fill: none; stroke: var(--conic); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92; }
+  .euclid-graphic .geom-segment.vector-segment { fill: none; stroke: var(--steiner); stroke-width: 2.4; stroke-dasharray: 6 3.5; stroke-linecap: round; opacity: 0.88; }
+  .euclid-graphic .geom-segment.altitude-segment { fill: none; stroke: var(--pappus-odd); stroke-width: 2.2; stroke-dasharray: 4.5 3; stroke-linecap: round; opacity: 0.85; }
+  .euclid-graphic .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round; }
+  .euclid-graphic .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5; }
+  .euclid-graphic .pt-a { fill: var(--pt-a); }
+  .euclid-graphic .pt-b { fill: var(--pt-b); }
+  .euclid-graphic .meet-point.pappus-even { fill: var(--pt-meet-even); }
+  .euclid-graphic .meet-point.pappus-odd { fill: var(--pt-meet-odd); }
+  .euclid-graphic .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0; }
+  .euclid-graphic .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8; }
+  .euclid-graphic .aux-point { opacity: 0.78; }
+  .euclid-graphic .geom-label {
+    fill: var(--ink);
+    font-size: 13.5px;
+    font-weight: 600;
+    paint-order: stroke fill;
+    stroke: var(--label-halo);
+    stroke-width: 3.6px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .geom-label-sub { font-size: 10px; font-weight: 600; }
+  </style>
+  <rect class="svg-bg" x="0" y="0" width="720" height="440" rx="6" fill="none" />
+  <g id="elements">
+    <g id="graphics">
+      <circle class="geom-circle conic-curve" cx="360" cy="350.29" r="274.29" data-ref="( O0 A )" data-aliases="( P2 A ) | ( P2 C )" fill="none"><title>( O0 A ): y**2 + (x - 3)**2 - 9 = 0</title></circle>
+      <circle class="geom-circle conic-curve" cx="268.57" cy="350.29" r="182.86" data-ref="( O1 A )" data-aliases="( P3 A ) | ( P3 D )" fill="none"><title>( O1 A ): y**2 + (x - 2)**2 - 4 = 0</title></circle>
+      <circle class="geom-circle conic-curve" cx="542.86" cy="350.29" r="91.43" data-ref="( O2 D )" data-aliases="( O2 C )" fill="none"><title>( O2 D ): y**2 + (x - 5)**2 - 1 = 0</title></circle>
+      <circle class="geom-circle conic-curve" cx="477.55" cy="193.55" r="78.37" data-ref="( K1 X1 )" fill="none"><title>( K1 X1 ): (x - 30/7)**2 + (y - 12/7)**2 - 36/49 = 0</title></circle>
+      <circle class="geom-circle conic-curve" cx="360" cy="130.86" r="54.86" data-ref="( K2 X2 )" fill="none"><title>( K2 X2 ): (x - 3)**2 + (y - 12/5)**2 - 9/25 = 0</title></circle>
+      <circle class="geom-circle conic-curve" cx="268.57" cy="130.86" r="36.57" data-ref="( K3 X3 )" fill="none"><title>( K3 X3 ): (x - 2)**2 + (y - 12/5)**2 - 4/25 = 0</title></circle>
+      <circle class="geom-circle conic-curve" cx="210.39" cy="150.81" r="24.94" data-ref="( K4 X4 )" fill="none"><title>( K4 X4 ): (x - 15/11)**2 + (y - 24/11)**2 - 9/121 = 0</title></circle>
+      <path class="geom-line carrier-line" d="M 14 350.29 L 360 350.29 L 706 350.29" data-ref="[ A C ]" data-aliases="[ A D ] | [ A P2 ] | [ A P3 ] | [ A O2 ] | [ A P1 ] | [ A P4 ] | [ D C ] | [ D P2 ] | [ D P3 ] | [ D O2 ] | [ D P1 ] | [ D P4 ] | [ C P2 ] | [ C P3 ] | [ C O2 ] | [ C P1 ] | [ C P4 ] | [ P2 P3 ] | [ P2 O2 ] | [ P2 P1 ] | [ P2 P4 ] | [ P3 O2 ] | [ P3 P1 ] | [ P3 P4 ] | [ O2 P1 ] | [ O2 P4 ] | [ P1 P4 ]" fill="none"><title>[ A C ]: y = 0</title></path>
+      <path class="geom-segment arithmetic-segment" d="M 477.55 350.29 L 477.55 271.92 L 477.55 193.55" data-ref="[ P1 K1 ]" data-aliases="[ K1 P1 ] | / P1 K1 /" fill="none" />
+      <path class="geom-segment harmonic-segment" d="M 360 350.29 L 360 240.57 L 360 130.86" data-ref="[ P2 K2 ]" data-aliases="[ K2 P2 ] | / P2 K2 /" fill="none" />
+      <path class="geom-segment arithmetic-segment" d="M 268.57 350.29 L 268.57 240.57 L 268.57 130.86" data-ref="[ P3 K3 ]" data-aliases="[ K3 P3 ] | / P3 K3 /" fill="none" />
+      <path class="geom-segment harmonic-segment" d="M 210.39 350.29 L 210.39 250.55 L 210.39 150.81" data-ref="[ P4 K4 ]" data-aliases="[ K4 P4 ] | / P4 K4 /" fill="none" />
+    </g>
+    <g id="highlights"></g>
+    <g id="points">
+      <circle class="geom-point harmonic-point aux-point" cx="268.57" cy="350.29" r="3.1" data-ref="P3" data-latex-x="2" data-latex-y="0"><title>P3 = (2, 0)</title></circle>
+      <circle class="geom-point aux-point" cx="542.86" cy="350.29" r="3.1" data-ref="O2" data-latex-x="5" data-latex-y="0"><title>O2 = (5, 0)</title></circle>
+      <circle class="geom-point aux-point" cx="555.92" cy="193.55" r="3.1" data-ref="X1" data-latex-x="\frac{36}{7}" data-latex-y="\frac{12}{7}"><title>X1 = (36/7, 12/7)</title></circle>
+      <circle class="geom-point harmonic-point" cx="477.55" cy="350.29" r="5.2" data-ref="P1" data-latex-x="\frac{30}{7}" data-latex-y="0"><title>P1 = (30/7, 0)</title></circle>
+      <circle class="geom-point aux-point" cx="414.86" cy="130.86" r="3.1" data-ref="X2" data-latex-x="\frac{18}{5}" data-latex-y="\frac{12}{5}"><title>X2 = (18/5, 12/5)</title></circle>
+      <circle class="geom-point aux-point" cx="305.14" cy="130.86" r="3.1" data-ref="X3" data-latex-x="\frac{12}{5}" data-latex-y="\frac{12}{5}"><title>X3 = (12/5, 12/5)</title></circle>
+      <circle class="geom-point aux-point" cx="235.32" cy="150.81" r="3.1" data-ref="X4" data-latex-x="\frac{18}{11}" data-latex-y="\frac{24}{11}"><title>X4 = (18/11, 24/11)</title></circle>
+      <circle class="geom-point harmonic-point" cx="210.39" cy="350.29" r="5.2" data-ref="P4" data-latex-x="\frac{15}{11}" data-latex-y="0"><title>P4 = (15/11, 0)</title></circle>
+      <circle class="geom-point given-point pt-a" cx="85.71" cy="350.29" r="4.2" data-ref="A" data-latex-x="0" data-latex-y="0"><title>A = (0, 0)</title></circle>
+      <circle class="geom-point given-point pt-b" cx="451.43" cy="350.29" r="4.2" data-ref="D" data-latex-x="4" data-latex-y="0"><title>D = (4, 0)</title></circle>
+      <circle class="geom-point given-point pt-a" cx="634.29" cy="350.29" r="4.2" data-ref="C" data-latex-x="6" data-latex-y="0"><title>C = (6, 0)</title></circle>
+      <circle class="geom-point apex-point harmonic-point" cx="360" cy="350.29" r="5.2" data-ref="P2" data-latex-x="3" data-latex-y="0"><title>P2 = (3, 0)</title></circle>
+      <circle class="geom-point-halo" cx="477.55" cy="193.55" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+      <circle class="geom-point meet-point pappus-even" cx="477.55" cy="193.55" r="4.7" data-ref="K1" data-latex-x="\frac{30}{7}" data-latex-y="\frac{12}{7}"><title>K1 = (30/7, 12/7)</title></circle>
+      <circle class="geom-point-halo" cx="360" cy="130.86" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+      <circle class="geom-point meet-point pappus-odd" cx="360" cy="130.86" r="4.7" data-ref="K2" data-latex-x="3" data-latex-y="\frac{12}{5}"><title>K2 = (3, 12/5)</title></circle>
+      <circle class="geom-point-halo" cx="268.57" cy="130.86" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+      <circle class="geom-point meet-point pappus-even" cx="268.57" cy="130.86" r="4.7" data-ref="K3" data-latex-x="2" data-latex-y="\frac{12}{5}"><title>K3 = (2, 12/5)</title></circle>
+      <circle class="geom-point-halo" cx="210.39" cy="150.81" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+      <circle class="geom-point meet-point pappus-odd" cx="210.39" cy="150.81" r="4.7" data-ref="K4" data-latex-x="\frac{15}{11}" data-latex-y="\frac{24}{11}"><title>K4 = (15/11, 24/11)</title></circle>
+    </g>
+    <g id="labels">
+      <text class="geom-label" x="259.93" y="373.15" data-ref="P3">P<tspan class="geom-label-sub" dy="3">3</tspan></text>
+      <text class="geom-label" x="534.22" y="336.95" data-ref="O2">O<tspan class="geom-label-sub" dy="3">2</tspan></text>
+      <text class="geom-label" x="468.91" y="375.25" data-ref="P1">P<tspan class="geom-label-sub" dy="3">1</tspan></text>
+      <text class="geom-label" x="201.75" y="375.25" data-ref="P4">P<tspan class="geom-label-sub" dy="3">4</tspan></text>
+      <text class="geom-label" x="79.86" y="335.85" data-ref="A">A</text>
+      <text class="geom-label" x="445.58" y="335.85" data-ref="D">D</text>
+      <text class="geom-label" x="628.44" y="335.85" data-ref="C">C</text>
+      <text class="geom-label" x="351.36" y="375.25" data-ref="P2">P<tspan class="geom-label-sub" dy="3">2</tspan></text>
+      <text class="geom-label" x="468.91" y="178.61" data-ref="K1">K<tspan class="geom-label-sub" dy="3">1</tspan></text>
+      <text class="geom-label" x="351.36" y="115.92" data-ref="K2">K<tspan class="geom-label-sub" dy="3">2</tspan></text>
+      <text class="geom-label" x="259.93" y="115.92" data-ref="K3">K<tspan class="geom-label-sub" dy="3">3</tspan></text>
+      <text class="geom-label" x="201.75" y="135.87" data-ref="K4">K<tspan class="geom-label-sub" dy="3">4</tspan></text>
+    </g>
+  </g>
+</svg>

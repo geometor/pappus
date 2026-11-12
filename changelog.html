@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
   <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=66998e95" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
-  <link rel="stylesheet" type="text/css" href="_static/custom.css?v=911ccb65" />
+  <link rel="stylesheet" type="text/css" href="_static/custom.css?v=f442dd77" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
@@ -37,6 +37,9 @@
       <input type="checkbox" id="nav-Header-toggle" >
       <label for="nav-Header-toggle" >Header</label>
       <ul>
+        <li>
+          <a href="synagoge/index.html"  >Synagoge (Μαθηματικὴ Συναγωγή) — Multi-Track Book Codex</a>
+        </li>
         <li>
           <a href="mission/index.html"  >Mission</a>
         </li>
@@ -78,7 +81,41 @@
         <section class="level-1" id="changelog">
         <h1>Changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h1>
         <section class="level-2" id="id1">
-        <h2>0.1.0 (2026-11-11)<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+        <h2>0.2.0 (2026-11-12)<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+        <ul class="simple">
+        <li><p><strong>Multi-Track *Synagoge* Book Codex</strong> (<code class="docutils literal notranslate"><span class="pre">docsrc/synagoge/</span></code>): Added a 5-unit, 4-track
+        (<code class="docutils literal notranslate"><span class="pre">-en</span></code>, <code class="docutils literal notranslate"><span class="pre">-el</span></code>, <code class="docutils literal notranslate"><span class="pre">-summary</span></code>, <code class="docutils literal notranslate"><span class="pre">-notes</span></code>) Book Codex (:layout: <code class="docutils literal notranslate"><span class="pre">book</span></code>) covering
+        <strong>Books III, IV, V, VII, and VIII</strong> of Pappus of Alexandria’s <em>Synagoge</em> (<em>Μαθηματικὴ
+        Συναγωγή</em>, c. 340 CE), pairing Friedrich Hultsch’s 1876–1878 critical polytonic Greek text
+        with 100% original GEOMETOR English translations, bidirectional <code class="docutils literal notranslate"><span class="pre">geometor/euclid</span></code> citation
+        concordance, <em>Index Nominum</em>, bibliography, and Greek/Latin mathematical glossary.</p></li>
+        <li><p><strong>Exact Symbolic *Synagoge* Demonstrations</strong> (<code class="docutils literal notranslate"><span class="pre">geometor.pappus.synagoge_demos</span></code>):</p>
+        <ul>
+        <li><p><code class="docutils literal notranslate"><span class="pre">construct_three_means</span></code> (<em>Book III, Props. 28–30</em>): arithmetic, geometric, and harmonic
+        means inside a single semicircle ($A cdot H = G^2$) with exact orthogonal foot projection
+        $F$ and external harmonic tangent conjugate $(A, C; D, T) = -1$ over $mathbb{Q}$ and
+        $mathbb{Q}(phi)$.</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">construct_pappus_area_theorem</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">verify_pappus_area_symbolic</span></code> (<em>Book IV, Prop. 1</em>):
+        Pappus’s equiaffine parallelogram generalization of <em>Elements</em> I.47 plus a universal
+        10-variable polynomial proof over $mathbb{Z}$.</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">construct_pappus_arbelos_chain</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">verify_arbelos_chain_symbolic</span></code> (<em>Book IV,
+        Props. 14–18</em>): infinite tangent circle chain inside the <em>arbelos</em> in 100% rational
+        coordinates proving $y_n = n,d_n = 2n,r_n$ and focal ellipse locus invariance.</p></li>
+        <li><p><code class="docutils literal notranslate"><span class="pre">verify_honeycomb_isoperimetry</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">construct_honeycomb_isoperimetry</span></code> (<em>Book V, Prop. 1
+        &amp; Book VIII, Prop. 23</em>): Diophantine proof of unique regular planar tessellations
+        $n in {3, 4, 6}$, exact $mathbb{Q}(sqrt{3})$ area ratios, and 7-hexagon circle
+        inscription ($R = s_6sqrt{7}$).</p></li>
+        </ul>
+        </li>
+        <li><p><strong>Sphinx Extension, CLI &amp; Gallery Expansion</strong>: Added <code class="docutils literal notranslate"><span class="pre">geometor.pappus.sphinx_ext</span></code>
+        (registering the <code class="docutils literal notranslate"><span class="pre">-el</span></code> Greek companion track and offline sibling <code class="docutils literal notranslate"><span class="pre">objects.inv</span></code>
+        intersphinx), <code class="docutils literal notranslate"><span class="pre">pappus</span> <span class="pre">synagoge</span></code> and <code class="docutils literal notranslate"><span class="pre">pappus</span> <span class="pre">build</span> <span class="pre">--synagoge</span></code> CLI commands, 6 new
+        <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVGs (24 total), 4 new standalone <code class="docutils literal notranslate"><span class="pre">demos/</span></code> scripts (9 total), and
+        comprehensive <code class="docutils literal notranslate"><span class="pre">tests/test_synagoge.py</span></code> verification.</p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="id2">
+        <h2>0.1.0 (2026-11-11)<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Modernized repository to PEP 621 <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> (<code class="docutils literal notranslate"><span class="pre">name</span> <span class="pre">=</span> <span class="pre">&quot;geometor-pappus&quot;</span></code>, Python <code class="docutils literal notranslate"><span class="pre">&gt;=3.13</span></code>, <code class="docutils literal notranslate"><span class="pre">ruff</span></code> type/docstring enforcement) and <code class="docutils literal notranslate"><span class="pre">src/geometor/pappus/</span></code> namespace layout.</p></li>
         <li><p>Added <code class="docutils literal notranslate"><span class="pre">geometor.pappus.projective</span></code> with exact SymPy cross-ratios, Book VII Prop. 129 central perspectivities, Wildberger quadrances and spreads, algebraic fourth harmonic conjugates, Veronese <span class="math notranslate nohighlight">\(6 \times 6\)</span> coconicity (<code class="docutils literal notranslate"><span class="pre">are_coconic</span></code>, <code class="docutils literal notranslate"><span class="pre">conic_equation_through_points</span></code>), Chasles observer-independent conic cross-ratios (<code class="docutils literal notranslate"><span class="pre">conic_cross_ratio</span></code>), and collinear harmonic/golden range scanners integrated with <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code>.</p></li>
@@ -89,8 +126,8 @@
         <li><p>Authored interactive Sphinx documentation under <code class="docutils literal notranslate"><span class="pre">docsrc/</span></code> with step-by-step <code class="docutils literal notranslate"><span class="pre">:g:</span></code> walkthroughs and five theorem dossiers.</p></li>
         </ul>
         </section>
-        <section class="level-2" id="id2">
-        <h2>0.0.1 (2022-12-22)<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+        <section class="level-2" id="id3">
+        <h2>0.0.1 (2022-12-22)<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
         <ul class="simple">
         <li><p>Initial repository scaffold, <code class="docutils literal notranslate"><span class="pre">pappus.py</span></code> six-permutation harmonic exploration, and <code class="docutils literal notranslate"><span class="pre">pappus-3.py</span></code> type-triangle investigation.</p></li>
         </ul>
@@ -143,6 +180,7 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
+        <li><a href="types/apparatus.html">apparatus</a></li>
         <li><a href="types/log.html">log</a></li>
         <li><a href="types/theorem.html">theorem</a></li>
       </ul>
@@ -160,18 +198,19 @@
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright 2026, GEOMETOR.
+        &copy; Copyright c. 340 CE (Hultsch 1876–1878 / Commandino 1588) • Original English Translation & Exact Symbolic Edition GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="_static/jquery.js?v=5d32c60e"></script>
   <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="_static/documentation_options.js?v=01f34227"></script>
+  <script src="_static/documentation_options.js?v=938c9ccc"></script>
   <script src="_static/doctools.js?v=fd6eb6e6"></script>
   <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script>window.MathJax = {"tex": {"inlineMath": [["\\(", "\\)"], ["$", "$"]], "displayMath": [["\\[", "\\]"], ["$$", "$$"]]}}</script>
   <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="_static/js/search_highlight.js"></script>
 

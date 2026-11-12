@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
   <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=66998e95" />
   <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
-  <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=911ccb65" />
+  <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=f442dd77" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
@@ -37,6 +37,9 @@
       <input type="checkbox" id="nav-Header-toggle" >
       <label for="nav-Header-toggle" >Header</label>
       <ul>
+        <li>
+          <a href="../synagoge/index.html"  >Synagoge (Μαθηματικὴ Συναγωγή) — Multi-Track Book Codex</a>
+        </li>
         <li>
           <a href="../mission/index.html"  >Mission</a>
         </li>
@@ -77,15 +80,15 @@
       <div class="content body book-content" role="main">
         <section class="level-1" id="demos">
         <h1>Demos<a class="headerlink" href="#demos" title="Link to this heading">¶</a></h1>
-        <p>Five standalone runnable scripts in <code class="docutils literal notranslate"><span class="pre">demos/</span></code> showcase every layer of <code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code> with
-        formatted Rich terminal tables—reviving and extending the repository’s original 2023 <code class="docutils literal notranslate"><span class="pre">pappus.py</span></code>
-        and <code class="docutils literal notranslate"><span class="pre">pappus-3.py</span></code> explorations without requiring a GUI window.</p>
+        <p>Nine standalone runnable scripts in <code class="docutils literal notranslate"><span class="pre">demos/</span></code> showcase every layer of <code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code>—spanning
+        both the projective Pappus–Steiner–Pascal canon and Books III, IV, V, and VIII of the <em>Synagoge</em>—with
+        formatted Rich terminal tables and 100% exact SymPy coordinates.</p>
         <section class="level-2" id="demos-pappus-hexagon-py-synagoge-vii-138-vii-139">
         <h2>1. <code class="docutils literal notranslate"><span class="pre">demos/pappus_hexagon.py</span></code> — <em>Synagoge</em> VII.138 &amp; VII.139<a class="headerlink" href="#demos-pappus-hexagon-py-synagoge-vii-138-vii-139" title="Link to this heading">¶</a></h2>
         <p>Constructs both the oblique intersecting-carrier hexagon (Prop. 139) and the parallel-carrier
         hexagon (Prop. 138), verifies the universal 8-variable polynomial proof, and computes the exact
         signed areas of the three homologous <code class="docutils literal notranslate"><span class="pre">square</span></code> / <code class="docutils literal notranslate"><span class="pre">circle</span></code> / <code class="docutils literal notranslate"><span class="pre">diamond</span></code> triangles.</p>
-        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>demos/pappus_hexagon.py
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>--no-sync<span class="w"> </span>python<span class="w"> </span>demos/pappus_hexagon.py
         </pre></div>
         </div>
         <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">"""Demonstration 1: Pappus's Hexagon Theorem (Synagoge VII.138 &amp; VII.139) and Type Triangles.</span>
@@ -185,7 +188,7 @@
         <p>Constructs all $3! = 6$ permutations on both <code class="docutils literal notranslate"><span class="pre">preset=&quot;steiner&quot;</span></code> and the 2023 <code class="docutils literal notranslate"><span class="pre">preset=&quot;parallel&quot;</span></code>
         configuration, printing every cross-join meet, Pappus line equation, and exact Star concurrency
         point $(S_+, S_-)$.</p>
-        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>demos/pappus_six_permutations.py
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>--no-sync<span class="w"> </span>python<span class="w"> </span>demos/pappus_six_permutations.py
         </pre></div>
         </div>
         <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sa">r</span><span class="sd">"""Demonstration 2: The Six Permutations (S_3) &amp; Steiner's Two Star Concurrency Points.</span>
@@ -264,7 +267,7 @@
         <p>Verifies Book VII Prop. 129 central perspectivity invariance, demonstrates straightedge fourth
         harmonic construction across two distinct auxiliary apex/relay choices (confirming invariance of
         $D = (-4, 0)$), and catalogs emergent harmonic tetrads on <code class="docutils literal notranslate"><span class="pre">preset=&quot;harmonic&quot;</span></code>.</p>
-        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>demos/harmonic_conjugate.py
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>--no-sync<span class="w"> </span>python<span class="w"> </span>demos/harmonic_conjugate.py
         </pre></div>
         </div>
         <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">"""Demonstration 3: Straightedge Fourth Harmonic Conjugate &amp; Projective Invariance.</span>
@@ -352,7 +355,7 @@
         <p>Computes the canonical golden cross-ratio $(0, 1; \phi, \phi + 1) = \phi$, its six-value
         anharmonic power orbit, the harmonic-golden identity $(0, \phi; 1, \phi^3) = -1$, and runs
         <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code> to uncover the emergent golden section <code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">A1</span> <span class="pre">M12</span> <span class="pre">B2</span> <span class="pre">/</span></code>.</p>
-        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>demos/golden_pappus.py
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>--no-sync<span class="w"> </span>python<span class="w"> </span>demos/golden_pappus.py
         </pre></div>
         </div>
         <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sa">r</span><span class="sd">"""Demonstration 4: Golden Projectivity, Cross-Ratio Orbits &amp; Book VII Prop. 129.</span>
@@ -460,7 +463,7 @@
         the Pythagorean unit circle and stretched affine ellipse $\frac{x^2}{4} + y^2 = 1$, enumerates all
         <strong>60 Pascal lines, 20 Steiner points, 60 Kirkman points, and 15 Plücker lines</strong>, and uncovers the
         emergent golden conic section <code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">M25</span> <span class="pre">P4</span> <span class="pre">P0</span> <span class="pre">/</span></code> in $\mathbb{Q}(\phi)$.</p>
-        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>demos/pascal_hexagrammum.py
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>--no-sync<span class="w"> </span>python<span class="w"> </span>demos/pascal_hexagrammum.py
         </pre></div>
         </div>
         <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">"""Standalone demonstration of Blaise Pascal's *Hexagrammum Mysticum* (1640).</span>
@@ -603,6 +606,268 @@
         </pre></div>
         </div>
         </section>
+        <section class="level-2" id="demos-synagoge-three-means-py-synagoge-book-iii-three-means-in-one-semicircle">
+        <h2>6. <code class="docutils literal notranslate"><span class="pre">demos/synagoge_three_means.py</span></code> — <em>Synagoge</em> Book III: Three Means in One Semicircle<a class="headerlink" href="#demos-synagoge-three-means-py-synagoge-book-iii-three-means-in-one-semicircle" title="Link to this heading">¶</a></h2>
+        <p>Constructs Pappus’s semicircle diagram (<em>Hultsch I, pp. 68–84</em>) on rational $(9, 16)$, Pythagorean
+        $(4, 9)$, and golden $(1, \phi^2)$ segments, verifying $A \cdot H = G^2$, $A &gt; G &gt; H$, and the
+        external harmonic tangent relation $(A, C; D, T) = -1$.</p>
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>--no-sync<span class="w"> </span>python<span class="w"> </span>demos/synagoge_three_means.py
+        </pre></div>
+        </div>
+        <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sa">r</span><span class="sd">"""Standalone demo: Pappus's Three Classical Means in a Single Semicircle (*Synagoge* III.5–16).</span>
+
+        <span class="sd">Constructs both the rational $(9, 16)$ semicircle ($A = 25/2, G = 12, H = 288/25$)</span>
+        <span class="sd">and the golden $(1, \phi^2)$ semicircle ($G = \phi$) in 100% exact SymPy arithmetic,</span>
+        <span class="sd">verifying $A \cdot H = G^2$, $A &gt; G &gt; H$, and the harmonic tangent relation $(A, C; D, T) = -1$.</span>
+        <span class="sd">"""</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+
+        <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+        <span class="n">_SRC_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s2">"src"</span>
+        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">))</span>
+
+        <span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>  <span class="c1"># noqa: E402</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.console</span><span class="w"> </span><span class="kn">import</span> <span class="n">Console</span>  <span class="c1"># noqa: E402</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.table</span><span class="w"> </span><span class="kn">import</span> <span class="n">Table</span>  <span class="c1"># noqa: E402</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.pappus</span><span class="w"> </span><span class="kn">import</span> <span class="n">PHI</span><span class="p">,</span> <span class="n">construct_three_means</span>  <span class="c1"># noqa: E402</span>
+
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="w">    </span><span class="sd">"""Run the Book III semicircle means demonstration."""</span>
+            <span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
+            <span class="n">table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">"Pappus Synagoge III.5–16 — Three Means in One Semicircle"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Segments (a, b)"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan bold"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"A = (a+b)/2"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"yellow"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"G = sqrt(ab)"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"H = 2ab/(a+b)"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"magenta"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"A*H - G^2"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"white"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"(A, C; D, T)"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan"</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">a_val</span><span class="p">,</span> <span class="n">b_val</span> <span class="ow">in</span> <span class="p">(</span>
+                <span class="p">(</span><span class="s2">"Rational (9, 16)"</span><span class="p">,</span> <span class="n">sp</span><span class="o">.</span><span class="n">Integer</span><span class="p">(</span><span class="mi">9</span><span class="p">),</span> <span class="n">sp</span><span class="o">.</span><span class="n">Integer</span><span class="p">(</span><span class="mi">16</span><span class="p">)),</span>
+                <span class="p">(</span><span class="s2">"Pythagorean (4, 9)"</span><span class="p">,</span> <span class="n">sp</span><span class="o">.</span><span class="n">Integer</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="n">sp</span><span class="o">.</span><span class="n">Integer</span><span class="p">(</span><span class="mi">9</span><span class="p">)),</span>
+                <span class="p">(</span><span class="s2">"Golden (1, phi^2)"</span><span class="p">,</span> <span class="n">sp</span><span class="o">.</span><span class="n">Integer</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">PHI</span><span class="o">**</span><span class="mi">2</span><span class="p">),</span>
+            <span class="p">):</span>
+                <span class="n">res</span> <span class="o">=</span> <span class="n">construct_three_means</span><span class="p">(</span><span class="n">a_val</span><span class="p">,</span> <span class="n">b_val</span><span class="p">)</span>
+                <span class="n">identity_zero</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">simplify</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">arithmetic_mean</span> <span class="o">*</span> <span class="n">res</span><span class="o">.</span><span class="n">harmonic_mean</span> <span class="o">-</span> <span class="n">res</span><span class="o">.</span><span class="n">geometric_mean</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+                <span class="n">table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span>
+                    <span class="n">label</span><span class="p">,</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">arithmetic_mean</span><span class="p">),</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">geometric_mean</span><span class="p">),</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">harmonic_mean</span><span class="p">),</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">identity_zero</span><span class="p">),</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">harmonic_cross_ratio</span><span class="p">),</span>
+                <span class="p">)</span>
+
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+            <span class="k">return</span> <span class="mi">0</span>
+
+
+        <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">SystemExit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+        </pre></div>
+        </div>
+        </section>
+        <section class="level-2" id="demos-pappus-area-theorem-py-synagoge-book-iv-1-parallelogram-area-theorem">
+        <h2>7. <code class="docutils literal notranslate"><span class="pre">demos/pappus_area_theorem.py</span></code> — <em>Synagoge</em> Book IV.1: Parallelogram Area Theorem<a class="headerlink" href="#demos-pappus-area-theorem-py-synagoge-book-iv-1-parallelogram-area-theorem" title="Link to this heading">¶</a></h2>
+        <p>Demonstrates Pappus’s equiaffine generalization of <em>Elements</em> I.47 (<em>Hultsch I, pp. 176–179</em>) on an
+        oblique scalene triangle ($13 + 15 = 28$), on the $3$-$4$-$5$ right triangle ($9 + 16 = 25$), and
+        universally over $\mathbb{Z}[x_A, y_A, x_B, y_B, x_C, y_C, u_x, u_y, v_x, v_y]$.</p>
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>--no-sync<span class="w"> </span>python<span class="w"> </span>demos/pappus_area_theorem.py
+        </pre></div>
+        </div>
+        <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sa">r</span><span class="sd">"""Standalone demo: Pappus's Area Theorem (*Synagoge* Book IV, Prop. 1).</span>
+
+        <span class="sd">Demonstrates Pappus's affine generalization of the Pythagorean Theorem (*Elements* I.47)</span>
+        <span class="sd">on an arbitrary scalene triangle with oblique parallelograms, on the $3$-$4$-$5$ right</span>
+        <span class="sd">triangle with squares, and universally over $\mathbb{Z}[x_A, y_A, x_B, y_B, x_C, y_C, u_x, u_y, v_x, v_y]$.</span>
+        <span class="sd">"""</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+
+        <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+        <span class="n">_SRC_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s2">"src"</span>
+        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">))</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.console</span><span class="w"> </span><span class="kn">import</span> <span class="n">Console</span>  <span class="c1"># noqa: E402</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.table</span><span class="w"> </span><span class="kn">import</span> <span class="n">Table</span>  <span class="c1"># noqa: E402</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.pappus</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>  <span class="c1"># noqa: E402</span>
+            <span class="n">construct_pappus_area_theorem</span><span class="p">,</span>
+            <span class="n">verify_pappus_area_symbolic</span><span class="p">,</span>
+        <span class="p">)</span>
+
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="w">    </span><span class="sd">"""Run the Book IV.1 Pappus Area Theorem demonstration."""</span>
+            <span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
+            <span class="n">table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">"Pappus Synagoge IV.1 — Area Theorem on Arbitrary Parallelograms"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Case"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan bold"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Apex H = [DE] ∩ [FG]"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"white"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Area(ABDE)"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"yellow"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Area(ACFG)"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"yellow"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Area(BCML)"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"green bold"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Residual"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"magenta"</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">preset</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">"scalene"</span><span class="p">,</span> <span class="s2">"pythagoras"</span><span class="p">):</span>
+                <span class="n">res</span> <span class="o">=</span> <span class="n">construct_pappus_area_theorem</span><span class="p">(</span><span class="n">preset</span><span class="o">=</span><span class="n">preset</span><span class="p">)</span>
+                <span class="n">table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span>
+                    <span class="n">preset</span><span class="p">,</span>
+                    <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">res</span><span class="o">.</span><span class="n">apex_h</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">res</span><span class="o">.</span><span class="n">apex_h</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">,</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">area_ab</span><span class="p">),</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">area_ac</span><span class="p">),</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">area_bc</span><span class="p">),</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">area_residual</span><span class="p">),</span>
+                <span class="p">)</span>
+
+            <span class="n">sym_residual</span> <span class="o">=</span> <span class="n">verify_pappus_area_symbolic</span><span class="p">()</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Universal 10-var Polynomial"</span><span class="p">,</span> <span class="s2">"symbolic H"</span><span class="p">,</span> <span class="s2">"det(A-B,u)"</span><span class="p">,</span> <span class="s2">"det(v,A-C)"</span><span class="p">,</span> <span class="s2">"det(B-C,A-H)"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">sym_residual</span><span class="p">))</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+            <span class="k">return</span> <span class="mi">0</span>
+
+
+        <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">SystemExit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+        </pre></div>
+        </div>
+        </section>
+        <section class="level-2" id="demos-arbelos-circle-chain-py-synagoge-book-iv-1418-arbelos-circle-chain">
+        <h2>8. <code class="docutils literal notranslate"><span class="pre">demos/arbelos_circle_chain.py</span></code> — <em>Synagoge</em> Book IV.14–18: Arbelos Circle Chain<a class="headerlink" href="#demos-arbelos-circle-chain-py-synagoge-book-iv-1418-arbelos-circle-chain" title="Link to this heading">¶</a></h2>
+        <p>Constructs the infinite tangent circle chain $C_1, \dots, C_5$ inside the <em>arbelos</em> (<em>Hultsch I,
+        pp. 208–232</em>) in 100% exact rational coordinates and verifies both pairwise tangency quadrances and
+        Pappus’s altitude law $y_n = n\,d_n = 2n\,r_n$.</p>
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>--no-sync<span class="w"> </span>python<span class="w"> </span>demos/arbelos_circle_chain.py
+        </pre></div>
+        </div>
+        <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sa">r</span><span class="sd">"""Standalone demo: Pappus's *Ancient Proposition* on the Arbelos (*Synagoge* IV.14–18).</span>
+
+        <span class="sd">Constructs the tangent circle chain $C_1, \dots, C_5$ inside the shoemaker's knife</span>
+        <span class="sd">(*arbelos*) in 100% exact rational coordinates over $\mathbb{Q}$ and verifies both</span>
+        <span class="sd">pairwise tangency quadrances and Pappus's altitude law $y_n = n d_n = 2 n r_n$.</span>
+        <span class="sd">"""</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+
+        <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+        <span class="n">_SRC_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s2">"src"</span>
+        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">))</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.console</span><span class="w"> </span><span class="kn">import</span> <span class="n">Console</span>  <span class="c1"># noqa: E402</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.table</span><span class="w"> </span><span class="kn">import</span> <span class="n">Table</span>  <span class="c1"># noqa: E402</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.pappus</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>  <span class="c1"># noqa: E402</span>
+            <span class="n">construct_pappus_arbelos_chain</span><span class="p">,</span>
+            <span class="n">verify_arbelos_chain_symbolic</span><span class="p">,</span>
+        <span class="p">)</span>
+
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="w">    </span><span class="sd">"""Run the Book IV.14–18 Arbelos circle chain demonstration."""</span>
+            <span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
+            <span class="n">res</span> <span class="o">=</span> <span class="n">construct_pappus_arbelos_chain</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+            <span class="n">sym_checks</span> <span class="o">=</span> <span class="n">verify_arbelos_chain_symbolic</span><span class="p">()</span>
+
+            <span class="n">table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">"Pappus Synagoge IV.14–18 — Infinite Arbelos Circle Chain (r1 = 2, r2 = 1)"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"n"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan bold"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Rational Center K_n"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"white"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Radius r_n"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"yellow"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Diameter d_n"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"yellow"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Height y_n"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"y_n / d_n"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"magenta bold"</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">res</span><span class="o">.</span><span class="n">chain</span><span class="p">:</span>
+                <span class="n">table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">index</span><span class="p">),</span>
+                    <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">center</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">center</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">,</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">radius</span><span class="p">),</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">diameter</span><span class="p">),</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">height</span><span class="p">),</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">height_over_diameter</span><span class="p">),</span>
+                <span class="p">)</span>
+
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Symbolic proof residuals over Q(r1, r2, n): </span><span class="si">{</span><span class="n">sym_checks</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="k">return</span> <span class="mi">0</span>
+
+
+        <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">SystemExit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+        </pre></div>
+        </div>
+        </section>
+        <section class="level-2" id="demos-honeycomb-isoperimetry-py-synagoge-book-v-1-viii-23-honeycomb-7-hexagons">
+        <h2>9. <code class="docutils literal notranslate"><span class="pre">demos/honeycomb_isoperimetry.py</span></code> — <em>Synagoge</em> Book V.1 &amp; VIII.23: Honeycomb &amp; 7 Hexagons<a class="headerlink" href="#demos-honeycomb-isoperimetry-py-synagoge-book-v-1-viii-23-honeycomb-7-hexagons" title="Link to this heading">¶</a></h2>
+        <p>Proves that $n \in \{3, 4, 6\}$ are the unique regular plane-tiling polygons (<em>Hultsch I,
+        pp. 304–312</em>), evaluates exact symbolic areas at equal perimeter $P = 12$, and verifies the exact
+        circumradius $R = s_6\sqrt{7}$ of Book VIII Proposition 23’s seven-hexagon circle inscription.</p>
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>--no-sync<span class="w"> </span>python<span class="w"> </span>demos/honeycomb_isoperimetry.py
+        </pre></div>
+        </div>
+        <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sa">r</span><span class="sd">"""Standalone demo: The Sagacity of Bees &amp; Honeycomb Isoperimetry (*Synagoge* V.1 &amp; VIII.23).</span>
+
+        <span class="sd">Proves that $n \in \{3, 4, 6\}$ are the unique regular plane-tiling polygons,</span>
+        <span class="sd">computes exact symbolic areas for equal perimeter $P = 12$, and verifies the</span>
+        <span class="sd">circumradius $R = s_6 \sqrt{7}$ of Book VIII, Prop. 23's 7-hexagon rosette.</span>
+        <span class="sd">"""</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+
+        <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+        <span class="n">_SRC_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s2">"src"</span>
+        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">))</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.console</span><span class="w"> </span><span class="kn">import</span> <span class="n">Console</span>  <span class="c1"># noqa: E402</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.table</span><span class="w"> </span><span class="kn">import</span> <span class="n">Table</span>  <span class="c1"># noqa: E402</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.pappus</span><span class="w"> </span><span class="kn">import</span> <span class="n">verify_honeycomb_isoperimetry</span>  <span class="c1"># noqa: E402</span>
+
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="w">    </span><span class="sd">"""Run the Book V Honeycomb Isoperimetry demonstration."""</span>
+            <span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
+            <span class="n">res</span> <span class="o">=</span> <span class="n">verify_honeycomb_isoperimetry</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="n">build_model</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+            <span class="n">table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">"Pappus Synagoge V.1 — Equal-Perimeter Regular Plane Tilings (P = 12)"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Polygon"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan bold"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Interior Angle"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"white"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Around Vertex"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"yellow"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Side s_n"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"white"</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Exact Area"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"green bold"</span><span class="p">)</span>
+
+            <span class="n">names</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">:</span> <span class="s2">"Equilateral Triangle (n=3)"</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="s2">"Square (n=4)"</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="s2">"Regular Hexagon (n=6)"</span><span class="p">}</span>
+            <span class="k">for</span> <span class="n">n_gon</span> <span class="ow">in</span> <span class="n">res</span><span class="o">.</span><span class="n">tiling_polygons</span><span class="p">:</span>
+                <span class="n">table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span>
+                    <span class="n">names</span><span class="p">[</span><span class="n">n_gon</span><span class="p">],</span>
+                    <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">res</span><span class="o">.</span><span class="n">interior_angles_deg</span><span class="p">[</span><span class="n">n_gon</span><span class="p">]</span><span class="si">}</span><span class="s2">°"</span><span class="p">,</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">polygons_per_vertex</span><span class="p">[</span><span class="n">n_gon</span><span class="p">]),</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">side_lengths</span><span class="p">[</span><span class="n">n_gon</span><span class="p">]),</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">areas</span><span class="p">[</span><span class="n">n_gon</span><span class="p">]),</span>
+                <span class="p">)</span>
+
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">"Area_6 / Area_3 = </span><span class="si">{</span><span class="n">res</span><span class="o">.</span><span class="n">area_hex_over_tri</span><span class="si">}</span><span class="s2">, "</span>
+                <span class="sa">f</span><span class="s2">"Area_6 / Area_4 = </span><span class="si">{</span><span class="n">res</span><span class="o">.</span><span class="n">area_hex_over_sq</span><span class="si">}</span><span class="s2">, "</span>
+                <span class="sa">f</span><span class="s2">"Book VIII.23 7-hexagon circumradius R_7 = </span><span class="si">{</span><span class="n">res</span><span class="o">.</span><span class="n">circumradius_seven_hexagons</span><span class="si">}</span><span class="s2">"</span>
+            <span class="p">)</span>
+            <span class="k">return</span> <span class="mi">0</span>
+
+
+        <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">SystemExit</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+        </pre></div>
+        </div>
+        </section>
         </section>
 
       </div>
@@ -651,6 +916,7 @@
     <aside class="aside-types">
       <h3>Types</h3>
       <ul>
+        <li><a href="../types/apparatus.html">apparatus</a></li>
         <li><a href="../types/log.html">log</a></li>
         <li><a href="../types/theorem.html">theorem</a></li>
       </ul>
@@ -668,14 +934,14 @@
     <hr />
     <div role="contentinfo">
       <p>
-        &copy; Copyright 2026, GEOMETOR.
+        &copy; Copyright c. 340 CE (Hultsch 1876–1878 / Commandino 1588) • Original English Translation & Exact Symbolic Edition GEOMETOR.
       </p>
     </div>
   </footer>
 
   <script src="../_static/jquery.js?v=5d32c60e"></script>
   <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../_static/documentation_options.js?v=938c9ccc"></script>
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
