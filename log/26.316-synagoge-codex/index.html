@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synagoge Multi-Track Book Codex &amp; Books III–VIII Symbolic Constructions (v0.2.0) &mdash; GEOMETOR • pappus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=f442dd77" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • pappus</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">pappus</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../../synagoge/index.html"  >Synagoge (Μαθηματικὴ Συναγωγή) — Multi-Track Book Codex</a>
+        </li>
+        <li>
+          <a href="../../theorems/index.html"  >Theorems</a>
+        </li>
+        <li>
+          <a href="../../usage/index.html"  >Usage & CLI</a>
+        </li>
+        <li>
+          <a href="../../demos/index.html"  >Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; pappus</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../index.html">GEOMETOR • pappus</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../index.html">Log</a>
+            <span class="book-crumb-sep">/</span>
+            <span class="book-badge canonical-badge">2026-11-12</span>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../index.html" title="Log">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../26.315-modernize-pappus/index.html" title="2026 Modernization: Pappus, Pascal’s Hexagrammum Mysticum &amp; Interactive Dossiers"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="synagoge-multi-track-book-codex-books-iiiviii-symbolic-constructions-v0-2-0">
+        <h1><em>Synagoge</em> Multi-Track Book Codex &amp; Books III–VIII Symbolic Constructions (<code class="docutils literal notranslate"><span class="pre">v0.2.0</span></code>)<a class="headerlink" href="#synagoge-multi-track-book-codex-books-iiiviii-symbolic-constructions-v0-2-0" title="Link to this heading">¶</a></h1>
+        <p>Expanded <code class="docutils literal notranslate"><span class="pre">geometor/pappus</span></code> (<code class="docutils literal notranslate"><span class="pre">v0.2.0</span></code>) into a unified Digital Scriptorium edition and exact
+        symbolic geometry package housing both <strong>Pappus of Alexandria’s</strong> <em>Synagoge</em> (<em>Μαθηματικὴ
+        Συναγωγή</em>, c. 340 CE) and executable <code class="docutils literal notranslate"><span class="pre">SymPy</span></code> / <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> demonstrations:</p>
+        <ul class="simple">
+        <li><p><strong>Five-Unit Four-Track Book Codex</strong> (<code class="docutils literal notranslate"><span class="pre">docsrc/synagoge/</span></code>, <code class="docutils literal notranslate"><span class="pre">:layout:</span> <span class="pre">book</span></code>):</p>
+        <ul>
+        <li><p>Inspected 300 DPI scans of <strong>Friedrich Hultsch’s</strong> 3-volume critical Greek edition
+        (<em>Weidmann</em>, 1876–1878) across Books III, IV, V, VII, and VIII, pairing diplomatic polytonic
+        Greek (<code class="docutils literal notranslate"><span class="pre">-el</span></code>) with <strong>100% original GEOMETOR English translations</strong> (<code class="docutils literal notranslate"><span class="pre">-en</span></code>), algebraic
+        summaries (<code class="docutils literal notranslate"><span class="pre">-summary</span></code>), and philological commentary (<code class="docutils literal notranslate"><span class="pre">-notes</span></code>) referencing <strong>Federico
+        Commandino</strong> (1588) and <strong>Sir Thomas Little Heath</strong> (1921/1926).</p></li>
+        <li><p>Built structured JSON apparatus in <code class="docutils literal notranslate"><span class="pre">resources/synagoge/</span></code> (<code class="docutils literal notranslate"><span class="pre">sources_manifest.json</span></code>,
+        <code class="docutils literal notranslate"><span class="pre">citations.json</span></code>, <code class="docutils literal notranslate"><span class="pre">persons.json</span></code>, <code class="docutils literal notranslate"><span class="pre">glossary.json</span></code>, <code class="docutils literal notranslate"><span class="pre">concordance.json</span></code>) and matching
+        Sphinx apparatus pages, including bidirectional resolution of all 8 <code class="docutils literal notranslate"><span class="pre">pappus:collectio*</span></code>
+        keys in <code class="docutils literal notranslate"><span class="pre">geometor/euclid</span></code>.</p></li>
+        <li><p>Added <code class="docutils literal notranslate"><span class="pre">geometor.pappus.sphinx_ext</span></code> registering the <code class="docutils literal notranslate"><span class="pre">-el</span></code> Greek companion track in
+        <code class="docutils literal notranslate"><span class="pre">photon_platform.publish.book</span></code> and offline sibling <code class="docutils literal notranslate"><span class="pre">objects.inv</span></code> intersphinx mappings.</p></li>
+        </ul>
+        </li>
+        <li><p><strong>Exact Symbolic *Synagoge* Constructions</strong> (<code class="docutils literal notranslate"><span class="pre">geometor.pappus.synagoge_demos</span></code>):</p>
+        <ul>
+        <li><p><strong>Book III (Props. 28–30)</strong>: <code class="docutils literal notranslate"><span class="pre">construct_three_means</span></code> exhibiting $A, G, H$ in one semicircle
+        ($A \cdot H = G^2$) with exact orthogonal foot $F$ on $OB$ and external harmonic tangent
+        conjugate $(A, C; D, T) = -1$ over $\mathbb{Q}$ and $\mathbb{Q}(\phi)$.</p></li>
+        <li><p><strong>Book IV (Prop. 1)</strong>: <code class="docutils literal notranslate"><span class="pre">construct_pappus_area_theorem</span></code> and 10-variable universal polynomial
+        identity <code class="docutils literal notranslate"><span class="pre">verify_pappus_area_symbolic()</span> <span class="pre">==</span> <span class="pre">0</span></code> generalizing <em>Elements</em> I.47 to arbitrary
+        parallelograms on any scalene triangle.</p></li>
+        <li><p><strong>Book IV (Props. 14–18)</strong>: <code class="docutils literal notranslate"><span class="pre">construct_pappus_arbelos_chain</span></code> and
+        <code class="docutils literal notranslate"><span class="pre">verify_arbelos_chain_symbolic</span></code> proving $y_n = n\,d_n = 2n\,r_n$ and focal ellipse locus
+        incidence in 100% rational coordinates.</p></li>
+        <li><p><strong>Book V (Prop. 1) &amp; Book VIII (Prop. 23)</strong>: <code class="docutils literal notranslate"><span class="pre">verify_honeycomb_isoperimetry</span></code> and
+        <code class="docutils literal notranslate"><span class="pre">construct_honeycomb_isoperimetry</span></code> proving $n \in \{3, 4, 6\}$ planar tiling uniqueness,
+        $A_6 : A_4 : A_3 = 3\sqrt{3} : 4 : 3$, and the 7-hexagon circle circumradius $R = s_6\sqrt{7}$.</p></li>
+        </ul>
+        </li>
+        <li><p><strong>Interactive SVG Gallery, CLI &amp; Demos</strong>: Extended <code class="docutils literal notranslate"><span class="pre">render.py</span></code> with exact circular arc support
+        (<code class="docutils literal notranslate"><span class="pre">_extra_arcs</span></code>), added <code class="docutils literal notranslate"><span class="pre">pappus</span> <span class="pre">synagoge</span></code> and <code class="docutils literal notranslate"><span class="pre">pappus</span> <span class="pre">build</span> <span class="pre">--synagoge</span></code> CLI commands
+        generating 24 <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVGs, added 4 new standalone scripts in <code class="docutils literal notranslate"><span class="pre">demos/</span></code> (9 total),
+        and authored <code class="docutils literal notranslate"><span class="pre">docsrc/theorems/synagoge-constructions/index.rst</span></code> plus <code class="docutils literal notranslate"><span class="pre">tests/test_synagoge.py</span></code>.</p></li>
+        </ul>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+
+        <div class="meta">
+          <span class="date">2026-11-12</span>
+        </div>
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../index.html" title="Log">&larr; <span class="nav-label">Log</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../index.html">GEOMETOR • pappus</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../26.315-modernize-pappus/index.html" title="2026 Modernization: Pappus, Pascal’s Hexagrammum Mysticum &amp; Interactive Dossiers"><span class="nav-label">2026 Modernization: Pappus, Pascal’s Hexagrammum Mysticum & Interactive Dossiers</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="#" class="is-active" aria-current="page" aria-selected="true">Synagoge Multi-Track Book Codex & Books III–VIII Symbolic Constructions (v0.2.0)</a></li>
+        <li><a href="../26.315-modernize-pappus/index.html">2026 Modernization: Pappus, Pascal’s Hexagrammum Mysticum & Interactive Dossiers</a></li>
+        <li><a href="../22.356-152519.html">Welcome</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../types/apparatus.html">apparatus</a></li>
+        <li><a href="../../types/log.html">log</a></li>
+        <li><a href="../../types/theorem.html">theorem</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../modules/index.html"  >Modules</a></li>
+        <li><a href="../../refs/index.html"  >References</a></li>
+        <li><a href="../../changelog.html"  >Changelog</a></li>
+        <li><a href="../index.html" class="is-active" aria-selected="true" >Log</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 340 CE (Hultsch 1876–1878 / Commandino 1588) • Original English Translation & Exact Symbolic Edition GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=938c9ccc"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>
