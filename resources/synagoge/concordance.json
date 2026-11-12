@@ -1,0 +1,178 @@
+{
+  "work": "Pappus of Alexandria — Synagoge (Μαθηματικὴ Συναγωγή, ed. Friedrich Hultsch 1876–1878)",
+  "units": [
+    {
+      "unit_id": "book-3-three-means",
+      "title": "Book III: Problem Hierarchy, Cube Duplication & the Three Classical Means in a Semicircle",
+      "hultsch_volume": "I (1876)",
+      "hultsch_pages": "30–84 (cf. 2–29, 132–162)",
+      "doc_prefix": "synagoge/book-3-three-means/book-3-three-means"
+    },
+    {
+      "unit_id": "book-4-area-and-arbelos",
+      "title": "Book IV: Generalized Pythagorean Parallelogram Theorem & the Arbelos Tangent Circle Chain",
+      "hultsch_volume": "I (1876)",
+      "hultsch_pages": "176–179, 208–232 (cf. 234–303)",
+      "doc_prefix": "synagoge/book-4-area-and-arbelos/book-4-area-and-arbelos"
+    },
+    {
+      "unit_id": "book-5-sagacity-of-bees",
+      "title": "Book V: On the Geometric Forethought of Bees & Honeycomb Isoperimetry",
+      "hultsch_volume": "I (1876)",
+      "hultsch_pages": "304–336 (cf. 352–358)",
+      "doc_prefix": "synagoge/book-5-sagacity-of-bees/book-5-sagacity-of-bees"
+    },
+    {
+      "unit_id": "book-7-domain-of-analysis",
+      "title": "Book VII: The Treasury of Analysis, Centroid Rule, Cross-Ratio & Hexagon Collinearity",
+      "hultsch_volume": "II (1877)",
+      "hultsch_pages": "634–688, 868–894 (cf. 1008–1013)",
+      "doc_prefix": "synagoge/book-7-domain-of-analysis/book-7-domain-of-analysis"
+    },
+    {
+      "unit_id": "book-8-mechanics",
+      "title": "Book VIII: Architectonic Mechanics, Centers of Gravity, Five Simple Machines & Seven Hexagons",
+      "hultsch_volume": "III (1878)",
+      "hultsch_pages": "1022–1102 (cf. 1104–1115)",
+      "doc_prefix": "synagoge/book-8-mechanics/book-8-mechanics"
+    }
+  ],
+  "loci": [
+    {
+      "id": "conc-hultsch-i-30-68",
+      "hultsch_locus": "Book III, Chs. 1–27 / Props. 1–5 (Hultsch I, pp. 30–68)",
+      "unit_id": "book-3-three-means",
+      "section_ref": "sec-b3-en-pandrosion-hierarchy",
+      "summary": "Address to Pandrosion; distinction between theorem and problem; critique of an attempted plane construction of two mean proportionals; canonical classification of plane, solid, and linear problems; cube-duplication solutions of Eratosthenes, Nicomedes, Hero, and Pappus.",
+      "euclid_keys": ["pappus:collectio"],
+      "euclid_refs": ["Heath Vol. I, p. 26 (Ch. III, folio 0040)"],
+      "elements_refs": ["VI.13", "XI.33"],
+      "pappus_code": []
+    },
+    {
+      "id": "conc-hultsch-i-68-84",
+      "hultsch_locus": "Book III, Chs. 28–43 / Props. 28–30 (Hultsch I, pp. 68–84; esp. p. 72, ll. 9–23)",
+      "unit_id": "book-3-three-means",
+      "section_ref": "sec-b3-en-semicircle-means",
+      "summary": "Definitions of the arithmetic, geometric, and harmonic medieties and Pappus's celebrated semicircle construction exhibiting all three classical means (A, G, H) simultaneously, proving A * H = G^2, A >= G >= H, and external harmonic conjugate T.",
+      "euclid_keys": ["pappus:collectio:iii-p-72-9-23"],
+      "euclid_refs": ["Heath Vol. II, p. 211 (Book VI, Prop. 13 note, folio 0217)"],
+      "elements_refs": ["II.5", "III.31", "VI.8", "VI.13"],
+      "pappus_code": [
+        "geometor.pappus.construct_three_means",
+        "demos/synagoge_three_means.py",
+        "synagoge_three_means.svg",
+        "synagoge_three_means_golden.svg"
+      ]
+    },
+    {
+      "id": "conc-hultsch-i-176-179",
+      "hultsch_locus": "Book IV, Ch. 1 / Prop. 1 (Hultsch I, pp. 176–179)",
+      "unit_id": "book-4-area-and-arbelos",
+      "section_ref": "sec-b4-en-area-theorem",
+      "summary": "Pappus's Parallelogram Area Theorem: on two sides AB, AC of any triangle ABC erect arbitrary parallelograms ABDE, ACFG whose outer sides meet at H; then the parallelogram BMLC constructed on BC with sides equal and parallel to HA equals ABDE + ACFG — generalizing Elements I.47 and VI.31.",
+      "euclid_keys": [],
+      "euclid_refs": ["Heath Vol. I, pp. 366–367 (note on Elements I.47)"],
+      "elements_refs": ["I.34", "I.35", "I.47", "VI.31"],
+      "pappus_code": [
+        "geometor.pappus.construct_pappus_area_theorem",
+        "geometor.pappus.verify_pappus_area_symbolic",
+        "demos/pappus_area_theorem.py",
+        "pappus_area_theorem.svg",
+        "pappus_area_pythagoras.svg"
+      ]
+    },
+    {
+      "id": "conc-hultsch-i-208-232",
+      "hultsch_locus": "Book IV, Chs. 19–26 / Props. 14–18 (Hultsch I, pp. 208–232)",
+      "unit_id": "book-4-area-and-arbelos",
+      "section_ref": "sec-b4-en-arbelos-chain",
+      "summary": "The 'ancient proposition' (ἀρχαία πρότασις) on the infinite chain of mutually tangent circles inscribed in the shoemaker's knife (ἄρβηλος): the altitude of the n-th circle's center above the base diameter is an exact integer multiple of its diameter, y_n = n * d_n.",
+      "euclid_keys": [],
+      "euclid_refs": [],
+      "elements_refs": ["III.11", "III.12", "III.36"],
+      "pappus_code": [
+        "geometor.pappus.construct_pappus_arbelos_chain",
+        "geometor.pappus.verify_arbelos_chain_symbolic",
+        "demos/arbelos_circle_chain.py",
+        "pappus_arbelos_chain.svg"
+      ]
+    },
+    {
+      "id": "conc-hultsch-i-304-336",
+      "hultsch_locus": "Book V, Preface & Props. 1–10 (Hultsch I, pp. 304–336; cf. V.19 pp. 352–358)",
+      "unit_id": "book-5-sagacity-of-bees",
+      "section_ref": "sec-b5-en-bees-preface",
+      "summary": "Preface to Megethius on the sagacity of bees: why only the equilateral triangle, square, and regular hexagon tile the plane without gaps around a vertex, and why for equal perimeter the regular hexagon encloses maximum honey area (A_6 : A_4 : A_3 = 3*sqrt(3) : 4 : 3), followed by the circle extremum and 13 Archimedean solids.",
+      "euclid_keys": [],
+      "euclid_refs": [],
+      "elements_refs": ["I.32", "IV.15", "XIII.18"],
+      "pappus_code": [
+        "geometor.pappus.verify_honeycomb_isoperimetry",
+        "geometor.pappus.construct_honeycomb_isoperimetry",
+        "demos/honeycomb_isoperimetry.py",
+        "honeycomb_isoperimetry.svg"
+      ]
+    },
+    {
+      "id": "conc-hultsch-ii-634-688",
+      "hultsch_locus": "Book VII, Preface & Chs. 1–42 (Hultsch II, pp. 634–688; esp. p. 678 & p. 682)",
+      "unit_id": "book-7-domain-of-analysis",
+      "section_ref": "sec-b7-en-analysis-synthesis",
+      "summary": "Preface to Hermodorus on the Treasury of Analysis (τόπος ἀναλυόμενος): theoretical vs. problematic analysis and synthesis, the 33-book canon, Euclid's Porisms, the Three-/Four-Line Locus problem (pp. 676–680), and the Pappus–Guldinus Centroid Rule (p. 682).",
+      "euclid_keys": ["pappus:collectio:7", "pappus:collectio:vii-p-670-19", "pappus:collectio:vii-p-678"],
+      "euclid_refs": [
+        "Heath Vol. II, p. 4 (Book III, definitions, folio 0010)",
+        "Heath Vol. II, p. 113 (Book V, compound ratio, folio 0119)",
+        "Heath Vol. III, pp. 521, 526, 527, 539 (General Index)"
+      ],
+      "elements_refs": ["III.def.1", "V.def.5", "VI.23"],
+      "pappus_code": []
+    },
+    {
+      "id": "conc-hultsch-ii-868-894",
+      "hultsch_locus": "Book VII, Props. 129, 131, 138–139 (Hultsch II, pp. 868–894; cf. VII.238 pp. 1008–1013)",
+      "unit_id": "book-7-domain-of-analysis",
+      "section_ref": "sec-b7-en-hexagon-theorems",
+      "summary": "Lemmas to Euclid's Porisms proving central-perspectivity invariance of the four-point cross-ratio (VII.129), complete-quadrilateral harmonic division (VII.131), and Pappus's Parallel (VII.138) and Intersecting (VII.139) Hexagon Collinearity Theorems.",
+      "euclid_keys": ["pappus:collectio:vii-p-826", "pappus:collectio:vii-p-928"],
+      "euclid_refs": [
+        "Heath Vol. II, p. 27 (Book III, folio 0033)",
+        "Heath Vol. II, p. 250 (Book VI, folio 0256)"
+      ],
+      "elements_refs": ["VI.2", "VI.3", "VI.4"],
+      "pappus_code": [
+        "geometor.pappus.cross_ratio",
+        "geometor.pappus.project_point",
+        "geometor.pappus.construct_harmonic_fourth",
+        "geometor.pappus.construct_pappus_hexagon",
+        "geometor.pappus.construct_pappus_configuration",
+        "geometor.pappus.verify_pappus_symbolic",
+        "geometor.pappus.construct_pascal_hexagon",
+        "demos/pappus_hexagon.py",
+        "demos/pappus_six_permutations.py",
+        "demos/harmonic_conjugate.py",
+        "demos/pascal_hexagrammum.py",
+        "pappus_parallel.svg",
+        "pappus_hexagon.svg",
+        "harmonic_fourth.svg",
+        "pappus_steiner.svg"
+      ]
+    },
+    {
+      "id": "conc-hultsch-iii-1022-1102",
+      "hultsch_locus": "Book VIII, Preface, Props. 1–19 & 23 (Hultsch III, pp. 1022–1102; cf. pp. 1104–1115)",
+      "unit_id": "book-8-mechanics",
+      "section_ref": "sec-b8-en-preface-centroid",
+      "summary": "Architectonic mechanics addressed to Hermodorus; center of gravity (p. 1030); inclined-plane equilibrium attempt (Prop. 9, p. 1056); Archimedes's lever saying & Hero's Baroulkos and five simple machines (pp. 1060–1072); single-compass opening constructions (p. 1074); and seven regular hexagons inscribed in a circle of radius R = s_6 * sqrt(7) (Prop. 23, pp. 1096–1102).",
+      "euclid_keys": [],
+      "euclid_refs": [],
+      "elements_refs": ["IV.15", "VI.1", "XI.def.3", "XIII.12"],
+      "pappus_code": [
+        "geometor.pappus.construct_honeycomb_isoperimetry",
+        "demos/honeycomb_isoperimetry.py",
+        "honeycomb_isoperimetry.svg"
+      ]
+    }
+  ]
+}

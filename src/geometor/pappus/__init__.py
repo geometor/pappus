@@ -1,12 +1,18 @@
-"""Symbolic projective geometry explorations inspired by Pappus of Alexandria and Blaise Pascal.
+"""Pappus of Alexandria's *Synagoge* (*Mathematical Collection*) and symbolic projective geometry.
 
-Provides exact SymPy and :mod:`geometor.model` constructions of Pappus's Hexagon
-Theorem (*Synagoge* Book VII, Props. 138 & 139), Blaise Pascal's *Hexagrammum
-Mysticum* (1640) on circles and conics, the full :math:`S_3` six-permutation
-Steiner configuration with its 3-fold star concurrency points :math:`(S_+, S_-)`,
-the 60-line *Hexagrammum Mysticum* catalog (20 Steiner points, 60 Kirkman points,
-15 Plücker lines), complete-quadrilateral harmonic conjugates, projective
-cross-ratios, and golden ratio perspectivities.
+Unifies two complementary layers in a single package:
+
+1. **Exact Classical & Projective Constructions** (:mod:`geometor.pappus.synagoge_demos`,
+   :mod:`geometor.pappus.constructions`, :mod:`geometor.pappus.pascal`,
+   :mod:`geometor.pappus.projective`): SymPy and :mod:`geometor.model` constructions
+   spanning Book III's three classical means in one semicircle, Book IV's Area Theorem
+   and infinite Arbelos tangent circle chain (:math:`y_n = n d_n`), Book V's hexagonal
+   honeycomb isoperimetry, Book VII's Hexagon Theorem (*Synagoge* VII.138 & 139),
+   Steiner's six-line configuration :math:`(S_+, S_-)`, and Blaise Pascal's 60-line
+   *Hexagrammum Mysticum* (1640).
+2. **Multi-Track *Synagoge* Book Codex Infrastructure** (:mod:`geometor.pappus.sphinx_ext`):
+   Sphinx companion-track registration (``-en``, ``-el``, ``-summary``, ``-notes``) and
+   offline cross-codex intersphinx wiring for :mod:`photon_platform.publish`.
 """
 from __future__ import annotations
 
@@ -60,8 +66,24 @@ from geometor.pappus.projective import (
     quadrance,
 )
 from geometor.pappus.render import EMBEDDED_SVG_STYLE, export_svg, render_svg_string
+from geometor.pappus.synagoge_demos import (
+    ArbelosChainResult,
+    ArbelosCircle,
+    HoneycombIsoperimetryResult,
+    PappusAreaResult,
+    ThreeMeansResult,
+    build_synagoge_gallery,
+    construct_honeycomb_isoperimetry,
+    construct_pappus_arbelos_chain,
+    construct_pappus_area_theorem,
+    construct_three_means,
+    signed_area2,
+    verify_arbelos_chain_symbolic,
+    verify_honeycomb_isoperimetry,
+    verify_pappus_area_symbolic,
+)
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 __all__ = [
     "__version__",
@@ -81,6 +103,11 @@ __all__ = [
     "PascalHexagonResult",
     "PascalSteinerFamilyResult",
     "HexagrammumMysticumCatalog",
+    "ThreeMeansResult",
+    "PappusAreaResult",
+    "ArbelosCircle",
+    "ArbelosChainResult",
+    "HoneycombIsoperimetryResult",
     "get_preset",
     "get_pascal_preset",
     "permutation_parity",
@@ -108,6 +135,15 @@ __all__ = [
     "enumerate_hexagrammum_mysticum",
     "verify_pappus_symbolic",
     "verify_pascal_symbolic",
+    "signed_area2",
+    "construct_three_means",
+    "construct_pappus_area_theorem",
+    "verify_pappus_area_symbolic",
+    "construct_pappus_arbelos_chain",
+    "verify_arbelos_chain_symbolic",
+    "verify_honeycomb_isoperimetry",
+    "construct_honeycomb_isoperimetry",
+    "build_synagoge_gallery",
     "EMBEDDED_SVG_STYLE",
     "render_svg_string",
     "export_svg",

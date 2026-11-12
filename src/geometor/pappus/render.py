@@ -93,8 +93,13 @@ EMBEDDED_SVG_STYLE: str = """
   .euclid-graphic .pappus-odd { stroke: var(--pappus-odd); }
   .euclid-graphic .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4; }
   .euclid-graphic .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5; }
+  .euclid-graphic .geom-segment { fill: none; stroke: var(--carrier); stroke-width: 2.3; stroke-linecap: round; }
   .euclid-graphic .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85; }
-  .euclid-graphic .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75; }
+  .euclid-graphic .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.85; }
+  .euclid-graphic .geom-segment.arithmetic-segment { fill: none; stroke: var(--pappus-even); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92; }
+  .euclid-graphic .geom-segment.geometric-segment { fill: none; stroke: var(--conic); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92; }
+  .euclid-graphic .geom-segment.vector-segment { fill: none; stroke: var(--steiner); stroke-width: 2.4; stroke-dasharray: 6 3.5; stroke-linecap: round; opacity: 0.88; }
+  .euclid-graphic .geom-segment.altitude-segment { fill: none; stroke: var(--pappus-odd); stroke-width: 2.2; stroke-dasharray: 4.5 3; stroke-linecap: round; opacity: 0.85; }
   .euclid-graphic .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round; }
   .euclid-graphic .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round; }
   .euclid-graphic .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round; }
@@ -518,8 +523,49 @@ def render_svg_string(
             f"<title>{html.escape(primary_ref)}: {html.escape(eq_str)} = 0</title></path>"
         )
 
-    # Golden / harmonic sections registered in model.sections
+    # Finite segments (spg.Segment) and Golden / harmonic sections (Section)
+    visible_segments = [
+        seg
+        for seg in model
+        if isinstance(seg, spg.Segment) and (include_guides or not model[seg].guide)
+    ]
     section_elems: list[str] = []
+    for seg in visible_segments:
+        el = model[seg]
+        p_start, p_end = seg.p1, seg.p2
+        sx1, sy1 = to_svg(float(p_start.x.evalf()), float(p_start.y.evalf()))
+        sx2, sy2 = to_svg(float(p_end.x.evalf()), float(p_end.y.evalf()))
+        smx, smy = 0.5 * (sx1 + sx2), 0.5 * (sy1 + sy2)
+        drawn_segments_px.append((sx1, sy1, sx2, sy2))
+        id1 = model[p_start].ID if p_start in model else ""
+        id2 = model[p_end].ID if p_end in model else ""
+        primary_seg_ref = el.ID if el.ID else (f"[ {id1} {id2} ]" if id1 and id2 else "")
+        seg_aliases: list[str] = []
+        if id1 and id2:
+            for cand in (f"[ {id1} {id2} ]", f"[ {id2} {id1} ]", f"/ {id1} {id2} /"):
+                if cand != primary_seg_ref:
+                    seg_aliases.append(cand)
+        seg_alias_attr = (
+            f' data-aliases="{html.escape(" | ".join(seg_aliases))}"' if seg_aliases else ""
+        )
+        seg_ref_attr = f' data-ref="{html.escape(primary_seg_ref)}"' if primary_seg_ref else ""
+        cls_tokens = ["geom-segment"]
+        for key, css_tok in (
+            ("golden", "golden-segment"),
+            ("harmonic", "harmonic-segment"),
+            ("arithmetic", "arithmetic-segment"),
+            ("geometric", "geometric-segment"),
+            ("vector", "vector-segment"),
+            ("altitude", "altitude-segment"),
+        ):
+            if key in el.classes:
+                cls_tokens.append(css_tok)
+        section_elems.append(
+            f'      <path class="{" ".join(cls_tokens)}" '
+            f'd="M {_fmt(sx1)} {_fmt(sy1)} L {_fmt(smx)} {_fmt(smy)} L {_fmt(sx2)} {_fmt(sy2)}"'
+            f'{seg_ref_attr}{seg_alias_attr} fill="none" />'
+        )
+
     for sec in visible_sections:
         if isinstance(sec, Section) and len(sec.points) >= 3:
             el = model[sec]

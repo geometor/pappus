@@ -4,9 +4,9 @@
 Demos
 =====
 
-Five standalone runnable scripts in ``demos/`` showcase every layer of ``geometor.pappus`` with
-formatted Rich terminal tables—reviving and extending the repository's original 2023 ``pappus.py``
-and ``pappus-3.py`` explorations without requiring a GUI window.
+Nine standalone runnable scripts in ``demos/`` showcase every layer of ``geometor.pappus``—spanning
+both the projective Pappus–Steiner–Pascal canon and Books III, IV, V, and VIII of the *Synagoge*—with
+formatted Rich terminal tables and 100% exact SymPy coordinates.
 
 1. ``demos/pappus_hexagon.py`` — *Synagoge* VII.138 & VII.139
 -------------------------------------------------------------
@@ -17,7 +17,7 @@ signed areas of the three homologous ``square`` / ``circle`` / ``diamond`` trian
 
 .. code-block:: bash
 
-   uv run python demos/pappus_hexagon.py
+   uv run --no-sync python demos/pappus_hexagon.py
 
 .. literalinclude:: ../../demos/pappus_hexagon.py
    :language: python
@@ -31,7 +31,7 @@ point $(S_+, S_-)$.
 
 .. code-block:: bash
 
-   uv run python demos/pappus_six_permutations.py
+   uv run --no-sync python demos/pappus_six_permutations.py
 
 .. literalinclude:: ../../demos/pappus_six_permutations.py
    :language: python
@@ -45,7 +45,7 @@ $D = (-4, 0)$), and catalogs emergent harmonic tetrads on ``preset="harmonic"``.
 
 .. code-block:: bash
 
-   uv run python demos/harmonic_conjugate.py
+   uv run --no-sync python demos/harmonic_conjugate.py
 
 .. literalinclude:: ../../demos/harmonic_conjugate.py
    :language: python
@@ -59,7 +59,7 @@ anharmonic power orbit, the harmonic-golden identity $(0, \phi; 1, \phi^3) = -1$
 
 .. code-block:: bash
 
-   uv run python demos/golden_pappus.py
+   uv run --no-sync python demos/golden_pappus.py
 
 .. literalinclude:: ../../demos/golden_pappus.py
    :language: python
@@ -74,7 +74,63 @@ emergent golden conic section ``/ M25 P4 P0 /`` in $\mathbb{Q}(\phi)$.
 
 .. code-block:: bash
 
-   uv run python demos/pascal_hexagrammum.py
+   uv run --no-sync python demos/pascal_hexagrammum.py
 
 .. literalinclude:: ../../demos/pascal_hexagrammum.py
+   :language: python
+
+6. ``demos/synagoge_three_means.py`` — *Synagoge* Book III: Three Means in One Semicircle
+-----------------------------------------------------------------------------------------
+
+Constructs Pappus's semicircle diagram (*Hultsch I, pp. 68–84*) on rational $(9, 16)$, Pythagorean
+$(4, 9)$, and golden $(1, \phi^2)$ segments, verifying $A \cdot H = G^2$, $A > G > H$, and the
+external harmonic tangent relation $(A, C; D, T) = -1$.
+
+.. code-block:: bash
+
+   uv run --no-sync python demos/synagoge_three_means.py
+
+.. literalinclude:: ../../demos/synagoge_three_means.py
+   :language: python
+
+7. ``demos/pappus_area_theorem.py`` — *Synagoge* Book IV.1: Parallelogram Area Theorem
+--------------------------------------------------------------------------------------
+
+Demonstrates Pappus's equiaffine generalization of *Elements* I.47 (*Hultsch I, pp. 176–179*) on an
+oblique scalene triangle ($13 + 15 = 28$), on the $3$-$4$-$5$ right triangle ($9 + 16 = 25$), and
+universally over $\mathbb{Z}[x_A, y_A, x_B, y_B, x_C, y_C, u_x, u_y, v_x, v_y]$.
+
+.. code-block:: bash
+
+   uv run --no-sync python demos/pappus_area_theorem.py
+
+.. literalinclude:: ../../demos/pappus_area_theorem.py
+   :language: python
+
+8. ``demos/arbelos_circle_chain.py`` — *Synagoge* Book IV.14–18: Arbelos Circle Chain
+-------------------------------------------------------------------------------------
+
+Constructs the infinite tangent circle chain $C_1, \dots, C_5$ inside the *arbelos* (*Hultsch I,
+pp. 208–232*) in 100% exact rational coordinates and verifies both pairwise tangency quadrances and
+Pappus's altitude law $y_n = n\,d_n = 2n\,r_n$.
+
+.. code-block:: bash
+
+   uv run --no-sync python demos/arbelos_circle_chain.py
+
+.. literalinclude:: ../../demos/arbelos_circle_chain.py
+   :language: python
+
+9. ``demos/honeycomb_isoperimetry.py`` — *Synagoge* Book V.1 & VIII.23: Honeycomb & 7 Hexagons
+----------------------------------------------------------------------------------------------
+
+Proves that $n \in \{3, 4, 6\}$ are the unique regular plane-tiling polygons (*Hultsch I,
+pp. 304–312*), evaluates exact symbolic areas at equal perimeter $P = 12$, and verifies the exact
+circumradius $R = s_6\sqrt{7}$ of Book VIII Proposition 23's seven-hexagon circle inscription.
+
+.. code-block:: bash
+
+   uv run --no-sync python demos/honeycomb_isoperimetry.py
+
+.. literalinclude:: ../../demos/honeycomb_isoperimetry.py
    :language: python

@@ -12,10 +12,45 @@ Inside the ``geometor`` ``uv`` workspace (Python ``>=3.13``):
 .. code-block:: bash
 
    uv sync
-   uv run pytest
+   uv run --no-sync pytest
 
 Quickstart Python API
 ---------------------
+
+*Synagoge* Classical Constructions (Books III, IV, V & VIII)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+   from geometor.pappus import (
+       PHI,
+       construct_pappus_arbelos_chain,
+       construct_pappus_area_theorem,
+       construct_three_means,
+       verify_arbelos_chain_symbolic,
+       verify_honeycomb_isoperimetry,
+       verify_pappus_area_symbolic,
+   )
+
+   # Book III: Arithmetic, Geometric, and Harmonic Means in one semicircle
+   means = construct_three_means(9, 16)
+   print(means.arithmetic_mean, means.geometric_mean, means.harmonic_mean)  # 25/2, 12, 288/25
+   print("Harmonic tangent CR (A, C; D, T):", means.harmonic_cross_ratio)   # -1
+   print("Golden semicircle G on (1, phi^2):", construct_three_means(1, PHI**2).geometric_mean)
+
+   # Book IV.1: Pappus's Parallelogram Area Theorem (13 + 15 = 28)
+   area = construct_pappus_area_theorem(preset="scalene")
+   print(area.area_ab, area.area_ac, area.area_bc, verify_pappus_area_symbolic())
+
+   # Book IV.14-18: Infinite Arbelos tangent circle chain (y_n = n * d_n)
+   arb = construct_pappus_arbelos_chain(2, 1, 4)
+   print([(c.index, c.height, c.diameter, c.height_over_diameter) for c in arb.chain])
+   print("Symbolic arbelos residuals:", verify_arbelos_chain_symbolic())
+
+   # Book V.1 & Book VIII.23: Honeycomb isoperimetry & 7-hexagon circumradius R = s_6 * sqrt(7)
+   hon = verify_honeycomb_isoperimetry(12, build_model=True)
+   print("Tiling n-gons:", hon.tiling_polygons, "Areas:", hon.areas)
+   print("7-hexagon radius:", hon.circumradius_seven_hexagons)  # 2*sqrt(7)
 
 Constructing Pappus's Hexagon (*Synagoge* VII.139) & Universal Proof
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -24,7 +59,7 @@ Constructing Pappus's Hexagon (*Synagoge* VII.139) & Universal Proof
 
    from geometor.pappus import construct_pappus_hexagon, verify_pappus_symbolic
 
-   res = construct_pappus_hexagon(preset="hexagon", include_triangles=True)
+   res = construct_pappus_hexagon(preset="hexagon", include_type_triangles=True)
    print("Meets:", [(m.x, m.y) for m in res.finite_meets])
    print("Pappus line:", res.pappus_line.equation(), "= 0")
    print("Symbolic 8-variable determinant:", verify_pappus_symbolic())  # 0
@@ -141,19 +176,23 @@ Command-Line Interface (``pappus``)
 
 .. code-block:: bash
 
-   # Build all 18 interactive SVG figures into docsrc/_static/constructions/
-   uv run pappus build
+   # Build all 24 interactive SVG figures (18 projective + 6 Synagoge Books III-V & VIII)
+   pappus build --synagoge
+
+   # Inspect Synagoge Books III, IV, V & VIII exact tables (or filter: means, area, arbelos, honeycomb)
+   pappus synagoge
+   pappus synagoge --demo arbelos
 
    # Inspect single-hexagon meets, quadrances, spreads, and 8-symbol determinant
-   uv run pappus inspect --preset hexagon
+   pappus inspect --preset hexagon
 
    # Inspect all 6 S_3 Pappus lines and Steiner Star points (S+, S-)
-   uv run pappus inspect --preset steiner --all-permutations
+   pappus inspect --preset steiner --all-permutations
 
    # Inspect Pascal's Hexagrammum Mysticum, bi-triangle Steiner pair, and full 60-line web
-   uv run pappus pascal --preset hexagrammum --steiner-family --full-60
-   uv run pappus pascal --preset golden_conic
+   pappus pascal --preset hexagrammum --steiner-family --full-60
+   pappus pascal --preset golden_conic
 
    # Scan a configuration for emergent harmonic tetrads and golden sections
-   uv run pappus harmonics --preset harmonic --discover-all
-   uv run pappus harmonics --preset golden
+   pappus harmonics --preset harmonic --discover-all
+   pappus harmonics --preset golden

@@ -1,18 +1,20 @@
-**Symbolic projective geometry investigations into Pappus of Alexandria's Hexagon Theorem, Blaise Pascal's Hexagrammum Mysticum, Steiner's six-line configuration, cross-ratios, harmonic conjugates, and golden perspectivities.**
+**Pappus of Alexandria's *Synagoge* (*Μαθηματικὴ Συναγωγή*) Multi-Track Book Codex (Books III, IV, V, VII & VIII) and exact symbolic projective geometry investigations into the Hexagon Theorem, Blaise Pascal's *Hexagrammum Mysticum*, Steiner's six-line configuration, cross-ratios, harmonic conjugates, and golden perspectivities.**
 
-Around 340 CE in Alexandria, **Pappus** compiled Book VII (*On the Domain of Analysis*)
-of his *Synagoge* (*Collection*)—preserving lemmas to the lost treatises of Euclid's
-*Porisms* and Apollonius. Hidden among those lemmas (Propositions 138 and 139) stands the
-oldest and deepest incidence theorem of projective geometry: **three collinear points on each
-of two lines determine three opposite cross-join intersections that are themselves collinear**,
-established by straightedge incidence alone without a single circle or metric measurement.
-Thirteen centuries later, **Blaise Pascal** (1640) generalized Pappus's pair of lines to any
-smooth conic section, unveiling the sixty-line *Hexagrammum Mysticum*.
+Around 340 CE in Alexandria, **Pappus** compiled his eight-book *Synagoge* (*Collection*)—gathering
+three classical means inside a single semicircle (Book III), generalizing Euclid's Pythagorean area
+theorem to arbitrary parallelograms and proving the *arbelos* circle-chain altitude law $y_n = n\,d_n$
+(Book IV), demonstrating the isoperimetric optimality of the bees' hexagonal honeycomb (Book V),
+synthesizing Alexandrian mechanics and Hero's *Baroulkos* (Book VIII), and preserving Book VII's
+*Treasury of Analysis* (*Τόπος ἀναλυόμενος*). Hidden among Book VII's lemmas to Euclid's *Porisms*
+(Propositions 138 and 139) stands the oldest incidence theorem of projective geometry: **three
+collinear points on each of two lines determine three opposite cross-join intersections that are
+themselves collinear**, generalized thirteen centuries later by **Blaise Pascal** (1640) to the
+sixty-line *Hexagrammum Mysticum* on any smooth conic.
 
-``geometor.pappus`` models the Pappus–Pascal projective canon in **100% exact symbolic algebra**
-using `SymPy <https://www.sympy.org/>`_, ``geometor.model``, and ``geometor.divine``. Hover over
-any highlighted symbol below—or use the **Play / Step** controls beneath the diagram—to trace
-the construction interactively.
+``geometor.pappus`` unites a **four-track Greek/English Book Codex** (:doc:`synagoge/index`) with
+**100% exact symbolic constructions** in `SymPy <https://www.sympy.org/>`_, ``geometor.model``, and
+``geometor.divine``. Hover over any highlighted symbol below—or use the **Play / Step** controls
+beneath the diagram—to trace the construction interactively.
 
 .. picture:: /_static/constructions/pappus_hexagon.svg
    :alt: Interactive Pappus Hexagon Construction (Synagoge Book VII, Proposition 139)

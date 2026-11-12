@@ -1,0 +1,182 @@
+{
+  "hultsch:1876": {
+    "author": "Pappus of Alexandria (ed. Friedrich Hultsch)",
+    "work": "Pappi Alexandrini Collectionis quae supersunt, Vol. I (Books II–V)",
+    "locus": "Berlin: Weidmann, 1876 (pp. 2–473)",
+    "year": "1876",
+    "category": "edition",
+    "note": "Standard critical Greek edition with parallel Latin translation and commentary for Books II (Apollonian tetrads), III (Pandrosion & Three Means), IV (Area Theorem, Arbelos & Higher Curves), and V (Honeycomb Isoperimetry & 13 Archimedean Solids).",
+    "url": "https://archive.org/details/pappialexandrini01pappuoft"
+  },
+  "hultsch:1877": {
+    "author": "Pappus of Alexandria (ed. Friedrich Hultsch)",
+    "work": "Pappi Alexandrini Collectionis quae supersunt, Vol. II (Books VI–VII)",
+    "locus": "Berlin: Weidmann, 1877 (pp. 474–1016)",
+    "year": "1877",
+    "category": "edition",
+    "note": "Standard critical Greek edition of Book VI (Little Astronomy) and Book VII (Treasury of Analysis: Preface to Hermodorus, 3/4-Line Locus, Pappus–Guldinus Centroid Theorem, Cross-Ratio VII.129, Harmonics VII.131, Hexagon Theorems VII.138–139, Focus–Directrix VII.238).",
+    "url": "https://archive.org/details/pappialexandrini02pappuoft"
+  },
+  "hultsch:1878": {
+    "author": "Pappus of Alexandria (ed. Friedrich Hultsch)",
+    "work": "Pappi Alexandrini Collectionis quae supersunt, Vol. III (Book VIII & Index Graecitatis)",
+    "locus": "Berlin: Weidmann, 1878 (pp. 1022–1289)",
+    "year": "1878",
+    "category": "edition",
+    "note": "Standard critical Greek edition of Book VIII (Mechanics, Inclined Plane, Archimedes's Lever Saying, Hero's Baroulkos, Single-Opening Compass Constructions, Seven Hexagons in a Circle, and Toothed Gearwheels).",
+    "url": "https://archive.org/details/pappialexandrini03pappuoft"
+  },
+  "commandino:1588": {
+    "author": "Federico Commandino (trans.)",
+    "work": "Pappi Alexandrini Mathematicae Collectiones a Federico Commandino Urbinate in Latinum conversae et commentariis illustratae",
+    "locus": "Pesaro (Pisauri): Hieronymus Concordia, 1588 (reissued Venice 1589, Bologna 1660)",
+    "year": "1588",
+    "category": "edition",
+    "note": "Monumental Renaissance Latin editio princeps (drawn from Vatican MS Graecus 218) through which Descartes, Guldin, Desargues, Fermat, Pascal, and Newton read Pappus before any Greek printing existed."
+  },
+  "heath:1921": {
+    "author": "Sir Thomas Little Heath",
+    "work": "A History of Greek Mathematics, Vol. II: From Aristarchus to Diophantus",
+    "locus": "Oxford: Clarendon Press, 1921 (Ch. XIX: Pappus of Alexandria, pp. 355–439)",
+    "year": "1921",
+    "category": "modern",
+    "note": "Comprehensive public-domain mathematical analysis of Books II–VIII of Pappus's Collection.",
+    "url": "https://archive.org/details/historyofgreekma02heat"
+  },
+  "heath:1926": {
+    "author": "Sir Thomas Little Heath",
+    "work": "The Thirteen Books of Euclid's Elements (2nd ed., 3 vols.)",
+    "locus": "Cambridge University Press, 1926 (geometor/euclid)",
+    "year": "1926",
+    "category": "modern",
+    "note": "Primary Euclidean commentary in geometor/euclid, citing Pappus's Synagoge across Books III, IV, V, and VI and the Treasury of Analysis."
+  },
+  "euclid:elements": {
+    "author": "Euclid",
+    "work": "Elements (Στοιχεῖα, Books I–XIII)",
+    "locus": "Alexandria, c. 300 BCE (geometor/euclid & geometor/elements)",
+    "year": "c. 300 BCE",
+    "category": "ancient",
+    "note": "Axiomatic foundation generalized and supplemented across Pappus's Synagoge (IV.1 generalizing I.47 & VI.31; III.5–16 extending VI.13; III.54–58 complementing XIII.13–18)."
+  },
+  "euclid:data": {
+    "author": "Euclid",
+    "work": "Data (Δεδομένα)",
+    "locus": "First treatise of the Treasury of Analysis (Synagoge VII, Hultsch II pp. 636–638)",
+    "year": "c. 300 BCE",
+    "category": "ancient",
+    "note": "90 propositions on magnitudes given in magnitude, ratio, species, or position; heads Pappus's 33-book curriculum of the Treasury of Analysis."
+  },
+  "euclid:porisms": {
+    "author": "Euclid",
+    "work": "Porisms (Πορίσματα, 3 books — lost)",
+    "locus": "apud Pappum, Synagoge VII, Hultsch II pp. 648–660 & Lemmas VII.127–164 (pp. 866–918)",
+    "year": "c. 300 BCE",
+    "category": "ancient",
+    "note": "Lost three-book masterpiece of 171 propositions in 29 genera; Pappus's 38 lemmas to the Porisms include Cross-Ratio Invariance (VII.129), Harmonic Division (VII.131), and the Hexagon Theorems (VII.138–139)."
+  },
+  "euclid:surface-loci": {
+    "author": "Euclid",
+    "work": "Surface Loci (Τόποι πρὸς ἐπιφανείᾳ, 2 books — lost)",
+    "locus": "apud Pappum, Synagoge VII, Hultsch II p. 636 & Lemmas VII.235–242 (pp. 1004–1014)",
+    "year": "c. 300 BCE",
+    "category": "ancient",
+    "note": "Lost two-book treatise whose final Pappus lemmas (VII.238, Hultsch II p. 1008) preserve the earliest surviving proof of the Focus–Directrix eccentricity property of all three conic sections."
+  },
+  "apollonius:conics": {
+    "author": "Apollonius of Perga",
+    "work": "Conics (Κωνικά, 8 books)",
+    "locus": "Synagoge VII, Hultsch II pp. 672–682 & Lemmas VII.165–234 (pp. 918–1004)",
+    "year": "c. 200 BCE",
+    "category": "ancient",
+    "note": "Culmination of solid-locus geometry in the Treasury of Analysis; discussed by Pappus in connection with the Three- and Four-Line Locus and the Pappus–Guldinus Centroid Theorem."
+  },
+  "apollonius:cutting-off-ratio": {
+    "author": "Apollonius of Perga",
+    "work": "Cutting Off of a Ratio, Cutting Off of an Area, Determinate Section, Tangencies, Inclinations & Plane Loci (12 books)",
+    "locus": "apud Pappum, Synagoge VII, Hultsch II pp. 636, 640–672 & Lemmas VII.1–126 (pp. 684–866)",
+    "year": "c. 200 BCE",
+    "category": "ancient",
+    "note": "Six two-book Apollonian analytical treatises forming the central trunk of Pappus's Treasury of Analysis."
+  },
+  "aristaeus:solid-loci": {
+    "author": "Aristaeus the Elder",
+    "work": "Five Books of Solid Loci (Τόποι στερεοί, 5 books — lost)",
+    "locus": "apud Pappum, Synagoge VII, Hultsch II pp. 636, 670–678",
+    "year": "fl. c. 320 BCE",
+    "category": "ancient",
+    "note": "Pre-Apollonian treatise on conic sections connected with the Three- and Four-Line Locus problem."
+  },
+  "archimedes:method-spirals": {
+    "author": "Archimedes of Syracuse",
+    "work": "On Spirals, Book of Lemmas (Arbelos), Semi-Regular Polyhedra & Equilibria of Planes",
+    "locus": "apud Pappum, Synagoge IV (pp. 208–245), V (pp. 352–358), VIII (p. 1060)",
+    "year": "3rd cent. BCE",
+    "category": "ancient",
+    "note": "Primary source for Pappus's arbelos circle chain (IV.14–18), spiral quadrature, complete table of all 13 Archimedean semi-regular solids (V.19), and center-of-gravity mechanics (VIII)."
+  },
+  "nicomachus:introductio": {
+    "author": "Nicomachus of Gerasa",
+    "work": "Introduction to Arithmetic (Ἀριθμητικὴ Εἰσαγωγή, Book II)",
+    "locus": "Synagoge III, Hultsch I pp. 68–105",
+    "year": "c. 100 CE",
+    "category": "ancient",
+    "note": "Source for the ten Pythagorean and Neo-Pythagorean medieties (μεσότητες) synthesized geometrically by Pappus in Book III."
+  },
+  "zenodorus:isoperimetric": {
+    "author": "Zenodorus",
+    "work": "On Isoperimetric Figures (Περὶ ἰσοπεριμέτρων σχημάτων — fragments)",
+    "locus": "apud Pappum, Synagoge V, Hultsch I pp. 308–350",
+    "year": "2nd cent. BCE",
+    "category": "ancient",
+    "note": "Hellenistic treatise on planar and spatial isoperimetric inequalities reworked and sharpened by Pappus in Book V following his Preface on the Honeycomb."
+  },
+  "heron:mechanica": {
+    "author": "Hero of Alexandria",
+    "work": "Mechanics (Μηχανικά) & Baroulkos (Βαρουλκός)",
+    "locus": "apud Pappum, Synagoge VIII, Hultsch III pp. 1022–1073, 1104–1115",
+    "year": "1st cent. CE",
+    "category": "ancient",
+    "note": "Principal Greek source for the five simple machines, toothed gear-trains, worm screw, and weight-hauling reduction preserved in Greek through Pappus Book VIII."
+  },
+  "proclus:in-euclidem": {
+    "author": "Proclus Diadochus",
+    "work": "In Primum Euclidis Elementorum Librum Commentarii (ed. Friedlein 1873)",
+    "locus": "Friedlein pp. 189, 197, 249–250, 429 (geometor/proclus)",
+    "year": "c. 470 CE",
+    "category": "ancient",
+    "note": "Companion GEOMETOR codex preserving Pappus's symmetry proof of Elements I.5 and axiomatic remarks, while paralleling Pappus VII on geometric analysis and synthesis."
+  },
+  "descartes:geometrie": {
+    "author": "René Descartes",
+    "work": "La Géométrie",
+    "locus": "Leiden, 1637 (Book I: The Pappus Locus Problem)",
+    "year": "1637",
+    "category": "modern",
+    "note": "Inaugurated analytic coordinate geometry specifically to solve the generalized n-line Pappus locus posed in Synagoge VII (Hultsch II pp. 676–680) via Commandino's 1588 Latin edition."
+  },
+  "pascal:essai-coniques": {
+    "author": "Blaise Pascal",
+    "work": "Essai pour les coniques (Hexagrammum Mysticum)",
+    "locus": "Paris, February 1640",
+    "year": "1640",
+    "category": "modern",
+    "note": "Generalized Pappus's two-line Hexagon Theorem (Synagoge VII.138–139) to any smooth conic section, yielding 60 Pascal lines for six conic points."
+  },
+  "steiner:1832": {
+    "author": "Jakob Steiner",
+    "work": "Systematische Entwickelung der Abhängigkeit geometrischer Gestalten von einander",
+    "locus": "Berlin: Fincke, 1832",
+    "year": "1832",
+    "category": "modern",
+    "note": "Established cross-ratio projectivity and proved that the six S_3 Pappus lines concur in two triples at the Steiner Star points (S_+, S_-)."
+  },
+  "hilbert:1899": {
+    "author": "David Hilbert",
+    "work": "Grundlagen der Geometrie",
+    "locus": "Leipzig: Teubner, 1899, Ch. V–VI (geometor/hilbert)",
+    "year": "1899",
+    "category": "modern",
+    "note": "Demonstrated in geometor/hilbert that Pappus's Hexagon Theorem (Pascalischer Satz for two lines) is algebraically equivalent to commutativity of multiplication in the coordinate division ring."
+  }
+}
