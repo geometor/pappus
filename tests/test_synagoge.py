@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from types import SimpleNamespace
@@ -279,3 +280,61 @@ def test_sphinx_ext_greek_track_intersphinx_and_apparatus_parity(
         top_data = json.loads((repo_root / "resources" / fname).read_text(encoding="utf-8"))
         sub_data = json.loads((repo_root / "resources" / "synagoge" / fname).read_text(encoding="utf-8"))
         assert top_data == sub_data
+
+
+def test_synagoge_codex_rst_and_euclid_concordance_integrity() -> None:
+    """Verify 5-unit 4-track codex layout, zero py_file blocks, 8 euclid keys, and apparatus anchors."""
+    repo_root = Path(__file__).resolve().parents[1]
+    synagoge_dir = repo_root / "docsrc" / "synagoge"
+    assert (synagoge_dir / "index.rst").is_file()
+    assert ":layout: book" in (synagoge_dir / "index.rst").read_text(encoding="utf-8")
+
+    expected_units = (
+        "book-3-three-means",
+        "book-4-area-and-arbelos",
+        "book-5-sagacity-of-bees",
+        "book-7-domain-of-analysis",
+        "book-8-mechanics",
+    )
+    for unit in expected_units:
+        for track in ("en", "el", "summary", "notes"):
+            track_path = synagoge_dir / unit / f"{unit}-{track}.rst"
+            assert track_path.is_file(), f"Missing codex track {track_path}"
+
+    # Verify all 8 euclid pappus:collectio* citation keys are mapped in concordance.json
+    concordance = json.loads(
+        (repo_root / "resources" / "synagoge" / "concordance.json").read_text(encoding="utf-8")
+    )
+    mapped_euclid_keys = {
+        key for locus in concordance["loci"] for key in locus.get("euclid_keys", [])
+    }
+    expected_euclid_keys = {
+        "pappus:collectio",
+        "pappus:collectio:7",
+        "pappus:collectio:iii-p-132",
+        "pappus:collectio:iii-p-72-9-23",
+        "pappus:collectio:vii-p-670-19",
+        "pappus:collectio:vii-p-678",
+        "pappus:collectio:vii-p-826",
+        "pappus:collectio:vii-p-928",
+    }
+    assert expected_euclid_keys <= mapped_euclid_keys
+
+    # Collect defined anchors across apparatus pages
+    defined_anchors: set[str] = set()
+    for app_name in ("bibliography.rst", "persons.rst", "glossary.rst"):
+        app_text = (synagoge_dir / app_name).read_text(encoding="utf-8")
+        defined_anchors.update(re.findall(r"^\.\. _([a-z0-9-]+):", app_text, flags=re.MULTILINE))
+
+    role_pattern = re.compile(r":(cite|person|term):`([^`]+)`")
+    for rst_path in synagoge_dir.rglob("*.rst"):
+        text = rst_path.read_text(encoding="utf-8")
+        assert ".. py_file::" not in text, f"Forbidden py_file directive in {rst_path}"
+        for role_name, raw_target in role_pattern.findall(text):
+            key = raw_target.split("<")[-1].rstrip(">").strip()
+            slug = re.sub(r"[^a-z0-9]+", "-", key.lower()).strip("-")
+            expected_anchor = f"{role_name}-{slug}"
+            assert expected_anchor in defined_anchors, (
+                f"Unresolved :{role_name}:`{raw_target}` -> {expected_anchor} in {rst_path.name}"
+            )
+

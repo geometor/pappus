@@ -66,6 +66,17 @@
       ]
     },
     {
+      "id": "conc-hultsch-i-132-162",
+      "hultsch_locus": "Book III, Props. 54–58 (Hultsch I, pp. 132–162)",
+      "unit_id": "book-3-three-means",
+      "section_ref": "synagoge-b3-notes",
+      "summary": "Analytical inscription of the five Platonic regular polyhedra (tetrahedron, cube, octahedron, icosahedron, dodecahedron) in a given sphere using parallel circular sections, complementary to Elements XIII.13–18.",
+      "euclid_keys": ["pappus:collectio:iii-p-132"],
+      "euclid_refs": ["Heath Vol. II, p. 81 (Book IV note, folio 0087)"],
+      "elements_refs": ["XIII.13", "XIII.14", "XIII.15", "XIII.16", "XIII.17", "XIII.18"],
+      "pappus_code": []
+    },
+    {
       "id": "conc-hultsch-i-176-179",
       "hultsch_locus": "Book IV, Ch. 1 / Prop. 1 (Hultsch I, pp. 176–179)",
       "unit_id": "book-4-area-and-arbelos",
