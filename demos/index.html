@@ -1,0 +1,686 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demos &mdash; GEOMETOR • pappus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=911ccb65" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <h1>GEOMETOR • pappus</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">pappus</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../theorems/index.html"  >Theorems</a>
+        </li>
+        <li>
+          <a href="../usage/index.html"  >Usage & CLI</a>
+        </li>
+        <li>
+          <a href="#" class="is-active" aria-selected="true" aria-current="page">Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../index.html" title="Return to Project Portal">&larr; pappus</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">GEOMETOR • pappus</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../usage/index.html" title="Usage &amp; CLI">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../modules/index.html" title="Modules"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="demos">
+        <h1>Demos<a class="headerlink" href="#demos" title="Link to this heading">¶</a></h1>
+        <p>Five standalone runnable scripts in <code class="docutils literal notranslate"><span class="pre">demos/</span></code> showcase every layer of <code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code> with
+        formatted Rich terminal tables—reviving and extending the repository’s original 2023 <code class="docutils literal notranslate"><span class="pre">pappus.py</span></code>
+        and <code class="docutils literal notranslate"><span class="pre">pappus-3.py</span></code> explorations without requiring a GUI window.</p>
+        <section class="level-2" id="demos-pappus-hexagon-py-synagoge-vii-138-vii-139">
+        <h2>1. <code class="docutils literal notranslate"><span class="pre">demos/pappus_hexagon.py</span></code> — <em>Synagoge</em> VII.138 &amp; VII.139<a class="headerlink" href="#demos-pappus-hexagon-py-synagoge-vii-138-vii-139" title="Link to this heading">¶</a></h2>
+        <p>Constructs both the oblique intersecting-carrier hexagon (Prop. 139) and the parallel-carrier
+        hexagon (Prop. 138), verifies the universal 8-variable polynomial proof, and computes the exact
+        signed areas of the three homologous <code class="docutils literal notranslate"><span class="pre">square</span></code> / <code class="docutils literal notranslate"><span class="pre">circle</span></code> / <code class="docutils literal notranslate"><span class="pre">diamond</span></code> triangles.</p>
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>demos/pappus_hexagon.py
+        </pre></div>
+        </div>
+        <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">"""Demonstration 1: Pappus's Hexagon Theorem (Synagoge VII.138 &amp; VII.139) and Type Triangles.</span>
+
+        <span class="sd">Constructs both the general intersecting-carrier case (Prop. 139) and the parallel</span>
+        <span class="sd">carrier case (Prop. 138), verifies the universal symbolic polynomial proof over</span>
+        <span class="sd">eight free indeterminates, and revives the homologous ``square`` / ``circle`` /</span>
+        <span class="sd">``diamond`` triangles from GEOMETOR's ``pappus-3.py`` exploration.</span>
+        <span class="sd">"""</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+
+        <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+        <span class="n">_SRC_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s2">"src"</span>
+        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">))</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.console</span><span class="w"> </span><span class="kn">import</span> <span class="n">Console</span>  <span class="c1"># noqa: E402</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.table</span><span class="w"> </span><span class="kn">import</span> <span class="n">Table</span>  <span class="c1"># noqa: E402</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.pappus</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>  <span class="c1"># noqa: E402</span>
+            <span class="n">construct_pappus_hexagon</span><span class="p">,</span>
+            <span class="n">line_spread</span><span class="p">,</span>
+            <span class="n">quadrance</span><span class="p">,</span>
+            <span class="n">verify_pappus_symbolic</span><span class="p">,</span>
+        <span class="p">)</span>
+
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">run_demo</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="w">    </span><span class="sd">"""Execute the Pappus Hexagon demonstration and print exact symbolic tables."""</span>
+            <span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
+
+            <span class="c1"># 1. General projective case (Synagoge Book VII, Prop. 139)</span>
+            <span class="n">general</span> <span class="o">=</span> <span class="n">construct_pappus_hexagon</span><span class="p">(</span>
+                <span class="n">preset</span><span class="o">=</span><span class="s2">"hexagon"</span><span class="p">,</span>
+                <span class="n">perm</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+                <span class="n">include_hexagon</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="n">include_type_triangles</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">table_gen</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">"Synagoge VII.139 — General Intersecting Carriers"</span><span class="p">)</span>
+            <span class="n">table_gen</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Element"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan bold"</span><span class="p">)</span>
+            <span class="n">table_gen</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Exact Symbolic Expression"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+            <span class="n">table_gen</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Line a"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">general</span><span class="o">.</span><span class="n">line_a</span><span class="o">.</span><span class="n">equation</span><span class="p">()</span><span class="si">}</span><span class="s2"> = 0"</span><span class="p">)</span>
+            <span class="n">table_gen</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Line b"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">general</span><span class="o">.</span><span class="n">line_b</span><span class="o">.</span><span class="n">equation</span><span class="p">()</span><span class="si">}</span><span class="s2"> = 0"</span><span class="p">)</span>
+            <span class="n">table_gen</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Carrier Spread s(a, b)"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">line_spread</span><span class="p">(</span><span class="n">general</span><span class="o">.</span><span class="n">line_a</span><span class="p">,</span> <span class="n">general</span><span class="o">.</span><span class="n">line_b</span><span class="p">)))</span>
+            <span class="k">if</span> <span class="n">general</span><span class="o">.</span><span class="n">apex</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">table_gen</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Carrier Apex O = a ∩ b"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">general</span><span class="o">.</span><span class="n">apex</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">general</span><span class="o">.</span><span class="n">apex</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">m_id</span><span class="p">,</span> <span class="n">m_pt</span> <span class="ow">in</span> <span class="n">general</span><span class="o">.</span><span class="n">meets</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">m_pt</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">table_gen</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Meet </span><span class="si">{</span><span class="n">m_id</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">m_pt</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">m_pt</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+            <span class="n">table_gen</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Pappus Line"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">general</span><span class="o">.</span><span class="n">pappus_line</span><span class="o">.</span><span class="n">equation</span><span class="p">()</span><span class="si">}</span><span class="s2"> = 0"</span><span class="p">)</span>
+            <span class="n">table_gen</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Collinear?"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">general</span><span class="o">.</span><span class="n">is_collinear</span><span class="p">))</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">table_gen</span><span class="p">)</span>
+
+            <span class="c1"># 2. Parallel carrier case (Synagoge Book VII, Prop. 138)</span>
+            <span class="n">parallel</span> <span class="o">=</span> <span class="n">construct_pappus_hexagon</span><span class="p">(</span><span class="n">preset</span><span class="o">=</span><span class="s2">"parallel"</span><span class="p">,</span> <span class="n">perm</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+            <span class="n">table_par</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">"Synagoge VII.138 — Parallel Carriers (s(a, b) = 0)"</span><span class="p">)</span>
+            <span class="n">table_par</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Element"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan bold"</span><span class="p">)</span>
+            <span class="n">table_par</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Exact Symbolic Expression"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+            <span class="n">table_par</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Carrier Spread s(a, b)"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">line_spread</span><span class="p">(</span><span class="n">parallel</span><span class="o">.</span><span class="n">line_a</span><span class="p">,</span> <span class="n">parallel</span><span class="o">.</span><span class="n">line_b</span><span class="p">)))</span>
+            <span class="k">for</span> <span class="n">m_id</span><span class="p">,</span> <span class="n">m_pt</span> <span class="ow">in</span> <span class="n">parallel</span><span class="o">.</span><span class="n">meets</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">m_pt</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">table_par</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Meet </span><span class="si">{</span><span class="n">m_id</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">m_pt</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">m_pt</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+            <span class="n">m01</span><span class="p">,</span> <span class="n">m12</span><span class="p">,</span> <span class="n">m20</span> <span class="o">=</span> <span class="n">parallel</span><span class="o">.</span><span class="n">meets</span><span class="p">[</span><span class="s2">"M01"</span><span class="p">],</span> <span class="n">parallel</span><span class="o">.</span><span class="n">meets</span><span class="p">[</span><span class="s2">"M12"</span><span class="p">],</span> <span class="n">parallel</span><span class="o">.</span><span class="n">meets</span><span class="p">[</span><span class="s2">"M20"</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">m01</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">m12</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">m20</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">table_par</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Quadrance Q(M01, M20)"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">quadrance</span><span class="p">(</span><span class="n">m01</span><span class="p">,</span> <span class="n">m20</span><span class="p">)))</span>
+                <span class="n">table_par</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Quadrance Q(M20, M12)"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">quadrance</span><span class="p">(</span><span class="n">m20</span><span class="p">,</span> <span class="n">m12</span><span class="p">)))</span>
+            <span class="n">table_par</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Pappus Line"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">parallel</span><span class="o">.</span><span class="n">pappus_line</span><span class="o">.</span><span class="n">equation</span><span class="p">()</span><span class="si">}</span><span class="s2"> = 0"</span><span class="p">)</span>
+            <span class="n">table_par</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Collinear?"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">parallel</span><span class="o">.</span><span class="n">is_collinear</span><span class="p">))</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">table_par</span><span class="p">)</span>
+
+            <span class="c1"># 3. Homologous Type Triangles (reviving pappus-3.py)</span>
+            <span class="n">tri_table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">"Homologous Type Triangles (Square, Circle, Diamond)"</span><span class="p">)</span>
+            <span class="n">tri_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Type"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"magenta bold"</span><span class="p">)</span>
+            <span class="n">tri_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Vertices"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"white"</span><span class="p">)</span>
+            <span class="n">tri_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Exact Area"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"yellow"</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">t_name</span><span class="p">,</span> <span class="n">poly</span> <span class="ow">in</span> <span class="n">general</span><span class="o">.</span><span class="n">type_triangles</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="n">v_ids</span> <span class="o">=</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">general</span><span class="o">.</span><span class="n">model</span><span class="p">[</span><span class="n">v</span><span class="p">]</span><span class="o">.</span><span class="n">ID</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">poly</span><span class="o">.</span><span class="n">vertices</span><span class="p">)</span>
+                <span class="n">tri_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="n">t_name</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">v_ids</span><span class="si">}</span><span class="s2">)"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">poly</span><span class="o">.</span><span class="n">area</span><span class="p">)))</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">tri_table</span><span class="p">)</span>
+
+            <span class="c1"># 4. Universal algebraic proof over Q(a0, a1, a2, b0, b1, b2, m, c)</span>
+            <span class="n">det_expr</span> <span class="o">=</span> <span class="n">verify_pappus_symbolic</span><span class="p">()</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">"[bold green]Universal symbolic collinearity determinant:[/bold green] </span><span class="si">{</span><span class="n">det_expr</span><span class="si">}</span><span class="s2"> (identically zero)"</span>
+            <span class="p">)</span>
+
+
+        <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+            <span class="n">run_demo</span><span class="p">()</span>
+        </pre></div>
+        </div>
+        </section>
+        <section class="level-2" id="demos-pappus-six-permutations-py-six-s-3-lines-steiner-star-points">
+        <h2>2. <code class="docutils literal notranslate"><span class="pre">demos/pappus_six_permutations.py</span></code> — Six $S_3$ Lines &amp; Steiner Star Points<a class="headerlink" href="#demos-pappus-six-permutations-py-six-s-3-lines-steiner-star-points" title="Link to this heading">¶</a></h2>
+        <p>Constructs all $3! = 6$ permutations on both <code class="docutils literal notranslate"><span class="pre">preset=&quot;steiner&quot;</span></code> and the 2023 <code class="docutils literal notranslate"><span class="pre">preset=&quot;parallel&quot;</span></code>
+        configuration, printing every cross-join meet, Pappus line equation, and exact Star concurrency
+        point $(S_+, S_-)$.</p>
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>demos/pappus_six_permutations.py
+        </pre></div>
+        </div>
+        <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sa">r</span><span class="sd">"""Demonstration 2: The Six Permutations (S_3) &amp; Steiner's Two Star Concurrency Points.</span>
+
+        <span class="sd">Revives and completes GEOMETOR's 2023 ``pappus.py`` exploration: permuting</span>
+        <span class="sd">$(B_0, B_1, B_2)$ across all $3! = 6$ elements of $S_3$ yields six Pappus lines</span>
+        <span class="sd">that split by permutation parity into two concurrent triples:</span>
+
+        <span class="sd">- The 3 **even** Pappus lines ($A_3$) concur at the even star point $S_+$.</span>
+        <span class="sd">- The 3 **odd** Pappus lines ($S_3 \setminus A_3$) concur at the odd star point $S_-$.</span>
+        <span class="sd">"""</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+
+        <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+        <span class="n">_SRC_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s2">"src"</span>
+        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">))</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.console</span><span class="w"> </span><span class="kn">import</span> <span class="n">Console</span>  <span class="c1"># noqa: E402</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.table</span><span class="w"> </span><span class="kn">import</span> <span class="n">Table</span>  <span class="c1"># noqa: E402</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.pappus</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>  <span class="c1"># noqa: E402</span>
+            <span class="n">PERMUTATIONS_S3</span><span class="p">,</span>
+            <span class="n">construct_pappus_configuration</span><span class="p">,</span>
+            <span class="n">permutation_parity</span><span class="p">,</span>
+        <span class="p">)</span>
+
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">run_demo</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="w">    </span><span class="sd">"""Construct and compare both the 2023 parallel configuration and the compact Steiner configuration."""</span>
+            <span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
+
+            <span class="k">for</span> <span class="n">preset_key</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">"parallel"</span><span class="p">,</span> <span class="s2">"steiner"</span><span class="p">):</span>
+                <span class="n">cfg</span> <span class="o">=</span> <span class="n">construct_pappus_configuration</span><span class="p">(</span><span class="n">preset</span><span class="o">=</span><span class="n">preset_key</span><span class="p">,</span> <span class="n">scan_harmonics</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+                <span class="n">table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="sa">f</span><span class="s2">"Six-Permutation Pappus–Steiner Configuration (</span><span class="si">{</span><span class="n">preset_key</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+                <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"#"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"dim"</span><span class="p">)</span>
+                <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Perm σ"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan bold"</span><span class="p">)</span>
+                <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Parity"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"magenta"</span><span class="p">)</span>
+                <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Three Cross-Join Meets"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"white"</span><span class="p">)</span>
+                <span class="n">table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Pappus Line Equation (= 0)"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+
+                <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">perm</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">PERMUTATIONS_S3</span><span class="p">):</span>
+                    <span class="n">parity</span> <span class="o">=</span> <span class="n">permutation_parity</span><span class="p">(</span><span class="n">perm</span><span class="p">)</span>
+                    <span class="n">meets</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">meets_by_perm</span><span class="p">[</span><span class="n">perm</span><span class="p">]</span>
+                    <span class="n">meet_str</span> <span class="o">=</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+                        <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">cfg</span><span class="o">.</span><span class="n">model</span><span class="p">[</span><span class="n">m</span><span class="p">]</span><span class="o">.</span><span class="n">ID</span><span class="si">}</span><span class="s2">=(</span><span class="si">{</span><span class="n">m</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">m</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span> <span class="k">if</span> <span class="n">m</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="s2">"∞"</span>
+                        <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">meets</span>
+                    <span class="p">)</span>
+                    <span class="n">eq_str</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">cfg</span><span class="o">.</span><span class="n">pappus_lines</span><span class="p">[</span><span class="n">perm</span><span class="p">]</span><span class="o">.</span><span class="n">equation</span><span class="p">())</span>
+                    <span class="n">table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">idx</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">perm</span><span class="p">),</span> <span class="n">parity</span><span class="p">,</span> <span class="n">meet_str</span><span class="p">,</span> <span class="n">eq_str</span><span class="p">)</span>
+                <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+
+                <span class="n">star_table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="sa">f</span><span class="s2">"Steiner Concurrency Summary (</span><span class="si">{</span><span class="n">preset_key</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+                <span class="n">star_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Invariant"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"bold yellow"</span><span class="p">)</span>
+                <span class="n">star_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Exact Symbolic Result"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan"</span><span class="p">)</span>
+                <span class="n">star_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Total Cross-Join Meets"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cfg</span><span class="o">.</span><span class="n">all_meets</span><span class="p">)))</span>
+                <span class="k">if</span> <span class="n">cfg</span><span class="o">.</span><span class="n">steiner_even</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">star_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Even Star Point S+ (S1)"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">cfg</span><span class="o">.</span><span class="n">steiner_even</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">cfg</span><span class="o">.</span><span class="n">steiner_even</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">cfg</span><span class="o">.</span><span class="n">steiner_odd</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">star_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Odd Star Point S- (S2)"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">cfg</span><span class="o">.</span><span class="n">steiner_odd</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">cfg</span><span class="o">.</span><span class="n">steiner_odd</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">cfg</span><span class="o">.</span><span class="n">steiner_line</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">star_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Steiner Line [S+ S-]"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">cfg</span><span class="o">.</span><span class="n">steiner_line</span><span class="o">.</span><span class="n">equation</span><span class="p">()</span><span class="si">}</span><span class="s2"> = 0"</span><span class="p">)</span>
+                <span class="n">star_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Collinear Harmonic Tetrads"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cfg</span><span class="o">.</span><span class="n">harmonic_ranges</span><span class="p">)))</span>
+                <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">star_table</span><span class="p">)</span>
+
+
+        <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+            <span class="n">run_demo</span><span class="p">()</span>
+        </pre></div>
+        </div>
+        </section>
+        <section class="level-2" id="demos-harmonic-conjugate-py-complete-quadrilateral-harmonic-tetrads">
+        <h2>3. <code class="docutils literal notranslate"><span class="pre">demos/harmonic_conjugate.py</span></code> — Complete Quadrilateral &amp; Harmonic Tetrads<a class="headerlink" href="#demos-harmonic-conjugate-py-complete-quadrilateral-harmonic-tetrads" title="Link to this heading">¶</a></h2>
+        <p>Verifies Book VII Prop. 129 central perspectivity invariance, demonstrates straightedge fourth
+        harmonic construction across two distinct auxiliary apex/relay choices (confirming invariance of
+        $D = (-4, 0)$), and catalogs emergent harmonic tetrads on <code class="docutils literal notranslate"><span class="pre">preset=&quot;harmonic&quot;</span></code>.</p>
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>demos/harmonic_conjugate.py
+        </pre></div>
+        </div>
+        <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">"""Demonstration 3: Straightedge Fourth Harmonic Conjugate &amp; Projective Invariance.</span>
+
+        <span class="sd">Constructs the fourth harmonic conjugate $D$ of $C$ with respect to $(A, B)$</span>
+        <span class="sd">using only straightedge incidences via a complete quadrilateral, verifies</span>
+        <span class="sd">$(A, B; C, D) = -1$, and proves that $D$ is completely independent of the</span>
+        <span class="sd">auxiliary apex $P$ and relay point $Q$.</span>
+        <span class="sd">"""</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+
+        <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+        <span class="n">_SRC_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s2">"src"</span>
+        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">))</span>
+
+        <span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>  <span class="c1"># noqa: E402</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.console</span><span class="w"> </span><span class="kn">import</span> <span class="n">Console</span>  <span class="c1"># noqa: E402</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.table</span><span class="w"> </span><span class="kn">import</span> <span class="n">Table</span>  <span class="c1"># noqa: E402</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.pappus</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>  <span class="c1"># noqa: E402</span>
+            <span class="n">construct_harmonic_fourth</span><span class="p">,</span>
+            <span class="n">construct_pappus_configuration</span><span class="p">,</span>
+            <span class="n">cross_ratio</span><span class="p">,</span>
+            <span class="n">harmonic_conjugate_point</span><span class="p">,</span>
+            <span class="n">is_harmonic_range</span><span class="p">,</span>
+        <span class="p">)</span>
+
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">run_demo</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="w">    </span><span class="sd">"""Run the complete quadrilateral harmonic conjugate construction and invariance check."""</span>
+            <span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
+
+            <span class="n">res_1</span> <span class="o">=</span> <span class="n">construct_harmonic_fourth</span><span class="p">(</span>
+                <span class="n">pt_a</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+                <span class="n">pt_b</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+                <span class="n">pt_c</span><span class="o">=</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">Rational</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="mi">0</span><span class="p">),</span>
+                <span class="n">apex</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
+                <span class="n">relay</span><span class="o">=</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">Rational</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">sp</span><span class="o">.</span><span class="n">Rational</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span>
+            <span class="p">)</span>
+            <span class="n">res_2</span> <span class="o">=</span> <span class="n">construct_harmonic_fourth</span><span class="p">(</span>
+                <span class="n">pt_a</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+                <span class="n">pt_b</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+                <span class="n">pt_c</span><span class="o">=</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">Rational</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="mi">0</span><span class="p">),</span>
+                <span class="n">apex</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+                <span class="n">relay</span><span class="o">=</span><span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">Rational</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="mi">2</span><span class="p">),</span>
+            <span class="p">)</span>
+            <span class="n">algebraic_d</span> <span class="o">=</span> <span class="n">harmonic_conjugate_point</span><span class="p">(</span><span class="n">res_1</span><span class="o">.</span><span class="n">pt_a</span><span class="p">,</span> <span class="n">res_1</span><span class="o">.</span><span class="n">pt_b</span><span class="p">,</span> <span class="n">res_1</span><span class="o">.</span><span class="n">pt_c</span><span class="p">)</span>
+            <span class="n">cr_val</span> <span class="o">=</span> <span class="n">cross_ratio</span><span class="p">(</span><span class="n">res_1</span><span class="o">.</span><span class="n">pt_a</span><span class="p">,</span> <span class="n">res_1</span><span class="o">.</span><span class="n">pt_b</span><span class="p">,</span> <span class="n">res_1</span><span class="o">.</span><span class="n">pt_c</span><span class="p">,</span> <span class="n">res_1</span><span class="o">.</span><span class="n">pt_d</span><span class="p">)</span>
+
+            <span class="n">q_table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">"Complete Quadrilateral Fourth Harmonic Construction"</span><span class="p">)</span>
+            <span class="n">q_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Quantity"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan bold"</span><span class="p">)</span>
+            <span class="n">q_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Exact Value"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+            <span class="n">q_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Base Points A, B"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">res_1</span><span class="o">.</span><span class="n">pt_a</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">res_1</span><span class="o">.</span><span class="n">pt_a</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">), (</span><span class="si">{</span><span class="n">res_1</span><span class="o">.</span><span class="n">pt_b</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">res_1</span><span class="o">.</span><span class="n">pt_b</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+            <span class="n">q_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Interior Point C"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">res_1</span><span class="o">.</span><span class="n">pt_c</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">res_1</span><span class="o">.</span><span class="n">pt_c</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+            <span class="n">q_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Constructed D (Trial 1: P=(2,3))"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">res_1</span><span class="o">.</span><span class="n">pt_d</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">res_1</span><span class="o">.</span><span class="n">pt_d</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+            <span class="n">q_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Constructed D' (Trial 2: P=(-1,5))"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">res_2</span><span class="o">.</span><span class="n">pt_d</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">res_2</span><span class="o">.</span><span class="n">pt_d</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+            <span class="n">q_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Algebraic Formula D"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">algebraic_d</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">algebraic_d</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+            <span class="n">q_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"D == D' == Algebraic?"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">res_1</span><span class="o">.</span><span class="n">pt_d</span><span class="o">.</span><span class="n">equals</span><span class="p">(</span><span class="n">res_2</span><span class="o">.</span><span class="n">pt_d</span><span class="p">)</span> <span class="ow">and</span> <span class="n">res_1</span><span class="o">.</span><span class="n">pt_d</span><span class="o">.</span><span class="n">equals</span><span class="p">(</span><span class="n">algebraic_d</span><span class="p">)))</span>
+            <span class="n">q_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Cross-Ratio (A, B; C, D)"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">cr_val</span><span class="p">))</span>
+            <span class="n">q_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"is_harmonic_range(A, B, C, D)"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">is_harmonic_range</span><span class="p">(</span><span class="n">res_1</span><span class="o">.</span><span class="n">pt_a</span><span class="p">,</span> <span class="n">res_1</span><span class="o">.</span><span class="n">pt_b</span><span class="p">,</span> <span class="n">res_1</span><span class="o">.</span><span class="n">pt_c</span><span class="p">,</span> <span class="n">res_1</span><span class="o">.</span><span class="n">pt_d</span><span class="p">)))</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">q_table</span><span class="p">)</span>
+
+            <span class="c1"># Emergent harmonic tetrads inside the Pappus configuration</span>
+            <span class="n">cfg</span> <span class="o">=</span> <span class="n">construct_pappus_configuration</span><span class="p">(</span><span class="n">preset</span><span class="o">=</span><span class="s2">"harmonic"</span><span class="p">,</span> <span class="n">discover_all_intersections</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">h_table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="sa">f</span><span class="s2">"Sample Emergent Harmonic Ranges in Pappus Configuration (</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">cfg</span><span class="o">.</span><span class="n">harmonic_ranges</span><span class="p">)</span><span class="si">}</span><span class="s2"> total)"</span><span class="p">)</span>
+            <span class="n">h_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"#"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"dim"</span><span class="p">)</span>
+            <span class="n">h_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Carrier Line"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan"</span><span class="p">)</span>
+            <span class="n">h_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Ordered Points (P1 &lt; P2 &lt; P3 &lt; P4)"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"white"</span><span class="p">)</span>
+            <span class="n">h_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"(P1, P3; P2, P4)"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">hr</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">cfg</span><span class="o">.</span><span class="n">harmonic_ranges</span><span class="p">[:</span><span class="mi">10</span><span class="p">],</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+                <span class="n">h_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">idx</span><span class="p">),</span> <span class="n">hr</span><span class="o">.</span><span class="n">line_id</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="s1">', '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">hr</span><span class="o">.</span><span class="n">point_ids</span><span class="p">)</span><span class="si">}</span><span class="s2">)"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">hr</span><span class="o">.</span><span class="n">value</span><span class="p">))</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">h_table</span><span class="p">)</span>
+
+
+        <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+            <span class="n">run_demo</span><span class="p">()</span>
+        </pre></div>
+        </div>
+        </section>
+        <section class="level-2" id="demos-golden-pappus-py-golden-projectivity-in-mathbb-q-phi">
+        <h2>4. <code class="docutils literal notranslate"><span class="pre">demos/golden_pappus.py</span></code> — Golden Projectivity in $\mathbb{Q}(\phi)$<a class="headerlink" href="#demos-golden-pappus-py-golden-projectivity-in-mathbb-q-phi" title="Link to this heading">¶</a></h2>
+        <p>Computes the canonical golden cross-ratio $(0, 1; \phi, \phi + 1) = \phi$, its six-value
+        anharmonic power orbit, the harmonic-golden identity $(0, \phi; 1, \phi^3) = -1$, and runs
+        <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code> to uncover the emergent golden section <code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">A1</span> <span class="pre">M12</span> <span class="pre">B2</span> <span class="pre">/</span></code>.</p>
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>demos/golden_pappus.py
+        </pre></div>
+        </div>
+        <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sa">r</span><span class="sd">"""Demonstration 4: Golden Projectivity, Cross-Ratio Orbits &amp; Book VII Prop. 129.</span>
+
+        <span class="sd">Connects Pappus's invariance of the cross-ratio under central perspectivity</span>
+        <span class="sd">(*Synagoge* Book VII, Prop. 129) to GEOMETOR's central theme of the Golden Ratio</span>
+        <span class="sd">$\phi = (1 + \sqrt{5})/2$:</span>
+
+        <span class="sd">1. Verifies the canonical golden chain cross-ratio $(0, 1; \phi, \phi + 1) = \phi$</span>
+        <span class="sd">   and computes its six-value anharmonic $S_4 / V_4$ orbit in $\mathbb{Q}(\phi)$.</span>
+        <span class="sd">2. Proves the harmonic-golden identity $(0, \phi; 1, \phi^3) = -1$ where $\phi^3 = 2\phi + 1$.</span>
+        <span class="sd">3. Projects a golden range onto an oblique line via central perspectivity and</span>
+        <span class="sd">   verifies exact preservation of $\phi$ in the cross-ratio even when Euclidean</span>
+        <span class="sd">   ratios change.</span>
+        <span class="sd">4. Constructs the Golden Pappus Hexagon over $\mathbb{Q}(\phi)$ and scans it with</span>
+        <span class="sd">   :mod:`geometor.divine`.</span>
+        <span class="sd">"""</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+
+        <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+        <span class="n">_SRC_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s2">"src"</span>
+        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">))</span>
+
+        <span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>  <span class="c1"># noqa: E402</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">sympy.geometry</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">spg</span>  <span class="c1"># noqa: E402</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model</span><span class="w"> </span><span class="kn">import</span> <span class="n">Model</span>  <span class="c1"># noqa: E402</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.console</span><span class="w"> </span><span class="kn">import</span> <span class="n">Console</span>  <span class="c1"># noqa: E402</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.table</span><span class="w"> </span><span class="kn">import</span> <span class="n">Table</span>  <span class="c1"># noqa: E402</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.pappus</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>  <span class="c1"># noqa: E402</span>
+            <span class="n">PHI</span><span class="p">,</span>
+            <span class="n">anharmonic_orbit</span><span class="p">,</span>
+            <span class="n">construct_pappus_hexagon</span><span class="p">,</span>
+            <span class="n">cross_ratio</span><span class="p">,</span>
+            <span class="n">enable_divine_analysis</span><span class="p">,</span>
+            <span class="n">find_golden_sections</span><span class="p">,</span>
+            <span class="n">harmonic_conjugate_point</span><span class="p">,</span>
+            <span class="n">project_point</span><span class="p">,</span>
+        <span class="p">)</span>
+
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">run_demo</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="w">    </span><span class="sd">"""Execute the Golden Projectivity demonstration."""</span>
+            <span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
+
+            <span class="c1"># 1. Canonical golden chain &amp; anharmonic orbit</span>
+            <span class="n">p0</span> <span class="o">=</span> <span class="n">spg</span><span class="o">.</span><span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">p1</span> <span class="o">=</span> <span class="n">spg</span><span class="o">.</span><span class="n">Point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">p2</span> <span class="o">=</span> <span class="n">spg</span><span class="o">.</span><span class="n">Point</span><span class="p">(</span><span class="n">PHI</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">p3</span> <span class="o">=</span> <span class="n">spg</span><span class="o">.</span><span class="n">Point</span><span class="p">(</span><span class="n">PHI</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">cr_golden</span> <span class="o">=</span> <span class="n">cross_ratio</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p3</span><span class="p">)</span>
+            <span class="n">orbit</span> <span class="o">=</span> <span class="n">anharmonic_orbit</span><span class="p">(</span><span class="n">cr_golden</span><span class="p">)</span>
+
+            <span class="c1"># 2. Fourth harmonic conjugate of 1 w.r.t. (0, phi) is phi^3 = 2*phi + 1</span>
+            <span class="n">h_conj</span> <span class="o">=</span> <span class="n">harmonic_conjugate_point</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p1</span><span class="p">)</span>
+            <span class="n">cr_harm_gold</span> <span class="o">=</span> <span class="n">cross_ratio</span><span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">h_conj</span><span class="p">)</span>
+
+            <span class="c1"># 3. Central perspectivity (Synagoge VII.129) onto an oblique target line</span>
+            <span class="n">center</span> <span class="o">=</span> <span class="n">spg</span><span class="o">.</span><span class="n">Point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+            <span class="n">target_line</span> <span class="o">=</span> <span class="n">spg</span><span class="o">.</span><span class="n">Line</span><span class="p">(</span><span class="n">spg</span><span class="o">.</span><span class="n">Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">spg</span><span class="o">.</span><span class="n">Point</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+            <span class="n">projected</span> <span class="o">=</span> <span class="p">[</span><span class="n">project_point</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">target_line</span><span class="p">,</span> <span class="n">pt</span><span class="p">)</span> <span class="k">for</span> <span class="n">pt</span> <span class="ow">in</span> <span class="p">(</span><span class="n">p0</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">p3</span><span class="p">)]</span>
+            <span class="n">cr_projected</span> <span class="o">=</span> <span class="n">cross_ratio</span><span class="p">(</span><span class="o">*</span><span class="n">projected</span><span class="p">)</span>
+
+            <span class="n">inv_table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">"Golden Cross-Ratios &amp; Book VII Prop. 129 Perspectivity"</span><span class="p">)</span>
+            <span class="n">inv_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Property"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan bold"</span><span class="p">)</span>
+            <span class="n">inv_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Exact Symbolic Result"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+            <span class="n">inv_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Golden Ratio φ"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">PHI</span><span class="si">}</span><span class="s2"> ≈ </span><span class="si">{</span><span class="nb">float</span><span class="p">(</span><span class="n">PHI</span><span class="o">.</span><span class="n">evalf</span><span class="p">())</span><span class="si">:</span><span class="s2">.10f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="n">inv_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Chain Cross-Ratio (0, 1; φ, φ+1)"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">cr_golden</span><span class="si">}</span><span class="s2"> (equals φ: </span><span class="si">{</span><span class="n">sp</span><span class="o">.</span><span class="n">simplify</span><span class="p">(</span><span class="n">cr_golden</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">PHI</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+            <span class="n">inv_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"6-Value Anharmonic Orbit"</span><span class="p">,</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">orbit</span><span class="p">))</span>
+            <span class="n">inv_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Harmonic Conjugate D of 1 w.r.t. (0, φ)"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"x = </span><span class="si">{</span><span class="n">h_conj</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2"> = 2φ + 1 = φ³ (equals φ³: </span><span class="si">{</span><span class="n">sp</span><span class="o">.</span><span class="n">simplify</span><span class="p">(</span><span class="n">h_conj</span><span class="o">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">PHI</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+            <span class="n">inv_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Verify (0, φ; 1, φ³)"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">cr_harm_gold</span><span class="p">))</span>
+            <span class="n">inv_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Projected Cross-Ratio on x - 4y + 4 = 0"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">cr_projected</span><span class="si">}</span><span class="s2"> (invariant: </span><span class="si">{</span><span class="n">sp</span><span class="o">.</span><span class="n">simplify</span><span class="p">(</span><span class="n">cr_projected</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">cr_golden</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">inv_table</span><span class="p">)</span>
+
+            <span class="c1"># 4. Golden Pappus Hexagon with geometor.divine analysis</span>
+            <span class="n">model</span> <span class="o">=</span> <span class="n">enable_divine_analysis</span><span class="p">(</span><span class="n">Model</span><span class="p">(</span><span class="s2">"golden_pappus"</span><span class="p">))</span>
+            <span class="n">gold_hex</span> <span class="o">=</span> <span class="n">construct_pappus_hexagon</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="n">preset</span><span class="o">=</span><span class="s2">"golden"</span><span class="p">,</span> <span class="n">perm</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+            <span class="n">sections</span> <span class="o">=</span> <span class="n">find_golden_sections</span><span class="p">(</span><span class="n">gold_hex</span><span class="o">.</span><span class="n">model</span><span class="p">,</span> <span class="n">register_sections</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+            <span class="n">g_table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">"Golden Pappus Hexagon in Q(φ)"</span><span class="p">)</span>
+            <span class="n">g_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Element"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"bold yellow"</span><span class="p">)</span>
+            <span class="n">g_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Exact Symbolic Expression"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan"</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">m_id</span><span class="p">,</span> <span class="n">m_pt</span> <span class="ow">in</span> <span class="n">gold_hex</span><span class="o">.</span><span class="n">meets</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">m_pt</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">g_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Meet </span><span class="si">{</span><span class="n">m_id</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">m_pt</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">m_pt</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+            <span class="n">g_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Pappus Line"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">gold_hex</span><span class="o">.</span><span class="n">pappus_line</span><span class="o">.</span><span class="n">equation</span><span class="p">()</span><span class="si">}</span><span class="s2"> = 0"</span><span class="p">)</span>
+            <span class="n">g_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Collinear over Q(φ)?"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">gold_hex</span><span class="o">.</span><span class="n">is_collinear</span><span class="p">))</span>
+            <span class="n">g_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Golden Sections Discovered"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sections</span><span class="p">)))</span>
+            <span class="k">for</span> <span class="n">sec</span> <span class="ow">in</span> <span class="n">sections</span><span class="p">:</span>
+                <span class="n">g_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="sa">f</span><span class="s2">"  Golden Section on </span><span class="si">{</span><span class="n">sec</span><span class="o">.</span><span class="n">line_id</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sec</span><span class="o">.</span><span class="n">point_ids</span><span class="si">}</span><span class="s2"> -&gt; ratio = </span><span class="si">{</span><span class="n">sec</span><span class="o">.</span><span class="n">ratio</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">g_table</span><span class="p">)</span>
+
+
+        <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+            <span class="n">run_demo</span><span class="p">()</span>
+        </pre></div>
+        </div>
+        </section>
+        <section class="level-2" id="demos-pascal-hexagrammum-py-pascal-s-hexagrammum-mysticum-1640">
+        <h2>5. <code class="docutils literal notranslate"><span class="pre">demos/pascal_hexagrammum.py</span></code> — Pascal’s <em>Hexagrammum Mysticum</em> (1640)<a class="headerlink" href="#demos-pascal-hexagrammum-py-pascal-s-hexagrammum-mysticum-1640" title="Link to this heading">¶</a></h2>
+        <p>Proves Pascal’s smooth-conic theorem universally over $\mathbb{Z}[t_0, \dots, t_5]$, compares
+        the Pythagorean unit circle and stretched affine ellipse $\frac{x^2}{4} + y^2 = 1$, enumerates all
+        <strong>60 Pascal lines, 20 Steiner points, 60 Kirkman points, and 15 Plücker lines</strong>, and uncovers the
+        emergent golden conic section <code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">M25</span> <span class="pre">P4</span> <span class="pre">P0</span> <span class="pre">/</span></code> in $\mathbb{Q}(\phi)$.</p>
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>run<span class="w"> </span>python<span class="w"> </span>demos/pascal_hexagrammum.py
+        </pre></div>
+        </div>
+        <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">"""Standalone demonstration of Blaise Pascal's *Hexagrammum Mysticum* (1640).</span>
+
+        <span class="sd">Showcases:</span>
+        <span class="sd">1. Universal 6-variable polynomial proof over Z[t0..t5] and Veronese coconicity.</span>
+        <span class="sd">2. Pascal's Mystic Star Hexagram on the Pythagorean unit circle x^2 + y^2 = 1</span>
+        <span class="sd">   and on the general ellipse x^2 + 4y^2 = 4.</span>
+        <span class="sd">3. Complete 60-line *Hexagrammum Mysticum* combinatorics: 15 chords, 45 diagonal</span>
+        <span class="sd">   Pascal points, 60 Pascal lines, 20 Jakob Steiner points, 60 Thomas Kirkman</span>
+        <span class="sd">   points, and 15 Julius Plücker lines.</span>
+        <span class="sd">4. Golden *Hexagrammum* in Q(phi): Chasles conic cross-ratio phi, golden meet</span>
+        <span class="sd">   M25 = (-1/phi, -phi), and emergent geometor.divine golden section / M25 P4 P0 /.</span>
+        <span class="sd">"""</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+
+        <span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+        <span class="n">_SRC_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s2">"src"</span>
+        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">_SRC_DIR</span><span class="p">))</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.console</span><span class="w"> </span><span class="kn">import</span> <span class="n">Console</span>  <span class="c1"># noqa: E402</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">rich.table</span><span class="w"> </span><span class="kn">import</span> <span class="n">Table</span>  <span class="c1"># noqa: E402</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.pappus</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>  <span class="c1"># noqa: E402</span>
+            <span class="n">PHI</span><span class="p">,</span>
+            <span class="n">conic_cross_ratio</span><span class="p">,</span>
+            <span class="n">conic_equation_through_points</span><span class="p">,</span>
+            <span class="n">construct_pascal_hexagon</span><span class="p">,</span>
+            <span class="n">construct_pascal_steiner_family</span><span class="p">,</span>
+            <span class="n">enumerate_hexagrammum_mysticum</span><span class="p">,</span>
+            <span class="n">find_golden_sections</span><span class="p">,</span>
+            <span class="n">verify_pascal_symbolic</span><span class="p">,</span>
+        <span class="p">)</span>
+
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="w">    </span><span class="sd">"""Run the Pascal *Hexagrammum Mysticum* symbolic demonstration."""</span>
+            <span class="n">console</span> <span class="o">=</span> <span class="n">Console</span><span class="p">()</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">rule</span><span class="p">(</span><span class="s2">"[bold amber1]Blaise Pascal's Hexagrammum Mysticum (1640)[/bold amber1]"</span><span class="p">)</span>
+
+            <span class="c1"># 1. Universal 6-parameter symbolic proof</span>
+            <span class="n">sym_det</span> <span class="o">=</span> <span class="n">verify_pascal_symbolic</span><span class="p">()</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">"[bold green]✓ Universal 6-variable homogeneous determinant det[M03, M14, M25]:[/bold green] </span><span class="si">{</span><span class="n">sym_det</span><span class="si">}</span><span class="s2">"</span>
+            <span class="p">)</span>
+
+            <span class="c1"># 2. Pythagorean Mystic Star Hexagram &amp; Ellipse invariance</span>
+            <span class="n">mystic</span> <span class="o">=</span> <span class="n">construct_pascal_hexagon</span><span class="p">(</span><span class="n">preset</span><span class="o">=</span><span class="s2">"hexagrammum"</span><span class="p">)</span>
+            <span class="n">ellipse_res</span> <span class="o">=</span> <span class="n">construct_pascal_hexagon</span><span class="p">(</span><span class="n">preset</span><span class="o">=</span><span class="s2">"ellipse"</span><span class="p">)</span>
+            <span class="n">conic_poly</span> <span class="o">=</span> <span class="n">conic_equation_through_points</span><span class="p">(</span><span class="n">mystic</span><span class="o">.</span><span class="n">points</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>
+
+            <span class="n">hex_table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">"Pascal's Mystic Hexagram &lt;P0, P2, P4, P1, P3, P5&gt; on Circle vs. Ellipse"</span><span class="p">)</span>
+            <span class="n">hex_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Element"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan bold"</span><span class="p">)</span>
+            <span class="n">hex_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Unit Circle x^2 + y^2 = 1"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+            <span class="n">hex_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"General Ellipse x^2/4 + y^2 = 1"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"magenta"</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+                <span class="n">pc</span> <span class="o">=</span> <span class="n">mystic</span><span class="o">.</span><span class="n">points</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+                <span class="n">pe</span> <span class="o">=</span> <span class="n">ellipse_res</span><span class="o">.</span><span class="n">points</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+                <span class="n">hex_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="sa">f</span><span class="s2">"P</span><span class="si">{</span><span class="n">idx</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">pc</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">pc</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">pe</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">pe</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">mid</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">"M03"</span><span class="p">,</span> <span class="s2">"M14"</span><span class="p">,</span> <span class="s2">"M25"</span><span class="p">):</span>
+                <span class="n">mc</span> <span class="o">=</span> <span class="n">mystic</span><span class="o">.</span><span class="n">meets</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span>
+                <span class="n">me</span> <span class="o">=</span> <span class="n">ellipse_res</span><span class="o">.</span><span class="n">meets</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span>
+                <span class="n">hex_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span>
+                    <span class="n">mid</span><span class="p">,</span>
+                    <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">mc</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">mc</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span> <span class="k">if</span> <span class="n">mc</span> <span class="k">else</span> <span class="s2">"∞"</span><span class="p">,</span>
+                    <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">me</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">me</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span> <span class="k">if</span> <span class="n">me</span> <span class="k">else</span> <span class="s2">"∞"</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="n">hex_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span>
+                <span class="s2">"Pascal Line"</span><span class="p">,</span>
+                <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">mystic</span><span class="o">.</span><span class="n">pascal_line</span><span class="o">.</span><span class="n">equation</span><span class="p">()</span><span class="si">}</span><span class="s2"> = 0"</span><span class="p">,</span>
+                <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">ellipse_res</span><span class="o">.</span><span class="n">pascal_line</span><span class="o">.</span><span class="n">equation</span><span class="p">()</span><span class="si">}</span><span class="s2"> = 0"</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">hex_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"5-Point Veronese Conic"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">conic_poly</span><span class="si">}</span><span class="s2"> = 0"</span><span class="p">,</span> <span class="s2">"x^2 + 4*y^2 - 4 = 0"</span><span class="p">)</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">hex_table</span><span class="p">)</span>
+
+            <span class="c1"># 3. Bi-Triangle S_3 Steiner Family &amp; Full 60-Line Catalog</span>
+            <span class="n">steiner_fam</span> <span class="o">=</span> <span class="n">construct_pascal_steiner_family</span><span class="p">(</span><span class="n">preset</span><span class="o">=</span><span class="s2">"hexagrammum"</span><span class="p">)</span>
+            <span class="n">catalog</span> <span class="o">=</span> <span class="n">enumerate_hexagrammum_mysticum</span><span class="p">(</span><span class="n">preset</span><span class="o">=</span><span class="s2">"hexagrammum"</span><span class="p">)</span>
+
+            <span class="n">cat_table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">"Complete 19th-Century Hexagrammum Mysticum Incidence Catalog"</span><span class="p">)</span>
+            <span class="n">cat_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Projective Invariant / Family"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"cyan bold"</span><span class="p">)</span>
+            <span class="n">cat_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Exact Count"</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s2">"right"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"bold yellow"</span><span class="p">)</span>
+            <span class="n">cat_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Sample / Algebraic Highlight"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+            <span class="n">cat_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Conic Vertices P0..P5"</span><span class="p">,</span> <span class="s2">"6"</span><span class="p">,</span> <span class="s2">"All 6 satisfy x^2 + y^2 - 1 = 0"</span><span class="p">)</span>
+            <span class="n">cat_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Pairwise Chords [Pi Pj]"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">catalog</span><span class="o">.</span><span class="n">chords</span><span class="p">)),</span> <span class="s2">"15 secant lines across the circle"</span><span class="p">)</span>
+            <span class="n">cat_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span>
+                <span class="s2">"Pascal Diagonal Points"</span><span class="p">,</span>
+                <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">catalog</span><span class="o">.</span><span class="n">diagonal_points</span><span class="o">.</span><span class="n">values</span><span class="p">()))),</span>
+                <span class="s2">"45 off-conic chord intersections (4 Pascal lines per point)"</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">cat_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span>
+                <span class="s2">"Distinct Pascal Lines"</span><span class="p">,</span>
+                <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">catalog</span><span class="o">.</span><span class="n">pascal_lines</span><span class="o">.</span><span class="n">values</span><span class="p">()))),</span>
+                <span class="s2">"6! / (6 * 2) = 60 lines (3 diagonal points per line)"</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">cat_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span>
+                <span class="s2">"Jakob Steiner Points (1828)"</span><span class="p">,</span>
+                <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">catalog</span><span class="o">.</span><span class="n">steiner_points</span><span class="o">.</span><span class="n">values</span><span class="p">()))),</span>
+                <span class="sa">f</span><span class="s2">"Δ024 vs Δ135: G+ = (</span><span class="si">{</span><span class="n">steiner_fam</span><span class="o">.</span><span class="n">steiner_even</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">steiner_fam</span><span class="o">.</span><span class="n">steiner_even</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">), "</span>
+                <span class="sa">f</span><span class="s2">"G- = (</span><span class="si">{</span><span class="n">steiner_fam</span><span class="o">.</span><span class="n">steiner_odd</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">steiner_fam</span><span class="o">.</span><span class="n">steiner_odd</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">)"</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">cat_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span>
+                <span class="s2">"Thomas Kirkman Points (1849)"</span><span class="p">,</span>
+                <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">catalog</span><span class="o">.</span><span class="n">kirkman_points</span><span class="o">.</span><span class="n">values</span><span class="p">()))),</span>
+                <span class="s2">"60 3-fold Pascal line concurrencies dual to Pascal lines"</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">cat_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span>
+                <span class="s2">"Julius Plücker Lines (1830)"</span><span class="p">,</span>
+                <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">catalog</span><span class="o">.</span><span class="n">plucker_lines</span><span class="p">)),</span>
+                <span class="s2">"15 lines each carrying exactly 4 of the 20 Steiner points"</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">cat_table</span><span class="p">)</span>
+
+            <span class="c1"># 4. Golden Conic Hexagrammum in Q(phi)</span>
+            <span class="n">gold_hex</span> <span class="o">=</span> <span class="n">construct_pascal_hexagon</span><span class="p">(</span><span class="n">preset</span><span class="o">=</span><span class="s2">"golden_conic"</span><span class="p">)</span>
+            <span class="n">gp</span> <span class="o">=</span> <span class="n">gold_hex</span><span class="o">.</span><span class="n">points</span>
+            <span class="n">cr_from_p4</span> <span class="o">=</span> <span class="n">conic_cross_ratio</span><span class="p">(</span><span class="n">gp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">gp</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">gp</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">gp</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">observer</span><span class="o">=</span><span class="n">gp</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+            <span class="n">cr_from_p5</span> <span class="o">=</span> <span class="n">conic_cross_ratio</span><span class="p">(</span><span class="n">gp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">gp</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">gp</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">gp</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">observer</span><span class="o">=</span><span class="n">gp</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+            <span class="n">gold_secs</span> <span class="o">=</span> <span class="n">find_golden_sections</span><span class="p">(</span><span class="n">gold_hex</span><span class="o">.</span><span class="n">model</span><span class="p">)</span>
+
+            <span class="n">g_table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">"Golden Hexagrammum Mysticum in Q(phi)"</span><span class="p">)</span>
+            <span class="n">g_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Discovery"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"bold yellow"</span><span class="p">)</span>
+            <span class="n">g_table</span><span class="o">.</span><span class="n">add_column</span><span class="p">(</span><span class="s2">"Exact Symbolic Result"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+            <span class="n">g_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Phi = (1 + sqrt(5))/2"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">PHI</span><span class="p">))</span>
+            <span class="n">g_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Chasles Conic CR (P0, P1; P2, P3) from P4"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">cr_from_p4</span><span class="p">))</span>
+            <span class="n">g_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Chasles Conic CR (P0, P1; P2, P3) from P5"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">cr_from_p5</span><span class="p">))</span>
+            <span class="n">m25</span> <span class="o">=</span> <span class="n">gold_hex</span><span class="o">.</span><span class="n">meets</span><span class="p">[</span><span class="s2">"M25"</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">m25</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">g_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="s2">"Golden Pascal Meet M25"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">m25</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">m25</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s2">) = (-1/phi, -phi)"</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">gs</span> <span class="ow">in</span> <span class="n">gold_secs</span><span class="p">:</span>
+                <span class="n">g_table</span><span class="o">.</span><span class="n">add_row</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Divine Golden Section on </span><span class="si">{</span><span class="n">gs</span><span class="o">.</span><span class="n">line_id</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"/ </span><span class="si">{</span><span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">gs</span><span class="o">.</span><span class="n">point_ids</span><span class="p">)</span><span class="si">}</span><span class="s2"> / (ratio = </span><span class="si">{</span><span class="n">gs</span><span class="o">.</span><span class="n">ratio</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
+            <span class="n">console</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">g_table</span><span class="p">)</span>
+
+
+        <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+            <span class="n">main</span><span class="p">()</span>
+        </pre></div>
+        </div>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../usage/index.html" title="Usage &amp; CLI">&larr; <span class="nav-label">Usage & CLI</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">GEOMETOR • pappus</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../modules/index.html" title="Modules"><span class="nav-label">Modules</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../log/26.315-modernize-pappus/index.html">2026 Modernization: Pappus, Pascal’s Hexagrammum Mysticum & Interactive Dossiers</a></li>
+        <li><a href="../log/22.356-152519.html">Welcome</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../types/log.html">log</a></li>
+        <li><a href="../types/theorem.html">theorem</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../modules/index.html"  >Modules</a></li>
+        <li><a href="../refs/index.html"  >References</a></li>
+        <li><a href="../changelog.html"  >Changelog</a></li>
+        <li><a href="../log/index.html"  >Log</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

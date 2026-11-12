@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 420" data-graphic-id="g8" role="img" aria-label="2023 GEOMETOR Parallel Configuration — Even Star Point S+ = (90/73, 38/73)">
+  <title>2023 GEOMETOR Parallel Configuration — Even Star Point S+ = (90/73, 38/73)</title>
+  <style>
+.euclid-graphic {
+    --svg-bg: #fafaf9;
+    --ink: #1c1917;
+    --label-halo: rgba(250, 250, 249, 0.92);
+    --carrier: #475569;
+    --conic: #0284c7;
+    --cross: #0e7490;
+    --quad: #4338ca;
+    --pappus-even: #d97706;
+    --pappus-odd: #db2777;
+    --steiner: #7c3aed;
+    --harmonic: #059669;
+    --golden: #b45309;
+    --pt-given: #0f172a;
+    --pt-a: #0369a1;
+    --pt-b: #0f766e;
+    --pt-meet-even: #d97706;
+    --pt-meet-odd: #db2777;
+    --pt-steiner: #7c3aed;
+    --pt-harmonic: #059669;
+    --tri-square: #d97706;
+    --tri-circle: #0284c7;
+    --tri-diamond: #db2777;
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic {
+      --svg-bg: #141417;
+      --ink: #f4f4f5;
+      --label-halo: rgba(20, 20, 23, 0.92);
+      --carrier: #94a3b8;
+      --conic: #38bdf8;
+      --cross: #38bdf8;
+      --quad: #818cf8;
+      --pappus-even: #fbbf24;
+      --pappus-odd: #f472b6;
+      --steiner: #c084fc;
+      --harmonic: #34d399;
+      --golden: #facc15;
+      --pt-given: #e2e8f0;
+      --pt-a: #38bdf8;
+      --pt-b: #2dd4bf;
+      --pt-meet-even: #fbbf24;
+      --pt-meet-odd: #f472b6;
+      --pt-steiner: #c084fc;
+      --pt-harmonic: #34d399;
+      --tri-square: #fbbf24;
+      --tri-circle: #38bdf8;
+      --tri-diamond: #f472b6;
+    }
+  }
+  .euclid-graphic .svg-bg { fill: var(--svg-bg); }
+  .euclid-graphic .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88; }
+  .euclid-graphic .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round; }
+  .euclid-graphic .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92; }
+  .euclid-graphic .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58; }
+  .euclid-graphic .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78; }
+  .euclid-graphic .diagonal-line { stroke-dasharray: 5 3.5; }
+  .euclid-graphic .pappus-line { stroke-width: 2.7; opacity: 0.96; }
+  .euclid-graphic .pappus-even { stroke: var(--pappus-even); }
+  .euclid-graphic .pappus-odd { stroke: var(--pappus-odd); }
+  .euclid-graphic .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4; }
+  .euclid-graphic .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5; }
+  .euclid-graphic .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85; }
+  .euclid-graphic .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75; }
+  .euclid-graphic .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round; }
+  .euclid-graphic .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5; }
+  .euclid-graphic .pt-a { fill: var(--pt-a); }
+  .euclid-graphic .pt-b { fill: var(--pt-b); }
+  .euclid-graphic .meet-point.pappus-even { fill: var(--pt-meet-even); }
+  .euclid-graphic .meet-point.pappus-odd { fill: var(--pt-meet-odd); }
+  .euclid-graphic .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0; }
+  .euclid-graphic .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8; }
+  .euclid-graphic .aux-point { opacity: 0.78; }
+  .euclid-graphic .geom-label {
+    fill: var(--ink);
+    font-size: 13.5px;
+    font-weight: 600;
+    paint-order: stroke fill;
+    stroke: var(--label-halo);
+    stroke-width: 3.6px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .geom-label-sub { font-size: 10px; font-weight: 600; }
+  </style>
+  <rect class="svg-bg" x="0" y="0" width="680" height="420" rx="6" fill="none" />
+  <g id="elements">
+    <g id="graphics">
+      <path class="geom-line cross-line" d="M 128.57 406 L 128.57 210 L 128.57 14" data-ref="[ A0 B0 ]" data-aliases="[ A0 M0012 ] | [ B0 M0012 ]" fill="none"><title>[ A0 B0 ]: x = 0</title></path>
+      <path class="geom-line cross-line" d="M 14 356.86 L 271.14 185.43 L 528.29 14" data-ref="[ A0 B1 ]" data-aliases="[ A0 M0110 ] | [ A0 M0120 ] | [ A0 M0122 ] | [ B1 M0110 ] | [ B1 M0120 ] | [ B1 M0122 ] | [ M0110 M0120 ] | [ M0110 M0122 ] | [ M0120 M0122 ]" fill="none"><title>[ A0 B1 ]: -x + 3*y/2 = 0</title></path>
+      <path class="geom-line cross-line" d="M 14 326.3 L 340 195.9 L 666 65.5" data-ref="[ A0 B2 ]" data-aliases="[ A0 M0220 ] | [ A0 M0210 ] | [ A0 M0221 ] | [ A0 M0211 ] | [ B2 M0220 ] | [ B2 M0210 ] | [ B2 M0221 ] | [ B2 M0211 ] | [ M0220 M0210 ] | [ M0220 M0221 ] | [ M0220 M0211 ] | [ M0210 M0221 ] | [ M0210 M0211 ] | [ M0221 M0211 ]" fill="none"><title>[ A0 B2 ]: -x + 5*y/2 = 0</title></path>
+      <path class="geom-line cross-line" d="M 14 24.95 L 204.52 215.48 L 395.05 406" data-ref="[ A1 B0 ]" data-aliases="[ A1 M0110 ] | [ A1 M0210 ] | [ B0 M0110 ] | [ B0 M0210 ] | [ M0110 M0210 ]" fill="none"><title>[ A1 B0 ]: -x - y + 1 = 0</title></path>
+      <path class="geom-line cross-line" d="M 206.76 406 L 304.76 210 L 402.76 14" data-ref="[ A1 B1 ]" data-aliases="[ A1 M0211 ] | [ A1 M1120 ] | [ B1 M0211 ] | [ B1 M1120 ] | [ M0211 M1120 ]" fill="none"><title>[ A1 B1 ]: -x + y/2 + 1 = 0</title></path>
+      <path class="geom-line cross-line" d="M 666 16.16 L 373.62 211.08 L 81.24 406" data-ref="[ A1 B2 ]" data-aliases="[ A1 M1221 ] | [ A1 M1220 ] | [ A1 M0012 ] | [ B2 M1221 ] | [ B2 M1220 ] | [ B2 M0012 ] | [ M1221 M1220 ] | [ M1221 M0012 ] | [ M1220 M0012 ]" fill="none"><title>[ A1 B2 ]: -x + 3*y/2 + 1 = 0</title></path>
+      <path class="geom-line cross-line" d="M 14 101.33 L 340 210 L 666 318.67" data-ref="[ A2 B0 ]" data-aliases="[ A2 M0220 ] | [ A2 M0120 ] | [ A2 M1220 ] | [ A2 M1120 ] | [ B0 M0220 ] | [ B0 M0120 ] | [ B0 M1220 ] | [ B0 M1120 ] | [ M0220 M0120 ] | [ M0220 M1220 ] | [ M0220 M1120 ] | [ M0120 M1220 ] | [ M0120 M1120 ] | [ M1220 M1120 ]" fill="none"><title>[ A2 B0 ]: -x - 3*y + 3 = 0</title></path>
+      <path class="geom-line cross-line" d="M 666 356.86 L 408.86 185.43 L 151.71 14" data-ref="[ A2 B1 ]" data-aliases="[ A2 M1221 ] | [ A2 M0221 ] | [ B1 M1221 ] | [ B1 M0221 ] | [ M1221 M0221 ]" fill="none"><title>[ A2 B1 ]: -x - 3*y/2 + 3 = 0</title></path>
+      <path class="geom-line cross-line" d="M 614.19 406 L 516.19 210 L 418.19 14" data-ref="[ A2 B2 ]" data-aliases="[ A2 M0122 ] | [ B2 M0122 ]" fill="none"><title>[ A2 B2 ]: -x - y/2 + 3 = 0</title></path>
+      <path class="geom-line carrier-line" d="M 14 280.48 L 340 280.48 L 666 280.48" data-ref="[ A0 A2 ]" data-aliases="[ A0 A1 ] | [ A1 A2 ]" fill="none"><title>[ A0 A2 ]: y = 0</title></path>
+      <path class="geom-line carrier-line" d="M 14 139.52 L 340 139.52 L 666 139.52" data-ref="[ B0 B2 ]" data-aliases="[ B0 B1 ] | [ B1 B2 ]" fill="none"><title>[ B0 B2 ]: y - 1 = 0</title></path>
+      <path class="geom-line pappus-line pappus-even" d="M 14 262.03 L 340 199.93 L 666 137.84" data-ref="[ M0110 M1221 ]" data-aliases="[ M0110 M0220 ] | [ M0110 S1 ] | [ M1221 M0220 ] | [ M1221 S1 ] | [ M0220 S1 ]" fill="none"><title>[ M0110 M1221 ]: -4*x/15 + 7*y/5 - 2/5 = 0</title></path>
+      <path class="geom-line pappus-line pappus-odd" d="M 104.9 406 L 251.9 210 L 398.9 14" data-ref="[ M0210 M1122 ]" data-aliases="[ M0210 M0120 ] | [ M0210 M0012 ] | [ M0120 M0012 ]" fill="none"><title>[ M0210 M1122 ]: -12*x/7 + 9*y/7 + 6/7 = 0</title></path>
+      <path class="geom-line pappus-line pappus-odd" d="M 235.19 406 L 368.83 210 L 502.47 14" data-ref="[ M0011 M1220 ]" data-aliases="[ M1220 M0221 ]" fill="none"><title>[ M0011 M1220 ]: -22*x/9 + 5*y/3 + 10/3 = 0</title></path>
+      <path class="geom-line pappus-line pappus-even" d="M 468.1 406 L 304.76 210 L 141.43 14" data-ref="[ M0211 M1022 ]" data-aliases="[ M0211 S1 ]" fill="none"><title>[ M0211 M1022 ]: 9*x/2 + 15*y/4 - 15/2 = 0</title></path>
+      <path class="geom-line pappus-line pappus-even" d="M 95.8 406 L 299.34 210 L 502.88 14" data-ref="[ M0012 M1120 ]" data-aliases="[ M0012 M0122 ] | [ M0012 S1 ] | [ M1120 M0122 ] | [ M1120 S1 ] | [ M0122 S1 ]" fill="none"><title>[ M0012 M1120 ]: -26*x/21 + 9*y/7 + 6/7 = 0</title></path>
+      <path class="geom-line steiner-line" d="M 158.78 406 L 300.26 210 L 441.73 14" data-ref="[ S1 S2 ]" fill="none"><title>[ S1 S2 ]: -2660*x/219 + 640*y/73 + 760/73 = 0</title></path>
+    </g>
+    <g id="highlights"></g>
+    <g id="points">
+      <circle class="geom-point given-point pt-a" cx="128.57" cy="280.48" r="4.2" data-ref="A0" data-latex-x="0" data-latex-y="0"><title>A0 = (0, 0)</title></circle>
+      <circle class="geom-point given-point pt-a" cx="269.52" cy="280.48" r="4.2" data-ref="A1" data-latex-x="1" data-latex-y="0"><title>A1 = (1, 0)</title></circle>
+      <circle class="geom-point given-point pt-a" cx="551.43" cy="280.48" r="4.2" data-ref="A2" data-latex-x="3" data-latex-y="0"><title>A2 = (3, 0)</title></circle>
+      <circle class="geom-point given-point pt-b" cx="128.57" cy="139.52" r="4.2" data-ref="B0" data-latex-x="0" data-latex-y="1"><title>B0 = (0, 1)</title></circle>
+      <circle class="geom-point given-point pt-b" cx="340" cy="139.52" r="4.2" data-ref="B1" data-latex-x="\frac{3}{2}" data-latex-y="1"><title>B1 = (3/2, 1)</title></circle>
+      <circle class="geom-point given-point pt-b" cx="480.95" cy="139.52" r="4.2" data-ref="B2" data-latex-x="\frac{5}{2}" data-latex-y="1"><title>B2 = (5/2, 1)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="213.14" cy="224.1" r="4.7" data-ref="M0110" data-latex-x="\frac{3}{5}" data-latex-y="\frac{2}{5}"><title>M0110 = (3/5, 2/5)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="410.48" cy="186.51" r="4.7" data-ref="M1221" data-latex-x="2" data-latex-y="\frac{2}{3}"><title>M1221 = (2, 2/3)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="320.78" cy="203.59" r="4.7" data-ref="M0220" data-latex-x="\frac{15}{11}" data-latex-y="\frac{6}{11}"><title>M0220 = (15/11, 6/11)</title></circle>
+      <circle class="geom-point meet-point pappus-odd" cx="229.25" cy="240.2" r="4.7" data-ref="M0210" data-latex-x="\frac{5}{7}" data-latex-y="\frac{2}{7}"><title>M0210 = (5/7, 2/7)</title></circle>
+      <circle class="geom-point meet-point pappus-odd" cx="410.48" cy="-1.43" r="4.7" data-ref="M1122" data-latex-x="2" data-latex-y="2"><title>M1122 = (2, 2)</title></circle>
+      <circle class="geom-point meet-point pappus-odd" cx="269.52" cy="186.51" r="4.7" data-ref="M0120" data-latex-x="1" data-latex-y="\frac{2}{3}"><title>M0120 = (1, 2/3)</title></circle>
+      <circle class="geom-point meet-point pappus-odd" cx="363.49" cy="217.83" r="4.7" data-ref="M1220" data-latex-x="\frac{5}{3}" data-latex-y="\frac{4}{9}"><title>M1220 = (5/3, 4/9)</title></circle>
+      <circle class="geom-point meet-point pappus-odd" cx="392.86" cy="174.76" r="4.7" data-ref="M0221" data-latex-x="\frac{15}{8}" data-latex-y="\frac{3}{4}"><title>M0221 = (15/8, 3/4)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="304.76" cy="210" r="4.7" data-ref="M0211" data-latex-x="\frac{5}{4}" data-latex-y="\frac{1}{2}"><title>M0211 = (5/4, 1/2)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="128.57" cy="-1.43" r="4.7" data-ref="M0021" data-latex-x="0" data-latex-y="2"><title>M0021 = (0, 2)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="128.57" cy="374.44" r="4.7" data-ref="M0012" data-latex-x="0" data-latex-y="- \frac{2}{3}"><title>M0012 = (0, -2/3)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="309.8" cy="199.93" r="4.7" data-ref="M1120" data-latex-x="\frac{9}{7}" data-latex-y="\frac{4}{7}"><title>M1120 = (9/7, 4/7)</title></circle>
+      <circle class="geom-point meet-point pappus-even" cx="445.71" cy="69.05" r="4.7" data-ref="M0122" data-latex-x="\frac{9}{4}" data-latex-y="\frac{3}{2}"><title>M0122 = (9/4, 3/2)</title></circle>
+      <circle class="geom-point-halo" cx="302.35" cy="207.1" r="10.2" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+      <circle class="geom-point steiner-point" cx="302.35" cy="207.1" r="6" data-ref="S1" data-latex-x="\frac{90}{73}" data-latex-y="\frac{38}{73}"><title>S1 = (90/73, 38/73)</title></circle>
+    </g>
+    <g id="labels">
+      <text class="geom-label" x="105.64" y="270.44" data-ref="A0">A<tspan class="geom-label-sub" dy="3">0</tspan></text>
+      <text class="geom-label" x="260.88" y="304.44" data-ref="A1">A<tspan class="geom-label-sub" dy="3">1</tspan></text>
+      <text class="geom-label" x="557.08" y="270.44" data-ref="A2">A<tspan class="geom-label-sub" dy="3">2</tspan></text>
+      <text class="geom-label" x="134.22" y="129.49" data-ref="B0">B<tspan class="geom-label-sub" dy="3">0</tspan></text>
+      <text class="geom-label" x="331.36" y="125.08" data-ref="B1">B<tspan class="geom-label-sub" dy="3">1</tspan></text>
+      <text class="geom-label" x="472.31" y="125.08" data-ref="B2">B<tspan class="geom-label-sub" dy="3">2</tspan></text>
+      <text class="geom-label" x="293.71" y="190.86" data-ref="S1">S<tspan class="geom-label-sub" dy="3">+</tspan></text>
+    </g>
+  </g>
+</svg>

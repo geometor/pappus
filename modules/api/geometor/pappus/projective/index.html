@@ -1,0 +1,654 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.pappus.projective &mdash; GEOMETOR • pappus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/custom.css?v=911ccb65" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • pappus</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">pappus</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../../../../../theorems/index.html"  >Theorems</a>
+        </li>
+        <li>
+          <a href="../../../../../usage/index.html"  >Usage & CLI</a>
+        </li>
+        <li>
+          <a href="../../../../../demos/index.html"  >Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; pappus</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • pappus</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">Modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../pascal/index.html" title="geometor.pappus.pascal">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../render/index.html" title="geometor.pappus.render"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.pappus.projective">
+        <span id="geometor-pappus-projective"></span><h1>geometor.pappus.projective<a class="headerlink" href="#module-geometor.pappus.projective" title="Link to this heading">¶</a></h1>
+        <p>Exact symbolic projective invariants, cross-ratios, and harmonic/golden range scanners.</p>
+        <p>Provides 100% exact SymPy implementations of collinear cross-ratios, central
+        perspectivities (Book VII, Prop. 129 of Pappus’s <em>Collection</em>), Wildberger
+        quadrances and spreads, collinear harmonic range detection $(A, B; C, D) = -1$,
+        and integration with <code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.divine</span></code> for golden section discovery.</p>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.projective.PHI" title="geometor.pappus.projective.PHI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PHI</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.projective.HarmonicRange" title="geometor.pappus.projective.HarmonicRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HarmonicRange</span></code></a></p></td>
+        <td><p>Represents four ordered collinear points forming a harmonic range $(P_1, P_3; P_2, P_4) = -1$.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.projective.GoldenRange" title="geometor.pappus.projective.GoldenRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GoldenRange</span></code></a></p></td>
+        <td><p>Represents three ordered collinear points dividing a segment in the Golden Ratio $phi$.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.projective.quadrance" title="geometor.pappus.projective.quadrance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">quadrance</span></code></a>(pt_1, pt_2) → sympy.Expr</p></td>
+        <td><p>Compute the exact rational-trigonometric quadrance $Q(P_1, P_2)$.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.projective.line_spread" title="geometor.pappus.projective.line_spread"><code class="xref py py-obj docutils literal notranslate"><span class="pre">line_spread</span></code></a>(line_1, line_2) → sympy.Expr</p></td>
+        <td><p>Compute the exact rational-trigonometric spread $s(ell_1, ell_2) = sin^2theta$.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.projective.exact_line_meet" title="geometor.pappus.projective.exact_line_meet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">exact_line_meet</span></code></a>(line_1, line_2) → sympy.geometry.Point | None</p></td>
+        <td><p>Compute the exact intersection of two lines via Cramer's rule.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.projective.project_point" title="geometor.pappus.projective.project_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">project_point</span></code></a>(center, target_line, pt) → sympy.geometry.Point</p></td>
+        <td><p>Project a point from a perspective center onto a target line.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.projective.cross_ratio" title="geometor.pappus.projective.cross_ratio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cross_ratio</span></code></a>(pt_a, pt_b, pt_c, pt_d, *[, check_collinear]) → sympy.Expr</p></td>
+        <td><p>Compute the exact projective cross-ratio $(A, B; C, D)$ of four collinear points.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.projective.anharmonic_orbit" title="geometor.pappus.projective.anharmonic_orbit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">anharmonic_orbit</span></code></a>(lam) → list[sympy.Expr]</p></td>
+        <td><p>Return the six cross-ratio values generated by permuting four collinear points.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.projective.is_harmonic_range" title="geometor.pappus.projective.is_harmonic_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_harmonic_range</span></code></a>(pt_a, pt_b, pt_c, pt_d) → bool</p></td>
+        <td><p>Determine whether $(A, B; C, D) = -1$ in exact symbolic arithmetic.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.projective.harmonic_conjugate_point" title="geometor.pappus.projective.harmonic_conjugate_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">harmonic_conjugate_point</span></code></a>(pt_a, pt_b, pt_c) → sympy.geometry.Point</p></td>
+        <td><p>Compute the exact algebraic fourth harmonic point $D$ such that $(A, B; C, D) = -1$.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.projective.find_harmonic_ranges" title="geometor.pappus.projective.find_harmonic_ranges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_harmonic_ranges</span></code></a>(model[, line, include_guides]) → list[HarmonicRange]</p></td>
+        <td><p>Scan lines in a <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> for exact collinear harmonic tetrads.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.projective.find_golden_sections" title="geometor.pappus.projective.find_golden_sections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_golden_sections</span></code></a>(model, *[, register_sections, ...]) → list[GoldenRange]</p></td>
+        <td><p>Scan all lines in a <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> for exact Golden Ratio sections.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.projective.enable_divine_analysis" title="geometor.pappus.projective.enable_divine_analysis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enable_divine_analysis</span></code></a>(model) → geometor.model.Model</p></td>
+        <td><p>Attach <code class="xref py py-func docutils literal notranslate"><span class="pre">geometor.divine.register_divine_hook()</span></code> to <code class="docutils literal notranslate"><span class="pre">model</span></code> and return it.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.projective.circle_stereographic_point" title="geometor.pappus.projective.circle_stereographic_point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">circle_stereographic_point</span></code></a>(t, *[, center, radius]) → sympy.geometry.Point</p></td>
+        <td><p>Compute an exact point on $(x - x_0)^2 + (y - y_0)^2 = R^2$ via rational stereographic slope $t$.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.projective.conic_equation_through_points" title="geometor.pappus.projective.conic_equation_through_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">conic_equation_through_points</span></code></a>(points) → sympy.Expr</p></td>
+        <td><p>Construct the exact quadratic conic polynomial $C(x, y)$ through five points.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.projective.are_coconic" title="geometor.pappus.projective.are_coconic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">are_coconic</span></code></a>(points) → bool</p></td>
+        <td><p>Return True iff all given points lie on a single conic (smooth or degenerate line-pair).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.projective.conic_cross_ratio" title="geometor.pappus.projective.conic_cross_ratio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">conic_cross_ratio</span></code></a>(p1, p2, p3, p4, observer) → sympy.Expr</p></td>
+        <td><p>Compute Michel Chasles's projective cross-ratio $(P_1, P_2; P_3, P_4)_{mathcal{C}}$ on a conic.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.PHI">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">PHI</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.pappus.projective.PHI" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.HarmonicRange">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">HarmonicRange</span></span><a class="headerlink" href="#geometor.pappus.projective.HarmonicRange" title="Link to this definition">¶</a></dt>
+        <dd><p>Represents four ordered collinear points forming a harmonic range $(P_1, P_3; P_2, P_4) = -1$.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Variables<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>points</strong> – Ordered tuple $(P_1, P_2, P_3, P_4)$ along the carrier line such
+        that $(P_1, P_3)$ and $(P_2, P_4)$ harmonically separate each other.</p></li>
+        <li><p><strong>point_ids</strong> – Corresponding model IDs of the four points.</p></li>
+        <li><p><strong>line</strong> – Carrier line in the model, if associated with one.</p></li>
+        <li><p><strong>line_id</strong> – Model ID of the carrier line.</p></li>
+        <li><p><strong>value</strong> – Exact symbolic cross-ratio $(P_1, P_3; P_2, P_4) = -1$.</p></li>
+        </ul>
+        </dd>
+        </dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.HarmonicRange.points">
+        <span class="sig-name descname"><span class="pre">points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.projective.HarmonicRange.points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.HarmonicRange.point_ids">
+        <span class="sig-name descname"><span class="pre">point_ids</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.projective.HarmonicRange.point_ids" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.HarmonicRange.line">
+        <span class="sig-name descname"><span class="pre">line</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.pappus.projective.HarmonicRange.line" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.HarmonicRange.line_id">
+        <span class="sig-name descname"><span class="pre">line_id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.pappus.projective.HarmonicRange.line_id" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.HarmonicRange.value">
+        <span class="sig-name descname"><span class="pre">value</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.pappus.projective.HarmonicRange.value" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.GoldenRange">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">GoldenRange</span></span><a class="headerlink" href="#geometor.pappus.projective.GoldenRange" title="Link to this definition">¶</a></dt>
+        <dd><p>Represents three ordered collinear points dividing a segment in the Golden Ratio $\phi$.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Variables<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>section</strong> – Underlying <code class="xref py py-class docutils literal notranslate"><span class="pre">Section</span></code> object.</p></li>
+        <li><p><strong>point_ids</strong> – Ordered model IDs $(P_1, P_2, P_3)$ of the three points.</p></li>
+        <li><p><strong>line</strong> – Carrier line in the model, if associated with one.</p></li>
+        <li><p><strong>line_id</strong> – Model ID of the carrier line.</p></li>
+        <li><p><strong>ratio</strong> – Exact symbolic ratio of longer to shorter segment ($\phi$).</p></li>
+        </ul>
+        </dd>
+        </dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.GoldenRange.section">
+        <span class="sig-name descname"><span class="pre">section</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.sections.Section</span></span><a class="headerlink" href="#geometor.pappus.projective.GoldenRange.section" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.GoldenRange.point_ids">
+        <span class="sig-name descname"><span class="pre">point_ids</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.projective.GoldenRange.point_ids" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.GoldenRange.line">
+        <span class="sig-name descname"><span class="pre">line</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.pappus.projective.GoldenRange.line" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.GoldenRange.line_id">
+        <span class="sig-name descname"><span class="pre">line_id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.pappus.projective.GoldenRange.line_id" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.GoldenRange.ratio">
+        <span class="sig-name descname"><span class="pre">ratio</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.pappus.projective.GoldenRange.ratio" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.quadrance">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">quadrance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pt_1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.pappus.projective.quadrance" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the exact rational-trigonometric quadrance $Q(P_1, P_2)$.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>pt_1</strong> – First point.</p></li>
+        <li><p><strong>pt_2</strong> – Second point.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Simplified symbolic expression $(x_2 - x_1)^2 + (y_2 - y_1)^2$.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.line_spread">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">line_spread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Line</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Line</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.pappus.projective.line_spread" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the exact rational-trigonometric spread $s(\ell_1, \ell_2) = \sin^2\theta$.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>line_1</strong> – First line $a_1 x + b_1 y + c_1 = 0$.</p></li>
+        <li><p><strong>line_2</strong> – Second line $a_2 x + b_2 y + c_2 = 0$.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact symbolic spread in $[0, 1]$ (equals $0$ iff parallel, $1$ iff perpendicular).</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.exact_line_meet">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">exact_line_meet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Line</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Line</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.geometry.Point</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.pappus.projective.exact_line_meet" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the exact intersection of two lines via Cramer’s rule.</p>
+        <p>Returns <code class="docutils literal notranslate"><span class="pre">None</span></code> when the two lines are parallel or coincident (meeting at
+        the projective line at infinity).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>line_1</strong> – First SymPy line.</p></li>
+        <li><p><strong>line_2</strong> – Second SymPy line.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact intersection <a class="reference external" href="https://docs.sympy.org/latest/modules/geometry/points.html#sympy.geometry.point.Point" title="(in SymPy v1.14.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sympy.geometry.point.Point</span></code></a>, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if parallel.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.project_point">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">project_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">center</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Line</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.geometry.Point</span></span></span><a class="headerlink" href="#geometor.pappus.projective.project_point" title="Link to this definition">¶</a></dt>
+        <dd><p>Project a point from a perspective center onto a target line.</p>
+        <p>Implements central perspectivity as studied by Pappus in <em>Synagoge</em> Book VII,
+        Proposition 129.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>center</strong> – Center of perspectivity $O$ not lying on <code class="docutils literal notranslate"><span class="pre">target_line</span></code>.</p></li>
+        <li><p><strong>target_line</strong> – Destination line onto which <code class="docutils literal notranslate"><span class="pre">pt</span></code> is projected.</p></li>
+        <li><p><strong>pt</strong> – Source point $P \ne O$.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact intersection $[O P] \cap \text{target\_line}$.</p>
+        </dd>
+        <dt class="field-odd">Raises<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/exceptions.html#ValueError" title="(in Python v3.13)"><strong>ValueError</strong></a> – If <code class="docutils literal notranslate"><span class="pre">pt</span></code> coincides with <code class="docutils literal notranslate"><span class="pre">center</span></code> or $[O P]$ is parallel to <code class="docutils literal notranslate"><span class="pre">target_line</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.cross_ratio">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">cross_ratio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pt_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_collinear</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.pappus.projective.cross_ratio" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the exact projective cross-ratio $(A, B; C, D)$ of four collinear points.</p>
+        <p>Uses the standard projective convention</p>
+        <div class="math notranslate nohighlight">
+        \[(A, B; C, D) = \frac{(u_A - u_C)(u_B - u_D)}{(u_A - u_D)(u_B - u_C)},\]</div>
+        <p>where $u$ is any affine coordinate along the line carrying $A, B, C, D$.
+        Under this convention, $(A, B; C, D) = -1$ iff $(C, D)$ harmonically separates
+        $(A, B)$, and $(0, 1; \phi, \phi + 1) = \phi$.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>pt_a</strong> – First point $A$.</p></li>
+        <li><p><strong>pt_b</strong> – Second point $B$.</p></li>
+        <li><p><strong>pt_c</strong> – Third point $C$.</p></li>
+        <li><p><strong>pt_d</strong> – Fourth point $D$.</p></li>
+        <li><p><strong>check_collinear</strong> – If True, verify that $A, B, C, D$ are collinear.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact simplified SymPy expression for $(A, B; C, D)$.</p>
+        </dd>
+        <dt class="field-odd">Raises<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/exceptions.html#ValueError" title="(in Python v3.13)"><strong>ValueError</strong></a> – If the points are not collinear or if the denominator vanishes.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.anharmonic_orbit">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">anharmonic_orbit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lam</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.pappus.projective.anharmonic_orbit" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the six cross-ratio values generated by permuting four collinear points.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>lam</strong> – Fundamental cross-ratio $\lambda = (A, B; C, D) \notin \{0, 1\}$.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>List of the 6 simplified expressions
+        $[\lambda, 1/\lambda, 1 - \lambda, 1/(1 - \lambda), (\lambda - 1)/\lambda, \lambda/(\lambda - 1)]$.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.is_harmonic_range">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">is_harmonic_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pt_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.pappus.projective.is_harmonic_range" title="Link to this definition">¶</a></dt>
+        <dd><p>Determine whether $(A, B; C, D) = -1$ in exact symbolic arithmetic.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>pt_a</strong> – First base point $A$.</p></li>
+        <li><p><strong>pt_b</strong> – Second base point $B$.</p></li>
+        <li><p><strong>pt_c</strong> – First conjugate point $C$.</p></li>
+        <li><p><strong>pt_d</strong> – Second conjugate point $D$.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>True iff $A, B, C, D$ are distinct collinear points satisfying $(A, B; C, D) = -1$.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.harmonic_conjugate_point">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">harmonic_conjugate_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pt_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.geometry.Point</span></span></span><a class="headerlink" href="#geometor.pappus.projective.harmonic_conjugate_point" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the exact algebraic fourth harmonic point $D$ such that $(A, B; C, D) = -1$.</p>
+        <p>Solves $(A, B; C, D) = -1$ along line $[A B]$ in closed symbolic form. For the
+        pure straightedge geometric construction via a complete quadrilateral, see
+        <a class="reference internal" href="../constructions/index.html#geometor.pappus.constructions.construct_harmonic_fourth" title="geometor.pappus.constructions.construct_harmonic_fourth"><code class="xref py py-func docutils literal notranslate"><span class="pre">geometor.pappus.constructions.construct_harmonic_fourth()</span></code></a>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>pt_a</strong> – First base point $A$.</p></li>
+        <li><p><strong>pt_b</strong> – Second base point $B$.</p></li>
+        <li><p><strong>pt_c</strong> – Given third collinear point $C$ (not the midpoint of $A$ and $B$).</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact <a class="reference external" href="https://docs.sympy.org/latest/modules/geometry/points.html#sympy.geometry.point.Point" title="(in SymPy v1.14.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sympy.geometry.point.Point</span></code></a> $D$ satisfying $(A, B; C, D) = -1$.</p>
+        </dd>
+        <dt class="field-odd">Raises<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/exceptions.html#ValueError" title="(in Python v3.13)"><strong>ValueError</strong></a> – If $A, B, C$ are not distinct collinear points or $C$ is the midpoint of $AB$
+        (in which case $D$ lies on the line at infinity).</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.find_harmonic_ranges">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">find_harmonic_ranges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Line</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_guides</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.pappus.projective.HarmonicRange" title="geometor.pappus.projective.HarmonicRange"><span class="pre">HarmonicRange</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.pappus.projective.find_harmonic_ranges" title="Link to this definition">¶</a></dt>
+        <dd><p>Scan lines in a <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> for exact collinear harmonic tetrads.</p>
+        <p>Revives and modernizes the <code class="docutils literal notranslate"><span class="pre">analyze_harmonics</span></code> routine from GEOMETOR’s
+        original 2023 <code class="docutils literal notranslate"><span class="pre">pappus.py</span></code> exploration. For every candidate line carrying at
+        least four points, points are sorted along the line ($P_1 &lt; P_2 &lt; P_3 &lt; P_4$)
+        so that each unordered harmonic tetrad is reported canonically once via the
+        unique alternating separation $(P_1, P_3; P_2, P_4) = -1$.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>model</strong> – Geometric model to scan.</p></li>
+        <li><p><strong>line</strong> – Optional single line to inspect; if <code class="docutils literal notranslate"><span class="pre">None</span></code>, scans all lines in <code class="docutils literal notranslate"><span class="pre">model</span></code>.</p></li>
+        <li><p><strong>include_guides</strong> – If True, also include points and lines marked <code class="docutils literal notranslate"><span class="pre">guide=True</span></code>.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>List of discovered <a class="reference internal" href="#geometor.pappus.projective.HarmonicRange" title="geometor.pappus.projective.HarmonicRange"><code class="xref py py-class docutils literal notranslate"><span class="pre">HarmonicRange</span></code></a> records.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.find_golden_sections">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">find_golden_sections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">register_sections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_guides</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.pappus.projective.GoldenRange" title="geometor.pappus.projective.GoldenRange"><span class="pre">GoldenRange</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.pappus.projective.find_golden_sections" title="Link to this definition">¶</a></dt>
+        <dd><p>Scan all lines in a <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> for exact Golden Ratio sections.</p>
+        <p>Complements <code class="xref py py-func docutils literal notranslate"><span class="pre">geometor.divine.register_divine_hook()</span></code> (which checks parent
+        lines incrementally as intersection points are added) with a comprehensive
+        post-construction scan across all points lying on each line in <code class="docutils literal notranslate"><span class="pre">model</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>model</strong> – Geometric model to scan.</p></li>
+        <li><p><strong>register_sections</strong> – If True, also add each discovered golden <code class="xref py py-class docutils literal notranslate"><span class="pre">Section</span></code>
+        to <code class="docutils literal notranslate"><span class="pre">model</span></code> with <code class="docutils literal notranslate"><span class="pre">classes=[&quot;golden&quot;]</span></code>.</p></li>
+        <li><p><strong>include_guides</strong> – If True, include guide points and lines.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>List of discovered <a class="reference internal" href="#geometor.pappus.projective.GoldenRange" title="geometor.pappus.projective.GoldenRange"><code class="xref py py-class docutils literal notranslate"><span class="pre">GoldenRange</span></code></a> records.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.enable_divine_analysis">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">enable_divine_analysis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">geometor.model.Model</span></span></span><a class="headerlink" href="#geometor.pappus.projective.enable_divine_analysis" title="Link to this definition">¶</a></dt>
+        <dd><p>Attach <code class="xref py py-func docutils literal notranslate"><span class="pre">geometor.divine.register_divine_hook()</span></code> to <code class="docutils literal notranslate"><span class="pre">model</span></code> and return it.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>model</strong> – Target <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> instance.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>The same model with real-time golden section analysis enabled.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.circle_stereographic_point">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">circle_stereographic_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">center</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(0,</span> <span class="pre">0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.geometry.Point</span></span></span><a class="headerlink" href="#geometor.pappus.projective.circle_stereographic_point" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute an exact point on $(x - x_0)^2 + (y - y_0)^2 = R^2$ via rational stereographic slope $t$.</p>
+        <p>Uses the classical Weierstrass / stereographic parameterization from $(-R + x_0, y_0)$:</p>
+        <div class="math notranslate nohighlight">
+        \[P(t) = \left(x_0 + R \frac{1 - t^2}{1 + t^2},\; y_0 + R \frac{2 t}{1 + t^2}\right).\]</div>
+        <p>Every $t \in \mathbb{Q}$ yields an exact rational point in $\mathbb{Q}^2$, and
+        every $t \in \mathbb{Q}(\phi)$ yields an exact point in $\mathbb{Q}(\sqrt{5})^2$.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>t</strong> – Exact symbolic or integer stereographic parameter.</p></li>
+        <li><p><strong>center</strong> – Circle center $(x_0, y_0)$.</p></li>
+        <li><p><strong>radius</strong> – Exact positive circle radius $R$.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact <a class="reference external" href="https://docs.sympy.org/latest/modules/geometry/points.html#sympy.geometry.point.Point" title="(in SymPy v1.14.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Point</span></code></a> on the circle.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.conic_equation_through_points">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">conic_equation_through_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.pappus.projective.conic_equation_through_points" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct the exact quadratic conic polynomial $C(x, y)$ through five points.</p>
+        <p>Evaluates the $6 \times 6$ Veronese determinant</p>
+        <div class="math notranslate nohighlight">
+        \[\begin{split}\det \begin{bmatrix}
+        x^2 &amp; x y &amp; y^2 &amp; x &amp; y &amp; 1 \\
+        x_0^2 &amp; x_0 y_0 &amp; y_0^2 &amp; x_0 &amp; y_0 &amp; 1 \\
+        \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots \\
+        x_4^2 &amp; x_4 y_4 &amp; y_4^2 &amp; x_4 &amp; y_4 &amp; 1
+        \end{bmatrix}\end{split}\]</div>
+        <p>in the symbols <code class="docutils literal notranslate"><span class="pre">x,</span> <span class="pre">y</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>points</strong> – Sequence of 5 points in the plane.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Expanded SymPy polynomial in <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> (zero iff the 5 points are
+        degenerate with 4+ collinear in a way that fails to determine a unique conic).</p>
+        </dd>
+        <dt class="field-odd">Raises<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/exceptions.html#ValueError" title="(in Python v3.13)"><strong>ValueError</strong></a> – If <code class="docutils literal notranslate"><span class="pre">len(points)</span> <span class="pre">!=</span> <span class="pre">5</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.are_coconic">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">are_coconic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.pappus.projective.are_coconic" title="Link to this definition">¶</a></dt>
+        <dd><p>Return True iff all given points lie on a single conic (smooth or degenerate line-pair).</p>
+        <p>Unifies Pappus’s degenerate two-line configuration ($L_a \cdot L_b = 0$) and
+        Pascal’s smooth conic configuration ($A x^2 + B x y + C y^2 + D x + E y + F = 0$)
+        via the rank of the $N \times 6$ Veronese matrix $[x_k^2, x_k y_k, y_k^2, x_k, y_k, 1]$.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>points</strong> – Sequence of planar points (any $\le 5$ points trivially lie on at least one conic).</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if the Veronese matrix has rank $\le 5$, else <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.projective.conic_cross_ratio">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.projective.</span></span><span class="sig-name descname"><span class="pre">conic_cross_ratio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p3</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p4</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">observer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.pappus.projective.conic_cross_ratio" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute Michel Chasles’s projective cross-ratio $(P_1, P_2; P_3, P_4)_{\mathcal{C}}$ on a conic.</p>
+        <p>By Chasles’s Theorem, for four distinct points $P_1, P_2, P_3, P_4$ on an irreducible
+        conic $\mathcal{C}$, the cross-ratio of the pencil of four rays
+        $[V P_1], [V P_2], [V P_3], [V P_4]$ cut by any transversal line is <strong>independent</strong>
+        of the fifth point $V = \text{observer} \in \mathcal{C}$.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>p1</strong> – First conic point.</p></li>
+        <li><p><strong>p2</strong> – Second conic point.</p></li>
+        <li><p><strong>p3</strong> – Third conic point.</p></li>
+        <li><p><strong>p4</strong> – Fourth conic point.</p></li>
+        <li><p><strong>observer</strong> – Distinct fifth point $V$ on the same conic.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact simplified SymPy cross-ratio expression (or <code class="docutils literal notranslate"><span class="pre">sp.oo</span></code>).</p>
+        </dd>
+        <dt class="field-odd">Raises<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/exceptions.html#ValueError" title="(in Python v3.13)"><strong>ValueError</strong></a> – If the 5 points are not distinct or not coconic.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../pascal/index.html" title="geometor.pappus.pascal">&larr; <span class="nav-label">geometor.pappus.pascal</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • pappus</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../render/index.html" title="geometor.pappus.render"><span class="nav-label">geometor.pappus.render</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../log/26.315-modernize-pappus/index.html">2026 Modernization: Pappus, Pascal’s Hexagrammum Mysticum & Interactive Dossiers</a></li>
+        <li><a href="../../../../../log/22.356-152519.html">Welcome</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/log.html">log</a></li>
+        <li><a href="../../../../../types/theorem.html">theorem</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../index.html" class="is-active" aria-selected="true" >Modules</a></li>
+        <li><a href="../../../../../refs/index.html"  >References</a></li>
+        <li><a href="../../../../../changelog.html"  >Changelog</a></li>
+        <li><a href="../../../../../log/index.html"  >Log</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

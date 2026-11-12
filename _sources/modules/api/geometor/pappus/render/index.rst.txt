@@ -1,0 +1,92 @@
+geometor.pappus.render
+======================
+
+.. py:module:: geometor.pappus.render
+
+.. autoapi-nested-parse::
+
+   Publication-grade interactive SVG renderer for exact projective constructions.
+
+   Generates crisp pixel-space SVGs directly from :class:`~geometor.model.Model`
+   instances while preserving exact SymPy coordinates in metadata attributes and
+   ``<title>`` tooltips. Outputs conform simultaneously to:
+
+   1. **Standalone SVG viewing** (GitHub ``README.rst``, browsers, ``prefers-color-scheme``
+      dark/light palettes via an embedded ``<style>`` sheet), and
+   2. **PHOTON Publish interactive figures** (``svg.euclid-graphic``, ``#elements``,
+      ``#graphics``, ``#highlights``, ``#points``, ``#labels``, 3-vertex ``<path>``
+      geometry, ``data-ref``, and ``data-aliases`` consumed by ``geometor_interactive.js``).
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.pappus.render.EMBEDDED_SVG_STYLE
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.pappus.render.render_svg_string
+   geometor.pappus.render.export_svg
+
+
+Module Contents
+---------------
+
+.. py:data:: EMBEDDED_SVG_STYLE
+   :type:  str
+   :value: ''
+
+
+.. py:function:: render_svg_string(model: geometor.model.Model, *, graphic_id: str = 'g1', title: str = 'Pappus Projective Construction', width: int = 680, height: int = 440, margin: float = 44.0, bbox: tuple[float, float, float, float] | None = None, focus_points: Sequence[sympy.geometry.Point] | None = None, include_guides: bool = False, show_labels: bool = True, show_meet_labels: bool = True, show_aux_labels: bool = False, label_overrides: dict[str, tuple[str, str]] | None = None, highlight_point_ids: Sequence[str] | None = None) -> str
+
+   Render a :class:`~geometor.model.Model` into a complete interactive SVG string.
+
+   :param model: Populated :class:`~geometor.model.Model`.
+   :param graphic_id: ``data-graphic-id`` identifier for ``geometor_interactive.js``.
+   :param title: Accessible SVG title string.
+   :param width: Pixel width of the SVG ``viewBox``.
+   :param height: Pixel height of the SVG ``viewBox``.
+   :param margin: Outer pixel margin around the framed point cloud.
+   :param bbox: Optional explicit math viewport ``(xmin, xmax, ymin, ymax)``.
+   :param focus_points: Optional subset of points used to compute auto-framing bounds.
+   :param include_guides: If True, also render elements marked ``guide=True``.
+   :param show_labels: Master toggle for point text labels.
+   :param show_meet_labels: If False, suppress text labels on ``M...`` cross-join meets
+                            (useful on dense 18-meet composite diagrams while retaining hover refs).
+   :param show_aux_labels: If True, also label auto-discovered ``X1..Xn`` intersections.
+   :param label_overrides: Optional mapping ``pt_id -> (base, subscript)``.
+   :param highlight_point_ids: Optional point IDs to emphasize with an extra halo ring.
+
+   :returns: UTF-8 XML/SVG string.
+
+
+.. py:function:: export_svg(model: geometor.model.Model, output_path: str | pathlib.Path, *, graphic_id: str = 'g1', title: str = 'Pappus Projective Construction', width: int = 680, height: int = 440, margin: float = 44.0, bbox: tuple[float, float, float, float] | None = None, focus_points: Sequence[sympy.geometry.Point] | None = None, include_guides: bool = False, show_labels: bool = True, show_meet_labels: bool = True, show_aux_labels: bool = False, label_overrides: dict[str, tuple[str, str]] | None = None, highlight_point_ids: Sequence[str] | None = None) -> pathlib.Path
+
+   Write an interactive SVG rendering of ``model`` to ``output_path``.
+
+   :param model: Populated :class:`~geometor.model.Model`.
+   :param output_path: Destination ``.svg`` file path (parent directories created automatically).
+   :param graphic_id: ``data-graphic-id`` identifier for ``geometor_interactive.js``.
+   :param title: Accessible SVG title string.
+   :param width: Pixel width of the SVG ``viewBox``.
+   :param height: Pixel height of the SVG ``viewBox``.
+   :param margin: Outer pixel margin around the framed point cloud.
+   :param bbox: Optional explicit math viewport ``(xmin, xmax, ymin, ymax)``.
+   :param focus_points: Optional subset of points used to compute auto-framing bounds.
+   :param include_guides: If True, also render elements marked ``guide=True``.
+   :param show_labels: Master toggle for point text labels.
+   :param show_meet_labels: If False, suppress text labels on ``M...`` cross-join meets.
+   :param show_aux_labels: If True, also label auto-discovered ``X1..Xn`` intersections.
+   :param label_overrides: Optional mapping ``pt_id -> (base, subscript)``.
+   :param highlight_point_ids: Optional point IDs to emphasize with an extra halo ring.
+
+   :returns: Resolved :class:`~pathlib.Path` of the written SVG file.
+
+

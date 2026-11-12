@@ -1,0 +1,714 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Six Permutations (PHOTONMATHPLACEHOLDER000564END) &amp; The Two Star Points &mdash; GEOMETOR • pappus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=911ccb65" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • pappus</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">pappus</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Theorems</a>
+        </li>
+        <li>
+          <a href="../../usage/index.html"  >Usage & CLI</a>
+        </li>
+        <li>
+          <a href="../../demos/index.html"  >Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; pappus</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../index.html">GEOMETOR • pappus</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../hexagon-theorem/index.html" title="The Hexagon Theorem Step-by-Step">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../cross-ratios-harmonics/index.html" title="Cross-Ratios, Harmonic Conjugates &amp; Golden Projectivity"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="the-six-permutations-s-3-the-two-star-points">
+        <h1>The Six Permutations ($S_3$) &amp; The Two Star Points<a class="headerlink" href="#the-six-permutations-s-3-the-two-star-points" title="Link to this heading">¶</a></h1>
+        <section class="level-2" id="symmetric-group-action-on-six-collinear-vertices">
+        <h2>Symmetric Group Action on Six Collinear Vertices<a class="headerlink" href="#symmetric-group-action-on-six-collinear-vertices" title="Link to this heading">¶</a></h2>
+        <p>A single instance of Pappus’s Hexagon Theorem fixes an ordering of the two collinear triples
+        $(A_0, A_1, A_2)$ on carrier $a$ and $(B_0, B_1, B_2)$ on carrier $b$. Yet the nine cross-lines
+        $\{[A_i B_j] : 0 \le i, j \le 2\}$ exist independently of how the indices on $b$ are labeled!</p>
+        <p>Hold $(A_0, A_1, A_2)$ fixed and let the symmetric group $S_3$ of order $3! = 6$ permute
+        the labels on $b$ via $\sigma = (\sigma_0, \sigma_1, \sigma_2) \in S_3$. Each permutation
+        inscribes a distinct hexagon</p>
+        <div class="math notranslate nohighlight">
+        \[H_\sigma = \langle A_0,\, B_{\sigma_1},\, A_2,\, B_{\sigma_0},\, A_1,\, B_{\sigma_2} \rangle,\]</div>
+        <p>whose three opposite cross-join intersections</p>
+        <div class="math notranslate nohighlight">
+        \[M_{01}^{(\sigma)} = [A_0 B_{\sigma_1}] \cap [A_1 B_{\sigma_0}], \quad
+        M_{12}^{(\sigma)} = [A_1 B_{\sigma_2}] \cap [A_2 B_{\sigma_1}], \quad
+        M_{20}^{(\sigma)} = [A_2 B_{\sigma_0}] \cap [A_0 B_{\sigma_2}]\]</div>
+        <p>determine a distinct <strong>Pappus line</strong> $p_\sigma$. Across all six elements of $S_3$, the nine
+        cross-lines meet in <strong>18 cross-join intersections</strong> arranged three-by-three along <strong>six Pappus
+        lines</strong>—splitting cleanly by permutation parity into the alternating subgroup
+        $A_3 = \{(0,1,2),\, (1,2,0),\, (2,0,1)\}$ (<strong>even</strong>, 3-cycles) and its odd coset
+        $S_3 \setminus A_3 = \{(0,2,1),\, (1,0,2),\, (2,1,0)\}$ (<strong>odd</strong>, transpositions).</p>
+        <table class="docutils align-default" id="id1">
+        <caption><span class="caption-text">Exact Six $S_3$ Pappus Lines on <code class="docutils literal notranslate"><span class="pre">preset=&quot;steiner&quot;</span></code> ($A = [(1,0),(2,0),(3,0)]$, $B = [(0,2),(3,1),(5,\tfrac{1}{3})]$)</span><a class="headerlink" href="#id1" title="Link to this table">¶</a></caption>
+        <colgroup>
+        <col style="width: 15.0%" />
+        <col style="width: 10.0%" />
+        <col style="width: 47.0%" />
+        <col style="width: 28.0%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p>$\sigma \in S_3$</p></th>
+        <th class="head"><p>Parity</p></th>
+        <th class="head"><p>Three Collinear Cross-Join Meets</p></th>
+        <th class="head"><p>Exact Line Equation</p></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-even"><td><p>$(0, 1, 2)$</p></td>
+        <td><p><strong>even</strong></p></td>
+        <td><p>$\left(\frac{5}{3}, \frac{1}{3}\right),\; \left(3, \frac{1}{9}\right),\; \left(\frac{25}{9}, \frac{4}{27}\right)$</p></td>
+        <td><p>$3x + 18y = 11$</p></td>
+        </tr>
+        <tr class="row-odd"><td><p>$(1, 2, 0)$</p></td>
+        <td><p><strong>even</strong></p></td>
+        <td><p>$\left(\frac{23}{11}, \frac{1}{11}\right),\; \left(\frac{15}{7}, -\frac{1}{7}\right),\; (3, -4)$</p></td>
+        <td><p>$9x + 2y = 19$</p></td>
+        </tr>
+        <tr class="row-even"><td><p>$(2, 0, 1)$</p></td>
+        <td><p><strong>even</strong></p></td>
+        <td><p>$\left(\frac{20}{19}, -\frac{2}{19}\right),\; \left(\frac{12}{5}, \frac{2}{5}\right),\; \left(0, -\frac{1}{2}\right)$</p></td>
+        <td><p>$3x - 8y = 4$</p></td>
+        </tr>
+        <tr class="row-odd"><td><p>$(0, 2, 1)$</p></td>
+        <td><p><strong>odd</strong></p></td>
+        <td><p>$\left(\frac{25}{13}, \frac{1}{13}\right),\; \left(\frac{9}{5}, -\frac{1}{5}\right),\; \left(\frac{15}{7}, \frac{4}{7}\right)$</p></td>
+        <td><p>$9x - 4y = 17$</p></td>
+        </tr>
+        <tr class="row-even"><td><p>$(1, 0, 2)$</p></td>
+        <td><p><strong>odd</strong></p></td>
+        <td><p>$\left(\frac{4}{3}, -\frac{2}{3}\right),\; \left(\frac{20}{7}, \frac{2}{21}\right),\; \left(3, \frac{1}{6}\right)$</p></td>
+        <td><p>$3x - 6y = 8$</p></td>
+        </tr>
+        <tr class="row-odd"><td><p>$(2, 1, 0)$</p></td>
+        <td><p><strong>odd</strong></p></td>
+        <td><p>$\left(\frac{5}{7}, -\frac{1}{7}\right),\; (3, -1),\; \left(\frac{15}{13}, -\frac{4}{13}\right)$</p></td>
+        <td><p>$3x + 8y = 1$</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="jakob-steiner-s-theorem-1828-the-two-star-points">
+        <h2>Jakob Steiner’s Theorem (1828): The Two Star Points<a class="headerlink" href="#jakob-steiner-s-theorem-1828-the-two-star-points" title="Link to this heading">¶</a></h2>
+        <p>In 1828, <strong>Jakob Steiner</strong> discovered a remarkable higher-order concurrency hidden inside the
+        six Pappus lines: they do not meet in 15 generic points, nor do all six concur at a single point.
+        Instead, <strong>concurrency respects permutation parity</strong>:</p>
+        <ul class="simple">
+        <li><p>The <strong>three even Pappus lines</strong> ($\sigma \in A_3$, amber) concur at a single point, the <strong>even
+        Steiner Star point</strong> $S_+$.</p></li>
+        <li><p>The <strong>three odd Pappus lines</strong> ($\sigma \in S_3 \setminus A_3$, magenta) concur at a second
+        point, the <strong>odd Steiner Star point</strong> $S_-$.</p></li>
+        </ul>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 720 480" data-graphic-id="g7" role="img" aria-label="The Six Pappus Lines and Two Steiner Star Points (S+, S-)">
+          <title>The Six Pappus Lines and Two Steiner Star Points (S+, S-)</title>
+          <rect class="svg-bg" x="0" y="0" width="720" height="480" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <path class="geom-line cross-line" d="M 371.94 466 L 258.94 240 L 145.94 14" data-ref="[ A0 B0 ]" data-aliases="[ A0 M0011 ] | [ A0 M0021 ] | [ A0 M0012 ] | [ A0 M0022 ] | [ B0 M0011 ] | [ B0 M0021 ] | [ B0 M0012 ] | [ B0 M0022 ] | [ M0011 M0021 ] | [ M0011 M0012 ] | [ M0011 M0022 ] | [ M0021 M0012 ] | [ M0021 M0022 ] | [ M0012 M0022 ]" fill="none"><title>[ A0 B0 ]: -2*x - y + 2 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 308.88 L 308.88 161.44 L 603.75 14" data-ref="[ A0 B1 ]" data-aliases="[ A0 M0110 ] | [ A0 M0120 ] | [ A0 M0122 ] | [ A0 M0112 ] | [ B1 M0110 ] | [ B1 M0120 ] | [ B1 M0122 ] | [ B1 M0112 ] | [ M0110 M0120 ] | [ M0110 M0122 ] | [ M0110 M0112 ] | [ M0120 M0122 ] | [ M0120 M0112 ] | [ M0122 M0112 ]" fill="none"><title>[ A0 B1 ]: -x + 2*y + 1 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 215.75 L 360 186.92 L 706 158.08" data-ref="[ A0 B2 ]" data-aliases="[ A0 M0220 ] | [ A0 M0210 ] | [ A0 M0221 ] | [ A0 M0211 ] | [ B2 M0220 ] | [ B2 M0210 ] | [ B2 M0221 ] | [ B2 M0211 ] | [ M0220 M0210 ] | [ M0220 M0221 ] | [ M0220 M0211 ] | [ M0210 M0221 ] | [ M0210 M0211 ] | [ M0221 M0211 ]" fill="none"><title>[ A0 B2 ]: -x/3 + 4*y + 1/3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 567.62 466 L 341.62 240 L 115.63 14" data-ref="[ A1 B0 ]" data-aliases="[ A1 M0110 ] | [ A1 M0210 ] | [ A1 M1022 ] | [ A1 M1021 ] | [ B0 M0110 ] | [ B0 M0210 ] | [ B0 M1022 ] | [ B0 M1021 ] | [ M0110 M0210 ] | [ M0110 M1022 ] | [ M0110 M1021 ] | [ M0210 M1022 ] | [ M0210 M1021 ] | [ M1022 M1021 ]" fill="none"><title>[ A1 B0 ]: -2*x - 2*y + 4 = 0</title></path>
+              <path class="geom-line cross-line" d="M 29.88 466 L 255.88 240 L 481.88 14" data-ref="[ A1 B1 ]" data-aliases="[ A1 M1122 ] | [ A1 M0011 ] | [ A1 M0211 ] | [ A1 M1120 ] | [ B1 M1122 ] | [ B1 M0011 ] | [ B1 M0211 ] | [ B1 M1120 ] | [ M1122 M0011 ] | [ M1122 M0211 ] | [ M1122 M1120 ] | [ M0011 M0211 ] | [ M0011 M1120 ] | [ M0211 M1120 ]" fill="none"><title>[ A1 B1 ]: -x + y + 2 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 228.76 L 360 190.32 L 706 151.88" data-ref="[ A1 B2 ]" data-aliases="[ A1 M1221 ] | [ A1 M1220 ] | [ A1 M0012 ] | [ A1 M0112 ] | [ B2 M1221 ] | [ B2 M1220 ] | [ B2 M0012 ] | [ B2 M0112 ] | [ M1221 M1220 ] | [ M1221 M0012 ] | [ M1221 M0112 ] | [ M1220 M0012 ] | [ M1220 M0112 ] | [ M0012 M0112 ]" fill="none"><title>[ A1 B2 ]: -x/3 + 3*y + 2/3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 706 427.79 L 395.66 220.9 L 85.31 14" data-ref="[ A2 B0 ]" data-aliases="[ A2 M0220 ] | [ A2 M0120 ] | [ A2 M1220 ] | [ A2 M1120 ] | [ B0 M0220 ] | [ B0 M0120 ] | [ B0 M1220 ] | [ B0 M1120 ] | [ M0220 M0120 ] | [ M0220 M1220 ] | [ M0220 M1120 ] | [ M0120 M1220 ] | [ M0120 M1120 ] | [ M1220 M1120 ]" fill="none"><title>[ A2 B0 ]: -2*x - 3*y + 6 = 0</title></path>
+              <path class="geom-line cross-line" d="M 360 466 L 360 240 L 360 14" data-ref="[ A2 B1 ]" data-aliases="[ A2 M1221 ] | [ A2 M0221 ] | [ A2 M0021 ] | [ A2 M1021 ] | [ B1 M1221 ] | [ B1 M0221 ] | [ B1 M0021 ] | [ B1 M1021 ] | [ M1221 M0221 ] | [ M1221 M0021 ] | [ M1221 M1021 ] | [ M0221 M0021 ] | [ M0221 M1021 ] | [ M0021 M1021 ]" fill="none"><title>[ A2 B1 ]: x - 3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 254.79 L 360 197.12 L 706 139.46" data-ref="[ A2 B2 ]" data-aliases="[ A2 M1122 ] | [ A2 M1022 ] | [ A2 M0122 ] | [ A2 M0022 ] | [ B2 M1122 ] | [ B2 M1022 ] | [ B2 M0122 ] | [ B2 M0022 ] | [ M1122 M1022 ] | [ M1122 M0122 ] | [ M1122 M0022 ] | [ M1022 M0122 ] | [ M1022 M0022 ] | [ M0122 M0022 ]" fill="none"><title>[ A2 B2 ]: -x/3 + 2*y + 1 = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 197.12 L 360 197.12 L 706 197.12" data-ref="[ A0 A2 ]" data-aliases="[ A0 A1 ] | [ A0 O ] | [ A1 A2 ] | [ A1 O ] | [ A2 O ]" fill="none"><title>[ A0 A2 ]: y = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 20.54 L 360 135.88 L 706 251.21" data-ref="[ B0 B2 ]" data-aliases="[ B0 B1 ] | [ B0 O ] | [ B1 B2 ] | [ B1 O ] | [ B2 O ]" fill="none"><title>[ B0 B2 ]: 5*x/3 + 5*y - 10 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 14 132.65 L 360 190.32 L 706 247.99" data-ref="[ M0110 M1221 ]" data-aliases="[ M0110 M0220 ] | [ M0110 S1 ] | [ M1221 M0220 ] | [ M1221 S1 ] | [ M0220 S1 ]" fill="none"><title>[ M0110 M1221 ]: 2*x/9 + 4*y/3 - 22/27 = 0</title></path>
+              <path class="geom-line pappus-line pappus-odd" d="M 172.44 466 L 272.89 240 L 373.33 14" data-ref="[ M0210 M1122 ]" data-aliases="[ M0210 M0120 ] | [ M0210 S2 ] | [ M1122 M0120 ] | [ M1122 S2 ] | [ M0120 S2 ]" fill="none"><title>[ M0210 M1122 ]: 18*x/65 - 8*y/65 - 34/65 = 0</title></path>
+              <path class="geom-line pappus-line pappus-odd" d="M 14 359.92 L 359.92 186.96 L 705.83 14" data-ref="[ M0011 M1220 ]" data-aliases="[ M0011 M0221 ] | [ M0011 S2 ] | [ M1220 M0221 ] | [ M1220 S2 ] | [ M0221 S2 ]" fill="none"><title>[ M0011 M1220 ]: -16*x/21 + 32*y/21 + 128/63 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 365.31 466 L 315.08 240 L 264.86 14" data-ref="[ M0211 M1022 ]" data-aliases="[ M0211 M0021 ] | [ M0211 S1 ] | [ M1022 M0021 ] | [ M1022 S1 ] | [ M0021 S1 ]" fill="none"><title>[ M0211 M1022 ]: 18*x/77 + 4*y/77 - 38/77 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 14 288.59 L 360 158.84 L 706 29.09" data-ref="[ M0012 M1120 ]" data-aliases="[ M0012 M0122 ] | [ M0012 S1 ] | [ M1120 M0122 ] | [ M1120 S1 ] | [ M0122 S1 ]" fill="none"><title>[ M0012 M1120 ]: -48*x/95 + 128*y/95 + 64/95 = 0</title></path>
+              <path class="geom-line pappus-line pappus-odd" d="M 14 128.62 L 360 258.38 L 706 388.12" data-ref="[ M0112 M1021 ]" data-aliases="[ M0112 M0022 ] | [ M0112 S2 ] | [ M1021 M0022 ] | [ M1021 S2 ] | [ M0022 S2 ]" fill="none"><title>[ M0112 M1021 ]: 6*x/7 + 16*y/7 - 2/7 = 0</title></path>
+              <path class="geom-line steiner-line" d="M 159.21 466 L 272.21 240 L 385.21 14" data-ref="[ S1 S2 ]" fill="none"><title>[ S1 S2 ]: 10*x/13 - 5*y/13 - 115/78 = 0</title></path>
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point given-point pt-a" cx="237.5" cy="197.12" r="4.2" data-ref="A0" data-latex-x="1" data-latex-y="0"><title>A0 = (1, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="298.75" cy="197.12" r="4.2" data-ref="A1" data-latex-x="2" data-latex-y="0"><title>A1 = (2, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="360" cy="197.12" r="4.2" data-ref="A2" data-latex-x="3" data-latex-y="0"><title>A2 = (3, 0)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="176.25" cy="74.62" r="4.2" data-ref="B0" data-latex-x="0" data-latex-y="2"><title>B0 = (0, 2)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="360" cy="135.88" r="4.2" data-ref="B1" data-latex-x="3" data-latex-y="1"><title>B1 = (3, 1)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="482.5" cy="176.71" r="4.2" data-ref="B2" data-latex-x="5" data-latex-y="\frac{1}{3}"><title>B2 = (5, 1/3)</title></circle>
+              <circle class="geom-point apex-point" cx="543.75" cy="197.12" r="3.8" data-ref="O" data-latex-x="6" data-latex-y="0"><title>O = (6, 0)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="278.33" cy="176.71" r="4.7" data-ref="M0110" data-latex-x="\frac{5}{3}" data-latex-y="\frac{1}{3}"><title>M0110 = (5/3, 1/3)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="360" cy="190.32" r="4.7" data-ref="M1221" data-latex-x="3" data-latex-y="\frac{1}{9}"><title>M1221 = (3, 1/9)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="346.39" cy="188.05" r="4.7" data-ref="M0220" data-latex-x="\frac{25}{9}" data-latex-y="\frac{4}{27}"><title>M0220 = (25/9, 4/27)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="294.04" cy="192.41" r="4.7" data-ref="M0210" data-latex-x="\frac{25}{13}" data-latex-y="\frac{1}{13}"><title>M0210 = (25/13, 1/13)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="286.5" cy="209.38" r="4.7" data-ref="M1122" data-latex-x="\frac{9}{5}" data-latex-y="- \frac{1}{5}"><title>M1122 = (9/5, -1/5)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="307.5" cy="162.12" r="4.7" data-ref="M0120" data-latex-x="\frac{15}{7}" data-latex-y="\frac{4}{7}"><title>M0120 = (15/7, 4/7)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="257.92" cy="237.96" r="4.7" data-ref="M0011" data-latex-x="\frac{4}{3}" data-latex-y="- \frac{2}{3}"><title>M0011 = (4/3, -2/3)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="351.25" cy="191.29" r="4.7" data-ref="M1220" data-latex-x="\frac{20}{7}" data-latex-y="\frac{2}{21}"><title>M1220 = (20/7, 2/21)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="360" cy="186.92" r="4.7" data-ref="M0221" data-latex-x="3" data-latex-y="\frac{1}{6}"><title>M0221 = (3, 1/6)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="304.32" cy="191.56" r="4.7" data-ref="M0211" data-latex-x="\frac{23}{11}" data-latex-y="\frac{1}{11}"><title>M0211 = (23/11, 1/11)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="307.5" cy="205.88" r="4.7" data-ref="M1022" data-latex-x="\frac{15}{7}" data-latex-y="- \frac{1}{7}"><title>M1022 = (15/7, -1/7)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="360" cy="442.12" r="4.7" data-ref="M0021" data-latex-x="3" data-latex-y="-4"><title>M0021 = (3, -4)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="240.72" cy="203.57" r="4.7" data-ref="M0012" data-latex-x="\frac{20}{19}" data-latex-y="- \frac{2}{19}"><title>M0012 = (20/19, -2/19)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="323.25" cy="172.62" r="4.7" data-ref="M1120" data-latex-x="\frac{12}{5}" data-latex-y="\frac{2}{5}"><title>M1120 = (12/5, 2/5)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="176.25" cy="227.75" r="4.7" data-ref="M0122" data-latex-x="0" data-latex-y="- \frac{1}{2}"><title>M0122 = (0, -1/2)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="220" cy="205.88" r="4.7" data-ref="M0112" data-latex-x="\frac{5}{7}" data-latex-y="- \frac{1}{7}"><title>M0112 = (5/7, -1/7)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="360" cy="258.38" r="4.7" data-ref="M1021" data-latex-x="3" data-latex-y="-1"><title>M1021 = (3, -1)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="246.92" cy="215.97" r="4.7" data-ref="M0022" data-latex-x="\frac{15}{13}" data-latex-y="- \frac{4}{13}"><title>M0022 = (15/13, -4/13)</title></circle>
+              <circle class="geom-point-halo" cx="301.89" cy="180.63" r="10.2" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point steiner-point" cx="301.89" cy="180.63" r="6" data-ref="S1" data-latex-x="\frac{80}{39}" data-latex-y="\frac{7}{26}"><title>S1 = (80/39, 7/26)</title></circle>
+              <circle class="geom-point-halo" cx="278.33" cy="227.75" r="10.2" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point steiner-point" cx="278.33" cy="227.75" r="6" data-ref="S2" data-latex-x="\frac{5}{3}" data-latex-y="- \frac{1}{2}"><title>S2 = (5/3, -1/2)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="214.57" y="187.09" data-ref="A0">A<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="290.11" y="221.08" data-ref="A1">A<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="337.07" y="216.68" data-ref="A2">A<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="181.9" y="64.59" data-ref="B0">B<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="337.07" y="125.84" data-ref="B1">B<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="473.86" y="162.27" data-ref="B2">B<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="550.55" y="187.4" data-ref="O">O</text>
+              <text class="geom-label" x="277.81" y="169.21" data-ref="S1">S<tspan class="geom-label-sub" dy="3">+</tspan></text>
+              <text class="geom-label" x="285.13" y="248.69" data-ref="S2">S<tspan class="geom-label-sub" dy="3">−</tspan></text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Trace the three <strong>even</strong> ($A_3$) Pappus lines: <span class="geom-ref" data-ref="g7:[ M0110 M1221 ]" title="[ M0110 M1221 ]">p<sub>012</sub></span>,
+        <span class="geom-ref" data-ref="g7:[ M0211 M1022 ]" title="[ M0211 M1022 ]">p<sub>120</sub></span>, and <span class="geom-ref" data-ref="g7:[ M0012 M1120 ]" title="[ M0012 M1120 ]">p<sub>201</sub></span>.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Verify their exact concurrency at the even Star point <span class="geom-ref" data-ref="g7:S1" title="S1">S_+</span>
+        $= \left(\frac{80}{39},\, \frac{7}{26}\right)$:
+        $3\left(\frac{80}{39}\right) + 18\left(\frac{7}{26}\right) = \frac{80 + 63}{13} = 11$,
+        $9\left(\frac{80}{39}\right) + 2\left(\frac{7}{26}\right) = \frac{240 + 7}{13} = 19$, and
+        $3\left(\frac{80}{39}\right) - 8\left(\frac{7}{26}\right) = \frac{80 - 28}{13} = 4$.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Trace the three <strong>odd</strong> ($S_3 \setminus A_3$) Pappus lines:
+        <span class="geom-ref" data-ref="g7:[ M0210 M1122 ]" title="[ M0210 M1122 ]">p<sub>021</sub></span>, <span class="geom-ref" data-ref="g7:[ M0011 M1220 ]" title="[ M0011 M1220 ]">p<sub>102</sub></span>, and
+        <span class="geom-ref" data-ref="g7:[ M0112 M1021 ]" title="[ M0112 M1021 ]">p<sub>210</sub></span>.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Verify their exact concurrency at the odd Star point <span class="geom-ref" data-ref="g7:S2" title="S2">S_-</span>
+        $= \left(\frac{5}{3},\, -\frac{1}{2}\right)$, and join the two Star points along the dashed
+        violet <strong>Steiner line</strong> <span class="geom-ref" data-ref="g7:[ S1 S2 ]" title="[ S1 S2 ]">S_+S_-</span> ($12x - 6y = 23$).</div>
+        </section>
+        <section class="level-2" id="individual-s-3-permutation-gallery">
+        <h2>Individual $S_3$ Permutation Gallery<a class="headerlink" href="#individual-s-3-permutation-gallery" title="Link to this heading">¶</a></h2>
+        <p>Inspecting each permutation $\sigma \in S_3$ individually reveals how cycling $(B_0, B_1, B_2)$
+        sweeps the three even Pappus lines around $S_+$ while transposing any pair switches parity into
+        the odd pencil around $S_-$:</p>
+        <section class="level-3" id="even-permutations-sigma-in-a-3">
+        <h3>Even Permutations ($\sigma \in A_3$)<a class="headerlink" href="#even-permutations-sigma-in-a-3" title="Link to this heading">¶</a></h3>
+        <p><strong>Identity</strong> $\sigma = (0, 1, 2)$ — <span class="geom-ref" data-ref="g1:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g1:M20" title="M20">M<sub>20</sub></span>, <span class="geom-ref" data-ref="g1:M12" title="M12">M<sub>12</sub></span> on <span class="geom-ref" data-ref="g1:[ M01 M12 ]" title="[ M01 M12 ]">p<sub>012</sub></span>:</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 520 360" data-graphic-id="g1" role="img" aria-label="Pappus Permutation (0, 1, 2) [even]">
+          <title>Pappus Permutation (0, 1, 2) [even]</title>
+          <rect class="svg-bg" x="0" y="0" width="520" height="360" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <polygon class="geom-polygon hexagon-poly" points="175,150.25 260,107.75 260,150.25 132.5,65.25 217.5,150.25 345,136.08" data-ref="&lt; A0 B1 A2 B0 A1 B2 &gt;" fill="none" />
+              <path class="geom-line cross-line" d="M 14 230.75 L 230.75 122.38 L 447.5 14" data-ref="[ A0 B1 ]" data-aliases="[ A0 M01 ] | [ B1 M01 ]" fill="none"><title>[ A0 B1 ]: -x + 2*y + 1 = 0</title></path>
+              <path class="geom-line cross-line" d="M 413.25 346 L 247.25 180 L 81.25 14" data-ref="[ A1 B0 ]" data-aliases="[ A1 M01 ] | [ B0 M01 ]" fill="none"><title>[ A1 B0 ]: -2*x - 2*y + 4 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 172.86 L 260 145.53 L 506 118.19" data-ref="[ A1 B2 ]" data-aliases="[ A1 M12 ] | [ B2 M12 ]" fill="none"><title>[ A1 B2 ]: -x/3 + 3*y + 2/3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 260 346 L 260 180 L 260 14" data-ref="[ A2 B1 ]" data-aliases="[ A2 M12 ] | [ B1 M12 ]" fill="none"><title>[ A2 B1 ]: x - 3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 506 314.25 L 280.81 164.12 L 55.62 14" data-ref="[ A2 B0 ]" data-aliases="[ A2 M20 ] | [ B0 M20 ]" fill="none"><title>[ A2 B0 ]: -2*x - 3*y + 6 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 163.67 L 260 143.17 L 506 122.67" data-ref="[ A0 B2 ]" data-aliases="[ A0 M20 ] | [ B2 M20 ]" fill="none"><title>[ A0 B2 ]: -x/3 + 4*y + 1/3 = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 150.25 L 260 150.25 L 506 150.25" data-ref="[ A0 A2 ]" data-aliases="[ A0 A1 ] | [ A0 O ] | [ A1 A2 ] | [ A1 O ] | [ A2 O ]" fill="none"><title>[ A0 A2 ]: y = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 25.75 L 260 107.75 L 506 189.75" data-ref="[ B0 B2 ]" data-aliases="[ B0 B1 ] | [ B0 O ] | [ B1 B2 ] | [ B1 O ] | [ B2 O ]" fill="none"><title>[ B0 B2 ]: 5*x/3 + 5*y - 10 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 14 104.53 L 260 145.53 L 506 186.53" data-ref="[ M01 M12 ]" data-aliases="[ M01 M20 ] | [ M12 M20 ]" fill="none"><title>[ M01 M12 ]: 2*x/9 + 4*y/3 - 22/27 = 0</title></path>
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point given-point pt-a" cx="175" cy="150.25" r="4.2" data-ref="A0" data-latex-x="1" data-latex-y="0"><title>A0 = (1, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="217.5" cy="150.25" r="4.2" data-ref="A1" data-latex-x="2" data-latex-y="0"><title>A1 = (2, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="260" cy="150.25" r="4.2" data-ref="A2" data-latex-x="3" data-latex-y="0"><title>A2 = (3, 0)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="132.5" cy="65.25" r="4.2" data-ref="B0" data-latex-x="0" data-latex-y="2"><title>B0 = (0, 2)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="260" cy="107.75" r="4.2" data-ref="B1" data-latex-x="3" data-latex-y="1"><title>B1 = (3, 1)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="345" cy="136.08" r="4.2" data-ref="B2" data-latex-x="5" data-latex-y="\frac{1}{3}"><title>B2 = (5, 1/3)</title></circle>
+              <circle class="geom-point apex-point" cx="387.5" cy="150.25" r="3.8" data-ref="O" data-latex-x="6" data-latex-y="0"><title>O = (6, 0)</title></circle>
+              <circle class="geom-point-halo" cx="203.33" cy="136.08" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="203.33" cy="136.08" r="4.7" data-ref="M01" data-latex-x="\frac{5}{3}" data-latex-y="\frac{1}{3}"><title>M01 = (5/3, 1/3)</title></circle>
+              <circle class="geom-point-halo" cx="260" cy="145.53" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="260" cy="145.53" r="4.7" data-ref="M12" data-latex-x="3" data-latex-y="\frac{1}{9}"><title>M12 = (3, 1/9)</title></circle>
+              <circle class="geom-point-halo" cx="250.56" cy="143.95" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="250.56" cy="143.95" r="4.7" data-ref="M20" data-latex-x="\frac{25}{9}" data-latex-y="\frac{4}{27}"><title>M20 = (25/9, 4/27)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="166.36" y="174.21" data-ref="A0">A<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="208.86" y="174.21" data-ref="A1">A<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="237.07" y="169.8" data-ref="A2">A<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="123.86" y="50.81" data-ref="B0">B<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="265.65" y="127.3" data-ref="B1">B<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="336.36" y="121.64" data-ref="B2">B<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="381.65" y="173.81" data-ref="O">O</text>
+              <text class="geom-label" x="191.9" y="121.14" data-ref="M01">M<tspan class="geom-label-sub" dy="3">01</tspan></text>
+              <text class="geom-label" x="232.58" y="135.11" data-ref="M12">M<tspan class="geom-label-sub" dy="3">12</tspan></text>
+              <text class="geom-label" x="255.12" y="163.89" data-ref="M20">M<tspan class="geom-label-sub" dy="3">20</tspan></text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        <p><strong>3-Cycle</strong> $\sigma = (1, 2, 0)$ — <span class="geom-ref" data-ref="g4:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g4:M20" title="M20">M<sub>20</sub></span>, <span class="geom-ref" data-ref="g4:M12" title="M12">M<sub>12</sub></span> on <span class="geom-ref" data-ref="g4:[ M01 M12 ]" title="[ M01 M12 ]">p<sub>120</sub></span>:</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 520 360" data-graphic-id="g4" role="img" aria-label="Pappus Permutation (1, 2, 0) [even]">
+          <title>Pappus Permutation (1, 2, 0) [even]</title>
+          <rect class="svg-bg" x="0" y="0" width="520" height="360" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <polygon class="geom-polygon hexagon-poly" points="175,150.25 345,136.08 260,150.25 260,107.75 217.5,150.25 132.5,65.25" data-ref="&lt; A0 B2 A2 B1 A1 B0 &gt;" fill="none" />
+              <path class="geom-line cross-line" d="M 14 163.67 L 260 143.17 L 506 122.67" data-ref="[ A0 B2 ]" data-aliases="[ A0 M01 ] | [ B2 M01 ]" fill="none"><title>[ A0 B2 ]: -x/3 + 4*y + 1/3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 21.75 346 L 187.75 180 L 353.75 14" data-ref="[ A1 B1 ]" data-aliases="[ A1 M01 ] | [ B1 M01 ]" fill="none"><title>[ A1 B1 ]: -x + y + 2 = 0</title></path>
+              <path class="geom-line cross-line" d="M 413.25 346 L 247.25 180 L 81.25 14" data-ref="[ A1 B0 ]" data-aliases="[ A1 M12 ] | [ B0 M12 ]" fill="none"><title>[ A1 B0 ]: -2*x - 2*y + 4 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 191.25 L 260 150.25 L 506 109.25" data-ref="[ A2 B2 ]" data-aliases="[ A2 M12 ] | [ B2 M12 ]" fill="none"><title>[ A2 B2 ]: -x/3 + 2*y + 1 = 0</title></path>
+              <path class="geom-line cross-line" d="M 260 346 L 260 180 L 260 14" data-ref="[ A2 B1 ]" data-aliases="[ A2 M20 ] | [ B1 M20 ]" fill="none"><title>[ A2 B1 ]: x - 3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 272.88 346 L 189.88 180 L 106.88 14" data-ref="[ A0 B0 ]" data-aliases="[ A0 M20 ] | [ B0 M20 ]" fill="none"><title>[ A0 B0 ]: -2*x - y + 2 = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 150.25 L 260 150.25 L 506 150.25" data-ref="[ A0 A2 ]" data-aliases="[ A0 A1 ] | [ A0 O ] | [ A1 A2 ] | [ A1 O ] | [ A2 O ]" fill="none"><title>[ A0 A2 ]: y = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 25.75 L 260 107.75 L 506 189.75" data-ref="[ B0 B2 ]" data-aliases="[ B0 B1 ] | [ B0 O ] | [ B1 B2 ] | [ B1 O ] | [ B2 O ]" fill="none"><title>[ B0 B2 ]: 5*x/3 + 5*y - 10 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 265.72 346 L 228.83 180 L 191.94 14" data-ref="[ M01 M12 ]" data-aliases="[ M01 M20 ] | [ M12 M20 ]" fill="none"><title>[ M01 M12 ]: 18*x/77 + 4*y/77 - 38/77 = 0</title></path>
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point given-point pt-a" cx="175" cy="150.25" r="4.2" data-ref="A0" data-latex-x="1" data-latex-y="0"><title>A0 = (1, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="217.5" cy="150.25" r="4.2" data-ref="A1" data-latex-x="2" data-latex-y="0"><title>A1 = (2, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="260" cy="150.25" r="4.2" data-ref="A2" data-latex-x="3" data-latex-y="0"><title>A2 = (3, 0)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="132.5" cy="65.25" r="4.2" data-ref="B0" data-latex-x="0" data-latex-y="2"><title>B0 = (0, 2)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="260" cy="107.75" r="4.2" data-ref="B1" data-latex-x="3" data-latex-y="1"><title>B1 = (3, 1)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="345" cy="136.08" r="4.2" data-ref="B2" data-latex-x="5" data-latex-y="\frac{1}{3}"><title>B2 = (5, 1/3)</title></circle>
+              <circle class="geom-point apex-point" cx="387.5" cy="150.25" r="3.8" data-ref="O" data-latex-x="6" data-latex-y="0"><title>O = (6, 0)</title></circle>
+              <circle class="geom-point-halo" cx="221.36" cy="146.39" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="221.36" cy="146.39" r="4.7" data-ref="M01" data-latex-x="\frac{23}{11}" data-latex-y="\frac{1}{11}"><title>M01 = (23/11, 1/11)</title></circle>
+              <circle class="geom-point-halo" cx="223.57" cy="156.32" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="223.57" cy="156.32" r="4.7" data-ref="M12" data-latex-x="\frac{15}{7}" data-latex-y="- \frac{1}{7}"><title>M12 = (15/7, -1/7)</title></circle>
+              <circle class="geom-point-halo" cx="260" cy="320.25" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="260" cy="320.25" r="4.7" data-ref="M20" data-latex-x="3" data-latex-y="-4"><title>M20 = (3, -4)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="180.65" y="140.22" data-ref="A0">A<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="208.86" y="174.21" data-ref="A1">A<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="265.65" y="169.8" data-ref="A2">A<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="138.15" y="55.22" data-ref="B0">B<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="265.65" y="127.3" data-ref="B1">B<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="336.36" y="121.64" data-ref="B2">B<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="381.65" y="173.81" data-ref="O">O</text>
+              <text class="geom-label" x="209.93" y="131.45" data-ref="M01">M<tspan class="geom-label-sub" dy="3">01</tspan></text>
+              <text class="geom-label" x="228.13" y="176.26" data-ref="M12">M<tspan class="geom-label-sub" dy="3">12</tspan></text>
+              <text class="geom-label" x="264.56" y="309.83" data-ref="M20">M<tspan class="geom-label-sub" dy="3">20</tspan></text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        <p><strong>3-Cycle</strong> $\sigma = (2, 0, 1)$ — <span class="geom-ref" data-ref="g5:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g5:M20" title="M20">M<sub>20</sub></span>, <span class="geom-ref" data-ref="g5:M12" title="M12">M<sub>12</sub></span> on <span class="geom-ref" data-ref="g5:[ M01 M12 ]" title="[ M01 M12 ]">p<sub>201</sub></span>:</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 520 360" data-graphic-id="g5" role="img" aria-label="Pappus Permutation (2, 0, 1) [even]">
+          <title>Pappus Permutation (2, 0, 1) [even]</title>
+          <rect class="svg-bg" x="0" y="0" width="520" height="360" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <polygon class="geom-polygon hexagon-poly" points="175,150.25 132.5,65.25 260,150.25 345,136.08 217.5,150.25 260,107.75" data-ref="&lt; A0 B0 A2 B2 A1 B1 &gt;" fill="none" />
+              <path class="geom-line cross-line" d="M 272.88 346 L 189.88 180 L 106.88 14" data-ref="[ A0 B0 ]" data-aliases="[ A0 M01 ] | [ B0 M01 ]" fill="none"><title>[ A0 B0 ]: -2*x - y + 2 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 172.86 L 260 145.53 L 506 118.19" data-ref="[ A1 B2 ]" data-aliases="[ A1 M01 ] | [ B2 M01 ]" fill="none"><title>[ A1 B2 ]: -x/3 + 3*y + 2/3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 21.75 346 L 187.75 180 L 353.75 14" data-ref="[ A1 B1 ]" data-aliases="[ A1 M12 ] | [ B1 M12 ]" fill="none"><title>[ A1 B1 ]: -x + y + 2 = 0</title></path>
+              <path class="geom-line cross-line" d="M 506 314.25 L 280.81 164.12 L 55.62 14" data-ref="[ A2 B0 ]" data-aliases="[ A2 M12 ] | [ B0 M12 ]" fill="none"><title>[ A2 B0 ]: -2*x - 3*y + 6 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 191.25 L 260 150.25 L 506 109.25" data-ref="[ A2 B2 ]" data-aliases="[ A2 M20 ] | [ B2 M20 ]" fill="none"><title>[ A2 B2 ]: -x/3 + 2*y + 1 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 230.75 L 230.75 122.38 L 447.5 14" data-ref="[ A0 B1 ]" data-aliases="[ A0 M20 ] | [ B1 M20 ]" fill="none"><title>[ A0 B1 ]: -x + 2*y + 1 = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 150.25 L 260 150.25 L 506 150.25" data-ref="[ A0 A2 ]" data-aliases="[ A0 A1 ] | [ A0 O ] | [ A1 A2 ] | [ A1 O ] | [ A2 O ]" fill="none"><title>[ A0 A2 ]: y = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 25.75 L 260 107.75 L 506 189.75" data-ref="[ B0 B2 ]" data-aliases="[ B0 B1 ] | [ B0 O ] | [ B1 B2 ] | [ B1 O ] | [ B2 O ]" fill="none"><title>[ B0 B2 ]: 5*x/3 + 5*y - 10 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 14 215.94 L 260 123.69 L 506 31.44" data-ref="[ M01 M12 ]" data-aliases="[ M01 M20 ] | [ M12 M20 ]" fill="none"><title>[ M01 M12 ]: -48*x/95 + 128*y/95 + 64/95 = 0</title></path>
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point given-point pt-a" cx="175" cy="150.25" r="4.2" data-ref="A0" data-latex-x="1" data-latex-y="0"><title>A0 = (1, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="217.5" cy="150.25" r="4.2" data-ref="A1" data-latex-x="2" data-latex-y="0"><title>A1 = (2, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="260" cy="150.25" r="4.2" data-ref="A2" data-latex-x="3" data-latex-y="0"><title>A2 = (3, 0)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="132.5" cy="65.25" r="4.2" data-ref="B0" data-latex-x="0" data-latex-y="2"><title>B0 = (0, 2)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="260" cy="107.75" r="4.2" data-ref="B1" data-latex-x="3" data-latex-y="1"><title>B1 = (3, 1)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="345" cy="136.08" r="4.2" data-ref="B2" data-latex-x="5" data-latex-y="\frac{1}{3}"><title>B2 = (5, 1/3)</title></circle>
+              <circle class="geom-point apex-point" cx="387.5" cy="150.25" r="3.8" data-ref="O" data-latex-x="6" data-latex-y="0"><title>O = (6, 0)</title></circle>
+              <circle class="geom-point-halo" cx="177.24" cy="154.72" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="177.24" cy="154.72" r="4.7" data-ref="M01" data-latex-x="\frac{20}{19}" data-latex-y="- \frac{2}{19}"><title>M01 = (20/19, -2/19)</title></circle>
+              <circle class="geom-point-halo" cx="234.5" cy="133.25" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="234.5" cy="133.25" r="4.7" data-ref="M12" data-latex-x="\frac{12}{5}" data-latex-y="\frac{2}{5}"><title>M12 = (12/5, 2/5)</title></circle>
+              <circle class="geom-point-halo" cx="132.5" cy="171.5" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="132.5" cy="171.5" r="4.7" data-ref="M20" data-latex-x="0" data-latex-y="- \frac{1}{2}"><title>M20 = (0, -1/2)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="166.36" y="135.81" data-ref="A0">A<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="208.86" y="174.21" data-ref="A1">A<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="251.36" y="174.21" data-ref="A2">A<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="138.15" y="55.22" data-ref="B0">B<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="251.36" y="93.31" data-ref="B1">B<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="336.36" y="121.64" data-ref="B2">B<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="381.65" y="173.81" data-ref="O">O</text>
+              <text class="geom-label" x="165.81" y="179.18" data-ref="M01">M<tspan class="geom-label-sub" dy="3">01</tspan></text>
+              <text class="geom-label" x="248.16" y="138.01" data-ref="M12">M<tspan class="geom-label-sub" dy="3">12</tspan></text>
+              <text class="geom-label" x="121.07" y="195.96" data-ref="M20">M<tspan class="geom-label-sub" dy="3">20</tspan></text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        </section>
+        <section class="level-3" id="odd-permutations-sigma-in-s-3-setminus-a-3">
+        <h3>Odd Permutations ($\sigma \in S_3 \setminus A_3$)<a class="headerlink" href="#odd-permutations-sigma-in-s-3-setminus-a-3" title="Link to this heading">¶</a></h3>
+        <p><strong>Transposition</strong> $\sigma = (0, 2, 1)$ — <span class="geom-ref" data-ref="g2:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g2:M20" title="M20">M<sub>20</sub></span>, <span class="geom-ref" data-ref="g2:M12" title="M12">M<sub>12</sub></span> on <span class="geom-ref" data-ref="g2:[ M01 M12 ]" title="[ M01 M12 ]">p<sub>021</sub></span>:</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 520 360" data-graphic-id="g2" role="img" aria-label="Pappus Permutation (0, 2, 1) [odd]">
+          <title>Pappus Permutation (0, 2, 1) [odd]</title>
+          <rect class="svg-bg" x="0" y="0" width="520" height="360" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <polygon class="geom-polygon hexagon-poly" points="175,150.25 345,136.08 260,150.25 132.5,65.25 217.5,150.25 260,107.75" data-ref="&lt; A0 B2 A2 B0 A1 B1 &gt;" fill="none" />
+              <path class="geom-line cross-line" d="M 14 163.67 L 260 143.17 L 506 122.67" data-ref="[ A0 B2 ]" data-aliases="[ A0 M01 ] | [ B2 M01 ]" fill="none"><title>[ A0 B2 ]: -x/3 + 4*y + 1/3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 413.25 346 L 247.25 180 L 81.25 14" data-ref="[ A1 B0 ]" data-aliases="[ A1 M01 ] | [ B0 M01 ]" fill="none"><title>[ A1 B0 ]: -2*x - 2*y + 4 = 0</title></path>
+              <path class="geom-line cross-line" d="M 21.75 346 L 187.75 180 L 353.75 14" data-ref="[ A1 B1 ]" data-aliases="[ A1 M12 ] | [ B1 M12 ]" fill="none"><title>[ A1 B1 ]: -x + y + 2 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 191.25 L 260 150.25 L 506 109.25" data-ref="[ A2 B2 ]" data-aliases="[ A2 M12 ] | [ B2 M12 ]" fill="none"><title>[ A2 B2 ]: -x/3 + 2*y + 1 = 0</title></path>
+              <path class="geom-line cross-line" d="M 506 314.25 L 280.81 164.12 L 55.62 14" data-ref="[ A2 B0 ]" data-aliases="[ A2 M20 ] | [ B0 M20 ]" fill="none"><title>[ A2 B0 ]: -2*x - 3*y + 6 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 230.75 L 230.75 122.38 L 447.5 14" data-ref="[ A0 B1 ]" data-aliases="[ A0 M20 ] | [ B1 M20 ]" fill="none"><title>[ A0 B1 ]: -x + 2*y + 1 = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 150.25 L 260 150.25 L 506 150.25" data-ref="[ A0 A2 ]" data-aliases="[ A0 A1 ] | [ A0 O ] | [ A1 A2 ] | [ A1 O ] | [ A2 O ]" fill="none"><title>[ A0 A2 ]: y = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 25.75 L 260 107.75 L 506 189.75" data-ref="[ B0 B2 ]" data-aliases="[ B0 B1 ] | [ B0 O ] | [ B1 B2 ] | [ B1 O ] | [ B2 O ]" fill="none"><title>[ B0 B2 ]: 5*x/3 + 5*y - 10 = 0</title></path>
+              <path class="geom-line pappus-line pappus-odd" d="M 125.78 346 L 199.56 180 L 273.33 14" data-ref="[ M01 M12 ]" data-aliases="[ M01 M20 ] | [ M12 M20 ]" fill="none"><title>[ M01 M12 ]: 18*x/65 - 8*y/65 - 34/65 = 0</title></path>
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point given-point pt-a" cx="175" cy="150.25" r="4.2" data-ref="A0" data-latex-x="1" data-latex-y="0"><title>A0 = (1, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="217.5" cy="150.25" r="4.2" data-ref="A1" data-latex-x="2" data-latex-y="0"><title>A1 = (2, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="260" cy="150.25" r="4.2" data-ref="A2" data-latex-x="3" data-latex-y="0"><title>A2 = (3, 0)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="132.5" cy="65.25" r="4.2" data-ref="B0" data-latex-x="0" data-latex-y="2"><title>B0 = (0, 2)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="260" cy="107.75" r="4.2" data-ref="B1" data-latex-x="3" data-latex-y="1"><title>B1 = (3, 1)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="345" cy="136.08" r="4.2" data-ref="B2" data-latex-x="5" data-latex-y="\frac{1}{3}"><title>B2 = (5, 1/3)</title></circle>
+              <circle class="geom-point apex-point" cx="387.5" cy="150.25" r="3.8" data-ref="O" data-latex-x="6" data-latex-y="0"><title>O = (6, 0)</title></circle>
+              <circle class="geom-point-halo" cx="214.23" cy="146.98" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-odd" cx="214.23" cy="146.98" r="4.7" data-ref="M01" data-latex-x="\frac{25}{13}" data-latex-y="\frac{1}{13}"><title>M01 = (25/13, 1/13)</title></circle>
+              <circle class="geom-point-halo" cx="209" cy="158.75" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-odd" cx="209" cy="158.75" r="4.7" data-ref="M12" data-latex-x="\frac{9}{5}" data-latex-y="- \frac{1}{5}"><title>M12 = (9/5, -1/5)</title></circle>
+              <circle class="geom-point-halo" cx="223.57" cy="125.96" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-odd" cx="223.57" cy="125.96" r="4.7" data-ref="M20" data-latex-x="\frac{15}{7}" data-latex-y="\frac{4}{7}"><title>M20 = (15/7, 4/7)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="166.36" y="135.81" data-ref="A0">A<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="208.86" y="174.21" data-ref="A1">A<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="251.36" y="135.81" data-ref="A2">A<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="123.86" y="50.81" data-ref="B0">B<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="251.36" y="93.31" data-ref="B1">B<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="336.36" y="121.64" data-ref="B2">B<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="381.65" y="173.81" data-ref="O">O</text>
+              <text class="geom-label" x="186.81" y="136.56" data-ref="M01">M<tspan class="geom-label-sub" dy="3">01</tspan></text>
+              <text class="geom-label" x="181.58" y="178.69" data-ref="M12">M<tspan class="geom-label-sub" dy="3">12</tspan></text>
+              <text class="geom-label" x="212.14" y="111.02" data-ref="M20">M<tspan class="geom-label-sub" dy="3">20</tspan></text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        <p><strong>Transposition</strong> $\sigma = (1, 0, 2)$ — <span class="geom-ref" data-ref="g3:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g3:M20" title="M20">M<sub>20</sub></span>, <span class="geom-ref" data-ref="g3:M12" title="M12">M<sub>12</sub></span> on <span class="geom-ref" data-ref="g3:[ M01 M12 ]" title="[ M01 M12 ]">p<sub>102</sub></span>:</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 520 360" data-graphic-id="g3" role="img" aria-label="Pappus Permutation (1, 0, 2) [odd]">
+          <title>Pappus Permutation (1, 0, 2) [odd]</title>
+          <rect class="svg-bg" x="0" y="0" width="520" height="360" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <polygon class="geom-polygon hexagon-poly" points="175,150.25 132.5,65.25 260,150.25 260,107.75 217.5,150.25 345,136.08" data-ref="&lt; A0 B0 A2 B1 A1 B2 &gt;" fill="none" />
+              <path class="geom-line cross-line" d="M 272.88 346 L 189.88 180 L 106.88 14" data-ref="[ A0 B0 ]" data-aliases="[ A0 M01 ] | [ B0 M01 ]" fill="none"><title>[ A0 B0 ]: -2*x - y + 2 = 0</title></path>
+              <path class="geom-line cross-line" d="M 21.75 346 L 187.75 180 L 353.75 14" data-ref="[ A1 B1 ]" data-aliases="[ A1 M01 ] | [ B1 M01 ]" fill="none"><title>[ A1 B1 ]: -x + y + 2 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 172.86 L 260 145.53 L 506 118.19" data-ref="[ A1 B2 ]" data-aliases="[ A1 M12 ] | [ B2 M12 ]" fill="none"><title>[ A1 B2 ]: -x/3 + 3*y + 2/3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 506 314.25 L 280.81 164.12 L 55.62 14" data-ref="[ A2 B0 ]" data-aliases="[ A2 M12 ] | [ B0 M12 ]" fill="none"><title>[ A2 B0 ]: -2*x - 3*y + 6 = 0</title></path>
+              <path class="geom-line cross-line" d="M 260 346 L 260 180 L 260 14" data-ref="[ A2 B1 ]" data-aliases="[ A2 M20 ] | [ B1 M20 ]" fill="none"><title>[ A2 B1 ]: x - 3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 163.67 L 260 143.17 L 506 122.67" data-ref="[ A0 B2 ]" data-aliases="[ A0 M20 ] | [ B2 M20 ]" fill="none"><title>[ A0 B2 ]: -x/3 + 4*y + 1/3 = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 150.25 L 260 150.25 L 506 150.25" data-ref="[ A0 A2 ]" data-aliases="[ A0 A1 ] | [ A0 O ] | [ A1 A2 ] | [ A1 O ] | [ A2 O ]" fill="none"><title>[ A0 A2 ]: y = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 25.75 L 260 107.75 L 506 189.75" data-ref="[ B0 B2 ]" data-aliases="[ B0 B1 ] | [ B0 O ] | [ B1 B2 ] | [ B1 O ] | [ B2 O ]" fill="none"><title>[ B0 B2 ]: 5*x/3 + 5*y - 10 = 0</title></path>
+              <path class="geom-line pappus-line pappus-odd" d="M 14 266.17 L 260 143.17 L 506 20.17" data-ref="[ M01 M12 ]" data-aliases="[ M01 M20 ] | [ M12 M20 ]" fill="none"><title>[ M01 M12 ]: -16*x/21 + 32*y/21 + 128/63 = 0</title></path>
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point given-point pt-a" cx="175" cy="150.25" r="4.2" data-ref="A0" data-latex-x="1" data-latex-y="0"><title>A0 = (1, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="217.5" cy="150.25" r="4.2" data-ref="A1" data-latex-x="2" data-latex-y="0"><title>A1 = (2, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="260" cy="150.25" r="4.2" data-ref="A2" data-latex-x="3" data-latex-y="0"><title>A2 = (3, 0)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="132.5" cy="65.25" r="4.2" data-ref="B0" data-latex-x="0" data-latex-y="2"><title>B0 = (0, 2)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="260" cy="107.75" r="4.2" data-ref="B1" data-latex-x="3" data-latex-y="1"><title>B1 = (3, 1)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="345" cy="136.08" r="4.2" data-ref="B2" data-latex-x="5" data-latex-y="\frac{1}{3}"><title>B2 = (5, 1/3)</title></circle>
+              <circle class="geom-point apex-point" cx="387.5" cy="150.25" r="3.8" data-ref="O" data-latex-x="6" data-latex-y="0"><title>O = (6, 0)</title></circle>
+              <circle class="geom-point-halo" cx="189.17" cy="178.58" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-odd" cx="189.17" cy="178.58" r="4.7" data-ref="M01" data-latex-x="\frac{4}{3}" data-latex-y="- \frac{2}{3}"><title>M01 = (4/3, -2/3)</title></circle>
+              <circle class="geom-point-halo" cx="253.93" cy="146.2" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-odd" cx="253.93" cy="146.2" r="4.7" data-ref="M12" data-latex-x="\frac{20}{7}" data-latex-y="\frac{2}{21}"><title>M12 = (20/7, 2/21)</title></circle>
+              <circle class="geom-point-halo" cx="260" cy="143.17" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-odd" cx="260" cy="143.17" r="4.7" data-ref="M20" data-latex-x="3" data-latex-y="\frac{1}{6}"><title>M20 = (3, 1/6)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="180.65" y="140.22" data-ref="A0">A<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="208.86" y="135.81" data-ref="A1">A<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="237.07" y="169.8" data-ref="A2">A<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="138.15" y="55.22" data-ref="B0">B<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="265.65" y="127.3" data-ref="B1">B<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="336.36" y="121.64" data-ref="B2">B<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="381.65" y="173.81" data-ref="O">O</text>
+              <text class="geom-label" x="202.83" y="183.34" data-ref="M01">M<tspan class="geom-label-sub" dy="3">01</tspan></text>
+              <text class="geom-label" x="258.49" y="166.14" data-ref="M12">M<tspan class="geom-label-sub" dy="3">12</tspan></text>
+              <text class="geom-label" x="232.58" y="132.75" data-ref="M20">M<tspan class="geom-label-sub" dy="3">20</tspan></text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        <p><strong>Transposition</strong> $\sigma = (2, 1, 0)$ — <span class="geom-ref" data-ref="g6:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g6:M20" title="M20">M<sub>20</sub></span>, <span class="geom-ref" data-ref="g6:M12" title="M12">M<sub>12</sub></span> on <span class="geom-ref" data-ref="g6:[ M01 M12 ]" title="[ M01 M12 ]">p<sub>210</sub></span>:</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 520 360" data-graphic-id="g6" role="img" aria-label="Pappus Permutation (2, 1, 0) [odd]">
+          <title>Pappus Permutation (2, 1, 0) [odd]</title>
+          <rect class="svg-bg" x="0" y="0" width="520" height="360" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <polygon class="geom-polygon hexagon-poly" points="175,150.25 260,107.75 260,150.25 345,136.08 217.5,150.25 132.5,65.25" data-ref="&lt; A0 B1 A2 B2 A1 B0 &gt;" fill="none" />
+              <path class="geom-line cross-line" d="M 14 230.75 L 230.75 122.38 L 447.5 14" data-ref="[ A0 B1 ]" data-aliases="[ A0 M01 ] | [ B1 M01 ]" fill="none"><title>[ A0 B1 ]: -x + 2*y + 1 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 172.86 L 260 145.53 L 506 118.19" data-ref="[ A1 B2 ]" data-aliases="[ A1 M01 ] | [ B2 M01 ]" fill="none"><title>[ A1 B2 ]: -x/3 + 3*y + 2/3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 413.25 346 L 247.25 180 L 81.25 14" data-ref="[ A1 B0 ]" data-aliases="[ A1 M12 ] | [ B0 M12 ]" fill="none"><title>[ A1 B0 ]: -2*x - 2*y + 4 = 0</title></path>
+              <path class="geom-line cross-line" d="M 260 346 L 260 180 L 260 14" data-ref="[ A2 B1 ]" data-aliases="[ A2 M12 ] | [ B1 M12 ]" fill="none"><title>[ A2 B1 ]: x - 3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 191.25 L 260 150.25 L 506 109.25" data-ref="[ A2 B2 ]" data-aliases="[ A2 M20 ] | [ B2 M20 ]" fill="none"><title>[ A2 B2 ]: -x/3 + 2*y + 1 = 0</title></path>
+              <path class="geom-line cross-line" d="M 272.88 346 L 189.88 180 L 106.88 14" data-ref="[ A0 B0 ]" data-aliases="[ A0 M20 ] | [ B0 M20 ]" fill="none"><title>[ A0 B0 ]: -2*x - y + 2 = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 150.25 L 260 150.25 L 506 150.25" data-ref="[ A0 A2 ]" data-aliases="[ A0 A1 ] | [ A0 O ] | [ A1 A2 ] | [ A1 O ] | [ A2 O ]" fill="none"><title>[ A0 A2 ]: y = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 25.75 L 260 107.75 L 506 189.75" data-ref="[ B0 B2 ]" data-aliases="[ B0 B1 ] | [ B0 O ] | [ B1 B2 ] | [ B1 O ] | [ B2 O ]" fill="none"><title>[ B0 B2 ]: 5*x/3 + 5*y - 10 = 0</title></path>
+              <path class="geom-line pappus-line pappus-odd" d="M 14 100.5 L 260 192.75 L 506 285" data-ref="[ M01 M12 ]" data-aliases="[ M01 M20 ] | [ M12 M20 ]" fill="none"><title>[ M01 M12 ]: 6*x/7 + 16*y/7 - 2/7 = 0</title></path>
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point given-point pt-a" cx="175" cy="150.25" r="4.2" data-ref="A0" data-latex-x="1" data-latex-y="0"><title>A0 = (1, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="217.5" cy="150.25" r="4.2" data-ref="A1" data-latex-x="2" data-latex-y="0"><title>A1 = (2, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="260" cy="150.25" r="4.2" data-ref="A2" data-latex-x="3" data-latex-y="0"><title>A2 = (3, 0)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="132.5" cy="65.25" r="4.2" data-ref="B0" data-latex-x="0" data-latex-y="2"><title>B0 = (0, 2)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="260" cy="107.75" r="4.2" data-ref="B1" data-latex-x="3" data-latex-y="1"><title>B1 = (3, 1)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="345" cy="136.08" r="4.2" data-ref="B2" data-latex-x="5" data-latex-y="\frac{1}{3}"><title>B2 = (5, 1/3)</title></circle>
+              <circle class="geom-point apex-point" cx="387.5" cy="150.25" r="3.8" data-ref="O" data-latex-x="6" data-latex-y="0"><title>O = (6, 0)</title></circle>
+              <circle class="geom-point-halo" cx="162.86" cy="156.32" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-odd" cx="162.86" cy="156.32" r="4.7" data-ref="M01" data-latex-x="\frac{5}{7}" data-latex-y="- \frac{1}{7}"><title>M01 = (5/7, -1/7)</title></circle>
+              <circle class="geom-point-halo" cx="260" cy="192.75" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-odd" cx="260" cy="192.75" r="4.7" data-ref="M12" data-latex-x="3" data-latex-y="-1"><title>M12 = (3, -1)</title></circle>
+              <circle class="geom-point-halo" cx="181.54" cy="163.33" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-odd" cx="181.54" cy="163.33" r="4.7" data-ref="M20" data-latex-x="\frac{15}{13}" data-latex-y="- \frac{4}{13}"><title>M20 = (15/13, -4/13)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="166.36" y="135.81" data-ref="A0">A<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="223.15" y="140.22" data-ref="A1">A<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="265.65" y="169.8" data-ref="A2">A<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="138.15" y="55.22" data-ref="B0">B<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="265.65" y="127.3" data-ref="B1">B<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="336.36" y="121.64" data-ref="B2">B<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="381.65" y="173.81" data-ref="O">O</text>
+              <text class="geom-label" x="151.43" y="180.78" data-ref="M01">M<tspan class="geom-label-sub" dy="3">01</tspan></text>
+              <text class="geom-label" x="232.58" y="212.69" data-ref="M12">M<tspan class="geom-label-sub" dy="3">12</tspan></text>
+              <text class="geom-label" x="186.1" y="183.27" data-ref="M20">M<tspan class="geom-label-sub" dy="3">20</tspan></text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        </section>
+        </section>
+        <section class="level-2" id="geometor-s-2023-parallel-configuration-discovery">
+        <h2>GEOMETOR’s 2023 Parallel Configuration Discovery<a class="headerlink" href="#geometor-s-2023-parallel-configuration-discovery" title="Link to this heading">¶</a></h2>
+        <p>In GEOMETOR’s original 2023 <code class="docutils literal notranslate"><span class="pre">pappus.py</span></code> exploration ($A = [(0,0), (1,0), (3,0)]$ on $y = 0$
+        and $B = [(0,1), (3/2, 1), (5/2, 1)]$ on $y = 1$), constructing all nine cross-lines uncovered
+        both a subtle projective phenomenon and exact rational Star coordinates:</p>
+        <ul>
+        <li><p>Because $[A_0 B_1]$ and $[A_1 B_2]$ share exact slope $\frac{2}{3}$, one of the 18 cross-join
+        pairs meets at an <strong>ideal point on the line at infinity</strong>, leaving <strong>17 finite cross-join
+        meets</strong> in $\mathbb{Q}^2$. On the odd transposition $\sigma = (2, 1, 0)$, that parallel
+        cross-join pair $[A_0 B_1] \parallel [A_1 B_2]$ directs its Pappus line along exact slope
+        $\frac{2}{3}$ toward the ideal meet!</p></li>
+        <li><p>All three <strong>even</strong> Pappus lines meet inside the central strip at the exact rational Star point</p>
+        <div class="math notranslate nohighlight">
+        \[S_+ = \left(\frac{90}{73},\; \frac{38}{73}\right),\]</div>
+        <p>while the three <strong>odd</strong> Pappus lines concur far in the first quadrant at
+        $S_- = \left(10,\; \frac{38}{3}\right)$.</p>
+        </li>
+        </ul>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 420" data-graphic-id="g8" role="img" aria-label="2023 GEOMETOR Parallel Configuration — Even Star Point S+ = (90/73, 38/73)">
+          <title>2023 GEOMETOR Parallel Configuration — Even Star Point S+ = (90/73, 38/73)</title>
+          <rect class="svg-bg" x="0" y="0" width="680" height="420" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <path class="geom-line cross-line" d="M 128.57 406 L 128.57 210 L 128.57 14" data-ref="[ A0 B0 ]" data-aliases="[ A0 M0012 ] | [ B0 M0012 ]" fill="none"><title>[ A0 B0 ]: x = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 356.86 L 271.14 185.43 L 528.29 14" data-ref="[ A0 B1 ]" data-aliases="[ A0 M0110 ] | [ A0 M0120 ] | [ A0 M0122 ] | [ B1 M0110 ] | [ B1 M0120 ] | [ B1 M0122 ] | [ M0110 M0120 ] | [ M0110 M0122 ] | [ M0120 M0122 ]" fill="none"><title>[ A0 B1 ]: -x + 3*y/2 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 326.3 L 340 195.9 L 666 65.5" data-ref="[ A0 B2 ]" data-aliases="[ A0 M0220 ] | [ A0 M0210 ] | [ A0 M0221 ] | [ A0 M0211 ] | [ B2 M0220 ] | [ B2 M0210 ] | [ B2 M0221 ] | [ B2 M0211 ] | [ M0220 M0210 ] | [ M0220 M0221 ] | [ M0220 M0211 ] | [ M0210 M0221 ] | [ M0210 M0211 ] | [ M0221 M0211 ]" fill="none"><title>[ A0 B2 ]: -x + 5*y/2 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 24.95 L 204.52 215.48 L 395.05 406" data-ref="[ A1 B0 ]" data-aliases="[ A1 M0110 ] | [ A1 M0210 ] | [ B0 M0110 ] | [ B0 M0210 ] | [ M0110 M0210 ]" fill="none"><title>[ A1 B0 ]: -x - y + 1 = 0</title></path>
+              <path class="geom-line cross-line" d="M 206.76 406 L 304.76 210 L 402.76 14" data-ref="[ A1 B1 ]" data-aliases="[ A1 M0211 ] | [ A1 M1120 ] | [ B1 M0211 ] | [ B1 M1120 ] | [ M0211 M1120 ]" fill="none"><title>[ A1 B1 ]: -x + y/2 + 1 = 0</title></path>
+              <path class="geom-line cross-line" d="M 666 16.16 L 373.62 211.08 L 81.24 406" data-ref="[ A1 B2 ]" data-aliases="[ A1 M1221 ] | [ A1 M1220 ] | [ A1 M0012 ] | [ B2 M1221 ] | [ B2 M1220 ] | [ B2 M0012 ] | [ M1221 M1220 ] | [ M1221 M0012 ] | [ M1220 M0012 ]" fill="none"><title>[ A1 B2 ]: -x + 3*y/2 + 1 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 101.33 L 340 210 L 666 318.67" data-ref="[ A2 B0 ]" data-aliases="[ A2 M0220 ] | [ A2 M0120 ] | [ A2 M1220 ] | [ A2 M1120 ] | [ B0 M0220 ] | [ B0 M0120 ] | [ B0 M1220 ] | [ B0 M1120 ] | [ M0220 M0120 ] | [ M0220 M1220 ] | [ M0220 M1120 ] | [ M0120 M1220 ] | [ M0120 M1120 ] | [ M1220 M1120 ]" fill="none"><title>[ A2 B0 ]: -x - 3*y + 3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 666 356.86 L 408.86 185.43 L 151.71 14" data-ref="[ A2 B1 ]" data-aliases="[ A2 M1221 ] | [ A2 M0221 ] | [ B1 M1221 ] | [ B1 M0221 ] | [ M1221 M0221 ]" fill="none"><title>[ A2 B1 ]: -x - 3*y/2 + 3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 614.19 406 L 516.19 210 L 418.19 14" data-ref="[ A2 B2 ]" data-aliases="[ A2 M0122 ] | [ B2 M0122 ]" fill="none"><title>[ A2 B2 ]: -x - y/2 + 3 = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 280.48 L 340 280.48 L 666 280.48" data-ref="[ A0 A2 ]" data-aliases="[ A0 A1 ] | [ A1 A2 ]" fill="none"><title>[ A0 A2 ]: y = 0</title></path>
+              <path class="geom-line carrier-line" d="M 14 139.52 L 340 139.52 L 666 139.52" data-ref="[ B0 B2 ]" data-aliases="[ B0 B1 ] | [ B1 B2 ]" fill="none"><title>[ B0 B2 ]: y - 1 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 14 262.03 L 340 199.93 L 666 137.84" data-ref="[ M0110 M1221 ]" data-aliases="[ M0110 M0220 ] | [ M0110 S1 ] | [ M1221 M0220 ] | [ M1221 S1 ] | [ M0220 S1 ]" fill="none"><title>[ M0110 M1221 ]: -4*x/15 + 7*y/5 - 2/5 = 0</title></path>
+              <path class="geom-line pappus-line pappus-odd" d="M 104.9 406 L 251.9 210 L 398.9 14" data-ref="[ M0210 M1122 ]" data-aliases="[ M0210 M0120 ] | [ M0210 M0012 ] | [ M0120 M0012 ]" fill="none"><title>[ M0210 M1122 ]: -12*x/7 + 9*y/7 + 6/7 = 0</title></path>
+              <path class="geom-line pappus-line pappus-odd" d="M 235.19 406 L 368.83 210 L 502.47 14" data-ref="[ M0011 M1220 ]" data-aliases="[ M1220 M0221 ]" fill="none"><title>[ M0011 M1220 ]: -22*x/9 + 5*y/3 + 10/3 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 468.1 406 L 304.76 210 L 141.43 14" data-ref="[ M0211 M1022 ]" data-aliases="[ M0211 S1 ]" fill="none"><title>[ M0211 M1022 ]: 9*x/2 + 15*y/4 - 15/2 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 95.8 406 L 299.34 210 L 502.88 14" data-ref="[ M0012 M1120 ]" data-aliases="[ M0012 M0122 ] | [ M0012 S1 ] | [ M1120 M0122 ] | [ M1120 S1 ] | [ M0122 S1 ]" fill="none"><title>[ M0012 M1120 ]: -26*x/21 + 9*y/7 + 6/7 = 0</title></path>
+              <path class="geom-line steiner-line" d="M 158.78 406 L 300.26 210 L 441.73 14" data-ref="[ S1 S2 ]" fill="none"><title>[ S1 S2 ]: -2660*x/219 + 640*y/73 + 760/73 = 0</title></path>
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point given-point pt-a" cx="128.57" cy="280.48" r="4.2" data-ref="A0" data-latex-x="0" data-latex-y="0"><title>A0 = (0, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="269.52" cy="280.48" r="4.2" data-ref="A1" data-latex-x="1" data-latex-y="0"><title>A1 = (1, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="551.43" cy="280.48" r="4.2" data-ref="A2" data-latex-x="3" data-latex-y="0"><title>A2 = (3, 0)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="128.57" cy="139.52" r="4.2" data-ref="B0" data-latex-x="0" data-latex-y="1"><title>B0 = (0, 1)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="340" cy="139.52" r="4.2" data-ref="B1" data-latex-x="\frac{3}{2}" data-latex-y="1"><title>B1 = (3/2, 1)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="480.95" cy="139.52" r="4.2" data-ref="B2" data-latex-x="\frac{5}{2}" data-latex-y="1"><title>B2 = (5/2, 1)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="213.14" cy="224.1" r="4.7" data-ref="M0110" data-latex-x="\frac{3}{5}" data-latex-y="\frac{2}{5}"><title>M0110 = (3/5, 2/5)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="410.48" cy="186.51" r="4.7" data-ref="M1221" data-latex-x="2" data-latex-y="\frac{2}{3}"><title>M1221 = (2, 2/3)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="320.78" cy="203.59" r="4.7" data-ref="M0220" data-latex-x="\frac{15}{11}" data-latex-y="\frac{6}{11}"><title>M0220 = (15/11, 6/11)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="229.25" cy="240.2" r="4.7" data-ref="M0210" data-latex-x="\frac{5}{7}" data-latex-y="\frac{2}{7}"><title>M0210 = (5/7, 2/7)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="410.48" cy="-1.43" r="4.7" data-ref="M1122" data-latex-x="2" data-latex-y="2"><title>M1122 = (2, 2)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="269.52" cy="186.51" r="4.7" data-ref="M0120" data-latex-x="1" data-latex-y="\frac{2}{3}"><title>M0120 = (1, 2/3)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="363.49" cy="217.83" r="4.7" data-ref="M1220" data-latex-x="\frac{5}{3}" data-latex-y="\frac{4}{9}"><title>M1220 = (5/3, 4/9)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="392.86" cy="174.76" r="4.7" data-ref="M0221" data-latex-x="\frac{15}{8}" data-latex-y="\frac{3}{4}"><title>M0221 = (15/8, 3/4)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="304.76" cy="210" r="4.7" data-ref="M0211" data-latex-x="\frac{5}{4}" data-latex-y="\frac{1}{2}"><title>M0211 = (5/4, 1/2)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="128.57" cy="-1.43" r="4.7" data-ref="M0021" data-latex-x="0" data-latex-y="2"><title>M0021 = (0, 2)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="128.57" cy="374.44" r="4.7" data-ref="M0012" data-latex-x="0" data-latex-y="- \frac{2}{3}"><title>M0012 = (0, -2/3)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="309.8" cy="199.93" r="4.7" data-ref="M1120" data-latex-x="\frac{9}{7}" data-latex-y="\frac{4}{7}"><title>M1120 = (9/7, 4/7)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="445.71" cy="69.05" r="4.7" data-ref="M0122" data-latex-x="\frac{9}{4}" data-latex-y="\frac{3}{2}"><title>M0122 = (9/4, 3/2)</title></circle>
+              <circle class="geom-point-halo" cx="302.35" cy="207.1" r="10.2" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point steiner-point" cx="302.35" cy="207.1" r="6" data-ref="S1" data-latex-x="\frac{90}{73}" data-latex-y="\frac{38}{73}"><title>S1 = (90/73, 38/73)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="105.64" y="270.44" data-ref="A0">A<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="260.88" y="304.44" data-ref="A1">A<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="557.08" y="270.44" data-ref="A2">A<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="134.22" y="129.49" data-ref="B0">B<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="331.36" y="125.08" data-ref="B1">B<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="472.31" y="125.08" data-ref="B2">B<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="293.71" y="190.86" data-ref="S1">S<tspan class="geom-label-sub" dy="3">+</tspan></text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Observe the three <strong>even</strong> Pappus lines <span class="geom-ref" data-ref="g8:[ M0110 M1221 ]" title="[ M0110 M1221 ]">p<sub>012</sub></span>,
+        <span class="geom-ref" data-ref="g8:[ M0211 M1022 ]" title="[ M0211 M1022 ]">p<sub>120</sub></span>, and <span class="geom-ref" data-ref="g8:[ M0012 M1120 ]" title="[ M0012 M1120 ]">p<sub>201</sub></span> converging inside
+        the parallel carrier band at <span class="geom-ref" data-ref="g8:S1" title="S1">S_+</span> $= \left(\frac{90}{73}, \frac{38}{73}\right)$.</div>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../hexagon-theorem/index.html" title="The Hexagon Theorem Step-by-Step">&larr; <span class="nav-label">The Hexagon Theorem Step-by-Step</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../index.html">GEOMETOR • pappus</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../cross-ratios-harmonics/index.html" title="Cross-Ratios, Harmonic Conjugates &amp; Golden Projectivity"><span class="nav-label">Cross-Ratios, Harmonic Conjugates & Golden Projectivity</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../log/26.315-modernize-pappus/index.html">2026 Modernization: Pappus, Pascal’s Hexagrammum Mysticum & Interactive Dossiers</a></li>
+        <li><a href="../../log/22.356-152519.html">Welcome</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../types/log.html">log</a></li>
+        <li><a href="../../types/theorem.html">theorem</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../modules/index.html"  >Modules</a></li>
+        <li><a href="../../refs/index.html"  >References</a></li>
+        <li><a href="../../changelog.html"  >Changelog</a></li>
+        <li><a href="../../log/index.html"  >Log</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,601 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pascal’s Hexagrammum Mysticum (1640) &mdash; GEOMETOR • pappus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=911ccb65" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • pappus</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">pappus</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Theorems</a>
+        </li>
+        <li>
+          <a href="../../usage/index.html"  >Usage & CLI</a>
+        </li>
+        <li>
+          <a href="../../demos/index.html"  >Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; pappus</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../index.html">GEOMETOR • pappus</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../cross-ratios-harmonics/index.html" title="Cross-Ratios, Harmonic Conjugates &amp; Golden Projectivity">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../../mission/index.html" title="Mission"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="pascal-s-hexagrammum-mysticum-1640">
+        <h1>Pascal’s <em>Hexagrammum Mysticum</em> (1640)<a class="headerlink" href="#pascal-s-hexagrammum-mysticum-1640" title="Link to this heading">¶</a></h1>
+        <section class="level-2" id="from-two-straight-lines-to-any-conic-section">
+        <h2>From Two Straight Lines to Any Conic Section<a class="headerlink" href="#from-two-straight-lines-to-any-conic-section" title="Link to this heading">¶</a></h2>
+        <p>Thirteen centuries after Pappus proved his Hexagon Lemma (<em>Synagoge</em> VII.139) for six points
+        distributed along <strong>two straight lines</strong> $a$ and $b$, sixteen-year-old <strong>Blaise Pascal</strong> published a
+        single printed broadsheet in February 1640—<em>Essai pour les coniques</em>—announcing a breathtaking
+        generalization: <strong>the two lines can be replaced by any conic section</strong>.</p>
+        <p>Algebraically, Pappus’s theorem and Pascal’s theorem are <strong>two faces of one projective law</strong>. Six
+        points $P_k = (x_k, y_k)$ lie on a planar curve of degree two—whether a <strong>smooth conic</strong>
+        $\mathcal{C}: A x^2 + B x y + C y^2 + D x + E y + F = 0$ (circle, ellipse, parabola, or hyperbola)
+        or a <strong>degenerate conic</strong> $L_a(x, y) \cdot L_b(x, y) = 0$ (Pappus’s pair of lines)—if and only if
+        their $6 \times 6$ <strong>Veronese matrix</strong> drops rank ($\det V_6 = 0$):</p>
+        <div class="math notranslate nohighlight">
+        \[\begin{split}\det \begin{bmatrix}
+        x_0^2 &amp; x_0 y_0 &amp; y_0^2 &amp; x_0 &amp; y_0 &amp; 1 \\
+        x_1^2 &amp; x_1 y_1 &amp; y_1^2 &amp; x_1 &amp; y_1 &amp; 1 \\
+        \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots &amp; \vdots \\
+        x_5^2 &amp; x_5 y_5 &amp; y_5^2 &amp; x_5 &amp; y_5 &amp; 1
+        \end{bmatrix} = 0.\end{split}\]</div>
+        <p>In <code class="docutils literal notranslate"><span class="pre">geometor.pappus.projective.are_coconic</span></code>, this exact SymPy rank test unifies smooth circles
+        and ellipses with Pappus’s two-line configurations under a single algebraic predicate, while
+        <strong>Colin Maclaurin</strong> (1720) and <strong>William Braikenridge</strong> (1733) proved the converse: if the three
+        opposite-side intersections of a hexagon are collinear, its six vertices necessarily lie on a conic!</p>
+        <div class="admonition-theorem-pascal-s-hexagrammum-mysticum-1640 admonition">
+        <p class="admonition-title">Theorem (Pascal’s <em>Hexagrammum Mysticum</em>, 1640)</p>
+        <p>Let $P_0, P_1, P_2, P_3, P_4, P_5$ be any six distinct points on an irreducible conic
+        $\mathcal{C}$ in $\mathbb{P}^2$, ordered in a cyclic hexagon
+        $\langle P_{c_0}, P_{c_1}, P_{c_2}, P_{c_3}, P_{c_4}, P_{c_5} \rangle$. Then the three
+        intersections of opposite sides,</p>
+        <div class="math notranslate nohighlight">
+        \[M_{03} = [P_{c_0} P_{c_1}] \cap [P_{c_3} P_{c_4}], \quad
+        M_{14} = [P_{c_1} P_{c_2}] \cap [P_{c_4} P_{c_5}], \quad
+        M_{25} = [P_{c_2} P_{c_3}] \cap [P_{c_5} P_{c_0}],\]</div>
+        <p>are <strong>collinear</strong> along a single line $p$—the <strong>Pascal line</strong> of the inscribed hexagram.</p>
+        </div>
+        </section>
+        <section class="level-2" id="the-mystic-star-hexagram-on-the-pythagorean-circle">
+        <h2>The Mystic Star Hexagram on the Pythagorean Circle<a class="headerlink" href="#the-mystic-star-hexagram-on-the-pythagorean-circle" title="Link to this heading">¶</a></h2>
+        <p>To explore Pascal’s theorem in <strong>100% exact rational arithmetic</strong> ($\mathbb{Q}^2$) without
+        floating-point approximations, <code class="docutils literal notranslate"><span class="pre">geometor.pappus.projective.circle_stereographic_point</span></code> maps
+        any rational parameter $t \in \mathbb{Q}$ onto the unit circle $x^2 + y^2 = 1$ via Weierstrass
+        stereographic projection:</p>
+        <div class="math notranslate nohighlight">
+        \[P(t) = \left(\frac{1 - t^2}{1 + t^2},\; \frac{2t}{1 + t^2}\right) \in \mathbb{Q}^2.\]</div>
+        <p>Seeding <code class="docutils literal notranslate"><span class="pre">preset=&quot;hexagrammum&quot;</span></code> with $t = \left(0,\, \frac{1}{3},\, 1,\, 3,\, -2,\, -\frac{1}{2}\right)$
+        places six cardinal and $3\text{-}4\text{-}5$ Pythagorean vertices around all four quadrants of
+        $x^2 + y^2 = 1$:</p>
+        <div class="math notranslate nohighlight">
+        \[P_0 = (1, 0),\quad P_1 = \left(\frac{4}{5}, \frac{3}{5}\right),\quad
+        P_2 = (0, 1),\quad P_3 = \left(-\frac{4}{5}, \frac{3}{5}\right),\quad
+        P_4 = \left(-\frac{3}{5}, -\frac{4}{5}\right),\quad P_5 = \left(\frac{3}{5}, -\frac{4}{5}\right).\]</div>
+        <p>Tracing the non-convex <strong>mystic star cycle</strong> $\langle P_0, P_2, P_4, P_1, P_3, P_5 \rangle$ produces
+        two interior meets and one compact exterior meet, all strictly rational:</p>
+        <div class="math notranslate nohighlight">
+        \[M_{03} = \left(\frac{2}{5},\, \frac{3}{5}\right), \qquad
+        M_{14} = \left(-\frac{3}{10},\, \frac{1}{10}\right), \qquad
+        M_{25} = \left(\frac{9}{5},\, \frac{8}{5}\right),\]</div>
+        <p>aligned along the exact Pascal line $25x - 35y + 11 = 0$:</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 480" data-graphic-id="g1" role="img" aria-label="Pascal&#x27;s Hexagrammum Mysticum (1640) on the Unit Circle">
+          <title>Pascal&#x27;s Hexagrammum Mysticum (1640) on the Unit Circle</title>
+          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <circle class="geom-circle conic-curve" cx="292.48" cy="275.64" r="118.79" data-ref="( O P0 )" data-aliases="( O P1 ) | ( O P2 ) | ( O P3 ) | ( O P4 ) | ( O P5 ) | ( P0 P1 P2 )" fill="none"><title>( O P0 ): x**2 + y**2 - 1 = 0</title></circle>
+              <polygon class="geom-polygon hexagon-poly" points="411.27,275.64 292.48,156.85 221.21,370.67 387.52,204.36 197.45,204.36 363.76,370.67" data-ref="&lt; P0 P2 P4 P1 P3 P5 &gt;" fill="none" />
+              <path class="geom-line cross-line" d="M 601.64 466 L 375.64 240 L 149.64 14" data-ref="[ P0 P2 ]" data-aliases="[ P0 M03 ] | [ P2 M03 ]" fill="none"><title>[ P0 P2 ]: -x - y + 1 = 0</title></path>
+              <path class="geom-line cross-line" d="M 189.43 466 L 264.77 240 L 340.1 14" data-ref="[ P2 P4 ]" data-aliases="[ P2 M14 ] | [ P4 M14 ]" fill="none"><title>[ P2 P4 ]: 9*x/5 - 3*y/5 + 3/5 = 0</title></path>
+              <path class="geom-line cross-line" d="M 125.88 466 L 351.88 240 L 577.88 14" data-ref="[ P4 P1 ]" data-aliases="[ P1 P4 ] | [ P1 M25 ] | [ P4 M25 ]" fill="none"><title>[ P4 P1 ]: -7*x/5 + 7*y/5 + 7/25 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 204.36 L 340 204.36 L 666 204.36" data-ref="[ P1 P3 ]" data-aliases="[ P1 M03 ] | [ P3 M03 ]" fill="none"><title>[ P1 P3 ]: y - 3/5 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 20.91 L 236.55 243.45 L 459.09 466" data-ref="[ P3 P5 ]" data-aliases="[ P3 M14 ] | [ P5 M14 ]" fill="none"><title>[ P3 P5 ]: 7*x/5 + 7*y/5 + 7/25 = 0</title></path>
+              <path class="geom-line cross-line" d="M 316.09 466 L 429.09 240 L 542.09 14" data-ref="[ P5 P0 ]" data-aliases="[ P0 P5 ] | [ P0 M25 ] | [ P5 M25 ]" fill="none"><title>[ P5 P0 ]: -4*x/5 + 2*y/5 + 4/5 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 14 437.22 L 310.25 225.61 L 606.51 14" data-ref="[ M03 M14 ]" data-aliases="[ M03 M25 ] | [ M14 M25 ]" fill="none"><title>[ M03 M14 ]: x/2 - 7*y/10 + 11/50 = 0</title></path>
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point" cx="292.48" cy="275.64" r="3.8" data-ref="O" data-latex-x="0" data-latex-y="0"><title>O = (0, 0)</title></circle>
+              <circle class="geom-point given-point" cx="411.27" cy="275.64" r="4.2" data-ref="P0" data-latex-x="1" data-latex-y="0"><title>P0 = (1, 0)</title></circle>
+              <circle class="geom-point given-point" cx="387.52" cy="204.36" r="4.2" data-ref="P1" data-latex-x="\frac{4}{5}" data-latex-y="\frac{3}{5}"><title>P1 = (4/5, 3/5)</title></circle>
+              <circle class="geom-point given-point" cx="292.48" cy="156.85" r="4.2" data-ref="P2" data-latex-x="0" data-latex-y="1"><title>P2 = (0, 1)</title></circle>
+              <circle class="geom-point given-point" cx="197.45" cy="204.36" r="4.2" data-ref="P3" data-latex-x="- \frac{4}{5}" data-latex-y="\frac{3}{5}"><title>P3 = (-4/5, 3/5)</title></circle>
+              <circle class="geom-point given-point" cx="221.21" cy="370.67" r="4.2" data-ref="P4" data-latex-x="- \frac{3}{5}" data-latex-y="- \frac{4}{5}"><title>P4 = (-3/5, -4/5)</title></circle>
+              <circle class="geom-point given-point" cx="363.76" cy="370.67" r="4.2" data-ref="P5" data-latex-x="\frac{3}{5}" data-latex-y="- \frac{4}{5}"><title>P5 = (3/5, -4/5)</title></circle>
+              <circle class="geom-point-halo" cx="340" cy="204.36" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="340" cy="204.36" r="4.7" data-ref="M03" data-latex-x="\frac{2}{5}" data-latex-y="\frac{3}{5}"><title>M03 = (2/5, 3/5)</title></circle>
+              <circle class="geom-point-halo" cx="256.85" cy="263.76" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="256.85" cy="263.76" r="4.7" data-ref="M14" data-latex-x="- \frac{3}{10}" data-latex-y="\frac{1}{10}"><title>M14 = (-3/10, 1/10)</title></circle>
+              <circle class="geom-point-halo" cx="506.3" cy="85.58" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="506.3" cy="85.58" r="4.7" data-ref="M25" data-latex-x="\frac{9}{5}" data-latex-y="\frac{8}{5}"><title>M25 = (9/5, 8/5)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="286.63" y="261.6" data-ref="O">O</text>
+              <text class="geom-label" x="425.05" y="280.4" data-ref="P0">P<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="378.88" y="228.32" data-ref="P1">P<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="306.26" y="161.61" data-ref="P2">P<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="188.81" y="189.92" data-ref="P3">P<tspan class="geom-label-sub" dy="3">3</tspan></text>
+              <text class="geom-label" x="198.28" y="360.63" data-ref="P4">P<tspan class="geom-label-sub" dy="3">4</tspan></text>
+              <text class="geom-label" x="377.54" y="375.43" data-ref="P5">P<tspan class="geom-label-sub" dy="3">5</tspan></text>
+              <text class="geom-label" x="328.57" y="189.42" data-ref="M03">M<tspan class="geom-label-sub" dy="3">03</tspan></text>
+              <text class="geom-label" x="220.33" y="268.52" data-ref="M14">M<tspan class="geom-label-sub" dy="3">14</tspan></text>
+              <text class="geom-label" x="478.88" y="75.16" data-ref="M25">M<tspan class="geom-label-sub" dy="3">25</tspan></text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Inscribe the six Pythagorean rational points <span class="geom-ref" data-ref="g1:P0" title="P0">P<sub>0</sub></span>, <span class="geom-ref" data-ref="g1:P1" title="P1">P<sub>1</sub></span>,
+        <span class="geom-ref" data-ref="g1:P2" title="P2">P<sub>2</sub></span>, <span class="geom-ref" data-ref="g1:P3" title="P3">P<sub>3</sub></span>, <span class="geom-ref" data-ref="g1:P4" title="P4">P<sub>4</sub></span>, and <span class="geom-ref" data-ref="g1:P5" title="P5">P<sub>5</sub></span> around the unit
+        circle <span class="geom-ref" data-ref="g1:( O P0 )" title="( O P0 )">𝒞</span> centered at <span class="geom-ref" data-ref="g1:O" title="O">O</span> $= (0, 0)$.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Trace the self-intersecting star hexagram
+        <span class="geom-ref" data-ref="g1:&lt; P0 P2 P4 P1 P3 P5 &gt;" title="&lt; P0 P2 P4 P1 P3 P5 &gt;">P<sub>0</sub> P<sub>2</sub> P<sub>4</sub> P<sub>1</sub> P<sub>3</sub> P<sub>5</sub></span> and intersect the first opposite side
+        pair <span class="geom-ref" data-ref="g1:[ P0 P2 ]" title="[ P0 P2 ]">P<sub>0</sub> P<sub>2</sub></span> ($x + y = 1$) with <span class="geom-ref" data-ref="g1:[ P1 P3 ]" title="[ P1 P3 ]">P<sub>1</sub> P<sub>3</sub></span> ($y = \frac{3}{5}$)
+        at <span class="geom-ref" data-ref="g1:M03" title="M03">M<sub>03</sub></span> $= \left(\frac{2}{5}, \frac{3}{5}\right)$.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Intersect the second opposite pair <span class="geom-ref" data-ref="g1:[ P2 P4 ]" title="[ P2 P4 ]">P<sub>2</sub> P<sub>4</sub></span> ($3x - y + 1 = 0$) with
+        <span class="geom-ref" data-ref="g1:[ P3 P5 ]" title="[ P3 P5 ]">P<sub>3</sub> P<sub>5</sub></span> ($5x + 5y + 1 = 0$) inside the circle at
+        <span class="geom-ref" data-ref="g1:M14" title="M14">M<sub>14</sub></span> $= \left(-\frac{3}{10}, \frac{1}{10}\right)$, and the third opposite pair
+        <span class="geom-ref" data-ref="g1:[ P4 P1 ]" title="[ P4 P1 ]">P<sub>4</sub> P<sub>1</sub></span> ($5x - 5y = 1$) with <span class="geom-ref" data-ref="g1:[ P5 P0 ]" title="[ P5 P0 ]">P<sub>5</sub> P<sub>0</sub></span> ($2x - y = 2$)
+        outside the circle at <span class="geom-ref" data-ref="g1:M25" title="M25">M<sub>25</sub></span> $= \left(\frac{9}{5}, \frac{8}{5}\right)$.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Draw the <strong>Pascal line</strong> <span class="geom-ref" data-ref="g1:[ M03 M14 ]" title="[ M03 M14 ]">p</span> ($25x - 35y + 11 = 0$):
+        $25\left(\frac{2}{5}\right) - 35\left(\frac{3}{5}\right) + 11 = 10 - 21 + 11 = 0$,
+        $25\left(-\frac{3}{10}\right) - 35\left(\frac{1}{10}\right) + 11 = -11 + 11 = 0$, and
+        $25\left(\frac{9}{5}\right) - 35\left(\frac{8}{5}\right) + 11 = 45 - 56 + 11 = 0$!</div>
+        </section>
+        <section class="level-2" id="universal-symbolic-proof-conic-invariance">
+        <h2>Universal Symbolic Proof &amp; Conic Invariance<a class="headerlink" href="#universal-symbolic-proof-conic-invariance" title="Link to this heading">¶</a></h2>
+        <p>Why did Pascal need only prove his lemma for the circle in order to establish it for <strong>every</strong>
+        ellipse, parabola, and hyperbola? Because any non-degenerate conic is the central projection of a
+        circle from the apex of Apollonius’s cone, and incidence ($P \in \ell$) is preserved under every
+        projective transformation $T \in \mathrm{PGL}_3(\mathbb{R})$.</p>
+        <ol class="arabic simple">
+        <li><p><strong>Universal 6-Parameter Proof</strong>: <code class="docutils literal notranslate"><span class="pre">verify_pascal_symbolic()</span></code> parameterizes six completely
+        generic points $P_k = [1 - t_k^2 : 2 t_k : 1 + t_k^2]$ over the six-variable polynomial ring
+        $\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]$, computes $M_{03}, M_{14}, M_{25}$ via homogeneous
+        3D cross products, and expands $\det[M_{03}, M_{14}, M_{25}]$—which cancels <strong>identically to
+        zero</strong>.</p></li>
+        <li><p><strong>General Ellipse Verification</strong>: Applying the affine transformation $(x, y) \mapsto (2x, y)$
+        in <code class="docutils literal notranslate"><span class="pre">preset=&quot;ellipse&quot;</span></code> maps the Pythagorean hexagram onto the non-circular ellipse
+        $\mathcal{E}: \frac{x^2}{4} + y^2 = 1$ ($x^2 + 4y^2 - 4 = 0$), stretching the three Pascal
+        intersections to
+        $M'_{03} = \left(\frac{4}{5}, \frac{3}{5}\right)$,
+        $M'_{14} = \left(-\frac{3}{5}, \frac{1}{10}\right)$, and
+        $M'_{25} = \left(\frac{18}{5}, \frac{8}{5}\right)$ along $25x - 70y + 22 = 0$:</p></li>
+        </ol>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 440" data-graphic-id="g2" role="img" aria-label="Pascal&#x27;s Hexagrammum Mysticum on the Ellipse x^2/4 + y^2 = 1">
+          <title>Pascal&#x27;s Hexagrammum Mysticum on the Ellipse x^2/4 + y^2 = 1</title>
+          <rect class="svg-bg" x="0" y="0" width="680" height="440" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <ellipse class="geom-circle conic-curve" cx="268.24" cy="246.91" rx="179.39" ry="89.7" data-ref="( O P0 )" data-aliases="( O P1 ) | ( O P2 ) | ( O P3 ) | ( O P4 ) | ( O P5 ) | ( P0 P1 P2 )" fill="none"><title>( O P0 ): x**2/4 + y**2 - 1 = 0</title></ellipse>
+              <polygon class="geom-polygon hexagon-poly" points="447.64,246.91 268.24,157.21 160.61,318.67 411.76,193.09 124.73,193.09 375.88,318.67" data-ref="&lt; P0 P2 P4 P1 P3 P5 &gt;" fill="none" />
+              <path class="geom-line cross-line" d="M 14 30.09 L 340 193.09 L 666 356.09" data-ref="[ P0 P2 ]" data-aliases="[ P0 M03 ] | [ P2 M03 ]" fill="none"><title>[ P0 P2 ]: -x - 2*y + 2 = 0</title></path>
+              <path class="geom-line cross-line" d="M 89.05 426 L 226.38 220 L 363.72 14" data-ref="[ P2 P4 ]" data-aliases="[ P2 M14 ] | [ P4 M14 ]" fill="none"><title>[ P2 P4 ]: 9*x/5 - 6*y/5 + 6/5 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 391.97 L 340 228.97 L 666 65.97" data-ref="[ P4 P1 ]" data-aliases="[ P1 P4 ] | [ P1 M25 ] | [ P4 M25 ]" fill="none"><title>[ P4 P1 ]: -7*x/5 + 14*y/5 + 14/25 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 193.09 L 340 193.09 L 666 193.09" data-ref="[ P1 P3 ]" data-aliases="[ P1 M03 ] | [ P3 M03 ]" fill="none"><title>[ P1 P3 ]: y - 3/5 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 137.73 L 302.27 281.86 L 590.55 426" data-ref="[ P3 P5 ]" data-aliases="[ P3 M14 ] | [ P5 M14 ]" fill="none"><title>[ P3 P5 ]: 7*x/5 + 14*y/5 + 14/25 = 0</title></path>
+              <path class="geom-line cross-line" d="M 666 28.55 L 467.27 227.27 L 268.55 426" data-ref="[ P5 P0 ]" data-aliases="[ P0 P5 ] | [ P0 M25 ] | [ P5 M25 ]" fill="none"><title>[ P5 P0 ]: -4*x/5 + 4*y/5 + 8/5 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 14 309.52 L 340 193.09 L 666 76.66" data-ref="[ M03 M14 ]" data-aliases="[ M03 M25 ] | [ M14 M25 ]" fill="none"><title>[ M03 M14 ]: x/2 - 7*y/5 + 11/25 = 0</title></path>
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point" cx="268.24" cy="246.91" r="3.8" data-ref="O" data-latex-x="0" data-latex-y="0"><title>O = (0, 0)</title></circle>
+              <circle class="geom-point given-point" cx="447.64" cy="246.91" r="4.2" data-ref="P0" data-latex-x="2" data-latex-y="0"><title>P0 = (2, 0)</title></circle>
+              <circle class="geom-point given-point" cx="411.76" cy="193.09" r="4.2" data-ref="P1" data-latex-x="\frac{8}{5}" data-latex-y="\frac{3}{5}"><title>P1 = (8/5, 3/5)</title></circle>
+              <circle class="geom-point given-point" cx="268.24" cy="157.21" r="4.2" data-ref="P2" data-latex-x="0" data-latex-y="1"><title>P2 = (0, 1)</title></circle>
+              <circle class="geom-point given-point" cx="124.73" cy="193.09" r="4.2" data-ref="P3" data-latex-x="- \frac{8}{5}" data-latex-y="\frac{3}{5}"><title>P3 = (-8/5, 3/5)</title></circle>
+              <circle class="geom-point given-point" cx="160.61" cy="318.67" r="4.2" data-ref="P4" data-latex-x="- \frac{6}{5}" data-latex-y="- \frac{4}{5}"><title>P4 = (-6/5, -4/5)</title></circle>
+              <circle class="geom-point given-point" cx="375.88" cy="318.67" r="4.2" data-ref="P5" data-latex-x="\frac{6}{5}" data-latex-y="- \frac{4}{5}"><title>P5 = (6/5, -4/5)</title></circle>
+              <circle class="geom-point-halo" cx="340" cy="193.09" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="340" cy="193.09" r="4.7" data-ref="M03" data-latex-x="\frac{4}{5}" data-latex-y="\frac{3}{5}"><title>M03 = (4/5, 3/5)</title></circle>
+              <circle class="geom-point-halo" cx="214.42" cy="237.94" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="214.42" cy="237.94" r="4.7" data-ref="M14" data-latex-x="- \frac{3}{5}" data-latex-y="\frac{1}{10}"><title>M14 = (-3/5, 1/10)</title></circle>
+              <circle class="geom-point-halo" cx="591.15" cy="103.39" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="591.15" cy="103.39" r="4.7" data-ref="M25" data-latex-x="\frac{18}{5}" data-latex-y="\frac{8}{5}"><title>M25 = (18/5, 8/5)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="275.05" y="237.18" data-ref="O">O</text>
+              <text class="geom-label" x="439" y="232.47" data-ref="P0">P<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="403.12" y="217.05" data-ref="P1">P<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="259.6" y="181.17" data-ref="P2">P<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="116.09" y="178.65" data-ref="P3">P<tspan class="geom-label-sub" dy="3">3</tspan></text>
+              <text class="geom-label" x="137.68" y="308.63" data-ref="P4">P<tspan class="geom-label-sub" dy="3">4</tspan></text>
+              <text class="geom-label" x="367.24" y="304.23" data-ref="P5">P<tspan class="geom-label-sub" dy="3">5</tspan></text>
+              <text class="geom-label" x="328.57" y="178.15" data-ref="M03">M<tspan class="geom-label-sub" dy="3">03</tspan></text>
+              <text class="geom-label" x="202.99" y="262.4" data-ref="M14">M<tspan class="geom-label-sub" dy="3">14</tspan></text>
+              <text class="geom-label" x="579.72" y="88.45" data-ref="M25">M<tspan class="geom-label-sub" dy="3">25</tspan></text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Compare the stretched ellipse <span class="geom-ref" data-ref="g2:( O P0 )" title="( O P0 )">ℰ</span> ($\frac{x^2}{4} + y^2 = 1$) with the unit
+        circle above: every chord, opposite meet <span class="geom-ref" data-ref="g2:M03" title="M03">M'<sub>03</sub></span>, <span class="geom-ref" data-ref="g2:M14" title="M14">M'<sub>14</sub></span>,
+        <span class="geom-ref" data-ref="g2:M25" title="M25">M'<sub>25</sub></span>, and Pascal line <span class="geom-ref" data-ref="g2:[ M03 M14 ]" title="[ M03 M14 ]">p'</span> transforms covariantly while
+        preserving exact three-point collinearity.</div>
+        </section>
+        <section class="level-2" id="the-complete-60-line-hexagrammum-mysticum-web">
+        <h2>The Complete 60-Line <em>Hexagrammum Mysticum</em> Web<a class="headerlink" href="#the-complete-60-line-hexagrammum-mysticum-web" title="Link to this heading">¶</a></h2>
+        <p>On two lines (Pappus), permuting the vertices yields $3! = 6$ hexagons and <strong>6 Pappus lines</strong>
+        concurring in <strong>2 Steiner Star points</strong>. On a smooth conic, however, <strong>no three of the six vertices
+        are collinear</strong>, so <strong>every cyclic ordering</strong> of $P_0, \dots, P_5$ up to dihedral rotation and
+        reversal ($D_6$, order 12) inscribes a valid hexagon—producing</p>
+        <div class="math notranslate nohighlight">
+        \[\frac{6!}{2 \cdot 6} = \mathbf{60\text{ Pascal lines}}!\]</div>
+        <p>In the nineteenth century, <strong>Jakob Steiner</strong> (1828), <strong>Julius Plücker</strong> (1830), <strong>Thomas Penyngton
+        Kirkman</strong> (1850), <strong>Arthur Cayley</strong>, and <strong>George Salmon</strong> uncovered an astonishing, self-dual
+        incidence architecture hidden inside these 60 lines. Running
+        <code class="docutils literal notranslate"><span class="pre">enumerate_hexagrammum_mysticum(preset=&quot;hexagrammum&quot;)</span></code> constructs and verifies every element of
+        this web in exact homogeneous coordinates with <strong>zero combinatorial degeneracies</strong>:</p>
+        <table class="docutils align-default" id="id1">
+        <caption><span class="caption-text">Exact Projective Census of Pascal’s <em>Hexagrammum Mysticum</em> (<code class="docutils literal notranslate"><span class="pre">preset=&quot;hexagrammum&quot;</span></code>)</span><a class="headerlink" href="#id1" title="Link to this table">¶</a></caption>
+        <colgroup>
+        <col style="width: 26.0%" />
+        <col style="width: 12.0%" />
+        <col style="width: 62.0%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p>Geometric Stratum</p></th>
+        <th class="head"><p>Count</p></th>
+        <th class="head"><p>Incidence Law &amp; Discoverer</p></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-even"><td><p><strong>Conic Chords</strong> $[P_i P_j]$</p></td>
+        <td><p><strong>15</strong></p></td>
+        <td><p>$\binom{6}{2} = 15$ secant lines joining pairs of the 6 conic vertices</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>Pascal Diagonal Points</strong></p></td>
+        <td><p><strong>45</strong></p></td>
+        <td><p>$\frac{1}{2}\binom{6}{2}\binom{4}{2} = 45$ intersections $[P_i P_j] \cap [P_k P_l]$; 4 Pascal lines pass through each</p></td>
+        </tr>
+        <tr class="row-even"><td><p><strong>Pascal Lines</strong> $p_H$</p></td>
+        <td><p><strong>60</strong></p></td>
+        <td><p>$6! / 12 = 60$ lines, each carrying 3 of the 45 diagonal points (Pascal, 1640)</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>Steiner Points</strong> $G$</p></td>
+        <td><p><strong>20</strong></p></td>
+        <td><p>60 Pascal lines concur 3-by-3 at 20 Steiner points—2 per complementary triangle pair (Steiner, 1828)</p></td>
+        </tr>
+        <tr class="row-even"><td><p><strong>Kirkman Points</strong> $K$</p></td>
+        <td><p><strong>60</strong></p></td>
+        <td><p>60 Pascal lines also concur 3-by-3 in a <strong>second</strong> way at 60 Kirkman points—3 on each Pascal line (Kirkman, 1850)</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><strong>Plücker Lines</strong> $\ell_{\mathrm{Pl}}$</p></td>
+        <td><p><strong>15</strong></p></td>
+        <td><p>20 Steiner points lie 4-by-4 along 15 Plücker lines—3 through each Steiner point (Plücker, 1830)</p></td>
+        </tr>
+        </tbody>
+        </table>
+        <section class="level-3" id="bi-triangle-s-3-concurrency-how-pappus-s-two-star-points-generalize">
+        <h3>Bi-Triangle $S_3$ Concurrency: How Pappus’s Two Star Points Generalize<a class="headerlink" href="#bi-triangle-s-3-concurrency-how-pappus-s-two-star-points-generalize" title="Link to this heading">¶</a></h3>
+        <p>How do Steiner’s <strong>20 points</strong> on a smooth conic relate to the <strong>2 Star points</strong> $(S_+, S_-)$ of
+        the Pappus–Steiner theorem? Partition the six conic vertices into <strong>two complementary inscribed
+        triangles</strong>—say $\triangle_A = (P_0, P_2, P_4)$ and $\triangle_B = (P_1, P_3, P_5)$. There are
+        $\frac{1}{2}\binom{6}{3} = 10$ such complementary triangle pairs.</p>
+        <p>Fixing $\triangle_A$ and permuting $\triangle_B$ by $\sigma \in S_3$ generates <strong>6 alternating
+        hexagons</strong> $\langle P_0, B_{\sigma_0}, P_2, B_{\sigma_1}, P_4, B_{\sigma_2} \rangle$—the exact
+        smooth-conic counterpart of the six $S_3$ Pappus hexagons! Just as on two lines:</p>
+        <ul class="simple">
+        <li><p>The <strong>3 even</strong> ($\sigma \in A_3$) Pascal lines concur at the even Steiner point
+        $G_+ = \left(\frac{78}{25},\; \frac{1}{25}\right)$.</p></li>
+        <li><p>The <strong>3 odd</strong> ($\sigma \in S_3 \setminus A_3$) Pascal lines concur at the odd Steiner point
+        $G_- = \left(\frac{498}{1565},\; \frac{281}{1565}\right)$.</p></li>
+        </ul>
+        <p>Across all $10$ triangle partitions, $10 \times 2 = \mathbf{20}$ Steiner points arise; when the
+        conic degenerates into two straight lines $a \cup b$, only the single partition separating $a$ from
+        $b$ survives without collapsing onto the carrier lines, leaving Pappus’s two Star points
+        $(S_+, S_-)$!</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 700 480" data-graphic-id="g3" role="img" aria-label="Bi-Triangle S_3 Pascal Lines Concurring at Steiner Points G+ and G-">
+          <title>Bi-Triangle S_3 Pascal Lines Concurring at Steiner Points G+ and G-</title>
+          <rect class="svg-bg" x="0" y="0" width="700" height="480" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <circle class="geom-circle conic-curve" cx="225.27" cy="275.64" r="118.79" data-ref="( O P0 )" data-aliases="( O P1 ) | ( O P2 ) | ( O P3 ) | ( O P4 ) | ( O P5 ) | ( P0 P1 P2 )" fill="none"><title>( O P0 ): x**2 + y**2 - 1 = 0</title></circle>
+              <path class="geom-line cross-line" d="M 407.52 466 L 332.18 240 L 256.85 14" data-ref="[ P0 P1 ]" data-aliases="[ P0 M0145 ] | [ P0 M2301 ] | [ P1 M0145 ] | [ P1 M2301 ] | [ M0145 M2301 ]" fill="none"><title>[ P0 P1 ]: -3*x/5 - y/5 + 3/5 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 165.62 L 350 277.62 L 686 389.62" data-ref="[ P0 P3 ]" data-aliases="[ P0 M2503 ] | [ P0 M0341 ] | [ P0 M0345 ] | [ P3 M2503 ] | [ P3 M0341 ] | [ P3 M0345 ] | [ M2503 M0341 ] | [ M2503 M0345 ] | [ M0341 M0345 ]" fill="none"><title>[ P0 P3 ]: -3*x/5 - 9*y/5 + 3/5 = 0</title></path>
+              <path class="geom-line cross-line" d="M 248.88 466 L 361.88 240 L 474.88 14" data-ref="[ P0 P5 ]" data-aliases="[ P0 M2305 ] | [ P0 M2105 ] | [ P0 M0541 ] | [ P5 M2305 ] | [ P5 M2105 ] | [ P5 M0541 ] | [ M2305 M2105 ] | [ M2305 M0541 ] | [ M2105 M0541 ]" fill="none"><title>[ P0 P5 ]: 4*x/5 - 2*y/5 - 4/5 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 51.21 L 350 219.21 L 686 387.21" data-ref="[ P2 P1 ]" data-aliases="[ P1 P2 ] | [ P1 M2145 ] | [ P1 M2143 ] | [ P1 M2105 ] | [ P2 M2145 ] | [ P2 M2143 ] | [ P2 M2105 ] | [ M2145 M2143 ] | [ M2145 M2105 ] | [ M2143 M2105 ]" fill="none"><title>[ P2 P1 ]: 2*x/5 + 4*y/5 - 4/5 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 262.48 L 262.48 138.24 L 510.97 14" data-ref="[ P2 P3 ]" data-aliases="[ P2 M2305 ] | [ P2 M2341 ] | [ P2 M2301 ] | [ P3 M2305 ] | [ P3 M2341 ] | [ P3 M2301 ] | [ M2305 M2341 ] | [ M2305 M2301 ] | [ M2341 M2301 ]" fill="none"><title>[ P2 P3 ]: 2*x/5 - 4*y/5 + 4/5 = 0</title></path>
+              <path class="geom-line cross-line" d="M 328.32 466 L 252.99 240 L 177.66 14" data-ref="[ P2 P5 ]" data-aliases="[ P2 M2503 ] | [ P2 M2541 ] | [ P5 M2503 ] | [ P5 M2541 ] | [ M2503 M2541 ]" fill="none"><title>[ P2 P5 ]: 9*x/5 + 3*y/5 - 3/5 = 0</title></path>
+              <path class="geom-line cross-line" d="M 58.67 466 L 284.67 240 L 510.67 14" data-ref="[ P4 P1 ]" data-aliases="[ P1 P4 ] | [ P1 M0341 ] | [ P1 M2341 ] | [ P1 M0541 ] | [ P1 M2541 ] | [ P4 M0341 ] | [ P4 M2341 ] | [ P4 M0541 ] | [ P4 M2541 ] | [ M0341 M2341 ] | [ M0341 M0541 ] | [ M0341 M2541 ] | [ M2341 M0541 ] | [ M2341 M2541 ] | [ M0541 M2541 ]" fill="none"><title>[ P4 P1 ]: -7*x/5 + 7*y/5 + 7/25 = 0</title></path>
+              <path class="geom-line cross-line" d="M 167.62 466 L 135.33 240 L 103.05 14" data-ref="[ P4 P3 ]" data-aliases="[ P3 P4 ] | [ P3 M2143 ] | [ P4 M2143 ]" fill="none"><title>[ P4 P3 ]: -7*x/5 - y/5 - 1 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 370.67 L 350 370.67 L 686 370.67" data-ref="[ P4 P5 ]" data-aliases="[ P4 M2145 ] | [ P4 M0145 ] | [ P4 M0345 ] | [ P5 M2145 ] | [ P5 M0145 ] | [ P5 M0345 ] | [ M2145 M0145 ] | [ M2145 M0345 ] | [ M0145 M0345 ]" fill="none"><title>[ P4 P5 ]: y + 4/5 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 686 428.58 L 567.55 221.29 L 449.1 14" data-ref="[ M0143 M2145 ]" data-aliases="[ M2145 M2305 ] | [ M2145 S1 ] | [ M2305 S1 ]" fill="none"><title>[ M0143 M2145 ]: 49*x/5 + 28*y/5 - 154/5 = 0</title></path>
+              <path class="geom-line pappus-line pappus-odd" d="M 468.04 466 L 249.22 240 L 30.39 14" data-ref="[ M0145 M2143 ]" data-aliases="[ M0145 M2503 ] | [ M0145 S2 ] | [ M2143 M2503 ] | [ M2143 S2 ] | [ M2503 S2 ]" fill="none"><title>[ M0145 M2143 ]: -147*x/65 - 427*y/195 + 217/195 = 0</title></path>
+              <path class="geom-line pappus-line pappus-odd" d="M 14 316.58 L 350 232.58 L 686 148.58" data-ref="[ M0341 M2345 ]" data-aliases="[ M0341 M2105 ] | [ M0341 S2 ] | [ M2105 S2 ]" fill="none"><title>[ M0341 M2345 ]: x - 4*y + 2/5 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 660.93 466 L 585.6 240 L 510.26 14" data-ref="[ M0345 M2341 ]" data-aliases="[ M0345 S1 ] | [ M2341 S1 ]" fill="none"><title>[ M0345 M2341 ]: -3*x - y + 47/5 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 686 377.38 L 532.26 195.69 L 378.53 14" data-ref="[ M0541 M2543 ]" data-aliases="[ M0541 S1 ]" fill="none"><title>[ M0541 M2543 ]: -39*x/10 - 33*y/10 + 123/10 = 0</title></path>
+              <path class="geom-line pappus-line pappus-odd" d="M 214.61 466 L 266.35 240 L 318.08 14" data-ref="[ M0543 M2541 ]" data-aliases="[ M2541 M2301 ] | [ M2541 S2 ] | [ M2301 S2 ]" fill="none"><title>[ M0543 M2541 ]: -83*x/30 + 19*y/30 + 23/30 = 0</title></path>
+              <path class="geom-line steiner-line" d="M 14 241.9 L 350 258.64 L 686 275.37" data-ref="[ S1 S2 ]" fill="none"><title>[ S1 S2 ]: -1092*x/7825 - 21924*y/7825 + 4284/7825 = 0</title></path>
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point" cx="225.27" cy="275.64" r="3.8" data-ref="O" data-latex-x="0" data-latex-y="0"><title>O = (0, 0)</title></circle>
+              <circle class="geom-point given-point" cx="344.06" cy="275.64" r="4.2" data-ref="P0" data-latex-x="1" data-latex-y="0"><title>P0 = (1, 0)</title></circle>
+              <circle class="geom-point given-point" cx="320.3" cy="204.36" r="4.2" data-ref="P1" data-latex-x="\frac{4}{5}" data-latex-y="\frac{3}{5}"><title>P1 = (4/5, 3/5)</title></circle>
+              <circle class="geom-point given-point" cx="225.27" cy="156.85" r="4.2" data-ref="P2" data-latex-x="0" data-latex-y="1"><title>P2 = (0, 1)</title></circle>
+              <circle class="geom-point given-point" cx="130.24" cy="204.36" r="4.2" data-ref="P3" data-latex-x="- \frac{4}{5}" data-latex-y="\frac{3}{5}"><title>P3 = (-4/5, 3/5)</title></circle>
+              <circle class="geom-point given-point" cx="154" cy="370.67" r="4.2" data-ref="P4" data-latex-x="- \frac{3}{5}" data-latex-y="- \frac{4}{5}"><title>P4 = (-3/5, -4/5)</title></circle>
+              <circle class="geom-point given-point" cx="296.55" cy="370.67" r="4.2" data-ref="P5" data-latex-x="\frac{3}{5}" data-latex-y="- \frac{4}{5}"><title>P5 = (3/5, -4/5)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="652.91" cy="370.67" r="4.7" data-ref="M2145" data-latex-x="\frac{18}{5}" data-latex-y="- \frac{4}{5}"><title>M2145 = (18/5, -4/5)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="462.85" cy="38.06" r="4.7" data-ref="M2305" data-latex-x="2" data-latex-y="2"><title>M2305 = (2, 2)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="375.74" cy="370.67" r="4.7" data-ref="M0145" data-latex-x="\frac{19}{15}" data-latex-y="- \frac{4}{5}"><title>M0145 = (19/15, -4/5)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="115.62" cy="102.02" r="4.7" data-ref="M2143" data-latex-x="- \frac{12}{13}" data-latex-y="\frac{19}{13}"><title>M2143 = (-12/13, 19/13)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="254.97" cy="245.94" r="4.7" data-ref="M2503" data-latex-x="\frac{1}{4}" data-latex-y="\frac{1}{4}"><title>M2503 = (1/4, 1/4)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="272.79" cy="251.88" r="4.7" data-ref="M0341" data-latex-x="\frac{2}{5}" data-latex-y="\frac{1}{5}"><title>M0341 = (2/5, 1/5)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="367.82" cy="228.12" r="4.7" data-ref="M2105" data-latex-x="\frac{6}{5}" data-latex-y="\frac{2}{5}"><title>M2105 = (6/5, 2/5)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="629.15" cy="370.67" r="4.7" data-ref="M0345" data-latex-x="\frac{17}{5}" data-latex-y="- \frac{4}{5}"><title>M0345 = (17/5, -4/5)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="510.36" cy="14.3" r="4.7" data-ref="M2341" data-latex-x="\frac{12}{5}" data-latex-y="\frac{11}{5}"><title>M2341 = (12/5, 11/5)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="439.09" cy="85.58" r="4.7" data-ref="M0541" data-latex-x="\frac{9}{5}" data-latex-y="\frac{8}{5}"><title>M0541 = (9/5, 8/5)</title></circle>
+              <circle class="geom-point meet-point pappus-even" cx="700.42" cy="394.42" r="4.7" data-ref="M2103" data-latex-x="4" data-latex-y="-1"><title>M2103 = (4, -1)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="260.91" cy="263.76" r="4.7" data-ref="M2541" data-latex-x="\frac{3}{10}" data-latex-y="\frac{1}{10}"><title>M2541 = (3/10, 1/10)</title></circle>
+              <circle class="geom-point meet-point pappus-odd" cx="293.15" cy="122.91" r="4.7" data-ref="M2301" data-latex-x="\frac{4}{7}" data-latex-y="\frac{9}{7}"><title>M2301 = (4/7, 9/7)</title></circle>
+              <circle class="geom-point-halo" cx="595.89" cy="270.88" r="10.2" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point steiner-point" cx="595.89" cy="270.88" r="6" data-ref="S1" data-latex-x="\frac{78}{25}" data-latex-y="\frac{1}{25}"><title>S1 = (78/25, 1/25)</title></circle>
+              <circle class="geom-point-halo" cx="263.07" cy="254.31" r="10.2" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point steiner-point" cx="263.07" cy="254.31" r="6" data-ref="S2" data-latex-x="\frac{498}{1565}" data-latex-y="\frac{281}{1565}"><title>S2 = (498/1565, 281/1565)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="206.77" y="294.88" data-ref="O">O</text>
+              <text class="geom-label" x="357.84" y="280.4" data-ref="P0">P<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="334.08" y="209.12" data-ref="P1">P<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="239.05" y="161.61" data-ref="P2">P<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="107.31" y="194.33" data-ref="P3">P<tspan class="geom-label-sub" dy="3">3</tspan></text>
+              <text class="geom-label" x="131.07" y="360.63" data-ref="P4">P<tspan class="geom-label-sub" dy="3">4</tspan></text>
+              <text class="geom-label" x="273.61" y="360.63" data-ref="P5">P<tspan class="geom-label-sub" dy="3">5</tspan></text>
+              <text class="geom-label" x="602.69" y="259.46" data-ref="S1">S<tspan class="geom-label-sub" dy="3">+</tspan></text>
+              <text class="geom-label" x="269.87" y="242.89" data-ref="S2">S<tspan class="geom-label-sub" dy="3">−</tspan></text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Partition the conic vertices on <span class="geom-ref" data-ref="g3:( O P0 )" title="( O P0 )">𝒞</span> into complementary triangles
+        $\triangle_A =$ (<span class="geom-ref" data-ref="g3:P0" title="P0">P<sub>0</sub></span>, <span class="geom-ref" data-ref="g3:P2" title="P2">P<sub>2</sub></span>, <span class="geom-ref" data-ref="g3:P4" title="P4">P<sub>4</sub></span>) and
+        $\triangle_B =$ (<span class="geom-ref" data-ref="g3:P1" title="P1">P<sub>1</sub></span>, <span class="geom-ref" data-ref="g3:P3" title="P3">P<sub>3</sub></span>, <span class="geom-ref" data-ref="g3:P5" title="P5">P<sub>5</sub></span>), joined by their nine
+        cross-chords.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Trace the three <strong>even</strong> ($A_3$) Pascal lines
+        <span class="geom-ref" data-ref="g3:[ M0143 M2145 ]" title="[ M0143 M2145 ]">p<sub>012</sub></span> ($49x + 28y = 154$),
+        <span class="geom-ref" data-ref="g3:[ M0345 M2341 ]" title="[ M0345 M2341 ]">p<sub>120</sub></span> ($15x + 5y = 47$), and
+        <span class="geom-ref" data-ref="g3:[ M0541 M2543 ]" title="[ M0541 M2543 ]">p<sub>201</sub></span> ($39x + 33y = 123$), concurring at
+        <span class="geom-ref" data-ref="g3:S1" title="S1">G_+</span> $= \left(\frac{78}{25},\, \frac{1}{25}\right)$.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Trace the three <strong>odd</strong> ($S_3 \setminus A_3$) Pascal lines
+        <span class="geom-ref" data-ref="g3:[ M0145 M2143 ]" title="[ M0145 M2143 ]">p<sub>021</sub></span>, <span class="geom-ref" data-ref="g3:[ M0341 M2345 ]" title="[ M0341 M2345 ]">p<sub>102</sub></span> ($5x - 20y + 2 = 0$),
+        and <span class="geom-ref" data-ref="g3:[ M0543 M2541 ]" title="[ M0543 M2541 ]">p<sub>210</sub></span> ($83x - 19y = 23$), concurring inside the circle at
+        <span class="geom-ref" data-ref="g3:S2" title="S2">G_-</span> $= \left(\frac{498}{1565},\, \frac{281}{1565}\right)$, and join the pair along
+        <span class="geom-ref" data-ref="g3:[ S1 S2 ]" title="[ S1 S2 ]">G_+G_-</span>.</div>
+        </section>
+        </section>
+        <section class="level-2" id="golden-hexagrammum-mysticum-in-mathbb-q-phi">
+        <h2>Golden <em>Hexagrammum Mysticum</em> in $\mathbb{Q}(\phi)$<a class="headerlink" href="#golden-hexagrammum-mysticum-in-mathbb-q-phi" title="Link to this heading">¶</a></h2>
+        <p>By <strong>Michel Chasles’s Theorem</strong> (1865), four points $P_0, P_1, P_2, P_3$ on an irreducible conic
+        $\mathcal{C}$ possess an intrinsic <strong>conic cross-ratio</strong> $(P_0, P_1; P_2, P_3)_{\mathcal{C}}$: for
+        any fifth observer point $V \in \mathcal{C}$, the pencil of four rays $[V P_0], [V P_1], [V P_2], [V P_3]$
+        has the <strong>exact same cross-ratio</strong>, independent of $V$.</p>
+        <p>Because Weierstrass stereographic projection is a birational isomorphism $\mathbb{P}^1 \to \mathcal{C}$,
+        seeding <code class="docutils literal notranslate"><span class="pre">preset=&quot;golden_conic&quot;</span></code> with the golden stereographic chain
+        $t = (0,\, 1,\, \phi,\, \phi + 1,\, -1,\, -\phi)$ inscribes six exact $\mathbb{Q}(\sqrt{5})$ points
+        on $x^2 + y^2 = 1$:</p>
+        <div class="math notranslate nohighlight">
+        \[P_0 = (1, 0), \quad P_1 = (0, 1), \quad
+        P_2 = \left(-\frac{\sqrt{5}}{5},\, \frac{2\sqrt{5}}{5}\right), \quad
+        P_3 = \left(-\frac{\sqrt{5}}{3},\, \frac{2}{3}\right), \quad
+        P_4 = (0, -1), \quad P_5 = \left(-\frac{\sqrt{5}}{5},\, -\frac{2\sqrt{5}}{5}\right).\]</div>
+        <ol class="arabic">
+        <li><p><strong>Chasles Golden Conic Cross-Ratio</strong>: Calling <code class="docutils literal notranslate"><span class="pre">conic_cross_ratio(P_0,</span> <span class="pre">P_1,</span> <span class="pre">P_2,</span> <span class="pre">P_3,</span> <span class="pre">V)</span></code> from
+        either $V = P_4$ or $V = P_5$ simplifies identically to the <strong>Golden Ratio</strong>
+        $\phi = \frac{1 + \sqrt{5}}{2}$!</p></li>
+        <li><p><strong>Emergent Golden Section on the Mystic Hexagram</strong>: Constructing the inscribed hexagram on
+        cycle $\langle P_0, P_2, P_5, P_1, P_3, P_4 \rangle$ yields exact opposite-side intersections</p>
+        <div class="math notranslate nohighlight">
+        \[M_{03} = \left(\frac{5 - 4\sqrt{5}}{11},\; \frac{7 + \sqrt{5}}{11}\right), \qquad
+        M_{14} = \left(-\frac{\sqrt{5}}{5},\; 0\right), \qquad
+        M_{25} = \left(-\phi^{-1},\; -\phi\right) = \left(\frac{1 - \sqrt{5}}{2},\; -\frac{1 + \sqrt{5}}{2}\right).\]</div>
+        <p>Running <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code> (<code class="docutils literal notranslate"><span class="pre">find_golden_sections</span></code>) on this model automatically discovers an
+        <strong>emergent golden section</strong>: the Pascal intersection $M_{25} = (-\phi^{-1}, -\phi)$ extends the
+        conic chord $[P_4 P_0]$ ($y = x - 1$) in the <strong>exact Divine Proportion</strong>! Because
+        $x(P_0) - x(P_4) = 1 - 0 = 1$ and $x(P_4) - x(M_{25}) = 0 - (-\phi^{-1}) = \phi^{-1}$ along the
+        $45^\circ$ chord, $|P_0 P_4| / |P_4 M_{25}| = |M_{25} P_0| / |P_0 P_4| = \phi$ identically:</p>
+        </li>
+        </ol>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 480" data-graphic-id="g4" role="img" aria-label="Golden Hexagrammum Mysticum in Q(phi) — Emergent Section / M25 P4 P0 /">
+          <title>Golden Hexagrammum Mysticum in Q(phi) — Emergent Section / M25 P4 P0 /</title>
+          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <circle class="geom-circle conic-curve" cx="340" cy="206.83" r="120.62" data-ref="( O P0 )" data-aliases="( O P1 ) | ( O P2 ) | ( O P3 ) | ( O P4 ) | ( O P5 ) | ( P0 P1 P2 )" fill="none"><title>( O P0 ): x**2 + y**2 - 1 = 0</title></circle>
+              <polygon class="geom-polygon hexagon-poly" points="460.62,206.83 286.06,98.95 286.06,314.71 340,86.22 250.1,126.42 340,327.45" data-ref="&lt; P0 P2 P5 P1 P3 P4 &gt;" fill="none" />
+              <path class="geom-line cross-line" d="M 666 333.77 L 407.3 173.88 L 148.61 14" data-ref="[ P0 P2 ]" data-aliases="[ P0 M03 ] | [ P2 M03 ]" fill="none"><title>[ P0 P2 ]: -2*sqrt(5)*x/5 + y*(-1 - sqrt(5)/5) + 2*sqrt(5)/5 = 0</title></path>
+              <path class="geom-line cross-line" d="M 286.06 466 L 286.06 240 L 286.06 14" data-ref="[ P2 P5 ]" data-aliases="[ P2 M14 ] | [ P5 M14 ]" fill="none"><title>[ P2 P5 ]: x + sqrt(5)/5 = 0</title></path>
+              <path class="geom-line cross-line" d="M 250.35 466 L 303.7 240 L 357.05 14" data-ref="[ P5 P1 ]" data-aliases="[ P1 P5 ] | [ P1 M25 ] | [ P5 M25 ]" fill="none"><title>[ P5 P1 ]: x*(-1 - 2*sqrt(5)/5) + sqrt(5)*y/5 - sqrt(5)/5 = 0</title></path>
+              <path class="geom-line cross-line" d="M 14 232.01 L 257.74 123 L 501.48 14" data-ref="[ P1 P3 ]" data-aliases="[ P1 M03 ] | [ P3 M03 ]" fill="none"><title>[ P1 P3 ]: x/3 - sqrt(5)*y/3 + sqrt(5)/3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 401.96 466 L 300.89 240 L 199.82 14" data-ref="[ P3 P4 ]" data-aliases="[ P3 M14 ] | [ P4 M14 ]" fill="none"><title>[ P3 P4 ]: 5*x/3 + sqrt(5)*y/3 + sqrt(5)/3 = 0</title></path>
+              <path class="geom-line cross-line" d="M 201.45 466 L 427.45 240 L 653.45 14" data-ref="[ P4 P0 ]" data-aliases="[ P0 P4 ] | [ P0 M25 ] | [ P4 M25 ]" fill="none"><title>[ P4 P0 ]: -x + y + 1 = 0</title></path>
+              <path class="geom-line pappus-line pappus-even" d="M 258.7 466 L 282.56 240 L 306.42 14" data-ref="[ M03 M14 ]" data-aliases="[ M03 M25 ] | [ M14 M25 ]" fill="none"><title>[ M03 M14 ]: x*(sqrt(5)/11 + 7/11) + y*(-5/11 + 9*sqrt(5)/55) + 1/11 + 7*sqrt(5)/55 = 0</title></path>
+              <path class="geom-segment golden-segment" d="M 265.46 401.99 L 363.04 304.41 L 460.62 206.83" data-ref="/ M25 P4 P0 /" fill="none" />
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point" cx="340" cy="206.83" r="3.8" data-ref="O" data-latex-x="0" data-latex-y="0"><title>O = (0, 0)</title></circle>
+              <circle class="geom-point-halo" cx="460.62" cy="206.83" r="8.4" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point given-point" cx="460.62" cy="206.83" r="4.2" data-ref="P0" data-latex-x="1" data-latex-y="0"><title>P0 = (1, 0)</title></circle>
+              <circle class="geom-point given-point" cx="340" cy="86.22" r="4.2" data-ref="P1" data-latex-x="0" data-latex-y="1"><title>P1 = (0, 1)</title></circle>
+              <circle class="geom-point given-point" cx="286.06" cy="98.95" r="4.2" data-ref="P2" data-latex-x="- \frac{\sqrt{5}}{5}" data-latex-y="\frac{2 \sqrt{5}}{5}"><title>P2 = (-sqrt(5)/5, 2*sqrt(5)/5)</title></circle>
+              <circle class="geom-point given-point" cx="250.1" cy="126.42" r="4.2" data-ref="P3" data-latex-x="- \frac{\sqrt{5}}{3}" data-latex-y="\frac{2}{3}"><title>P3 = (-sqrt(5)/3, 2/3)</title></circle>
+              <circle class="geom-point-halo" cx="340" cy="327.45" r="8.4" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point given-point" cx="340" cy="327.45" r="4.2" data-ref="P4" data-latex-x="0" data-latex-y="-1"><title>P4 = (0, -1)</title></circle>
+              <circle class="geom-point given-point" cx="286.06" cy="314.71" r="4.2" data-ref="P5" data-latex-x="- \frac{\sqrt{5}}{5}" data-latex-y="- \frac{2 \sqrt{5}}{5}"><title>P5 = (-sqrt(5)/5, -2*sqrt(5)/5)</title></circle>
+              <circle class="geom-point-halo" cx="296.75" cy="105.56" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="296.75" cy="105.56" r="4.7" data-ref="M03" data-latex-x="\frac{5}{11} - \frac{4 \sqrt{5}}{11}" data-latex-y="\frac{\sqrt{5}}{11} + \frac{7}{11}"><title>M03 = (5/11 - 4*sqrt(5)/11, sqrt(5)/11 + 7/11)</title></circle>
+              <circle class="geom-point-halo" cx="286.06" cy="206.83" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="286.06" cy="206.83" r="4.7" data-ref="M14" data-latex-x="- \frac{\sqrt{5}}{5}" data-latex-y="0"><title>M14 = (-sqrt(5)/5, 0)</title></circle>
+              <circle class="geom-point-halo" cx="265.46" cy="401.99" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="265.46" cy="401.99" r="4.7" data-ref="M25" data-latex-x="\frac{1}{2} - \frac{\sqrt{5}}{2}" data-latex-y="- \frac{\sqrt{5}}{2} - \frac{1}{2}"><title>M25 = (1/2 - sqrt(5)/2, -sqrt(5)/2 - 1/2)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="334.15" y="192.79" data-ref="O">O</text>
+              <text class="geom-label" x="451.98" y="192.39" data-ref="P0">P<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="317.07" y="76.18" data-ref="P1">P<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="255" y="103.71" data-ref="P2">P<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="263.88" y="131.18" data-ref="P3">P<tspan class="geom-label-sub" dy="3">3</tspan></text>
+              <text class="geom-label" x="353.78" y="332.21" data-ref="P4">P<tspan class="geom-label-sub" dy="3">4</tspan></text>
+              <text class="geom-label" x="291.71" y="334.27" data-ref="P5">P<tspan class="geom-label-sub" dy="3">5</tspan></text>
+              <text class="geom-label" x="310.41" y="110.32" data-ref="M03">M<tspan class="geom-label-sub" dy="3">03</tspan></text>
+              <text class="geom-label" x="290.62" y="196.41" data-ref="M14">M<tspan class="geom-label-sub" dy="3">14</tspan></text>
+              <text class="geom-label" x="238.03" y="391.57" data-ref="M25">M<tspan class="geom-label-sub" dy="3">25</tspan></text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Project the golden parameter chain $t = (0, 1, \phi, \phi + 1, -1, -\phi)$ onto the unit circle
+        <span class="geom-ref" data-ref="g4:( O P0 )" title="( O P0 )">𝒞</span> to obtain <span class="geom-ref" data-ref="g4:P0" title="P0">P<sub>0</sub></span>, <span class="geom-ref" data-ref="g4:P1" title="P1">P<sub>1</sub></span>, <span class="geom-ref" data-ref="g4:P2" title="P2">P<sub>2</sub></span>,
+        <span class="geom-ref" data-ref="g4:P3" title="P3">P<sub>3</sub></span>, <span class="geom-ref" data-ref="g4:P4" title="P4">P<sub>4</sub></span>, and <span class="geom-ref" data-ref="g4:P5" title="P5">P<sub>5</sub></span>, where $(P_0, P_1; P_2, P_3)_{\mathcal{C}} = \phi$.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Trace the hexagram <span class="geom-ref" data-ref="g4:&lt; P0 P2 P5 P1 P3 P4 &gt;" title="&lt; P0 P2 P5 P1 P3 P4 &gt;">P<sub>0</sub> P<sub>2</sub> P<sub>5</sub> P<sub>1</sub> P<sub>3</sub> P<sub>4</sub></span> and locate the three
+        exact $\mathbb{Q}(\sqrt{5})$ opposite-side intersections <span class="geom-ref" data-ref="g4:M03" title="M03">M<sub>03</sub></span>,
+        <span class="geom-ref" data-ref="g4:M14" title="M14">M<sub>14</sub></span>, and <span class="geom-ref" data-ref="g4:M25" title="M25">M<sub>25</sub></span> $= (-\phi^{-1}, -\phi)$ on Pascal line
+        <span class="geom-ref" data-ref="g4:[ M03 M14 ]" title="[ M03 M14 ]">p</span>.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Inspect the emergent <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code> golden section
+        <span class="geom-ref" data-ref="g4:/ M25 P4 P0 /" title="/ M25 P4 P0 /">M<sub>25</sub> P<sub>4</sub> P<sub>0</sub></span> along chord <span class="geom-ref" data-ref="g4:[ P4 P0 ]" title="[ P4 P0 ]">P<sub>4</sub> P<sub>0</sub></span>:
+        $|P_0 P_4| = \sqrt{2}$ and $|P_4 M_{25}| = \phi^{-1}\sqrt{2}$, dividing the extended conic chord
+        in the exact Golden Ratio $\phi = \frac{1 + \sqrt{5}}{2}$.</div>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../cross-ratios-harmonics/index.html" title="Cross-Ratios, Harmonic Conjugates &amp; Golden Projectivity">&larr; <span class="nav-label">Cross-Ratios, Harmonic Conjugates & Golden Projectivity</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../index.html">GEOMETOR • pappus</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../../mission/index.html" title="Mission"><span class="nav-label">Mission</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../log/26.315-modernize-pappus/index.html">2026 Modernization: Pappus, Pascal’s Hexagrammum Mysticum & Interactive Dossiers</a></li>
+        <li><a href="../../log/22.356-152519.html">Welcome</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../types/log.html">log</a></li>
+        <li><a href="../../types/theorem.html">theorem</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../modules/index.html"  >Modules</a></li>
+        <li><a href="../../refs/index.html"  >References</a></li>
+        <li><a href="../../changelog.html"  >Changelog</a></li>
+        <li><a href="../../log/index.html"  >Log</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

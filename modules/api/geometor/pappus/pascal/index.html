@@ -1,0 +1,680 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.pappus.pascal &mdash; GEOMETOR • pappus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/custom.css?v=911ccb65" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • pappus</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">pappus</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../mission/index.html"  >Mission</a>
+        </li>
+        <li>
+          <a href="../../../../../theorems/index.html"  >Theorems</a>
+        </li>
+        <li>
+          <a href="../../../../../usage/index.html"  >Usage & CLI</a>
+        </li>
+        <li>
+          <a href="../../../../../demos/index.html"  >Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; pappus</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • pappus</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../index.html">Modules</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../constructions/index.html" title="geometor.pappus.constructions">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../projective/index.html" title="geometor.pappus.projective"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.pappus.pascal">
+        <span id="geometor-pappus-pascal"></span><h1>geometor.pappus.pascal<a class="headerlink" href="#module-geometor.pappus.pascal" title="Link to this heading">¶</a></h1>
+        <p>Symbolic DAG constructions and combinatorics for Blaise Pascal’s <em>Hexagrammum Mysticum</em> (1640).</p>
+        <p>Generalizes Pappus’s Hexagon Theorem from a degenerate line-pair $a \cup b$ to six
+        points inscribed on a smooth conic $\mathcal{C}$ (circle or ellipse):</p>
+        <ul class="simple">
+        <li><p><strong>Pascal’s Mystic Hexagram</strong> (<em>Essai pour les coniques</em>, Feb. 1640): for any cyclic
+        6-tuple $\langle P_{c_0}, P_{c_1}, P_{c_2}, P_{c_3}, P_{c_4}, P_{c_5} \rangle$ on a conic,
+        opposite side intersections $M_{03}, M_{14}, M_{25}$ lie on a single <strong>Pascal line</strong>.</p></li>
+        <li><p><strong>Bi-Triangle :math:`S_3` Steiner Family</strong>: partitioning the 6 conic vertices into two
+        complementary triangles $\triangle_A$ and $\triangle_B$ generates 6 alternating hexagons
+        whose 3 even (<span class="math notranslate nohighlight">\(A_3\)</span>) Pascal lines concur at <span class="math notranslate nohighlight">\(G_+\)</span> and whose 3 odd
+        (<span class="math notranslate nohighlight">\(S_3 \setminus A_3\)</span>) Pascal lines concur at <span class="math notranslate nohighlight">\(G_-\)</span>—directly generalizing
+        Pappus’s two Star points <span class="math notranslate nohighlight">\((S_+, S_-)\)</span>!</p></li>
+        <li><p><strong>Complete 60-Line *Hexagrammum Mysticum* Catalog</strong>: exact projective enumeration of all
+        15 chords, 45 diagonal Pascal points, 60 Pascal lines, 20 Jakob Steiner points,
+        60 Thomas Kirkman points, and 15 Julius Plücker lines.</p></li>
+        <li><p><strong>Universal Symbolic Proof &amp; Golden Conic</strong>: exact 6-parameter polynomial proof over
+        $\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]$ and Golden Ratio conic perspectivities over
+        $\mathbb{Q}(\phi)$.</p></li>
+        </ul>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.pascal.Cycle6" title="geometor.pappus.pascal.Cycle6"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cycle6</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.pascal.PASCAL_PRESETS" title="geometor.pappus.pascal.PASCAL_PRESETS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PASCAL_PRESETS</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.pascal.PascalPresetConfig" title="geometor.pappus.pascal.PascalPresetConfig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PascalPresetConfig</span></code></a></p></td>
+        <td><p>Exact coordinate preset for Pascal <em>Hexagrammum Mysticum</em> constructions.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.pascal.PascalHexagonResult" title="geometor.pappus.pascal.PascalHexagonResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PascalHexagonResult</span></code></a></p></td>
+        <td><p>Structured output from <a class="reference internal" href="#geometor.pappus.pascal.construct_pascal_hexagon" title="geometor.pappus.pascal.construct_pascal_hexagon"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_pascal_hexagon()</span></code></a>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.pascal.PascalSteinerFamilyResult" title="geometor.pappus.pascal.PascalSteinerFamilyResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PascalSteinerFamilyResult</span></code></a></p></td>
+        <td><p>Structured output from <a class="reference internal" href="#geometor.pappus.pascal.construct_pascal_steiner_family" title="geometor.pappus.pascal.construct_pascal_steiner_family"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_pascal_steiner_family()</span></code></a>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.pascal.HexagrammumMysticumCatalog" title="geometor.pappus.pascal.HexagrammumMysticumCatalog"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HexagrammumMysticumCatalog</span></code></a></p></td>
+        <td><p>Complete projective catalog of the 60-line <em>Hexagrammum Mysticum</em> configuration.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.pascal.get_pascal_preset" title="geometor.pappus.pascal.get_pascal_preset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_pascal_preset</span></code></a>(name) → PascalPresetConfig</p></td>
+        <td><p>Look up a named Pascal preset in <a class="reference internal" href="#geometor.pappus.pascal.PASCAL_PRESETS" title="geometor.pappus.pascal.PASCAL_PRESETS"><code class="xref py py-data docutils literal notranslate"><span class="pre">PASCAL_PRESETS</span></code></a>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.pascal.canonical_hexagon_cycle" title="geometor.pappus.pascal.canonical_hexagon_cycle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">canonical_hexagon_cycle</span></code></a>(cycle) → Cycle6</p></td>
+        <td><p>Normalize a 6-vertex permutation up to dihedral rotation and reversal ($D_6$).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.pascal.construct_pascal_hexagon" title="geometor.pappus.pascal.construct_pascal_hexagon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_pascal_hexagon</span></code></a>([model, points, cycle, ...]) → PascalHexagonResult</p></td>
+        <td><p>Construct Blaise Pascal's <em>Hexagrammum Mysticum</em> for six points on a conic.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.pascal.construct_pascal_steiner_family" title="geometor.pappus.pascal.construct_pascal_steiner_family"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_pascal_steiner_family</span></code></a>([model, points, ...]) → PascalSteinerFamilyResult</p></td>
+        <td><p>Construct the 6-hexagon <span class="math notranslate nohighlight">\(S_3\)</span> bi-triangle Pascal family and its two Steiner points.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.pascal.enumerate_hexagrammum_mysticum" title="geometor.pappus.pascal.enumerate_hexagrammum_mysticum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enumerate_hexagrammum_mysticum</span></code></a>([points, preset]) → HexagrammumMysticumCatalog</p></td>
+        <td><p>Enumerate and verify the complete 60-line <em>Hexagrammum Mysticum</em> web in $mathbb{P}^2$.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.pascal.verify_pascal_symbolic" title="geometor.pappus.pascal.verify_pascal_symbolic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_pascal_symbolic</span></code></a>() → sympy.Expr</p></td>
+        <td><p>Prove Pascal's <em>Hexagrammum Mysticum</em> universally over $mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]$.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.Cycle6">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">Cycle6</span></span><a class="headerlink" href="#geometor.pappus.pascal.Cycle6" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalPresetConfig">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">PascalPresetConfig</span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalPresetConfig" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact coordinate preset for Pascal <em>Hexagrammum Mysticum</em> constructions.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Variables<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>name</strong> – Identifier key in <a class="reference internal" href="#geometor.pappus.pascal.PASCAL_PRESETS" title="geometor.pappus.pascal.PASCAL_PRESETS"><code class="xref py py-data docutils literal notranslate"><span class="pre">PASCAL_PRESETS</span></code></a>.</p></li>
+        <li><p><strong>title</strong> – Human-readable preset title.</p></li>
+        <li><p><strong>description</strong> – Mathematical and historical significance of the preset.</p></li>
+        <li><p><strong>points</strong> – Six exact points $(P_0, P_1, P_2, P_3, P_4, P_5)$ on the conic.</p></li>
+        <li><p><strong>default_cycle</strong> – Default cyclic ordering of vertex indices <code class="docutils literal notranslate"><span class="pre">0..5</span></code>.</p></li>
+        <li><p><strong>center</strong> – Conic center $(x_0, y_0)$ for circle/ellipse rendering.</p></li>
+        <li><p><strong>rx</strong> – Horizontal semi-axis $a$ of the carrier circle/ellipse.</p></li>
+        <li><p><strong>ry</strong> – Vertical semi-axis $b$ of the carrier circle/ellipse.</p></li>
+        </ul>
+        </dd>
+        </dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalPresetConfig.name">
+        <span class="sig-name descname"><span class="pre">name</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.pappus.pascal.PascalPresetConfig.name" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalPresetConfig.title">
+        <span class="sig-name descname"><span class="pre">title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.pappus.pascal.PascalPresetConfig.title" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalPresetConfig.description">
+        <span class="sig-name descname"><span class="pre">description</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.pappus.pascal.PascalPresetConfig.description" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalPresetConfig.points">
+        <span class="sig-name descname"><span class="pre">points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalPresetConfig.points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalPresetConfig.default_cycle">
+        <span class="sig-name descname"><span class="pre">default_cycle</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#geometor.pappus.pascal.Cycle6" title="geometor.pappus.pascal.Cycle6"><span class="pre">Cycle6</span></a></span><a class="headerlink" href="#geometor.pappus.pascal.PascalPresetConfig.default_cycle" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalPresetConfig.center">
+        <span class="sig-name descname"><span class="pre">center</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalPresetConfig.center" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalPresetConfig.rx">
+        <span class="sig-name descname"><span class="pre">rx</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalPresetConfig.rx" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalPresetConfig.ry">
+        <span class="sig-name descname"><span class="pre">ry</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalPresetConfig.ry" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PASCAL_PRESETS">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">PASCAL_PRESETS</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.pappus.pascal.PascalPresetConfig" title="geometor.pappus.pascal.PascalPresetConfig"><span class="pre">PascalPresetConfig</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PASCAL_PRESETS" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalHexagonResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">PascalHexagonResult</span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalHexagonResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Structured output from <a class="reference internal" href="#geometor.pappus.pascal.construct_pascal_hexagon" title="geometor.pappus.pascal.construct_pascal_hexagon"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_pascal_hexagon()</span></code></a>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Variables<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>model</strong> – Populated <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>.</p></li>
+        <li><p><strong>points</strong> – Six conic vertices $(P_0, P_1, P_2, P_3, P_4, P_5)$.</p></li>
+        <li><p><strong>cycle</strong> – Active 6-cycle $(c_0, c_1, c_2, c_3, c_4, c_5)$.</p></li>
+        <li><p><strong>conic</strong> – Constructed <a class="reference external" href="https://docs.sympy.org/latest/modules/geometry/ellipses.html#sympy.geometry.ellipse.Circle" title="(in SymPy v1.14.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Circle</span></code></a> or <a class="reference external" href="https://docs.sympy.org/latest/modules/geometry/ellipses.html#sympy.geometry.ellipse.Ellipse" title="(in SymPy v1.14.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Ellipse</span></code></a>, if registered.</p></li>
+        <li><p><strong>side_lines</strong> – Six side lines in cyclic order.</p></li>
+        <li><p><strong>meets</strong> – Opposite-side meets <code class="docutils literal notranslate"><span class="pre">{&quot;M03&quot;:</span> <span class="pre">...,</span> <span class="pre">&quot;M14&quot;:</span> <span class="pre">...,</span> <span class="pre">&quot;M25&quot;:</span> <span class="pre">...}</span></code>.</p></li>
+        <li><p><strong>finite_meets</strong> – List of finite opposite-side meets.</p></li>
+        <li><p><strong>pascal_line</strong> – Exact Pascal line joining the opposite-side meets.</p></li>
+        <li><p><strong>hexagon</strong> – Optional inscribed 6-gon <a class="reference external" href="https://docs.sympy.org/latest/modules/geometry/polygons.html#sympy.geometry.polygon.Polygon" title="(in SymPy v1.14.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Polygon</span></code></a>.</p></li>
+        <li><p><strong>is_collinear</strong> – Exact algebraic check that all three opposite-side meets are collinear.</p></li>
+        <li><p><strong>is_coconic</strong> – Exact Veronese determinant check that all six vertices lie on a conic.</p></li>
+        </ul>
+        </dd>
+        </dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalHexagonResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalHexagonResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalHexagonResult.points">
+        <span class="sig-name descname"><span class="pre">points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalHexagonResult.points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalHexagonResult.cycle">
+        <span class="sig-name descname"><span class="pre">cycle</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#geometor.pappus.pascal.Cycle6" title="geometor.pappus.pascal.Cycle6"><span class="pre">Cycle6</span></a></span><a class="headerlink" href="#geometor.pappus.pascal.PascalHexagonResult.cycle" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalHexagonResult.conic">
+        <span class="sig-name descname"><span class="pre">conic</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Ellipse</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.pappus.pascal.PascalHexagonResult.conic" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalHexagonResult.side_lines">
+        <span class="sig-name descname"><span class="pre">side_lines</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Line</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalHexagonResult.side_lines" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalHexagonResult.meets">
+        <span class="sig-name descname"><span class="pre">meets</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalHexagonResult.meets" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalHexagonResult.finite_meets">
+        <span class="sig-name descname"><span class="pre">finite_meets</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalHexagonResult.finite_meets" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalHexagonResult.pascal_line">
+        <span class="sig-name descname"><span class="pre">pascal_line</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalHexagonResult.pascal_line" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalHexagonResult.hexagon">
+        <span class="sig-name descname"><span class="pre">hexagon</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Polygon</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.pappus.pascal.PascalHexagonResult.hexagon" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalHexagonResult.is_collinear">
+        <span class="sig-name descname"><span class="pre">is_collinear</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><a class="headerlink" href="#geometor.pappus.pascal.PascalHexagonResult.is_collinear" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalHexagonResult.is_coconic">
+        <span class="sig-name descname"><span class="pre">is_coconic</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><a class="headerlink" href="#geometor.pappus.pascal.PascalHexagonResult.is_coconic" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">PascalSteinerFamilyResult</span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Structured output from <a class="reference internal" href="#geometor.pappus.pascal.construct_pascal_steiner_family" title="geometor.pappus.pascal.construct_pascal_steiner_family"><code class="xref py py-func docutils literal notranslate"><span class="pre">construct_pascal_steiner_family()</span></code></a>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Variables<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>model</strong> – Populated <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>.</p></li>
+        <li><p><strong>points</strong> – Six conic vertices $(P_0, \dots, P_5)$.</p></li>
+        <li><p><strong>triangle_a</strong> – Vertex indices $(a_0, a_1, a_2)$ of the first inscribed triangle.</p></li>
+        <li><p><strong>triangle_b</strong> – Vertex indices $(b_0, b_1, b_2)$ of the complementary inscribed triangle.</p></li>
+        <li><p><strong>conic</strong> – Constructed circle or ellipse carrier curve.</p></li>
+        <li><p><strong>chords</strong> – Mapping <code class="docutils literal notranslate"><span class="pre">(a_i,</span> <span class="pre">b_j)</span> <span class="pre">-&gt;</span> <span class="pre">Line</span></code> for the 9 cross-chords.</p></li>
+        <li><p><strong>pascal_lines</strong> – Mapping <code class="docutils literal notranslate"><span class="pre">perm</span> <span class="pre">-&gt;</span> <span class="pre">Line</span></code> for all 6 <span class="math notranslate nohighlight">\(S_3\)</span> alternating hexagons.</p></li>
+        <li><p><strong>even_pascal_lines</strong> – Tuple of the 3 even (<span class="math notranslate nohighlight">\(A_3\)</span>) Pascal lines.</p></li>
+        <li><p><strong>odd_pascal_lines</strong> – Tuple of the 3 odd (<span class="math notranslate nohighlight">\(S_3 \setminus A_3\)</span>) Pascal lines.</p></li>
+        <li><p><strong>steiner_even</strong> – Even Steiner concurrency point <span class="math notranslate nohighlight">\(G_+\)</span> (ID <code class="docutils literal notranslate"><span class="pre">&quot;S1&quot;</span></code>), if finite.</p></li>
+        <li><p><strong>steiner_odd</strong> – Odd Steiner concurrency point <span class="math notranslate nohighlight">\(G_-\)</span> (ID <code class="docutils literal notranslate"><span class="pre">&quot;S2&quot;</span></code>), if finite.</p></li>
+        <li><p><strong>steiner_line</strong> – Line <span class="math notranslate nohighlight">\([G_+ G_-]\)</span> joining the two Steiner points, if finite.</p></li>
+        <li><p><strong>harmonic_ranges</strong> – Discovered collinear harmonic tetrads.</p></li>
+        <li><p><strong>golden_sections</strong> – Discovered golden sections.</p></li>
+        </ul>
+        </dd>
+        </dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult.points">
+        <span class="sig-name descname"><span class="pre">points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult.points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult.triangle_a">
+        <span class="sig-name descname"><span class="pre">triangle_a</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult.triangle_a" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult.triangle_b">
+        <span class="sig-name descname"><span class="pre">triangle_b</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult.triangle_b" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult.conic">
+        <span class="sig-name descname"><span class="pre">conic</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Ellipse</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult.conic" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult.chords">
+        <span class="sig-name descname"><span class="pre">chords</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult.chords" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult.pascal_lines">
+        <span class="sig-name descname"><span class="pre">pascal_lines</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><span class="pre">geometor.pappus.constructions.Perm3</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult.pascal_lines" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult.even_pascal_lines">
+        <span class="sig-name descname"><span class="pre">even_pascal_lines</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Line</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult.even_pascal_lines" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult.odd_pascal_lines">
+        <span class="sig-name descname"><span class="pre">odd_pascal_lines</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Line</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult.odd_pascal_lines" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult.steiner_even">
+        <span class="sig-name descname"><span class="pre">steiner_even</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult.steiner_even" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult.steiner_odd">
+        <span class="sig-name descname"><span class="pre">steiner_odd</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult.steiner_odd" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult.steiner_line">
+        <span class="sig-name descname"><span class="pre">steiner_line</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult.steiner_line" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult.harmonic_ranges">
+        <span class="sig-name descname"><span class="pre">harmonic_ranges</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../projective/index.html#geometor.pappus.projective.HarmonicRange" title="geometor.pappus.projective.HarmonicRange"><span class="pre">geometor.pappus.projective.HarmonicRange</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult.harmonic_ranges" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.PascalSteinerFamilyResult.golden_sections">
+        <span class="sig-name descname"><span class="pre">golden_sections</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../projective/index.html#geometor.pappus.projective.GoldenRange" title="geometor.pappus.projective.GoldenRange"><span class="pre">geometor.pappus.projective.GoldenRange</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.PascalSteinerFamilyResult.golden_sections" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.HexagrammumMysticumCatalog">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">HexagrammumMysticumCatalog</span></span><a class="headerlink" href="#geometor.pappus.pascal.HexagrammumMysticumCatalog" title="Link to this definition">¶</a></dt>
+        <dd><p>Complete projective catalog of the 60-line <em>Hexagrammum Mysticum</em> configuration.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Variables<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>points</strong> – Six exact conic vertices $(P_0, \dots, P_5)$.</p></li>
+        <li><p><strong>chords</strong> – Mapping <code class="docutils literal notranslate"><span class="pre">(i,</span> <span class="pre">j)</span> <span class="pre">-&gt;</span> <span class="pre">(a,</span> <span class="pre">b,</span> <span class="pre">c)</span></code> homogeneous line coordinates for all 15 chords.</p></li>
+        <li><p><strong>diagonal_points</strong> – Mapping <code class="docutils literal notranslate"><span class="pre">((i,</span> <span class="pre">j),</span> <span class="pre">(k,</span> <span class="pre">l))</span> <span class="pre">-&gt;</span> <span class="pre">(X,</span> <span class="pre">Y,</span> <span class="pre">Z)</span></code> for all 45 Pascal diagonal points.</p></li>
+        <li><p><strong>pascal_lines</strong> – Mapping <code class="docutils literal notranslate"><span class="pre">canonical_cycle</span> <span class="pre">-&gt;</span> <span class="pre">(a,</span> <span class="pre">b,</span> <span class="pre">c)</span></code> for all 60 Pascal lines.</p></li>
+        <li><p><strong>steiner_points</strong> – Mapping <code class="docutils literal notranslate"><span class="pre">(triangle_a,</span> <span class="pre">parity)</span> <span class="pre">-&gt;</span> <span class="pre">(X,</span> <span class="pre">Y,</span> <span class="pre">Z)</span></code> for all 20 Steiner points.</p></li>
+        <li><p><strong>kirkman_points</strong> – Mapping <code class="docutils literal notranslate"><span class="pre">(cyc_1,</span> <span class="pre">cyc_2,</span> <span class="pre">cyc_3)</span> <span class="pre">-&gt;</span> <span class="pre">(X,</span> <span class="pre">Y,</span> <span class="pre">Z)</span></code> for all 60 Kirkman points.</p></li>
+        <li><p><strong>plucker_lines</strong> – Tuple of 15 homogeneous line triples each incident with 4 Steiner points.</p></li>
+        </ul>
+        </dd>
+        </dl>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.HexagrammumMysticumCatalog.points">
+        <span class="sig-name descname"><span class="pre">points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.HexagrammumMysticumCatalog.points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.HexagrammumMysticumCatalog.chords">
+        <span class="sig-name descname"><span class="pre">chords</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">HomVec3</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.HexagrammumMysticumCatalog.chords" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.HexagrammumMysticumCatalog.diagonal_points">
+        <span class="sig-name descname"><span class="pre">diagonal_points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">HomVec3</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.HexagrammumMysticumCatalog.diagonal_points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.HexagrammumMysticumCatalog.pascal_lines">
+        <span class="sig-name descname"><span class="pre">pascal_lines</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.pappus.pascal.Cycle6" title="geometor.pappus.pascal.Cycle6"><span class="pre">Cycle6</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">HomVec3</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.HexagrammumMysticumCatalog.pascal_lines" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.HexagrammumMysticumCatalog.steiner_points">
+        <span class="sig-name descname"><span class="pre">steiner_points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">HomVec3</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.HexagrammumMysticumCatalog.steiner_points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.HexagrammumMysticumCatalog.kirkman_points">
+        <span class="sig-name descname"><span class="pre">kirkman_points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.pappus.pascal.Cycle6" title="geometor.pappus.pascal.Cycle6"><span class="pre">Cycle6</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.pappus.pascal.Cycle6" title="geometor.pappus.pascal.Cycle6"><span class="pre">Cycle6</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.pappus.pascal.Cycle6" title="geometor.pappus.pascal.Cycle6"><span class="pre">Cycle6</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">HomVec3</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.HexagrammumMysticumCatalog.kirkman_points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.HexagrammumMysticumCatalog.plucker_lines">
+        <span class="sig-name descname"><span class="pre">plucker_lines</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">HomVec3</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.HexagrammumMysticumCatalog.plucker_lines" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.get_pascal_preset">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">get_pascal_preset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.pappus.pascal.PascalPresetConfig" title="geometor.pappus.pascal.PascalPresetConfig"><span class="pre">PascalPresetConfig</span></a></span></span><a class="headerlink" href="#geometor.pappus.pascal.get_pascal_preset" title="Link to this definition">¶</a></dt>
+        <dd><p>Look up a named Pascal preset in <a class="reference internal" href="#geometor.pappus.pascal.PASCAL_PRESETS" title="geometor.pappus.pascal.PASCAL_PRESETS"><code class="xref py py-data docutils literal notranslate"><span class="pre">PASCAL_PRESETS</span></code></a>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>name</strong> – Preset key (<code class="docutils literal notranslate"><span class="pre">&quot;hexagrammum&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;convex&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;ellipse&quot;</span></code>, or <code class="docutils literal notranslate"><span class="pre">&quot;golden_conic&quot;</span></code>).</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Matching <a class="reference internal" href="#geometor.pappus.pascal.PascalPresetConfig" title="geometor.pappus.pascal.PascalPresetConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">PascalPresetConfig</span></code></a>.</p>
+        </dd>
+        <dt class="field-odd">Raises<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/exceptions.html#KeyError" title="(in Python v3.13)"><strong>KeyError</strong></a> – If <code class="docutils literal notranslate"><span class="pre">name</span></code> is unknown.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.canonical_hexagon_cycle">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">canonical_hexagon_cycle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cycle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.pappus.pascal.Cycle6" title="geometor.pappus.pascal.Cycle6"><span class="pre">Cycle6</span></a></span></span><a class="headerlink" href="#geometor.pappus.pascal.canonical_hexagon_cycle" title="Link to this definition">¶</a></dt>
+        <dd><p>Normalize a 6-vertex permutation up to dihedral rotation and reversal ($D_6$).</p>
+        <p>Rotates <code class="docutils literal notranslate"><span class="pre">cycle</span></code> so <code class="docutils literal notranslate"><span class="pre">0</span></code> appears first and picks the lexicographically smaller
+        orientation between <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">c1,</span> <span class="pre">c2,</span> <span class="pre">c3,</span> <span class="pre">c4,</span> <span class="pre">c5)</span></code> and <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">c5,</span> <span class="pre">c4,</span> <span class="pre">c3,</span> <span class="pre">c2,</span> <span class="pre">c1)</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>cycle</strong> – Permutation of <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5)</span></code>.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Canonical 6-tuple representative among the $6! / 12 = 60$ distinct hexagons.</p>
+        </dd>
+        <dt class="field-odd">Raises<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/exceptions.html#ValueError" title="(in Python v3.13)"><strong>ValueError</strong></a> – If <code class="docutils literal notranslate"><span class="pre">cycle</span></code> is not a permutation of <code class="docutils literal notranslate"><span class="pre">0..5</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.construct_pascal_hexagon">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">construct_pascal_hexagon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">PointInput</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cycle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">preset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'hexagrammum'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_conic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_hexagon</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enable_divine</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.pappus.pascal.PascalHexagonResult" title="geometor.pappus.pascal.PascalHexagonResult"><span class="pre">PascalHexagonResult</span></a></span></span><a class="headerlink" href="#geometor.pappus.pascal.construct_pascal_hexagon" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Blaise Pascal’s <em>Hexagrammum Mysticum</em> for six points on a conic.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>model</strong> – Optional existing <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>; created if <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+        <li><p><strong>points</strong> – Optional sequence of 6 coconic points; defaults to <code class="docutils literal notranslate"><span class="pre">preset</span></code>.</p></li>
+        <li><p><strong>cycle</strong> – Optional cyclic ordering of <code class="docutils literal notranslate"><span class="pre">0..5</span></code>; defaults to the preset’s <code class="docutils literal notranslate"><span class="pre">default_cycle</span></code>.</p></li>
+        <li><p><strong>preset</strong> – Key in <a class="reference internal" href="#geometor.pappus.pascal.PASCAL_PRESETS" title="geometor.pappus.pascal.PASCAL_PRESETS"><code class="xref py py-data docutils literal notranslate"><span class="pre">PASCAL_PRESETS</span></code></a> used when <code class="docutils literal notranslate"><span class="pre">points</span></code> is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+        <li><p><strong>include_conic</strong> – If True and carrier circle/ellipse parameters are known, register the conic.</p></li>
+        <li><p><strong>include_hexagon</strong> – If True, register the 6-gon polygon <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">P_c0</span> <span class="pre">...</span> <span class="pre">P_c5</span> <span class="pre">&gt;</span></code>.</p></li>
+        <li><p><strong>enable_divine</strong> – If True, attach <code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.divine</span></code> golden section hook.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Populated <a class="reference internal" href="#geometor.pappus.pascal.PascalHexagonResult" title="geometor.pappus.pascal.PascalHexagonResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">PascalHexagonResult</span></code></a>.</p>
+        </dd>
+        <dt class="field-odd">Raises<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/exceptions.html#ValueError" title="(in Python v3.13)"><strong>ValueError</strong></a> – If fewer/more than 6 distinct coconic points are provided or if
+        two or more opposite-side pairs are parallel.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.construct_pascal_steiner_family">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">construct_pascal_steiner_family</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">PointInput</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">preset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'hexagrammum'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">triangle_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(0,</span> <span class="pre">2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">triangle_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(1,</span> <span class="pre">3,</span> <span class="pre">5)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_conic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scan_harmonics</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enable_divine</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.pappus.pascal.PascalSteinerFamilyResult" title="geometor.pappus.pascal.PascalSteinerFamilyResult"><span class="pre">PascalSteinerFamilyResult</span></a></span></span><a class="headerlink" href="#geometor.pappus.pascal.construct_pascal_steiner_family" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct the 6-hexagon <span class="math notranslate nohighlight">\(S_3\)</span> bi-triangle Pascal family and its two Steiner points.</p>
+        <p>Partitions the 6 conic vertices into $\triangle_A = (P_{a_0}, P_{a_1}, P_{a_2})$ and
+        $\triangle_B = (P_{b_0}, P_{b_1}, P_{b_2})$. Permuting $\triangle_B$ by $\sigma \in S_3$
+        forms 6 alternating hexagons $\langle A_0, B_{\sigma_0}, A_1, B_{\sigma_1}, A_2, B_{\sigma_2} \rangle$
+        whose 3 even (<span class="math notranslate nohighlight">\(A_3\)</span>) Pascal lines concur at <span class="math notranslate nohighlight">\(G_+\)</span> (ID <code class="docutils literal notranslate"><span class="pre">&quot;S1&quot;</span></code>) and whose
+        3 odd (<span class="math notranslate nohighlight">\(S_3 \setminus A_3\)</span>) Pascal lines concur at <span class="math notranslate nohighlight">\(G_-\)</span> (ID <code class="docutils literal notranslate"><span class="pre">&quot;S2&quot;</span></code>).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>model</strong> – Optional existing <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>.</p></li>
+        <li><p><strong>points</strong> – Optional sequence of 6 coconic points; defaults to <code class="docutils literal notranslate"><span class="pre">preset</span></code>.</p></li>
+        <li><p><strong>preset</strong> – Key in <a class="reference internal" href="#geometor.pappus.pascal.PASCAL_PRESETS" title="geometor.pappus.pascal.PASCAL_PRESETS"><code class="xref py py-data docutils literal notranslate"><span class="pre">PASCAL_PRESETS</span></code></a> used when <code class="docutils literal notranslate"><span class="pre">points</span></code> is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+        <li><p><strong>triangle_a</strong> – Indices $(a_0, a_1, a_2)$ of the first inscribed triangle.</p></li>
+        <li><p><strong>triangle_b</strong> – Complementary indices $(b_0, b_1, b_2)$ of the second triangle.</p></li>
+        <li><p><strong>include_conic</strong> – If True, register the carrier circle or ellipse.</p></li>
+        <li><p><strong>scan_harmonics</strong> – If True, scan the configuration for collinear harmonic tetrads.</p></li>
+        <li><p><strong>enable_divine</strong> – If True, attach <code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.divine</span></code> and scan golden sections.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Populated <a class="reference internal" href="#geometor.pappus.pascal.PascalSteinerFamilyResult" title="geometor.pappus.pascal.PascalSteinerFamilyResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">PascalSteinerFamilyResult</span></code></a>.</p>
+        </dd>
+        <dt class="field-odd">Raises<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/exceptions.html#ValueError" title="(in Python v3.13)"><strong>ValueError</strong></a> – If <code class="docutils literal notranslate"><span class="pre">triangle_a</span></code> and <code class="docutils literal notranslate"><span class="pre">triangle_b</span></code> do not partition <code class="docutils literal notranslate"><span class="pre">0..5</span></code> or
+        points are not coconic.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.enumerate_hexagrammum_mysticum">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">enumerate_hexagrammum_mysticum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">PointInput</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">preset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'hexagrammum'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.pappus.pascal.HexagrammumMysticumCatalog" title="geometor.pappus.pascal.HexagrammumMysticumCatalog"><span class="pre">HexagrammumMysticumCatalog</span></a></span></span><a class="headerlink" href="#geometor.pappus.pascal.enumerate_hexagrammum_mysticum" title="Link to this definition">¶</a></dt>
+        <dd><p>Enumerate and verify the complete 60-line <em>Hexagrammum Mysticum</em> web in $\mathbb{P}^2$.</p>
+        <p>Computes in exact homogeneous coordinates:</p>
+        <ol class="arabic simple">
+        <li><p><strong>15 Chords</strong> $[P_i P_j]$ ($0 \le i &lt; j \le 5$).</p></li>
+        <li><p><strong>45 Diagonal Pascal Points</strong> $[P_i P_j] \cap [P_k P_l]$ on disjoint vertex pairs.</p></li>
+        <li><p><strong>60 Pascal Lines</strong> across all $6! / 12 = 60$ cyclic hexagons, verifying 3-point collinearity.</p></li>
+        <li><p><strong>20 Jakob Steiner Points</strong> ($10$ triangle partitions $\times 2$ <span class="math notranslate nohighlight">\(S_3\)</span> parities),
+        verifying 3-line concurrency at each point.</p></li>
+        <li><p><strong>60 Thomas Kirkman Points</strong>, verifying 3-line concurrency on each syntheme Kirkman triple.</p></li>
+        <li><p><strong>15 Julius Plücker Lines</strong>, each carrying 4 of the 20 Steiner points.</p></li>
+        </ol>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>points</strong> – Optional sequence of 6 coconic points; defaults to <code class="docutils literal notranslate"><span class="pre">preset</span></code>.</p></li>
+        <li><p><strong>preset</strong> – Key in <a class="reference internal" href="#geometor.pappus.pascal.PASCAL_PRESETS" title="geometor.pappus.pascal.PASCAL_PRESETS"><code class="xref py py-data docutils literal notranslate"><span class="pre">PASCAL_PRESETS</span></code></a> used when <code class="docutils literal notranslate"><span class="pre">points</span></code> is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Populated <a class="reference internal" href="#geometor.pappus.pascal.HexagrammumMysticumCatalog" title="geometor.pappus.pascal.HexagrammumMysticumCatalog"><code class="xref py py-class docutils literal notranslate"><span class="pre">HexagrammumMysticumCatalog</span></code></a>.</p>
+        </dd>
+        <dt class="field-odd">Raises<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/exceptions.html#ValueError" title="(in Python v3.13)"><strong>ValueError</strong></a> – If fewer/more than 6 distinct coconic points are given.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.pappus.pascal.verify_pascal_symbolic">
+        <span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">verify_pascal_symbolic</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.verify_pascal_symbolic" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove Pascal’s <em>Hexagrammum Mysticum</em> universally over $\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]$.</p>
+        <p>Parameterizes six generic points on the projective conic $X^2 + Y^2 = Z^2$ via
+        $P_k = [1 - t_k^2 : 2 t_k : 1 + t_k^2]$, computes the three opposite-side meets
+        $M_{03}, M_{14}, M_{25}$ via 3D vector cross products, and expands the $3 \times 3$
+        collinearity determinant $\det[M_{03}, M_{14}, M_{25}]$, returning <code class="docutils literal notranslate"><span class="pre">0</span></code> identically.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Simplified SymPy polynomial expression (identically <code class="docutils literal notranslate"><span class="pre">sp.Integer(0)</span></code>).</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../constructions/index.html" title="geometor.pappus.constructions">&larr; <span class="nav-label">geometor.pappus.constructions</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • pappus</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../projective/index.html" title="geometor.pappus.projective"><span class="nav-label">geometor.pappus.projective</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../log/26.315-modernize-pappus/index.html">2026 Modernization: Pappus, Pascal’s Hexagrammum Mysticum & Interactive Dossiers</a></li>
+        <li><a href="../../../../../log/22.356-152519.html">Welcome</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/log.html">log</a></li>
+        <li><a href="../../../../../types/theorem.html">theorem</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../index.html" class="is-active" aria-selected="true" >Modules</a></li>
+        <li><a href="../../../../../refs/index.html"  >References</a></li>
+        <li><a href="../../../../../changelog.html"  >Changelog</a></li>
+        <li><a href="../../../../../log/index.html"  >Log</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

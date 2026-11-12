@@ -1,0 +1,72 @@
+geometor.pappus.__main__
+========================
+
+.. py:module:: geometor.pappus.__main__
+
+.. autoapi-nested-parse::
+
+   Command-line interface for ``geometor.pappus``.
+
+   Provides ``pappus build`` (reproducibly generating all interactive SVG figures),
+   ``pappus inspect`` (reporting exact SymPy coordinates, Pappus lines, and Steiner
+   star points), and ``pappus harmonics`` (scanning configurations for exact
+   harmonic ranges and golden sections).
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.pappus.__main__.build_gallery
+   geometor.pappus.__main__.cmd_build
+   geometor.pappus.__main__.cmd_inspect
+   geometor.pappus.__main__.cmd_harmonics
+   geometor.pappus.__main__.cmd_pascal
+   geometor.pappus.__main__.build_parser
+   geometor.pappus.__main__.main
+
+
+Module Contents
+---------------
+
+.. py:function:: build_gallery(output_dir: str | pathlib.Path = 'docsrc/_static/constructions') -> list[pathlib.Path]
+
+   Generate the complete gallery of interactive SVG diagrams for documentation.
+
+   :param output_dir: Directory into which SVG files will be written.
+
+   :returns: List of resolved :class:`~pathlib.Path` objects for generated SVGs.
+
+
+.. py:function:: cmd_build(args: argparse.Namespace, console: rich.console.Console) -> int
+
+   Execute ``pappus build``.
+
+
+.. py:function:: cmd_inspect(args: argparse.Namespace, console: rich.console.Console) -> int
+
+   Execute ``pappus inspect``.
+
+
+.. py:function:: cmd_harmonics(args: argparse.Namespace, console: rich.console.Console) -> int
+
+   Execute ``pappus harmonics``.
+
+
+.. py:function:: cmd_pascal(args: argparse.Namespace, console: rich.console.Console) -> int
+
+   Execute ``pappus pascal``.
+
+
+.. py:function:: build_parser() -> argparse.ArgumentParser
+
+   Build the ``pappus`` CLI argument parser.
+
+
+.. py:function:: main(argv: Sequence[str] | None = None) -> int
+
+   Entry point for the ``pappus`` CLI.
+
+
