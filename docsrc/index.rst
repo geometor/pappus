@@ -1,5 +1,5 @@
-pappus
-======
+GEOMETOR • pappus
+=================
 
 .. include:: intro.rst
 
@@ -34,6 +34,12 @@ exact algebraic summaries, philological notes, and interactive ``:g:`` vector di
      - **Architectonic Mechanics**, Archimedes's Lever Saying, Hero's *Baroulkos* & **Seven Hexagons in a Circle** ($R = s_6\sqrt{7}$)
      - :doc:`Book VIII Codex <synagoge/book-8-mechanics/book-8-mechanics-en>`
 
+* **Synchronized 5-Track Book Codex**: :doc:`Table of Contents <synagoge/index>` · :doc:`Unit I <synagoge/book-3-three-means/book-3-three-means-en>` · :doc:`Unit II <synagoge/book-4-area-and-arbelos/book-4-area-and-arbelos-en>` · :doc:`Unit III <synagoge/book-5-sagacity-of-bees/book-5-sagacity-of-bees-en>` · :doc:`Unit IV <synagoge/book-7-domain-of-analysis/book-7-domain-of-analysis-en>` · :doc:`Unit V <synagoge/book-8-mechanics/book-8-mechanics-en>`.
+* **Scholarly Apparatus**: :doc:`People <synagoge/persons>` · :doc:`Bibliography <synagoge/bibliography>` · :doc:`Concordance <synagoge/concordance>` · :doc:`Glossary <synagoge/glossary>`.
+* **Reader's Guide**: :doc:`Using This Edition <usage/index>` for track navigation, search highlights, and interactive diagrams.
+
+----
+
 Projective Theorems & Explorations
 ----------------------------------
 
@@ -41,3 +47,12 @@ Projective Theorems & Explorations
    :type: theorem
    :sort: order
    :recursive:
+
+.. toctree::
+   :hidden:
+
+   synagoge/index
+   theorems/index
+   usage/index
+   demos/index
+   mission/index

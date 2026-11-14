@@ -1,27 +1,31 @@
 :navigation: header
-:order: 5
+:order: 1
 :layout: book
-:book_title: Synagoge (Μαθηματικὴ Συναγωγή)
-:book_subtitle: Pappus of Alexandria · Books III, IV, V, VII & VIII · Hultsch Greek, Original Translation & Exact Symbolic Synthesis
+:nav_title: Synagoge
+:book_title: Synagoge (Mathematical Collection)
+:book_subtitle: Μαθηματικὴ Συναγωγή — Pappus of Alexandria (Books III, IV, V, VII & VIII, ed. Hultsch)
 
 .. _synagoge-codex:
 
-============================================================
-Synagoge (*Μαθηματικὴ Συναγωγή*) — Multi-Track Book Codex
-============================================================
+Synagoge
+========
 
-.. rubric:: :person:`Pappus of Alexandria <pappus>` (fl. c. 320–340 CE) · Critical Greek Text (:person:`Friedrich Hultsch <hultsch>`, 1876–1878) · Original GEOMETOR English Translation · Exact ``SymPy`` / ``geometor.model`` Demonstrations
+.. rubric:: *Μαθηματικὴ Συναγωγή* (*Mathematical Collection*) — Pappus of Alexandria
 
-Around **340 CE** in Alexandria, :person:`Pappus <pappus>` gathered seven centuries of classical and Hellenistic geometry into his eight-book :term:`Synagoge <synagoge>` (*Mathematical Collection*). Far more than an encyclopedic compiler, Pappus repaired lost demonstrations, classified geometric problems into :term:`plane, solid, and linear loci <topos-epipedos-stereos-grammikos>`, generalized :person:`Euclid's <euclid>` Pythagorean area theorem to arbitrary parallelograms, proved the invariant altitude law of the :term:`arbelos <arbelos>` tangent circle chain, demonstrated the :term:`isoperimetric <isoperimetros>` optimality of the honeycomb, preserved the 33-book :term:`Treasury of Analysis <topos-analyomenos>` alongside the **Pappus–Guldinus Centroid Rule**, and established the **Cross-Ratio** and **Hexagon Collinearity Theorems** that birthed modern projective geometry.
+.. container:: title-page
 
-Each treatise unit in this **Multi-Track Book Codex** synchronizes **four parallel tracks**:
+   | :person:`PAPPUS OF ALEXANDRIA <pappus>`
+   | *(fl. c. 320–340 CE · Alexandria, Roman Egypt)*
+   |
+   | **MATHEMATICAL COLLECTION (SYNAGOGE)**
+   | *(Μαθηματικὴ Συναγωγή / Collectio Mathematica)*
+   | Books III, IV, V, VII & VIII · 5 Synchronized Units
+   | Critical Greek Text of Friedrich Hultsch (:cite:`1876–1878 <hultsch:1876>`) & Commandino Latin Collation (:cite:`1558 <commandino:1588>`)
+   | Original English Translation, Analytical Summaries & Exact Symbolic Models
 
-1. **English** (``-en``) — Fresh, complete scholarly translation authored directly from :cite:`Hultsch's 1876–1878 <hultsch:1876>` critical Greek text, wired with interactive ``:g:`` vector diagrams.
-2. **Greek (Hultsch 1876)** (``-el``) — Diplomatic polytonic Greek text from Weidmann Vols. I–III (:cite:`1876 <hultsch:1876>`, :cite:`1877 <hultsch:1877>`, :cite:`1878 <hultsch:1878>`), keyed by Hultsch page and proposition numbers and wired to the same interactive SVGs.
-3. **Summary** (``-summary``) — Concise structural argument map, exact algebraic invariants, and ``geometor.pappus`` construction audit.
-4. **Notes** (``-notes``) — Philological commentary, :cite:`Commandino (1588) <commandino:1588>` and :cite:`Heath (1921) <heath:1921>` reception notes, and cross-corpus links to ``euclid``, ``elements``, ``apollonius``, ``archimedes``, ``ptolemy``, ``proclus``, and ``hilbert``.
+----
 
-Conspectus Operis
+Table of Contents
 -----------------
 
 .. list-table::
@@ -66,7 +70,7 @@ Scholarly Apparatus
 
 * :doc:`concordance` — Bidirectional mapping across Hultsch pagination, sister **GEOMETOR** codices, and ``geometor.pappus`` symbolic modules.
 * :doc:`bibliography` — Critical editions, ancient treatises of the *Treasury of Analysis*, and modern projective literature.
-* :doc:`persons` — *Index Nominum* of classical, Hellenistic, late-antique, and modern geometers.
+* :doc:`persons` — Biographical register of classical, Hellenistic, late-antique, and modern geometers.
 * :doc:`glossary` — Polytonic Greek & Latin technical mathematical lexicon.
 
 .. toctree::
