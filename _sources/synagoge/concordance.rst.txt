@@ -1,10 +1,13 @@
-:order: 70
+:navigation: footer
+:nav_title: Concordance
 :type: apparatus
+:title: Concordance — Hultsch Citation & Symbolic Concordance
 
 .. _codex-concordance:
+.. _concordance:
 
-Hultsch Citation & Symbolic Concordance
-=======================================
+Concordance
+===========
 
 Bidirectional concordance mapping :person:`Friedrich Hultsch's <hultsch>` pagination across **Books II–VIII** of :person:`Pappus's <pappus>` *Synagoge* (:cite:`Vols. I–III, 1876–1878 <hultsch:1876>`) to:
 

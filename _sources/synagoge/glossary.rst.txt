@@ -1,10 +1,13 @@
-:order: 73
+:navigation: footer
+:nav_title: Glossary
 :type: apparatus
+:title: Glossary — Greek Mathematical & Mechanical Glossary
 
 .. _codex-glossary:
+.. _glossary:
 
-Greek Mathematical & Mechanical Glossary
-========================================
+Glossary
+========
 
 Lexicon of all **16** technical Greek and Latin concepts across Books II–VIII of :person:`Pappus's <pappus>` *Synagoge*. Every ``:term:`` reference in the Codex resolves directly to its anchor below.
 

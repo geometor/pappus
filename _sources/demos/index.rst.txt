@@ -1,5 +1,6 @@
 :navigation: header
-:order: 30
+:order: 25
+:nav_title: Demos
 
 Demos
 =====
