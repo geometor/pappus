@@ -1,5 +1,6 @@
 :navigation: header
-:order: 10
+:order: 15
+:nav_title: Theorems
 
 Theorems
 ========

@@ -1,10 +1,14 @@
-:order: 71
+:navigation: header
+:order: 6
+:nav_title: Bibliography
 :type: apparatus
+:title: Bibliography — Primary Editions & Sources
 
 .. _codex-bibliography:
+.. _bibliography:
 
-Bibliography & Primary Sources
-==============================
+Bibliography
+============
 
 Critical register of **100% public-domain** primary editions, Renaissance and modern translations, classical treatises summarized in the *Synagoge*, and projective descendants. Every ``:cite:`` reference in the Codex resolves directly to its anchor below.
 

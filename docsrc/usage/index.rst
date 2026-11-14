@@ -1,8 +1,67 @@
 :navigation: header
 :order: 20
+:nav_title: Usage
 
-Usage & CLI
-===========
+.. _usage:
+
+Using This Edition
+==================
+
+.. rubric:: *Reader's Guide to the GEOMETOR Interactive Digital Codex of Pappus's Synagoge*
+
+Welcome to the **GEOMETOR Digital Scriptorium** edition of :person:`Pappus of Alexandria's <pappus>` *Synagoge* (*Μαθηματικὴ Συναγωγή*). This edition unites Friedrich Hultsch's critical Weidmann Greek text, complete scholarly English translations, and 100% exact symbolic models of classical and projective geometry.
+
+----
+
+1. Synchronized Reading Tracks
+------------------------------
+
+The *Synagoge* Book Codex features four synchronized reading tracks accessible directly in the header bar of each proposition page:
+
+* **English (``-en``)**: Fresh scholarly translation of Pappus's Greek text, wired with interactive vector diagrams and mathematical commentary.
+* **Greek (``-el``)**: Verbatim polytonic Greek text from :person:`Friedrich Hultsch's <hultsch>` critical edition (:cite:`1876–1878 <hultsch:1876>`), keyed by Hultsch page and proposition numbering.
+* **Summary (``-summary``)**: Structural summaries mapping proposition goals, algebraic invariants, and lemma dependencies.
+* **Notes (``-notes``)**: Philological commentary, historical reception from :person:`Commandino <commandino>` (:cite:`1588 <commandino:1588>`) to :person:`Heath <heath>` (:cite:`1921 <heath:1921>`), and cross-corpus links.
+
+2. Primary-Source Folio Milestones
+----------------------------------
+
+* **Hultsch Volumes & Pages**: Clickable marginal markers link directly to Hultsch's three-volume Weidmann edition (*Codex Vaticanus Graecus* 218).
+* **Commandino (1588)**: Loci correlate with the Renaissance Latin *editio princeps*.
+
+3. Theorems & Exact Symbolic Models
+-----------------------------------
+
+Every diagram is generated dynamically with **zero floating-point approximations** over :math:`\mathbb{Q}` and :math:`\mathbb{Q}(\phi)`:
+
+* **Geometric Elements (``:g:``)**: Hovering or clicking points, lines, circles, or conics in the text highlights matching elements in the interactive SVG graphic.
+* **Mathematical Invariants (``:eq:``)**: Formal verification of cross-ratio invariance :math:`(A, B; C, D) = (A', B'; C', D')`, harmonic division :math:`-1`, Pappus line collinearity, and honeycomb area ratios.
+* **Euclidean Justifications (``:just:``)**: Explicit deductive links cite dependencies in Euclid's *Elements* (:cite:`Heath 1926 <heath:1926>`).
+
+4. Full-Text Search with In-Page Highlighting
+---------------------------------------------
+
+* The built-in search engine indexes polytonic Greek technical terms, Latin terminology, and modern mathematical concepts.
+* Query URLs append ``?highlight=`` to highlight matched terms directly inside the chapter text.
+
+5. Categories, Tags & Collection Views
+--------------------------------------
+
+* Explore projective theorems, arbelos chains, means, and isoperimetry through structured taxonomy facets.
+* Switch between **Cards**, **Banners**, and **List** views on collection pages.
+
+6. Scholarly Hover Cards & Dark Mode
+------------------------------------
+
+* **Prosopography (``:person:``)**: Hover cards provide biographical dates and historical contexts for all 26 figures.
+* **Bibliography (``:cite:``)**: Citations display full bibliographic records and public-domain library links.
+* **Glossary (``:term:``)**: Hover over technical terms for multilingual definitions.
+* **Theme Toggle**: Light and Dark reading modes.
+
+----
+
+Python API & Command-Line Interface
+-----------------------------------
 
 Installation
 ------------

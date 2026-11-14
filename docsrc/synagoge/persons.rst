@@ -1,21 +1,52 @@
-:order: 72
+:navigation: header
+:order: 5
+:nav_title: People
 :type: apparatus
+:title: People — Index of Geometers, Commentators & Editors
 
 .. _codex-persons:
+.. _persons:
 
-Index Nominum (Persons)
-=======================
+People
+======
 
-Prosopographical register of all **26** ancient geometers, fourth-century Alexandrian dedicatees, mechanicians, commentators, and modern geometers referenced across the *Synagoge* Codex. Every ``:person:`` reference resolves directly to its anchor below.
+.. rubric:: *Authors, Translators, Editors, and Classical Geometers*
 
-Pappus & His Fourth-Century Alexandrian Circle
-----------------------------------------------
+Prosopographical register of all **26** ancient geometers, fourth-century Alexandrian dedicatees, mechanicians, commentators, and modern geometers referenced across the *Synagoge* Codex. Every inline ``:person:`` reference resolves directly to its ``#person-<slug>`` anchor below.
+
+----
+
+Authors, Translators & Editors
+------------------------------
 
 .. _person-pappus:
 
 **Pappus of Alexandria** (*Πάππος ὁ Ἀλεξανδρεύς*) — fl. c. 320–340 CE
-  Last great synthetic geometer of Greek antiquity; compiled the eight-book *Synagoge* preserving and extending the *Treasury of Analysis*, projective cross-ratio and hexagon theorems, arbelos circle chains, honeycomb isoperimetry, and Alexandrian mechanics.
+  Author of the *Synagoge*; last great synthetic geometer of Greek antiquity; compiled the eight-book *Synagoge* preserving and extending the *Treasury of Analysis*, projective cross-ratio and hexagon theorems, arbelos circle chains, honeycomb isoperimetry, and Alexandrian mechanics.
   *Hultsch loci*: I–III passim (pp. 2–1115).
+
+.. _person-hultsch:
+
+**Friedrich Otto Hultsch** — 1833–1906
+  Editor of the definitive 3-volume Weidmann Greek text (1876–1878), apparatus criticus from *Codex Vaticanus Graecus* 218, parallel Latin translation, and *Index Graecitatis* for Pappus's *Synagoge*.
+  *Edition*: Berlin 1876–1878.
+
+.. _person-commandino:
+
+**Federico Commandino** — 1509–1575
+  Translated Books III–VIII of Pappus's *Synagoge* into Latin with geometric diagrams and commentary (published posthumously at Pesaro in 1588), igniting the seventeenth-century rebirth of analytic and projective geometry.
+  *Edition*: Pesaro 1588.
+
+.. _person-heath:
+
+**Sir Thomas Little Heath** — 1861–1940
+  Authored the comprehensive public-domain English mathematical exposition of Pappus's *Collection* in *History of Greek Mathematics* Vol. II (1921) and cross-referenced Hultsch's Pappus throughout ``geometor/euclid``.
+  *Locus*: Heath 1921 II pp. 355–439.
+
+----
+
+Cited Geometers, Philosophers & Scholars
+----------------------------------------
 
 .. _person-pandrosion:
 
@@ -40,9 +71,6 @@ Pappus & His Fourth-Century Alexandrian Circle
 **Hierius** (*Ἱέριος*) — fl. c. 330 CE
   Philosopher and friend of Pappus who proposed mean-proportional constructions examined in Book III.
   *Hultsch loci*: I p. 68.
-
-Classical, Hellenistic & Imperial Greek Authorities
----------------------------------------------------
 
 .. _person-dinostratus:
 
@@ -116,15 +144,6 @@ Classical, Hellenistic & Imperial Greek Authorities
   Neoplatonic scholarch and author of *Commentary on Euclid Book I* (``geometor/proclus``); preserves Pappus's symmetry proof of *Elements* `I.5` and complements *Synagoge* VII on analysis and porisms.
   *Hultsch loci*: cf. Friedlein 189, 197, 249–250, 429.
 
-Renaissance & Modern Editors and Geometers
-------------------------------------------
-
-.. _person-commandino:
-
-**Federico Commandino** — 1509–1575
-  Translated Books III–VIII of Pappus's *Synagoge* into Latin with geometric diagrams and commentary (published posthumously at Pesaro in 1588), igniting the seventeenth-century rebirth of analytic and projective geometry.
-  *Edition*: Pesaro 1588.
-
 .. _person-guldin:
 
 **Paul Guldin, S.J.** — 1577–1643
@@ -155,20 +174,8 @@ Renaissance & Modern Editors and Geometers
   Proved that the six $S_3$ permutations of Pappus's hexagon generate six Pappus lines concurring three-by-three at two Steiner Star points, and extended Pascal's 60 lines into 20 Steiner points (1832).
   *Locus*: cf. II pp. 884–889.
 
-.. _person-hultsch:
-
-**Friedrich Otto Hultsch** — 1833–1906
-  Established the definitive 3-volume Weidmann Greek text (1876–1878), apparatus criticus from *Codex Vaticanus Graecus* 218, parallel Latin translation, and *Index Graecitatis* for Pappus's *Synagoge*.
-  *Edition*: Berlin 1876–1878.
-
 .. _person-hilbert:
 
 **David Hilbert** — 1862–1943
   Proved in *Grundlagen der Geometrie* (1899; ``geometor/hilbert``) that in an incidence plane Pappus's Hexagon Theorem holds if and only if coordinate multiplication is commutative.
   *Locus*: cf. II pp. 886–889.
-
-.. _person-heath:
-
-**Sir Thomas Little Heath** — 1861–1940
-  Authored the comprehensive public-domain English mathematical exposition of Pappus's *Collection* in *History of Greek Mathematics* Vol. II (1921) and cross-referenced Hultsch's Pappus throughout ``geometor/euclid``.
-  *Locus*: Heath 1921 II pp. 355–439.
