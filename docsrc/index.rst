@@ -55,4 +55,4 @@ Projective Theorems & Explorations
    theorems/index
    usage/index
    demos/index
-   mission/index
+   about/index
