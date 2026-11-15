@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=99410eb1" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=f442dd77" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
@@ -144,9 +144,39 @@
         M_{25} = \left(\frac{9}{5},\, \frac{8}{5}\right),\]</div>
         <p>aligned along the exact Pascal line $25x - 35y + 11 = 0$:</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 480" data-graphic-id="g1" role="img" aria-label="Pascal&#x27;s Hexagrammum Mysticum (1640) on the Unit Circle">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="g1" role="img" aria-label="Pascal&#x27;s Hexagrammum Mysticum (1640) on the Unit Circle" width="680" height="480" data-svg-scope="s-ac20cc5c">
+          <style>
+            svg[data-svg-scope="s-ac20cc5c"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ac20cc5c"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-ac20cc5c"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-ac20cc5c"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-ac20cc5c"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-ac20cc5c"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-ac20cc5c"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-ac20cc5c"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-ac20cc5c"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-ac20cc5c"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-ac20cc5c"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-ac20cc5c"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-ac20cc5c"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-ac20cc5c"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-ac20cc5c"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75 }
+            svg[data-svg-scope="s-ac20cc5c"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-ac20cc5c"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-ac20cc5c"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-ac20cc5c"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-ac20cc5c"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-ac20cc5c"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-ac20cc5c"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-ac20cc5c"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-ac20cc5c"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-ac20cc5c"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-ac20cc5c"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-ac20cc5c"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-ac20cc5c"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-ac20cc5c"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Pascal&#x27;s Hexagrammum Mysticum (1640) on the Unit Circle</title>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <circle class="geom-circle conic-curve" cx="292.48" cy="275.64" r="118.79" data-ref="( O P0 )" data-aliases="( O P1 ) | ( O P2 ) | ( O P3 ) | ( O P4 ) | ( O P5 ) | ( P0 P1 P2 )" fill="none"><title>( O P0 ): x**2 + y**2 - 1 = 0</title></circle>
@@ -228,9 +258,39 @@
         $M'_{25} = \left(\frac{18}{5}, \frac{8}{5}\right)$ along $25x - 70y + 22 = 0$:</p></li>
         </ol>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 440" data-graphic-id="g2" role="img" aria-label="Pascal&#x27;s Hexagrammum Mysticum on the Ellipse x^2/4 + y^2 = 1">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 440" data-graphic-id="g2" role="img" aria-label="Pascal&#x27;s Hexagrammum Mysticum on the Ellipse x^2/4 + y^2 = 1" width="680" height="440" data-svg-scope="s-3b634fd3">
+          <style>
+            svg[data-svg-scope="s-3b634fd3"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-3b634fd3"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-3b634fd3"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-3b634fd3"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-3b634fd3"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-3b634fd3"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-3b634fd3"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-3b634fd3"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-3b634fd3"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-3b634fd3"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-3b634fd3"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-3b634fd3"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-3b634fd3"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-3b634fd3"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-3b634fd3"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75 }
+            svg[data-svg-scope="s-3b634fd3"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-3b634fd3"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-3b634fd3"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-3b634fd3"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-3b634fd3"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-3b634fd3"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-3b634fd3"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-3b634fd3"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-3b634fd3"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-3b634fd3"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-3b634fd3"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-3b634fd3"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-3b634fd3"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-3b634fd3"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Pascal&#x27;s Hexagrammum Mysticum on the Ellipse x^2/4 + y^2 = 1</title>
-          <rect class="svg-bg" x="0" y="0" width="680" height="440" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <ellipse class="geom-circle conic-curve" cx="268.24" cy="246.91" rx="179.39" ry="89.7" data-ref="( O P0 )" data-aliases="( O P1 ) | ( O P2 ) | ( O P3 ) | ( O P4 ) | ( O P5 ) | ( P0 P1 P2 )" fill="none"><title>( O P0 ): x**2/4 + y**2 - 1 = 0</title></ellipse>
@@ -352,9 +412,39 @@
         $b$ survives without collapsing onto the carrier lines, leaving Pappus’s two Star points
         $(S_+, S_-)$!</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 700 480" data-graphic-id="g3" role="img" aria-label="Bi-Triangle S_3 Pascal Lines Concurring at Steiner Points G+ and G-">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 480" data-graphic-id="g3" role="img" aria-label="Bi-Triangle S_3 Pascal Lines Concurring at Steiner Points G+ and G-" width="700" height="480" data-svg-scope="s-4c7ea4aa">
+          <style>
+            svg[data-svg-scope="s-4c7ea4aa"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-4c7ea4aa"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-4c7ea4aa"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-4c7ea4aa"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-4c7ea4aa"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-4c7ea4aa"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-4c7ea4aa"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-4c7ea4aa"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-4c7ea4aa"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-4c7ea4aa"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-4c7ea4aa"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-4c7ea4aa"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-4c7ea4aa"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-4c7ea4aa"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-4c7ea4aa"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75 }
+            svg[data-svg-scope="s-4c7ea4aa"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-4c7ea4aa"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-4c7ea4aa"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-4c7ea4aa"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-4c7ea4aa"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-4c7ea4aa"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-4c7ea4aa"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-4c7ea4aa"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-4c7ea4aa"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-4c7ea4aa"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-4c7ea4aa"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-4c7ea4aa"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-4c7ea4aa"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-4c7ea4aa"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Bi-Triangle S_3 Pascal Lines Concurring at Steiner Points G+ and G-</title>
-          <rect class="svg-bg" x="0" y="0" width="700" height="480" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <circle class="geom-circle conic-curve" cx="225.27" cy="275.64" r="118.79" data-ref="( O P0 )" data-aliases="( O P1 ) | ( O P2 ) | ( O P3 ) | ( O P4 ) | ( O P5 ) | ( P0 P1 P2 )" fill="none"><title>( O P0 ): x**2 + y**2 - 1 = 0</title></circle>
@@ -465,9 +555,39 @@
         </li>
         </ol>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 480" data-graphic-id="g4" role="img" aria-label="Golden Hexagrammum Mysticum in Q(phi) — Emergent Section / M25 P4 P0 /">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="g4" role="img" aria-label="Golden Hexagrammum Mysticum in Q(phi) — Emergent Section / M25 P4 P0 /" width="680" height="480" data-svg-scope="s-c2092c6a">
+          <style>
+            svg[data-svg-scope="s-c2092c6a"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-c2092c6a"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-c2092c6a"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-c2092c6a"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-c2092c6a"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-c2092c6a"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-c2092c6a"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-c2092c6a"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-c2092c6a"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-c2092c6a"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-c2092c6a"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-c2092c6a"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-c2092c6a"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-c2092c6a"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-c2092c6a"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75 }
+            svg[data-svg-scope="s-c2092c6a"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-c2092c6a"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-c2092c6a"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-c2092c6a"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-c2092c6a"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-c2092c6a"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-c2092c6a"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-c2092c6a"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-c2092c6a"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-c2092c6a"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-c2092c6a"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-c2092c6a"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-c2092c6a"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-c2092c6a"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Golden Hexagrammum Mysticum in Q(phi) — Emergent Section / M25 P4 P0 /</title>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <circle class="geom-circle conic-curve" cx="340" cy="206.83" r="120.62" data-ref="( O P0 )" data-aliases="( O P1 ) | ( O P2 ) | ( O P3 ) | ( O P4 ) | ( O P5 ) | ( P0 P1 P2 )" fill="none"><title>( O P0 ): x**2 + y**2 - 1 = 0</title></circle>
@@ -602,7 +722,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=a47416a6"></script>
+  <script src="../../_static/documentation_options.js?v=6ffd866b"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>

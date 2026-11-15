@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=99410eb1" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=f442dd77" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
@@ -105,9 +105,44 @@
         <section class="level-2" id="hultsch-i-pp-308314">
         <span id="sec-b5-el-isoperimetric-propositions"></span><h2>2. Προτάσεις α΄–β΄ · Θεώρημα τῶν ἰσοπεριμέτρων πολυγώνων καὶ τοῦ κύκλου (<em>Hultsch I, pp. 308–314</em>)<a class="headerlink" href="#hultsch-i-pp-308314" title="Link to this heading">¶</a></h2>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 760 460" data-graphic-id="g1" role="img" aria-label="Synagoge V.1 &amp; VIII.23 — Honeycomb Isoperimetry (P = 12) and Seven Inscribed Hexagons">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" data-graphic-id="g1" role="img" aria-label="Synagoge V.1 &amp; VIII.23 — Honeycomb Isoperimetry (P = 12) and Seven Inscribed Hexagons" width="760" height="460" data-svg-scope="s-595d02c4">
+          <style>
+            svg[data-svg-scope="s-595d02c4"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-595d02c4"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-595d02c4"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-595d02c4"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-595d02c4"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-595d02c4"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-595d02c4"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-595d02c4"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-595d02c4"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-595d02c4"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-595d02c4"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-595d02c4"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-595d02c4"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-595d02c4"] .geom-segment { fill: none; stroke: var(--carrier); stroke-width: 2.3; stroke-linecap: round }
+            svg[data-svg-scope="s-595d02c4"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-595d02c4"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-595d02c4"] .geom-segment.arithmetic-segment { fill: none; stroke: var(--pappus-even); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92 }
+            svg[data-svg-scope="s-595d02c4"] .geom-segment.geometric-segment { fill: none; stroke: var(--conic); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92 }
+            svg[data-svg-scope="s-595d02c4"] .geom-segment.vector-segment { fill: none; stroke: var(--steiner); stroke-width: 2.4; stroke-dasharray: 6 3.5; stroke-linecap: round; opacity: 0.88 }
+            svg[data-svg-scope="s-595d02c4"] .geom-segment.altitude-segment { fill: none; stroke: var(--pappus-odd); stroke-width: 2.2; stroke-dasharray: 4.5 3; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-595d02c4"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-595d02c4"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-595d02c4"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-595d02c4"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-595d02c4"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-595d02c4"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-595d02c4"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-595d02c4"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-595d02c4"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-595d02c4"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-595d02c4"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-595d02c4"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-595d02c4"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-595d02c4"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Synagoge V.1 &amp; VIII.23 — Honeycomb Isoperimetry (P = 12) and Seven Inscribed Hexagons</title>
-          <rect class="svg-bg" x="0" y="0" width="760" height="460" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <circle class="geom-circle conic-curve" cx="485.84" cy="230" r="145.31" data-ref="( H0 N )" fill="none"><title>( H0 N ): y**2 + (x - 3)**2 - 28 = 0</title></circle>
@@ -259,7 +294,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=a47416a6"></script>
+  <script src="../../_static/documentation_options.js?v=6ffd866b"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>

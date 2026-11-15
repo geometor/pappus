@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=99410eb1" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=f442dd77" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
@@ -101,9 +101,44 @@
         <p><em>Hultsch Vol. I, pp. 176–179 (Book IV, Ch. 1 / Prop. 1)</em></p>
         <p>Book IV opens directly (its preface having been lost in the archetype manuscript) with a striking affine generalization of <a class="citation-ref" id="occ-cite-euclid-elements-1" href="../bibliography.html#cite-euclid-elements" data-cite="euclid:elements" title="Euclid — Elements (Στοιχεῖα, Books I–XIII) (Alexandria, c. 300 BCE (geometor/euclid &amp; geometor/elements))">Euclid's Elements I.47</a> and <span class="justification" data-ref-target="VI.31" title="VI.31">[VI.31]</span>: <strong>neither a right angle in the base triangle nor similarity between the erected figures is required</strong>. Arbitrary parallelograms erected outward upon any two sides of any triangle sum in area to a third parallelogram erected on the remaining side, whose lateral edge is given in both magnitude and direction by the segment joining the outer intersection apex to the vertex of the triangle.</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 720 500" data-graphic-id="g1" role="img" aria-label="Synagoge IV.1 — Pappus&#x27;s Area Theorem on Arbitrary Parallelograms">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" data-graphic-id="g1" role="img" aria-label="Synagoge IV.1 — Pappus&#x27;s Area Theorem on Arbitrary Parallelograms" width="720" height="500" data-svg-scope="s-6571da97">
+          <style>
+            svg[data-svg-scope="s-6571da97"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6571da97"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-6571da97"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-6571da97"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-6571da97"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-6571da97"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-6571da97"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-6571da97"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-6571da97"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-6571da97"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-6571da97"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-6571da97"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-6571da97"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-6571da97"] .geom-segment { fill: none; stroke: var(--carrier); stroke-width: 2.3; stroke-linecap: round }
+            svg[data-svg-scope="s-6571da97"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-6571da97"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-6571da97"] .geom-segment.arithmetic-segment { fill: none; stroke: var(--pappus-even); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92 }
+            svg[data-svg-scope="s-6571da97"] .geom-segment.geometric-segment { fill: none; stroke: var(--conic); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92 }
+            svg[data-svg-scope="s-6571da97"] .geom-segment.vector-segment { fill: none; stroke: var(--steiner); stroke-width: 2.4; stroke-dasharray: 6 3.5; stroke-linecap: round; opacity: 0.88 }
+            svg[data-svg-scope="s-6571da97"] .geom-segment.altitude-segment { fill: none; stroke: var(--pappus-odd); stroke-width: 2.2; stroke-dasharray: 4.5 3; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-6571da97"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-6571da97"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-6571da97"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-6571da97"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-6571da97"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-6571da97"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-6571da97"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-6571da97"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-6571da97"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-6571da97"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-6571da97"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-6571da97"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-6571da97"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-6571da97"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Synagoge IV.1 — Pappus&#x27;s Area Theorem on Arbitrary Parallelograms</title>
-          <rect class="svg-bg" x="0" y="0" width="720" height="500" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <polygon class="geom-polygon hexagon-poly" points="343.24,196.35 262.77,303.65 450.53,303.65" data-ref="&lt; A B C &gt;" fill="none" />
@@ -166,9 +201,44 @@
         <h3>Specialization to <em>Elements</em> I.47 (<em>Right Triangle &amp; Squares</em>)<a class="headerlink" href="#specialization-to-elements-i-47-right-triangle-squares" title="Link to this heading">¶</a></h3>
         <p>When $\angle BAC = 90^\circ$ in a $3$-$4$-$5$ right triangle and <span class="geom-ref" data-ref="g2:&lt; A B D E &gt;" title="&lt; A B D E &gt;">ABDE</span> (area $9$) and <span class="geom-ref" data-ref="g2:&lt; A C F G &gt;" title="&lt; A C F G &gt;">ACFG</span> (area $16$) are squares, the corner triangle formed at <span class="geom-ref" data-ref="g2:H" title="H">H</span> is congruent to <span class="geom-ref" data-ref="g2:&lt; A B C &gt;" title="&lt; A B C &gt;">ABC</span> rotated by $90^\circ$, making <span class="geom-ref" data-ref="g2:[ H A ]" title="[ H A ]">HA</span> perpendicular to hypotenuse $BC$ with exact length $|HA| = |BC| = 5$. Thus <span class="geom-ref" data-ref="g2:&lt; B C M L &gt;" title="&lt; B C M L &gt;">BCML</span> becomes the $5 \times 5$ hypotenuse square of area $25$ partitioned along altitude <span class="geom-ref" data-ref="g2:[ J N ]" title="[ J N ]">JN</span> into Euclid’s windmill rectangles of areas $\frac{9}{5} \cdot 5 = 9$ and $\frac{16}{5} \cdot 5 = 16$:</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 520" data-graphic-id="g2" role="img" aria-label="Synagoge IV.1 Specialization — Reduction of Pappus&#x27;s Area Theorem to Euclid I.47">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" data-graphic-id="g2" role="img" aria-label="Synagoge IV.1 Specialization — Reduction of Pappus&#x27;s Area Theorem to Euclid I.47" width="680" height="520" data-svg-scope="s-1d250e6f">
+          <style>
+            svg[data-svg-scope="s-1d250e6f"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1d250e6f"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-1d250e6f"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-1d250e6f"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-1d250e6f"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-1d250e6f"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-1d250e6f"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-1d250e6f"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-1d250e6f"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-1d250e6f"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-1d250e6f"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-1d250e6f"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-1d250e6f"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-1d250e6f"] .geom-segment { fill: none; stroke: var(--carrier); stroke-width: 2.3; stroke-linecap: round }
+            svg[data-svg-scope="s-1d250e6f"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-1d250e6f"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-1d250e6f"] .geom-segment.arithmetic-segment { fill: none; stroke: var(--pappus-even); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92 }
+            svg[data-svg-scope="s-1d250e6f"] .geom-segment.geometric-segment { fill: none; stroke: var(--conic); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92 }
+            svg[data-svg-scope="s-1d250e6f"] .geom-segment.vector-segment { fill: none; stroke: var(--steiner); stroke-width: 2.4; stroke-dasharray: 6 3.5; stroke-linecap: round; opacity: 0.88 }
+            svg[data-svg-scope="s-1d250e6f"] .geom-segment.altitude-segment { fill: none; stroke: var(--pappus-odd); stroke-width: 2.2; stroke-dasharray: 4.5 3; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-1d250e6f"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-1d250e6f"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-1d250e6f"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-1d250e6f"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-1d250e6f"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-1d250e6f"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-1d250e6f"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-1d250e6f"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-1d250e6f"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-1d250e6f"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-1d250e6f"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-1d250e6f"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-1d250e6f"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-1d250e6f"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Synagoge IV.1 Specialization — Reduction of Pappus&#x27;s Area Theorem to Euclid I.47</title>
-          <rect class="svg-bg" x="0" y="0" width="680" height="520" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <polygon class="geom-polygon hexagon-poly" points="320.95,227.34 271.96,292.66 408.04,292.66" data-ref="&lt; A B C &gt;" fill="none" />
@@ -235,9 +305,44 @@
         </li>
         </ul>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 720 440" data-graphic-id="g3" role="img" aria-label="Synagoge IV.14–18 — Pappus&#x27;s Arbelos Tangent Circle Chain (y_n = n d_n)">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" data-graphic-id="g3" role="img" aria-label="Synagoge IV.14–18 — Pappus&#x27;s Arbelos Tangent Circle Chain (y_n = n d_n)" width="720" height="440" data-svg-scope="s-634c42ae">
+          <style>
+            svg[data-svg-scope="s-634c42ae"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-634c42ae"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-634c42ae"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-634c42ae"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-634c42ae"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-634c42ae"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-634c42ae"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-634c42ae"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-634c42ae"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-634c42ae"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-634c42ae"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-634c42ae"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-634c42ae"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-634c42ae"] .geom-segment { fill: none; stroke: var(--carrier); stroke-width: 2.3; stroke-linecap: round }
+            svg[data-svg-scope="s-634c42ae"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-634c42ae"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-634c42ae"] .geom-segment.arithmetic-segment { fill: none; stroke: var(--pappus-even); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92 }
+            svg[data-svg-scope="s-634c42ae"] .geom-segment.geometric-segment { fill: none; stroke: var(--conic); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92 }
+            svg[data-svg-scope="s-634c42ae"] .geom-segment.vector-segment { fill: none; stroke: var(--steiner); stroke-width: 2.4; stroke-dasharray: 6 3.5; stroke-linecap: round; opacity: 0.88 }
+            svg[data-svg-scope="s-634c42ae"] .geom-segment.altitude-segment { fill: none; stroke: var(--pappus-odd); stroke-width: 2.2; stroke-dasharray: 4.5 3; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-634c42ae"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-634c42ae"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-634c42ae"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-634c42ae"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-634c42ae"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-634c42ae"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-634c42ae"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-634c42ae"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-634c42ae"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-634c42ae"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-634c42ae"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-634c42ae"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-634c42ae"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-634c42ae"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Synagoge IV.14–18 — Pappus&#x27;s Arbelos Tangent Circle Chain (y_n = n d_n)</title>
-          <rect class="svg-bg" x="0" y="0" width="720" height="440" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <circle class="geom-circle conic-curve" cx="360" cy="350.29" r="274.29" data-ref="( O0 A )" data-aliases="( P2 A ) | ( P2 C )" fill="none"><title>( O0 A ): y**2 + (x - 3)**2 - 9 = 0</title></circle>
@@ -376,7 +481,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=a47416a6"></script>
+  <script src="../../_static/documentation_options.js?v=6ffd866b"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=99410eb1" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=f442dd77" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
@@ -167,9 +167,39 @@
         point, the <strong>odd Steiner Star point</strong> $S_-$.</p></li>
         </ul>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 720 480" data-graphic-id="g7" role="img" aria-label="The Six Pappus Lines and Two Steiner Star Points (S+, S-)">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" data-graphic-id="g7" role="img" aria-label="The Six Pappus Lines and Two Steiner Star Points (S+, S-)" width="720" height="480" data-svg-scope="s-cf5b426a">
+          <style>
+            svg[data-svg-scope="s-cf5b426a"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-cf5b426a"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-cf5b426a"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-cf5b426a"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-cf5b426a"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-cf5b426a"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-cf5b426a"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-cf5b426a"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-cf5b426a"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-cf5b426a"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-cf5b426a"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-cf5b426a"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-cf5b426a"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-cf5b426a"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-cf5b426a"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75 }
+            svg[data-svg-scope="s-cf5b426a"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-cf5b426a"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-cf5b426a"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-cf5b426a"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-cf5b426a"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-cf5b426a"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-cf5b426a"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-cf5b426a"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-cf5b426a"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-cf5b426a"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-cf5b426a"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-cf5b426a"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-cf5b426a"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-cf5b426a"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>The Six Pappus Lines and Two Steiner Star Points (S+, S-)</title>
-          <rect class="svg-bg" x="0" y="0" width="720" height="480" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <path class="geom-line cross-line" d="M 371.94 466 L 258.94 240 L 145.94 14" data-ref="[ A0 B0 ]" data-aliases="[ A0 M0011 ] | [ A0 M0021 ] | [ A0 M0012 ] | [ A0 M0022 ] | [ B0 M0011 ] | [ B0 M0021 ] | [ B0 M0012 ] | [ B0 M0022 ] | [ M0011 M0021 ] | [ M0011 M0012 ] | [ M0011 M0022 ] | [ M0021 M0012 ] | [ M0021 M0022 ] | [ M0012 M0022 ]" fill="none"><title>[ A0 B0 ]: -2*x - y + 2 = 0</title></path>
@@ -260,9 +290,39 @@
         <h3>Even Permutations ($\sigma \in A_3$)<a class="headerlink" href="#even-permutations-sigma-in-a-3" title="Link to this heading">¶</a></h3>
         <p><strong>Identity</strong> $\sigma = (0, 1, 2)$ — <span class="geom-ref" data-ref="g1:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g1:M20" title="M20">M<sub>20</sub></span>, <span class="geom-ref" data-ref="g1:M12" title="M12">M<sub>12</sub></span> on <span class="geom-ref" data-ref="g1:[ M01 M12 ]" title="[ M01 M12 ]">p<sub>012</sub></span>:</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 520 360" data-graphic-id="g1" role="img" aria-label="Pappus Permutation (0, 1, 2) [even]">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" data-graphic-id="g1" role="img" aria-label="Pappus Permutation (0, 1, 2) [even]" width="520" height="360" data-svg-scope="s-c44cd3e7">
+          <style>
+            svg[data-svg-scope="s-c44cd3e7"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-c44cd3e7"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-c44cd3e7"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-c44cd3e7"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-c44cd3e7"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-c44cd3e7"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-c44cd3e7"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-c44cd3e7"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-c44cd3e7"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-c44cd3e7"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-c44cd3e7"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-c44cd3e7"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-c44cd3e7"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-c44cd3e7"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-c44cd3e7"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75 }
+            svg[data-svg-scope="s-c44cd3e7"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-c44cd3e7"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-c44cd3e7"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-c44cd3e7"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-c44cd3e7"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-c44cd3e7"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-c44cd3e7"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-c44cd3e7"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-c44cd3e7"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-c44cd3e7"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-c44cd3e7"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-c44cd3e7"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-c44cd3e7"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-c44cd3e7"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Pappus Permutation (0, 1, 2) [even]</title>
-          <rect class="svg-bg" x="0" y="0" width="520" height="360" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <polygon class="geom-polygon hexagon-poly" points="175,150.25 260,107.75 260,150.25 132.5,65.25 217.5,150.25 345,136.08" data-ref="&lt; A0 B1 A2 B0 A1 B2 &gt;" fill="none" />
@@ -309,9 +369,39 @@
         </figure>
         <p><strong>3-Cycle</strong> $\sigma = (1, 2, 0)$ — <span class="geom-ref" data-ref="g4:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g4:M20" title="M20">M<sub>20</sub></span>, <span class="geom-ref" data-ref="g4:M12" title="M12">M<sub>12</sub></span> on <span class="geom-ref" data-ref="g4:[ M01 M12 ]" title="[ M01 M12 ]">p<sub>120</sub></span>:</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 520 360" data-graphic-id="g4" role="img" aria-label="Pappus Permutation (1, 2, 0) [even]">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" data-graphic-id="g4" role="img" aria-label="Pappus Permutation (1, 2, 0) [even]" width="520" height="360" data-svg-scope="s-36e40078">
+          <style>
+            svg[data-svg-scope="s-36e40078"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-36e40078"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-36e40078"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-36e40078"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-36e40078"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-36e40078"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-36e40078"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-36e40078"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-36e40078"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-36e40078"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-36e40078"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-36e40078"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-36e40078"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-36e40078"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-36e40078"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75 }
+            svg[data-svg-scope="s-36e40078"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-36e40078"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-36e40078"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-36e40078"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-36e40078"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-36e40078"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-36e40078"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-36e40078"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-36e40078"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-36e40078"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-36e40078"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-36e40078"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-36e40078"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-36e40078"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Pappus Permutation (1, 2, 0) [even]</title>
-          <rect class="svg-bg" x="0" y="0" width="520" height="360" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <polygon class="geom-polygon hexagon-poly" points="175,150.25 345,136.08 260,150.25 260,107.75 217.5,150.25 132.5,65.25" data-ref="&lt; A0 B2 A2 B1 A1 B0 &gt;" fill="none" />
@@ -358,9 +448,39 @@
         </figure>
         <p><strong>3-Cycle</strong> $\sigma = (2, 0, 1)$ — <span class="geom-ref" data-ref="g5:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g5:M20" title="M20">M<sub>20</sub></span>, <span class="geom-ref" data-ref="g5:M12" title="M12">M<sub>12</sub></span> on <span class="geom-ref" data-ref="g5:[ M01 M12 ]" title="[ M01 M12 ]">p<sub>201</sub></span>:</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 520 360" data-graphic-id="g5" role="img" aria-label="Pappus Permutation (2, 0, 1) [even]">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" data-graphic-id="g5" role="img" aria-label="Pappus Permutation (2, 0, 1) [even]" width="520" height="360" data-svg-scope="s-238428dc">
+          <style>
+            svg[data-svg-scope="s-238428dc"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-238428dc"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-238428dc"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-238428dc"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-238428dc"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-238428dc"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-238428dc"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-238428dc"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-238428dc"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-238428dc"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-238428dc"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-238428dc"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-238428dc"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-238428dc"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-238428dc"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75 }
+            svg[data-svg-scope="s-238428dc"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-238428dc"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-238428dc"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-238428dc"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-238428dc"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-238428dc"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-238428dc"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-238428dc"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-238428dc"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-238428dc"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-238428dc"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-238428dc"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-238428dc"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-238428dc"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Pappus Permutation (2, 0, 1) [even]</title>
-          <rect class="svg-bg" x="0" y="0" width="520" height="360" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <polygon class="geom-polygon hexagon-poly" points="175,150.25 132.5,65.25 260,150.25 345,136.08 217.5,150.25 260,107.75" data-ref="&lt; A0 B0 A2 B2 A1 B1 &gt;" fill="none" />
@@ -410,9 +530,39 @@
         <h3>Odd Permutations ($\sigma \in S_3 \setminus A_3$)<a class="headerlink" href="#odd-permutations-sigma-in-s-3-setminus-a-3" title="Link to this heading">¶</a></h3>
         <p><strong>Transposition</strong> $\sigma = (0, 2, 1)$ — <span class="geom-ref" data-ref="g2:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g2:M20" title="M20">M<sub>20</sub></span>, <span class="geom-ref" data-ref="g2:M12" title="M12">M<sub>12</sub></span> on <span class="geom-ref" data-ref="g2:[ M01 M12 ]" title="[ M01 M12 ]">p<sub>021</sub></span>:</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 520 360" data-graphic-id="g2" role="img" aria-label="Pappus Permutation (0, 2, 1) [odd]">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" data-graphic-id="g2" role="img" aria-label="Pappus Permutation (0, 2, 1) [odd]" width="520" height="360" data-svg-scope="s-c232159e">
+          <style>
+            svg[data-svg-scope="s-c232159e"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-c232159e"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-c232159e"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-c232159e"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-c232159e"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-c232159e"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-c232159e"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-c232159e"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-c232159e"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-c232159e"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-c232159e"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-c232159e"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-c232159e"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-c232159e"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-c232159e"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75 }
+            svg[data-svg-scope="s-c232159e"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-c232159e"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-c232159e"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-c232159e"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-c232159e"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-c232159e"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-c232159e"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-c232159e"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-c232159e"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-c232159e"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-c232159e"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-c232159e"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-c232159e"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-c232159e"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Pappus Permutation (0, 2, 1) [odd]</title>
-          <rect class="svg-bg" x="0" y="0" width="520" height="360" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <polygon class="geom-polygon hexagon-poly" points="175,150.25 345,136.08 260,150.25 132.5,65.25 217.5,150.25 260,107.75" data-ref="&lt; A0 B2 A2 B0 A1 B1 &gt;" fill="none" />
@@ -459,9 +609,39 @@
         </figure>
         <p><strong>Transposition</strong> $\sigma = (1, 0, 2)$ — <span class="geom-ref" data-ref="g3:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g3:M20" title="M20">M<sub>20</sub></span>, <span class="geom-ref" data-ref="g3:M12" title="M12">M<sub>12</sub></span> on <span class="geom-ref" data-ref="g3:[ M01 M12 ]" title="[ M01 M12 ]">p<sub>102</sub></span>:</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 520 360" data-graphic-id="g3" role="img" aria-label="Pappus Permutation (1, 0, 2) [odd]">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" data-graphic-id="g3" role="img" aria-label="Pappus Permutation (1, 0, 2) [odd]" width="520" height="360" data-svg-scope="s-674e4068">
+          <style>
+            svg[data-svg-scope="s-674e4068"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-674e4068"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-674e4068"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-674e4068"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-674e4068"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-674e4068"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-674e4068"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-674e4068"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-674e4068"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-674e4068"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-674e4068"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-674e4068"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-674e4068"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-674e4068"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-674e4068"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75 }
+            svg[data-svg-scope="s-674e4068"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-674e4068"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-674e4068"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-674e4068"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-674e4068"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-674e4068"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-674e4068"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-674e4068"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-674e4068"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-674e4068"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-674e4068"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-674e4068"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-674e4068"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-674e4068"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Pappus Permutation (1, 0, 2) [odd]</title>
-          <rect class="svg-bg" x="0" y="0" width="520" height="360" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <polygon class="geom-polygon hexagon-poly" points="175,150.25 132.5,65.25 260,150.25 260,107.75 217.5,150.25 345,136.08" data-ref="&lt; A0 B0 A2 B1 A1 B2 &gt;" fill="none" />
@@ -508,9 +688,39 @@
         </figure>
         <p><strong>Transposition</strong> $\sigma = (2, 1, 0)$ — <span class="geom-ref" data-ref="g6:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g6:M20" title="M20">M<sub>20</sub></span>, <span class="geom-ref" data-ref="g6:M12" title="M12">M<sub>12</sub></span> on <span class="geom-ref" data-ref="g6:[ M01 M12 ]" title="[ M01 M12 ]">p<sub>210</sub></span>:</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 520 360" data-graphic-id="g6" role="img" aria-label="Pappus Permutation (2, 1, 0) [odd]">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" data-graphic-id="g6" role="img" aria-label="Pappus Permutation (2, 1, 0) [odd]" width="520" height="360" data-svg-scope="s-0a9b00bd">
+          <style>
+            svg[data-svg-scope="s-0a9b00bd"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-0a9b00bd"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-0a9b00bd"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-0a9b00bd"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-0a9b00bd"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-0a9b00bd"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-0a9b00bd"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-0a9b00bd"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-0a9b00bd"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-0a9b00bd"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-0a9b00bd"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-0a9b00bd"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-0a9b00bd"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-0a9b00bd"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-0a9b00bd"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75 }
+            svg[data-svg-scope="s-0a9b00bd"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-0a9b00bd"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-0a9b00bd"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-0a9b00bd"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-0a9b00bd"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-0a9b00bd"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-0a9b00bd"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-0a9b00bd"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-0a9b00bd"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-0a9b00bd"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-0a9b00bd"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-0a9b00bd"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-0a9b00bd"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-0a9b00bd"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Pappus Permutation (2, 1, 0) [odd]</title>
-          <rect class="svg-bg" x="0" y="0" width="520" height="360" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <polygon class="geom-polygon hexagon-poly" points="175,150.25 260,107.75 260,150.25 345,136.08 217.5,150.25 132.5,65.25" data-ref="&lt; A0 B1 A2 B2 A1 B0 &gt;" fill="none" />
@@ -576,9 +786,39 @@
         </li>
         </ul>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 420" data-graphic-id="g8" role="img" aria-label="2023 GEOMETOR Parallel Configuration — Even Star Point S+ = (90/73, 38/73)">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" data-graphic-id="g8" role="img" aria-label="2023 GEOMETOR Parallel Configuration — Even Star Point S+ = (90/73, 38/73)" width="680" height="420" data-svg-scope="s-dfce0802">
+          <style>
+            svg[data-svg-scope="s-dfce0802"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-dfce0802"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-dfce0802"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-dfce0802"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-dfce0802"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-dfce0802"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-dfce0802"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-dfce0802"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-dfce0802"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-dfce0802"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-dfce0802"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-dfce0802"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-dfce0802"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-dfce0802"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-dfce0802"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.75 }
+            svg[data-svg-scope="s-dfce0802"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-dfce0802"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-dfce0802"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-dfce0802"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-dfce0802"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-dfce0802"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-dfce0802"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-dfce0802"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-dfce0802"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-dfce0802"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-dfce0802"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-dfce0802"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-dfce0802"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-dfce0802"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>2023 GEOMETOR Parallel Configuration — Even Star Point S+ = (90/73, 38/73)</title>
-          <rect class="svg-bg" x="0" y="0" width="680" height="420" rx="6" fill="none" />
           <g id="elements">
             <g id="graphics">
               <path class="geom-line cross-line" d="M 128.57 406 L 128.57 210 L 128.57 14" data-ref="[ A0 B0 ]" data-aliases="[ A0 M0012 ] | [ B0 M0012 ]" fill="none"><title>[ A0 B0 ]: x = 0</title></path>
@@ -715,7 +955,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=a47416a6"></script>
+  <script src="../../_static/documentation_options.js?v=6ffd866b"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
