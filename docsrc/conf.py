@@ -50,7 +50,6 @@ copyright = (
 html_theme = "foundation"
 html_static_path = ["_static"]
 html_css_files = [*globals().get("html_css_files", []), "custom.css"]
-html_logo = None
 autoapi_dirs = [str(_REPO_ROOT / "src" / "geometor")]
 autoapi_add_toctree_entry = False
 napoleon_use_ivar = True
