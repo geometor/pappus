@@ -14,7 +14,7 @@ four celebrated metric, affine, and isoperimetric propositions of Pappus's *Syna
 ------------------------------------------------------------------
 
 Given unequal positive segments $AD = a$ and $DC = b$ placed along diameter $AC$ of a semicircle
-centered at $O$ (:doc:`Book III Codex <../../synagoge/book-3-three-means/book-3-three-means-en>`,
+centered at $O$ (:doc:`Book III Codex <../../synagoge/book_03/index>`,
 *Hultsch I, pp. 68–84*), ``construct_three_means(a, b)`` constructs the arithmetic mean $A$,
 geometric mean $G$, and harmonic mean $H$ inside a single diagram, together with the external
 harmonic conjugate $T$ where $(A, C; D, T) = -1$:
@@ -75,8 +75,8 @@ $\phi$ itself and the external tangent meets the diameter line at :g:`T <g2:T>` 
 2. Book IV, Prop. 1: Equiaffine Parallelogram Area Theorem
 ----------------------------------------------------------
 
-In :doc:`Book IV, Proposition 1 <../../synagoge/book-4-area-and-arbelos/book-4-area-and-arbelos-en>`
-(*Hultsch I, pp. 176–179*), Pappus generalizes *Elements* I.47 from squares on a right triangle to
+In :doc:`Book IV, Proposition 1 <../../synagoge/book_04/prop_01_area_theorem/index>`
+*Hultsch I, pp. 176–179*), Pappus generalizes *Elements* I.47 from squares on a right triangle to
 **arbitrary outward parallelograms** erected on two sides $AB, AC$ of **any triangle** $\triangle ABC$.
 If the outer sides produced meet at $H$, then the parallelogram constructed on base $BC$ with lateral
 vector equal and parallel to $\overrightarrow{HA}$ has signed area identically equal to the sum of
@@ -94,7 +94,7 @@ SymPy, while ``construct_pappus_area_theorem()`` models both the general scalene
 3. Book IV, Props. 14–18: Infinite *Arbelos* Tangent Circle Chain
 -----------------------------------------------------------------
 
-In :doc:`Book IV, Propositions 14–18 <../../synagoge/book-4-area-and-arbelos/book-4-area-and-arbelos-en>`
+In :doc:`Book IV, Propositions 14–18 <../../synagoge/book_04/prop_14_18_arbelos/index>`
 (*Hultsch I, pp. 208–232*), Pappus demonstrates the *"ancient proposition"* on the shoemaker's knife
 (*ἄρβηλος*): for an infinite chain of circles $C_1, C_2, C_3, \dots$ inscribed tangent to the three
 bounding semicircles and successively to one another, the center altitude $y_n$ of the $n$-th circle
@@ -131,8 +131,8 @@ and every center $K_n$ lies on a single fixed ellipse with foci at $O_0$ and $O_
 4. Book V, Prop. 1 & Book VIII, Prop. 23: Honeycomb Isoperimetry & Seven Hexagons
 ---------------------------------------------------------------------------------
 
-In :doc:`Book V <../../synagoge/book-5-sagacity-of-bees/book-5-sagacity-of-bees-en>` (*Hultsch I,
-pp. 304–312*) and :doc:`Book VIII, Proposition 23 <../../synagoge/book-8-mechanics/book-8-mechanics-en>`
+In :doc:`Book V <../../synagoge/book_05/index>` (*Hultsch I,
+pp. 304–312*) and :doc:`Book VIII, Proposition 23 <../../synagoge/book_08/prop_23_seven_hexagons/index>`
 (*Hultsch III, pp. 1096–1102*), Pappus proves:
 
 1. Around any gapless planar vertex tiled by $k \ge 3$ congruent regular $n$-gons,

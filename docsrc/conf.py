@@ -40,7 +40,9 @@ if "geometor.pappus.sphinx_ext" not in extensions:  # noqa: F405
 register_greek_book_track()
 configure_local_intersphinx(intersphinx_mapping, _REPO_ROOT)  # noqa: F405
 
-project = "GEOMETOR • pappus"
+site_title = "Pappus of Alexandria"
+project = site_title
+html_title = f"{site_title} • {org_name}"
 author = "Pappus of Alexandria • Ed. & SymPy Synthesis GEOMETOR"
 copyright = (
     "c. 340 CE (Hultsch 1876–1878 / Commandino 1588) • "

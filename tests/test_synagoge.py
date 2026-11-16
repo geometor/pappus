@@ -239,19 +239,24 @@ def test_sphinx_ext_greek_track_intersphinx_and_apparatus_parity(
 
     fake_env = SimpleNamespace(
         found_docs={
-            "synagoge/book-3-three-means/book-3-three-means-en",
-            "synagoge/book-3-three-means/book-3-three-means-el",
-            "synagoge/book-3-three-means/book-3-three-means-summary",
-            "synagoge/book-3-three-means/book-3-three-means-notes",
-        }
+            "synagoge/book_03/prop_01_three_means/index",
+            "synagoge/book_03/prop_01_three_means/el",
+            "synagoge/book_03/prop_01_three_means/summary",
+            "synagoge/book_03/prop_01_three_means/notes",
+        },
+        metadata={
+            "synagoge/book_03/prop_01_three_means/el": {
+                "tracks": "English: index | Greek: el | Summary: summary | Notes: notes"
+            }
+        },
     )
     tracks_from_el = book.detect_companion_tracks(
         fake_env,
-        "synagoge/book-3-three-means/book-3-three-means-el",
+        "synagoge/book_03/prop_01_three_means/el",
     )
     track_keys = [tr["key"] for tr in tracks_from_el]
     assert GREEK_TRACK_KEY in track_keys
-    assert "en" in track_keys
+    assert "index" in track_keys
     active_keys = [tr["key"] for tr in tracks_from_el if tr.get("active")]
     assert active_keys == [GREEK_TRACK_KEY]
 
@@ -289,17 +294,34 @@ def test_synagoge_codex_rst_and_euclid_concordance_integrity() -> None:
     assert (synagoge_dir / "index.rst").is_file()
     assert ":layout: book" in (synagoge_dir / "index.rst").read_text(encoding="utf-8")
 
-    expected_units = (
-        "book-3-three-means",
-        "book-4-area-and-arbelos",
-        "book-5-sagacity-of-bees",
-        "book-7-domain-of-analysis",
-        "book-8-mechanics",
-    )
-    for unit in expected_units:
-        for track in ("en", "el", "summary", "notes"):
-            track_path = synagoge_dir / unit / f"{unit}-{track}.rst"
-            assert track_path.is_file(), f"Missing codex track {track_path}"
+    expected_books = {
+        "book_03": ("preface", "prop_01_three_means", "golden_means"),
+        "book_04": ("prop_01_area_theorem", "prop_14_18_arbelos"),
+        "book_05": ("preface_bees", "prop_01_10_isoperimetry"),
+        "book_07": (
+            "preface_analysis",
+            "multi_line_locus",
+            "prop_129_cross_ratio",
+            "prop_131_harmonic",
+            "prop_138_parallel_hexagon",
+            "prop_139_intersecting_hexagon",
+        ),
+        "book_08": (
+            "preface_mechanics",
+            "prop_01_04_center_of_gravity",
+            "prop_23_seven_hexagons",
+        ),
+    }
+    for book_name, units in expected_books.items():
+        book_dir = synagoge_dir / book_name
+        assert (book_dir / "index.rst").is_file(), f"Missing book index in {book_name}"
+        assert (book_dir / "summary.rst").is_file(), f"Missing book summary in {book_name}"
+        assert (book_dir / "notes.rst").is_file(), f"Missing book notes in {book_name}"
+        for unit in units:
+            unit_dir = book_dir / unit
+            for track in ("index", "el", "summary", "notes"):
+                track_path = unit_dir / f"{track}.rst"
+                assert track_path.is_file(), f"Missing codex track {track_path}"
 
     # Verify all 8 euclid pappus:collectio* citation keys are mapped in concordance.json
     concordance = json.loads(
