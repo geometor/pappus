@@ -1,12 +1,12 @@
 .. container:: author-overline
 
-   the works of
+   semantic digital archive • the works of
 
 ====================
 Pappus of Alexandria
 ====================
 
-The mission of this project is to capture a semantic digital library of the works of :person:`Pappus of Alexandria <pappus>` (fl. c. 320–340 CE), the last great synthetic geometer of Greek antiquity whose eight-book *Synagoge* preserved the Hellenistic Treasury of Analysis and the foundational hexagon and cross-ratio theorems of projective geometry.
+The works of :person:`Pappus of Alexandria <pappus>` (fl. c. 320–340 CE) preserved the Hellenistic Treasury of Analysis and the foundational incidence theorems of projective geometry in his eight-book *Synagoge*. Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, these classical treatises and constructive projective theorems are liberated from static print bounds into addressable semantic units, calibrated vector diagrams, primary-source folio provenance, and exact symbolic models speaking one shared geometric language.
 
 .. collection::
    :type: book
