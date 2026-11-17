@@ -28,6 +28,20 @@ Projective Geometry & Classical Mechanics
 - **Pascal's Mystic Hexagram (1640)** (``geometor.pappus.pascal``): Conic generalizations across circles and ellipses, complete 60-line web enumeration, 20 Steiner points, and 15 Plücker lines.
 - **Synagoge Classical Demonstrations** (``geometor.pappus.synagoge_demos``): Semicircle arithmetic/geometric/harmonic means, generalized Pythagorean area theorem, and rational Arbelos circle chain.
 
+Python Package & Modules
+------------------------
+
+The ``geometor-pappus`` Python package (``import geometor.pappus``) provides the executable symbolic geometry, construction, and compilation modules powering this archive:
+
+- ``constructions.py`` — Symbolic DAG constructions for Pappus's Hexagon Theorem, Steiner's six-line configuration, and harmonic conjugates.
+- ``pascal.py`` — Symbolic DAG constructions and combinatorics for Blaise Pascal's *Hexagrammum Mysticum* (1640).
+- ``projective.py`` — Exact symbolic projective invariants, cross-ratios, and harmonic/golden range scanners.
+- ``render.py`` — Publication-grade interactive SVG renderer for exact projective constructions.
+- ``synagoge_demos.py`` — Exact symbolic *Synagoge* constructions for Books III, IV, and V of Pappus of Alexandria.
+- ``sphinx_ext.py`` — Sphinx extension for Pappus of Alexandria's *Synagoge* Multi-Track Book Codex.
+
+See the `API Reference <https://geometor.github.io/pappus/modules/>`_ for full module documentation.
+
 Repository Contents
 -------------------
 
