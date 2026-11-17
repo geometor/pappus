@@ -1,21 +1,23 @@
 :navigation: header
 :order: 1
 :type: book
-:nav_title: Synagoge
-:breadcrumb_title: Synagoge
+:nav_title: Mathematical Collection
+:breadcrumb_title: Mathematical Collection
 :layout: book
-:book_title: Synagoge (Mathematical Collection)
+:book_title: Mathematical Collection
 :book_subtitle: Μαθηματικὴ Συναγωγή — Pappus of Alexandria (Books III, IV, V, VII & VIII, ed. Hultsch)
 :author: Pappus of Alexandria
 :year: c. 340 CE
+:tracks: English: index | Greek: title-el
 :excerpt: Pappus's late-antique Alexandrian compendium synthesizing the Greek Treasury of Analysis, projective cross-ratio and hexagon lemmas, semicircle means, arbelos circle chains, and architectonic mechanics.
 
 .. _synagoge-codex:
 
-Synagoge
-========
+=======================
+Mathematical Collection
+=======================
 
-.. rubric:: *Μαθηματικὴ Συναγωγή* (*Mathematical Collection*) — Pappus of Alexandria
+.. rubric:: *Μαθηματικὴ Συναγωγή* (*Synagoge*) — Pappus of Alexandria
 
 .. container:: title-page
 
@@ -98,3 +100,10 @@ Scholarly Apparatus
    bibliography
    persons
    glossary
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Title Pages
+
+   title-el
