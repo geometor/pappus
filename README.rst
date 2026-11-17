@@ -3,17 +3,22 @@ GEOMETOR • pappus
 
 **Visit the Online Archive:** https://geometor.github.io/pappus/
 
-**Pappus of Alexandria • Synagoge (Mathematical Collection) • semantic digital archive**
+.. image:: docsrc/_static/constructions/golden_pappus.svg
+   :alt: GEOMETOR • pappus featured geometric construction
+   :target: https://geometor.github.io/pappus/
+   :align: center
+
+**Pappus of Alexandria • Mathematical Collection • semantic digital archive**
 
 Mission
 -------
 
-``geometor/pappus`` is part of the interconnected `GEOMETOR <https://geometor.com>`_ semantic digital archive. It unites a four-track bilingual Book Codex of Pappus of Alexandria's eight-book *Synagoge* (*Μαθηματικὴ Συναγωγή*) with an extensive computational catalog of constructive projective theorems. Through addressable semantic units, calibrated theme-adaptive vector diagrams, primary-source folio provenance, and exact SymPy symbolic algebra, this repository bridges ancient Greek geometry and mechanics with the modern projective theorems of Steiner, Pascal, and Desargues across the GEOMETOR corpus.
+``geometor/pappus`` is part of the interconnected `GEOMETOR <https://geometor.com>`_ semantic digital archive. It unites a four-track bilingual Book Codex of Pappus of Alexandria's eight-book *Mathematical Collection* (*Μαθηματικὴ Συναγωγή*) with an extensive computational catalog of constructive projective theorems. Through addressable semantic units, calibrated theme-adaptive vector diagrams, primary-source folio provenance, and exact SymPy symbolic algebra, this repository bridges ancient Greek geometry and mechanics with the modern projective theorems of Steiner, Pascal, and Desargues across the GEOMETOR corpus.
 
 Books in This Archive
 ---------------------
 
-- **`Synagoge (Mathematical Collection) <https://geometor.github.io/pappus/synagoge/>`_** — Critical bilingual edition of Books III, IV, V, VII, and VIII surveying classical Greek geometry, three means in a semicircle, the Arbelos circle chain, honeycomb isoperimetry, and the Hellenistic Treasury of Analysis (c. 340 CE).
+- **`Mathematical Collection <https://geometor.github.io/pappus/synagoge/>`_** — Critical bilingual edition of Books III, IV, V, VII, and VIII surveying classical Greek geometry, three means in a semicircle, the Arbelos circle chain, honeycomb isoperimetry, and the Hellenistic Treasury of Analysis (c. 340 CE).
 - **`Theorems <https://geometor.github.io/pappus/theorems/>`_** — Constructive projective theorems including Pappus's Hexagon Theorem, Steiner's six-line configuration, cross-ratio invariants, harmonic conjugates, and Pascal's *Hexagrammum Mysticum*.
 
 Projective Geometry & Classical Mechanics
