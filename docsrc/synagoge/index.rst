@@ -77,7 +77,7 @@ Scholarly Apparatus
 
 * :doc:`concordance` — Bidirectional mapping across Hultsch pagination, sister **GEOMETOR** codices, and ``geometor.pappus`` symbolic modules.
 * :doc:`bibliography` — Critical editions, ancient treatises of the *Treasury of Analysis*, and modern projective literature.
-* :doc:`persons` — Biographical register of classical, Hellenistic, late-antique, and modern geometers.
+* :doc:`people/index` — Biographical register of classical, Hellenistic, late-antique, and modern geometers.
 * :doc:`glossary` — Polytonic Greek & Latin technical mathematical lexicon.
 
 .. toctree::
@@ -98,7 +98,7 @@ Scholarly Apparatus
 
    concordance
    bibliography
-   persons
+   people/index
    glossary
 
 .. toctree::

@@ -344,9 +344,11 @@ def test_synagoge_codex_rst_and_euclid_concordance_integrity() -> None:
 
     # Collect defined anchors across apparatus pages
     defined_anchors: set[str] = set()
-    for app_name in ("bibliography.rst", "persons.rst", "glossary.rst"):
+    for app_name in ("bibliography.rst", "people/index.rst", "glossary.rst"):
         app_text = (synagoge_dir / app_name).read_text(encoding="utf-8")
         defined_anchors.update(re.findall(r"^\.\. _([a-z0-9-]+):", app_text, flags=re.MULTILINE))
+    for person_file in sorted((synagoge_dir / "people").glob("*.rst")):
+        defined_anchors.update(re.findall(r"^\.\. _([a-z0-9-]+):", person_file.read_text(encoding="utf-8"), flags=re.MULTILINE))
 
     role_pattern = re.compile(r":(cite|person|term):`([^`]+)`")
     for rst_path in synagoge_dir.rglob("*.rst"):
