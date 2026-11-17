@@ -18,8 +18,8 @@ Mission
 Books in This Archive
 ---------------------
 
-- **`Mathematical Collection <https://geometor.github.io/pappus/synagoge/>`_** — Critical bilingual edition of Books III, IV, V, VII, and VIII surveying classical Greek geometry, three means in a semicircle, the Arbelos circle chain, honeycomb isoperimetry, and the Hellenistic Treasury of Analysis (c. 340 CE).
-- **`Theorems <https://geometor.github.io/pappus/theorems/>`_** — Constructive projective theorems including Pappus's Hexagon Theorem, Steiner's six-line configuration, cross-ratio invariants, harmonic conjugates, and Pascal's *Hexagrammum Mysticum*.
+- `Mathematical Collection <https://geometor.github.io/pappus/synagoge/>`_ — Critical bilingual edition of Books III, IV, V, VII, and VIII surveying classical Greek geometry, three means in a semicircle, the Arbelos circle chain, honeycomb isoperimetry, and the Hellenistic Treasury of Analysis (c. 340 CE).
+- `Theorems <https://geometor.github.io/pappus/theorems/>`_ — Constructive projective theorems including Pappus's Hexagon Theorem, Steiner's six-line configuration, cross-ratio invariants, harmonic conjugates, and Pascal's *Hexagrammum Mysticum*.
 
 Projective Geometry & Classical Mechanics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
