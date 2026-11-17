@@ -1,5 +1,5 @@
 :navigation: header
-:order: 5
+:order: 10
 :nav_title: People
 :title: People — Index of Geometers, Commentators & Editors
 :breadcrumb_title: People
