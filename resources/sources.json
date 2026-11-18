@@ -1,0 +1,23 @@
+{
+  "repository": "geometor/pappus",
+  "rights_category": "public-domain",
+  "sources": [
+    {
+      "id": "hultsch-1877-pappus-vol2",
+      "title": "Pappi Alexandrini Collectionis quae supersunt — Vol. II (Books VI–VII, 1877)",
+      "author": "Friedrich Hultsch (ed.)",
+      "year": "1877",
+      "era": "Google Books",
+      "languages": [
+        "Greek",
+        "Latin"
+      ],
+      "site_url": "https://books.google.com/books?q=Pappi+Alexandrini+Collectionis+Hultsch+1877",
+      "local_path": "resources/pdfs/pappus_1877_collectionis_vol2.pdf",
+      "pages": 445,
+      "publisher": "Weidmann, Berlin",
+      "rights": "Public Domain (1877)",
+      "excerpt": "Hultsch critical Greek/Latin edition of Pappus Synagoge Vol. II (445 pp.)."
+    }
+  ]
+}
