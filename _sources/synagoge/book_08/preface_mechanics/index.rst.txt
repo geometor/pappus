@@ -1,7 +1,7 @@
 :order: 1
 :layout: book
 :type: book
-:title: 1. Preface to Hermodorus: Architectonic Mechanics
+:title: Preface to Hermodorus: Architectonic Mechanics
 :canonical_id: Syn. VIII.1-4
 :folio: 0031
 :excerpt: Pappus's architectural prologue on the rational vs. manual division of mechanics, the defense of Archimedean mechanics by Carpus of Antioch, and the classification of machine-makers.
@@ -13,6 +13,9 @@ Preface to Hermodorus: Architectonic Mechanics
 ==============================================
 
 .. rubric:: *Synagoge* Book VIII, Preface to Hermodorus, Chapters 1–4 (:cite:`Hultsch III, pp. 1022–1028 <hultsch:1878>`) · Critical English Edition
+
+.. folio:: 0031
+   :page: 1022
 
 The science of mechanics (*ἡ μηχανικὴ θεωρία*), my son :person:`Hermodorus <hermodorus>`, being serviceable for many great matters in human life, has rightly been deemed worthy of the highest esteem by philosophers, and is zealously pursued by nearly all who devote themselves to mathematical learning. For it stands first in investigating the natural inquiry concerning the material composition of the elements in the cosmos, and examines the stability and local motion of heavy bodies: both why things return toward their proper places and how bodies may be impelled upward *contrary to their natural tendency* (*παρὰ φύσιν*) through theorems that draw their principles from matter itself.
 

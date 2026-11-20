@@ -1,14 +1,17 @@
 :layout: book
 :title: Book III · Analytical Summary & Invariant Audit
 :order: 90
+:folio: 0232
 
 .. _synagoge-b3-summary:
 
-===============================================================================
-Book III · Summary & Exact Symbolic Audit (*Three Means & Problem Hierarchy*)
-===============================================================================
+Book III · Summary & Exact Symbolic Audit
+=========================================
 
 .. rubric:: Structural Argument Map & ``geometor.pappus`` Symbolic Verification
+
+.. folio:: 0232
+   :page: 1220
 
 1. Methodological Architecture (*Hultsch I, pp. 30–68*)
 -------------------------------------------------------

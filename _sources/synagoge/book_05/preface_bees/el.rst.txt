@@ -1,7 +1,9 @@
+:order: 1
 :layout: book
 :type: book
 :title: Προοίμιον πρὸς Μεγέθιον · Περὶ τῆς τῶν μελισσῶν προνοίας
 :canonical_id: Syn. V.preface.el
+:folio: 0246
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 .. _sec-b5-el-bees-preface:
@@ -9,7 +11,10 @@
 Προοίμιον πρὸς Μεγέθιον · Περὶ τῆς τῶν μελισσῶν προνοίας
 ==========================================================
 
-.. rubric:: Πάππου Ἀλεξανδρέως Συναγωγῆς Ε΄ (*Chs. 1–3*, :cite:`ed. F. Hultsch, Vol. I, pp. 304–308 <hultsch:1876>`)
+.. rubric:: Πάππου Ἀλεξανδρέως Συναγωγῆς Ε΄, κεφ. α΄–γ΄ (:cite:`ed. F. Hultsch, Vol. I, pp. 304–308 <hultsch:1876>`)
+
+.. folio:: 0246
+   :page: 1234
 
 .. rst-class:: greek-text
 

@@ -1,7 +1,9 @@
+:order: 1
 :layout: book
 :type: book
 :title: Πρότασις α΄ · Καθολικὸν θεώρημα τῶν παραλληλογράμμων
 :canonical_id: Syn. IV.1.el
+:folio: 0235
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 .. _sec-b4-el-area-theorem:
@@ -9,7 +11,10 @@
 Πρότασις α΄ · Καθολικὸν θεώρημα τῶν παραλληλογράμμων
 ======================================================
 
-.. rubric:: Πάππου Ἀλεξανδρέως Συναγωγῆς Δ΄ (*Prop. 1*, :cite:`ed. F. Hultsch, Vol. I, pp. 176–179 <hultsch:1876>`)
+.. rubric:: Πάππου Ἀλεξανδρέως Συναγωγῆς Δ΄, κεφ. α΄ (:cite:`ed. F. Hultsch, Vol. I, pp. 176–179 <hultsch:1876>`)
+
+.. folio:: 0235
+   :page: 1223
 
 .. picture:: /_static/constructions/pappus_area_theorem.svg
    :alt: Πάππου Συναγωγῆς Δ΄ α΄ — Καθολικὸν θεώρημα τῶν παραλληλογράμμων

@@ -5,10 +5,11 @@
 :breadcrumb_title: Book V · Bees & Isoperimetry
 :layout: book
 :book_title: Book V · On the Geometric Forethought of Bees & Isoperimetry
-:book_subtitle: Pappus of Alexandria · Synagoge V (ed. Hultsch I, pp. 304–336)
+:book_subtitle: Pappus of Alexandria · Synagoge V (ed. Hultsch I, pp. 304–336; App. IV, pp. 1234–1240)
 :author: Pappus of Alexandria
 :year: c. 340 CE
-:excerpt: The famous philosophical preface on the honeycomb geometry of bees, regular planar tessellations (triangle, square, hexagon), and the planar isoperimetric theorem proving that for equal perimeter the polygon with more angles encloses greater area.
+:folio: 0246
+:excerpt: The philosophical preface on the honeycomb geometry of bees, regular planar tessellations, and the atomic propositions of the planar isoperimetric theorem.
 
 .. _synagoge-b5-en:
 
@@ -17,9 +18,12 @@ Book V · On the Geometric Forethought of Bees & Isoperimetry
 
 .. rubric:: *Μαθηματικὴ Συναγωγή* Ε΄ — :person:`Pappus of Alexandria <pappus>`, ed. :cite:`Friedrich Hultsch <hultsch:1876>` (Vol. I, pp. 304–336)
 
+.. folio:: 0246
+   :page: 1234
+
 .. note::
 
-   **Edition Track (English)**: Complete critical English edition of Book V's opening masterpiece: the Preface on the Sagacity of Bees and Propositions 1–10 establishing the planar isoperimetric theorem ($A_6 > A_4 > A_3$). Switch tracks above for **Greek (Hultsch 1876)**, **Summary**, or **Notes**.
+   **Edition Track (English)**: Complete critical English edition of Book V's planar isoperimetric cycle: the Preface on the Sagacity of Bees and the atomic Propositions establishing $A_{\text{polygon}} < A_{\text{regular}} < A_{\text{more-sided}} < A_{\text{circle}}$. Switch tracks above for **Greek (Hultsch 1876)**, **Summary**, or **Notes**.
 
 .. container:: title-page
 
@@ -28,7 +32,7 @@ Book V · On the Geometric Forethought of Bees & Isoperimetry
    |
    | **Author**: :person:`Pappus of Alexandria <pappus>` (fl. c. 320–340 CE)
    | **Addressee**: :person:`Megethius <megethius>`
-   | **Critical Greek Edition**: :cite:`Friedrich Hultsch <hultsch:1876>` (Vol. I, Berlin: Weidmann, 1876, pp. 304–473)
+   | **Critical Greek Edition**: :cite:`Friedrich Hultsch <hultsch:1876>` (Vol. I, Berlin: Weidmann, 1876, pp. 304–473; Vol. III App. IV, pp. 1234–1240)
    | **Latin Editio Princeps**: :cite:`Federico Commandino <commandino:1588>` (Pesaro, 1588)
 
 .. epigraph::
@@ -51,7 +55,12 @@ Table of Contents
    :caption: Preface & Propositions
 
    preface_bees/index
-   prop_01_10_isoperimetry/index
+   prop_01_isoperimetric_polygons/index
+   prop_02_circle_exceeds_polygons/index
+   prop_03_sector_tangent_inequality/index
+   prop_04_isosceles_extremum/index
+   prop_06_equilateral_extremum/index
+   prop_10_equiangular_extremum/index
 
 .. toctree::
    :hidden:

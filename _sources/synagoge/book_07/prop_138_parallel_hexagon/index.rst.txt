@@ -1,15 +1,19 @@
-:order: 5
+:order: 6
 :layout: book
 :type: book
-:title: 5. Proposition 138: Pappus Hexagon on Parallel Carriers
+:title: Proposition 138: Pappus Hexagon on Parallel Carriers
 :canonical_id: Syn. VII.138
+:folio: 0276
 :excerpt: Lemma XII to Euclid's Porisms: Pappus's hexagon theorem when the two carrier lines are parallel, yielding the parallel Steiner star point S+ = (90/73, 38/73).
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Proposition 138: Pappus Hexagon on Parallel Carriers
 ====================================================
 
-.. rubric:: *Synagoge* Book VII, Proposition 138 (:cite:`Hultsch II, pp. 884–886 <hultsch:1877>`, Lemma XII to Euclid's *Porisms*) · Critical English Edition
+.. rubric:: *Synagoge* Book VII, Proposition 138 (:cite:`Hultsch II, pp. 884–886 <hultsch:1877>`, Lemma XII to Euclid's *Porisms*; App. IV, p. 1264)
+
+.. folio:: 0276
+   :page: 1264
 
 In **Proposition 138**, Pappus proves the collinearity of opposite cross-joins for a hexagon whose vertices lie alternately on two **parallel lines** $a \parallel b$.
 
@@ -31,3 +35,14 @@ In **Proposition 138**, Pappus proves the collinearity of opposite cross-joins f
 .. step::
 
    Through cross-multiplication of proportional segments, the vertical distance of all three intersection points from carrier line $a$ is identical, proving that the Pappus line is not merely straight, but is itself parallel to the two carriers.
+
+Archival Plate (*Hultsch Vol. III, Appendix IV, p. 1264*)
+---------------------------------------------------------
+
+.. picture:: 0276.g2.png
+   :alt: Archival woodcut plate 0276.g2 — Projective transversal triangle lemma (Hultsch III, p. 1264)
+   :caption: Original Hultsch bitmap (folio 0276, p. 1264): transversal proportion lemma λεγμθη supporting Props. 138–143.
+
+.. picture:: 0276.g2.svg
+   :alt: Calibrated interactive vector plate 0276.g2 — Projective transversal triangle
+   :caption: Calibrated .euclid-graphic vectorization of plate 0276.g2.

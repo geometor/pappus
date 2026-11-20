@@ -1,25 +1,23 @@
-:order: 3
+:order: 8
 :layout: book
 :type: book
-:title: 3. Πρότασις κγ΄ · Ἑπτὰ ἑξάγωνα εἰς κύκλον (Greek)
-:canonical_id: Syn. VIII.23
+:title: Πρότασις κγ΄ · Ἑπτὰ ἑξάγωνα εἰς κύκλον
+:canonical_id: Syn. VIII.23.el
 :folio: 0107
-:excerpt: Πάππου Ἀλεξανδρέως Συναγωγῆς Η΄ Πρότασις κγ΄ (κεφ. μβ΄) κατὰ τὴν ἔκδοσιν τοῦ F. Hultsch.
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 .. _sec-b8-el-seven-hexagons:
 
-Πρότασις κγ΄ · Ἑπτὰ ἑξάγωνα εἰς κύκλον (*Hultsch III, pp. 1074, 1096–1102*)
-=============================================================================
+Πρότασις κγ΄ · Ἑπτὰ ἑξάγωνα εἰς κύκλον
+======================================
 
-.. rubric:: Πάππου Ἀλεξανδρέως Συναγωγῆς Η΄, κεφ. κϛ΄, μβ΄ (:cite:`Hultsch III, pp. 1074, 1096–1102 <hultsch:1878>`)
+.. rubric:: Πάππου Ἀλεξανδρέως Συναγωγῆς Η΄, κεφ. μβ΄ (:cite:`Hultsch III, pp. 1096–1102 <hultsch:1878>`)
+
+.. folio:: 0107
+   :page: 1096
 
 .. picture:: /_static/constructions/honeycomb_isoperimetry.svg
    :alt: Πάππου Συναγωγῆς Η΄ κγ΄ — Εἰς τὸν δοθέντα κύκλον ἑπτὰ ἑξάγωνα ἰσόπλευρα ἐγγράψαι
-
-.. rst-class:: greek-text
-
-   **[Ch. 26 · Hultsch III, p. 1074]** Προβλήματα ὀργανικὰ καὶ :term:`τὰ ἑνὶ διαστήματι γραφόμενα <heni-diastemati>` πρὸς τὰς ἀρχιτεκτονικὰς χρείας χρήσιμα καθέστηκεν.
 
 .. rst-class:: greek-text
 

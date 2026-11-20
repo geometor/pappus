@@ -1,8 +1,9 @@
-:order: 3
+:order: 6
 :layout: book
 :type: book
 :title: Golden-Section Specialization in Q(phi)
 :canonical_id: Syn. III.phi
+:folio: 0233
 :excerpt: Algebraic closure and geometric properties of Pappus's semicircle means when diameter segments stand in the ratio of the square of the golden ratio (a = 1, b = phi^2).
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
@@ -12,6 +13,9 @@ Golden-Section Specialization in $\mathbb{Q}(\phi)$
 ===================================================
 
 .. rubric:: Modern Geometric Synthesis · Algebraic Invariants in the Golden Field
+
+.. folio:: 0233
+   :page: 1221
 
 When the diameter segments stand in the square of the golden ratio, $a = 1$ and $b = \phi^2 = \phi + 1$ (where $\phi = \frac{1 + \sqrt{5}}{2}$), the total diameter has length $1 + \phi^2 = \phi + 2 = \sqrt{5}\,\phi$, and Pappus's semicircle exhibits algebraic closure over $\mathbb{Q}(\phi)$:
 

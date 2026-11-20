@@ -1,15 +1,19 @@
-:order: 4
+:order: 5
 :layout: book
 :type: book
-:title: 4. Proposition 131: Complete-Quadrilateral Harmonic Conjugates
+:title: Proposition 131: Complete-Quadrilateral Harmonic Conjugates
 :canonical_id: Syn. VII.131
+:folio: 0276
 :excerpt: Lemma V to Euclid's Porisms: straightedge construction of the fourth harmonic conjugate from a complete quadrilateral and the 81 emergent collinear harmonic tetrads.
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Proposition 131: Complete-Quadrilateral Harmonic Conjugates
 ===========================================================
 
-.. rubric:: *Synagoge* Book VII, Proposition 131 (:cite:`Hultsch II, pp. 874–876 <hultsch:1877>`, Lemma V to Euclid's *Porisms*) · Critical English Edition
+.. rubric:: *Synagoge* Book VII, Proposition 131 (:cite:`Hultsch II, pp. 874–876 <hultsch:1877>`, Lemma V to Euclid's *Porisms*; App. IV, pp. 1264, 1269)
+
+.. folio:: 0276
+   :page: 1264
 
 In **Proposition 131**, Pappus applies cross-ratio invariance to the geometry of the **complete quadrilateral**, demonstrating that opposite sides and diagonals cut any transversal line across the figure in **harmonic division** ($\operatorname{CR} = -1$).
 
@@ -30,4 +34,15 @@ In **Proposition 131**, Pappus applies cross-ratio invariance to the geometry of
 
 .. step::
 
-   **Demonstration**: The four vertices $P, Q, R, S$ form a complete quadrilateral whose three pairs of opposite sides are $(PQ, RS)$, $(PR, QS)$, and $(PS, QR)$. Central projection from $P$ onto $QR$ followed by projection from $A$ back onto line $AB$ preserves the cross-ratio. By Pappus's lemma, the resulting involution forces the harmonic cross-ratio $\operatorname{CR}(A, B; C, D) = -1$, completely independent of the choice of auxiliary points $P$ and $Q$.
+   **Demonstration**: The four vertices $P, Q, R, S$ form a complete quadrilateral whose three pairs of opposite sides are $(PQ, RS)$, $(PR, QS)$, and $(PS, QR)$. Central projection from $P$ onto $QR$ followed by projection from $A$ back onto line $AB$ preserves the cross-ratio, forcing $\operatorname{CR}(A, B; C, D) = -1$.
+
+Archival Plate (*Hultsch Vol. III, Appendix IV, p. 1269*)
+---------------------------------------------------------
+
+.. picture:: 0281.g1.png
+   :alt: Archival woodcut plate 0281.g1 — Collinear four-point range comparison (Hultsch III, p. 1269)
+   :caption: Original Hultsch bitmap (folio 0281, p. 1269): dual four-point collinear point ranges αβγη and δεζθ.
+
+.. picture:: 0281.g1.svg
+   :alt: Calibrated interactive vector plate 0281.g1 — Collinear four-point ranges
+   :caption: Calibrated .euclid-graphic vectorization of plate 0281.g1.

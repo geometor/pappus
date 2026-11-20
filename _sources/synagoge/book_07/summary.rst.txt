@@ -1,21 +1,22 @@
 :layout: book
 :title: Book VII · Analytical Summary & Invariant Audit
 :order: 90
+:folio: 0278
 
 .. _synagoge-b7-summary:
 
-========================================================================================
-Book VII · Summary & Exact Symbolic Audit (*Treasury of Analysis & Projective Lemmas*)
-========================================================================================
+Book VII · Summary & Exact Symbolic Audit
+=========================================
 
 .. rubric:: Epistemological Framework & Projective Geometry
+
+.. folio:: 0278
+   :page: 1266
 
 1. Analysis vs. Synthesis (*Hultsch II pp. 634–636*)
 ----------------------------------------------------
 
-* **Analysis** (*ἀνάπαλιν λύσις*): Assumes the sought proposition or construction as already accomplished, tracing implications backward until arriving at an admitted first principle, axiom, or known theorem.
-  * *Theoretical*: Establishes truth.
-  * *Problematic*: Constructs a sought geometric figure subject to a :term:`diorismos <diorismos>`.
+* **Analysis** (*ἀνάπαλιν λύσις*): Assumes the sought proposition or construction as already accomplished, tracing implications backward until arriving at an admitted first principle, axiom, or known theorem (*theoretical* vs. *problematic* analysis).
 * **Synthesis** (*σύνθεσις*): Reverses the analytical deduction, taking the endpoint of analysis as starting hypothesis and constructing the sought entity forward.
 
 2. The 33-Book Analytical Canon (*Hultsch II p. 636*)

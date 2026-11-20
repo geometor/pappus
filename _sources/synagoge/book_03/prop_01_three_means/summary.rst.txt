@@ -1,13 +1,18 @@
+:order: 5
 :layout: book
 :type: book
 :title: The Three Means · Symbolic Invariants & Algebraic Decomposition
 :canonical_id: Syn. III.28-30.summary
+:folio: 0232
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 The Three Means · Symbolic Invariants & Algebraic Decomposition
 ===============================================================
 
 .. rubric:: Structural Decomposition & Model Verification
+
+.. folio:: 0232
+   :page: 1220
 
 1. Elements 2.0 Structural Decomposition
 ----------------------------------------
@@ -26,11 +31,5 @@ The Three Means · Symbolic Invariants & Algebraic Decomposition
 
 Constructed in :func:`geometor.pappus.construct_three_means`:
 
-* $A = (0, 0)$
-* $D = (9, 0)$
-* $O = \left(\frac{25}{2}, 0\right)$
-* $C = (25, 0)$
-* $B = (9, 12)$
-* $F = \left(\frac{7641}{625}, \frac{588}{625}\right)$
-* $T = \left(-\frac{225}{7}, 0\right)$
+* $A = (0, 0)$, $D = (9, 0)$, $O = \left(\frac{25}{2}, 0\right)$, $C = (25, 0)$, $B = (9, 12)$, $F = \left(\frac{7641}{625}, \frac{588}{625}\right)$, $T = \left(-\frac{225}{7}, 0\right)$
 * Cross-ratio: $\operatorname{CR}(A, C; D, T) = -1$

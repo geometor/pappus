@@ -1,7 +1,9 @@
+:order: 1
 :layout: book
 :type: book
 :title: Προοίμιον πρὸς Ἑρμόδωρον · Ἀνάλυσις καὶ Σύνθεσις
 :canonical_id: Syn. VII.preface.el
+:folio: 0269
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 .. _sec-b7-el-analysis-synthesis:
@@ -9,7 +11,10 @@
 Προοίμιον πρὸς Ἑρμόδωρον · Ἀνάλυσις καὶ Σύνθεσις
 =================================================
 
-.. rubric:: Πάππου Ἀλεξανδρέως Συναγωγῆς Ζ΄ (*Chs. 1–3*, :cite:`ed. F. Hultsch, Vol. II, pp. 634–636 <hultsch:1877>`)
+.. rubric:: Πάππου Ἀλεξανδρέως Συναγωγῆς Ζ΄, κεφ. α΄–γ΄ (:cite:`ed. F. Hultsch, Vol. II, pp. 634–636 <hultsch:1877>`)
+
+.. folio:: 0269
+   :page: 1257
 
 .. rst-class:: greek-text
 

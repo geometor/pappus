@@ -1,8 +1,9 @@
 :order: 1
 :layout: book
 :type: book
-:title: 1. Preface to Hermodorus: Analysis, Synthesis, and the Thirty-Three Books
+:title: Preface to Hermodorus: Analysis, Synthesis, and the Thirty-Three Books
 :canonical_id: Syn. VII.preface
+:folio: 0269
 :excerpt: Pappus's masterly definition of mathematical analysis and synthesis and the complete curriculum of the 33 books comprising the ancient Hellenistic Treasury of Analysis.
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
@@ -11,7 +12,10 @@
 Preface to Hermodorus: Analysis, Synthesis, and the Thirty-Three Books
 ======================================================================
 
-.. rubric:: *Synagoge* Book VII, Chs. 1–3 (:cite:`Hultsch II, pp. 634–638 <hultsch:1877>`) · Original English Translation from Hultsch's Greek
+.. rubric:: *Synagoge* Book VII, Chs. 1–3 (:cite:`Hultsch II, pp. 634–638 <hultsch:1877>`; App. IV, p. 1257) · Original English Translation
+
+.. folio:: 0269
+   :page: 1257
 
 That body of doctrine which is called the :term:`Treasury of Analysis <topos-analyomenos>` (*ὁ καλούμενος ἀναλυόμενος τόπος*), my son :person:`Hermodorus <hermodorus>`, is—taken as a whole—a specialized mathematical resource prepared, after the composition of the common *Elements*, for those who wish to acquire in geometric inquiries the power of discovering solutions to problems set before them; and it was written exclusively for this purpose by three principal men: :person:`Euclid <euclid>` the author of the *Elements*, :person:`Apollonius of Perga <apollonius>`, and :person:`Aristaeus the Elder <aristaeus>`—proceeding entirely by way of :term:`analysis <analysis>` and :term:`synthesis <synthesis>`.
 

@@ -1,7 +1,9 @@
+:order: 6
 :layout: book
 :type: book
 :title: Golden Means · Historical Commentary
 :canonical_id: Syn. III.phi.notes
+:folio: 0233
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Golden Means · Historical Commentary
@@ -9,6 +11,7 @@ Golden Means · Historical Commentary
 
 .. rubric:: The Golden Ratio in Alexandrian Geometry
 
-The extreme and mean ratio (:cite:`Euclid Elements VI.def.3 <euclid:elements>`) appears naturally in the context of the regular pentagon (*Elements* IV.10–11) and the icosahedron and dodecahedron (*Elements* XIII.13–18). Pappus was deeply engaged with these constructions, as demonstrated in Book III Chapters 54–58 where he presents an alternative analytical method for inscribing the five regular Platonic solids in a given sphere.
+.. folio:: 0233
+   :page: 1221
 
-In the GEOMETOR platform, this golden specialization provides the direct bridge between Pappus's semicircle medieties and the symbolic engine of ``geometor/divine``.
+The extreme and mean ratio (:cite:`Euclid Elements VI.def.3 <euclid:elements>`) appears naturally in the regular pentagon (*Elements* IV.10–11) and the Platonic solids (*Elements* XIII.13–18). In the GEOMETOR platform, this golden specialization provides a direct bridge between Pappus's semicircle medieties and ``geometor/divine``.

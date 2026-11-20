@@ -1,13 +1,18 @@
+:order: 6
 :layout: book
 :type: book
 :title: Ἡ τοῦ χρυσοῦ λόγου ἰδιότης ἐν τῷ ἡμικυκλίῳ
 :canonical_id: Syn. III.phi.el
+:folio: 0233
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Ἡ τοῦ χρυσοῦ λόγου ἰδιότης ἐν τῷ ἡμικυκλίῳ
 ===========================================
 
 .. rubric:: Πάππου Συναγωγῆς Γ΄ · Ὁ χρυσοῦς λόγος $\phi$ ἐν ταῖς μεσότησιν
+
+.. folio:: 0233
+   :page: 1221
 
 .. picture:: /_static/constructions/synagoge_three_means_golden.svg
    :alt: Πάππου Συναγωγῆς Γ΄ — Ὁ χρυσοῦς λόγος ἐν τῷ ἡμικυκλίῳ

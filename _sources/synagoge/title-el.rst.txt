@@ -8,6 +8,7 @@
 :persons_label: Πρόσωπα
 :bibliography_label: Βιβλιογραφία
 :glossary_label: Γλωσσάριον
+:folio: 0031
 :tracks: English: index | Greek: title-el
 
 .. _synagoge-title-el:
@@ -17,6 +18,9 @@
 =============================================
 
 .. rubric:: *Pappi Alexandrini Collectionis quae supersunt* — Ἔκδοσις Friedrich Hultsch (Βερολῖνον: Weidmann, 1876–1878)
+
+.. folio:: 0031
+   :page: 1022
 
 .. container:: title-page
 

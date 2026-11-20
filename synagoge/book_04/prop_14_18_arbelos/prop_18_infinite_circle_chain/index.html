@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Syn. IV.18: Proposition 18: Induction for the Infinite Circle Chain — Book IV · Generalized Area Theorem &amp; The Arbelos Circle Chain • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/pappus/synagoge/book_04/prop_14_18_arbelos/prop_18_infinite_circle_chain/" />
+  <meta name="description" content="Complete inductive proof of the endless tangent circle chain in the arbelos (y_n = n * d_n), exact rational coordinates for (r1, r2) = (2, 1), and the focal ellipse of centers." />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Syn. IV.18: Proposition 18: Induction for the Infinite Circle Chain — Book IV · Generalized Area Theorem &amp; The Arbelos Circle Chain • GEOMETOR" />
+  <meta property="og:description" content="Complete inductive proof of the endless tangent circle chain in the arbelos (y_n = n * d_n), exact rational coordinates for (r1, r2) = (2, 1), and the focal ellipse of centers." />
+  <meta property="og:url" content="https://geometor.github.io/pappus/synagoge/book_04/prop_14_18_arbelos/prop_18_infinite_circle_chain/" />
+  <meta property="og:image" content="https://geometor.github.io/pappus/_static/social/synagoge.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="640" />
+  <meta property="og:image:alt" content="Pappus of Alexandria — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Syn. IV.18: Proposition 18: Induction for the Infinite Circle Chain — Book IV · Generalized Area Theorem &amp; The Arbelos Circle Chain • GEOMETOR" />
+  <meta name="twitter:description" content="Complete inductive proof of the endless tangent circle chain in the arbelos (y_n = n * d_n), exact rational coordinates for (r1, r2) = (2, 1), and the focal ellipse of centers." />
+  <meta name="twitter:image" content="https://geometor.github.io/pappus/_static/social/synagoge.png" />
+  <meta name="twitter:image:alt" content="Pappus of Alexandria — GEOMETOR" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../_static/css/styles.css?v=f1075037" />
+  <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=f442dd77" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif" data-folio="0241">
+  <header>
+    <div class="logo">
+      <a href="../../../../index.html" title="Home">
+        <img src="../../../../_static/logo.png" class="logo" alt="GEOMETOR pappus"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">pappus</span>
+        </div>
+      </a>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../index.html" class="is-active" aria-selected="true" >Mathematical Collection</a>
+        </li>
+        <li>
+          <a href="../../../book_03/index.html"  >Book III</a>
+        </li>
+        <li>
+          <a href="../../index.html" class="is-active" aria-selected="true" >Book IV</a>
+        </li>
+        <li>
+          <a href="../../../book_05/index.html"  >Book V</a>
+        </li>
+        <li>
+          <a href="../../../book_07/index.html"  >Book VII</a>
+        </li>
+        <li>
+          <a href="../../../book_08/index.html"  >Book VIII</a>
+        </li>
+        <li>
+          <a href="../../../people/index.html"  >People</a>
+        </li>
+        <li>
+          <a href="../../../../sources/index.html"  >Sources</a>
+        </li>
+        <li>
+          <a href="../../../bibliography.html"  >Bibliography</a>
+        </li>
+        <li>
+          <a href="../../../concordance.html"  >Concordance</a>
+        </li>
+        <li>
+          <a href="../../../../theorems/index.html"  >Theorems</a>
+        </li>
+        <li>
+          <a href="../../../glossary.html"  >Glossary</a>
+        </li>
+        <li>
+          <a href="../../../../about/index.html"  >About</a>
+        </li>
+        <li>
+          <a href="../../../../log/index.html"  >Log</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane" data-folio="0241" data-canonical-id="Syn. IV.18">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <a class="book-section-home-link" href="../../../index.html">Mathematical Collection</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <a class="book-crumb-link" href="../../index.html">Book IV · Area & Arbelos</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <a class="book-crumb-link" href="../index.html">Arbelos Circle Chain</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <a class="book-crumb-link" href="el.html">Syn. IV.18</a>
+          </nav>
+          <div class="book-provenance-badges">
+            <a class="book-badge folio-badge folio-link" href="https://raw.githubusercontent.com/geometor/pappus/main/resources/synagoge/folios/0241.png" target="_blank" rel="noopener" title="View Folio 0241">Folio 0241</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../prop_17_adjacent_circles_ratio/index.html" title="Proposition 17: Adjacent Circle Altitude Recurrence">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <a class="book-track-item" href="el.html">Greek (Hultsch 1876)</a>
+              <span class="book-track-sep">&middot;</span>
+              <strong class="book-track-item is-active" aria-current="page">English</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="summary.html">Summary</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="notes.html">Notes</a>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../../../book_05/index.html" title="Book V · On the Geometric Forethought of Bees &amp; Isoperimetry"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="proposition-18-induction-for-the-infinite-circle-chain">
+        <h1>Proposition 18: Induction for the Infinite Circle Chain<a class="headerlink" href="#proposition-18-induction-for-the-infinite-circle-chain" title="Link to this heading">¶</a></h1>
+        <p class="rubric"><em>Synagoge</em> Book IV, Ch. 26 / Prop. 18 (<a class="citation-ref" id="occ-cite-hultsch-1876-1" href="../../../bibliography.html#cite-hultsch-1876" data-cite="hultsch:1876" title="Pappus of Alexandria (ed. Friedrich Hultsch) — Pappi Alexandrini Collectionis quae supersunt, Vol. I (Books II–V) (Berlin: Weidmann, 1876 (pp. 2–473))">Hultsch I, pp. 224–228</a>; App. IV, p. 1229) · Original English Translation</p>
+        <span class="folio-anchor" id="folio-0241" data-folio="0241" data-page="1229"></span><figure class="photon-picture photon-svg">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" data-graphic-id="g3" role="img" aria-label="Synagoge IV.14–18 — Pappus&#x27;s Arbelos Tangent Circle Chain (y_n = n d_n)" width="720" height="440" data-svg-scope="s-634c42ae">
+          <style>
+            svg[data-svg-scope="s-634c42ae"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #475569; --conic: #0284c7; --cross: #0e7490; --quad: #4338ca; --pappus-even: #d97706; --pappus-odd: #db2777; --steiner: #7c3aed; --harmonic: #059669; --golden: #b45309; --pt-given: #0f172a; --pt-a: #0369a1; --pt-b: #0f766e; --pt-meet-even: #d97706; --pt-meet-odd: #db2777; --pt-steiner: #7c3aed; --pt-harmonic: #059669; --tri-square: #d97706; --tri-circle: #0284c7; --tri-diamond: #db2777; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-634c42ae"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #94a3b8; --conic: #38bdf8; --cross: #38bdf8; --quad: #818cf8; --pappus-even: #fbbf24; --pappus-odd: #f472b6; --steiner: #c084fc; --harmonic: #34d399; --golden: #facc15; --pt-given: #e2e8f0; --pt-a: #38bdf8; --pt-b: #2dd4bf; --pt-meet-even: #fbbf24; --pt-meet-odd: #f472b6; --pt-steiner: #c084fc; --pt-harmonic: #34d399; --tri-square: #fbbf24; --tri-circle: #38bdf8; --tri-diamond: #f472b6 }
+            svg[data-svg-scope="s-634c42ae"] .geom-circle.conic-curve { fill: none; stroke: var(--conic); stroke-width: 2.15; opacity: 0.88 }
+            svg[data-svg-scope="s-634c42ae"] .geom-line { fill: none; stroke: var(--carrier); stroke-width: 1.6; stroke-linecap: round }
+            svg[data-svg-scope="s-634c42ae"] .carrier-line { stroke: var(--carrier); stroke-width: 2.1; opacity: 0.92 }
+            svg[data-svg-scope="s-634c42ae"] .cross-line { stroke: var(--cross); stroke-width: 1.25; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-634c42ae"] .quad-line { stroke: var(--quad); stroke-width: 1.45; stroke-opacity: 0.78 }
+            svg[data-svg-scope="s-634c42ae"] .diagonal-line { stroke-dasharray: 5 3.5 }
+            svg[data-svg-scope="s-634c42ae"] .pappus-line { stroke-width: 2.7; opacity: 0.96 }
+            svg[data-svg-scope="s-634c42ae"] .pappus-even { stroke: var(--pappus-even) }
+            svg[data-svg-scope="s-634c42ae"] .pappus-odd { stroke: var(--pappus-odd) }
+            svg[data-svg-scope="s-634c42ae"] .steiner-line { stroke: var(--steiner); stroke-width: 2.5; stroke-dasharray: 7 4 }
+            svg[data-svg-scope="s-634c42ae"] .harmonic-line { stroke: var(--harmonic); stroke-width: 2.5 }
+            svg[data-svg-scope="s-634c42ae"] .geom-segment { fill: none; stroke: var(--carrier); stroke-width: 2.3; stroke-linecap: round }
+            svg[data-svg-scope="s-634c42ae"] .geom-segment.golden-segment { fill: none; stroke: var(--golden); stroke-width: 3.6; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-634c42ae"] .geom-segment.harmonic-segment { fill: none; stroke: var(--harmonic); stroke-width: 3.2; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-634c42ae"] .geom-segment.arithmetic-segment { fill: none; stroke: var(--pappus-even); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92 }
+            svg[data-svg-scope="s-634c42ae"] .geom-segment.geometric-segment { fill: none; stroke: var(--conic); stroke-width: 3.1; stroke-linecap: round; opacity: 0.92 }
+            svg[data-svg-scope="s-634c42ae"] .geom-segment.vector-segment { fill: none; stroke: var(--steiner); stroke-width: 2.4; stroke-dasharray: 6 3.5; stroke-linecap: round; opacity: 0.88 }
+            svg[data-svg-scope="s-634c42ae"] .geom-segment.altitude-segment { fill: none; stroke: var(--pappus-odd); stroke-width: 2.2; stroke-dasharray: 4.5 3; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-634c42ae"] .geom-polygon.hexagon-poly { fill: var(--cross); fill-opacity: 0.06; stroke: var(--cross); stroke-width: 1.5; stroke-opacity: 0.4; stroke-linejoin: round }
+            svg[data-svg-scope="s-634c42ae"] .geom-polygon.tri-square { fill: var(--tri-square); fill-opacity: 0.09; stroke: var(--tri-square); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-634c42ae"] .geom-polygon.tri-circle { fill: var(--tri-circle); fill-opacity: 0.09; stroke: var(--tri-circle); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-634c42ae"] .geom-polygon.tri-diamond { fill: var(--tri-diamond); fill-opacity: 0.09; stroke: var(--tri-diamond); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-634c42ae"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-634c42ae"] .pt-a { fill: var(--pt-a) }
+            svg[data-svg-scope="s-634c42ae"] .pt-b { fill: var(--pt-b) }
+            svg[data-svg-scope="s-634c42ae"] .meet-point.pappus-even { fill: var(--pt-meet-even) }
+            svg[data-svg-scope="s-634c42ae"] .meet-point.pappus-odd { fill: var(--pt-meet-odd) }
+            svg[data-svg-scope="s-634c42ae"] .steiner-point { fill: var(--pt-steiner); stroke-width: 2.0 }
+            svg[data-svg-scope="s-634c42ae"] .harmonic-point { fill: var(--pt-harmonic); stroke-width: 1.8 }
+            svg[data-svg-scope="s-634c42ae"] .aux-point { opacity: 0.78 }
+            svg[data-svg-scope="s-634c42ae"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-634c42ae"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
+          <title>Synagoge IV.14–18 — Pappus&#x27;s Arbelos Tangent Circle Chain (y_n = n d_n)</title>
+          <g id="elements">
+            <g id="graphics">
+              <circle class="geom-circle conic-curve" cx="360" cy="350.29" r="274.29" data-ref="( O0 A )" data-aliases="( P2 A ) | ( P2 C )" fill="none"><title>( O0 A ): y**2 + (x - 3)**2 - 9 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="268.57" cy="350.29" r="182.86" data-ref="( O1 A )" data-aliases="( P3 A ) | ( P3 D )" fill="none"><title>( O1 A ): y**2 + (x - 2)**2 - 4 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="542.86" cy="350.29" r="91.43" data-ref="( O2 D )" data-aliases="( O2 C )" fill="none"><title>( O2 D ): y**2 + (x - 5)**2 - 1 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="477.55" cy="193.55" r="78.37" data-ref="( K1 X1 )" fill="none"><title>( K1 X1 ): (x - 30/7)**2 + (y - 12/7)**2 - 36/49 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="360" cy="130.86" r="54.86" data-ref="( K2 X2 )" fill="none"><title>( K2 X2 ): (x - 3)**2 + (y - 12/5)**2 - 9/25 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="268.57" cy="130.86" r="36.57" data-ref="( K3 X3 )" fill="none"><title>( K3 X3 ): (x - 2)**2 + (y - 12/5)**2 - 4/25 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="210.39" cy="150.81" r="24.94" data-ref="( K4 X4 )" fill="none"><title>( K4 X4 ): (x - 15/11)**2 + (y - 24/11)**2 - 9/121 = 0</title></circle>
+              <path class="geom-line carrier-line" d="M 14 350.29 L 360 350.29 L 706 350.29" data-ref="[ A C ]" data-aliases="[ A D ] | [ A P2 ] | [ A P3 ] | [ A O2 ] | [ A P1 ] | [ A P4 ] | [ D C ] | [ D P2 ] | [ D P3 ] | [ D O2 ] | [ D P1 ] | [ D P4 ] | [ C P2 ] | [ C P3 ] | [ C O2 ] | [ C P1 ] | [ C P4 ] | [ P2 P3 ] | [ P2 O2 ] | [ P2 P1 ] | [ P2 P4 ] | [ P3 O2 ] | [ P3 P1 ] | [ P3 P4 ] | [ O2 P1 ] | [ O2 P4 ] | [ P1 P4 ]" fill="none"><title>[ A C ]: y = 0</title></path>
+              <path class="geom-segment arithmetic-segment" d="M 477.55 350.29 L 477.55 271.92 L 477.55 193.55" data-ref="[ P1 K1 ]" data-aliases="[ K1 P1 ] | / P1 K1 /" fill="none" />
+              <path class="geom-segment harmonic-segment" d="M 360 350.29 L 360 240.57 L 360 130.86" data-ref="[ P2 K2 ]" data-aliases="[ K2 P2 ] | / P2 K2 /" fill="none" />
+              <path class="geom-segment arithmetic-segment" d="M 268.57 350.29 L 268.57 240.57 L 268.57 130.86" data-ref="[ P3 K3 ]" data-aliases="[ K3 P3 ] | / P3 K3 /" fill="none" />
+              <path class="geom-segment harmonic-segment" d="M 210.39 350.29 L 210.39 250.55 L 210.39 150.81" data-ref="[ P4 K4 ]" data-aliases="[ K4 P4 ] | / P4 K4 /" fill="none" />
+            </g>
+            <g id="highlights"></g>
+            <g id="points">
+              <circle class="geom-point harmonic-point aux-point" cx="268.57" cy="350.29" r="3.1" data-ref="P3" data-latex-x="2" data-latex-y="0"><title>P3 = (2, 0)</title></circle>
+              <circle class="geom-point aux-point" cx="542.86" cy="350.29" r="3.1" data-ref="O2" data-latex-x="5" data-latex-y="0"><title>O2 = (5, 0)</title></circle>
+              <circle class="geom-point aux-point" cx="555.92" cy="193.55" r="3.1" data-ref="X1" data-latex-x="\frac{36}{7}" data-latex-y="\frac{12}{7}"><title>X1 = (36/7, 12/7)</title></circle>
+              <circle class="geom-point harmonic-point" cx="477.55" cy="350.29" r="5.2" data-ref="P1" data-latex-x="\frac{30}{7}" data-latex-y="0"><title>P1 = (30/7, 0)</title></circle>
+              <circle class="geom-point aux-point" cx="414.86" cy="130.86" r="3.1" data-ref="X2" data-latex-x="\frac{18}{5}" data-latex-y="\frac{12}{5}"><title>X2 = (18/5, 12/5)</title></circle>
+              <circle class="geom-point aux-point" cx="305.14" cy="130.86" r="3.1" data-ref="X3" data-latex-x="\frac{12}{5}" data-latex-y="\frac{12}{5}"><title>X3 = (12/5, 12/5)</title></circle>
+              <circle class="geom-point aux-point" cx="235.32" cy="150.81" r="3.1" data-ref="X4" data-latex-x="\frac{18}{11}" data-latex-y="\frac{24}{11}"><title>X4 = (18/11, 24/11)</title></circle>
+              <circle class="geom-point harmonic-point" cx="210.39" cy="350.29" r="5.2" data-ref="P4" data-latex-x="\frac{15}{11}" data-latex-y="0"><title>P4 = (15/11, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="85.71" cy="350.29" r="4.2" data-ref="A" data-latex-x="0" data-latex-y="0"><title>A = (0, 0)</title></circle>
+              <circle class="geom-point given-point pt-b" cx="451.43" cy="350.29" r="4.2" data-ref="D" data-latex-x="4" data-latex-y="0"><title>D = (4, 0)</title></circle>
+              <circle class="geom-point given-point pt-a" cx="634.29" cy="350.29" r="4.2" data-ref="C" data-latex-x="6" data-latex-y="0"><title>C = (6, 0)</title></circle>
+              <circle class="geom-point apex-point harmonic-point" cx="360" cy="350.29" r="5.2" data-ref="P2" data-latex-x="3" data-latex-y="0"><title>P2 = (3, 0)</title></circle>
+              <circle class="geom-point-halo" cx="477.55" cy="193.55" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="477.55" cy="193.55" r="4.7" data-ref="K1" data-latex-x="\frac{30}{7}" data-latex-y="\frac{12}{7}"><title>K1 = (30/7, 12/7)</title></circle>
+              <circle class="geom-point-halo" cx="360" cy="130.86" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-odd" cx="360" cy="130.86" r="4.7" data-ref="K2" data-latex-x="3" data-latex-y="\frac{12}{5}"><title>K2 = (3, 12/5)</title></circle>
+              <circle class="geom-point-halo" cx="268.57" cy="130.86" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-even" cx="268.57" cy="130.86" r="4.7" data-ref="K3" data-latex-x="2" data-latex-y="\frac{12}{5}"><title>K3 = (2, 12/5)</title></circle>
+              <circle class="geom-point-halo" cx="210.39" cy="150.81" r="8.9" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.6" />
+              <circle class="geom-point meet-point pappus-odd" cx="210.39" cy="150.81" r="4.7" data-ref="K4" data-latex-x="\frac{15}{11}" data-latex-y="\frac{24}{11}"><title>K4 = (15/11, 24/11)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="259.93" y="373.15" data-ref="P3">P<tspan class="geom-label-sub" dy="3">3</tspan></text>
+              <text class="geom-label" x="534.22" y="336.95" data-ref="O2">O<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="468.91" y="375.25" data-ref="P1">P<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="201.75" y="375.25" data-ref="P4">P<tspan class="geom-label-sub" dy="3">4</tspan></text>
+              <text class="geom-label" x="79.86" y="335.85" data-ref="A">A</text>
+              <text class="geom-label" x="445.58" y="335.85" data-ref="D">D</text>
+              <text class="geom-label" x="628.44" y="335.85" data-ref="C">C</text>
+              <text class="geom-label" x="351.36" y="375.25" data-ref="P2">P<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="468.91" y="178.61" data-ref="K1">K<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="351.36" y="115.92" data-ref="K2">K<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="259.93" y="115.92" data-ref="K3">K<tspan class="geom-label-sub" dy="3">3</tspan></text>
+              <text class="geom-label" x="201.75" y="135.87" data-ref="K4">K<tspan class="geom-label-sub" dy="3">4</tspan></text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Along baseline <span class="geom-ref" data-ref="g3:[ A C ]" title="[ A C ]">AC</span> with $r_1 = 2$ and $r_2 = 1$ ($R = 3$), place <span class="geom-ref" data-ref="g3:A" title="A">A</span> $= (0, 0)$, <span class="geom-ref" data-ref="g3:D" title="D">D</span> $= (4, 0)$, and <span class="geom-ref" data-ref="g3:C" title="C">C</span> $= (6, 0)$, and describe outer semicircle <span class="geom-ref" data-ref="g3:( O0 A )" title="( O0 A )">(O0, A)</span> centered at <span class="geom-ref" data-ref="g3:O0" title="O0">O0</span> $= (3, 0)$ together with inner semicircles <span class="geom-ref" data-ref="g3:( O1 A )" title="( O1 A )">(O1, A)</span> and <span class="geom-ref" data-ref="g3:( O2 D )" title="( O2 D )">(O2, D)</span> centered at <span class="geom-ref" data-ref="g3:O1" title="O1">O1</span> $= (2, 0)$ and <span class="geom-ref" data-ref="g3:O2" title="O2">O2</span> $= (5, 0)$.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Inscribe base circle <span class="geom-ref" data-ref="g3:( K1 X1 )" title="( K1 X1 )">C1</span> tangent to all three semicircles (<em>Prop. 18 base step, Hultsch I pp. 226–228</em>). By Lemma 2 (<em>Prop. 16</em>), center <span class="geom-ref" data-ref="g3:K1" title="K1">K1</span> $= \left(\frac{30}{7}, \frac{12}{7}\right)$ above foot <span class="geom-ref" data-ref="g3:P1" title="P1">P1</span> has radius $r_1^{(c)} = \frac{6}{7}$ and diameter $d_1 = \frac{12}{7}$, so altitude <span class="geom-ref" data-ref="g3:[ P1 K1 ]" title="[ P1 K1 ]">P1K1</span> satisfies $y_1 = \frac{12}{7} = 1 \cdot d_1$.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Inscribe <span class="geom-ref" data-ref="g3:( K2 X2 )" title="( K2 X2 )">C2</span> tangent to <span class="geom-ref" data-ref="g3:( O0 A )" title="( O0 A )">(O0, A)</span>, <span class="geom-ref" data-ref="g3:( O1 A )" title="( O1 A )">(O1, A)</span>, and <span class="geom-ref" data-ref="g3:( K1 X1 )" title="( K1 X1 )">C1</span>. By Lemma 3 (<em>Prop. 17</em>), $\frac{y_2}{d_2} = \frac{y_1 + d_1}{d_1} = 1 + 1 = 2$. Indeed <span class="geom-ref" data-ref="g3:K2" title="K2">K2</span> $= \left(3, \frac{12}{5}\right)$ has radius $r_2^{(c)} = \frac{3}{5}$, diameter $d_2 = \frac{6}{5}$, and altitude <span class="geom-ref" data-ref="g3:[ P2 K2 ]" title="[ P2 K2 ]">P2K2</span> $= \frac{12}{5} = 2\,d_2$.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Repeat the inductive recurrence $\frac{y_{n+1}}{d_{n+1}} = \frac{y_n}{d_n} + 1$ (<em>Hultsch I p. 228</em>, <code class="docutils literal notranslate"><span class="pre">καὶ</span> <span class="pre">τοῦτο</span> <span class="pre">συμβαῖνον</span> <span class="pre">ἐπὶ</span> <span class="pre">τὸ</span> <span class="pre">ἄπειρον</span> <span class="pre">ἀποδειχθήσεται</span></code>): circle <span class="geom-ref" data-ref="g3:( K3 X3 )" title="( K3 X3 )">C3</span> at <span class="geom-ref" data-ref="g3:K3" title="K3">K3</span> $= \left(2, \frac{12}{5}\right)$ ($\Delta_3 = 15$) has diameter $d_3 = \frac{4}{5}$ and altitude <span class="geom-ref" data-ref="g3:[ P3 K3 ]" title="[ P3 K3 ]">P3K3</span> $= \frac{12}{5} = 3\,d_3$; and circle <span class="geom-ref" data-ref="g3:( K4 X4 )" title="( K4 X4 )">C4</span> at <span class="geom-ref" data-ref="g3:K4" title="K4">K4</span> $= \left(\frac{15}{11}, \frac{24}{11}\right)$ ($\Delta_4 = 22$) has diameter $d_4 = \frac{6}{11}$ and altitude <span class="geom-ref" data-ref="g3:[ P4 K4 ]" title="[ P4 K4 ]">P4K4</span> $= \frac{24}{11} = 4\,d_4$. Moreover, every center $K_n$ lies on the fixed locus ellipse with foci <span class="geom-ref" data-ref="g3:O1" title="O1">O1</span> and <span class="geom-ref" data-ref="g3:O0" title="O0">O0</span> since $|K_n O_0| + |K_n O_1| = (R - r_n) + (r_1 + r_n) = R + r_1 = 5$.</div>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../prop_17_adjacent_circles_ratio/index.html" title="Proposition 17: Adjacent Circle Altitude Recurrence">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../index.html">Mathematical Collection</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../../../book_05/index.html" title="Book V · On the Geometric Forethought of Bees &amp; Isoperimetry"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../log/26.316-synagoge-codex/index.html">Synagoge Multi-Track Book Codex & Books III–VIII Symbolic Constructions (v0.2.0)</a></li>
+        <li><a href="../../../../log/26.315-modernize-pappus/index.html">2026 Modernization: Pappus, Pascal’s Hexagrammum Mysticum & Interactive Dossiers</a></li>
+        <li><a href="../../../../log/22.356-152519.html">Welcome</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../types/apparatus.html">apparatus</a></li>
+        <li><a href="../../../../types/book.html">book</a></li>
+        <li><a href="../../../../types/book_title.html">book_title</a></li>
+        <li><a href="../../../../types/log.html">log</a></li>
+        <li><a href="../../../../types/person.html">person</a></li>
+        <li><a href="../../../../types/source_record.html">source_record</a></li>
+        <li><a href="../../../../types/theorem.html">theorem</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../usage/index.html"  >Usage</a></li>
+        <li><a href="../../../../changelog.html"  >Changelog</a></li>
+        <li><a href="../../../../refs/index.html"  >References</a></li>
+        <li><a href="https://github.com/geometor/pappus" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://github.com/geometor/pappus/issues" target="_blank" rel="noopener">Support</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright c. 340 CE (Hultsch 1876–1878 / Commandino 1588) • Original English Translation & Exact Symbolic Edition GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../_static/documentation_options.js?v=6ffd866b"></script>
+  <script src="../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../_static/js/collection_directory.js?v=2422530d"></script>
+  <script src="../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

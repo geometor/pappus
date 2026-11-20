@@ -1,17 +1,21 @@
 :order: 1
 :layout: book
 :type: book
-:title: Proposition 1: Pappus's Parallelogram Generalization of the Pythagorean Theorem
+:title: Proposition 1: Generalized Parallelogram Area Theorem
 :canonical_id: Syn. IV.1
+:folio: 0235
 :excerpt: Universal affine area theorem erecting arbitrary parallelograms on two sides of an arbitrary triangle, proving their areas sum to the base parallelogram determined by the outer intersection apex.
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 .. _sec-b4-en-area-theorem:
 
-Proposition 1: Pappus's Parallelogram Generalization of the Pythagorean Theorem
-===============================================================================
+Proposition 1: Generalized Parallelogram Area Theorem
+=====================================================
 
-.. rubric:: *Synagoge* Book IV, Ch. 1 / Prop. 1 (:cite:`Hultsch I, pp. 176–179 <hultsch:1876>`) · Original English Translation from Hultsch's Greek
+.. rubric:: *Synagoge* Book IV, Ch. 1 / Prop. 1 (:cite:`Hultsch I, pp. 176–179 <hultsch:1876>`; App. IV, p. 1223) · Original English Translation
+
+.. folio:: 0235
+   :page: 1223
 
 Book IV opens directly (its preface having been lost in the archetype manuscript) with a striking affine generalization of :cite:`Euclid's Elements I.47 <euclid:elements>` and :just:`VI.31`: **neither a right angle in the base triangle nor similarity between the erected figures is required**. Arbitrary parallelograms erected outward upon any two sides of any triangle sum in area to a third parallelogram erected on the remaining side, whose lateral edge is given in both magnitude and direction by the segment joining the outer intersection apex to the vertex of the triangle.
 

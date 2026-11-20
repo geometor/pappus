@@ -8,6 +8,7 @@
 :book_subtitle: Μαθηματικὴ Συναγωγή — Pappus of Alexandria (Books III, IV, V, VII & VIII, ed. Hultsch)
 :author: Pappus of Alexandria
 :year: c. 340 CE
+:folio: 0031
 :tracks: English: index | Greek: title-el
 :excerpt: Pappus's late-antique Alexandrian compendium synthesizing the Greek Treasury of Analysis, projective cross-ratio and hexagon lemmas, semicircle means, arbelos circle chains, and architectonic mechanics.
 
@@ -19,6 +20,9 @@ Mathematical Collection
 
 .. rubric:: *Μαθηματικὴ Συναγωγή* (*Synagoge*) — Pappus of Alexandria
 
+.. folio:: 0031
+   :page: 1022
+
 .. container:: title-page
 
    | :person:`PAPPUS OF ALEXANDRIA <pappus>`
@@ -26,7 +30,7 @@ Mathematical Collection
    |
    | **MATHEMATICAL COLLECTION (SYNAGOGE)**
    | *(Μαθηματικὴ Συναγωγή / Collectio Mathematica)*
-   | Books III, IV, V, VII & VIII · 5 Synchronized Units
+   | Books III, IV, V, VII & VIII · 5 Books · 35 Atomic Units
    | Critical Greek Text of Friedrich Hultsch (:cite:`1876–1878 <hultsch:1876>`) & Commandino Latin Collation (:cite:`1558 <commandino:1588>`)
    | Original English Translation, Analytical Summaries & Exact Symbolic Models
 

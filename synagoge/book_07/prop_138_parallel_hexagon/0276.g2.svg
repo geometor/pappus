@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" data-graphic-id="0276.g2" data-folio="0276" data-graphic="g2" viewBox="0 0 438 178" width="438" height="178" role="img" aria-label="Synagoge Book VII Prop. 143 — Projective Transversal Lemma">
+  <title>Synagoge Book VII Prop. 143 — Projective Transversal Lemma</title>
+  <style>
+    .euclid-graphic {
+      --geom-fg: #1c1917;
+      --geom-bg: #fafaf9;
+      --geom-accent: #0284c7;
+      --geom-assert: #059669;
+      --geom-muted: #64748b;
+      font-family: "Gentium Plus", "Noto Serif", Georgia, serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      .euclid-graphic {
+        --geom-fg: #f4f4f5;
+        --geom-bg: #141417;
+        --geom-accent: #38bdf8;
+        --geom-assert: #34d399;
+        --geom-muted: #94a3b8;
+      }
+    }
+    .euclid-graphic .svg-bg { fill: var(--geom-bg); }
+    .euclid-graphic .geom-seg { fill: none; stroke: var(--geom-fg); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+    .euclid-graphic .geom-dashed { stroke-dasharray: 7 5; stroke: var(--geom-muted); }
+    .euclid-graphic .geom-circle { fill: none; stroke: var(--geom-fg); stroke-width: 2.2; }
+    .euclid-graphic .geom-overlay { fill: none; stroke: transparent; stroke-width: 6; stroke-linecap: round; pointer-events: none; }
+    .euclid-graphic .geom-overlay.is-active { stroke: var(--geom-accent); opacity: 0.85; }
+    .euclid-graphic .geom-overlay.is-assert { stroke: var(--geom-assert); opacity: 0.9; }
+    .euclid-graphic .geom-point { fill: var(--geom-fg); stroke: var(--geom-bg); stroke-width: 1.4; }
+    .euclid-graphic .geom-label {
+      fill: var(--geom-fg);
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 600;
+      paint-order: stroke fill;
+      stroke: var(--geom-bg);
+      stroke-width: 4px;
+      stroke-linejoin: round;
+      user-select: none;
+    }
+  </style>
+  <defs>
+    <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-5" x2="0" y2="5" stroke="var(--geom-assert)" stroke-width="2.0" />
+    </marker>
+    <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-5" x2="-2" y2="5" stroke="var(--geom-assert)" stroke-width="1.8" />
+      <line x1="2" y1="-5" x2="2" y2="5" stroke="var(--geom-assert)" stroke-width="1.8" />
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="14" markerHeight="14" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.5" y1="-5" x2="-3.5" y2="5" stroke="var(--geom-assert)" stroke-width="1.6" />
+      <line x1="0" y1="-5" x2="0" y2="5" stroke="var(--geom-assert)" stroke-width="1.6" />
+      <line x1="3.5" y1="-5" x2="3.5" y2="5" stroke="var(--geom-assert)" stroke-width="1.6" />
+    </marker>
+  </defs>
+  <rect class="svg-bg" x="0" y="0" width="438" height="178" rx="4" />
+  <g id="elements">
+    <g id="graphics">
+      <path class="geom-seg" d="M 117.0 13.0 L 80.5 71.5 L 44.0 130.0" data-ref="/ L E /" />
+      <path class="geom-seg" d="M 44.0 130.0 L 202.0 131.0 L 360.0 132.0" data-ref="/ E G /" />
+      <path class="geom-seg" d="M 99.0 17.0 L 229.5 74.5 L 360.0 132.0" data-ref="/ P0 G /" />
+      <path class="geom-seg" d="M 164.0 6.0 L 200.5 65.5 L 237.0 125.0" data-ref="/ P1 H /" />
+      <path class="geom-seg" d="M 197.0 54.0 L 196.0 88.0 L 195.0 122.0" data-ref="/ M T /" />
+    </g>
+    <g id="highlights" style="pointer-events: none;">
+      <path class="geom-overlay" d="M 117.0 13.0 L 80.5 71.5 L 44.0 130.0" data-ref="/ L E /" />
+      <path class="geom-overlay" d="M 44.0 130.0 L 202.0 131.0 L 360.0 132.0" data-ref="/ E G /" />
+      <path class="geom-overlay" d="M 99.0 17.0 L 229.5 74.5 L 360.0 132.0" data-ref="/ P0 G /" />
+      <path class="geom-overlay" d="M 164.0 6.0 L 200.5 65.5 L 237.0 125.0" data-ref="/ P1 H /" />
+      <path class="geom-overlay" d="M 197.0 54.0 L 196.0 88.0 L 195.0 122.0" data-ref="/ M T /" />
+    </g>
+    <g id="points">
+      <circle class="geom-point" cx="117.0" cy="13.0" r="3.5" data-ref="L" />
+      <circle class="geom-point" cx="197.0" cy="54.0" r="3.5" data-ref="M" />
+      <circle class="geom-point" cx="44.0" cy="130.0" r="3.5" data-ref="E" />
+      <circle class="geom-point" cx="195.0" cy="122.0" r="3.5" data-ref="T" />
+      <circle class="geom-point" cx="237.0" cy="125.0" r="3.5" data-ref="H" />
+      <circle class="geom-point" cx="360.0" cy="132.0" r="3.5" data-ref="G" />
+    </g>
+    <g id="labels">
+      <text class="geom-label" x="99.0" y="27.0" data-ref="L">λ</text>
+      <text class="geom-label" x="183.0" y="68.0" data-ref="M">μ</text>
+      <text class="geom-label" x="26.0" y="134.0" data-ref="E">ε</text>
+      <text class="geom-label" x="189.0" y="144.0" data-ref="T">θ</text>
+      <text class="geom-label" x="233.0" y="147.0" data-ref="H">η</text>
+      <text class="geom-label" x="372.0" y="136.0" data-ref="G">γ</text>
+    </g>
+  </g>
+</svg>

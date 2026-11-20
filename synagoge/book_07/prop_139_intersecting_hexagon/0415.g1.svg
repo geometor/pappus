@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" data-graphic-id="0415.g1" data-folio="0415" data-graphic="g1" viewBox="0 0 473 356" width="473" height="356" role="img" aria-label="Synagoge Book VII — Complete Quadrilateral (Hyption)">
+  <title>Synagoge Book VII — Complete Quadrilateral (Hyption)</title>
+  <style>
+    .euclid-graphic {
+      --geom-fg: #1c1917;
+      --geom-bg: #fafaf9;
+      --geom-accent: #0284c7;
+      --geom-assert: #059669;
+      --geom-muted: #64748b;
+      font-family: "Gentium Plus", "Noto Serif", Georgia, serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      .euclid-graphic {
+        --geom-fg: #f4f4f5;
+        --geom-bg: #141417;
+        --geom-accent: #38bdf8;
+        --geom-assert: #34d399;
+        --geom-muted: #94a3b8;
+      }
+    }
+    .euclid-graphic .svg-bg { fill: var(--geom-bg); }
+    .euclid-graphic .geom-seg { fill: none; stroke: var(--geom-fg); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+    .euclid-graphic .geom-dashed { stroke-dasharray: 7 5; stroke: var(--geom-muted); }
+    .euclid-graphic .geom-circle { fill: none; stroke: var(--geom-fg); stroke-width: 2.2; }
+    .euclid-graphic .geom-overlay { fill: none; stroke: transparent; stroke-width: 6; stroke-linecap: round; pointer-events: none; }
+    .euclid-graphic .geom-overlay.is-active { stroke: var(--geom-accent); opacity: 0.85; }
+    .euclid-graphic .geom-overlay.is-assert { stroke: var(--geom-assert); opacity: 0.9; }
+    .euclid-graphic .geom-point { fill: var(--geom-fg); stroke: var(--geom-bg); stroke-width: 1.4; }
+    .euclid-graphic .geom-label {
+      fill: var(--geom-fg);
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 600;
+      paint-order: stroke fill;
+      stroke: var(--geom-bg);
+      stroke-width: 4px;
+      stroke-linejoin: round;
+      user-select: none;
+    }
+  </style>
+  <defs>
+    <marker id="geom-tick-1" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-5" x2="0" y2="5" stroke="var(--geom-assert)" stroke-width="2.0" />
+    </marker>
+    <marker id="geom-tick-2" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-5" x2="-2" y2="5" stroke="var(--geom-assert)" stroke-width="1.8" />
+      <line x1="2" y1="-5" x2="2" y2="5" stroke="var(--geom-assert)" stroke-width="1.8" />
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" refX="0" refY="0" markerWidth="14" markerHeight="14" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.5" y1="-5" x2="-3.5" y2="5" stroke="var(--geom-assert)" stroke-width="1.6" />
+      <line x1="0" y1="-5" x2="0" y2="5" stroke="var(--geom-assert)" stroke-width="1.6" />
+      <line x1="3.5" y1="-5" x2="3.5" y2="5" stroke="var(--geom-assert)" stroke-width="1.6" />
+    </marker>
+  </defs>
+  <rect class="svg-bg" x="0" y="0" width="473" height="356" rx="4" />
+  <g id="elements">
+    <g id="graphics">
+      <path class="geom-seg" d="M 199.0 188.0 L 235.5 251.0 L 272.0 314.0" data-ref="/ A D /" />
+      <path class="geom-seg" d="M 358.0 179.0 L 315.0 246.5 L 272.0 314.0" data-ref="/ C D /" />
+      <path class="geom-seg" d="M 199.0 188.0 L 238.5 164.0 L 278.0 140.0" data-ref="/ A B /" />
+      <path class="geom-seg" d="M 278.0 140.0 L 318.0 159.5 L 358.0 179.0" data-ref="/ B C /" />
+      <path class="geom-seg geom-dashed" d="M 129.0 70.0 L 164.0 129.0 L 199.0 188.0" data-ref="/ E A /" />
+      <path class="geom-seg" d="M 129.0 70.0 L 243.5 124.5 L 358.0 179.0" data-ref="/ E C /" />
+      <path class="geom-seg geom-dashed" d="M 278.0 140.0 L 355.5 94.5 L 433.0 49.0" data-ref="/ B F /" />
+      <path class="geom-seg geom-dashed" d="M 358.0 179.0 L 395.5 114.0 L 433.0 49.0" data-ref="/ C F /" />
+    </g>
+    <g id="highlights" style="pointer-events: none;">
+      <path class="geom-overlay" d="M 199.0 188.0 L 235.5 251.0 L 272.0 314.0" data-ref="/ A D /" />
+      <path class="geom-overlay" d="M 358.0 179.0 L 315.0 246.5 L 272.0 314.0" data-ref="/ C D /" />
+      <path class="geom-overlay" d="M 199.0 188.0 L 238.5 164.0 L 278.0 140.0" data-ref="/ A B /" />
+      <path class="geom-overlay" d="M 278.0 140.0 L 318.0 159.5 L 358.0 179.0" data-ref="/ B C /" />
+      <path class="geom-overlay" d="M 129.0 70.0 L 164.0 129.0 L 199.0 188.0" data-ref="/ E A /" />
+      <path class="geom-overlay" d="M 129.0 70.0 L 243.5 124.5 L 358.0 179.0" data-ref="/ E C /" />
+      <path class="geom-overlay" d="M 278.0 140.0 L 355.5 94.5 L 433.0 49.0" data-ref="/ B F /" />
+      <path class="geom-overlay" d="M 358.0 179.0 L 395.5 114.0 L 433.0 49.0" data-ref="/ C F /" />
+    </g>
+    <g id="points">
+      <circle class="geom-point" cx="129.0" cy="70.0" r="3.5" data-ref="E" />
+      <circle class="geom-point" cx="433.0" cy="49.0" r="3.5" data-ref="F" />
+      <circle class="geom-point" cx="278.0" cy="140.0" r="3.5" data-ref="B" />
+      <circle class="geom-point" cx="199.0" cy="188.0" r="3.5" data-ref="A" />
+      <circle class="geom-point" cx="358.0" cy="179.0" r="3.5" data-ref="C" />
+      <circle class="geom-point" cx="272.0" cy="314.0" r="3.5" data-ref="D" />
+    </g>
+    <g id="labels">
+      <text class="geom-label" x="113.0" y="62.0" data-ref="E">E</text>
+      <text class="geom-label" x="445.0" y="41.0" data-ref="F">F</text>
+      <text class="geom-label" x="274.0" y="124.0" data-ref="B">B</text>
+      <text class="geom-label" x="179.0" y="194.0" data-ref="A">A</text>
+      <text class="geom-label" x="370.0" y="185.0" data-ref="C">C</text>
+      <text class="geom-label" x="280.0" y="328.0" data-ref="D">D</text>
+    </g>
+  </g>
+</svg>
