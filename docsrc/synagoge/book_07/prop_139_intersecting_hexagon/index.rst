@@ -1,8 +1,9 @@
-:order: 6
+:order: 7
 :layout: book
 :type: book
-:title: 6. Proposition 139: Pappus's General Hexagon Collinearity Theorem
+:title: Proposition 139: Pappus's General Hexagon Collinearity Theorem
 :canonical_id: Syn. VII.139
+:folio: 0278
 :excerpt: Lemma XIII to Euclid's Porisms: the celebrated general Pappus Hexagon Theorem on two intersecting carrier lines, generating the 6-line S_3 Steiner configuration.
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
@@ -11,7 +12,10 @@
 Proposition 139: Pappus's General Hexagon Collinearity Theorem
 ==============================================================
 
-.. rubric:: *Synagoge* Book VII, Proposition 139 (:cite:`Hultsch II, pp. 886–889 <hultsch:1877>`, Lemma XIII to Euclid's *Porisms*) · Critical English Edition
+.. rubric:: *Synagoge* Book VII, Proposition 139 (:cite:`Hultsch II, pp. 886–889 <hultsch:1877>`, Lemma XIII to Euclid's *Porisms*; App. IV, p. 1266; Index figs., p. 141)
+
+.. folio:: 0278
+   :page: 1266
 
 Crowning the lemmas to Euclid's *Porisms* is **Proposition 139**, the general theorem of collinearity for opposite sides of a hexagon whose vertices lie alternately on two intersecting carrier lines. Pappus establishes the result purely through compound ratios (cross-ratio invariance) without drawing a single circle.
 
@@ -44,3 +48,22 @@ Permuting $(B_0, B_1, B_2)$ across all $3! = 6$ elements of $S_3$ (:func:`~geome
 
 .. picture:: /_static/constructions/pappus_steiner.svg
    :alt: Six S_3 Pappus Lines Concurring at Steiner Star Points S+ and S-
+
+Archival Complete Quadrilateral Plates (*Hultsch Vol. III, Index Graecitatis, p. 141 / folio 0415*)
+---------------------------------------------------------------------------------------------------
+
+.. picture:: 0415.g1.png
+   :alt: Archival woodcut plate 0415.g1 — Complete quadrilateral hyption configuration (Hultsch III, Index)
+   :caption: Original Hultsch bitmap (folio 0415): Book VII Porism complete quadrilateral configuration (ὕπτιον / hyption).
+
+.. picture:: 0415.g1.svg
+   :alt: Calibrated interactive vector plate 0415.g1 — Complete quadrilateral hyption
+   :caption: Calibrated .euclid-graphic vectorization of plate 0415.g1.
+
+.. picture:: 0415.g2.png
+   :alt: Archival woodcut plate 0415.g2 — Complete quadrilateral paryption configurations (Hultsch III, Index)
+   :caption: Original Hultsch bitmap (folio 0415): Book VII Porism dual quadrilateral configurations (παρύπτιον / paryption).
+
+.. picture:: 0415.g2.svg
+   :alt: Calibrated interactive vector plate 0415.g2 — Complete quadrilateral paryption
+   :caption: Calibrated .euclid-graphic vectorization of plate 0415.g2.

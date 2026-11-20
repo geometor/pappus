@@ -1,8 +1,9 @@
-:order: 3
+:order: 4
 :layout: book
 :type: book
-:title: 3. Proposition 129: Cross-Ratio Invariance Across Central Projection
+:title: Proposition 129: Cross-Ratio Invariance Across Central Projection
 :canonical_id: Syn. VII.129
+:folio: 0275
 :excerpt: Lemma III to Euclid's Porisms: if four concurrent rays cut two transversals, the compound ratio (cross-ratio) of four collinear points is strictly invariant under central projection.
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
@@ -11,7 +12,10 @@
 Proposition 129: Cross-Ratio Invariance Across Central Projection
 =================================================================
 
-.. rubric:: *Synagoge* Book VII, Proposition 129 (:cite:`Hultsch II, pp. 870–872 <hultsch:1877>`, Lemma III to Euclid's *Porisms*) · Critical English Edition
+.. rubric:: *Synagoge* Book VII, Proposition 129 (:cite:`Hultsch II, pp. 870–872 <hultsch:1877>`, Lemma III to Euclid's *Porisms*; App. IV, pp. 1263–1266)
+
+.. folio:: 0275
+   :page: 1263
 
 .. enunciation::
 
@@ -39,4 +43,23 @@ Proposition 129: Cross-Ratio Invariance Across Central Projection
 
       \left(\frac{AC}{AD}\right) \cdot \left(\frac{BD}{BC}\right) = \frac{FB}{EB}.
 
-   Because the ratio $\frac{FB}{EB}$ depends solely on the angle of the rays and the transversal direction—and by an identical construction on the second transversal yields the identical ratio $\frac{F'B'}{E'B'} = \frac{FB}{EB}$—the double ratio (*διπλοῦς λόγος*) is invariant under projection.
+   Because the ratio $\frac{FB}{EB}$ depends solely on the angle of the rays and the transversal direction, the double ratio (*διπλοῦς λόγος*) is invariant under projection.
+
+Archival Plates (*Hultsch Vol. III, Appendix IV, pp. 1264, 1266*)
+-----------------------------------------------------------------
+
+.. picture:: 0276.g1.png
+   :alt: Archival woodcut plate 0276.g1 — Concurrent ray pencil and transversal (Hultsch III, p. 1264)
+   :caption: Original Hultsch bitmap (folio 0276, p. 1264): concurrent-ray cross-ratio diagram accompanying Book VII Lemma III / Prop. 141.
+
+.. picture:: 0276.g1.svg
+   :alt: Calibrated interactive vector plate 0276.g1 — Concurrent ray pencil
+   :caption: Calibrated .euclid-graphic vectorization of plate 0276.g1.
+
+.. picture:: 0278.g1.png
+   :alt: Archival woodcut plate 0278.g1 — Dual transversal cross-ratio rays C, A, A', B, B', Y, S (Hultsch III, p. 1266)
+   :caption: Original Hultsch bitmap (folio 0278, p. 1266): Lemma XVIII cross-ratio pencil invariant diagram.
+
+.. picture:: 0278.g1.svg
+   :alt: Calibrated interactive vector plate 0278.g1 — Lemma XVIII cross-ratio pencil
+   :caption: Calibrated .euclid-graphic vectorization of plate 0278.g1.

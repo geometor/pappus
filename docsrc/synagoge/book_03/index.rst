@@ -5,10 +5,11 @@
 :breadcrumb_title: Book III · Three Means
 :layout: book
 :book_title: Book III · Problem Hierarchy, Cube Duplication & The Three Means
-:book_subtitle: Pappus of Alexandria · Synagoge III (ed. Hultsch I, pp. 30–84)
+:book_subtitle: Pappus of Alexandria · Synagoge III (ed. Hultsch I, pp. 30–84; App. IV, pp. 1212–1222)
 :author: Pappus of Alexandria
 :year: c. 340 CE
-:excerpt: Address to Pandrosion, distinction between theorem and problem, threefold classification of geometric loci (plane, solid, linear), and the unified semicircle construction exhibiting arithmetic, geometric, and harmonic means.
+:folio: 0224
+:excerpt: Address to Pandrosion, distinction between theorem and problem, threefold classification of geometric loci (plane, solid, linear), Delian cube duplication, classical medieties, and the unified semicircle construction.
 
 .. _synagoge-b3-en:
 
@@ -17,9 +18,12 @@ Book III · Problem Hierarchy & The Three Means
 
 .. rubric:: *Μαθηματικὴ Συναγωγή* Γ΄ — :person:`Pappus of Alexandria <pappus>`, ed. :cite:`Friedrich Hultsch <hultsch:1876>` (Vol. I, pp. 30–84)
 
+.. folio:: 0224
+   :page: 1212
+
 .. note::
 
-   **Edition Track (English)**: Complete critical English edition of Book III, translated freshly from Hultsch's Greek text. Contains the foundational address to Pandrosion distinguishing theorems from problems, the plane/solid/linear locus hierarchy, the Delian cube-duplication problem, and the classical medieties exhibited simultaneously inside a single semicircle ($A \cdot H = G^2$). Switch tracks above for **Greek (Hultsch 1876)**, **Summary**, or **Notes**.
+   **Edition Track (English)**: Complete critical English edition of Book III, translated freshly from Hultsch's Greek text. Atomic units cover the address to Pandrosion, the threefold locus hierarchy, the Delian cube-duplication constructions, the classical medieties definitions, and the unified semicircle exhibiting $A \cdot H = G^2$. Switch tracks above for **Greek (Hultsch 1876)**, **Summary**, or **Notes**.
 
 .. container:: title-page
 
@@ -28,7 +32,7 @@ Book III · Problem Hierarchy & The Three Means
    |
    | **Author**: :person:`Pappus of Alexandria <pappus>` (fl. c. 320–340 CE)
    | **Addressee**: :person:`Pandrosion of Alexandria <pandrosion>`
-   | **Critical Greek Edition**: :cite:`Friedrich Hultsch <hultsch:1876>` (Vol. I, Berlin: Weidmann, 1876, pp. 30–84)
+   | **Critical Greek Edition**: :cite:`Friedrich Hultsch <hultsch:1876>` (Vol. I, Berlin: Weidmann, 1876, pp. 30–84; Vol. III App. IV, pp. 1212–1222)
    | **Latin Editio Princeps**: :cite:`Federico Commandino <commandino:1588>` (Pesaro, 1588)
 
 .. epigraph::
@@ -51,6 +55,9 @@ Table of Contents
    :caption: Sections & Propositions
 
    preface/index
+   locus_hierarchy/index
+   cube_duplication/index
+   medieties_definitions/index
    prop_01_three_means/index
    golden_means/index
 

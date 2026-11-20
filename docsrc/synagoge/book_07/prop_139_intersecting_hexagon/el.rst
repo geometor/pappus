@@ -1,17 +1,20 @@
-:order: 6
+:order: 7
 :layout: book
 :type: book
-:title: 6. Πρότασις ρλθ΄ · Συμπίπτουσαι εὐθεῖαι (Greek)
-:canonical_id: Syn. VII.139
-:excerpt: Πάππου Ἀλεξανδρέως Συναγωγῆς Ζ΄ Πρότασις ρλθ΄ (Λῆμμα ιγ΄ εἰς τὰ Εὐκλείδου Πορίσματα) κατὰ τὴν ἔκδοσιν τοῦ F. Hultsch.
+:title: Πρότασις ρλθ΄ · Συμπίπτουσαι εὐθεῖαι
+:canonical_id: Syn. VII.139.el
+:folio: 0278
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 .. _sec-b7-el-hexagon-theorems:
 
-Πρότασις ρλθ΄ · Συμπίπτουσαι εὐθεῖαι (*Hultsch II, pp. 886–889*)
-================================================================
+Πρότασις ρλθ΄ · Συμπίπτουσαι εὐθεῖαι
+====================================
 
 .. rubric:: Πάππου Ἀλεξανδρέως Συναγωγῆς Ζ΄ ρλθ΄ (:cite:`Hultsch II, pp. 886–889 <hultsch:1877>`)
+
+.. folio:: 0278
+   :page: 1266
 
 .. picture:: /_static/constructions/pappus_hexagon.svg
    :alt: Πάππου Συναγωγῆς Ζ΄ ρλθ΄ — Τὸ τῆς εὐθυγραμμίας θεώρημα ἐπὶ δύο τεμνουσῶν εὐθειῶν

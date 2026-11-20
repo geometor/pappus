@@ -9,7 +9,7 @@
 :author: Pappus of Alexandria
 :year: c. 340 CE
 :folio: 0031
-:excerpt: Pappus's masterwork on architectonic mechanics: theoretical vs. manual mechanics, definition of the center of gravity (VIII.1–4), Archimedes's lever principle and Hero's Baroulkos gear train (VIII.9–12), single-compass constructions, and Proposition 23 inscribing seven congruent regular hexagons in a circle.
+:excerpt: Pappus's masterwork on architectonic mechanics broken into atomic propositions: theoretical vs. manual mechanics, centroid invariance (Props. 1–4), inclined plane (Prop. 9), Hero's Baroulkos (Prop. 10), fixed-compass constructions, and seven hexagons in a circle (Prop. 23).
 
 .. _synagoge-b8-en:
 
@@ -18,9 +18,12 @@ Book VIII · Architectonic Mechanics & Inscribed Hexagons
 
 .. rubric:: *Μαθηματικὴ Συναγωγή* Η΄ — :person:`Pappus of Alexandria <pappus>`, ed. :cite:`Friedrich Hultsch <hultsch:1878>` (Vol. III, pp. 1022–1102)
 
+.. folio:: 0031
+   :page: 1022
+
 .. note::
 
-   **Edition Track (English)**: Complete critical English edition of Book VIII's foundational mechanical treatises: the Preface to Hermodorus on the division of mechanics and the definition of the center of gravity, the inclined plane and Hero's Baroulkos gear-train (Props. 1–12), and the single-compass construction of seven congruent regular hexagons inscribed in a circle (Prop. 23). Switch tracks above for **Greek (Hultsch 1878)**, **Summary**, or **Notes**.
+   **Edition Track (English)**: Complete critical English edition of Book VIII's mechanical and instrumental treatises: the Preface to Hermodorus, Center of Gravity & Triangle Medians (Prop. 1), Cyclic Centroid Invariance (Prop. 2), Similar Centroid Triangles (Prop. 3), the Inclined Plane (Prop. 9), Hero's *Baroulkos* gear train (Props. 10–11), Single-Compass Constructions, and Seven Congruent Regular Hexagons in a Circle (Prop. 23). Switch tracks above for **Greek (Hultsch 1878)**, **Summary**, or **Notes**.
 
 .. container:: title-page
 
@@ -52,7 +55,12 @@ Table of Contents
    :caption: Preface & Propositions
 
    preface_mechanics/index
-   prop_01_04_center_of_gravity/index
+   center_of_gravity/index
+   prop_02_cyclic_centroid/index
+   prop_03_similar_centroid/index
+   prop_09_inclined_plane/index
+   prop_10_baroulkos/index
+   heni_diastemati/index
    prop_23_seven_hexagons/index
 
 .. toctree::

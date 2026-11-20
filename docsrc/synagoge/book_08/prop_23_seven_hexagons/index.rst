@@ -1,10 +1,10 @@
-:order: 3
+:order: 8
 :layout: book
 :type: book
-:title: 3. Proposition 23: Seven Congruent Regular Hexagons Inscribed in a Circle
+:title: Proposition 23: Seven Congruent Regular Hexagons Inscribed in a Circle
 :canonical_id: Syn. VIII.23
 :folio: 0107
-:excerpt: Single-compass constructions and Proposition 23: geometric analysis and synthesis inscribing seven congruent regular hexagons in a circle with exact circumradius relation R^2 = 7 s_6^2.
+:excerpt: Proposition 23: geometric analysis and synthesis inscribing seven congruent regular hexagons in a circle with exact circumradius relation R^2 = 7 s_6^2.
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 .. _sec-b8-en-rusty-seven-hexagons:
@@ -12,11 +12,12 @@
 Proposition 23: Seven Regular Hexagons Inscribed in a Circle
 ============================================================
 
-.. rubric:: *Synagoge* Book VIII, Chapters 26–39, Proposition 23 (:cite:`Hultsch III, pp. 1074–1102 <hultsch:1878>`) · Critical English Edition
+.. rubric:: *Synagoge* Book VIII, Chapter 42, Proposition 23 (:cite:`Hultsch III, pp. 1096–1102 <hultsch:1878>`) · Critical English Edition
 
-Turning to **instrumental geometry** (*τὰ ἰδίως λεγόμενα ὀργανικά*), Pappus observes that architects, stonecutters, and engineers constantly face practical constraints in the field: restoring the true diameter of a broken temple column from a surviving fragment (**Prop. 13**), constructing the conic through five given points on a cylindrical surface (**Prop. 14**), or executing plane constructions :term:`with a single fixed compass opening <heni-diastemati>` (*τὰ ἑνὶ διαστήματι γραφόμενα*, *Hultsch III p. 1074 ff.*)—inaugurating the fixed-"rusty"-compass tradition later carried forward by Abū al-Wafāʾ, Tartaglia, Ferrari, Cardano, and Poncelet–Steiner.
+.. folio:: 0107
+   :page: 1096
 
-Chief among these instrumental constructions—where :term:`geometric analysis <analysis>` replaces blind trial-and-error (*πεῖρα*) with exact algebraic certainty—stands **Proposition 23** (*Hultsch III, pp. 1096–1102*), which crowns both Book VIII's architectural geometry and :doc:`Book V's honeycomb rosette <../../book_05/prop_01_10_isoperimetry/index>`:
+Chief among Book VIII's instrumental constructions—where :term:`geometric analysis <analysis>` replaces blind trial-and-error (*πεῖρα*) with exact algebraic certainty—stands **Proposition 23** (*Hultsch III, pp. 1096–1102*), which crowns both Book VIII's architectural geometry and :doc:`Book V's honeycomb rosette <../../book_05/prop_01_isoperimetric_polygons/index>`:
 
 .. picture:: /_static/constructions/honeycomb_isoperimetry.svg
    :alt: Synagoge Book VIII Proposition 23 — Seven Congruent Regular Hexagons Inscribed in a Given Circle (R = s_6 * sqrt(7))
@@ -46,3 +47,14 @@ Chief among these instrumental constructions—where :term:`geometric analysis <
 .. step::
 
    By symmetry and :just:`II.12`, all twelve outer rim vertices (two on the outermost side of each of :g:`C1 <g1:< C1 >>`–:g:`C6 <g1:< C6 >>`, exemplified by :g:`N <g1:N>`) have exact quadrance $7\,s_6^2 = R^2$ from :g:`H0 <g1:H0>`, so every outer edge is inscribed cleanly upon circle :g:`(H0, N) <g1:( H0 N )>` without a single trial adjustment.
+
+Archival Plate (*Hultsch Vol. III, p. 1097 / folio 0108*)
+---------------------------------------------------------
+
+.. picture:: 0108.g1.png
+   :alt: Archival woodcut plate 0108.g1 — Seven regular hexagons inscribed in a circle (Hultsch III, p. 1097)
+   :caption: Original Hultsch bitmap (folio 0108, p. 1097): Book VIII Proposition 23 seven-hexagon circumcircle rosette.
+
+.. picture:: 0108.g1.svg
+   :alt: Calibrated interactive vector plate 0108.g1 — Seven regular hexagons inscribed in a circle
+   :caption: Calibrated .euclid-graphic vectorization of plate 0108.g1.

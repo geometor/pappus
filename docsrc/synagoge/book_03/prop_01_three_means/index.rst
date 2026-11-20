@@ -1,32 +1,27 @@
-:order: 2
+:order: 5
 :layout: book
 :type: book
-:title: The Three Classical Means & Their Unified Semicircle Construction
+:title: Three Classical Means in a Single Semicircle
 :canonical_id: Syn. III.28-30
-:excerpt: Pappus's elegant construction exhibiting the arithmetic mean A, geometric mean G, and harmonic mean H simultaneously within a single semicircle, proving visually that A * H = G^2 and A >= G >= H.
+:folio: 0232
+:excerpt: Pappus's unified semicircle construction exhibiting the arithmetic mean A, geometric mean G, and harmonic mean H simultaneously, proving A * H = G^2 and A >= G >= H.
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 .. _sec-b3-en-semicircle-means:
 
-The Three Classical Means & Their Unified Semicircle Construction
-=================================================================
+Three Classical Means in a Single Semicircle
+============================================
 
-.. rubric:: *Synagoge* Book III, Chs. 28–43 (*Props. 28–30*, :cite:`Hultsch I, pp. 68–84 <hultsch:1876>`) · Original English Translation from Hultsch's Greek
+.. rubric:: *Synagoge* Book III, Chs. 40–43 / Props. 28–30 (:cite:`Hultsch I, pp. 72, 80–84 <hultsch:1876>`; App. IV, p. 1220) · Original English Translation
 
-After our friend the philosopher :person:`Hierius <hierius>` inquired further concerning proportional means, we set out the ancient doctrine of :term:`medieties <mesotes>` (*μεσότητες*) expounded by the Pythagoreans, :person:`Eratosthenes <eratosthenes>`, and :cite:`Nicomachus <nicomachus:introductio>`. Three primary proportions stand first and most ancient among all ten:
+.. folio:: 0232
+   :page: 1220
 
-* A triple $(a, m, b)$ is in **arithmetic proportion** (*ἀριθμητικὴ μεσότης*) whenever the first exceeds the second by the very same difference by which the second exceeds the third, so that $(a - m) : (m - b) = a : a = 1 : 1$, whence $A = \frac{a + b}{2}$.
-* A triple $(a, m, b)$ is in **geometric proportion** (*γεωμετρικὴ μεσότης*, proportion strictly so called) whenever the first has to the second the same ratio that the second has to the third, $(a - m) : (m - b) = a : m = m : b$, whence $G = \sqrt{ab}$.
-* A triple $(a, m, b)$ is in **harmonic proportion** (*ἁρμονικὴ μεσότης*) whenever the excess of the first over the second has to the excess of the second over the third the ratio of the first extreme to the third extreme:
-
-  .. math::
-
-     \frac{a - H}{H - b} = \frac{a}{b} \quad \Longleftrightarrow \quad H = \frac{2ab}{a + b}.
-
-How one may exhibit **all three means together inside a single semicircle**—establishing at one glance both the fundamental identity $A \cdot H = G^2$ and the strict ordering $A \ge G \ge H$ (with equality if and only if $a = b$)—is demonstrated as follows (*Chs. 40–43, Hultsch I pp. 72, 80–84*).
+How one may exhibit **all three classical means together inside a single semicircle**—establishing at one glance both the fundamental identity $A \cdot H = G^2$ and the strict ordering $A \ge G \ge H$ (with equality if and only if $a = b$)—is demonstrated by Pappus as follows (*Chs. 40–43, Hultsch I pp. 72, 80–84*).
 
 .. picture:: /_static/constructions/synagoge_three_means.svg
    :alt: Synagoge Book III — Arithmetic, Geometric, and Harmonic Means in One Semicircle (a = 9, b = 16)
+   :caption: Exact symbolic semicircle model (geometor.pappus): A = OB = 25/2, G = DB = 12, H = BF = 288/25, CR(A, C; D, T) = -1.
 
 .. enunciation::
 
@@ -57,3 +52,22 @@ How one may exhibit **all three means together inside a single semicircle**—es
 .. step::
 
    Draw tangent :g:`BT <g1:[ B T ]>` perpendicular to radius :g:`OB <g1:[ O B ]>`, meeting diameter :g:`AC <g1:[ A C ]>` produced at :g:`T <g1:T>` $= \left(-\frac{225}{7}, 0\right)$. Parallelism of :g:`DF <g1:[ D F ]>` and :g:`BT <g1:[ B T ]>` transfers the ratio on :g:`OB <g1:[ O B ]>` onto the diameter line, yielding the four-point harmonic range $(A, C; D, T) = -1$ that recurs in projective form in :doc:`Book VII Prop. 131 <../../book_07/prop_131_harmonic/index>`.
+
+Archival Plates (*Hultsch Vol. III, Appendix IV, p. 1220*)
+-----------------------------------------------------------
+
+.. picture:: 0232.g1.png
+   :alt: Archival woodcut plate 0232.g1 — Vertical segment comparison for three medieties (Hultsch III, p. 1220)
+   :caption: Original Hultsch bitmap (folio 0232, p. 1220): three ordered magnitudes δ, ε, ζ of Book III medieties.
+
+.. picture:: 0232.g1.svg
+   :alt: Calibrated interactive vector plate 0232.g1 — Three vertical medieties segments
+   :caption: Calibrated .euclid-graphic vectorization of plate 0232.g1.
+
+.. picture:: 0232.g2.png
+   :alt: Archival woodcut plate 0232.g2 — Proportional triangle lemma diagram (Hultsch III, p. 1220)
+   :caption: Original Hultsch bitmap (folio 0232, p. 1220): triangle αβγ proportional auxiliary lemma of Book III Prop. 38.
+
+.. picture:: 0232.g2.svg
+   :alt: Calibrated interactive vector plate 0232.g2 — Proportional triangle lemma
+   :caption: Calibrated .euclid-graphic vectorization of plate 0232.g2.

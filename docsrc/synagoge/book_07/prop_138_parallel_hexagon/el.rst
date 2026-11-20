@@ -1,15 +1,18 @@
-:order: 5
+:order: 6
 :layout: book
 :type: book
-:title: 5. Πρότασις ρλη΄ · Παράλληλοι εὐθεῖαι (Greek)
-:canonical_id: Syn. VII.138
-:excerpt: Πάππου Ἀλεξανδρέως Συναγωγῆς Ζ΄ Πρότασις ρλη΄ (Λῆμμα ιβ΄ εἰς τὰ Εὐκλείδου Πορίσματα) κατὰ τὴν ἔκδοσιν τοῦ F. Hultsch.
+:title: Πρότασις ρλη΄ · Παράλληλοι εὐθεῖαι
+:canonical_id: Syn. VII.138.el
+:folio: 0276
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
-Πρότασις ρλη΄ · Παράλληλοι εὐθεῖαι (*Hultsch II, pp. 884–886*)
-==============================================================
+Πρότασις ρλη΄ · Παράλληλοι εὐθεῖαι
+===================================
 
 .. rubric:: Πάππου Ἀλεξανδρέως Συναγωγῆς Ζ΄ ρλη΄ (:cite:`Hultsch II, pp. 884–886 <hultsch:1877>`)
+
+.. folio:: 0276
+   :page: 1264
 
 .. picture:: /_static/constructions/pappus_parallel_steiner.svg
    :alt: Πάππου Συναγωγῆς Ζ΄ ρλη΄ — Παράλληλοι εὐθεῖαι καὶ σημεῖον Στάινερ S+

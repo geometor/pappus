@@ -288,19 +288,43 @@ def test_sphinx_ext_greek_track_intersphinx_and_apparatus_parity(
 
 
 def test_synagoge_codex_rst_and_euclid_concordance_integrity() -> None:
-    """Verify 5-unit 4-track codex layout, zero py_file blocks, 8 euclid keys, and apparatus anchors."""
+    """Verify atomic multi-track codex layout, 100% folio correlation, paired plates, and anchors."""
     repo_root = Path(__file__).resolve().parents[1]
     synagoge_dir = repo_root / "docsrc" / "synagoge"
     assert (synagoge_dir / "index.rst").is_file()
     assert ":layout: book" in (synagoge_dir / "index.rst").read_text(encoding="utf-8")
 
     expected_books = {
-        "book_03": ("preface", "prop_01_three_means", "golden_means"),
-        "book_04": ("prop_01_area_theorem", "prop_14_18_arbelos"),
-        "book_05": ("preface_bees", "prop_01_10_isoperimetry"),
+        "book_03": (
+            "preface",
+            "locus_hierarchy",
+            "cube_duplication",
+            "medieties_definitions",
+            "prop_01_three_means",
+            "golden_means",
+        ),
+        "book_04": (
+            "prop_01_area_theorem",
+            "prop_14_18_arbelos",
+            "prop_14_18_arbelos/prop_14_arbelos_theorem",
+            "prop_14_18_arbelos/prop_15_radical_chord",
+            "prop_14_18_arbelos/prop_16_single_circle_altitude",
+            "prop_14_18_arbelos/prop_17_adjacent_circles_ratio",
+            "prop_14_18_arbelos/prop_18_infinite_circle_chain",
+        ),
+        "book_05": (
+            "preface_bees",
+            "prop_01_isoperimetric_polygons",
+            "prop_02_circle_exceeds_polygons",
+            "prop_03_sector_tangent_inequality",
+            "prop_04_isosceles_extremum",
+            "prop_06_equilateral_extremum",
+            "prop_10_equiangular_extremum",
+        ),
         "book_07": (
             "preface_analysis",
-            "multi_line_locus",
+            "three_four_line_locus",
+            "pappus_guldinus_centroid",
             "prop_129_cross_ratio",
             "prop_131_harmonic",
             "prop_138_parallel_hexagon",
@@ -308,20 +332,45 @@ def test_synagoge_codex_rst_and_euclid_concordance_integrity() -> None:
         ),
         "book_08": (
             "preface_mechanics",
-            "prop_01_04_center_of_gravity",
+            "center_of_gravity",
+            "prop_02_cyclic_centroid",
+            "prop_03_similar_centroid",
+            "prop_09_inclined_plane",
+            "prop_10_baroulkos",
+            "heni_diastemati",
             "prop_23_seven_hexagons",
         ),
     }
+    leaf_count = 0
     for book_name, units in expected_books.items():
         book_dir = synagoge_dir / book_name
-        assert (book_dir / "index.rst").is_file(), f"Missing book index in {book_name}"
-        assert (book_dir / "summary.rst").is_file(), f"Missing book summary in {book_name}"
-        assert (book_dir / "notes.rst").is_file(), f"Missing book notes in {book_name}"
+        for synth in ("index.rst", "summary.rst", "notes.rst"):
+            synth_path = book_dir / synth
+            assert synth_path.is_file(), f"Missing book {synth} in {book_name}"
+            synth_text = synth_path.read_text(encoding="utf-8")
+            assert ":folio:" in synth_text, f"Missing :folio: badge in {synth_path}"
+            assert ".. folio::" in synth_text, f"Missing .. folio:: directive in {synth_path}"
         for unit in units:
             unit_dir = book_dir / unit
             for track in ("index", "el", "summary", "notes"):
                 track_path = unit_dir / f"{track}.rst"
                 assert track_path.is_file(), f"Missing codex track {track_path}"
+                track_text = track_path.read_text(encoding="utf-8")
+                assert ":folio:" in track_text, f"Missing :folio: badge in {track_path}"
+                assert ".. folio::" in track_text, f"Missing .. folio:: directive in {track_path}"
+                leaf_count += 1
+    assert leaf_count == 140
+
+    # Verify deployed archival bitmaps and calibrated 5-layer .euclid-graphic SVGs
+    png_plates = list(synagoge_dir.rglob("*.g*.png"))
+    svg_plates = list(synagoge_dir.rglob("*.g*.svg"))
+    assert len(png_plates) == 27
+    assert len(svg_plates) == 21
+    for svg_path in svg_plates:
+        svg_text = svg_path.read_text(encoding="utf-8")
+        assert 'class="euclid-graphic"' in svg_text
+        for layer_id in ('id="elements"', 'id="graphics"', 'id="highlights"', 'id="points"', 'id="labels"', 'id="geom-tick-1"'):
+            assert layer_id in svg_text, f"Missing {layer_id} in {svg_path}"
 
     # Verify all 8 euclid pappus:collectio* citation keys are mapped in concordance.json
     concordance = json.loads(

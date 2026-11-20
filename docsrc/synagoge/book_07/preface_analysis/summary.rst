@@ -1,7 +1,9 @@
+:order: 1
 :layout: book
 :type: book
 :title: Preface to Hermodorus · Analysis, Synthesis & Curriculum Summary
 :canonical_id: Syn. VII.preface.summary
+:folio: 0269
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Preface to Hermodorus · Analysis, Synthesis & Curriculum Summary
@@ -9,13 +11,14 @@ Preface to Hermodorus · Analysis, Synthesis & Curriculum Summary
 
 .. rubric:: The Alexandrian Analytical Method
 
+.. folio:: 0269
+   :page: 1257
+
 1. The Two Movements of Mathematical Reasoning
 ----------------------------------------------
 
-* **Analysis** (*ἀνάλυσις*): The heuristic direction of discovery. Starts from the assumption that the goal is attained, proceeding step-by-step backward to known truths.
-  * *Theoretical analysis*: Examines the truth value of a proposed theorem.
-  * *Problematic analysis*: Ascertains the constructibility of a sought entity and determines its existence criteria (*diorismos*).
-* **Synthesis** (*σύνθεσις*): The formal direction of demonstration. Starts from the principles attained at the end of analysis and executes the Euclidean proof forward.
+* **Analysis** (*ἀνάλυσις*): Heuristic backward resolution from target to known truths (divided into *theoretical* and *problematic* branches).
+* **Synthesis** (*σύνθεσις*): Forward deductive demonstration from principles back to the target construction.
 
 2. Structure of the 33-Book Analytical Canon
 --------------------------------------------

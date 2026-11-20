@@ -1,15 +1,18 @@
-:order: 4
+:order: 5
 :layout: book
 :type: book
-:title: 4. Proposition 131: Harmonic Conjugates (Summary)
-:canonical_id: Syn. VII.131
-:excerpt: Mathematical formulation and symbolic verification of complete quadrilateral harmonic division (Synagoge VII.131).
+:title: Proposition 131 · Harmonic Conjugates Summary
+:canonical_id: Syn. VII.131.summary
+:folio: 0276
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
-Summary: Proposition 131 · Harmonic Conjugates
-==============================================
+Proposition 131 · Harmonic Conjugates Summary
+=============================================
 
 .. rubric:: Exact Symbolic Audit & ``geometor.pappus`` Verification
+
+.. folio:: 0276
+   :page: 1264
 
 .. picture:: /_static/constructions/harmonic_fourth.svg
    :alt: Complete Quadrilateral Straightedge Construction of Fourth Harmonic Conjugate D (Synagoge VII.131)
@@ -17,20 +20,11 @@ Summary: Proposition 131 · Harmonic Conjugates
 1. The Fourth Harmonic Conjugate
 --------------------------------
 
-Given three distinct collinear points $A, B, C$, their fourth harmonic conjugate $D$ satisfies:
-
 .. math::
 
-   \operatorname{CR}(A, B; C, D) = \frac{(A - C)(B - D)}{(A - D)(B - C)} = -1.
-
-Solving for $D$ gives the exact rational formula:
-
-.. math::
-
-   D = \frac{2AB - C(A + B)}{2C - (A + B)}.
+   \operatorname{CR}(A, B; C, D) = \frac{(A - C)(B - D)}{(A - D)(B - C)} = -1 \quad \Longrightarrow \quad D = \frac{2AB - C(A + B)}{2C - (A + B)}.
 
 2. Straightedge Construction & 81 Harmonic Tetrads
 --------------------------------------------------
 
-* Implemented in :func:`geometor.pappus.construct_harmonic_fourth`: constructs the point $D$ using an auxiliary complete quadrilateral by ruler alone, with zero measurement of angles or distances.
-* In the full 9-point, 9-line Pappus–Steiner configuration, the cross-joins and diagonals create exactly **81 collinear harmonic ranges** across the complete network of intersection points.
+Implemented in :func:`geometor.pappus.construct_harmonic_fourth`: generates **81 collinear harmonic ranges** across the complete 9-point, 9-line Pappus–Steiner network by straightedge alone.

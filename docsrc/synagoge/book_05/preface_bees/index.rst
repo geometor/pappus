@@ -1,17 +1,21 @@
 :order: 1
 :layout: book
 :type: book
-:title: 1. Preface to Megethius: On the Sagacity of Bees (Περὶ τῆς τῶν μελισσῶν σοφίας)
+:title: Preface to Megethius: On the Sagacity of Bees
 :canonical_id: Syn. V.preface
-:excerpt: Pappus's celebrated prologue to Megethius on the divine instinct of bees, proving geometrically why only triangles, squares, and hexagons tile the plane, and why bees chose the hexagon to maximize honey volume for a given expenditure of wax.
+:folio: 0246
+:excerpt: Pappus's celebrated prologue to Megethius on the divine instinct of bees, proving geometrically why only triangles, squares, and hexagons tile the plane, and why bees chose the hexagon.
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 .. _sec-b5-en-bees-preface:
 
-Preface to Megethius: On the Sagacity of Bees (*Περὶ τῆς τῶν μελισσῶν σοφίας*)
-==============================================================================
+Preface to Megethius: On the Sagacity of Bees
+=============================================
 
-.. rubric:: *Synagoge* Book V, Chs. 1–3 (:cite:`Hultsch I, pp. 304–308 <hultsch:1876>`) · Original English Translation from Hultsch's Greek
+.. rubric:: *Περὶ τῆς τῶν μελισσῶν σοφίας* — *Synagoge* Book V, Chs. 1–3 (:cite:`Hultsch I, pp. 304–308 <hultsch:1876>`; App. IV, p. 1234) · Original English Translation
+
+.. folio:: 0246
+   :page: 1234
 
 Although many and mighty theorems concerning plane and solid figures have been discovered by geometers, best :person:`Megethius <megethius>`, none elicits sharper philosophical wonder than the theory of :term:`isoperimetric figures <isoperimetros>` (*ἰσοπερίμετρα σχήματα*)—not only because its demonstrations are subtle, but because divine Providence has implanted an image of it even in irrational creatures. For mortals, endowed with reason and discursive intellect (*λόγος*), naturally pursue what is advantageous and orderly by deliberate art; yet the **bees**, possessing no instruction from geometry, fashion the honeycombs (*κηρία*) in which they store the celestial dew they bring to humankind according to a marvelous geometric forethought (*δαιμονίᾳ τινὶ προνοίᾳ*).
 
