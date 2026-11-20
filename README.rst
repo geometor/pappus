@@ -3,6 +3,12 @@ GEOMETOR • pappus
 
 **Visit the Online Archive:** https://geometor.github.io/pappus/
 
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • pappus Medallion
+   :target: https://geometor.github.io/pappus/
+   :width: 180px
+   :align: center
+
 .. image:: docsrc/_static/constructions/golden_pappus.svg
    :alt: GEOMETOR • pappus featured geometric construction
    :target: https://geometor.github.io/pappus/
