@@ -6,7 +6,7 @@ points inscribed on a smooth conic $\mathcal{C}$ (circle or ellipse):
 - **Pascal's Mystic Hexagram** (*Essai pour les coniques*, Feb. 1640): for any cyclic
   6-tuple $\langle P_{c_0}, P_{c_1}, P_{c_2}, P_{c_3}, P_{c_4}, P_{c_5} \rangle$ on a conic,
   opposite side intersections $M_{03}, M_{14}, M_{25}$ lie on a single **Pascal line**.
-- **Bi-Triangle :math:`S_3` Steiner Family**: partitioning the 6 conic vertices into two
+- **Bi-Triangle** :math:`S_3` **Steiner Family**: partitioning the 6 conic vertices into two
   complementary triangles $\triangle_A$ and $\triangle_B$ generates 6 alternating hexagons
   whose 3 even (:math:`A_3`) Pascal lines concur at :math:`G_+` and whose 3 odd
   (:math:`S_3 \setminus A_3`) Pascal lines concur at :math:`G_-`—directly generalizing
