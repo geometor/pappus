@@ -7,7 +7,9 @@
 :book_title: Mathematical Collection
 :book_subtitle: Μαθηματικὴ Συναγωγή — Pappus of Alexandria (Books III, IV, V, VII & VIII, ed. Hultsch)
 :author: Pappus of Alexandria
-:year: c. 340 CE
+:year: 340
+:year_label: ca. 340 CE
+:edition_year: 1876
 :folio: 0031
 :tracks: English: index | Greek: title-el
 :excerpt: Pappus's late-antique Alexandrian compendium synthesizing the Greek Treasury of Analysis, projective cross-ratio and hexagon lemmas, semicircle means, arbelos circle chains, and architectonic mechanics.
