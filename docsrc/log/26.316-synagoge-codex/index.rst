@@ -25,18 +25,18 @@ symbolic geometry package housing both **Pappus of Alexandria's** *Synagoge* (*�
 
 - **Exact Symbolic *Synagoge* Constructions** (``geometor.pappus.synagoge_demos``):
 
-  - **Book III (Props. 28–30)**: ``construct_three_means`` exhibiting $A, G, H$ in one semicircle
-    ($A \cdot H = G^2$) with exact orthogonal foot $F$ on $OB$ and external harmonic tangent
-    conjugate $(A, C; D, T) = -1$ over $\mathbb{Q}$ and $\mathbb{Q}(\phi)$.
+  - **Book III (Props. 28–30)**: ``construct_three_means`` exhibiting :math:`A, G, H` in one semicircle
+    (:math:`A \cdot H = G^2`) with exact orthogonal foot :math:`F` on :math:`OB` and external harmonic tangent
+    conjugate :math:`(A, C; D, T) = -1` over :math:`\mathbb{Q}` and :math:`\mathbb{Q}(\phi)`.
   - **Book IV (Prop. 1)**: ``construct_pappus_area_theorem`` and 10-variable universal polynomial
     identity ``verify_pappus_area_symbolic() == 0`` generalizing *Elements* I.47 to arbitrary
     parallelograms on any scalene triangle.
   - **Book IV (Props. 14–18)**: ``construct_pappus_arbelos_chain`` and
-    ``verify_arbelos_chain_symbolic`` proving $y_n = n\,d_n = 2n\,r_n$ and focal ellipse locus
+    ``verify_arbelos_chain_symbolic`` proving :math:`y_n = n\,d_n = 2n\,r_n` and focal ellipse locus
     incidence in 100% rational coordinates.
   - **Book V (Prop. 1) & Book VIII (Prop. 23)**: ``verify_honeycomb_isoperimetry`` and
-    ``construct_honeycomb_isoperimetry`` proving $n \in \{3, 4, 6\}$ planar tiling uniqueness,
-    $A_6 : A_4 : A_3 = 3\sqrt{3} : 4 : 3$, and the 7-hexagon circle circumradius $R = s_6\sqrt{7}$.
+    ``construct_honeycomb_isoperimetry`` proving :math:`n \in \{3, 4, 6\}` planar tiling uniqueness,
+    :math:`A_6 : A_4 : A_3 = 3\sqrt{3} : 4 : 3`, and the 7-hexagon circle circumradius :math:`R = s_6\sqrt{7}`.
 
 - **Interactive SVG Gallery, CLI & Demos**: Extended ``render.py`` with exact circular arc support
   (``_extra_arcs``), added ``pappus synagoge`` and ``pappus build --synagoge`` CLI commands

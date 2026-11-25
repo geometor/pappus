@@ -1,17 +1,17 @@
 :order: 6
 :layout: book
 :type: book
-:title: Proposition 6 · Commentary Notes
+:title: Propositions 6–7 · Commentary Notes
 :canonical_id: Syn. V.6.notes
-:folio: 0250
+:folio: hultsch_1876_vol1:0355
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
-Proposition 6 · Commentary Notes
-================================
+Propositions 6–7 · Commentary Notes
+===================================
 
-.. rubric:: Complementing Equiangularity (Prop. 10)
+.. rubric:: Preparation for Equiangularity (Prop. 10)
 
-.. folio:: 0250
-   :page: 1238
+.. folio:: hultsch_1876_vol1:0355
+   :page: 322
 
-Archival plate ``0154.g1`` (*Hultsch III, p. 1142*) documents the late-antique didactic diagrams accompanying Zenodorus's and Pappus's reduction from arbitrary polygons to equilateral and equiangular polygons.
+Chs. 12–14 (:cite:`Hultsch I, pp. 322–328 <hultsch-1876>`) prove the two-triangle similarity extremum required for Ch. 19 (Prop. 10), while archival plate ``0154.g1`` (:cite:`Hultsch III, p. 1142 <hultsch-1878>`) illustrates :cite:`Zenodorus's <zenodorus-isoperimetric>` reduction to regular polygons.

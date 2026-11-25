@@ -14,4 +14,4 @@ Proposition 9 · Pappus vs. Stevin & Galileo Notes
 .. folio:: 0063
    :page: 1054
 
-Pappus VIII.9 differs from the exact frictionless sine law ($F = W \sin\alpha$) established by Jordanus de Nemore, Simon Stevin (1586, *Clootcrans*), and Galileo (*Le Meccaniche*, c. 1600), yet it was directly through critiquing Commandino's Latin translation of Prop. 9 that Galileo sharpened Renaissance statics.
+Pappus VIII.9 differs from the exact frictionless sine law (:math:`F = W \sin\alpha`) established by Jordanus de Nemore, Simon Stevin (1586, *Clootcrans*), and Galileo (*Le Meccaniche*, c. 1600), yet it was directly through critiquing Commandino's Latin translation of Prop. 9 that Galileo sharpened Renaissance statics.

@@ -3,7 +3,7 @@
 :type: book
 :title: Address to Pandrosion · Philological & Textual Notes
 :canonical_id: Syn. III.1.notes
-:folio: 0224
+:folio: hultsch_1876_vol1:0063
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Address to Pandrosion · Philological & Textual Notes
@@ -11,8 +11,8 @@ Address to Pandrosion · Philological & Textual Notes
 
 .. rubric:: Manuscript Transmission & Historical Persona
 
-.. folio:: 0224
-   :page: 1212
+.. folio:: hultsch_1876_vol1:0063
+   :page: 30
 
 1. Pandrosion of Alexandria
 ---------------------------

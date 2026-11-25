@@ -14,24 +14,24 @@ ecosystem standards:
 - **Revived & Extended Projective & Conic Discoveries**:
 
   - Universal homogeneous polynomial proofs for both Pappus's two-line Hexagon Theorem
-    (``verify_pappus_symbolic() == 0`` over $\mathbb{Z}[a_0, a_1, a_2, b_0, b_1, b_2, m, c]$) and
+    (``verify_pappus_symbolic() == 0`` over :math:`\mathbb{Z}[a_0, a_1, a_2, b_0, b_1, b_2, m, c]`) and
     Blaise Pascal's 1640 smooth-conic *Hexagrammum Mysticum* (``verify_pascal_symbolic() == 0``
-    over $\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]$).
-  - Unified smooth conics and degenerate Pappus line-pairs via exact $6 \times 6$ Veronese rank
+    over :math:`\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]`).
+  - Unified smooth conics and degenerate Pappus line-pairs via exact :math:`6 \times 6` Veronese rank
     (``are_coconic``) and added Michel Chasles's observer-independent conic cross-ratio
     (``conic_cross_ratio``).
   - Enumerated and verified in exact homogeneous coordinates the complete **60-line *Hexagrammum
     Mysticum* web** on the Pythagorean unit circle: **15 chords, 45 diagonal points, 60 Pascal
     lines, 20 Jakob Steiner points, 60 Thomas Kirkman points, and 15 Julius Plücker lines**,
-    showing directly how Pappus's 2 Star points $(S_+, S_-)$ are the degenerate limit of one
-    bi-triangle Steiner family $(G_+, G_-)$.
+    showing directly how Pappus's 2 Star points :math:`(S_+, S_-)` are the degenerate limit of one
+    bi-triangle Steiner family :math:`(G_+, G_-)`.
   - Revived the homologous ``square`` / ``circle`` / ``diamond`` type triangles from ``pappus-3.py``
-    and the 2023 parallel configuration from ``pappus.py`` ($S_+ = (90/73, 38/73)$,
-    $S_- = (10, 38/3)$), plus **19 base / 81 full** exact collinear harmonic tetrads in
+    and the 2023 parallel configuration from ``pappus.py`` (:math:`S_+ = (90/73, 38/73)`,
+    :math:`S_- = (10, 38/3)`), plus **19 base / 81 full** exact collinear harmonic tetrads in
     ``preset="harmonic"``.
-  - Uncovered with ``geometor.divine`` two emergent Golden Ratio sections over $\mathbb{Q}(\phi)$:
+  - Uncovered with ``geometor.divine`` two emergent Golden Ratio sections over :math:`\mathbb{Q}(\phi)`:
     ``/ A1 M12 B2 /`` on Pappus's golden cross-join and ``/ M25 P4 P0 /`` at
-    $M_{25} = (-\phi^{-1}, -\phi)$ on Pascal's golden conic!
+    :math:`M_{25} = (-\phi^{-1}, -\phi)` on Pascal's golden conic!
 
 - **Interactive SVG Gallery, Test Suite & Theorem Dossiers**: Generated 18 dark/light-aware
   ``svg.euclid-graphic`` diagrams, verified 59 ``pytest`` cases, and authored five synchronized

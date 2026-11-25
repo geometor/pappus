@@ -9,11 +9,11 @@
 Single-Compass & Five-Point Conics · Summary
 ============================================
 
-.. rubric:: Fixed-Aperture ("Rusty Compass") Constructions
+.. rubric:: Fixed-Aperture ("Rusty Compass") Constructions (:cite:`Hultsch III, pp. 1072–1096 <hultsch-1878>`)
 
 .. folio:: 0083
    :page: 1074
 
-* **Prop. 13**: Recovering a broken circular column's diameter using three surface points and plane intersections.
-* **Prop. 14**: Constructing six points of an ellipse from five given points via inscribed cross-chords (plate ``0087.g1``).
-* ***Heni Diastemati***: Replicating Euclidean constructions with one fixed compass radius.
+* **Prop. 13 (Chs. 27–28)**: Restoring a damaged cylinder's diameter using five coplanar points marked :term:`with one compass opening <heni-diastemati>`.
+* **Props. 14–17 (Chs. 29–32)**: Circumscribing an ellipse on five points and extracting its principal axes.
+* **Props. 18–22 (Chs. 33–41)**: Determining plane inclinations, vertical drop points, and line intersections on elevated spheres.

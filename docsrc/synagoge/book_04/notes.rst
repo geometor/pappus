@@ -21,7 +21,7 @@ In *Codex Vaticanus Graecus* 218, Book IV begins abruptly with Proposition 1 wit
 2. Pappus's Theorem and the Shear Principle
 -------------------------------------------
 
-Pappus's proof of Proposition 1 relies entirely on Euclid's shear proposition (*Elements* I.35). By applying shear twice on each side through intermediate parallelograms $AB\text{-}HA$ and $AC\text{-}HA$, the areas transfer without metric computation.
+Pappus's proof of Proposition 1 relies entirely on Euclid's shear proposition (*Elements* I.35). By applying shear twice on each side through intermediate parallelograms :math:`AB\text{-}HA` and :math:`AC\text{-}HA`, the areas transfer without metric computation.
 
 3. The Shoemaker's Knife in Antiquity
 -------------------------------------

@@ -3,7 +3,7 @@
 :type: book
 :title: Proposition 4 · Variational & Ellipse Notes
 :canonical_id: Syn. V.4.notes
-:folio: 0249
+:folio: hultsch_1876_vol1:0351
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Proposition 4 · Variational & Ellipse Notes
@@ -11,7 +11,7 @@ Proposition 4 · Variational & Ellipse Notes
 
 .. rubric:: First Step Toward Equilaterality
 
-.. folio:: 0249
-   :page: 1237
+.. folio:: hultsch_1876_vol1:0351
+   :page: 318
 
-Plate ``0157.g1`` comes from Hultsch's edition of *Anonymi De Figuris Isoperimetris* (Vol. III, p. 1145), illustrating Zenodorus and Pappus's triangle symmetrization argument that underpins Props. 5–6 and Jakob Steiner's 1838 four-hinge symmetrization proof.
+Plate ``0157.g1`` comes from :cite:`Hultsch's edition <hultsch-1878>` of *Anonymi De Figuris Isoperimetris* (Vol. III, p. 1145), illustrating :cite:`Zenodorus <zenodorus-isoperimetric>` and :person:`Pappus's <pappus>` triangle symmetrization argument (Ch. 11, Hultsch I pp. 318–322) that underpins equilateralization and :person:`Steiner's <steiner>` 1838 four-hinge proof.

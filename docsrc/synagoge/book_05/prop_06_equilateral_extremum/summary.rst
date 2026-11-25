@@ -1,17 +1,18 @@
 :order: 6
 :layout: book
 :type: book
-:title: Proposition 6 · Necessity of Equilaterality
+:title: Propositions 6–7 · Similar Triangles & Area Sum Summary
 :canonical_id: Syn. V.6.summary
-:folio: 0250
+:folio: hultsch_1876_vol1:0355
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
-Proposition 6 · Necessity of Equilaterality
-===========================================
+Propositions 6–7 · Similar Triangles & Area Sum Summary
+=======================================================
 
-.. rubric:: Local Exchange Perturbation
+.. rubric:: Altitude Sum Inequality for Similar Isosceles Pairs
 
-.. folio:: 0250
-   :page: 1238
+.. folio:: hultsch_1876_vol1:0355
+   :page: 322
 
-* If two adjacent sides $a \ne b$ appear in an $n$-gon, fixing all remaining vertices and replacing $(a, b)$ with $(\frac{a+b}{2}, \frac{a+b}{2})$ strictly increases total area while keeping perimeter $P$ unchanged.
+* **Ch. 12 (Prop. 6)**: For similar right triangles :math:`(a_1, b_1, c_1)` and :math:`(a_2, b_2, c_2)`, :math:`(c_1 + c_2)^2 = (a_1 + a_2)^2 + (b_1 + b_2)^2`.
+* **Chs. 13–14 (Prop. 7)**: Similar isosceles triangles on fixed bases maximize total altitude and total area over dissimilar :term:`isoperimetric <isoperimetros>` isosceles triangles on the same bases.

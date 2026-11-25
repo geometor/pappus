@@ -2,7 +2,7 @@
 
 Provides 100% exact SymPy implementations of collinear cross-ratios, central
 perspectivities (Book VII, Prop. 129 of Pappus's *Collection*), Wildberger
-quadrances and spreads, collinear harmonic range detection $(A, B; C, D) = -1$,
+quadrances and spreads, collinear harmonic range detection :math:`(A, B; C, D) = -1`,
 and integration with :mod:`geometor.divine` for golden section discovery.
 """
 from __future__ import annotations
@@ -44,15 +44,15 @@ __all__ = [
 
 @dataclass(frozen=True)
 class HarmonicRange:
-    """Represents four ordered collinear points forming a harmonic range $(P_1, P_3; P_2, P_4) = -1$.
+    """Represents four ordered collinear points forming a harmonic range :math:`(P_1, P_3; P_2, P_4) = -1`.
 
     Attributes:
-        points: Ordered tuple $(P_1, P_2, P_3, P_4)$ along the carrier line such
-            that $(P_1, P_3)$ and $(P_2, P_4)$ harmonically separate each other.
+        points: Ordered tuple :math:`(P_1, P_2, P_3, P_4)` along the carrier line such
+            that :math:`(P_1, P_3)` and :math:`(P_2, P_4)` harmonically separate each other.
         point_ids: Corresponding model IDs of the four points.
         line: Carrier line in the model, if associated with one.
         line_id: Model ID of the carrier line.
-        value: Exact symbolic cross-ratio $(P_1, P_3; P_2, P_4) = -1$.
+        value: Exact symbolic cross-ratio :math:`(P_1, P_3; P_2, P_4) = -1`.
     """
 
     points: tuple[spg.Point, spg.Point, spg.Point, spg.Point]
@@ -64,14 +64,14 @@ class HarmonicRange:
 
 @dataclass(frozen=True)
 class GoldenRange:
-    r"""Represents three ordered collinear points dividing a segment in the Golden Ratio $\phi$.
+    r"""Represents three ordered collinear points dividing a segment in the Golden Ratio :math:`\phi`.
 
     Attributes:
         section: Underlying :class:`~geometor.model.sections.Section` object.
-        point_ids: Ordered model IDs $(P_1, P_2, P_3)$ of the three points.
+        point_ids: Ordered model IDs :math:`(P_1, P_2, P_3)` of the three points.
         line: Carrier line in the model, if associated with one.
         line_id: Model ID of the carrier line.
-        ratio: Exact symbolic ratio of longer to shorter segment ($\phi$).
+        ratio: Exact symbolic ratio of longer to shorter segment (:math:`\phi`).
     """
 
     section: Section
@@ -82,27 +82,27 @@ class GoldenRange:
 
 
 def quadrance(pt_1: spg.Point, pt_2: spg.Point) -> sp.Expr:
-    """Compute the exact rational-trigonometric quadrance $Q(P_1, P_2)$.
+    """Compute the exact rational-trigonometric quadrance :math:`Q(P_1, P_2)`.
 
     Args:
         pt_1: First point.
         pt_2: Second point.
 
     Returns:
-        Simplified symbolic expression $(x_2 - x_1)^2 + (y_2 - y_1)^2$.
+        Simplified symbolic expression :math:`(x_2 - x_1)^2 + (y_2 - y_1)^2`.
     """
     return clean_expr((pt_2.x - pt_1.x) ** 2 + (pt_2.y - pt_1.y) ** 2)
 
 
 def line_spread(line_1: spg.Line, line_2: spg.Line) -> sp.Expr:
-    r"""Compute the exact rational-trigonometric spread $s(\ell_1, \ell_2) = \sin^2\theta$.
+    r"""Compute the exact rational-trigonometric spread :math:`s(\ell_1, \ell_2) = \sin^2\theta`.
 
     Args:
-        line_1: First line $a_1 x + b_1 y + c_1 = 0$.
-        line_2: Second line $a_2 x + b_2 y + c_2 = 0$.
+        line_1: First line :math:`a_1 x + b_1 y + c_1 = 0`.
+        line_2: Second line :math:`a_2 x + b_2 y + c_2 = 0`.
 
     Returns:
-        Exact symbolic spread in $[0, 1]$ (equals $0$ iff parallel, $1$ iff perpendicular).
+        Exact symbolic spread in :math:`[0, 1]` (equals :math:`0` iff parallel, :math:`1` iff perpendicular).
     """
     a1, b1, _ = line_1.coefficients
     a2, b2, _ = line_2.coefficients
@@ -152,15 +152,15 @@ def project_point(
     Proposition 129.
 
     Args:
-        center: Center of perspectivity $O$ not lying on ``target_line``.
+        center: Center of perspectivity :math:`O` not lying on ``target_line``.
         target_line: Destination line onto which ``pt`` is projected.
-        pt: Source point $P \ne O$.
+        pt: Source point :math:`P \ne O`.
 
     Returns:
-        Exact intersection $[O P] \cap \text{target\_line}$.
+        Exact intersection :math:`[O P] \cap \text{target\_line}`.
 
     Raises:
-        ValueError: If ``pt`` coincides with ``center`` or $[O P]$ is parallel to ``target_line``.
+        ValueError: If ``pt`` coincides with ``center`` or :math:`[O P]` is parallel to ``target_line``.
     """
     if pt.equals(center):
         raise ValueError("Source point cannot coincide with the center of perspectivity.")
@@ -184,7 +184,7 @@ def cross_ratio(
     *,
     check_collinear: bool = True,
 ) -> sp.Expr:
-    r"""Compute the exact projective cross-ratio $(A, B; C, D)$ of four collinear points.
+    r"""Compute the exact projective cross-ratio :math:`(A, B; C, D)` of four collinear points.
 
     Uses the standard projective convention
 
@@ -192,19 +192,19 @@ def cross_ratio(
 
        (A, B; C, D) = \frac{(u_A - u_C)(u_B - u_D)}{(u_A - u_D)(u_B - u_C)},
 
-    where $u$ is any affine coordinate along the line carrying $A, B, C, D$.
-    Under this convention, $(A, B; C, D) = -1$ iff $(C, D)$ harmonically separates
-    $(A, B)$, and $(0, 1; \phi, \phi + 1) = \phi$.
+    where :math:`u` is any affine coordinate along the line carrying :math:`A, B, C, D`.
+    Under this convention, :math:`(A, B; C, D) = -1` iff :math:`(C, D)` harmonically separates
+    :math:`(A, B)`, and :math:`(0, 1; \phi, \phi + 1) = \phi`.
 
     Args:
-        pt_a: First point $A$.
-        pt_b: Second point $B$.
-        pt_c: Third point $C$.
-        pt_d: Fourth point $D$.
-        check_collinear: If True, verify that $A, B, C, D$ are collinear.
+        pt_a: First point :math:`A`.
+        pt_b: Second point :math:`B`.
+        pt_c: Third point :math:`C`.
+        pt_d: Fourth point :math:`D`.
+        check_collinear: If True, verify that :math:`A, B, C, D` are collinear.
 
     Returns:
-        Exact simplified SymPy expression for $(A, B; C, D)$.
+        Exact simplified SymPy expression for :math:`(A, B; C, D)`.
 
     Raises:
         ValueError: If the points are not collinear or if the denominator vanishes.
@@ -242,11 +242,11 @@ def anharmonic_orbit(lam: sp.Expr) -> list[sp.Expr]:
     r"""Return the six cross-ratio values generated by permuting four collinear points.
 
     Args:
-        lam: Fundamental cross-ratio $\lambda = (A, B; C, D) \notin \{0, 1\}$.
+        lam: Fundamental cross-ratio :math:`\lambda = (A, B; C, D) \notin \{0, 1\}`.
 
     Returns:
         List of the 6 simplified expressions
-        $[\lambda, 1/\lambda, 1 - \lambda, 1/(1 - \lambda), (\lambda - 1)/\lambda, \lambda/(\lambda - 1)]$.
+        :math:`[\lambda, 1/\lambda, 1 - \lambda, 1/(1 - \lambda), (\lambda - 1)/\lambda, \lambda/(\lambda - 1)]`.
     """
     lam_expr = sp.sympify(lam)
     raw = [
@@ -266,16 +266,16 @@ def is_harmonic_range(
     pt_c: spg.Point,
     pt_d: spg.Point,
 ) -> bool:
-    """Determine whether $(A, B; C, D) = -1$ in exact symbolic arithmetic.
+    """Determine whether :math:`(A, B; C, D) = -1` in exact symbolic arithmetic.
 
     Args:
-        pt_a: First base point $A$.
-        pt_b: Second base point $B$.
-        pt_c: First conjugate point $C$.
-        pt_d: Second conjugate point $D$.
+        pt_a: First base point :math:`A`.
+        pt_b: Second base point :math:`B`.
+        pt_c: First conjugate point :math:`C`.
+        pt_d: Second conjugate point :math:`D`.
 
     Returns:
-        True iff $A, B, C, D$ are distinct collinear points satisfying $(A, B; C, D) = -1$.
+        True iff :math:`A, B, C, D` are distinct collinear points satisfying :math:`(A, B; C, D) = -1`.
     """
     pts = (pt_a, pt_b, pt_c, pt_d)
     if not _has_free_symbols(pts):
@@ -302,23 +302,23 @@ def harmonic_conjugate_point(
     pt_b: spg.Point,
     pt_c: spg.Point,
 ) -> spg.Point:
-    """Compute the exact algebraic fourth harmonic point $D$ such that $(A, B; C, D) = -1$.
+    """Compute the exact algebraic fourth harmonic point :math:`D` such that :math:`(A, B; C, D) = -1`.
 
-    Solves $(A, B; C, D) = -1$ along line $[A B]$ in closed symbolic form. For the
+    Solves :math:`(A, B; C, D) = -1` along line :math:`[A B]` in closed symbolic form. For the
     pure straightedge geometric construction via a complete quadrilateral, see
     :func:`geometor.pappus.constructions.construct_harmonic_fourth`.
 
     Args:
-        pt_a: First base point $A$.
-        pt_b: Second base point $B$.
-        pt_c: Given third collinear point $C$ (not the midpoint of $A$ and $B$).
+        pt_a: First base point :math:`A`.
+        pt_b: Second base point :math:`B`.
+        pt_c: Given third collinear point :math:`C` (not the midpoint of :math:`A` and :math:`B`).
 
     Returns:
-        Exact :class:`sympy.geometry.point.Point` $D$ satisfying $(A, B; C, D) = -1$.
+        Exact :class:`sympy.geometry.point.Point` :math:`D` satisfying :math:`(A, B; C, D) = -1`.
 
     Raises:
-        ValueError: If $A, B, C$ are not distinct collinear points or $C$ is the midpoint of $AB$
-            (in which case $D$ lies on the line at infinity).
+        ValueError: If :math:`A, B, C` are not distinct collinear points or :math:`C` is the midpoint of :math:`AB`
+            (in which case :math:`D` lies on the line at infinity).
     """
     if pt_a.equals(pt_b) or pt_c.equals(pt_a) or pt_c.equals(pt_b):
         raise ValueError("Points A, B, C must be pairwise distinct.")
@@ -369,9 +369,9 @@ def find_harmonic_ranges(
 
     Revives and modernizes the ``analyze_harmonics`` routine from GEOMETOR's
     original 2023 ``pappus.py`` exploration. For every candidate line carrying at
-    least four points, points are sorted along the line ($P_1 < P_2 < P_3 < P_4$)
+    least four points, points are sorted along the line (:math:`P_1 < P_2 < P_3 < P_4`)
     so that each unordered harmonic tetrad is reported canonically once via the
-    unique alternating separation $(P_1, P_3; P_2, P_4) = -1$.
+    unique alternating separation :math:`(P_1, P_3; P_2, P_4) = -1`.
 
     Args:
         model: Geometric model to scan.
@@ -513,21 +513,21 @@ def circle_stereographic_point(
     center: spg.Point | tuple[sp.Expr | int, sp.Expr | int] = (0, 0),
     radius: sp.Expr | int = 1,
 ) -> spg.Point:
-    r"""Compute an exact point on $(x - x_0)^2 + (y - y_0)^2 = R^2$ via rational stereographic slope $t$.
+    r"""Compute an exact point on :math:`(x - x_0)^2 + (y - y_0)^2 = R^2` via rational stereographic slope :math:`t`.
 
-    Uses the classical Weierstrass / stereographic parameterization from $(-R + x_0, y_0)$:
+    Uses the classical Weierstrass / stereographic parameterization from :math:`(-R + x_0, y_0)`:
 
     .. math::
 
        P(t) = \left(x_0 + R \frac{1 - t^2}{1 + t^2},\; y_0 + R \frac{2 t}{1 + t^2}\right).
 
-    Every $t \in \mathbb{Q}$ yields an exact rational point in $\mathbb{Q}^2$, and
-    every $t \in \mathbb{Q}(\phi)$ yields an exact point in $\mathbb{Q}(\sqrt{5})^2$.
+    Every :math:`t \in \mathbb{Q}` yields an exact rational point in :math:`\mathbb{Q}^2`, and
+    every :math:`t \in \mathbb{Q}(\phi)` yields an exact point in :math:`\mathbb{Q}(\sqrt{5})^2`.
 
     Args:
         t: Exact symbolic or integer stereographic parameter.
-        center: Circle center $(x_0, y_0)$.
-        radius: Exact positive circle radius $R$.
+        center: Circle center :math:`(x_0, y_0)`.
+        radius: Exact positive circle radius :math:`R`.
 
     Returns:
         Exact :class:`~sympy.geometry.point.Point` on the circle.
@@ -544,9 +544,9 @@ def circle_stereographic_point(
 def conic_equation_through_points(
     points: Sequence[spg.Point | tuple[sp.Expr | int, sp.Expr | int]],
 ) -> sp.Expr:
-    r"""Construct the exact quadratic conic polynomial $C(x, y)$ through five points.
+    r"""Construct the exact quadratic conic polynomial :math:`C(x, y)` through five points.
 
-    Evaluates the $6 \times 6$ Veronese determinant
+    Evaluates the :math:`6 \times 6` Veronese determinant
 
     .. math::
 
@@ -584,15 +584,15 @@ def are_coconic(
 ) -> bool:
     r"""Return True iff all given points lie on a single conic (smooth or degenerate line-pair).
 
-    Unifies Pappus's degenerate two-line configuration ($L_a \cdot L_b = 0$) and
-    Pascal's smooth conic configuration ($A x^2 + B x y + C y^2 + D x + E y + F = 0$)
-    via the rank of the $N \times 6$ Veronese matrix $[x_k^2, x_k y_k, y_k^2, x_k, y_k, 1]$.
+    Unifies Pappus's degenerate two-line configuration (:math:`L_a \cdot L_b = 0`) and
+    Pascal's smooth conic configuration (:math:`A x^2 + B x y + C y^2 + D x + E y + F = 0`)
+    via the rank of the :math:`N \times 6` Veronese matrix :math:`[x_k^2, x_k y_k, y_k^2, x_k, y_k, 1]`.
 
     Args:
-        points: Sequence of planar points (any $\le 5$ points trivially lie on at least one conic).
+        points: Sequence of planar points (any :math:`\le 5` points trivially lie on at least one conic).
 
     Returns:
-        ``True`` if the Veronese matrix has rank $\le 5$, else ``False``.
+        ``True`` if the Veronese matrix has rank :math:`\le 5`, else ``False``.
     """
     if len(points) <= 5:
         return True
@@ -610,19 +610,19 @@ def conic_cross_ratio(
     p4: spg.Point,
     observer: spg.Point,
 ) -> sp.Expr:
-    r"""Compute Michel Chasles's projective cross-ratio $(P_1, P_2; P_3, P_4)_{\mathcal{C}}$ on a conic.
+    r"""Compute Michel Chasles's projective cross-ratio :math:`(P_1, P_2; P_3, P_4)_{\mathcal{C}}` on a conic.
 
-    By Chasles's Theorem, for four distinct points $P_1, P_2, P_3, P_4$ on an irreducible
-    conic $\mathcal{C}$, the cross-ratio of the pencil of four rays
-    $[V P_1], [V P_2], [V P_3], [V P_4]$ cut by any transversal line is **independent**
-    of the fifth point $V = \text{observer} \in \mathcal{C}$.
+    By Chasles's Theorem, for four distinct points :math:`P_1, P_2, P_3, P_4` on an irreducible
+    conic :math:`\mathcal{C}`, the cross-ratio of the pencil of four rays
+    :math:`[V P_1], [V P_2], [V P_3], [V P_4]` cut by any transversal line is **independent**
+    of the fifth point :math:`V = \text{observer} \in \mathcal{C}`.
 
     Args:
         p1: First conic point.
         p2: Second conic point.
         p3: Third conic point.
         p4: Fourth conic point.
-        observer: Distinct fifth point $V$ on the same conic.
+        observer: Distinct fifth point :math:`V` on the same conic.
 
     Returns:
         Exact simplified SymPy cross-ratio expression (or ``sp.oo``).

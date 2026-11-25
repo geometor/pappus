@@ -1,18 +1,18 @@
 :order: 4
 :layout: book
 :type: book
-:title: Proposition 3 · Tangent-to-Angle Bound Summary
+:title: Propositions 3–4 · Circle Area & Triangle Lemma Summary
 :canonical_id: Syn. V.3.summary
-:folio: 0249
+:folio: hultsch_1876_vol1:0345
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
-Proposition 3 · Tangent-to-Angle Bound Summary
-==============================================
+Propositions 3–4 · Circle Area & Triangle Lemma Summary
+=======================================================
 
-.. rubric:: Convexity of Tangent & Sector Bounding
+.. rubric:: Exhaustion Bounds & Triangle Side Interpolation
 
-.. folio:: 0249
-   :page: 1237
+.. folio:: hultsch_1876_vol1:0345
+   :page: 312
 
-* Inequality: $\frac{\tan \alpha}{\tan \beta} > \frac{\alpha}{\beta}$ for $0 < \beta < \alpha < \frac{\pi}{2}$.
-* Equivalent to $f(x) = \frac{\tan x}{x}$ being strictly increasing on $(0, \pi/2)$, guaranteeing $a_n = \frac{P}{2n \tan(\pi/n)}$ increases strictly with $n$.
+* **Chs. 6–8 (Prop. 3)**: Exhaustion via inscribed and circumscribed polygons proves :math:`\operatorname{Area}_{\text{circle}} = \frac{1}{2} C R` independently of :person:`Archimedes <archimedes>`.
+* **Chs. 9–10 (Prop. 4)**: For :math:`AB > B\Gamma` and :math:`B\Gamma < E < AB`, a triangle with sides :math:`A\Gamma, E, Z` (:math:`E + Z = AB + B\Gamma`) satisfies the triangle inequality.

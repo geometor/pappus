@@ -3,7 +3,7 @@
 :type: book
 :title: Preface to Hermodorus: Analysis, Synthesis, and the Thirty-Three Books
 :canonical_id: Syn. VII.preface
-:folio: 0269
+:folio: hultsch_1877_vol2:0179
 :excerpt: Pappus's masterly definition of mathematical analysis and synthesis and the complete curriculum of the 33 books comprising the ancient Hellenistic Treasury of Analysis.
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
@@ -12,33 +12,30 @@
 Preface to Hermodorus: Analysis, Synthesis, and the Thirty-Three Books
 ======================================================================
 
-.. rubric:: *Synagoge* Book VII, Chs. 1–3 (:cite:`Hultsch II, pp. 634–638 <hultsch:1877>`; App. IV, p. 1257) · Original English Translation
+.. rubric:: *Synagoge* Book VII, Chs. 1–3 (:cite:`Hultsch II, pp. 634–636 <hultsch-1877>`) · Original English Translation
 
-.. folio:: 0269
-   :page: 1257
+.. folio:: hultsch_1877_vol2:0179
+   :page: 634
 
-That body of doctrine which is called the :term:`Treasury of Analysis <topos-analyomenos>` (*ὁ καλούμενος ἀναλυόμενος τόπος*), my son :person:`Hermodorus <hermodorus>`, is—taken as a whole—a specialized mathematical resource prepared, after the composition of the common *Elements*, for those who wish to acquire in geometric inquiries the power of discovering solutions to problems set before them; and it was written exclusively for this purpose by three principal men: :person:`Euclid <euclid>` the author of the *Elements*, :person:`Apollonius of Perga <apollonius>`, and :person:`Aristaeus the Elder <aristaeus>`—proceeding entirely by way of :term:`analysis <analysis>` and :term:`synthesis <synthesis>`.
+**1.** That which is called the :term:`Treasury of Analysis <topos-analyomenos>`, my son :person:`Hermodorus <hermodorus>`, is—to speak concisely—a special body of doctrine prepared after the composition of the common *Elements* for those who wish to acquire in geometric inquiries the power of discovering solutions to the problems proposed to them;
+and being useful for this purpose alone, it was written by three men—:person:`Euclid <euclid>` the writer of the *Elements*, :person:`Apollonius of Perga <apollonius>`, and :person:`Aristaeus the Elder <aristaeus>`—and proceeds by way of :term:`analysis <analysis>` and :term:`synthesis <synthesis>`.
 
-**Analysis** (*ἀνάλυσις*), then, is the path from that which is sought, assumed as if already admitted, through its successive consequences toward something admitted in synthesis. For in analysis, assuming the thing sought as having already come to be (*ὡς γεγονὸς ὑποθέμενοι*), we examine that antecedent from which this follows, and again the antecedent of that, until by thus retracing our steps (*ἀναποδίζοντες*) we arrive at something already known or holding the rank of a first principle; and such a procedure we call *analysis*, as being a **solution backward** (*ἀνάπαλιν λύσις*).
+Analysis, then, is the path from what is sought, as if admitted, through its successive consequences toward something admitted in synthesis.
+For in analysis, assuming that which is sought as having already come to be, we examine that from which this follows, and again the antecedent of that, until by thus retracing our steps we arrive at something already known or holding the rank of a first principle; and such a method we call analysis, as being a solution backward.
+And in synthesis, conversely, setting down as already done that last thing apprehended in the analysis, and arranging in their natural order what were there consequents as antecedents here, and fitting them one to another, we arrive at the final completion of the construction of what was sought; and this we call synthesis.
 
-In **synthesis** (*σύνθεσις*), conversely, reversing our course, we set down as already done that last point apprehended in the analysis, and arranging in their natural order as consequences what had previously been antecedents, and fitting them one to another, we arrive at the final completion of the construction of what was sought; and this we call *synthesis*.
+**2.** Now analysis is of two kinds: one seeking the truth, which is called theoretical, and the other procuring what was proposed, which is called problematic.
 
-Now there are **two genera of analysis**:
+.. folio:: hultsch_1877_vol2:0181
+   :page: 636
 
-1. The **theoretical** (*θεωρηματικόν*), which seeks after truth: assuming what is proposed as existing and true, we advance through its consequences, as though true and existing by hypothesis, up to something admitted. If that admitted endpoint be **true**, what was sought will also be true, and its proof will be the reverse synthesis; but if we encounter something admitted to be **false**, what was sought will also be false.
-2. The **problematic** (*προβληματικόν*), which seeks to supply something proposed: assuming what is proposed as known, we advance through its consequences, as though true, up to something admitted. If that endpoint is **possible and procurable** (*δυνατόν τε καὶ ποριστόν*)—what mathematicians call *given* (*δεδομένον*)—then what was proposed will also be possible, and again the proof will correspond inversely to the analysis; if we encounter something admitted to be **impossible**, the problem will likewise be impossible. That part of the inquiry which specifies beforehand *when, how, and in how many ways* the problem will be possible is called its :term:`diorismos <diorismos>`.
+In the theoretical kind, then, assuming what is sought as existing and as true, and then proceeding through its successive consequences as true and as existing by hypothesis
+to something admitted, if that admitted thing be true, what was sought will also be true, and the proof is the reverse of the analysis; but if we encounter something admitted to be false, what was sought will also be false. In the problematic kind, assuming what was proposed as known, and then proceeding through
+its successive consequences as true to something admitted, if that admitted thing be possible and procurable—what mathematicians call given—what was proposed will also be possible, and again the proof is the reverse of the analysis; but if we encounter something admitted to be impossible, the problem will also be impossible.
+[:term:`Determination <diorismos>` is the prior distinction of when, how, and in how many ways the problem will be possible.]
 
-The **thirty-three books** of the *Treasury of Analysis* up to :person:`Apollonius <apollonius>`, arranged in curricular order (*Hultsch II p. 636*), are these:
+So much, then, concerning analysis and synthesis.
 
-1. :cite:`Euclid's Data <euclid:data>` (*Δεδομένα*, 1 book);
-2. :cite:`Apollonius's Cutting Off of a Ratio <apollonius:cutting-off-ratio>` (*Λόγου ἀποτομή*, 2 books);
-3. Apollonius's *Cutting Off of an Area* (*Χωρίου ἀποτομή*, 2 books);
-4. Apollonius's *Determinate Section* (*Διωρισμένη τομή*, 2 books);
-5. Apollonius's *Tangencies* (*Ἐπαφαί*, 2 books);
-6. :cite:`Euclid's Porisms <euclid:porisms>` (*Πορίσματα*, 3 books);
-7. Apollonius's *Inclinations* (*Νεύσεις*, 2 books);
-8. Apollonius's *Plane Loci* (*Τόποι ἐπίπεδοι*, 2 books);
-9. :cite:`Apollonius's Conics <apollonius:conics>` (*Κωνικά*, 8 books);
-10. :cite:`Aristaeus's Solid Loci <aristaeus:solid-loci>` (*Τόποι στερεοί*, 5 books);
-11. :cite:`Euclid's Surface Loci <euclid:surface-loci>` (*Τόποι πρὸς ἐπιφανείᾳ*, 2 books);
-12. :person:`Eratosthenes's <eratosthenes>` *On Means* (*Περὶ μεσοτήτων*, 2 books).
+**3.** Now the order of the aforesaid books of the Treasury of Analysis is as follows: one book of :cite:`Euclid's Data <euclid-data>`, two of :cite:`Apollonius's Cutting Off of a Ratio <apollonius-cutting-off-ratio>`,
+two of *Cutting Off of an Area*, two of *Determinate Section*, two of *Tangencies*, three of :cite:`Euclid's Porisms <euclid-porisms>`, two of Apollonius's *Inclinations*, two of his *Plane Loci*, eight of his :cite:`Conics <apollonius-conics>`, five of :cite:`Aristaeus's Solid Loci <aristaeus-solid-loci>`,
+two of :cite:`Euclid's Surface Loci <euclid-surface-loci>`, two of :person:`Eratosthenes <eratosthenes>` *On Means*. In all there are thirty-three books, whose contents up to Apollonius's *Conics* I have set out for your review, along with the number of loci, determinations, and cases in each book, and also the lemmas sought, leaving no inquiry unexamined in the treatment of the books, as I supposed.

@@ -14,4 +14,4 @@ Proposition 3 · Similar Centroid Scaling Summary
 .. folio:: 0049
    :page: 1040
 
-* Cross-joins between parallel bases $\alpha\beta \parallel \delta\gamma$ intersect at centroid/similarity center $\varepsilon$, preserving collinearity across transversals $\zeta\theta$ and $\varepsilon\eta$.
+* Cross-joins between parallel bases :math:`\alpha\beta \parallel \delta\gamma` intersect at centroid/similarity center :math:`\varepsilon`, preserving collinearity across transversals :math:`\zeta\theta` and :math:`\varepsilon\eta`.

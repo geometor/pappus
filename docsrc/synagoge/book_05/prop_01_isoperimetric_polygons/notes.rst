@@ -3,7 +3,7 @@
 :type: book
 :title: Proposition 1 · Historical Commentary Notes
 :canonical_id: Syn. V.1.notes
-:folio: 0247
+:folio: hultsch_1876_vol1:0341
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Proposition 1 · Historical Commentary Notes
@@ -11,7 +11,7 @@ Proposition 1 · Historical Commentary Notes
 
 .. rubric:: Zenodorus's Theorem & Apothem Comparison
 
-.. folio:: 0247
-   :page: 1235
+.. folio:: hultsch_1876_vol1:0341
+   :page: 308
 
-Pappus adapts :cite:`Zenodorus <zenodorus:isoperimetric>`, structuring Prop. 1 cleanly around equal-perimeter apothem comparison backed by Prop. 3's circular-sector tangent inequality.
+:person:`Pappus <pappus>` adapts :cite:`Zenodorus <zenodorus-isoperimetric>`, structuring Prop. 1 around equal-perimeter apothem comparison backed by the tangent-ratio lemma in his Lemmas on Spherics (cf. *Elements* VI, *Synagoge* VI).

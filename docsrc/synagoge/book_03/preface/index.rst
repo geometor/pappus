@@ -3,7 +3,7 @@
 :type: book
 :title: Address to Pandrosion: Theorem, Problem, and Diorismos
 :canonical_id: Syn. III.1
-:folio: 0224
+:folio: hultsch_1876_vol1:0063
 :excerpt: Pappus's methodological prologue to Pandrosion distinguishing theorems from problems, introducing the diorismos, and critiquing attempted plane solutions to solid problems.
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
@@ -12,13 +12,19 @@
 Address to Pandrosion: Theorem, Problem, and Diorismos
 ======================================================
 
-.. rubric:: *Synagoge* Book III, Chapter 1 (:cite:`Hultsch I, pp. 30–32 <hultsch:1876>`; App. IV, p. 1212) · Original English Translation
+.. rubric:: *Synagoge* Book III, Chapter 1 (:cite:`Hultsch I, pp. 30–32 <hultsch-1876>`) · Original English Translation
 
-.. folio:: 0224
-   :page: 1212
+.. folio:: hultsch_1876_vol1:0063
+   :page: 30
 
-Those of the ancients who wished to examine geometric inquiries with precision, most noble :person:`Pandrosion <pandrosion>`, judged it necessary to distinguish a **problem** (*πρόβλημα*) from a **theorem** (*θεώρημα*). He who proposes a theorem—whatever be the geometric matter set out and whatever attribute he claims follows from those hypotheses—invites us to behold how that consequence holds of necessity; whereas he who sets forth a problem bids us construct something not yet brought into view, and therefore stands under an obligation to determine by a :term:`diorismos <diorismos>` when, how, and in how many ways the construction is possible.
+Those who wish to distinguish more technically the subjects of inquiry in geometry, most worthy :person:`Pandrosion <pandrosion>`, think it right to call a **problem** (*πρόβλημα*) that in which something is proposed to be done and constructed, and a **theorem** (*θεώρημα*) that in which, certain things being supposed, what follows from them and invariably happens alongside them is contemplated—
+some of the ancients calling them all problems, and others calling them theorems. Now he who proposes a theorem, having seen in whatever manner what follows from it, rightly demands that we investigate this, and could not otherwise propose it soundly; whereas he who proposes a problem,
+if he be uninstructed and wholly a layman, even though he bid something impossible to be constructed, is pardonable and blameless. For it is the task of the investigator to :term:`determine <diorismos>` (*διορίσαι*) this also: both what is possible and what is impossible, and, if possible, when, how, and in how many ways it is possible.
 
-If anyone announces a problem whose construction cannot be carried out by the means he assumes, he errs doubly: first in mistaking the nature of the locus to which the inquiry belongs, and second in offering a defective demonstration to learners.
+But if one who claims knowledge proposes problems ignorantly in mathematics, he is not free from blame. Recently, indeed, certain persons claiming to know mathematics ignorantly determined for us through you the enunciations of problems, concerning which and others like them we had to state certain demonstrations for your benefit and that of lovers of learning in this third book of the *Collection*.
+Now a certain man who seemed to be a great geometer determined the first of the problems ignorantly; for he asserted that he knew how to take two mean proportionals in continued proportion between two given straight lines by means of plane
 
-Now some of those who came to us purporting to have studied geometry with you set out an attempted plane construction for finding **two mean proportionals** in continued proportion between two given unequal straight lines—the classic Delian problem of duplicating the cube, since :person:`Hippocrates of Chios <euclid>` and :cite:`Euclid (Elements XI.33) <euclid:elements>` showed that if $a : x = x : y = y : b$, then $a : b = a^3 : x^3$. When we tested their construction rigorously (*Chs. 2–19, Hultsch I pp. 32–54*), their assumed intersection failed to meet the required proportional condition, because the problem is by nature **solid** rather than **plane**.
+.. folio:: hultsch_1876_vol1:0065
+   :page: 32
+
+theory, and he asked us to examine and answer concerning the construction produced by him, which goes in this manner.

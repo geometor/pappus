@@ -3,7 +3,7 @@
 :type: book
 :title: Preface to Hermodorus · Analysis, Synthesis & Curriculum Summary
 :canonical_id: Syn. VII.preface.summary
-:folio: 0269
+:folio: hultsch_1877_vol2:0179
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Preface to Hermodorus · Analysis, Synthesis & Curriculum Summary
@@ -11,8 +11,8 @@ Preface to Hermodorus · Analysis, Synthesis & Curriculum Summary
 
 .. rubric:: The Alexandrian Analytical Method
 
-.. folio:: 0269
-   :page: 1257
+.. folio:: hultsch_1877_vol2:0179
+   :page: 634
 
 1. The Two Movements of Mathematical Reasoning
 ----------------------------------------------

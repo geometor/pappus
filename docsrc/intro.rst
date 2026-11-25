@@ -2,7 +2,7 @@
 
 Around 340 CE in Alexandria, **Pappus** compiled his eight-book *Synagoge* (*Collection*)—gathering
 three classical means inside a single semicircle (Book III), generalizing Euclid's Pythagorean area
-theorem to arbitrary parallelograms and proving the *arbelos* circle-chain altitude law $y_n = n\,d_n$
+theorem to arbitrary parallelograms and proving the *arbelos* circle-chain altitude law :math:`y_n = n\,d_n`
 (Book IV), demonstrating the isoperimetric optimality of the bees' hexagonal honeycomb (Book V),
 synthesizing Alexandrian mechanics and Hero's *Baroulkos* (Book VIII), and preserving Book VII's
 *Treasury of Analysis* (*Τόπος ἀναλυόμενος*). Hidden among Book VII's lemmas to Euclid's *Porisms*
@@ -29,31 +29,31 @@ beneath the diagram—to trace the construction interactively.
 
 .. step::
 
-   Establish carrier line :g:`a <g1:[ A0 A2 ]>` carrying :g:`A_0 <g1:A0>` $= (0, 0)$,
-   :g:`A_1 <g1:A1>` $= (2, 0)$, :g:`A_2 <g1:A2>` $= (5, 0)$ and carrier line
-   :g:`b <g1:[ B0 B2 ]>` carrying :g:`B_0 <g1:B0>` $= (0, 2)$, :g:`B_1 <g1:B1>` $= (2, 3)$,
-   :g:`B_2 <g1:B2>` $= (6, 5)$, concurring at perspective apex :g:`O <g1:O>` $= (-4, 0)$.
+   Establish carrier line :g:`a <g1:[ A0 A2 ]>` carrying :g:`A_0 <g1:A0>` :math:`= (0, 0)`,
+   :g:`A_1 <g1:A1>` :math:`= (2, 0)`, :g:`A_2 <g1:A2>` :math:`= (5, 0)` and carrier line
+   :g:`b <g1:[ B0 B2 ]>` carrying :g:`B_0 <g1:B0>` :math:`= (0, 2)`, :g:`B_1 <g1:B1>` :math:`= (2, 3)`,
+   :g:`B_2 <g1:B2>` :math:`= (6, 5)`, concurring at perspective apex :g:`O <g1:O>` :math:`= (-4, 0)`.
 
 .. step::
 
    Draw the first opposite cross-join pair :g:`A_0B_1 <g1:[ A0 B1 ]>` and
    :g:`A_1B_0 <g1:[ A1 B0 ]>`, intersecting at the exact rational point
-   :g:`M_{01} <g1:M01>` $= \left(\frac{4}{5}, \frac{6}{5}\right)$.
+   :g:`M_{01} <g1:M01>` :math:`= \left(\frac{4}{5}, \frac{6}{5}\right)`.
 
 .. step::
 
    Draw the second opposite cross-join pair :g:`A_2B_0 <g1:[ A2 B0 ]>` and
    :g:`A_0B_2 <g1:[ A0 B2 ]>`, intersecting at
-   :g:`M_{20} <g1:M20>` $= \left(\frac{60}{37}, \frac{50}{37}\right)$.
+   :g:`M_{20} <g1:M20>` :math:`= \left(\frac{60}{37}, \frac{50}{37}\right)`.
 
 .. step::
 
    Draw the third opposite cross-join pair :g:`A_1B_2 <g1:[ A1 B2 ]>` and
    :g:`A_2B_1 <g1:[ A2 B1 ]>` of hexagon :g:`H <g1:< A0 B1 A2 B0 A1 B2 >>`,
-   intersecting at :g:`M_{12} <g1:M12>` $= \left(\frac{10}{3}, \frac{5}{3}\right)$.
+   intersecting at :g:`M_{12} <g1:M12>` :math:`= \left(\frac{10}{3}, \frac{5}{3}\right)`.
 
 .. step::
 
    Join :g:`M_{01} <g1:M01>`, :g:`M_{20} <g1:M20>`, and :g:`M_{12} <g1:M12>`: all three
-   points satisfy the exact linear equation $-7x + 38y = 40$, proving collinearity along
+   points satisfy the exact linear equation :math:`-7x + 38y = 40`, proving collinearity along
    the **Pappus line** :g:`M_{01}M_{12} <g1:[ M01 M12 ]>`.

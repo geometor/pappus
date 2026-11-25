@@ -3,21 +3,55 @@
   "rights_category": "public-domain",
   "sources": [
     {
+      "id": "hultsch-1876-pappus-vol1",
+      "title": "Pappi Alexandrini Collectionis quae supersunt — Vol. I (Books II–V, 1876)",
+      "author": "Friedrich Hultsch (ed.)",
+      "year": "1876",
+      "era": "Internet Archive",
+      "languages": [
+        "Greek",
+        "Latin"
+      ],
+      "site_url": "https://archive.org/details/pappialexandrin00hultgoog",
+      "local_path": "resources/pdfs/hultsch_1876_vol1.pdf",
+      "pages": 512,
+      "publisher": "Weidmann, Berlin",
+      "rights": "Public Domain (1876)",
+      "excerpt": "Hultsch critical Greek/Latin edition of Pappus Synagoge Vol. I (Books II–V, pp. 2–473)."
+    },
+    {
       "id": "hultsch-1877-pappus-vol2",
       "title": "Pappi Alexandrini Collectionis quae supersunt — Vol. II (Books VI–VII, 1877)",
       "author": "Friedrich Hultsch (ed.)",
       "year": "1877",
+      "era": "Internet Archive",
+      "languages": [
+        "Greek",
+        "Latin"
+      ],
+      "site_url": "https://archive.org/details/pappialexandrin01hultgoog",
+      "local_path": "resources/pdfs/hultsch_1877_vol2.pdf",
+      "pages": 570,
+      "publisher": "Weidmann, Berlin",
+      "rights": "Public Domain (1877)",
+      "excerpt": "Hultsch critical Greek/Latin edition of Pappus Synagoge Vol. II (Books VI–VII, pp. 474–1016)."
+    },
+    {
+      "id": "hultsch-1878-pappus-vol3",
+      "title": "Pappi Alexandrini Collectionis quae supersunt — Vol. III (Book VIII & Indices, 1878)",
+      "author": "Friedrich Hultsch (ed.)",
+      "year": "1878",
       "era": "Google Books",
       "languages": [
         "Greek",
         "Latin"
       ],
-      "site_url": "https://books.google.com/books?q=Pappi+Alexandrini+Collectionis+Hultsch+1877",
-      "local_path": "resources/pdfs/pappus_1877_collectionis_vol2.pdf",
+      "site_url": "https://books.google.com/books?q=Pappi+Alexandrini+Collectionis+Hultsch+1878",
+      "local_path": "resources/synagoge/pdfs/pappus_1877_collectionis_vol2.pdf",
       "pages": 445,
       "publisher": "Weidmann, Berlin",
-      "rights": "Public Domain (1877)",
-      "excerpt": "Hultsch critical Greek/Latin edition of Pappus Synagoge Vol. II (445 pp.)."
+      "rights": "Public Domain (1878)",
+      "excerpt": "Hultsch critical Greek/Latin edition of Pappus Synagoge Vol. III (Book VIII & Appendix IV, 445 pp.)."
     }
   ]
 }

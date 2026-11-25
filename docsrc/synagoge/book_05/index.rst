@@ -23,7 +23,7 @@ Book V · On the Geometric Forethought of Bees & Isoperimetry
 
 .. note::
 
-   **Edition Track (English)**: Complete critical English edition of Book V's planar isoperimetric cycle: the Preface on the Sagacity of Bees and the atomic Propositions establishing $A_{\text{polygon}} < A_{\text{regular}} < A_{\text{more-sided}} < A_{\text{circle}}$. Switch tracks above for **Greek (Hultsch 1876)**, **Summary**, or **Notes**.
+   **Edition Track (English)**: Complete critical English edition of Book V's planar isoperimetric cycle: the Preface on the Sagacity of Bees and the atomic Propositions establishing :math:`A_{\text{polygon}} < A_{\text{regular}} < A_{\text{more-sided}} < A_{\text{circle}}`. Switch tracks above for **Greek (Hultsch 1876)**, **Summary**, or **Notes**.
 
 .. container:: title-page
 

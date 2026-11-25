@@ -14,4 +14,4 @@ Proposition 9 · Inclined Plane Model Summary
 .. folio:: 0063
    :page: 1054
 
-* Pappus equates equilibrium of weight $W$ at slope angle $\alpha$ with a horizontal lever across sphere radius $E L$, compounding horizontal traction $C$ with lever arm $1 - \sin\alpha$.
+* Pappus equates equilibrium of weight :math:`W` at slope angle :math:`\alpha` with a horizontal lever across sphere radius :math:`E L`, compounding horizontal traction :math:`C` with lever arm :math:`1 - \sin\alpha`.

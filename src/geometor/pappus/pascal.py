@@ -1,13 +1,13 @@
 r"""Symbolic DAG constructions and combinatorics for Blaise Pascal's *Hexagrammum Mysticum* (1640).
 
-Generalizes Pappus's Hexagon Theorem from a degenerate line-pair $a \cup b$ to six
-points inscribed on a smooth conic $\mathcal{C}$ (circle or ellipse):
+Generalizes Pappus's Hexagon Theorem from a degenerate line-pair :math:`a \cup b` to six
+points inscribed on a smooth conic :math:`\mathcal{C}` (circle or ellipse):
 
 - **Pascal's Mystic Hexagram** (*Essai pour les coniques*, Feb. 1640): for any cyclic
-  6-tuple $\langle P_{c_0}, P_{c_1}, P_{c_2}, P_{c_3}, P_{c_4}, P_{c_5} \rangle$ on a conic,
-  opposite side intersections $M_{03}, M_{14}, M_{25}$ lie on a single **Pascal line**.
+  6-tuple :math:`\langle P_{c_0}, P_{c_1}, P_{c_2}, P_{c_3}, P_{c_4}, P_{c_5} \rangle` on a conic,
+  opposite side intersections :math:`M_{03}, M_{14}, M_{25}` lie on a single **Pascal line**.
 - **Bi-Triangle** :math:`S_3` **Steiner Family**: partitioning the 6 conic vertices into two
-  complementary triangles $\triangle_A$ and $\triangle_B$ generates 6 alternating hexagons
+  complementary triangles :math:`\triangle_A` and :math:`\triangle_B` generates 6 alternating hexagons
   whose 3 even (:math:`A_3`) Pascal lines concur at :math:`G_+` and whose 3 odd
   (:math:`S_3 \setminus A_3`) Pascal lines concur at :math:`G_-`—directly generalizing
   Pappus's two Star points :math:`(S_+, S_-)`!
@@ -15,8 +15,8 @@ points inscribed on a smooth conic $\mathcal{C}$ (circle or ellipse):
   15 chords, 45 diagonal Pascal points, 60 Pascal lines, 20 Jakob Steiner points,
   60 Thomas Kirkman points, and 15 Julius Plücker lines.
 - **Universal Symbolic Proof & Golden Conic**: exact 6-parameter polynomial proof over
-  $\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]$ and Golden Ratio conic perspectivities over
-  $\mathbb{Q}(\phi)$.
+  :math:`\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]` and Golden Ratio conic perspectivities over
+  :math:`\mathbb{Q}(\phi)`.
 """
 from __future__ import annotations
 
@@ -70,11 +70,11 @@ class PascalPresetConfig:
         name: Identifier key in :data:`PASCAL_PRESETS`.
         title: Human-readable preset title.
         description: Mathematical and historical significance of the preset.
-        points: Six exact points $(P_0, P_1, P_2, P_3, P_4, P_5)$ on the conic.
+        points: Six exact points :math:`(P_0, P_1, P_2, P_3, P_4, P_5)` on the conic.
         default_cycle: Default cyclic ordering of vertex indices ``0..5``.
-        center: Conic center $(x_0, y_0)$ for circle/ellipse rendering.
-        rx: Horizontal semi-axis $a$ of the carrier circle/ellipse.
-        ry: Vertical semi-axis $b$ of the carrier circle/ellipse.
+        center: Conic center :math:`(x_0, y_0)` for circle/ellipse rendering.
+        rx: Horizontal semi-axis :math:`a` of the carrier circle/ellipse.
+        ry: Vertical semi-axis :math:`b` of the carrier circle/ellipse.
     """
 
     name: str
@@ -202,8 +202,8 @@ class PascalHexagonResult:
 
     Attributes:
         model: Populated :class:`~geometor.model.Model`.
-        points: Six conic vertices $(P_0, P_1, P_2, P_3, P_4, P_5)$.
-        cycle: Active 6-cycle $(c_0, c_1, c_2, c_3, c_4, c_5)$.
+        points: Six conic vertices :math:`(P_0, P_1, P_2, P_3, P_4, P_5)`.
+        cycle: Active 6-cycle :math:`(c_0, c_1, c_2, c_3, c_4, c_5)`.
         conic: Constructed :class:`~sympy.geometry.ellipse.Circle` or :class:`~sympy.geometry.ellipse.Ellipse`, if registered.
         side_lines: Six side lines in cyclic order.
         meets: Opposite-side meets ``{"M03": ..., "M14": ..., "M25": ...}``.
@@ -233,9 +233,9 @@ class PascalSteinerFamilyResult:
 
     Attributes:
         model: Populated :class:`~geometor.model.Model`.
-        points: Six conic vertices $(P_0, \dots, P_5)$.
-        triangle_a: Vertex indices $(a_0, a_1, a_2)$ of the first inscribed triangle.
-        triangle_b: Vertex indices $(b_0, b_1, b_2)$ of the complementary inscribed triangle.
+        points: Six conic vertices :math:`(P_0, \dots, P_5)`.
+        triangle_a: Vertex indices :math:`(a_0, a_1, a_2)` of the first inscribed triangle.
+        triangle_b: Vertex indices :math:`(b_0, b_1, b_2)` of the complementary inscribed triangle.
         conic: Constructed circle or ellipse carrier curve.
         chords: Mapping ``(a_i, b_j) -> Line`` for the 9 cross-chords.
         pascal_lines: Mapping ``perm -> Line`` for all 6 :math:`S_3` alternating hexagons.
@@ -269,7 +269,7 @@ class HexagrammumMysticumCatalog:
     r"""Complete projective catalog of the 60-line *Hexagrammum Mysticum* configuration.
 
     Attributes:
-        points: Six exact conic vertices $(P_0, \dots, P_5)$.
+        points: Six exact conic vertices :math:`(P_0, \dots, P_5)`.
         chords: Mapping ``(i, j) -> (a, b, c)`` homogeneous line coordinates for all 15 chords.
         diagonal_points: Mapping ``((i, j), (k, l)) -> (X, Y, Z)`` for all 45 Pascal diagonal points.
         pascal_lines: Mapping ``canonical_cycle -> (a, b, c)`` for all 60 Pascal lines.
@@ -306,7 +306,7 @@ def get_pascal_preset(name: str) -> PascalPresetConfig:
 
 
 def canonical_hexagon_cycle(cycle: Sequence[int]) -> Cycle6:
-    """Normalize a 6-vertex permutation up to dihedral rotation and reversal ($D_6$).
+    """Normalize a 6-vertex permutation up to dihedral rotation and reversal (:math:`D_6`).
 
     Rotates ``cycle`` so ``0`` appears first and picks the lexicographically smaller
     orientation between ``(0, c1, c2, c3, c4, c5)`` and ``(0, c5, c4, c3, c2, c1)``.
@@ -315,7 +315,7 @@ def canonical_hexagon_cycle(cycle: Sequence[int]) -> Cycle6:
         cycle: Permutation of ``(0, 1, 2, 3, 4, 5)``.
 
     Returns:
-        Canonical 6-tuple representative among the $6! / 12 = 60$ distinct hexagons.
+        Canonical 6-tuple representative among the :math:`6! / 12 = 60` distinct hexagons.
 
     Raises:
         ValueError: If ``cycle`` is not a permutation of ``0..5``.
@@ -595,9 +595,9 @@ def construct_pascal_steiner_family(
 ) -> PascalSteinerFamilyResult:
     r"""Construct the 6-hexagon :math:`S_3` bi-triangle Pascal family and its two Steiner points.
 
-    Partitions the 6 conic vertices into $\triangle_A = (P_{a_0}, P_{a_1}, P_{a_2})$ and
-    $\triangle_B = (P_{b_0}, P_{b_1}, P_{b_2})$. Permuting $\triangle_B$ by $\sigma \in S_3$
-    forms 6 alternating hexagons $\langle A_0, B_{\sigma_0}, A_1, B_{\sigma_1}, A_2, B_{\sigma_2} \rangle$
+    Partitions the 6 conic vertices into :math:`\triangle_A = (P_{a_0}, P_{a_1}, P_{a_2})` and
+    :math:`\triangle_B = (P_{b_0}, P_{b_1}, P_{b_2})`. Permuting :math:`\triangle_B` by :math:`\sigma \in S_3`
+    forms 6 alternating hexagons :math:`\langle A_0, B_{\sigma_0}, A_1, B_{\sigma_1}, A_2, B_{\sigma_2} \rangle`
     whose 3 even (:math:`A_3`) Pascal lines concur at :math:`G_+` (ID ``"S1"``) and whose
     3 odd (:math:`S_3 \setminus A_3`) Pascal lines concur at :math:`G_-` (ID ``"S2"``).
 
@@ -605,8 +605,8 @@ def construct_pascal_steiner_family(
         model: Optional existing :class:`~geometor.model.Model`.
         points: Optional sequence of 6 coconic points; defaults to ``preset``.
         preset: Key in :data:`PASCAL_PRESETS` used when ``points`` is ``None``.
-        triangle_a: Indices $(a_0, a_1, a_2)$ of the first inscribed triangle.
-        triangle_b: Complementary indices $(b_0, b_1, b_2)$ of the second triangle.
+        triangle_a: Indices :math:`(a_0, a_1, a_2)` of the first inscribed triangle.
+        triangle_b: Complementary indices :math:`(b_0, b_1, b_2)` of the second triangle.
         include_conic: If True, register the carrier circle or ellipse.
         scan_harmonics: If True, scan the configuration for collinear harmonic tetrads.
         enable_divine: If True, attach :mod:`geometor.divine` and scan golden sections.
@@ -800,14 +800,14 @@ def enumerate_hexagrammum_mysticum(
     *,
     preset: str = "hexagrammum",
 ) -> HexagrammumMysticumCatalog:
-    r"""Enumerate and verify the complete 60-line *Hexagrammum Mysticum* web in $\mathbb{P}^2$.
+    r"""Enumerate and verify the complete 60-line *Hexagrammum Mysticum* web in :math:`\mathbb{P}^2`.
 
     Computes in exact homogeneous coordinates:
 
-    1. **15 Chords** $[P_i P_j]$ ($0 \le i < j \le 5$).
-    2. **45 Diagonal Pascal Points** $[P_i P_j] \cap [P_k P_l]$ on disjoint vertex pairs.
-    3. **60 Pascal Lines** across all $6! / 12 = 60$ cyclic hexagons, verifying 3-point collinearity.
-    4. **20 Jakob Steiner Points** ($10$ triangle partitions $\times 2$ :math:`S_3` parities),
+    1. **15 Chords** :math:`[P_i P_j]` (:math:`0 \le i < j \le 5`).
+    2. **45 Diagonal Pascal Points** :math:`[P_i P_j] \cap [P_k P_l]` on disjoint vertex pairs.
+    3. **60 Pascal Lines** across all :math:`6! / 12 = 60` cyclic hexagons, verifying 3-point collinearity.
+    4. **20 Jakob Steiner Points** (:math:`10` triangle partitions :math:`\times 2` :math:`S_3` parities),
        verifying 3-line concurrency at each point.
     5. **60 Thomas Kirkman Points**, verifying 3-line concurrency on each syntheme Kirkman triple.
     6. **15 Julius Plücker Lines**, each carrying 4 of the 20 Steiner points.
@@ -933,12 +933,12 @@ def enumerate_hexagrammum_mysticum(
 
 
 def verify_pascal_symbolic() -> sp.Expr:
-    r"""Prove Pascal's *Hexagrammum Mysticum* universally over $\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]$.
+    r"""Prove Pascal's *Hexagrammum Mysticum* universally over :math:`\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]`.
 
-    Parameterizes six generic points on the projective conic $X^2 + Y^2 = Z^2$ via
-    $P_k = [1 - t_k^2 : 2 t_k : 1 + t_k^2]$, computes the three opposite-side meets
-    $M_{03}, M_{14}, M_{25}$ via 3D vector cross products, and expands the $3 \times 3$
-    collinearity determinant $\det[M_{03}, M_{14}, M_{25}]$, returning ``0`` identically.
+    Parameterizes six generic points on the projective conic :math:`X^2 + Y^2 = Z^2` via
+    :math:`P_k = [1 - t_k^2 : 2 t_k : 1 + t_k^2]`, computes the three opposite-side meets
+    :math:`M_{03}, M_{14}, M_{25}` via 3D vector cross products, and expands the :math:`3 \times 3`
+    collinearity determinant :math:`\det[M_{03}, M_{14}, M_{25}]`, returning ``0`` identically.
 
     Returns:
         Simplified SymPy polynomial expression (identically ``sp.Integer(0)``).

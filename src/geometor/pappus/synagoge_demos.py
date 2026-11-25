@@ -5,23 +5,23 @@ alive in 100% exact SymPy and :mod:`geometor.model` arithmetic alongside the
 projective Book VII constructions in :mod:`geometor.pappus.constructions`:
 
 1. **Book III, Props. 5–16 (Hultsch I, pp. 68–84)** — *The Three Classical Means
-   in a Single Semicircle*: exhibits the arithmetic mean $A = \frac{a+b}{2}$,
-   geometric mean $G = \sqrt{ab}$, and harmonic mean $H = \frac{2ab}{a+b}$ in one
-   semicircle on $AC = a + b$, proves $A \cdot H = G^2$ and $A \ge G \ge H$, and
-   links the tangent meet $T$ to Book VII's harmonic division $(A, C; D, T) = -1$.
+   in a Single Semicircle*: exhibits the arithmetic mean :math:`A = \frac{a+b}{2}`,
+   geometric mean :math:`G = \sqrt{ab}`, and harmonic mean :math:`H = \frac{2ab}{a+b}` in one
+   semicircle on :math:`AC = a + b`, proves :math:`A \cdot H = G^2` and :math:`A \ge G \ge H`, and
+   links the tangent meet :math:`T` to Book VII's harmonic division :math:`(A, C; D, T) = -1`.
 2. **Book IV, Prop. 1 (Hultsch I, pp. 176–179)** — *Pappus's Area Theorem*:
    generalizes Euclid *Elements* I.47 from squares on a right triangle to arbitrary
-   outward parallelograms erected on two sides of any triangle $\triangle ABC$,
-   including a universal 10-variable polynomial proof over $\mathbb{Z}$.
+   outward parallelograms erected on two sides of any triangle :math:`\triangle ABC`,
+   including a universal 10-variable polynomial proof over :math:`\mathbb{Z}`.
 3. **Book IV, Props. 14–18 (Hultsch I, pp. 208–227)** — *The Infinite Arbelos
    Circle Chain* («ἀρχαία πρότασις»): constructs the shoemaker's knife (*arbelos*)
-   and its tangent circle chain $C_1, \dots, C_n$ in 100% exact rational coordinates
-   over $\mathbb{Q}(r_1, r_2)$, proving pairwise tangencies and $y_n = n d_n = 2 n r_n$.
+   and its tangent circle chain :math:`C_1, \dots, C_n` in 100% exact rational coordinates
+   over :math:`\mathbb{Q}(r_1, r_2)`, proving pairwise tangencies and :math:`y_n = n d_n = 2 n r_n`.
 4. **Book V, Preface & Prop. 1 (Hultsch I, pp. 304–310)** — *The Sagacity of Bees
-   & Hexagonal Honeycomb Isoperimetry*: proves that $n \in \{3, 4, 6\}$ are the
+   & Hexagonal Honeycomb Isoperimetry*: proves that :math:`n \in \{3, 4, 6\}` are the
    unique regular plane-tiling polygons, computes exact area ratios
-   $\operatorname{Area}_6 : \operatorname{Area}_4 : \operatorname{Area}_3 = 6\sqrt{3} : 9 : 4\sqrt{3}$
-   for equal perimeter $P$, and builds a 7-cell hexagonal honeycomb cluster that
+   :math:`\operatorname{Area}_6 : \operatorname{Area}_4 : \operatorname{Area}_3 = 6\sqrt{3} : 9 : 4\sqrt{3}`
+   for equal perimeter :math:`P`, and builds a 7-cell hexagonal honeycomb cluster that
    simultaneously realizes Book VIII, Prop. 23's 7-hexagon circle inscription.
 """
 from __future__ import annotations
@@ -64,21 +64,21 @@ class ThreeMeansResult:
 
     Attributes:
         model: Populated :class:`~geometor.model.Model`.
-        a: First positive segment length $AD = a$.
-        b: Second positive segment length $DC = b$.
+        a: First positive segment length :math:`AD = a`.
+        b: Second positive segment length :math:`DC = b`.
         arithmetic_mean: Exact arithmetic mean :math:`A = \frac{a + b}{2} = |OB|`.
         geometric_mean: Exact geometric mean :math:`G = \sqrt{ab} = |DB|`.
         harmonic_mean: Exact harmonic mean :math:`H = \frac{2ab}{a + b} = |BF|`.
-        point_a: Left diameter endpoint $A = (0, 0)$.
-        point_d: Interior division point $D = (a, 0)$.
-        point_c: Right diameter endpoint $C = (a + b, 0)$.
-        center_o: Semicircle center $O = \left(\frac{a + b}{2}, 0\right)$.
-        point_b: Semicircle ordinate apex $B = (a, \sqrt{ab})$.
-        point_f: Perpendicular foot $F$ from $D$ onto radius $OB$.
-        tangent_t: Optional harmonic conjugate $T$ where tangent at $B$ meets $AC$
-            (when $a \ne b$), satisfying $(A, C; D, T) = -1$.
-        semicircle: Carrier circle $(O, A)$ of radius $R = \frac{a + b}{2}$.
-        harmonic_cross_ratio: Exact cross-ratio $(A, C; D, T) = -1$ when $T$ is finite.
+        point_a: Left diameter endpoint :math:`A = (0, 0)`.
+        point_d: Interior division point :math:`D = (a, 0)`.
+        point_c: Right diameter endpoint :math:`C = (a + b, 0)`.
+        center_o: Semicircle center :math:`O = \left(\frac{a + b}{2}, 0\right)`.
+        point_b: Semicircle ordinate apex :math:`B = (a, \sqrt{ab})`.
+        point_f: Perpendicular foot :math:`F` from :math:`D` onto radius :math:`OB`.
+        tangent_t: Optional harmonic conjugate :math:`T` where tangent at :math:`B` meets :math:`AC`
+            (when :math:`a \ne b`), satisfying :math:`(A, C; D, T) = -1`.
+        semicircle: Carrier circle :math:`(O, A)` of radius :math:`R = \frac{a + b}{2}`.
+        harmonic_cross_ratio: Exact cross-ratio :math:`(A, C; D, T) = -1` when :math:`T` is finite.
     """
 
     model: Model
@@ -105,16 +105,16 @@ class PappusAreaResult:
     Attributes:
         model: Populated :class:`~geometor.model.Model`.
         preset: Preset identifier (``"scalene"``, ``"pythagoras"``, or ``"custom"``).
-        triangle: Tuple $(A, B, C)$ of counter-clockwise triangle vertices.
-        parallelogram_ab: Tuple $(A, B, D, E)$ of outward parallelogram on $AB$.
-        parallelogram_ac: Tuple $(A, C, F, G)$ of outward parallelogram on $AC$.
-        parallelogram_bc: Tuple $(B, C, M, L)$ of translated parallelogram on $BC$.
-        apex_h: Meet $H = [DE] \cap [FG]$ of the two outer parallelogram sides.
-        ridge_j: Meet $J = [HA] \cap [BC]$ dividing $BCML$ into two sub-parallelograms.
-        area_ab: Exact positive area of parallelogram $ABDE$.
-        area_ac: Exact positive area of parallelogram $ACFG$.
-        area_bc: Exact positive area of parallelogram $BCML$.
-        area_residual: Exact simplified difference $\operatorname{Area}(BCML) - (\operatorname{Area}(ABDE) + \operatorname{Area}(ACFG)) = 0$.
+        triangle: Tuple :math:`(A, B, C)` of counter-clockwise triangle vertices.
+        parallelogram_ab: Tuple :math:`(A, B, D, E)` of outward parallelogram on :math:`AB`.
+        parallelogram_ac: Tuple :math:`(A, C, F, G)` of outward parallelogram on :math:`AC`.
+        parallelogram_bc: Tuple :math:`(B, C, M, L)` of translated parallelogram on :math:`BC`.
+        apex_h: Meet :math:`H = [DE] \cap [FG]` of the two outer parallelogram sides.
+        ridge_j: Meet :math:`J = [HA] \cap [BC]` dividing :math:`BCML` into two sub-parallelograms.
+        area_ab: Exact positive area of parallelogram :math:`ABDE`.
+        area_ac: Exact positive area of parallelogram :math:`ACFG`.
+        area_bc: Exact positive area of parallelogram :math:`BCML`.
+        area_residual: Exact simplified difference :math:`\operatorname{Area}(BCML) - (\operatorname{Area}(ABDE) + \operatorname{Area}(ACFG)) = 0`.
     """
 
     model: Model
@@ -133,17 +133,17 @@ class PappusAreaResult:
 
 @dataclass(frozen=True)
 class ArbelosCircle:
-    r"""Exact symbolic record for the $n$-th tangent circle in Pappus's Arbelos chain.
+    r"""Exact symbolic record for the :math:`n`-th tangent circle in Pappus's Arbelos chain.
 
     Attributes:
-        index: Chain index $n \ge 1$ ($n = 1$ rests on the baseline semicircle $C_{\mathrm{right}}$).
-        center: Exact rational center $K_n = (x_n, y_n)$.
-        radius: Exact rational radius $r_n$.
-        diameter: Exact rational diameter $d_n = 2 r_n$.
-        height: Exact center altitude $y_n$ above baseline $AC$.
-        height_over_diameter: Exact simplified ratio $y_n / d_n = n$.
+        index: Chain index :math:`n \ge 1` (:math:`n = 1` rests on the baseline semicircle :math:`C_{\mathrm{right}}`).
+        center: Exact rational center :math:`K_n = (x_n, y_n)`.
+        radius: Exact rational radius :math:`r_n`.
+        diameter: Exact rational diameter :math:`d_n = 2 r_n`.
+        height: Exact center altitude :math:`y_n` above baseline :math:`AC`.
+        height_over_diameter: Exact simplified ratio :math:`y_n / d_n = n`.
         circle: Registered :class:`sympy.geometry.Circle` in the model.
-        foot: Projection foot $P_n = (x_n, 0)$ on baseline $AC$.
+        foot: Projection foot :math:`P_n = (x_n, 0)` on baseline :math:`AC`.
     """
 
     index: int
@@ -162,14 +162,14 @@ class ArbelosChainResult:
 
     Attributes:
         model: Populated :class:`~geometor.model.Model`.
-        r1: Radius of left inner semicircle $C_{\mathrm{left}}$ on $AD$.
-        r2: Radius of right inner semicircle $C_{\mathrm{right}}$ on $DC$.
-        outer_radius: Outer semicircle radius $R = r_1 + r_2$ on $AC$.
-        outer_circle: Carrier circle on diameter $AC$.
-        left_circle: Left inner circle on diameter $AD$.
-        right_circle: Right inner circle on diameter $DC$ ($n = 0$ base of chain).
-        chain: Tuple of :class:`ArbelosCircle` entries for $n = 1, \dots, \text{count}$.
-        locus_ellipse: Exact ellipse with foci $(O_1, O_0)$ carrying all centers $K_n$.
+        r1: Radius of left inner semicircle :math:`C_{\mathrm{left}}` on :math:`AD`.
+        r2: Radius of right inner semicircle :math:`C_{\mathrm{right}}` on :math:`DC`.
+        outer_radius: Outer semicircle radius :math:`R = r_1 + r_2` on :math:`AC`.
+        outer_circle: Carrier circle on diameter :math:`AC`.
+        left_circle: Left inner circle on diameter :math:`AD`.
+        right_circle: Right inner circle on diameter :math:`DC` (:math:`n = 0` base of chain).
+        chain: Tuple of :class:`ArbelosCircle` entries for :math:`n = 1, \dots, \text{count}`.
+        locus_ellipse: Exact ellipse with foci :math:`(O_1, O_0)` carrying all centers :math:`K_n`.
     """
 
     model: Model
@@ -188,16 +188,16 @@ class HoneycombIsoperimetryResult:
     r"""Exact symbolic result for Book V's Honeycomb Isoperimetry & Book VIII's 7-Hexagon Cluster.
 
     Attributes:
-        perimeter: Common perimeter $P > 0$ shared by the equilateral triangle, square, and hexagon.
-        tiling_polygons: Tuple ``(3, 4, 6)`` of the unique regular $n$-gons tiling the plane.
+        perimeter: Common perimeter :math:`P > 0` shared by the equilateral triangle, square, and hexagon.
+        tiling_polygons: Tuple ``(3, 4, 6)`` of the unique regular :math:`n`-gons tiling the plane.
         interior_angles_deg: Exact interior angles ``{3: 60, 4: 90, 6: 120}`` in degrees.
         polygons_per_vertex: Exact valence ``{3: 6, 4: 4, 6: 3}`` meeting around each vertex.
         side_lengths: Exact side lengths ``{3: P/3, 4: P/4, 6: P/6}``.
         areas: Exact symbolic areas ``{3: Area_3, 4: Area_4, 6: Area_6}``.
-        area_hex_over_tri: Exact rational ratio $\operatorname{Area}_6 / \operatorname{Area}_3 = 3/2$.
-        area_hex_over_sq: Exact radical ratio $\operatorname{Area}_6 / \operatorname{Area}_4 = 2\sqrt{3}/3$.
-        area_sq_over_tri: Exact radical ratio $\operatorname{Area}_4 / \operatorname{Area}_3 = 9\sqrt{3}/16$.
-        circumradius_seven_hexagons: Exact circumradius $R_7 = s_6 \sqrt{7}$ of the 7-hexagon cluster (*Synagoge* VIII.23).
+        area_hex_over_tri: Exact rational ratio :math:`\operatorname{Area}_6 / \operatorname{Area}_3 = 3/2`.
+        area_hex_over_sq: Exact radical ratio :math:`\operatorname{Area}_6 / \operatorname{Area}_4 = 2\sqrt{3}/3`.
+        area_sq_over_tri: Exact radical ratio :math:`\operatorname{Area}_4 / \operatorname{Area}_3 = 9\sqrt{3}/16`.
+        circumradius_seven_hexagons: Exact circumradius :math:`R_7 = s_6 \sqrt{7}` of the 7-hexagon cluster (*Synagoge* VIII.23).
         model: Optional populated :class:`~geometor.model.Model` when constructed geometrically.
     """
 
@@ -326,9 +326,9 @@ def _register_circle(
 
 
 def signed_area2(p1: spg.Point, p2: spg.Point, p3: spg.Point) -> sp.Expr:
-    r"""Return twice the signed Euclidean area $\det(p_2 - p_1, p_3 - p_1)$ of $\triangle p_1 p_2 p_3$.
+    r"""Return twice the signed Euclidean area :math:`\det(p_2 - p_1, p_3 - p_1)` of :math:`\triangle p_1 p_2 p_3`.
 
-    For a parallelogram with consecutive vertices $(p_1, p_2, p_2 + \vec{w}, p_1 + \vec{w})$,
+    For a parallelogram with consecutive vertices :math:`(p_1, p_2, p_2 + \vec{w}, p_1 + \vec{w})`,
     the signed area of the full parallelogram equals ``signed_area2(p1, p2, p1 + w)``.
 
     Args:
@@ -337,7 +337,7 @@ def signed_area2(p1: spg.Point, p2: spg.Point, p3: spg.Point) -> sp.Expr:
         p3: Third vertex.
 
     Returns:
-        Simplified exact SymPy expression $(x_2 - x_1)(y_3 - y_1) - (y_2 - y_1)(x_3 - x_1)$.
+        Simplified exact SymPy expression :math:`(x_2 - x_1)(y_3 - y_1) - (y_2 - y_1)(x_3 - x_1)`.
     """
     return sp.simplify((p2.x - p1.x) * (p3.y - p1.y) - (p2.y - p1.y) * (p3.x - p1.x))
 
@@ -355,23 +355,23 @@ def construct_three_means(
     Supports both ``construct_three_means(a, b, *, model=None)`` and
     ``construct_three_means(model, a, b)``.
 
-    On diameter $AC = a + b$ with center $O = \left(\frac{a+b}{2}, 0\right)$ and interior point
-    $D = (a, 0)$:
+    On diameter :math:`AC = a + b` with center :math:`O = \left(\frac{a+b}{2}, 0\right)` and interior point
+    :math:`D = (a, 0)`:
 
-    - Erect $DB \perp AC$ to the semicircle at $B = (a, \sqrt{ab})$ so :math:`|DB| = \sqrt{ab} = G`.
-    - Join radius $OB$ so :math:`|OB| = \frac{a+b}{2} = A`.
-    - Drop $DF \perp OB$ to foot $F$ so right-triangle similarity $\triangle BFD \sim \triangle BDO$
+    - Erect :math:`DB \perp AC` to the semicircle at :math:`B = (a, \sqrt{ab})` so :math:`|DB| = \sqrt{ab} = G`.
+    - Join radius :math:`OB` so :math:`|OB| = \frac{a+b}{2} = A`.
+    - Drop :math:`DF \perp OB` to foot :math:`F` so right-triangle similarity :math:`\triangle BFD \sim \triangle BDO`
       gives :math:`|BF| = \frac{|DB|^2}{|OB|} = \frac{2ab}{a+b} = H`.
-    - When $a \ne b$ and ``include_harmonic_tangent=True``, construct the circle tangent at $B$
-      meeting $AC$ at $T = \left(\frac{a(a+b)}{a-b}, 0\right)$, exhibiting the exact harmonic
-      conjugate $(A, C; D, T) = -1$ that bridges Book III's mean theory to Book VII's *Porisms*.
+    - When :math:`a \ne b` and ``include_harmonic_tangent=True``, construct the circle tangent at :math:`B`
+      meeting :math:`AC` at :math:`T = \left(\frac{a(a+b)}{a-b}, 0\right)`, exhibiting the exact harmonic
+      conjugate :math:`(A, C; D, T) = -1` that bridges Book III's mean theory to Book VII's *Porisms*.
 
     Args:
-        model_or_a: Either a :class:`~geometor.model.Model` or the first positive scalar $a$.
-        a_or_b: First scalar $a$ (when ``model_or_a`` is a ``Model``) or second scalar $b$.
-        b: Second scalar $b$ when ``model_or_a`` is a ``Model``.
+        model_or_a: Either a :class:`~geometor.model.Model` or the first positive scalar :math:`a`.
+        a_or_b: First scalar :math:`a` (when ``model_or_a`` is a ``Model``) or second scalar :math:`b`.
+        b: Second scalar :math:`b` when ``model_or_a`` is a ``Model``.
         model: Optional explicit :class:`~geometor.model.Model` keyword argument.
-        include_harmonic_tangent: If True and $a \ne b$, construct tangent meet $T$ on $AC$.
+        include_harmonic_tangent: If True and :math:`a \ne b`, construct tangent meet :math:`T` on :math:`AC`.
 
     Returns:
         Populated :class:`ThreeMeansResult`.
@@ -460,38 +460,38 @@ def construct_pappus_area_theorem(
 ) -> PappusAreaResult:
     r"""Construct Pappus's Area Theorem (*Synagoge* Book IV, Prop. 1, Hultsch I, pp. 176–179).
 
-    Given an arbitrary counter-clockwise triangle $\triangle ABC$ and two arbitrary
-    outward parallelograms $ABDE$ (with $D = B + \vec{u}$, $E = A + \vec{u}$) and
-    $ACFG$ (with $F = C + \vec{v}$, $G = A + \vec{v}$):
+    Given an arbitrary counter-clockwise triangle :math:`\triangle ABC` and two arbitrary
+    outward parallelograms :math:`ABDE` (with :math:`D = B + \vec{u}`, :math:`E = A + \vec{u}`) and
+    :math:`ACFG` (with :math:`F = C + \vec{v}`, :math:`G = A + \vec{v}`):
 
-    1. Extend outer sides $[DE]$ and $[FG]$ to meet at $H$.
-    2. Join $[HA]$ and extend it across base $[BC]$ to meet $[BC]$ at $J$.
-    3. Translate segment $HA$ to $BL$ and $CM$ ($L = B + (A - H)$, $M = C + (A - H)$)
-       forming outward parallelogram $BCML$ on base $BC$.
-    4. By shear-invariance through parallels $[DE] \parallel [AB]$, $[FG] \parallel [AC]$,
-       and $[HA] \parallel [BL] \parallel [CM]$:
+    1. Extend outer sides :math:`[DE]` and :math:`[FG]` to meet at :math:`H`.
+    2. Join :math:`[HA]` and extend it across base :math:`[BC]` to meet :math:`[BC]` at :math:`J`.
+    3. Translate segment :math:`HA` to :math:`BL` and :math:`CM` (:math:`L = B + (A - H)`, :math:`M = C + (A - H)`)
+       forming outward parallelogram :math:`BCML` on base :math:`BC`.
+    4. By shear-invariance through parallels :math:`[DE] \parallel [AB]`, :math:`[FG] \parallel [AC]`,
+       and :math:`[HA] \parallel [BL] \parallel [CM]`:
 
        .. math::
 
           \operatorname{Area}(ABDE) = \operatorname{Area}(ABLH\text{-shear}) = \operatorname{Area}(BLNJ), \quad
           \operatorname{Area}(ACFG) = \operatorname{Area}(JCMN),
 
-       whence $\operatorname{Area}(BCML) = \operatorname{Area}(ABDE) + \operatorname{Area}(ACFG)$.
+       whence :math:`\operatorname{Area}(BCML) = \operatorname{Area}(ABDE) + \operatorname{Area}(ACFG)`.
 
     Presets:
-        - ``"scalene"``: Oblique scalene $\triangle ABC$ with $A = (3, 4)$, $B = (0, 0)$,
-          $C = (7, 0)$ and skewed non-rectangular parallelograms of areas $13$ and $15$,
-          yielding $\operatorname{Area}(BCML) = 28$.
-        - ``"pythagoras"``: Exact $3$-$4$-$5$ right triangle at apex $A = \left(\frac{9}{5}, \frac{12}{5}\right)$
-          on hypotenuse $B = (0, 0)$, $C = (5, 0)$ with squares of areas $9$ and $16$,
-          yielding the exact $5 \times 5$ hypotenuse square of area $25$ (*Elements* I.47).
+        - ``"scalene"``: Oblique scalene :math:`\triangle ABC` with :math:`A = (3, 4)`, :math:`B = (0, 0)`,
+          :math:`C = (7, 0)` and skewed non-rectangular parallelograms of areas :math:`13` and :math:`15`,
+          yielding :math:`\operatorname{Area}(BCML) = 28`.
+        - ``"pythagoras"``: Exact :math:`3`-:math:`4`-:math:`5` right triangle at apex :math:`A = \left(\frac{9}{5}, \frac{12}{5}\right)`
+          on hypotenuse :math:`B = (0, 0)`, :math:`C = (5, 0)` with squares of areas :math:`9` and :math:`16`,
+          yielding the exact :math:`5 \times 5` hypotenuse square of area :math:`25` (*Elements* I.47).
 
     Args:
         model: Optional :class:`~geometor.model.Model`; created if ``None``.
         preset: ``"scalene"`` or ``"pythagoras"`` when ``triangle`` is ``None``.
         triangle: Optional custom ``(A, B, C)`` counter-clockwise vertices.
-        vec_ab: Optional outward side vector $\vec{u}$ for parallelogram $ABDE$.
-        vec_ac: Optional outward side vector $\vec{v}$ for parallelogram $ACFG$.
+        vec_ab: Optional outward side vector :math:`\vec{u}` for parallelogram :math:`ABDE`.
+        vec_ac: Optional outward side vector :math:`\vec{v}` for parallelogram :math:`ACFG`.
 
     Returns:
         Populated :class:`PappusAreaResult`.
@@ -597,11 +597,11 @@ def construct_pappus_area_theorem(
 
 
 def verify_pappus_area_symbolic() -> sp.Expr:
-    r"""Verify Pappus's Area Theorem universally over $\mathbb{Q}(x_A, y_A, x_B, y_B, x_C, y_C, u_x, u_y, v_x, v_y)$.
+    r"""Verify Pappus's Area Theorem universally over :math:`\mathbb{Q}(x_A, y_A, x_B, y_B, x_C, y_C, u_x, u_y, v_x, v_y)`.
 
-    Constructs generic symbolic points $A, B, C$ and generic parallelogram vectors
-    $\vec{u} = (u_x, u_y)$ and $\vec{v} = (v_x, v_y)$, intersects the outer parallel
-    lines $[DE]$ and $[FG]$ symbolically at $H$, translates $A - H$ onto base $BC$,
+    Constructs generic symbolic points :math:`A, B, C` and generic parallelogram vectors
+    :math:`\vec{u} = (u_x, u_y)` and :math:`\vec{v} = (v_x, v_y)`, intersects the outer parallel
+    lines :math:`[DE]` and :math:`[FG]` symbolically at :math:`H`, translates :math:`A - H` onto base :math:`BC`,
     and simplifies the oriented parallelogram area identity
 
     .. math::
@@ -650,11 +650,11 @@ def construct_pappus_arbelos_chain(
     Supports both ``construct_pappus_arbelos_chain(r1=2, r2=1, count=4, *, model=None)``
     and ``construct_pappus_arbelos_chain(model, r1, r2, count=4)``.
 
-    For inner semicircle radii $r_1, r_2 > 0$ and outer radius $R = r_1 + r_2$ along
-    baseline $AC$ ($A = (0, 0)$, $D = (2r_1, 0)$, $C = (2R, 0)$), circle inversion centered
-    at $A$ with squared radius $k^2 = 4 R r_1$ maps $C_{\mathrm{outer}}$ and $C_{\mathrm{left}}$
-    to the parallel vertical lines $u = 2r_1$ and $u = 2R$, yielding 100% rational coordinates
-    for every circle $C_n$ ($n \ge 1$) with zero square roots:
+    For inner semicircle radii :math:`r_1, r_2 > 0` and outer radius :math:`R = r_1 + r_2` along
+    baseline :math:`AC` (:math:`A = (0, 0)`, :math:`D = (2r_1, 0)`, :math:`C = (2R, 0)`), circle inversion centered
+    at :math:`A` with squared radius :math:`k^2 = 4 R r_1` maps :math:`C_{\mathrm{outer}}` and :math:`C_{\mathrm{left}}`
+    to the parallel vertical lines :math:`u = 2r_1` and :math:`u = 2R`, yielding 100% rational coordinates
+    for every circle :math:`C_n` (:math:`n \ge 1`) with zero square roots:
 
     .. math::
 
@@ -667,10 +667,10 @@ def construct_pappus_arbelos_chain(
        y_n = \frac{2 n \, r_1 r_2 (r_1 + r_2)}{\Delta_n} = 2 n r_n = n d_n.
 
     Args:
-        model_or_r1: Either a :class:`~geometor.model.Model` or left inner radius $r_1$.
-        r1_or_r2: Left radius $r_1$ (when ``model_or_r1`` is a ``Model``) or right radius $r_2$.
-        r2_or_count: Right radius $r_2$ (when ``model_or_r1`` is a ``Model``) or chain length ``count``.
-        count: Number of chain circles $n = 1, \dots, \text{count}$ when ``model_or_r1`` is a ``Model``.
+        model_or_r1: Either a :class:`~geometor.model.Model` or left inner radius :math:`r_1`.
+        r1_or_r2: Left radius :math:`r_1` (when ``model_or_r1`` is a ``Model``) or right radius :math:`r_2`.
+        r2_or_count: Right radius :math:`r_2` (when ``model_or_r1`` is a ``Model``) or chain length ``count``.
+        count: Number of chain circles :math:`n = 1, \dots, \text{count}` when ``model_or_r1`` is a ``Model``.
         model: Optional explicit :class:`~geometor.model.Model` keyword argument.
 
     Returns:
@@ -790,18 +790,18 @@ def construct_pappus_arbelos_chain(
 
 
 def verify_arbelos_chain_symbolic(n_max: int = 5) -> dict[str, sp.Expr]:
-    r"""Prove Pappus's Arbelos Theorem symbolically over $\mathbb{Q}(r_1, r_2, n)$.
+    r"""Prove Pappus's Arbelos Theorem symbolically over :math:`\mathbb{Q}(r_1, r_2, n)`.
 
-    Verifies four universal polynomial identities in $\mathbb{Q}(r_1, r_2, n)$:
+    Verifies four universal polynomial identities in :math:`\mathbb{Q}(r_1, r_2, n)`:
 
-    1. **Pappus's Altitude Law**: $y_n - n (2 r_n) = 0$ for symbolic $n$.
-    2. **Internal Tangency to Outer Semicircle**: $Q(K_n, O_0) - (R - r_n)^2 = 0$.
-    3. **External Tangency to Left Semicircle**: $Q(K_n, O_1) - (r_1 + r_n)^2 = 0$.
-    4. **Chain-to-Chain External Tangency**: $Q(K_{n+1}, K_n) - (r_{n+1} + r_n)^2 = 0$
-       for symbolic $n$ (including $n = 0$, tangency of $C_1$ to $C_{\mathrm{right}}$).
+    1. **Pappus's Altitude Law**: :math:`y_n - n (2 r_n) = 0` for symbolic :math:`n`.
+    2. **Internal Tangency to Outer Semicircle**: :math:`Q(K_n, O_0) - (R - r_n)^2 = 0`.
+    3. **External Tangency to Left Semicircle**: :math:`Q(K_n, O_1) - (r_1 + r_n)^2 = 0`.
+    4. **Chain-to-Chain External Tangency**: :math:`Q(K_{n+1}, K_n) - (r_{n+1} + r_n)^2 = 0`
+       for symbolic :math:`n` (including :math:`n = 0`, tangency of :math:`C_1` to :math:`C_{\mathrm{right}}`).
 
     Args:
-        n_max: Optional positive check bound for explicit integer spot-checks alongside symbolic $n$.
+        n_max: Optional positive check bound for explicit integer spot-checks alongside symbolic :math:`n`.
 
     Returns:
         Dictionary mapping each invariant name to its simplified residual (all ``sp.Integer(0)``).
@@ -848,13 +848,13 @@ def verify_honeycomb_isoperimetry(
 
     Proves two pillars of *Synagoge* Book V (Preface & Prop. 1, Hultsch I, pp. 304–310):
 
-    1. **Uniqueness of Regular Planar Tilings**: For $k \ge 3$ congruent regular $n$-gons
-       ($n \ge 3$) to surround a point without gaps or overlaps, their interior angle
-       $\frac{n - 2}{n} \cdot 180^\circ$ must satisfy $k \cdot \frac{n - 2}{n} = 2$, i.e.
-       $k = \frac{2n}{n - 2} = 2 + \frac{4}{n - 2} \in \mathbb{Z}_{\ge 3}$, whose unique
-       integer solutions are $(n - 2) \in \{1, 2, 4\} \iff n \in \{3, 4, 6\}$ with
-       $k \in \{6, 4, 3\}$.
-    2. **Isoperimetric Superiority of the Hexagon**: For common perimeter $P > 0$:
+    1. **Uniqueness of Regular Planar Tilings**: For :math:`k \ge 3` congruent regular :math:`n`-gons
+       (:math:`n \ge 3`) to surround a point without gaps or overlaps, their interior angle
+       :math:`\frac{n - 2}{n} \cdot 180^\circ` must satisfy :math:`k \cdot \frac{n - 2}{n} = 2`, i.e.
+       :math:`k = \frac{2n}{n - 2} = 2 + \frac{4}{n - 2} \in \mathbb{Z}_{\ge 3}`, whose unique
+       integer solutions are :math:`(n - 2) \in \{1, 2, 4\} \iff n \in \{3, 4, 6\}` with
+       :math:`k \in \{6, 4, 3\}`.
+    2. **Isoperimetric Superiority of the Hexagon**: For common perimeter :math:`P > 0`:
 
        .. math::
 
@@ -862,12 +862,12 @@ def verify_honeycomb_isoperimetry(
           \operatorname{Area}_4 = \frac{1}{16} P^2, \qquad
           \operatorname{Area}_6 = \frac{\sqrt{3}}{24} P^2,
 
-       giving $\frac{\operatorname{Area}_6}{\operatorname{Area}_3} = \frac{3}{2}$ and
-       $\frac{\operatorname{Area}_6}{\operatorname{Area}_4} = \frac{2\sqrt{3}}{3} > 1$
-       (since $\left(\frac{2\sqrt{3}}{3}\right)^2 = \frac{4}{3} > 1$).
+       giving :math:`\frac{\operatorname{Area}_6}{\operatorname{Area}_3} = \frac{3}{2}` and
+       :math:`\frac{\operatorname{Area}_6}{\operatorname{Area}_4} = \frac{2\sqrt{3}}{3} > 1`
+       (since :math:`\left(\frac{2\sqrt{3}}{3}\right)^2 = \frac{4}{3} > 1`).
 
     Args:
-        perimeter: Common positive perimeter $P$ (default ``12``, giving integer sides $4, 3, 2$).
+        perimeter: Common positive perimeter :math:`P` (default ``12``, giving integer sides :math:`4, 3, 2`).
         build_model: If True, also construct the geometric :class:`~geometor.model.Model`.
 
     Returns:
@@ -926,15 +926,15 @@ def construct_honeycomb_isoperimetry(
 
     Builds:
 
-    1. **Left Comparison Row**: Equilateral triangle ($s_3 = P/3$), square ($s_4 = P/4$),
-       and regular hexagon ($s_6 = P/6$) sharing exact perimeter $P$.
-    2. **Right 7-Cell Honeycomb Rosette**: Central regular hexagon $H_0$ of side $s_6$
+    1. **Left Comparison Row**: Equilateral triangle (:math:`s_3 = P/3`), square (:math:`s_4 = P/4`),
+       and regular hexagon (:math:`s_6 = P/6`) sharing exact perimeter :math:`P`.
+    2. **Right 7-Cell Honeycomb Rosette**: Central regular hexagon :math:`H_0` of side :math:`s_6`
        surrounded by six congruent regular hexagons sharing every wall without interstices,
-       inscribed inside the exact outer circle of radius $R = s_6 \sqrt{7}$ proved in
+       inscribed inside the exact outer circle of radius :math:`R = s_6 \sqrt{7}` proved in
        *Synagoge* Book VIII, Prop. 23 (Hultsch III, pp. 1096–1102).
 
     Args:
-        perimeter: Common perimeter $P$ (default ``12``, giving $s_3 = 4, s_4 = 3, s_6 = 2$).
+        perimeter: Common perimeter :math:`P` (default ``12``, giving :math:`s_3 = 4, s_4 = 3, s_6 = 2`).
         model: Optional existing :class:`~geometor.model.Model`.
 
     Returns:
@@ -1061,14 +1061,14 @@ def build_synagoge_gallery(
 
     Exports six standalone theme-adaptive SVGs covering Books III, IV, V, and VIII:
 
-    1. ``synagoge_three_means.svg`` — Rational $(9, 16)$ semicircle means ($A = 25/2, G = 12, H = 288/25$)
-       plus harmonic conjugate $T$.
-    2. ``synagoge_three_means_golden.svg`` — Golden $(1, \phi^2)$ semicircle means ($G = \phi$) in $\mathbb{Q}(\phi)$.
+    1. ``synagoge_three_means.svg`` — Rational :math:`(9, 16)` semicircle means (:math:`A = 25/2, G = 12, H = 288/25`)
+       plus harmonic conjugate :math:`T`.
+    2. ``synagoge_three_means_golden.svg`` — Golden :math:`(1, \phi^2)` semicircle means (:math:`G = \phi`) in :math:`\mathbb{Q}(\phi)`.
     3. ``pappus_area_theorem.svg`` — General scalene Pappus Area Theorem (*Synagoge* IV.1).
     4. ``pappus_area_pythagoras.svg`` — Right-triangle + squares specialization (*Elements* I.47).
     5. ``pappus_arbelos_chain.svg`` — Rational Arbelos tangent circle chain (*Synagoge* IV.14–18).
-    6. ``honeycomb_isoperimetry.svg`` — Equal-perimeter $n \in \{3, 4, 6\}$ comparison & 7-cell
-       honeycomb rosette inscribed in $(H_0, N)$ (*Synagoge* V.1 & VIII.23).
+    6. ``honeycomb_isoperimetry.svg`` — Equal-perimeter :math:`n \in \{3, 4, 6\}` comparison & 7-cell
+       honeycomb rosette inscribed in :math:`(H_0, N)` (*Synagoge* V.1 & VIII.23).
 
     Args:
         output_dir: Destination directory for `.svg` files.

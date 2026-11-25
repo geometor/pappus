@@ -1,17 +1,17 @@
 :order: 4
 :layout: book
 :type: book
-:title: Proposition 3 · Alexandrian Sector Lemmas Notes
+:title: Propositions 3–4 · Archimedean & Isoperimetric Lemmas Notes
 :canonical_id: Syn. V.3.notes
-:folio: 0249
+:folio: hultsch_1876_vol1:0345
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
-Proposition 3 · Alexandrian Sector Lemmas Notes
-===============================================
+Propositions 3–4 · Archimedean & Isoperimetric Lemmas Notes
+===========================================================
 
-.. rubric:: Companion to Ptolemy's *Almagest* I.10
+.. rubric:: Self-Contained Exhaustion & Preparatory Lemmas
 
-.. folio:: 0249
-   :page: 1237
+.. folio:: hultsch_1876_vol1:0345
+   :page: 312
 
-Together with Archimedes's *Sand Reckoner* and Ptolemy's chord lemma ($\frac{\sin\alpha}{\sin\beta} < \frac{\alpha}{\beta}$), Pappus V.3 exemplifies Greek synthetic inequalities used prior to calculus.
+:person:`Pappus <pappus>` supplies a self-contained exhaustion proof of :person:`Archimedes's <archimedes>` *Measurement of a Circle* Prop. 1 in Chs. 6–8 (:cite:`Hultsch I, pp. 312–316 <hultsch-1876>`), then introduces the non-regular polygon cycle (Chs. 9–10, pp. 316–318). Plate ``0249.g1`` derives from :cite:`Hultsch Vol. III <hultsch-1878>`, App. IV (p. 1237).
