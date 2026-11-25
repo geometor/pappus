@@ -22,12 +22,12 @@ signed areas of the three homologous ``square`` / ``circle`` / ``diamond`` trian
 .. literalinclude:: ../../demos/pappus_hexagon.py
    :language: python
 
-2. ``demos/pappus_six_permutations.py`` — Six $S_3$ Lines & Steiner Star Points
--------------------------------------------------------------------------------
+2. ``demos/pappus_six_permutations.py`` — Six :math:`S_3` Lines & Steiner Star Points
+-------------------------------------------------------------------------------------
 
-Constructs all $3! = 6$ permutations on both ``preset="steiner"`` and the 2023 ``preset="parallel"``
+Constructs all :math:`3! = 6` permutations on both ``preset="steiner"`` and the 2023 ``preset="parallel"``
 configuration, printing every cross-join meet, Pappus line equation, and exact Star concurrency
-point $(S_+, S_-)$.
+point :math:`(S_+, S_-)`.
 
 .. code-block:: bash
 
@@ -41,7 +41,7 @@ point $(S_+, S_-)$.
 
 Verifies Book VII Prop. 129 central perspectivity invariance, demonstrates straightedge fourth
 harmonic construction across two distinct auxiliary apex/relay choices (confirming invariance of
-$D = (-4, 0)$), and catalogs emergent harmonic tetrads on ``preset="harmonic"``.
+:math:`D = (-4, 0)`), and catalogs emergent harmonic tetrads on ``preset="harmonic"``.
 
 .. code-block:: bash
 
@@ -50,11 +50,11 @@ $D = (-4, 0)$), and catalogs emergent harmonic tetrads on ``preset="harmonic"``.
 .. literalinclude:: ../../demos/harmonic_conjugate.py
    :language: python
 
-4. ``demos/golden_pappus.py`` — Golden Projectivity in $\mathbb{Q}(\phi)$
--------------------------------------------------------------------------
+4. ``demos/golden_pappus.py`` — Golden Projectivity in :math:`\mathbb{Q}(\phi)`
+-------------------------------------------------------------------------------
 
-Computes the canonical golden cross-ratio $(0, 1; \phi, \phi + 1) = \phi$, its six-value
-anharmonic power orbit, the harmonic-golden identity $(0, \phi; 1, \phi^3) = -1$, and runs
+Computes the canonical golden cross-ratio :math:`(0, 1; \phi, \phi + 1) = \phi`, its six-value
+anharmonic power orbit, the harmonic-golden identity :math:`(0, \phi; 1, \phi^3) = -1`, and runs
 ``geometor.divine`` to uncover the emergent golden section ``/ A1 M12 B2 /``.
 
 .. code-block:: bash
@@ -67,10 +67,10 @@ anharmonic power orbit, the harmonic-golden identity $(0, \phi; 1, \phi^3) = -1$
 5. ``demos/pascal_hexagrammum.py`` — Pascal's *Hexagrammum Mysticum* (1640)
 ---------------------------------------------------------------------------
 
-Proves Pascal's smooth-conic theorem universally over $\mathbb{Z}[t_0, \dots, t_5]$, compares
-the Pythagorean unit circle and stretched affine ellipse $\frac{x^2}{4} + y^2 = 1$, enumerates all
+Proves Pascal's smooth-conic theorem universally over :math:`\mathbb{Z}[t_0, \dots, t_5]`, compares
+the Pythagorean unit circle and stretched affine ellipse :math:`\frac{x^2}{4} + y^2 = 1`, enumerates all
 **60 Pascal lines, 20 Steiner points, 60 Kirkman points, and 15 Plücker lines**, and uncovers the
-emergent golden conic section ``/ M25 P4 P0 /`` in $\mathbb{Q}(\phi)$.
+emergent golden conic section ``/ M25 P4 P0 /`` in :math:`\mathbb{Q}(\phi)`.
 
 .. code-block:: bash
 
@@ -82,9 +82,9 @@ emergent golden conic section ``/ M25 P4 P0 /`` in $\mathbb{Q}(\phi)$.
 6. ``demos/synagoge_three_means.py`` — *Synagoge* Book III: Three Means in One Semicircle
 -----------------------------------------------------------------------------------------
 
-Constructs Pappus's semicircle diagram (*Hultsch I, pp. 68–84*) on rational $(9, 16)$, Pythagorean
-$(4, 9)$, and golden $(1, \phi^2)$ segments, verifying $A \cdot H = G^2$, $A > G > H$, and the
-external harmonic tangent relation $(A, C; D, T) = -1$.
+Constructs Pappus's semicircle diagram (*Hultsch I, pp. 68–84*) on rational :math:`(9, 16)`, Pythagorean
+:math:`(4, 9)`, and golden :math:`(1, \phi^2)` segments, verifying :math:`A \cdot H = G^2`, :math:`A > G > H`, and the
+external harmonic tangent relation :math:`(A, C; D, T) = -1`.
 
 .. code-block:: bash
 
@@ -97,8 +97,8 @@ external harmonic tangent relation $(A, C; D, T) = -1$.
 --------------------------------------------------------------------------------------
 
 Demonstrates Pappus's equiaffine generalization of *Elements* I.47 (*Hultsch I, pp. 176–179*) on an
-oblique scalene triangle ($13 + 15 = 28$), on the $3$-$4$-$5$ right triangle ($9 + 16 = 25$), and
-universally over $\mathbb{Z}[x_A, y_A, x_B, y_B, x_C, y_C, u_x, u_y, v_x, v_y]$.
+oblique scalene triangle (:math:`13 + 15 = 28`), on the :math:`3`-:math:`4`-:math:`5` right triangle (:math:`9 + 16 = 25`), and
+universally over :math:`\mathbb{Z}[x_A, y_A, x_B, y_B, x_C, y_C, u_x, u_y, v_x, v_y]`.
 
 .. code-block:: bash
 
@@ -110,9 +110,9 @@ universally over $\mathbb{Z}[x_A, y_A, x_B, y_B, x_C, y_C, u_x, u_y, v_x, v_y]$.
 8. ``demos/arbelos_circle_chain.py`` — *Synagoge* Book IV.14–18: Arbelos Circle Chain
 -------------------------------------------------------------------------------------
 
-Constructs the infinite tangent circle chain $C_1, \dots, C_5$ inside the *arbelos* (*Hultsch I,
+Constructs the infinite tangent circle chain :math:`C_1, \dots, C_5` inside the *arbelos* (*Hultsch I,
 pp. 208–232*) in 100% exact rational coordinates and verifies both pairwise tangency quadrances and
-Pappus's altitude law $y_n = n\,d_n = 2n\,r_n$.
+Pappus's altitude law :math:`y_n = n\,d_n = 2n\,r_n`.
 
 .. code-block:: bash
 
@@ -124,9 +124,9 @@ Pappus's altitude law $y_n = n\,d_n = 2n\,r_n$.
 9. ``demos/honeycomb_isoperimetry.py`` — *Synagoge* Book V.1 & VIII.23: Honeycomb & 7 Hexagons
 ----------------------------------------------------------------------------------------------
 
-Proves that $n \in \{3, 4, 6\}$ are the unique regular plane-tiling polygons (*Hultsch I,
-pp. 304–312*), evaluates exact symbolic areas at equal perimeter $P = 12$, and verifies the exact
-circumradius $R = s_6\sqrt{7}$ of Book VIII Proposition 23's seven-hexagon circle inscription.
+Proves that :math:`n \in \{3, 4, 6\}` are the unique regular plane-tiling polygons (*Hultsch I,
+pp. 304–312*), evaluates exact symbolic areas at equal perimeter :math:`P = 12`, and verifies the exact
+circumradius :math:`R = s_6\sqrt{7}` of Book VIII Proposition 23's seven-hexagon circle inscription.
 
 .. code-block:: bash
 

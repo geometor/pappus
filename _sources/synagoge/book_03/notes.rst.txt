@@ -23,16 +23,16 @@ In *Codex Vaticanus Graecus* 218 (the 10th-century archetype from which all exta
 
 As :cite:`Heath (1921, Vol. II, pp. 367–369) <heath:1921>` and ``geometor/euclid`` (:cite:`Heath 1926, Vol. II, p. 211 <heath:1926>`, note on *Elements* VI.13) observe, Book III contains **two** semicircular mean constructions:
 
-1. **Pappus's Canonical Three-in-One Semicircle** (*Chs. 40–43, Hultsch I pp. 80–84*, modeled in :func:`~geometor.pappus.construct_three_means`): Given $AD = a$ and $DC = b$ contiguous along diameter $AC$, a single perpendicular $DB$ and a single altitude $DF \perp OB$ exhibit $A = OB$, $G = DB$, and $H = BF$ simultaneously on one diagram.
-2. **The Anonymous Craftsman's Tangential Variant** (*Ch. 39, Hultsch I pp. 70–72*): A geometer (*τις*) proposed exhibiting the three means using an external secant and tangent, which Pappus critiques because the presenter omitted the proof of $(a - H) : (H - b) = a : b$.
+1. **Pappus's Canonical Three-in-One Semicircle** (*Chs. 40–43, Hultsch I pp. 80–84*, modeled in :func:`~geometor.pappus.construct_three_means`): Given :math:`AD = a` and :math:`DC = b` contiguous along diameter :math:`AC`, a single perpendicular :math:`DB` and a single altitude :math:`DF \perp OB` exhibit :math:`A = OB`, :math:`G = DB`, and :math:`H = BF` simultaneously on one diagram.
+2. **The Anonymous Craftsman's Tangential Variant** (*Ch. 39, Hultsch I pp. 70–72*): A geometer (*τις*) proposed exhibiting the three means using an external secant and tangent, which Pappus critiques because the presenter omitted the proof of :math:`(a - H) : (H - b) = a : b`.
 
-3. Coordinate Check on the External Harmonic Conjugate $T$
-----------------------------------------------------------
+3. Coordinate Check on the External Harmonic Conjugate :math:`T`
+----------------------------------------------------------------
 
-With $A = (0, 0)$, $D = (a, 0)$, and $C = (a + b, 0)$ ($a < b$), center $O = \left(\frac{a+b}{2}, 0\right)$ and $B = (a, \sqrt{ab})$. Since $OB$ has vector $\left(\frac{a - b}{2}, \sqrt{ab}\right)$, the circle tangent at $B$ perpendicular to $OB$ meets $y = 0$ at $x_T = -\frac{a(a + b)}{b - a}$. For $(a, b) = (9, 16)$, $x_T = -\frac{225}{7}$, yielding $\operatorname{CR}(A, C; D, T) = -1$.
+With :math:`A = (0, 0)`, :math:`D = (a, 0)`, and :math:`C = (a + b, 0)` (:math:`a < b`), center :math:`O = \left(\frac{a+b}{2}, 0\right)` and :math:`B = (a, \sqrt{ab})`. Since :math:`OB` has vector :math:`\left(\frac{a - b}{2}, \sqrt{ab}\right)`, the circle tangent at :math:`B` perpendicular to :math:`OB` meets :math:`y = 0` at :math:`x_T = -\frac{a(a + b)}{b - a}`. For :math:`(a, b) = (9, 16)`, :math:`x_T = -\frac{225}{7}`, yielding :math:`\operatorname{CR}(A, C; D, T) = -1`.
 
 4. Cross-References in the GEOMETOR Canon
 -----------------------------------------
 
 * **Euclid's Elements** (``geometor/euclid`` & ``geometor/elements``): *Elements* II.5, III.31, VI.8, VI.13, and XIII.13–18 (re-inscribed analytically in Book III Chs. 54–58).
-* **Golden Ratio Engine** (``geometor/divine``): Setting $(a, b) = (1, \phi^2)$ embeds $G = \phi$ cleanly inside $\mathbb{Q}(\phi)$.
+* **Golden Ratio Engine** (``geometor/divine``): Setting :math:`(a, b) = (1, \phi^2)` embeds :math:`G = \phi` cleanly inside :math:`\mathbb{Q}(\phi)`.

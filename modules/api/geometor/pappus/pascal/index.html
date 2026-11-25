@@ -115,14 +115,14 @@
         <section class="level-1" id="module-geometor.pappus.pascal">
         <span id="geometor-pappus-pascal"></span><h1>geometor.pappus.pascal<a class="headerlink" href="#module-geometor.pappus.pascal" title="Link to this heading">¶</a></h1>
         <p>Symbolic DAG constructions and combinatorics for Blaise Pascal’s <em>Hexagrammum Mysticum</em> (1640).</p>
-        <p>Generalizes Pappus’s Hexagon Theorem from a degenerate line-pair $a \cup b$ to six
-        points inscribed on a smooth conic $\mathcal{C}$ (circle or ellipse):</p>
+        <p>Generalizes Pappus’s Hexagon Theorem from a degenerate line-pair <span class="math notranslate nohighlight">\(a \cup b\)</span> to six
+        points inscribed on a smooth conic <span class="math notranslate nohighlight">\(\mathcal{C}\)</span> (circle or ellipse):</p>
         <ul class="simple">
         <li><p><strong>Pascal’s Mystic Hexagram</strong> (<em>Essai pour les coniques</em>, Feb. 1640): for any cyclic
-        6-tuple $\langle P_{c_0}, P_{c_1}, P_{c_2}, P_{c_3}, P_{c_4}, P_{c_5} \rangle$ on a conic,
-        opposite side intersections $M_{03}, M_{14}, M_{25}$ lie on a single <strong>Pascal line</strong>.</p></li>
+        6-tuple <span class="math notranslate nohighlight">\(\langle P_{c_0}, P_{c_1}, P_{c_2}, P_{c_3}, P_{c_4}, P_{c_5} \rangle\)</span> on a conic,
+        opposite side intersections <span class="math notranslate nohighlight">\(M_{03}, M_{14}, M_{25}\)</span> lie on a single <strong>Pascal line</strong>.</p></li>
         <li><p><strong>Bi-Triangle</strong> <span class="math notranslate nohighlight">\(S_3\)</span> <strong>Steiner Family</strong>: partitioning the 6 conic vertices into two
-        complementary triangles $\triangle_A$ and $\triangle_B$ generates 6 alternating hexagons
+        complementary triangles <span class="math notranslate nohighlight">\(\triangle_A\)</span> and <span class="math notranslate nohighlight">\(\triangle_B\)</span> generates 6 alternating hexagons
         whose 3 even (<span class="math notranslate nohighlight">\(A_3\)</span>) Pascal lines concur at <span class="math notranslate nohighlight">\(G_+\)</span> and whose 3 odd
         (<span class="math notranslate nohighlight">\(S_3 \setminus A_3\)</span>) Pascal lines concur at <span class="math notranslate nohighlight">\(G_-\)</span>—directly generalizing
         Pappus’s two Star points <span class="math notranslate nohighlight">\((S_+, S_-)\)</span>!</p></li>
@@ -130,8 +130,8 @@
         15 chords, 45 diagonal Pascal points, 60 Pascal lines, 20 Jakob Steiner points,
         60 Thomas Kirkman points, and 15 Julius Plücker lines.</p></li>
         <li><p><strong>Universal Symbolic Proof &amp; Golden Conic</strong>: exact 6-parameter polynomial proof over
-        $\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]$ and Golden Ratio conic perspectivities over
-        $\mathbb{Q}(\phi)$.</p></li>
+        <span class="math notranslate nohighlight">\(\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]\)</span> and Golden Ratio conic perspectivities over
+        <span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span>.</p></li>
         </ul>
         <section class="level-2" id="attributes">
         <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
@@ -173,7 +173,7 @@
         <td><p>Look up a named Pascal preset in <a class="reference internal" href="#geometor.pappus.pascal.PASCAL_PRESETS" title="geometor.pappus.pascal.PASCAL_PRESETS"><code class="xref py py-data docutils literal notranslate"><span class="pre">PASCAL_PRESETS</span></code></a>.</p></td>
         </tr>
         <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.pascal.canonical_hexagon_cycle" title="geometor.pappus.pascal.canonical_hexagon_cycle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">canonical_hexagon_cycle</span></code></a>(cycle) → Cycle6</p></td>
-        <td><p>Normalize a 6-vertex permutation up to dihedral rotation and reversal ($D_6$).</p></td>
+        <td><p>Normalize a 6-vertex permutation up to dihedral rotation and reversal (<span class="math notranslate nohighlight">\(D_6\)</span>).</p></td>
         </tr>
         <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.pascal.construct_pascal_hexagon" title="geometor.pappus.pascal.construct_pascal_hexagon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_pascal_hexagon</span></code></a>([model, points, cycle, ...]) → PascalHexagonResult</p></td>
         <td><p>Construct Blaise Pascal's <em>Hexagrammum Mysticum</em> for six points on a conic.</p></td>
@@ -182,10 +182,10 @@
         <td><p>Construct the 6-hexagon <span class="math notranslate nohighlight">\(S_3\)</span> bi-triangle Pascal family and its two Steiner points.</p></td>
         </tr>
         <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.pappus.pascal.enumerate_hexagrammum_mysticum" title="geometor.pappus.pascal.enumerate_hexagrammum_mysticum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enumerate_hexagrammum_mysticum</span></code></a>([points, preset]) → HexagrammumMysticumCatalog</p></td>
-        <td><p>Enumerate and verify the complete 60-line <em>Hexagrammum Mysticum</em> web in $mathbb{P}^2$.</p></td>
+        <td><p>Enumerate and verify the complete 60-line <em>Hexagrammum Mysticum</em> web in <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span>.</p></td>
         </tr>
         <tr class="row-even"><td><p><a class="reference internal" href="#geometor.pappus.pascal.verify_pascal_symbolic" title="geometor.pappus.pascal.verify_pascal_symbolic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_pascal_symbolic</span></code></a>() → sympy.Expr</p></td>
-        <td><p>Prove Pascal's <em>Hexagrammum Mysticum</em> universally over $mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]$.</p></td>
+        <td><p>Prove Pascal's <em>Hexagrammum Mysticum</em> universally over <span class="math notranslate nohighlight">\(\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]\)</span>.</p></td>
         </tr>
         </tbody>
         </table>
@@ -207,11 +207,11 @@
         <li><p><strong>name</strong> – Identifier key in <a class="reference internal" href="#geometor.pappus.pascal.PASCAL_PRESETS" title="geometor.pappus.pascal.PASCAL_PRESETS"><code class="xref py py-data docutils literal notranslate"><span class="pre">PASCAL_PRESETS</span></code></a>.</p></li>
         <li><p><strong>title</strong> – Human-readable preset title.</p></li>
         <li><p><strong>description</strong> – Mathematical and historical significance of the preset.</p></li>
-        <li><p><strong>points</strong> – Six exact points $(P_0, P_1, P_2, P_3, P_4, P_5)$ on the conic.</p></li>
+        <li><p><strong>points</strong> – Six exact points <span class="math notranslate nohighlight">\((P_0, P_1, P_2, P_3, P_4, P_5)\)</span> on the conic.</p></li>
         <li><p><strong>default_cycle</strong> – Default cyclic ordering of vertex indices <code class="docutils literal notranslate"><span class="pre">0..5</span></code>.</p></li>
-        <li><p><strong>center</strong> – Conic center $(x_0, y_0)$ for circle/ellipse rendering.</p></li>
-        <li><p><strong>rx</strong> – Horizontal semi-axis $a$ of the carrier circle/ellipse.</p></li>
-        <li><p><strong>ry</strong> – Vertical semi-axis $b$ of the carrier circle/ellipse.</p></li>
+        <li><p><strong>center</strong> – Conic center <span class="math notranslate nohighlight">\((x_0, y_0)\)</span> for circle/ellipse rendering.</p></li>
+        <li><p><strong>rx</strong> – Horizontal semi-axis <span class="math notranslate nohighlight">\(a\)</span> of the carrier circle/ellipse.</p></li>
+        <li><p><strong>ry</strong> – Vertical semi-axis <span class="math notranslate nohighlight">\(b\)</span> of the carrier circle/ellipse.</p></li>
         </ul>
         </dd>
         </dl>
@@ -270,8 +270,8 @@
         <dt class="field-odd">Variables<span class="colon">:</span></dt>
         <dd class="field-odd"><ul class="simple">
         <li><p><strong>model</strong> – Populated <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>.</p></li>
-        <li><p><strong>points</strong> – Six conic vertices $(P_0, P_1, P_2, P_3, P_4, P_5)$.</p></li>
-        <li><p><strong>cycle</strong> – Active 6-cycle $(c_0, c_1, c_2, c_3, c_4, c_5)$.</p></li>
+        <li><p><strong>points</strong> – Six conic vertices <span class="math notranslate nohighlight">\((P_0, P_1, P_2, P_3, P_4, P_5)\)</span>.</p></li>
+        <li><p><strong>cycle</strong> – Active 6-cycle <span class="math notranslate nohighlight">\((c_0, c_1, c_2, c_3, c_4, c_5)\)</span>.</p></li>
         <li><p><strong>conic</strong> – Constructed <code class="xref py py-class docutils literal notranslate"><span class="pre">Circle</span></code> or <code class="xref py py-class docutils literal notranslate"><span class="pre">Ellipse</span></code>, if registered.</p></li>
         <li><p><strong>side_lines</strong> – Six side lines in cyclic order.</p></li>
         <li><p><strong>meets</strong> – Opposite-side meets <code class="docutils literal notranslate"><span class="pre">{&quot;M03&quot;:</span> <span class="pre">...,</span> <span class="pre">&quot;M14&quot;:</span> <span class="pre">...,</span> <span class="pre">&quot;M25&quot;:</span> <span class="pre">...}</span></code>.</p></li>
@@ -348,9 +348,9 @@
         <dt class="field-odd">Variables<span class="colon">:</span></dt>
         <dd class="field-odd"><ul class="simple">
         <li><p><strong>model</strong> – Populated <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>.</p></li>
-        <li><p><strong>points</strong> – Six conic vertices $(P_0, \dots, P_5)$.</p></li>
-        <li><p><strong>triangle_a</strong> – Vertex indices $(a_0, a_1, a_2)$ of the first inscribed triangle.</p></li>
-        <li><p><strong>triangle_b</strong> – Vertex indices $(b_0, b_1, b_2)$ of the complementary inscribed triangle.</p></li>
+        <li><p><strong>points</strong> – Six conic vertices <span class="math notranslate nohighlight">\((P_0, \dots, P_5)\)</span>.</p></li>
+        <li><p><strong>triangle_a</strong> – Vertex indices <span class="math notranslate nohighlight">\((a_0, a_1, a_2)\)</span> of the first inscribed triangle.</p></li>
+        <li><p><strong>triangle_b</strong> – Vertex indices <span class="math notranslate nohighlight">\((b_0, b_1, b_2)\)</span> of the complementary inscribed triangle.</p></li>
         <li><p><strong>conic</strong> – Constructed circle or ellipse carrier curve.</p></li>
         <li><p><strong>chords</strong> – Mapping <code class="docutils literal notranslate"><span class="pre">(a_i,</span> <span class="pre">b_j)</span> <span class="pre">-&gt;</span> <span class="pre">Line</span></code> for the 9 cross-chords.</p></li>
         <li><p><strong>pascal_lines</strong> – Mapping <code class="docutils literal notranslate"><span class="pre">perm</span> <span class="pre">-&gt;</span> <span class="pre">Line</span></code> for all 6 <span class="math notranslate nohighlight">\(S_3\)</span> alternating hexagons.</p></li>
@@ -443,7 +443,7 @@
         <dl class="field-list simple">
         <dt class="field-odd">Variables<span class="colon">:</span></dt>
         <dd class="field-odd"><ul class="simple">
-        <li><p><strong>points</strong> – Six exact conic vertices $(P_0, \dots, P_5)$.</p></li>
+        <li><p><strong>points</strong> – Six exact conic vertices <span class="math notranslate nohighlight">\((P_0, \dots, P_5)\)</span>.</p></li>
         <li><p><strong>chords</strong> – Mapping <code class="docutils literal notranslate"><span class="pre">(i,</span> <span class="pre">j)</span> <span class="pre">-&gt;</span> <span class="pre">(a,</span> <span class="pre">b,</span> <span class="pre">c)</span></code> homogeneous line coordinates for all 15 chords.</p></li>
         <li><p><strong>diagonal_points</strong> – Mapping <code class="docutils literal notranslate"><span class="pre">((i,</span> <span class="pre">j),</span> <span class="pre">(k,</span> <span class="pre">l))</span> <span class="pre">-&gt;</span> <span class="pre">(X,</span> <span class="pre">Y,</span> <span class="pre">Z)</span></code> for all 45 Pascal diagonal points.</p></li>
         <li><p><strong>pascal_lines</strong> – Mapping <code class="docutils literal notranslate"><span class="pre">canonical_cycle</span> <span class="pre">-&gt;</span> <span class="pre">(a,</span> <span class="pre">b,</span> <span class="pre">c)</span></code> for all 60 Pascal lines.</p></li>
@@ -510,7 +510,7 @@
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.pappus.pascal.canonical_hexagon_cycle">
         <span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">canonical_hexagon_cycle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cycle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.pappus.pascal.Cycle6" title="geometor.pappus.pascal.Cycle6"><span class="pre">Cycle6</span></a></span></span><a class="headerlink" href="#geometor.pappus.pascal.canonical_hexagon_cycle" title="Link to this definition">¶</a></dt>
-        <dd><p>Normalize a 6-vertex permutation up to dihedral rotation and reversal ($D_6$).</p>
+        <dd><p>Normalize a 6-vertex permutation up to dihedral rotation and reversal (<span class="math notranslate nohighlight">\(D_6\)</span>).</p>
         <p>Rotates <code class="docutils literal notranslate"><span class="pre">cycle</span></code> so <code class="docutils literal notranslate"><span class="pre">0</span></code> appears first and picks the lexicographically smaller
         orientation between <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">c1,</span> <span class="pre">c2,</span> <span class="pre">c3,</span> <span class="pre">c4,</span> <span class="pre">c5)</span></code> and <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">c5,</span> <span class="pre">c4,</span> <span class="pre">c3,</span> <span class="pre">c2,</span> <span class="pre">c1)</span></code>.</p>
         <dl class="field-list simple">
@@ -518,7 +518,7 @@
         <dd class="field-odd"><p><strong>cycle</strong> – Permutation of <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4,</span> <span class="pre">5)</span></code>.</p>
         </dd>
         <dt class="field-even">Returns<span class="colon">:</span></dt>
-        <dd class="field-even"><p>Canonical 6-tuple representative among the $6! / 12 = 60$ distinct hexagons.</p>
+        <dd class="field-even"><p>Canonical 6-tuple representative among the <span class="math notranslate nohighlight">\(6! / 12 = 60\)</span> distinct hexagons.</p>
         </dd>
         <dt class="field-odd">Raises<span class="colon">:</span></dt>
         <dd class="field-odd"><p><strong>ValueError</strong> – If <code class="docutils literal notranslate"><span class="pre">cycle</span></code> is not a permutation of <code class="docutils literal notranslate"><span class="pre">0..5</span></code>.</p>
@@ -556,9 +556,9 @@
         <dt class="sig sig-object py" id="geometor.pappus.pascal.construct_pascal_steiner_family">
         <span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">construct_pascal_steiner_family</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">PointInput</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">preset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'hexagrammum'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">triangle_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(0,</span> <span class="pre">2,</span> <span class="pre">4)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">triangle_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(1,</span> <span class="pre">3,</span> <span class="pre">5)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_conic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scan_harmonics</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enable_divine</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.pappus.pascal.PascalSteinerFamilyResult" title="geometor.pappus.pascal.PascalSteinerFamilyResult"><span class="pre">PascalSteinerFamilyResult</span></a></span></span><a class="headerlink" href="#geometor.pappus.pascal.construct_pascal_steiner_family" title="Link to this definition">¶</a></dt>
         <dd><p>Construct the 6-hexagon <span class="math notranslate nohighlight">\(S_3\)</span> bi-triangle Pascal family and its two Steiner points.</p>
-        <p>Partitions the 6 conic vertices into $\triangle_A = (P_{a_0}, P_{a_1}, P_{a_2})$ and
-        $\triangle_B = (P_{b_0}, P_{b_1}, P_{b_2})$. Permuting $\triangle_B$ by $\sigma \in S_3$
-        forms 6 alternating hexagons $\langle A_0, B_{\sigma_0}, A_1, B_{\sigma_1}, A_2, B_{\sigma_2} \rangle$
+        <p>Partitions the 6 conic vertices into <span class="math notranslate nohighlight">\(\triangle_A = (P_{a_0}, P_{a_1}, P_{a_2})\)</span> and
+        <span class="math notranslate nohighlight">\(\triangle_B = (P_{b_0}, P_{b_1}, P_{b_2})\)</span>. Permuting <span class="math notranslate nohighlight">\(\triangle_B\)</span> by <span class="math notranslate nohighlight">\(\sigma \in S_3\)</span>
+        forms 6 alternating hexagons <span class="math notranslate nohighlight">\(\langle A_0, B_{\sigma_0}, A_1, B_{\sigma_1}, A_2, B_{\sigma_2} \rangle\)</span>
         whose 3 even (<span class="math notranslate nohighlight">\(A_3\)</span>) Pascal lines concur at <span class="math notranslate nohighlight">\(G_+\)</span> (ID <code class="docutils literal notranslate"><span class="pre">&quot;S1&quot;</span></code>) and whose
         3 odd (<span class="math notranslate nohighlight">\(S_3 \setminus A_3\)</span>) Pascal lines concur at <span class="math notranslate nohighlight">\(G_-\)</span> (ID <code class="docutils literal notranslate"><span class="pre">&quot;S2&quot;</span></code>).</p>
         <dl class="field-list simple">
@@ -567,8 +567,8 @@
         <li><p><strong>model</strong> – Optional existing <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>.</p></li>
         <li><p><strong>points</strong> – Optional sequence of 6 coconic points; defaults to <code class="docutils literal notranslate"><span class="pre">preset</span></code>.</p></li>
         <li><p><strong>preset</strong> – Key in <a class="reference internal" href="#geometor.pappus.pascal.PASCAL_PRESETS" title="geometor.pappus.pascal.PASCAL_PRESETS"><code class="xref py py-data docutils literal notranslate"><span class="pre">PASCAL_PRESETS</span></code></a> used when <code class="docutils literal notranslate"><span class="pre">points</span></code> is <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
-        <li><p><strong>triangle_a</strong> – Indices $(a_0, a_1, a_2)$ of the first inscribed triangle.</p></li>
-        <li><p><strong>triangle_b</strong> – Complementary indices $(b_0, b_1, b_2)$ of the second triangle.</p></li>
+        <li><p><strong>triangle_a</strong> – Indices <span class="math notranslate nohighlight">\((a_0, a_1, a_2)\)</span> of the first inscribed triangle.</p></li>
+        <li><p><strong>triangle_b</strong> – Complementary indices <span class="math notranslate nohighlight">\((b_0, b_1, b_2)\)</span> of the second triangle.</p></li>
         <li><p><strong>include_conic</strong> – If True, register the carrier circle or ellipse.</p></li>
         <li><p><strong>scan_harmonics</strong> – If True, scan the configuration for collinear harmonic tetrads.</p></li>
         <li><p><strong>enable_divine</strong> – If True, attach <code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.divine</span></code> and scan golden sections.</p></li>
@@ -587,13 +587,13 @@
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.pappus.pascal.enumerate_hexagrammum_mysticum">
         <span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">enumerate_hexagrammum_mysticum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">PointInput</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">preset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'hexagrammum'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.pappus.pascal.HexagrammumMysticumCatalog" title="geometor.pappus.pascal.HexagrammumMysticumCatalog"><span class="pre">HexagrammumMysticumCatalog</span></a></span></span><a class="headerlink" href="#geometor.pappus.pascal.enumerate_hexagrammum_mysticum" title="Link to this definition">¶</a></dt>
-        <dd><p>Enumerate and verify the complete 60-line <em>Hexagrammum Mysticum</em> web in $\mathbb{P}^2$.</p>
+        <dd><p>Enumerate and verify the complete 60-line <em>Hexagrammum Mysticum</em> web in <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span>.</p>
         <p>Computes in exact homogeneous coordinates:</p>
         <ol class="arabic simple">
-        <li><p><strong>15 Chords</strong> $[P_i P_j]$ ($0 \le i &lt; j \le 5$).</p></li>
-        <li><p><strong>45 Diagonal Pascal Points</strong> $[P_i P_j] \cap [P_k P_l]$ on disjoint vertex pairs.</p></li>
-        <li><p><strong>60 Pascal Lines</strong> across all $6! / 12 = 60$ cyclic hexagons, verifying 3-point collinearity.</p></li>
-        <li><p><strong>20 Jakob Steiner Points</strong> ($10$ triangle partitions $\times 2$ <span class="math notranslate nohighlight">\(S_3\)</span> parities),
+        <li><p><strong>15 Chords</strong> <span class="math notranslate nohighlight">\([P_i P_j]\)</span> (<span class="math notranslate nohighlight">\(0 \le i &lt; j \le 5\)</span>).</p></li>
+        <li><p><strong>45 Diagonal Pascal Points</strong> <span class="math notranslate nohighlight">\([P_i P_j] \cap [P_k P_l]\)</span> on disjoint vertex pairs.</p></li>
+        <li><p><strong>60 Pascal Lines</strong> across all <span class="math notranslate nohighlight">\(6! / 12 = 60\)</span> cyclic hexagons, verifying 3-point collinearity.</p></li>
+        <li><p><strong>20 Jakob Steiner Points</strong> (<span class="math notranslate nohighlight">\(10\)</span> triangle partitions <span class="math notranslate nohighlight">\(\times 2\)</span> <span class="math notranslate nohighlight">\(S_3\)</span> parities),
         verifying 3-line concurrency at each point.</p></li>
         <li><p><strong>60 Thomas Kirkman Points</strong>, verifying 3-line concurrency on each syntheme Kirkman triple.</p></li>
         <li><p><strong>15 Julius Plücker Lines</strong>, each carrying 4 of the 20 Steiner points.</p></li>
@@ -617,11 +617,11 @@
         <dl class="py function">
         <dt class="sig sig-object py" id="geometor.pappus.pascal.verify_pascal_symbolic">
         <span class="sig-prename descclassname"><span class="pre">geometor.pappus.pascal.</span></span><span class="sig-name descname"><span class="pre">verify_pascal_symbolic</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.pappus.pascal.verify_pascal_symbolic" title="Link to this definition">¶</a></dt>
-        <dd><p>Prove Pascal’s <em>Hexagrammum Mysticum</em> universally over $\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]$.</p>
-        <p>Parameterizes six generic points on the projective conic $X^2 + Y^2 = Z^2$ via
-        $P_k = [1 - t_k^2 : 2 t_k : 1 + t_k^2]$, computes the three opposite-side meets
-        $M_{03}, M_{14}, M_{25}$ via 3D vector cross products, and expands the $3 \times 3$
-        collinearity determinant $\det[M_{03}, M_{14}, M_{25}]$, returning <code class="docutils literal notranslate"><span class="pre">0</span></code> identically.</p>
+        <dd><p>Prove Pascal’s <em>Hexagrammum Mysticum</em> universally over <span class="math notranslate nohighlight">\(\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]\)</span>.</p>
+        <p>Parameterizes six generic points on the projective conic <span class="math notranslate nohighlight">\(X^2 + Y^2 = Z^2\)</span> via
+        <span class="math notranslate nohighlight">\(P_k = [1 - t_k^2 : 2 t_k : 1 + t_k^2]\)</span>, computes the three opposite-side meets
+        <span class="math notranslate nohighlight">\(M_{03}, M_{14}, M_{25}\)</span> via 3D vector cross products, and expands the <span class="math notranslate nohighlight">\(3 \times 3\)</span>
+        collinearity determinant <span class="math notranslate nohighlight">\(\det[M_{03}, M_{14}, M_{25}]\)</span>, returning <code class="docutils literal notranslate"><span class="pre">0</span></code> identically.</p>
         <dl class="field-list simple">
         <dt class="field-odd">Returns<span class="colon">:</span></dt>
         <dd class="field-odd"><p>Simplified SymPy polynomial expression (identically <code class="docutils literal notranslate"><span class="pre">sp.Integer(0)</span></code>).</p>

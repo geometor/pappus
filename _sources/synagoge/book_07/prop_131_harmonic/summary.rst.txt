@@ -3,7 +3,7 @@
 :type: book
 :title: Proposition 131 · Harmonic Conjugates Summary
 :canonical_id: Syn. VII.131.summary
-:folio: 0276
+:folio: hultsch_1877_vol2:0420
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Proposition 131 · Harmonic Conjugates Summary
@@ -11,8 +11,8 @@ Proposition 131 · Harmonic Conjugates Summary
 
 .. rubric:: Exact Symbolic Audit & ``geometor.pappus`` Verification
 
-.. folio:: 0276
-   :page: 1264
+.. folio:: hultsch_1877_vol2:0420
+   :page: 874
 
 .. picture:: /_static/constructions/harmonic_fourth.svg
    :alt: Complete Quadrilateral Straightedge Construction of Fourth Harmonic Conjugate D (Synagoge VII.131)
@@ -23,6 +23,8 @@ Proposition 131 · Harmonic Conjugates Summary
 .. math::
 
    \operatorname{CR}(A, B; C, D) = \frac{(A - C)(B - D)}{(A - D)(B - C)} = -1 \quad \Longrightarrow \quad D = \frac{2AB - C(A + B)}{2C - (A + B)}.
+
+In Pappus's Ch. 199 (:math:`\operatorname{Prop. 131}`), the harmonic hypothesis :math:`A\Delta : \Delta\Gamma = AB : B\Gamma` forces collinearity of the transversal :math:`AH\Theta` across the complete quadrilateral.
 
 2. Straightedge Construction & 81 Harmonic Tetrads
 --------------------------------------------------

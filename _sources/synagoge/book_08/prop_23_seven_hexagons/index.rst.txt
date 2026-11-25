@@ -12,41 +12,53 @@
 Proposition 23: Seven Regular Hexagons Inscribed in a Circle
 ============================================================
 
-.. rubric:: *Synagoge* Book VIII, Chapter 42, Proposition 23 (:cite:`Hultsch III, pp. 1096–1102 <hultsch:1878>`) · Critical English Edition
+.. rubric:: *Synagoge* Book VIII, Chapters 42–44, Proposition 23 (:cite:`Hultsch III, pp. 1096–1102 <hultsch-1878>`) · Critical English Edition
 
 .. folio:: 0107
    :page: 1096
 
-Chief among Book VIII's instrumental constructions—where :term:`geometric analysis <analysis>` replaces blind trial-and-error (*πεῖρα*) with exact algebraic certainty—stands **Proposition 23** (*Hultsch III, pp. 1096–1102*), which crowns both Book VIII's architectural geometry and :doc:`Book V's honeycomb rosette <../../book_05/prop_01_isoperimetric_polygons/index>`:
-
 .. picture:: /_static/constructions/honeycomb_isoperimetry.svg
    :alt: Synagoge Book VIII Proposition 23 — Seven Congruent Regular Hexagons Inscribed in a Given Circle (R = s_6 * sqrt(7))
 
-.. enunciation::
+**42 (Prop. 23).** Useful also are the constructions in what are properly called instrumental problems, and especially whenever, guided toward ease by :term:`analysis <analysis>`, they are able to escape analogous trial and error; as, for example, into a given circle to inscribe seven hexagons, one about the same center as the circle,
+and the remaining six described upon the sides of the middle one and having each its opposite side fitted into the circumference of the circle.
 
-   **Proposition 23 (Hultsch III, pp. 1096–1102)**: Into a given circle :g:`(H0, N) <g1:( H0 N )>` of center :g:`H0 <g1:H0>` and radius :g:`H0N <g1:[ H0 N ]>` $= R$, to **inscribe seven congruent regular hexagons**—one central hexagon :g:`V1..V6 <g1:< V1 V2 V3 V4 V5 V6 >>` concentric with the circle, and six surrounding hexagons :g:`C1 <g1:< C1 >>`, :g:`C2 <g1:< C2 >>`, :g:`C3 <g1:< C3 >>`, :g:`C4 <g1:< C4 >>`, :g:`C5 <g1:< C5 >>`, :g:`C6 <g1:< C6 >>` erected outward upon the six sides of the central hexagon so that each surrounding hexagon's opposite outer side has both endpoints fitted cleanly upon the circumference of circle :g:`(H0, N) <g1:( H0 N )>`.
+Let the given circle be about center Η, and let a side of a hexagon ΘΚ be placed about the same center, so that
 
-.. step::
+.. folio:: 0109
+   :page: 1098
 
-   **Analysis** (*ἀνάλυσις*, *Hultsch III pp. 1096–1098*): Suppose the seven regular hexagons of common side $s_6$ are already inscribed around center :g:`H0 <g1:H0>`, with outer rim vertex :g:`N <g1:N>` of top cell :g:`C1 <g1:< C1 >>` lying on circle :g:`(H0, N) <g1:( H0 N )>`. Because a regular hexagon decomposes into six equilateral triangles of side $s_6$ (:just:`IV.15` cor.), stepping from center :g:`H0 <g1:H0>` to a vertex of central cell :g:`V1..V6 <g1:< V1 V2 V3 V4 V5 V6 >>` advances distance $s_6$, and stepping along the outer radial zigzag across :g:`C1 <g1:< C1 >>` to rim vertex :g:`N <g1:N>` forms an obtuse triangle with sides $s_6$ and $2s_6$ enclosing an angle of $120^\circ$!
+the hexagon described upon ΘΚ has its side ΜΝ fitted into the circumference of the circle, and let ΗΚ be joined; it is therefore in a straight line with side ΚΛ of the hexagon, because angle ΗΚΘ is two-thirds of a right angle, while angle ΘΚΛ is one right angle and a third.
+Let ΗΝ be joined. Since ΗΚ and ΚΛ are equal, ΗΛ is double ΛΝ. And angle Λ is given, for it is one right angle and a third; therefore triangle ΝΛΗ is given in species; therefore the ratio of ΗΝ to ΝΛ is given. And ΗΝ is given; therefore the side ΝΛ of the hexagon is also given.
 
-.. step::
+**43.** The instrumental construction is as follows: let ΑΓ be set out as a third part of the radius of the circle, and upon it let segment ΑΒΓ of a circle be described admitting an angle of two-thirds of a right angle, and of whatever parts ΑΓ is five, let ΓΕ be cut off as four such parts,
+and let tangent ΒΕ be drawn; I say that ΑΒ, being joined, is equal to the side ΘΚ of the hexagon.
 
-   Apply :just:`II.12` (Euclid's obtuse-triangle square law, where the projection beyond the $120^\circ$ vertex equals $\frac{1}{2} s_6$): the square on radius :g:`H0N <g1:[ H0 N ]>` exceeds the sum of the squares on $s_6$ and $2s_6$ by twice the rectangle $2s_6 \cdot \frac{1}{2}s_6$:
+Let ΒΓ be produced, and let ΒΔ be cut off equal to ΑΒ; therefore ΑΒΔ is equilateral. And let ΑΖ be equal to the radius of the circle.
+Since ΑΕ has to ΕΓ the ratio which nine has to four, the square on ΑΒ will also have to the square on ΒΓ the same ratio; therefore ΑΒ, that is ΒΔ, is one and a half times ΒΓ; therefore ΒΓ is double ΓΔ. But ΖΓ is also double ΓΑ;
+therefore ΒΖ, being joined, is also double ΑΔ, that is ΑΒ. Now ΗΛ was also double ΛΝ, and they contain equal angles; therefore triangle ΑΒΖ is similar to triangle ΝΛΗ. And ΑΖ is equal to ΝΗ; therefore ΑΒ is also equal to ΛΝ, or to ΘΚ.
 
-   .. math::
+*The same otherwise more clearly.*
 
-      R^2 = |H_0 N|^2 = s_6^2 + (2s_6)^2 + 2(2s_6)\!\left(\frac{1}{2}s_6\right) = s_6^2 + 4s_6^2 + 2s_6^2 = 7\,s_6^2.
+**44 (Prop. 24).** Let a straight line equal to the radius of the given circle be
 
-   Equivalently, in Cartesian coordinates centered at :g:`H0 <g1:H0>` (as constructed in :func:`~geometor.pappus.construct_honeycomb_isoperimetry`), rim vertex :g:`N <g1:N>` has horizontal displacement $\frac{1}{2}s_6$ and vertical displacement $\frac{3\sqrt{3}}{2}s_6$, giving quadrance $Q(H_0, N) = \frac{1}{4}s_6^2 + \frac{27}{4}s_6^2 = \frac{28}{4}s_6^2 = 7\,s_6^2$. Therefore **$R^2 : s_6^2 = 7 : 1$**, so the side $s_6 = \frac{R}{\sqrt{7}}$ is **given in magnitude** from the given radius $R$!
+.. folio:: 0113
+   :page: 1100
 
-.. step::
+ΑΖ, and let its third part be cut off, and let it be ΑΓ, upon which let segment ΑΒΓ of a circle be described admitting an angle of two-thirds of a right angle,
+and of whatever parts ΑΓ is five, let ΓΕ be cut off as four such parts, and let ΕΒ be drawn tangent to the segment, and let both ΑΒ and ΖΒ be joined, and further let ΒΓ, being joined, be produced to Δ, and let ΒΔ be placed equal to ΑΒ, and let ΑΔ be joined.
+Since, therefore, ΕΓΑ and ΕΒ have been drawn to a circle, and the one cuts the circle while the other touches it, the rectangle contained by ΑΕ, ΕΓ is equal to the square on ΕΒ. Therefore, as ΑΕ is to ΕΒ, so is ΒΕ to ΓΕ. Therefore triangle ΓΒΕ is equiangular with triangle ΑΒΕ.
+Therefore, as ΕΑ is to ΑΒ, so is ΕΒ to ΒΓ; and therefore, as the square on ΑΕ is to the square on ΕΒ, so is the square on ΑΒ to the square on ΒΓ. But as the square on ΑΕ is to the square on ΕΒ, so is ΑΕ to ΕΓ by Proposition 20 of Book VI.
+And therefore, as ΑΕ is to ΕΓ, so is the square on ΑΒ, that is the square on ΒΔ, to the square on ΒΓ; therefore the square on ΒΔ has to the square on ΒΓ the ratio which nine has to four; therefore ΒΔ is one and a half times ΒΓ; therefore ΒΓ is double ΓΔ.
+Now ΖΓ is also double ΓΑ; therefore, as ΖΓ is to ΓΑ, so is ΒΓ to ΓΔ. And the angles at Γ are equal; therefore angle Δ is also equal to angle ΖΒΓ, and angle Ζ to angle ΓΑΔ; therefore, as ΖΒ is to ΒΓ, so is ΑΔ to ΔΓ. Alternately, as ΖΒ is to ΑΔ, so is ΒΓ to ΓΔ.
+Now ΒΓ is double ΓΔ; therefore ΖΒ is also double ΑΔ, that is ΑΒ. And Δ is two-thirds of a right angle; therefore angle ΖΒΓ is also two-thirds of a right angle. And the whole angle ΑΒΖ is
 
-   **Synthesis** (*σύνθεσις*, *Hultsch III pp. 1098–1102*): Given circle :g:`(H0, N) <g1:( H0 N )>` of radius $R$ (in our canonical $P = 12$ model, $R = 2\sqrt{7}$), construct $s_6$ such that $7\,s_6^2 = R^2$ ($s_6 = 2$). With center :g:`H0 <g1:H0>` and radius $s_6$, inscribe central regular hexagon :g:`V1..V6 <g1:< V1 V2 V3 V4 V5 V6 >>` (:just:`IV.15`), and upon its six sides erect the six congruent regular hexagons :g:`C1 <g1:< C1 >>`–:g:`C6 <g1:< C6 >>`.
+.. folio:: 0115
+   :page: 1102
 
-.. step::
-
-   By symmetry and :just:`II.12`, all twelve outer rim vertices (two on the outermost side of each of :g:`C1 <g1:< C1 >>`–:g:`C6 <g1:< C6 >>`, exemplified by :g:`N <g1:N>`) have exact quadrance $7\,s_6^2 = R^2$ from :g:`H0 <g1:H0>`, so every outer edge is inscribed cleanly upon circle :g:`(H0, N) <g1:( H0 N )>` without a single trial adjustment.
+one right angle and a third.
+If, then, we have a circle whose center is Η, having its radius equal to straight line ΑΖ, and we draw from its center the straight line ΗΞ, and place straight line ΗΛ equal to ΖΒ, and upon straight line ΗΛ at point Λ construct angle ΗΛΝ equal to angle ΖΒΑ,
+and join ΗΝ, triangle ΗΛΝ becomes equiangular with triangle ΑΖΒ. And ΑΖ is equal to ΗΝ; therefore ΝΛ is also equal to ΑΒ. And it is manifest that from a straight line equal to ΑΒ arises the inscription of the seven hexagons into the circle.
 
 Archival Plate (*Hultsch Vol. III, p. 1097 / folio 0108*)
 ---------------------------------------------------------

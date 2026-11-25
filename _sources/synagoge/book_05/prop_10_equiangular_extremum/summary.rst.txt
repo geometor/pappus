@@ -1,17 +1,17 @@
 :order: 7
 :layout: book
 :type: book
-:title: Proposition 10 · Equiangularity Closure Summary
+:title: Propositions 8–10 · Equiangularity Closure Summary
 :canonical_id: Syn. V.10.summary
-:folio: 0250
+:folio: hultsch_1876_vol1:0361
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
-Proposition 10 · Equiangularity Closure Summary
-===============================================
+Propositions 8–10 · Equiangularity Closure Summary
+==================================================
 
 .. rubric:: Complete Planar Isoperimetric Hierarchy
 
-.. folio:: 0250
-   :page: 1238
+.. folio:: hultsch_1876_vol1:0361
+   :page: 328
 
-* By Prop. 6, any maximal $n$-gon must be equilateral; by Prop. 10, any maximal equilateral $n$-gon must be equiangular (demonstrated explicitly on the pentagon comparing regular and distorted configurations in plate ``0250.g1``).
+* By Ch. 18 (Prop. 9), any maximal :math:`n`-gon must be equilateral; by Ch. 15 (Prop. 8) and Ch. 19 (Prop. 10), any maximal equilateral :math:`n`-gon must be equiangular (illustrated on pentagon :math:`\alpha\beta\gamma\delta\varepsilon` in plate ``0250.g1``), whence the circle strictly exceeds all :term:`isoperimetric <isoperimetros>` plane figures.

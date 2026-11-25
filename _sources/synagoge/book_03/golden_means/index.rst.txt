@@ -3,21 +3,21 @@
 :type: book
 :title: Golden-Section Specialization in Q(phi)
 :canonical_id: Syn. III.phi
-:folio: 0233
+:folio: hultsch_1876_vol1:0115
 :excerpt: Algebraic closure and geometric properties of Pappus's semicircle means when diameter segments stand in the ratio of the square of the golden ratio (a = 1, b = phi^2).
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 .. _sec-b3-en-golden-semicircle:
 
-Golden-Section Specialization in $\mathbb{Q}(\phi)$
-===================================================
+Golden-Section Specialization in :math:`\mathbb{Q}(\phi)`
+=========================================================
 
 .. rubric:: Modern Geometric Synthesis · Algebraic Invariants in the Golden Field
 
-.. folio:: 0233
-   :page: 1221
+.. folio:: hultsch_1876_vol1:0115
+   :page: 82
 
-When the diameter segments stand in the square of the golden ratio, $a = 1$ and $b = \phi^2 = \phi + 1$ (where $\phi = \frac{1 + \sqrt{5}}{2}$), the total diameter has length $1 + \phi^2 = \phi + 2 = \sqrt{5}\,\phi$, and Pappus's semicircle exhibits algebraic closure over $\mathbb{Q}(\phi)$:
+When the diameter segments stand in the square of the golden ratio, :math:`a = 1` and :math:`b = \phi^2 = \phi + 1` (where :math:`\phi = \frac{1 + \sqrt{5}}{2}`), the total diameter has length :math:`1 + \phi^2 = \phi + 2 = \sqrt{5}\,\phi`, and Pappus's semicircle exhibits algebraic closure over :math:`\mathbb{Q}(\phi)`:
 
 .. picture:: /_static/constructions/synagoge_three_means_golden.svg
    :alt: Synagoge Book III Semicircle Means over Q(phi) with a = 1 and b = phi^2
@@ -46,4 +46,4 @@ confirming the fundamental identity:
 
    A \cdot H = \left(\frac{\phi + 2}{2}\right)\left(\frac{2\phi^2}{\phi + 2}\right) = \phi^2 = G^2
 
-and $(A, C; D, T) = -1$ at :g:`T <g2:T>` with zero floating-point approximation in :func:`geometor.pappus.construct_three_means`.
+and :math:`(A, C; D, T) = -1` at :g:`T <g2:T>` in exact algebraic proportion over :math:`\mathbb{Q}(\phi)`.

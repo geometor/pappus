@@ -50,15 +50,15 @@ Table of Contents
      - Hultsch Locus
      - Parallel Tracks
    * - **Unit I · Book III**
-     - Address to :person:`Pandrosion <pandrosion>`, Hierarchy of Plane / Solid / Linear Problems, Delian Two Mean Proportionals & **Arithmetic, Geometric, and Harmonic Means in a Single Semicircle** ($A \cdot H = G^2$)
+     - Address to :person:`Pandrosion <pandrosion>`, Hierarchy of Plane / Solid / Linear Problems, Delian Two Mean Proportionals & **Arithmetic, Geometric, and Harmonic Means in a Single Semicircle** (:math:`A \cdot H = G^2`)
      - Vol. I, pp. 30–84 (*Props. 1–5, 28–30*)
      - :doc:`Book III <book_03/index>` · :doc:`Summary <book_03/summary>` · :doc:`Notes <book_03/notes>`
    * - **Unit II · Book IV**
-     - **Pappus's Parallelogram Generalization of the Pythagorean Theorem** ($|\mathcal{P}_3| = |\mathcal{P}_1| + |\mathcal{P}_2|$) & **The Ancient Proposition on the Arbelos Tangent Circle Chain** ($y_n = n\,d_n$)
+     - **Pappus's Parallelogram Generalization of the Pythagorean Theorem** (:math:`|\mathcal{P}_3| = |\mathcal{P}_1| + |\mathcal{P}_2|`) & **The Ancient Proposition on the Arbelos Tangent Circle Chain** (:math:`y_n = n\,d_n`)
      - Vol. I, pp. 176–179, 208–232 (*Props. 1, 14–18*)
      - :doc:`Book IV <book_04/index>` · :doc:`Summary <book_04/summary>` · :doc:`Notes <book_04/notes>`
    * - **Unit III · Book V**
-     - **On the Geometric Forethought of Bees** (*Περὶ τῆς τῶν μελισσῶν σοφίας*), Planar Tessellations ($n \in \{3,4,6\}$) & **Honeycomb Isoperimetric Theorem** ($A_6 : A_4 : A_3 = 3\sqrt{3} : 4 : 3$)
+     - **On the Geometric Forethought of Bees** (*Περὶ τῆς τῶν μελισσῶν σοφίας*), Planar Tessellations (:math:`n \in \{3,4,6\}`) & **Honeycomb Isoperimetric Theorem** (:math:`A_6 : A_4 : A_3 = 3\sqrt{3} : 4 : 3`)
      - Vol. I, pp. 304–336 (*Preface & Props. 1–10*)
      - :doc:`Book V <book_05/index>` · :doc:`Summary <book_05/summary>` · :doc:`Notes <book_05/notes>`
    * - **Unit IV · Book VII**
@@ -66,7 +66,7 @@ Table of Contents
      - Vol. II, pp. 634–688, 868–894
      - :doc:`Book VII <book_07/index>` · :doc:`Summary <book_07/summary>` · :doc:`Notes <book_07/notes>`
    * - **Unit V · Book VIII**
-     - **Architectonic Mechanics**, Centers of Gravity, the Inclined Plane (*VIII.9*), :person:`Archimedes's <archimedes>` Lever Saying & :person:`Hero's <heron>` :term:`Baroulkos <baroulkos>`, Single-Compass Constructions & **Seven Hexagons in a Circle** ($R = s_6\sqrt{7}$, *VIII.23*)
+     - **Architectonic Mechanics**, Centers of Gravity, the Inclined Plane (*VIII.9*), :person:`Archimedes's <archimedes>` Lever Saying & :person:`Hero's <heron>` :term:`Baroulkos <baroulkos>`, Single-Compass Constructions & **Seven Hexagons in a Circle** (:math:`R = s_6\sqrt{7}`, *VIII.23*)
      - Vol. III, pp. 1022–1102 (*Props. 1–19, 23*)
      - :doc:`Book VIII <book_08/index>` · :doc:`Summary <book_08/summary>` · :doc:`Notes <book_08/notes>`
 

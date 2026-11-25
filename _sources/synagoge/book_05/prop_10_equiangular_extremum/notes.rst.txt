@@ -1,17 +1,17 @@
 :order: 7
 :layout: book
 :type: book
-:title: Proposition 10 · Extremal Synthesis Notes
+:title: Propositions 8–10 · Extremal Synthesis Notes
 :canonical_id: Syn. V.10.notes
-:folio: 0250
+:folio: hultsch_1876_vol1:0361
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
-Proposition 10 · Extremal Synthesis Notes
-=========================================
+Propositions 8–10 · Extremal Synthesis Notes
+============================================
 
-.. rubric:: Historical Transition to Spatial Isoperimetry (*Props. 11–43*)
+.. rubric:: Historical Transition to Circular Segments (*Props. 11–18*) & Solids
 
-.. folio:: 0250
-   :page: 1238
+.. folio:: hultsch_1876_vol1:0361
+   :page: 328
 
-Having closed the planar hierarchy in Proposition 10, Pappus proceeds in Propositions 11–43 (*Hultsch I, pp. 336–473*) to prove that the sphere strictly exceeds the five Platonic solids and the thirteen semi-regular Archimedean solids of equal surface area.
+Having closed the planar polygon hierarchy in Chs. 18–19 (:cite:`Hultsch I, pp. 332–334 <hultsch-1876>`), :person:`Pappus <pappus>` notes the bracketed scholium (Ch. 16) and short lacuna (Ch. 17) before turning to circular segments (Ch. 20) and later to solids (pp. 352–473). Plate ``0250.g1`` derives from :cite:`Hultsch III, p. 1238 <hultsch-1878>`.

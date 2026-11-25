@@ -15,4 +15,4 @@ Center of Gravity & Prop. 1 · Summary
    :page: 1030
 
 * **Definition**: Suspension point such that the body remains at rest in every rotational orientation without tilting.
-* **Proposition 1**: Medians concur at centroid $G = \frac{A+B+C}{3}$ dividing each median in ratio $2 : 1$.
+* **Proposition 1**: Medians concur at centroid :math:`G = \frac{A+B+C}{3}` dividing each median in ratio :math:`2 : 1`.

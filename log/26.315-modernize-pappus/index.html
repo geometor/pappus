@@ -136,24 +136,24 @@
         <li><p><strong>Revived &amp; Extended Projective &amp; Conic Discoveries</strong>:</p>
         <ul>
         <li><p>Universal homogeneous polynomial proofs for both Pappus’s two-line Hexagon Theorem
-        (<code class="docutils literal notranslate"><span class="pre">verify_pappus_symbolic()</span> <span class="pre">==</span> <span class="pre">0</span></code> over $\mathbb{Z}[a_0, a_1, a_2, b_0, b_1, b_2, m, c]$) and
+        (<code class="docutils literal notranslate"><span class="pre">verify_pappus_symbolic()</span> <span class="pre">==</span> <span class="pre">0</span></code> over <span class="math notranslate nohighlight">\(\mathbb{Z}[a_0, a_1, a_2, b_0, b_1, b_2, m, c]\)</span>) and
         Blaise Pascal’s 1640 smooth-conic <em>Hexagrammum Mysticum</em> (<code class="docutils literal notranslate"><span class="pre">verify_pascal_symbolic()</span> <span class="pre">==</span> <span class="pre">0</span></code>
-        over $\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]$).</p></li>
-        <li><p>Unified smooth conics and degenerate Pappus line-pairs via exact $6 \times 6$ Veronese rank
+        over <span class="math notranslate nohighlight">\(\mathbb{Z}[t_0, t_1, t_2, t_3, t_4, t_5]\)</span>).</p></li>
+        <li><p>Unified smooth conics and degenerate Pappus line-pairs via exact <span class="math notranslate nohighlight">\(6 \times 6\)</span> Veronese rank
         (<code class="docutils literal notranslate"><span class="pre">are_coconic</span></code>) and added Michel Chasles’s observer-independent conic cross-ratio
         (<code class="docutils literal notranslate"><span class="pre">conic_cross_ratio</span></code>).</p></li>
         <li><p>Enumerated and verified in exact homogeneous coordinates the complete <strong>60-line *Hexagrammum
         Mysticum* web</strong> on the Pythagorean unit circle: <strong>15 chords, 45 diagonal points, 60 Pascal
         lines, 20 Jakob Steiner points, 60 Thomas Kirkman points, and 15 Julius Plücker lines</strong>,
-        showing directly how Pappus’s 2 Star points $(S_+, S_-)$ are the degenerate limit of one
-        bi-triangle Steiner family $(G_+, G_-)$.</p></li>
+        showing directly how Pappus’s 2 Star points <span class="math notranslate nohighlight">\((S_+, S_-)\)</span> are the degenerate limit of one
+        bi-triangle Steiner family <span class="math notranslate nohighlight">\((G_+, G_-)\)</span>.</p></li>
         <li><p>Revived the homologous <code class="docutils literal notranslate"><span class="pre">square</span></code> / <code class="docutils literal notranslate"><span class="pre">circle</span></code> / <code class="docutils literal notranslate"><span class="pre">diamond</span></code> type triangles from <code class="docutils literal notranslate"><span class="pre">pappus-3.py</span></code>
-        and the 2023 parallel configuration from <code class="docutils literal notranslate"><span class="pre">pappus.py</span></code> ($S_+ = (90/73, 38/73)$,
-        $S_- = (10, 38/3)$), plus <strong>19 base / 81 full</strong> exact collinear harmonic tetrads in
+        and the 2023 parallel configuration from <code class="docutils literal notranslate"><span class="pre">pappus.py</span></code> (<span class="math notranslate nohighlight">\(S_+ = (90/73, 38/73)\)</span>,
+        <span class="math notranslate nohighlight">\(S_- = (10, 38/3)\)</span>), plus <strong>19 base / 81 full</strong> exact collinear harmonic tetrads in
         <code class="docutils literal notranslate"><span class="pre">preset=&quot;harmonic&quot;</span></code>.</p></li>
-        <li><p>Uncovered with <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code> two emergent Golden Ratio sections over $\mathbb{Q}(\phi)$:
+        <li><p>Uncovered with <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code> two emergent Golden Ratio sections over <span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span>:
         <code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">A1</span> <span class="pre">M12</span> <span class="pre">B2</span> <span class="pre">/</span></code> on Pappus’s golden cross-join and <code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">M25</span> <span class="pre">P4</span> <span class="pre">P0</span> <span class="pre">/</span></code> at
-        $M_{25} = (-\phi^{-1}, -\phi)$ on Pascal’s golden conic!</p></li>
+        <span class="math notranslate nohighlight">\(M_{25} = (-\phi^{-1}, -\phi)\)</span> on Pascal’s golden conic!</p></li>
         </ul>
         </li>
         <li><p><strong>Interactive SVG Gallery, Test Suite &amp; Theorem Dossiers</strong>: Generated 18 dark/light-aware
@@ -249,6 +249,9 @@
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../../_static/js/collection_directory.js?v=0928c9d3"></script>
   <script src="../../_static/js/geometor_interactive.js?v=219c1955"></script>
+  <script>window.MathJax = {"tex": {"inlineMath": [["\\(", "\\)"], ["$", "$"]], "displayMath": [["\\[", "\\]"], ["$$", "$$"]]}}</script>
+  <script>window.MathJax = {"options": {"ignoreHtmlClass": ".*|etc-lazy-math", "processHtmlClass": "math|arithmatex", "enableComplexity": true, "makeCollapsible": true, "menuOptions": {"settings": {"zoom": "Click", "zscale": "200%", "collapsible": true, "enrich": true, "speech": false, "braille": false, "assistiveMml": false}}}, "output": {"displayOverflow": "linebreak", "linebreaks": {"inline": true}}}</script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
 </body>

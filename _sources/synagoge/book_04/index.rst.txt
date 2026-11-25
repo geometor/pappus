@@ -23,7 +23,7 @@ Book IV · Generalized Area Theorem & The Arbelos Circle Chain
 
 .. note::
 
-   **Edition Track (English)**: Complete critical English edition of Book IV's primary gems: Proposition 1 (the affine parallelogram generalization of the Pythagorean theorem) and Propositions 14–18 (broken into five atomic propositions on the shoemaker's knife circle chain with $y_n = n\,d_n$). Switch tracks above for **Greek (Hultsch 1876)**, **Summary**, or **Notes**.
+   **Edition Track (English)**: Complete critical English edition of Book IV's primary gems: Proposition 1 (the affine parallelogram generalization of the Pythagorean theorem) and Propositions 14–18 (broken into five atomic propositions on the shoemaker's knife circle chain with :math:`y_n = n\,d_n`). Switch tracks above for **Greek (Hultsch 1876)**, **Summary**, or **Notes**.
 
 .. container:: title-page
 

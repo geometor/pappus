@@ -11,11 +11,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="canonical" href="https://geometor.github.io/pappus/synagoge/book_05/summary.html" />
-  <meta name="description" content="At any planar vertex where regular $n$-gons meet, the interior angle $\theta_n = \frac{n-2}{n} \times 180^\circ$ divides $360^\circ$ evenly into an integer $k$:" />
+  <meta name="description" content="At any planar vertex where regular n-gons meet, the interior angle \theta_n = \frac{n-2}{n} \times 180^\circ divides 360^\circ evenly into an integer k:" />
   <meta property="og:site_name" content="GEOMETOR" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Book V · Summary &amp; Exact Symbolic Audit — Book V · On the Geometric Forethought of Bees &amp; Isoperimetry • GEOMETOR" />
-  <meta property="og:description" content="At any planar vertex where regular $n$-gons meet, the interior angle $\theta_n = \frac{n-2}{n} \times 180^\circ$ divides $360^\circ$ evenly into an integer $k$:" />
+  <meta property="og:description" content="At any planar vertex where regular n-gons meet, the interior angle \theta_n = \frac{n-2}{n} \times 180^\circ divides 360^\circ evenly into an integer k:" />
   <meta property="og:url" content="https://geometor.github.io/pappus/synagoge/book_05/summary.html" />
   <meta property="og:image" content="https://geometor.github.io/pappus/_static/social/synagoge.png" />
   <meta property="og:image:type" content="image/png" />
@@ -24,7 +24,7 @@
   <meta property="og:image:alt" content="Pappus of Alexandria — GEOMETOR" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Book V · Summary &amp; Exact Symbolic Audit — Book V · On the Geometric Forethought of Bees &amp; Isoperimetry • GEOMETOR" />
-  <meta name="twitter:description" content="At any planar vertex where regular $n$-gons meet, the interior angle $\theta_n = \frac{n-2}{n} \times 180^\circ$ divides $360^\circ$ evenly into an integer $k$:" />
+  <meta name="twitter:description" content="At any planar vertex where regular n-gons meet, the interior angle \theta_n = \frac{n-2}{n} \times 180^\circ divides 360^\circ evenly into an integer k:" />
   <meta name="twitter:image" content="https://geometor.github.io/pappus/_static/social/synagoge.png" />
   <meta name="twitter:image:alt" content="Pappus of Alexandria — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -137,19 +137,19 @@
         <p class="rubric">Structural Decomposition &amp; Symbolic Verification</p>
         <span class="folio-anchor" id="folio-0250" data-folio="0250" data-page="1238"></span><section class="level-2" id="planar-tessellation-constraints-ch-2-hultsch-i-p-306">
         <h2>1. Planar Tessellation Constraints (<em>Ch. 2, Hultsch I p. 306</em>)<a class="headerlink" href="#planar-tessellation-constraints-ch-2-hultsch-i-p-306" title="Link to this heading">¶</a></h2>
-        <p>At any planar vertex where regular $n$-gons meet, the interior angle $\theta_n = \frac{n-2}{n} \times 180^\circ$ divides $360^\circ$ evenly into an integer $k$:</p>
+        <p>At any planar vertex where regular <span class="math notranslate nohighlight">\(n\)</span>-gons meet, the interior angle <span class="math notranslate nohighlight">\(\theta_n = \frac{n-2}{n} \times 180^\circ\)</span> divides <span class="math notranslate nohighlight">\(360^\circ\)</span> evenly into an integer <span class="math notranslate nohighlight">\(k\)</span>:</p>
         <div class="math notranslate nohighlight">
         \[k \cdot \left(\frac{n-2}{n}\right) \times 180^\circ = 360^\circ \iff (n-2)(k-2) = 4.\]</div>
-        <p>The only positive integer solutions are $(3, 6)$, $(4, 4)$, and $(6, 3)$.</p>
+        <p>The only positive integer solutions are <span class="math notranslate nohighlight">\((3, 6)\)</span>, <span class="math notranslate nohighlight">\((4, 4)\)</span>, and <span class="math notranslate nohighlight">\((6, 3)\)</span>.</p>
         </section>
         <section class="level-2" id="planar-isoperimetric-ordering-props-110-hultsch-i-pp-308336">
         <h2>2. Planar Isoperimetric Ordering (<em>Props. 1–10, Hultsch I pp. 308–336</em>)<a class="headerlink" href="#planar-isoperimetric-ordering-props-110-hultsch-i-pp-308336" title="Link to this heading">¶</a></h2>
-        <p>Evaluated at equal perimeter $P = 12$ in <a class="reference internal" href="../../modules/index.html#geometor.pappus.verify_honeycomb_isoperimetry" title="geometor.pappus.verify_honeycomb_isoperimetry"><code class="xref py py-func docutils literal notranslate"><span class="pre">geometor.pappus.verify_honeycomb_isoperimetry()</span></code></a>:</p>
+        <p>Evaluated at equal perimeter <span class="math notranslate nohighlight">\(P = 12\)</span> in <a class="reference internal" href="../../modules/index.html#geometor.pappus.verify_honeycomb_isoperimetry" title="geometor.pappus.verify_honeycomb_isoperimetry"><code class="xref py py-func docutils literal notranslate"><span class="pre">geometor.pappus.verify_honeycomb_isoperimetry()</span></code></a>:</p>
         <ul class="simple">
-        <li><p><strong>Equilateral triangle</strong> ($s_3 = 4$): Area $A_3 = 4\sqrt{3} \approx 6.9282$.</p></li>
-        <li><p><strong>Square</strong> ($s_4 = 3$): Area $A_4 = 9$.</p></li>
-        <li><p><strong>Regular hexagon</strong> ($s_6 = 2$): Area $A_6 = 6\sqrt{3} \approx 10.3923$.</p></li>
-        <li><p><strong>Exact Ratios</strong>: $\frac{A_6}{A_3} = \frac{3}{2} = 1.5$ and $\frac{A_6}{A_4} = \frac{2\sqrt{3}}{3} \approx 1.1547$.</p></li>
+        <li><p><strong>Equilateral triangle</strong> (<span class="math notranslate nohighlight">\(s_3 = 4\)</span>): Area <span class="math notranslate nohighlight">\(A_3 = 4\sqrt{3} \approx 6.9282\)</span>.</p></li>
+        <li><p><strong>Square</strong> (<span class="math notranslate nohighlight">\(s_4 = 3\)</span>): Area <span class="math notranslate nohighlight">\(A_4 = 9\)</span>.</p></li>
+        <li><p><strong>Regular hexagon</strong> (<span class="math notranslate nohighlight">\(s_6 = 2\)</span>): Area <span class="math notranslate nohighlight">\(A_6 = 6\sqrt{3} \approx 10.3923\)</span>.</p></li>
+        <li><p><strong>Exact Ratios</strong>: <span class="math notranslate nohighlight">\(\frac{A_6}{A_3} = \frac{3}{2} = 1.5\)</span> and <span class="math notranslate nohighlight">\(\frac{A_6}{A_4} = \frac{2\sqrt{3}}{3} \approx 1.1547\)</span>.</p></li>
         </ul>
         </section>
         </section>

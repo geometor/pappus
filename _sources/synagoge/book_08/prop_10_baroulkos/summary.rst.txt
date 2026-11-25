@@ -14,6 +14,6 @@ Baroulkos Gear Train · Mechanical Advantage Summary
 .. folio:: 0069
    :page: 1060
 
-* **Input Power / Output Burden**: $P = 5$ talents lifting $W = 1{,}000$ talents ($200 : 1$).
-* **Spur Gear Train**: Three pairs of wheel/axle drums ($5:1 \times 5:1 \times 4:1 = 100:1$).
-* **Endless Screw Stage**: Single-start worm screw doubles advantage to $200:1$ with non-reversing friction hold.
+* **Input Power / Output Burden**: :math:`P = 5` talents lifting :math:`W = 1{,}000` talents (:math:`200 : 1`).
+* **Spur Gear Train**: Three pairs of wheel/axle drums (:math:`5:1 \times 5:1 \times 4:1 = 100:1`).
+* **Endless Screw Stage**: Single-start worm screw doubles advantage to :math:`200:1` with non-reversing friction hold.

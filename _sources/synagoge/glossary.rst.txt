@@ -63,13 +63,13 @@ Lexicon of all **16** technical Greek and Latin concepts across Books II–VIII 
 .. _term-mesotes:
 
 **mesotes** (*μεσότης*) · Lat. *medietas* — proportional mean (arithmetic, geometric, harmonic)
-  Ordered triple $(a, m, b)$ governed by an invariant difference or ratio law; in Book III Pappus exhibits the three classical means $A = \frac{a+b}{2}$, $G = \sqrt{ab}$, $H = \frac{2ab}{a+b}$ simultaneously within a single semicircle and catalogs all ten ancient medieties.
+  Ordered triple :math:`(a, m, b)` governed by an invariant difference or ratio law; in Book III Pappus exhibits the three classical means :math:`A = \frac{a+b}{2}`, :math:`G = \sqrt{ab}`, :math:`H = \frac{2ab}{a+b}` simultaneously within a single semicircle and catalogs all ten ancient medieties.
   *Hultsch loci*: I pp. 68–105.
 
 .. _term-harmonike-mesotes:
 
 **harmonike mesotes / diairesis** (*ἁρμονικὴ μεσότης*) · Lat. *divisio harmonica* — harmonic mean & harmonic division
-  Four collinear points $(A, C; D, T)$ or segments where $AB : BC = AD : DC$, equivalent to cross-ratio $(A, C; D, T) = -1$; unites Book III's semicircle mean construction with Book VII Prop. 131's complete-quadrilateral harmonic range.
+  Four collinear points :math:`(A, C; D, T)` or segments where :math:`AB : BC = AD : DC`, equivalent to cross-ratio :math:`(A, C; D, T) = -1`; unites Book III's semicircle mean construction with Book VII Prop. 131's complete-quadrilateral harmonic range.
   *Hultsch loci*: I pp. 70–83; II p. 874.
 
 .. _term-neusis:
@@ -81,7 +81,7 @@ Lexicon of all **16** technical Greek and Latin concepts across Books II–VIII 
 .. _term-arbelos:
 
 **arbelos** (*τὸ καλούμενον ἄρβηλον*) · Lat. *arbelus / scalprum sutorium* — arbelos (shoemaker's knife)
-  Curvilinear region bounded by three mutually tangent semicircles on a common diameter; in Book IV Props. 14–18 Pappus proves the "ancient proposition" (*ἀρχαία πρότασις*) that the $n$-th inscribed tangent circle has center altitude $h_n = n \cdot d_n$.
+  Curvilinear region bounded by three mutually tangent semicircles on a common diameter; in Book IV Props. 14–18 Pappus proves the "ancient proposition" (*ἀρχαία πρότασις*) that the :math:`n`-th inscribed tangent circle has center altitude :math:`h_n = n \cdot d_n`.
   *Hultsch loci*: I pp. 208–232.
 
 .. _term-isoperimetros:
@@ -99,7 +99,7 @@ Lexicon of all **16** technical Greek and Latin concepts across Books II–VIII 
 .. _term-baroulkos:
 
 **baroulkos** (*βαρουλκός*) · Lat. *barulcus* — Baroulkos (Hero's geared weight-hauler)
-  Hero of Alexandria's compound reduction gear-train (*τύμπανα ὀδοντωτά*) coupled with an endless screw (*κοχλίας*), presented in *Synagoge* VIII to move a given great weight ($1{,}000$ talents) by a small given force ($5$ talents).
+  Hero of Alexandria's compound reduction gear-train (*τύμπανα ὀδοντωτά*) coupled with an endless screw (*κοχλίας*), presented in *Synagoge* VIII to move a given great weight (:math:`1{,}000` talents) by a small given force (:math:`5` talents).
   *Hultsch loci*: III pp. 1060–1068, 1104–1115.
 
 .. _term-heni-diastemati:

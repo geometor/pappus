@@ -3,7 +3,7 @@
 :type: book
 :title: Arbelos Circle Chain: Propositions 14–18
 :canonical_id: Syn. IV.14-18
-:folio: 0236
+:folio: hultsch_1876_vol1:0241
 :excerpt: Section hub for Pappus's five-proposition treatment of the arbelos tangent circle chain establishing y_n = n * d_n without end.
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
@@ -12,16 +12,17 @@
 Arbelos Circle Chain: Propositions 14–18
 ========================================
 
-.. rubric:: *Synagoge* Book IV, Chs. 19–26 / Props. 14–18 (:cite:`Hultsch I, pp. 208–232 <hultsch:1876>`; App. IV, pp. 1224–1229)
+.. rubric:: *Synagoge* Book IV, Chs. 19–26 / Props. 14–18 (:cite:`Hultsch I, pp. 208–228 <hultsch-1876>`)
 
-.. folio:: 0236
-   :page: 1224
+.. folio:: hultsch_1876_vol1:0241
+   :page: 208
 
-*"There is set forth in the ancient geometrical inquiries a proposition of the following kind, which appears marvelous to many"* (*φέρεταί τις ἐν τοῖς ἀρχαίοις πρότασις τοιαύτη*, *Hultsch I p. 208*): Suppose three semicircles be described tangent to one another upon a single straight diameter—forming the curvilinear region bounded by the three arcs which the ancients call the :term:`arbelos <arbelos>` (*ἄρβηλος*, "shoemaker's knife")—and into the space between the three circumferences there be inscribed an endless chain of circles tangent both to the bounding semicircles and successively to one another. Then **the perpendicular dropped from the center of the $n$-th circle to the base diameter equals $n$ times its own diameter**:
+**19. (14)** There is handed down among certain writers an ancient proposition of the following kind: let three semicircles tangent to one another be supposed, :g:`ABG <g3:( O0 A )>`, :g:`ADE <g3:( O1 A )>`, and :g:`EZG <g3:( O2 D )>`,
+and into the space between their circumferences, which they call the :term:`arbelos <arbelos>`, let circles be inscribed tangent both to the semicircles and to one another, as many as one may please; the perpendicular dropped from the center of the :math:`n`-th circle equals :math:`n` times its own diameter:
 
 .. math::
 
-   y_n = n\,d_n = 2n\,r_n \qquad (n = 1, 2, 3, \dots).
+   y_n = n\,d_n = 2n\,r_n \qquad (n \ge 1).
 
 .. picture:: /_static/constructions/pappus_arbelos_chain.svg
    :alt: Synagoge Book IV Propositions 14–18 — Pappus's Arbelos Tangent Circle Chain (y_n = n d_n)

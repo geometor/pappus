@@ -3,7 +3,7 @@
 :type: book
 :title: Proposition 4 · Triangle Symmetrization Summary
 :canonical_id: Syn. V.4.summary
-:folio: 0249
+:folio: hultsch_1876_vol1:0351
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Proposition 4 · Triangle Symmetrization Summary
@@ -11,7 +11,7 @@ Proposition 4 · Triangle Symmetrization Summary
 
 .. rubric:: Fixed-Base Maximum Area Criterion
 
-.. folio:: 0249
-   :page: 1237
+.. folio:: hultsch_1876_vol1:0351
+   :page: 318
 
-* Fixed base $|AC| = c$, fixed side sum $|AB| + |BC| = s$: the vertex locus is an ellipse with foci $A, C$, whose maximum $y$-altitude occurs uniquely on the perpendicular bisector ($|AZ| = |ZC| = s/2$).
+* Fixed base :math:`|B\Gamma| = c`, fixed side sum :math:`|BA| + |A\Gamma| = s`: the vertex locus is an ellipse with foci :math:`B, \Gamma`, whose maximum altitude occurs uniquely on the perpendicular bisector (:math:`|BA| = |A\Gamma| = s/2`), with area monotonic in symmetry.

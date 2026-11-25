@@ -14,4 +14,4 @@ Proposition 23 · Analysis vs. Empirical Trial Notes
 .. folio:: 0107
    :page: 1096
 
-Pappus explicitly introduces Proposition 23 to illustrate how theoretical analysis frees the artisan from empirical trial-and-error (*ἀνάλογον πεῖραν διαφεύγειν*): instead of guessing the inscribed hexagon side repeatedly, exact geometric analysis delivers $s_6 = R / \sqrt{7}$ directly (*Hultsch III, p. 1097*, archival diagram ``0108.g1``).
+Pappus explicitly introduces Proposition 23 to illustrate how theoretical analysis frees the artisan from empirical trial-and-error (*ἀνάλογον πεῖραν διαφεύγειν*): instead of guessing the inscribed hexagon side repeatedly, exact geometric analysis delivers :math:`s_6 = R / \sqrt{7}` directly (*Hultsch III, p. 1097*, archival diagram ``0108.g1``).

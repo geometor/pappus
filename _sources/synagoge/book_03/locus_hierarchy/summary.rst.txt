@@ -3,7 +3,7 @@
 :type: book
 :title: Threefold Hierarchy of Loci · Summary Table
 :canonical_id: Syn. III.20-21.summary
-:folio: 0228
+:folio: hultsch_1876_vol1:0087
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Threefold Hierarchy of Loci · Summary Table
@@ -11,8 +11,8 @@ Threefold Hierarchy of Loci · Summary Table
 
 .. rubric:: Plane, Solid & Linear Problem Taxonomy
 
-.. folio:: 0228
-   :page: 1216
+.. folio:: hultsch_1876_vol1:0087
+   :page: 54
 
 .. list-table::
    :header-rows: 1
@@ -26,7 +26,7 @@ Threefold Hierarchy of Loci · Summary Table
      - *Elements* Books I–VI; constructions generated within a single plane.
    * - **Solid** (*στερεά*)
      - Conic sections (parabola, hyperbola, ellipse)
-     - Duplication of the cube ($a : x = x : y = y : b$), angle trisection; requires conical surfaces.
+     - Duplication of the cube (:math:`a : x = x : y = y : b`), angle trisection; requires conical surfaces.
    * - **Linear** (*γραμμικά*)
      - Higher kinematic & locus curves
      - Archimedean spiral, quadratrix of Dinostratus, conchoid of Nicomedes, cissoid of Diocles.

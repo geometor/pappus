@@ -3,7 +3,7 @@
 :type: book
 :title: Address to Pandrosion · Methodological Summary
 :canonical_id: Syn. III.1.summary
-:folio: 0224
+:folio: hultsch_1876_vol1:0063
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Address to Pandrosion · Methodological Summary
@@ -11,8 +11,8 @@ Address to Pandrosion · Methodological Summary
 
 .. rubric:: Theorem vs. Problem & the Role of Diorismos
 
-.. folio:: 0224
-   :page: 1212
+.. folio:: hultsch_1876_vol1:0063
+   :page: 30
 
 * **Theorem** (*θεώρημα*): Demonstrates a necessary consequence from given hypotheses.
 * **Problem** (*πρόβλημα*): Demands the construction of an entity not yet brought into view, requiring a :term:`diorismos <diorismos>` specifying existence conditions, limits, and multiplicity.

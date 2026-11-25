@@ -27,6 +27,6 @@ Pappus records the complete curriculum of higher Hellenistic analysis across 33 
 3. Projective Lemmas to Euclid's Porisms
 ----------------------------------------
 
-* **Cross-Ratio Invariance (Prop. 129)**: $\operatorname{CR}(A, B; C, D) = \operatorname{CR}(A', B'; C', D')$ across central projections from a pencil of four lines.
-* **Harmonic Invariance (Prop. 131)**: The diagonals and opposite sides of a complete quadrilateral cut every transversal in harmonic division ($\operatorname{CR} = -1$).
+* **Cross-Ratio Invariance (Prop. 129)**: :math:`\operatorname{CR}(A, B; C, D) = \operatorname{CR}(A', B'; C', D')` across central projections from a pencil of four lines.
+* **Harmonic Invariance (Prop. 131)**: The diagonals and opposite sides of a complete quadrilateral cut every transversal in harmonic division (:math:`\operatorname{CR} = -1`).
 * **Hexagon Collinearity (Props. 138 & 139)**: If the vertices of a hexagon alternate on two lines, the three pairs of opposite sides meet at three collinear points (the Pappus line).

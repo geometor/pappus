@@ -3,7 +3,7 @@
 :type: book
 :title: Pappus–Guldinus Centroid Theorem · Summary
 :canonical_id: Syn. VII.40-42.summary
-:folio: 0271
+:folio: hultsch_1877_vol2:0225
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Pappus–Guldinus Centroid Theorem · Summary
@@ -11,8 +11,15 @@ Pappus–Guldinus Centroid Theorem · Summary
 
 .. rubric:: Revolution Volume & Surface Formulas
 
-.. folio:: 0271
-   :page: 1259
+.. folio:: hultsch_1877_vol2:0225
+   :page: 680
 
-* **Complete revolution** ($2\pi$): $V = 2\pi \bar{r} A$, $S = 2\pi \bar{r} L$.
-* **Partial revolution** ($\theta$): proportional to the circular arc length $\theta \bar{r}$ traced by the :term:`center of gravity <kentron-barous>`.
+* **Complete revolution** (:math:`2\pi`): :math:`V = 2\pi \bar{r} A`, :math:`S = 2\pi \bar{r} L`, expressed in Pappus's Greek as the ratio compounded of the revolving figures and the straight lines drawn similarly to the axes from their :term:`centers of gravity <kentron-barous>`.
+* **Partial revolution** (:math:`\theta`): proportional to the circular arc length :math:`\theta \bar{r}` traced by the center of gravity.
+* **Compound Ratio Identity**:
+
+.. math::
+
+   \frac{V_1}{V_2} = \left(\frac{A_1}{A_2}\right)\left(\frac{\bar{r}_1}{\bar{r}_2}\right)
+   \quad \Longleftrightarrow \quad
+   V = A \cdot (2\pi \bar{r}), \qquad S = L \cdot (2\pi \bar{r}).

@@ -26,7 +26,7 @@ Primary Editions & Public-Domain Commentaries on Pappus
 
 **Pappus of Alexandria (ed. Friedrich Hultsch)** — *Pappi Alexandrini Collectionis quae supersunt, Vol. II (Books VI–VII)* (Berlin: Weidmann, 1877, pp. 474–1016) [1877]
   Key: ``hultsch:1877``
-  Standard critical Greek edition of Book VI (*Little Astronomy*) and Book VII (*Treasury of Analysis*: Preface to Hermodorus, 3/4/$n$-Line Locus, Pappus–Guldinus Centroid Theorem, Cross-Ratio `VII.129`, Harmonics `VII.131`, Hexagon Theorems `VII.138–139`, Focus–Directrix `VII.238`).
+  Standard critical Greek edition of Book VI (*Little Astronomy*) and Book VII (*Treasury of Analysis*: Preface to Hermodorus, 3/4/:math:`n`-Line Locus, Pappus–Guldinus Centroid Theorem, Cross-Ratio `VII.129`, Harmonics `VII.131`, Hexagon Theorems `VII.138–139`, Focus–Directrix `VII.238`).
   Provenance: `https://archive.org/details/pappialexandrini02pappuoft <https://archive.org/details/pappialexandrini02pappuoft>`__
 
 .. _cite-hultsch-1878:
@@ -137,7 +137,7 @@ Modern Analytic & Projective Descendants
 
 **René Descartes** — *La Géométrie* (Leiden, 1637, Book I: The Pappus Locus Problem) [1637]
   Key: ``descartes:geometrie``
-  Inaugurated analytic coordinate geometry specifically to solve the generalized $n$-line Pappus locus posed in *Synagoge* VII (`Hultsch II, pp. 676–680`) via Commandino's 1588 Latin edition.
+  Inaugurated analytic coordinate geometry specifically to solve the generalized :math:`n`-line Pappus locus posed in *Synagoge* VII (`Hultsch II, pp. 676–680`) via Commandino's 1588 Latin edition.
 
 .. _cite-pascal-essai-coniques:
 
@@ -149,7 +149,7 @@ Modern Analytic & Projective Descendants
 
 **Jakob Steiner** — *Systematische Entwickelung der Abhängigkeit geometrischer Gestalten von einander* (Berlin: Fincke, 1832) [1832]
   Key: ``steiner:1832``
-  Established cross-ratio projectivity and proved that the six $S_3$ Pappus lines concur in two triples at the Steiner Star points $(S_+, S_-)$.
+  Established cross-ratio projectivity and proved that the six :math:`S_3` Pappus lines concur in two triples at the Steiner Star points :math:`(S_+, S_-)`.
 
 .. _cite-hilbert-1899:
 

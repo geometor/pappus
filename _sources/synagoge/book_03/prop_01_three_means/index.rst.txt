@@ -2,9 +2,9 @@
 :layout: book
 :type: book
 :title: Three Classical Means in a Single Semicircle
-:canonical_id: Syn. III.28-30
-:folio: 0232
-:excerpt: Pappus's unified semicircle construction exhibiting the arithmetic mean A, geometric mean G, and harmonic mean H simultaneously, proving A * H = G^2 and A >= G >= H.
+:canonical_id: Syn. III.31-32,42-44
+:folio: hultsch_1876_vol1:0105
+:excerpt: Pappus's preliminary geometric-mean lemmas, minimal integer ratios, and unified semicircle construction exhibiting the arithmetic, geometric, and harmonic means together.
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 .. _sec-b3-en-semicircle-means:
@@ -12,46 +12,52 @@
 Three Classical Means in a Single Semicircle
 ============================================
 
-.. rubric:: *Synagoge* Book III, Chs. 40–43 / Props. 28–30 (:cite:`Hultsch I, pp. 72, 80–84 <hultsch:1876>`; App. IV, p. 1220) · Original English Translation
+.. rubric:: *Synagoge* Book III, Chapters 31–32, 42–44 (:cite:`Hultsch I, pp. 72, 80–84 <hultsch-1876>`) · Original English Translation
 
-.. folio:: 0232
-   :page: 1220
-
-How one may exhibit **all three classical means together inside a single semicircle**—establishing at one glance both the fundamental identity $A \cdot H = G^2$ and the strict ordering $A \ge G \ge H$ (with equality if and only if $a = b$)—is demonstrated by Pappus as follows (*Chs. 40–43, Hultsch I pp. 72, 80–84*).
+.. folio:: hultsch_1876_vol1:0105
+   :page: 72
 
 .. picture:: /_static/constructions/synagoge_three_means.svg
-   :alt: Synagoge Book III — Arithmetic, Geometric, and Harmonic Means in One Semicircle (a = 9, b = 16)
-   :caption: Exact symbolic semicircle model (geometor.pappus): A = OB = 25/2, G = DB = 12, H = BF = 288/25, CR(A, C; D, T) = -1.
+   :alt: Synagoge Book III — Arithmetic, Geometric, and Harmonic Means in One Semicircle
 
-.. enunciation::
+**31.** First let it be required, given :math:`AB`, :math:`B\Gamma`, to find a mean according to geometric proportion. Let :math:`\Gamma\Delta` be drawn at right angles, and let :math:`AB` be bisected at :math:`E`, and with center :math:`E` let an arc described through :math:`B` cut the perpendicular at :math:`\Delta`, and equal to the join :math:`B\Delta` let :math:`BZ` be cut off,
+and :math:`BZ` becomes the sought mean. For :math:`\Delta A` joined contains a right angle with :math:`B\Delta`, because each of :math:`BE`, :math:`EA` equals the join :math:`\Delta E`. And the angle at :math:`\Gamma` is also right.
+Therefore triangle :math:`AB\Delta` is equiangular with :math:`B\Gamma\Delta`, and therefore the sides about their common angle at :math:`B` are proportional: thus :math:`AB : \Delta B = B\Delta : B\Gamma`, and :math:`B\Delta`, equal to :math:`BZ`, is a mean between :math:`AB`, :math:`B\Gamma`.
 
-   Let two unequal straight segments :g:`AD <g1:[ A C ]>` $= a$ and :g:`DC <g1:[ A C ]>` $= b$ be placed end-to-end along diameter :g:`AC <g1:[ A C ]>` of semicircle :g:`ABC <g1:( O A )>` with center :g:`O <g1:O>`. Erect :g:`DB <g1:[ D B ]>` perpendicular to :g:`AC <g1:[ A C ]>` meeting the circumference at :g:`B <g1:B>`, join radius :g:`OB <g1:[ O B ]>`, and drop :g:`DF <g1:[ D F ]>` perpendicular to :g:`OB <g1:[ O B ]>` at :g:`F <g1:F>`. Then radius :g:`OB <g1:[ O B ]>` is the **arithmetic mean** $A$, ordinate :g:`DB <g1:[ D B ]>` is the **geometric mean** $G$, and segment :g:`BF <g1:[ B F ]>` cut off from the vertex :g:`B <g1:B>` is the **harmonic mean** $H$ of $a$ and $b$; moreover, the tangent :g:`BT <g1:[ B T ]>` at :g:`B <g1:B>` meets diameter :g:`AC <g1:[ A C ]>` produced at the external :term:`harmonic conjugate <harmonike-mesotes>` :g:`T <g1:T>` satisfying $(A, C; D, T) = -1$.
+**32.** Now let it be required, given :math:`AB`, :math:`BZ`, to take the lesser extreme. Let :math:`AB` be bisected at :math:`E`, and with center :math:`E` let an arc be described through :math:`B`, and let this be cut at :math:`\Delta` by the arc described through :math:`Z` with center :math:`B`, and let perpendicular
 
-.. step::
+.. folio:: hultsch_1876_vol1:0107
+   :page: 74
 
-   Lay out :g:`A <g1:A>` $= (0, 0)$, division point :g:`D <g1:D>` $= (9, 0)$, and :g:`C <g1:C>` $= (25, 0)$ along diameter :g:`AC <g1:[ A C ]>` ($a = 9$, $b = 16$). Bisect :g:`AC <g1:[ A C ]>` at center :g:`O <g1:O>` $= \left(\frac{25}{2}, 0\right)$ and describe semicircle :g:`ABC <g1:( O A )>`. Because $OA = OC = OB$, radius :g:`OB <g1:[ O B ]>` equals $\frac{a + b}{2} = \frac{25}{2}$, which is the **arithmetic mean** $A$.
+:math:`\Delta\Gamma` be drawn, and :math:`B\Gamma` becomes the third proportional to :math:`AB`, :math:`BZ`. For it is proved similarly [in the same way] as in the things said before concerning the mean.
 
-.. step::
+.. folio:: hultsch_1876_vol1:0113
+   :page: 80
 
-   Erect the perpendicular at :g:`D <g1:D>` to meet semicircle :g:`ABC <g1:( O A )>` at :g:`B <g1:B>` $= (9, 12)$. By :just:`III.31`, $\angle ABC$ in :g:`triangle ABC <g1:< A C B >>` is right, so by :just:`VI.8` and :just:`VI.13` the altitude :g:`DB <g1:[ D B ]>` is the mean proportional between $AD$ and $DC$: $DB^2 = AD \cdot DC = ab = 144$, giving the **geometric mean** $G = 12$.
+**42.** And if anyone wishes to set out each separately, it is evident through what was written before, the three terms in the arithmetic mediety being in least numbers :math:`3, 2, 1`, and in the geometric :math:`4, 2, 1`, while the root numbers of the given ratio are shifted into equimultiples and superparticulars and the rest.
+For example, in the double ratio, :math:`AB` having to :math:`\Gamma` the ratio which :math:`2` has to :math:`1`, we shall set instead of :math:`2` the number :math:`4`, and instead of :math:`1` the number :math:`2` [with equal excess :math:`2`]. And since their mean must exceed and be exceeded by an equal amount, straight line :math:`Z` becomes three units [the mean].
+And the ratio of :math:`Z` to :math:`\Gamma` is sesquialter, as :math:`3` to :math:`2`. Yet this same ratio, occurring for :math:`\Gamma` to :math:`H`, does not achieve the problem while the unit remains indivisible.
+Therefore all are taken thrice: instead of :math:`4` becomes :math:`12`, instead of :math:`3` the number :math:`9`, instead of :math:`2` the number :math:`6`, and :math:`H` becomes :math:`4` units and :math:`\Theta` evidently :math:`3` units, and the numbers of the three medieties are :math:`12, 9, 6, 4, 3`.
 
-.. step::
+**43.** So much then concerning the three medieties according to the ancients; and that it is also possible
 
-   Join radius :g:`OB <g1:[ O B ]>` and drop :g:`DF <g1:[ D F ]>` perpendicular to :g:`OB <g1:[ O B ]>` at foot :g:`F <g1:F>` $= \left(\frac{7641}{625}, \frac{588}{625}\right)$. Since right triangles $\triangle ODB$ and $\triangle DFB$ share acute angle $\angle OBD$ at :g:`B <g1:B>`, they are equiangular (:just:`VI.8`), whence $OB : DB = DB : BF$. Therefore
+.. folio:: hultsch_1876_vol1:0115
+   :page: 82
 
-   .. math::
+to construct them in a semicircle in at fewest :math:`6` straight lines in number is manifest from what follows.
 
-      A \cdot BF = OB \cdot BF = DB^2 = G^2 = ab \quad \Longrightarrow \quad BF = \frac{2ab}{a + b} = \frac{288}{25},
+For let the semicircle be set out having perpendicular :math:`B\Delta` and radius :math:`EB`, and perpendicular :math:`\Delta Z`, and through :math:`B` let tangent :math:`\Theta H` to the circle be drawn, and with :math:`E\Gamma H` produced let :math:`B\Theta` be laid down equal to :math:`BH`, and let :math:`\Delta K\Theta` be joined;
+I say that in the :term:`harmonic mediety <harmonike-mesotes>` :math:`EK` is mean between :math:`BE`, :math:`EZ`, :math:`BE` being greatest and :math:`EZ` least.
 
-   proving that :g:`BF <g1:[ B F ]>` is the exact **harmonic mean** $H$, and that $G$ is itself the geometric mean between $A$ and $H$ ($A \cdot H = G^2$).
+For since the angles at :math:`B`, :math:`Z` are right [parallel is :math:`\Delta Z` to :math:`\Theta H`, and triangle :math:`EBH` is equiangular with triangle :math:`EZ\Delta`, and triangle :math:`B\Theta K` with triangle :math:`ZK\Delta`],
+therefore :math:`BE : EZ = HB : Z\Delta`. And :math:`BH` equals :math:`B\Theta`; therefore also :math:`BE : EZ = B\Theta : \Delta Z`. But :math:`B\Theta : \Delta Z = BK : KZ`, and :math:`BK` is the excess of lines :math:`BE, EK`, while :math:`KZ` is the excess of lines :math:`KE, EZ`;
+therefore :math:`BE : EZ` is as the excess of :math:`BE, EK` to the excess of :math:`KE, EZ`; therefore lines :math:`BE, EK, EZ` contain a harmonic mediety, :math:`EK` being mean, :math:`BE` greatest, and :math:`EZ` least. And :math:`A\Delta, E\Gamma, \Gamma\Delta` were also shown to contain the arithmetic, and :math:`A\Delta, B\Delta, \Delta\Gamma` the geometric; therefore the three medieties are also arranged in a semicircle.
 
-.. step::
+.. folio:: hultsch_1876_vol1:0117
+   :page: 84
 
-   Observe the nested right triangles $\triangle ODB$ (hypotenuse :g:`OB <g1:[ O B ]>`, leg :g:`DB <g1:[ D B ]>`) and $\triangle DFB$ (hypotenuse :g:`DB <g1:[ D B ]>`, leg :g:`BF <g1:[ B F ]>`). Because the hypotenuse of a right triangle strictly exceeds either leg (:just:`I.19`) whenever :g:`D <g1:D>` $\neq$ :g:`O <g1:O>`, we read off immediately $OB > DB > BF$, i.e., $A > G > H$ ($\frac{25}{2} > 12 > \frac{288}{25}$), collapsing to equality $A = G = H$ when $a = b$.
-
-.. step::
-
-   Draw tangent :g:`BT <g1:[ B T ]>` perpendicular to radius :g:`OB <g1:[ O B ]>`, meeting diameter :g:`AC <g1:[ A C ]>` produced at :g:`T <g1:T>` $= \left(-\frac{225}{7}, 0\right)$. Parallelism of :g:`DF <g1:[ D F ]>` and :g:`BT <g1:[ B T ]>` transfers the ratio on :g:`OB <g1:[ O B ]>` onto the diameter line, yielding the four-point harmonic range $(A, C; D, T) = -1$ that recurs in projective form in :doc:`Book VII Prop. 131 <../../book_07/prop_131_harmonic/index>`.
+**44.** Since both :person:`Nicomachus <nicomachus>` the Pythagorean and certain others have spoken not only concerning the first three medieties, which are especially useful for the readings of the ancients, but also concerning three others according to the ancients, and yet four others have been found in addition to these six by the moderns,
+we shall endeavor to speak also concerning these more concisely, following however those before, who, making the transition from the greater term, set forth the aforesaid three [measuring greater terms from the lesser, three others differing from the first].
 
 Archival Plates (*Hultsch Vol. III, Appendix IV, p. 1220*)
 -----------------------------------------------------------

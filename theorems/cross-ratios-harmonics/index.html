@@ -112,7 +112,7 @@
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../six-permutations/index.html" title="The Six Permutations (PHOTONMATHPLACEHOLDER000144END) &amp; The Two Star Points">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../six-permutations/index.html" title="The Six Permutations (\(S_3\)) &amp; The Two Star Points">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
           </div>
@@ -127,20 +127,20 @@
         <p>Why does a purely straightedge construction preserve quantitative algebraic ratios when
         distances themselves are distorted by perspective projection? The answer already appears in
         <strong>Proposition 129 of Book VII</strong> of Pappus’s <em>Synagoge</em>: while lengths and simple ratios change
-        under central projection from an apex $O$, the <strong>compound ratio of ratios</strong>—today called the
+        under central projection from an apex <span class="math notranslate nohighlight">\(O\)</span>, the <strong>compound ratio of ratios</strong>—today called the
         <strong>projective cross-ratio</strong>—is an <strong>exact projective invariant</strong>.</p>
         <section class="level-2" id="the-projective-cross-ratio-its-anharmonic-orbit">
         <h2>The Projective Cross-Ratio &amp; Its Anharmonic Orbit<a class="headerlink" href="#the-projective-cross-ratio-its-anharmonic-orbit" title="Link to this heading">¶</a></h2>
-        <p>For four distinct collinear points $A, B, C, D$ parameterized along their carrier line by affine
-        coordinates $t_A, t_B, t_C, t_D$ (including $t = \infty$ for an ideal point), the cross-ratio is</p>
+        <p>For four distinct collinear points <span class="math notranslate nohighlight">\(A, B, C, D\)</span> parameterized along their carrier line by affine
+        coordinates <span class="math notranslate nohighlight">\(t_A, t_B, t_C, t_D\)</span> (including <span class="math notranslate nohighlight">\(t = \infty\)</span> for an ideal point), the cross-ratio is</p>
         <div class="math notranslate nohighlight">
         \[(A, B; C, D) = \frac{(t_A - t_C)(t_B - t_D)}{(t_A - t_D)(t_B - t_C)}.\]</div>
-        <p>In <code class="docutils literal notranslate"><span class="pre">geometor.pappus.projective.cross_ratio</span></code>, $A, B, C, D$ are verified strictly collinear and
-        projected onto whichever coordinate axis ($x$ or $y$) varies, returning an exact simplified SymPy
+        <p>In <code class="docutils literal notranslate"><span class="pre">geometor.pappus.projective.cross_ratio</span></code>, <span class="math notranslate nohighlight">\(A, B, C, D\)</span> are verified strictly collinear and
+        projected onto whichever coordinate axis (<span class="math notranslate nohighlight">\(x\)</span> or <span class="math notranslate nohighlight">\(y\)</span>) varies, returning an exact simplified SymPy
         expression with zero floating-point approximation.</p>
-        <p>Permuting four collinear points across all $4! = 24$ orderings preserves $(A, B; C, D)$ on the
-        Klein four-group $V_4 = \{\mathrm{id}, (AB)(CD), (AC)(BD), (AD)(BC)\}$, leaving at most
-        $24 / 4 = 6$ values—the <strong>anharmonic six-group orbit</strong>:</p>
+        <p>Permuting four collinear points across all <span class="math notranslate nohighlight">\(4! = 24\)</span> orderings preserves <span class="math notranslate nohighlight">\((A, B; C, D)\)</span> on the
+        Klein four-group <span class="math notranslate nohighlight">\(V_4 = \{\mathrm{id}, (AB)(CD), (AC)(BD), (AD)(BC)\}\)</span>, leaving at most
+        <span class="math notranslate nohighlight">\(24 / 4 = 6\)</span> values—the <strong>anharmonic six-group orbit</strong>:</p>
         <div class="math notranslate nohighlight">
         \[\left\{\lambda,\; \frac{1}{\lambda},\; 1 - \lambda,\; \frac{1}{1 - \lambda},\;
         \frac{\lambda - 1}{\lambda},\; \frac{\lambda}{\lambda - 1}\right\}.\]</div>
@@ -148,13 +148,13 @@
         <section class="level-2" id="straightedge-fourth-harmonic-conjugate-complete-quadrilateral">
         <h2>Straightedge Fourth Harmonic Conjugate (Complete Quadrilateral)<a class="headerlink" href="#straightedge-fourth-harmonic-conjugate-complete-quadrilateral" title="Link to this heading">¶</a></h2>
         <p>The most symmetrical cross-ratio occurs when this six-value orbit collapses to three values
-        $\{-1,\, 2,\, \frac{1}{2}\}$:</p>
+        <span class="math notranslate nohighlight">\(\{-1,\, 2,\, \frac{1}{2}\}\)</span>:</p>
         <div class="math notranslate nohighlight">
         \[(A, B; C, D) = -1 \quad \Longleftrightarrow \quad \frac{AC}{CB} = -\frac{AD}{DB}.\]</div>
-        <p>Here $C$ and $D$ separate $A$ and $B$ internally and externally in the <strong>same magnitude ratio</strong>—a
-        <strong>harmonic range</strong> (<em>Synagoge</em> VII.131). Remarkably, given three collinear points $A, B, C$, the
-        fourth harmonic conjugate $D$ can be constructed <strong>using a straightedge alone</strong> via a <strong>complete
-        quadrilateral</strong>, and $D$ is completely independent of the auxiliary points chosen!</p>
+        <p>Here <span class="math notranslate nohighlight">\(C\)</span> and <span class="math notranslate nohighlight">\(D\)</span> separate <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> internally and externally in the <strong>same magnitude ratio</strong>—a
+        <strong>harmonic range</strong> (<em>Synagoge</em> VII.131). Remarkably, given three collinear points <span class="math notranslate nohighlight">\(A, B, C\)</span>, the
+        fourth harmonic conjugate <span class="math notranslate nohighlight">\(D\)</span> can be constructed <strong>using a straightedge alone</strong> via a <strong>complete
+        quadrilateral</strong>, and <span class="math notranslate nohighlight">\(D\)</span> is completely independent of the auxiliary points chosen!</p>
         <figure class="photon-picture photon-svg">
             <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 440" data-graphic-id="g1" role="img" aria-label="Complete Quadrilateral Straightedge Construction of Fourth Harmonic D" width="680" height="440" data-svg-scope="s-f31dd3ab">
           <style>
@@ -225,26 +225,26 @@
           </g>
         </svg>
         </figure>
-        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Begin with three collinear points <span class="geom-ref" data-ref="g1:A" title="A">A</span> $= (0, 0)$, <span class="geom-ref" data-ref="g1:B" title="B">B</span> $= (4, 0)$, and
-        internal division point <span class="geom-ref" data-ref="g1:C" title="C">C</span> $= \left(\frac{4}{3}, 0\right)$ on carrier
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Begin with three collinear points <span class="geom-ref" data-ref="g1:A" title="A">A</span> <span class="math notranslate nohighlight">\(= (0, 0)\)</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span> <span class="math notranslate nohighlight">\(= (4, 0)\)</span>, and
+        internal division point <span class="geom-ref" data-ref="g1:C" title="C">C</span> <span class="math notranslate nohighlight">\(= \left(\frac{4}{3}, 0\right)\)</span> on carrier
         <span class="geom-ref" data-ref="g1:[ A B ]" title="[ A B ]">AB</span>.</div>
-        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Pick any off-line apex <span class="geom-ref" data-ref="g1:P" title="P">P</span> $= (2, 2)$, draw rays <span class="geom-ref" data-ref="g1:[ P A ]" title="[ P A ]">PA</span>,
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Pick any off-line apex <span class="geom-ref" data-ref="g1:P" title="P">P</span> <span class="math notranslate nohighlight">\(= (2, 2)\)</span>, draw rays <span class="geom-ref" data-ref="g1:[ P A ]" title="[ P A ]">PA</span>,
         <span class="geom-ref" data-ref="g1:[ P B ]" title="[ P B ]">PB</span>, and diagonal <span class="geom-ref" data-ref="g1:[ P C ]" title="[ P C ]">PC</span>, and choose any relay point
-        <span class="geom-ref" data-ref="g1:Q" title="Q">Q</span> $= \left(\frac{5}{3}, 1\right)$ on <span class="geom-ref" data-ref="g1:[ P C ]" title="[ P C ]">PC</span>.</div>
+        <span class="geom-ref" data-ref="g1:Q" title="Q">Q</span> <span class="math notranslate nohighlight">\(= \left(\frac{5}{3}, 1\right)\)</span> on <span class="geom-ref" data-ref="g1:[ P C ]" title="[ P C ]">PC</span>.</div>
         <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Draw cross-joins <span class="geom-ref" data-ref="g1:[ A Q ]" title="[ A Q ]">AQ</span> meeting <span class="geom-ref" data-ref="g1:[ P B ]" title="[ P B ]">PB</span> at
-        <span class="geom-ref" data-ref="g1:R" title="R">R</span> $= \left(\frac{5}{2}, \frac{3}{2}\right)$, and <span class="geom-ref" data-ref="g1:[ B Q ]" title="[ B Q ]">BQ</span> meeting
-        <span class="geom-ref" data-ref="g1:[ P A ]" title="[ P A ]">PA</span> at <span class="geom-ref" data-ref="g1:S" title="S">S</span> $= \left(\frac{6}{5}, \frac{6}{5}\right)$.</div>
-        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Draw the second diagonal <span class="geom-ref" data-ref="g1:[ R S ]" title="[ R S ]">RS</span> ($3x - 13y + 12 = 0$): it cuts the base line
-        <span class="geom-ref" data-ref="g1:[ A B ]" title="[ A B ]">AB</span> at the exact fourth harmonic conjugate <span class="geom-ref" data-ref="g1:D" title="D">D</span> $= (-4, 0)$, giving
-        $(A, B; C, D) = \frac{(0 - 4/3)(4 - (-4))}{(0 - (-4))(4 - 4/3)} = \frac{-32/3}{32/3} = -1$.</div>
+        <span class="geom-ref" data-ref="g1:R" title="R">R</span> <span class="math notranslate nohighlight">\(= \left(\frac{5}{2}, \frac{3}{2}\right)\)</span>, and <span class="geom-ref" data-ref="g1:[ B Q ]" title="[ B Q ]">BQ</span> meeting
+        <span class="geom-ref" data-ref="g1:[ P A ]" title="[ P A ]">PA</span> at <span class="geom-ref" data-ref="g1:S" title="S">S</span> <span class="math notranslate nohighlight">\(= \left(\frac{6}{5}, \frac{6}{5}\right)\)</span>.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Draw the second diagonal <span class="geom-ref" data-ref="g1:[ R S ]" title="[ R S ]">RS</span> (<span class="math notranslate nohighlight">\(3x - 13y + 12 = 0\)</span>): it cuts the base line
+        <span class="geom-ref" data-ref="g1:[ A B ]" title="[ A B ]">AB</span> at the exact fourth harmonic conjugate <span class="geom-ref" data-ref="g1:D" title="D">D</span> <span class="math notranslate nohighlight">\(= (-4, 0)\)</span>, giving
+        <span class="math notranslate nohighlight">\((A, B; C, D) = \frac{(0 - 4/3)(4 - (-4))}{(0 - (-4))(4 - 4/3)} = \frac{-32/3}{32/3} = -1\)</span>.</div>
         </section>
         <section class="level-2" id="emergent-harmonic-tetrads-in-the-pappussteiner-web">
         <h2>Emergent Harmonic Tetrads in the Pappus–Steiner Web<a class="headerlink" href="#emergent-harmonic-tetrads-in-the-pappussteiner-web" title="Link to this heading">¶</a></h2>
         <p>Because every complete quadrilateral embedded in a projective configuration generates harmonic
         divisions along its diagonals and sides, the Pappus–Steiner 9-line / 6-line web teems with
         emergent harmonic ranges. Running <code class="docutils literal notranslate"><span class="pre">find_harmonic_ranges</span></code> on <code class="docutils literal notranslate"><span class="pre">preset=&quot;harmonic&quot;</span></code>
-        ($A = [(1,0), (2,0), (3,0)]$ on $y = 0$ and $B = [(0,1), (1, \frac{3}{2}), (4, 3)]$ on
-        $-x + 2y = 2$, meeting at $O = (-2, 0)$) uncovers <strong>19 exact collinear harmonic tetrads</strong> among
+        (<span class="math notranslate nohighlight">\(A = [(1,0), (2,0), (3,0)]\)</span> on <span class="math notranslate nohighlight">\(y = 0\)</span> and <span class="math notranslate nohighlight">\(B = [(0,1), (1, \frac{3}{2}), (4, 3)]\)</span> on
+        <span class="math notranslate nohighlight">\(-x + 2y = 2\)</span>, meeting at <span class="math notranslate nohighlight">\(O = (-2, 0)\)</span>) uncovers <strong>19 exact collinear harmonic tetrads</strong> among
         the given, cross-join, and Steiner points alone—and <strong>81 exact collinear harmonic tetrads</strong> when
         pairwise line intersections are included!</p>
         <table class="docutils align-default" id="id1">
@@ -261,21 +261,21 @@
         </tr>
         </thead>
         <tbody>
-        <tr class="row-even"><td><p>Carrier $b$: $-x + 2y = 2$</p></td>
-        <td><p>$(O,\, B_1;\, B_0,\, B_2)$</p></td>
-        <td><p>$x = (-2, 1; 0, 4) \implies (O, B_0, B_1, B_2)$ has $(O, B_1; B_0, B_2) = -1$</p></td>
+        <tr class="row-even"><td><p>Carrier <span class="math notranslate nohighlight">\(b\)</span>: <span class="math notranslate nohighlight">\(-x + 2y = 2\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\((O,\, B_1;\, B_0,\, B_2)\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\(x = (-2, 1; 0, 4) \implies (O, B_0, B_1, B_2)\)</span> has <span class="math notranslate nohighlight">\((O, B_1; B_0, B_2) = -1\)</span></p></td>
         </tr>
-        <tr class="row-odd"><td><p>Carrier $a$: $y = 0$</p></td>
-        <td><p>$(A_0,\, A_1;\, X_1,\, A_2)$</p></td>
-        <td><p>$x = (1, 2; \tfrac{5}{3}, 3) \implies \frac{(1 - 5/3)(2 - 3)}{(1 - 3)(2 - 5/3)} = -1$</p></td>
+        <tr class="row-odd"><td><p>Carrier <span class="math notranslate nohighlight">\(a\)</span>: <span class="math notranslate nohighlight">\(y = 0\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\((A_0,\, A_1;\, X_1,\, A_2)\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\(x = (1, 2; \tfrac{5}{3}, 3) \implies \frac{(1 - 5/3)(2 - 3)}{(1 - 3)(2 - 5/3)} = -1\)</span></p></td>
         </tr>
-        <tr class="row-even"><td><p>Carrier $a$: $y = 0$</p></td>
-        <td><p>$(A_0,\, A_2;\, A_1,\, X_2)$</p></td>
-        <td><p>$x = (1, 3; 2, \tfrac{7}{3})$ cut by the Steiner line through $S_+ = (\tfrac{31}{18}, \tfrac{1}{2})$</p></td>
+        <tr class="row-even"><td><p>Carrier <span class="math notranslate nohighlight">\(a\)</span>: <span class="math notranslate nohighlight">\(y = 0\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\((A_0,\, A_2;\, A_1,\, X_2)\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\(x = (1, 3; 2, \tfrac{7}{3})\)</span> cut by the Steiner line through <span class="math notranslate nohighlight">\(S_+ = (\tfrac{31}{18}, \tfrac{1}{2})\)</span></p></td>
         </tr>
-        <tr class="row-odd"><td><p>Cross-Line $[A_0 B_0]$</p></td>
-        <td><p>$(B_0,\, A_0;\, M_{0021},\, M_{0022})$</p></td>
-        <td><p>Exact harmonic conjugate cross-join pair cut across $[A_0 B_0]$</p></td>
+        <tr class="row-odd"><td><p>Cross-Line <span class="math notranslate nohighlight">\([A_0 B_0]\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\((B_0,\, A_0;\, M_{0021},\, M_{0022})\)</span></p></td>
+        <td><p>Exact harmonic conjugate cross-join pair cut across <span class="math notranslate nohighlight">\([A_0 B_0]\)</span></p></td>
         </tr>
         </tbody>
         </table>
@@ -414,40 +414,40 @@
         </figure>
         </section>
         <section class="level-2" id="golden-projectivity-in-mathbb-q-phi">
-        <h2>Golden Projectivity in $\mathbb{Q}(\phi)$<a class="headerlink" href="#golden-projectivity-in-mathbb-q-phi" title="Link to this heading">¶</a></h2>
+        <h2>Golden Projectivity in <span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span><a class="headerlink" href="#golden-projectivity-in-mathbb-q-phi" title="Link to this heading">¶</a></h2>
         <p>At the heart of the GEOMETOR initiative lies the <strong>Golden Ratio</strong>
-        $\phi = \frac{1 + \sqrt{5}}{2}$ ($\phi^2 = \phi + 1$). Projective cross-ratios unite harmonic
+        <span class="math notranslate nohighlight">\(\phi = \frac{1 + \sqrt{5}}{2}\)</span> (<span class="math notranslate nohighlight">\(\phi^2 = \phi + 1\)</span>). Projective cross-ratios unite harmonic
         division and the divine proportion in three exact algebraic laws verified symbolically in
         <code class="docutils literal notranslate"><span class="pre">geometor.pappus</span></code>:</p>
         <ol class="arabic">
-        <li><p><strong>Canonical Golden Chain</strong>: Four consecutive Fibonacci-scaled points $(0, 1, \phi, \phi + 1)$
+        <li><p><strong>Canonical Golden Chain</strong>: Four consecutive Fibonacci-scaled points <span class="math notranslate nohighlight">\((0, 1, \phi, \phi + 1)\)</span>
         have exact cross-ratio</p>
         <div class="math notranslate nohighlight">
         \[(0, 1;\, \phi, \phi + 1) = \frac{(0 - \phi)(1 - \phi - 1)}{(0 - \phi - 1)(1 - \phi)}
         = \frac{\phi^2}{\phi^2 \cdot \phi^{-1}} = \phi,\]</div>
-        <p>whose six-value anharmonic orbit is purely powers of $\phi$:
-        $\left\{\phi,\; \phi^{-1},\; -\phi^{-1},\; -\phi,\; \phi^{-2},\; \phi^2\right\}$.</p>
+        <p>whose six-value anharmonic orbit is purely powers of <span class="math notranslate nohighlight">\(\phi\)</span>:
+        <span class="math notranslate nohighlight">\(\left\{\phi,\; \phi^{-1},\; -\phi^{-1},\; -\phi,\; \phi^{-2},\; \phi^2\right\}\)</span>.</p>
         </li>
-        <li><p><strong>Harmonic–Golden Bridge</strong>: The fourth harmonic conjugate of $1$ with respect to $(0, \phi)$
-        is <strong>precisely $\phi^3 = 2\phi + 1$</strong>:</p>
+        <li><p><strong>Harmonic–Golden Bridge</strong>: The fourth harmonic conjugate of <span class="math notranslate nohighlight">\(1\)</span> with respect to <span class="math notranslate nohighlight">\((0, \phi)\)</span>
+        is <strong>precisely</strong> <span class="math notranslate nohighlight">\(\phi^3 = 2\phi + 1\)</span>:</p>
         <div class="math notranslate nohighlight">
         \[(0, \phi;\, 1, \phi^3) = \frac{(0 - 1)(\phi - \phi^3)}{(0 - \phi^3)(\phi - 1)}
         = \frac{\phi(\phi^2 - 1)}{\phi^3 \phi^{-1}} = -\frac{\phi^2}{\phi^2} = -1.\]</div>
         </li>
-        <li><p><strong>Emergent Golden Section in the Golden Pappus Hexagon</strong>: In <code class="docutils literal notranslate"><span class="pre">preset=&quot;golden&quot;</span></code>, carrier $a$
-        places $(A_0, A_1, A_2) = \bigl((0, 0),\, (1, 0),\, (\phi, 0)\bigr)$ in golden section along
-        $y = 0$, while carrier $b$ places
-        $B_0 = (0, 1)$, $B_1 = \left(\phi, \frac{\phi}{2} + 1\right)$,
-        $B_2 = \left(\phi + 1, \frac{\phi + 3}{2}\right)$ in golden section along
-        $-(\phi + 1)x + (2\phi + 2)y = 2\phi + 2$, intersecting $a$ at $O = (-2, 0)$.</p>
-        <p>Computing the exact cross-join meets in $\mathbb{Q}(\sqrt{5})$ yields</p>
+        <li><p><strong>Emergent Golden Section in the Golden Pappus Hexagon</strong>: In <code class="docutils literal notranslate"><span class="pre">preset=&quot;golden&quot;</span></code>, carrier <span class="math notranslate nohighlight">\(a\)</span>
+        places <span class="math notranslate nohighlight">\((A_0, A_1, A_2) = \bigl((0, 0),\, (1, 0),\, (\phi, 0)\bigr)\)</span> in golden section along
+        <span class="math notranslate nohighlight">\(y = 0\)</span>, while carrier <span class="math notranslate nohighlight">\(b\)</span> places
+        <span class="math notranslate nohighlight">\(B_0 = (0, 1)\)</span>, <span class="math notranslate nohighlight">\(B_1 = \left(\phi, \frac{\phi}{2} + 1\right)\)</span>,
+        <span class="math notranslate nohighlight">\(B_2 = \left(\phi + 1, \frac{\phi + 3}{2}\right)\)</span> in golden section along
+        <span class="math notranslate nohighlight">\(-(\phi + 1)x + (2\phi + 2)y = 2\phi + 2\)</span>, intersecting <span class="math notranslate nohighlight">\(a\)</span> at <span class="math notranslate nohighlight">\(O = (-2, 0)\)</span>.</p>
+        <p>Computing the exact cross-join meets in <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{5})\)</span> yields</p>
         <div class="math notranslate nohighlight">
         \[M_{01} = (-4 + 2\sqrt{5},\; 5 - 2\sqrt{5}), \quad
         M_{12} = \left(\frac{1 + \sqrt{5}}{2},\; 2 - \frac{\sqrt{5}}{2}\right), \quad
         M_{20} = \left(\frac{2}{3},\; \frac{4 - \sqrt{5}}{3}\right).\]</div>
         <p>Scanning this model with <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code> uncovers an <strong>emergent third golden section</strong>:
-        the cross-join intersection $M_{12}$ divides the oblique hexagon side $[A_1 B_2]$ in the
-        <strong>exact Golden Ratio</strong> $\phi$!</p>
+        the cross-join intersection <span class="math notranslate nohighlight">\(M_{12}\)</span> divides the oblique hexagon side <span class="math notranslate nohighlight">\([A_1 B_2]\)</span> in the
+        <strong>exact Golden Ratio</strong> <span class="math notranslate nohighlight">\(\phi\)</span>!</p>
         </li>
         </ol>
         <figure class="photon-picture photon-svg">
@@ -537,14 +537,14 @@
         </figure>
         <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Place golden-section triples <span class="geom-ref" data-ref="g3:/ A0 A1 A2 /" title="/ A0 A1 A2 /">A<sub>0</sub> A<sub>1</sub> A<sub>2</sub></span> along carrier
         <span class="geom-ref" data-ref="g3:[ A0 A2 ]" title="[ A0 A2 ]">a</span> and <span class="geom-ref" data-ref="g3:/ B0 B1 B2 /" title="/ B0 B1 B2 /">B<sub>0</sub> B<sub>1</sub> B<sub>2</sub></span> along carrier
-        <span class="geom-ref" data-ref="g3:[ B0 B2 ]" title="[ B0 B2 ]">b</span>, meeting at <span class="geom-ref" data-ref="g3:O" title="O">O</span> $= (-2, 0)$.</div>
+        <span class="geom-ref" data-ref="g3:[ B0 B2 ]" title="[ B0 B2 ]">b</span>, meeting at <span class="geom-ref" data-ref="g3:O" title="O">O</span> <span class="math notranslate nohighlight">\(= (-2, 0)\)</span>.</div>
         <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Construct the inscribed hexagon <span class="geom-ref" data-ref="g3:&lt; A0 B1 A2 B0 A1 B2 &gt;" title="&lt; A0 B1 A2 B0 A1 B2 &gt;">A<sub>0</sub> B<sub>1</sub> A<sub>2</sub> B<sub>0</sub> A<sub>1</sub> B<sub>2</sub></span> and
-        exact $\mathbb{Q}(\sqrt{5})$ cross-join meets <span class="geom-ref" data-ref="g3:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g3:M20" title="M20">M<sub>20</sub></span>,
+        exact <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{5})\)</span> cross-join meets <span class="geom-ref" data-ref="g3:M01" title="M01">M<sub>01</sub></span>, <span class="geom-ref" data-ref="g3:M20" title="M20">M<sub>20</sub></span>,
         and <span class="geom-ref" data-ref="g3:M12" title="M12">M<sub>12</sub></span> along the Pappus line <span class="geom-ref" data-ref="g3:[ M01 M12 ]" title="[ M01 M12 ]">p</span>.</div>
         <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Observe the emergent <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code> golden section <span class="geom-ref" data-ref="g3:/ A1 M12 B2 /" title="/ A1 M12 B2 /">A<sub>1</sub> M<sub>12</sub> B<sub>2</sub></span>:
-        because $x(A_1) = 1$, $x(M_{12}) = \phi$, and $x(B_2) = \phi + 1$, we have
-        $x(B_2) - x(M_{12}) = 1$ and $x(M_{12}) - x(A_1) = \phi - 1 = \phi^{-1}$, so
-        $|M_{12} B_2| / |A_1 M_{12}| = \phi$ <strong>identically</strong>!</div>
+        because <span class="math notranslate nohighlight">\(x(A_1) = 1\)</span>, <span class="math notranslate nohighlight">\(x(M_{12}) = \phi\)</span>, and <span class="math notranslate nohighlight">\(x(B_2) = \phi + 1\)</span>, we have
+        <span class="math notranslate nohighlight">\(x(B_2) - x(M_{12}) = 1\)</span> and <span class="math notranslate nohighlight">\(x(M_{12}) - x(A_1) = \phi - 1 = \phi^{-1}\)</span>, so
+        <span class="math notranslate nohighlight">\(|M_{12} B_2| / |A_1 M_{12}| = \phi\)</span> <strong>identically</strong>!</div>
         </section>
         </section>
 
@@ -553,7 +553,7 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../six-permutations/index.html" title="The Six Permutations (PHOTONMATHPLACEHOLDER000144END) &amp; The Two Star Points">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../six-permutations/index.html" title="The Six Permutations (\(S_3\)) &amp; The Two Star Points">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../index.html">Theorems</a>

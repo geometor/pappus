@@ -3,7 +3,7 @@
 :type: book
 :title: Proposition 2 · Archimedean Bounds Notes
 :canonical_id: Syn. V.2.notes
-:folio: 0248
+:folio: hultsch_1876_vol1:0343
 :tracks: English: index | Greek: el | Summary: summary | Notes: notes
 
 Proposition 2 · Archimedean Bounds Notes
@@ -11,7 +11,7 @@ Proposition 2 · Archimedean Bounds Notes
 
 .. rubric:: Citation of *Sphere and Cylinder* I
 
-.. folio:: 0248
-   :page: 1236
+.. folio:: hultsch_1876_vol1:0343
+   :page: 310
 
-Notice how cleanly Pappus avoids trigonometric limits by combining Archimedes's *Sphere and Cylinder* convexity inequality with polygon scaling. The accompanying diagram ``0170.g1`` derives from Hultsch's edition of the *Anonymi De Figuris* (Vol. III, p. 1158).
+:person:`Pappus <pappus>` avoids trigonometric limits by combining :person:`Archimedes's <archimedes>` *On the Sphere and Cylinder* convexity inequality with *Measurement of a Circle* Prop. 1. The accompanying diagram ``0170.g1`` derives from :cite:`Hultsch's edition <hultsch-1878>` of the *Anonymi De Figuris* (Vol. III, p. 1158).

@@ -23,7 +23,7 @@ Book III · Problem Hierarchy & The Three Means
 
 .. note::
 
-   **Edition Track (English)**: Complete critical English edition of Book III, translated freshly from Hultsch's Greek text. Atomic units cover the address to Pandrosion, the threefold locus hierarchy, the Delian cube-duplication constructions, the classical medieties definitions, and the unified semicircle exhibiting $A \cdot H = G^2$. Switch tracks above for **Greek (Hultsch 1876)**, **Summary**, or **Notes**.
+   **Edition Track (English)**: Complete critical English edition of Book III, translated freshly from Hultsch's Greek text. Atomic units cover the address to Pandrosion, the threefold locus hierarchy, the Delian cube-duplication constructions, the classical medieties definitions, and the unified semicircle exhibiting :math:`A \cdot H = G^2`. Switch tracks above for **Greek (Hultsch 1876)**, **Summary**, or **Notes**.
 
 .. container:: title-page
 
