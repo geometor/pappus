@@ -23,6 +23,11 @@ Propositions 10–11: Archimedes's Lever Saying and Hero's *Baroulkos*
    :alt: Archival woodcut plate 0071.g1 — Hero's Baroulkos compound cogwheel train perspective engraving (Hultsch III, p. 1062)
    :caption: Original Hultsch bitmap (folio 0071, p. 1062): perspective engraving of Hero's Baroulkos compound reduction gear train.
 
+.. picture:: 0071.g1.svg
+   :alt: Calibrated interactive vector plate 0071.g1 — Hero's Baroulkos compound cogwheel train
+   :caption: Calibrated .euclid-graphic vectorization of plate 0071.g1.
+
+
 And :person:`Hero of Alexandria <heron>` has set forth its construction very clearly in the work called :term:`Baroulkos <baroulkos>`, taking a lemma which he demonstrated in his *Mechanics*, where he also treats of the five powers—namely the wedge, lever, screw, pulley-block, and axle-in-wheel—by which the given weight is moved by the given power [according to each power].
 
 Now in the *Baroulkos*, by the juxtaposition of toothed drums, he moved the given weight by the given power, the diameter of the drum having to the diameter of the axle the ratio which :math:`5` has to :math:`1`, the moved weight being supposed :math:`1{,}000` talents and the moving power :math:`5` talents.
@@ -72,6 +77,11 @@ for if, for example, a weight of one mina be added to the power of :math:`4` tal
    :alt: Archival woodcut plate 0074.g1 — Baroulkos gear train with worm screw and crank handle (Hultsch III, p. 1067)
    :caption: Original Hultsch bitmap (folio 0074, p. 1067): Hero's Baroulkos showing worm screw and crank handle.
 
+.. picture:: 0074.g1.svg
+   :alt: Calibrated interactive vector plate 0074.g1 — Baroulkos gear train with worm screw and crank handle
+   :caption: Calibrated .euclid-graphic vectorization of plate 0074.g1.
+
+
 :math:`\Omega A` be placed alongside drum :math:`M^\alpha M^\beta`, having its helix fitting the oblique teeth of drum :math:`M^\alpha M^\beta`. How this is to be made has been written in the same *Mechanics* of :person:`Hero <heron>`, and we too shall set this out more clearly in what follows.
 And let the screw turn freely on pivots resting in round holes, one of which projects to the outside of the casing at wall :math:`\Gamma\Delta`, and let the projection, having been squared, receive the crank-handle :math:`\varsigma B`,
 by grasping and turning which we shall turn both the screw and drum :math:`M^\alpha M^\beta`, and consequently also :math:`\varsigma\Pi` fixed to it. On this account :math:`X\Psi` alongside it will also turn, and :math:`Y\Phi` fixed to it, and :math:`\Sigma T` alongside it, and :math:`\Pi P` fixed to this, and :math:`\Xi O` alongside this,
@@ -79,6 +89,15 @@ and :math:`MN` fixed to this, and :math:`H\Theta` alongside this, and consequent
 namely that of the crank-handle, which describes a circle greater than the perimeter of the screw; for it was demonstrated in the *On Balances* of :person:`Archimedes <archimedes>` and the *Mechanics* of Philo and :person:`Hero <heron>` that greater circles overpower lesser circles whenever their rotation takes place about the same center.
 
 **25 (Prop. 12).** These things, then, would be what chiefly holds together the theoretical part of mechanics. Of the instrumental branch there are many species
+
+.. picture:: 0065.g1.png
+   :alt: Archival woodcut plate 0065.g1 — Two cubic weights and reference segments (Hultsch III, p. 1056)
+   :caption: Original Hultsch bitmap (folio 0065, p. 1056): two cubic weights and reference lines.
+
+.. picture:: 0065.g1.svg
+   :alt: Calibrated interactive vector plate 0065.g1 — Two cubic weights and reference segments
+   :caption: Calibrated .euclid-graphic vectorization of plate 0065.g1.
+
 
 .. folio:: 0079
    :page: 1070

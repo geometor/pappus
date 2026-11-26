@@ -55,3 +55,8 @@ Proposition 17: Adjacent Circle Altitude Recurrence
 .. picture:: 0240.g1.png
    :alt: Archival woodcut plate 0240.g1 — Adjacent tangent circles auxiliary configuration (Hultsch III, p. 1228)
    :caption: Original Hultsch bitmap (folio 0240, p. 1228): Book IV tangent-circle ratio configuration in Appendix IV.
+
+.. picture:: 0240.g1.svg
+   :alt: Calibrated interactive vector plate 0240.g1 — Adjacent tangent circles auxiliary configuration
+   :caption: Calibrated .euclid-graphic vectorization of plate 0240.g1.
+

@@ -365,7 +365,7 @@ def test_synagoge_codex_rst_and_euclid_concordance_integrity() -> None:
     png_plates = list(synagoge_dir.rglob("*.g*.png"))
     svg_plates = list(synagoge_dir.rglob("*.g*.svg"))
     assert len(png_plates) == 27
-    assert len(svg_plates) == 21
+    assert len(svg_plates) == 27
     for svg_path in svg_plates:
         svg_text = svg_path.read_text(encoding="utf-8")
         assert 'class="euclid-graphic"' in svg_text

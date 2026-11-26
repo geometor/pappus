@@ -23,6 +23,11 @@ Proposition 9: Equilibrium on the Inclined Plane
    :alt: Archival woodcut plate 0063.g1 — Book VIII Proposition 9 weight and horizontal/inclined reference (Hultsch III, p. 1054)
    :caption: Original Hultsch bitmap (folio 0063, p. 1054): cubic weight diagram accompanying Proposition 9 on inclined planes.
 
+.. picture:: 0063.g1.svg
+   :alt: Calibrated interactive vector plate 0063.g1 — Book VIII Proposition 9 weight and reference segments
+   :caption: Calibrated .euclid-graphic vectorization of plate 0063.g1.
+
+
 Let the plane through the straight line :math:`MN` be the underlying plane, and let that through :math:`MK` be inclined to it at the given angle :math:`KMN`; let some weight :math:`A` be moved by the power :math:`\Gamma` upon the underlying plane, and let a sphere equal in weight to :math:`A` be conceived about center :math:`E`,
 and let it lie upon the plane through :math:`M, K` touching it at point :math:`\Lambda`, as is shown in the third theorem of the *Sphaerica*. The joined line :math:`E\Lambda` will therefore be perpendicular to the plane (for this too is proved in the fourth theorem of the *Sphaerica*), so that :math:`E\Lambda` is also perpendicular to :math:`KM`.
 Let the plane through :math:`KM` and :math:`E\Lambda` be produced and make as section in the sphere the circle :math:`\Lambda H\Xi`, and through center :math:`E` let :math:`E\Theta` be drawn parallel to :math:`MN`, and from :math:`\Lambda` let :math:`\Lambda Z` be drawn perpendicular to it. Since, then, angle :math:`E\Theta\Lambda` is given (for it is equal
