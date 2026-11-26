@@ -28,6 +28,11 @@ problems are removed from geometrical power, such as those :term:`drawn with a s
    :alt: Archival woodcut plate 0083.g1 — Elliptical cylindrical sections for broken-column reconstruction (Hultsch III, p. 1074)
    :caption: Original Hultsch bitmap (folio 0083, p. 1074): oblique cylindrical column sections for Proposition 13.
 
+.. picture:: 0083.g1.svg
+   :alt: Calibrated interactive vector plate 0083.g1 — Elliptical cylindrical sections for broken-column reconstruction
+   :caption: Calibrated .euclid-graphic vectorization of plate 0083.g1.
+
+
 is preserved, to find the thickness of the cylinder, that is, the diameter of the circle from which the cylinder took its generation. And it is found by the following method.
 
 **28.** Let two points :math:`A, B` be taken on the given surface, and with them as centers and with one compass opening let
