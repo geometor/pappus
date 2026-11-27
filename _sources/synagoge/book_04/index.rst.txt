@@ -4,7 +4,6 @@
 :nav_title: Book IV
 :breadcrumb_title: Book IV · Area & Arbelos
 :layout: book
-:book_title: Book IV · Generalized Area Theorem & The Arbelos Circle Chain
 :book_subtitle: Pappus of Alexandria · Synagoge IV (ed. Hultsch I, pp. 176–232; App. IV, pp. 1223–1230)
 :author: Pappus of Alexandria
 :year: c. 340 CE
@@ -47,14 +46,6 @@ Table of Contents
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :caption: Propositions & Sections
-
-   prop_01_area_theorem/index
-   prop_14_18_arbelos/index
 
 .. toctree::
    :hidden:

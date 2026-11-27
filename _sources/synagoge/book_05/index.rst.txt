@@ -4,7 +4,6 @@
 :nav_title: Book V
 :breadcrumb_title: Book V · Bees & Isoperimetry
 :layout: book
-:book_title: Book V · On the Geometric Forethought of Bees & Isoperimetry
 :book_subtitle: Pappus of Alexandria · Synagoge V (ed. Hultsch I, pp. 304–336; App. IV, pp. 1234–1240)
 :author: Pappus of Alexandria
 :year: c. 340 CE
@@ -48,19 +47,6 @@ Table of Contents
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :caption: Preface & Propositions
-
-   preface_bees/index
-   prop_01_isoperimetric_polygons/index
-   prop_02_circle_exceeds_polygons/index
-   prop_03_sector_tangent_inequality/index
-   prop_04_isosceles_extremum/index
-   prop_06_equilateral_extremum/index
-   prop_10_equiangular_extremum/index
 
 .. toctree::
    :hidden:

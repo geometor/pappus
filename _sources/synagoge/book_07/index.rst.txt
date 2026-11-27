@@ -4,7 +4,6 @@
 :nav_title: Book VII
 :breadcrumb_title: Book VII · Treasury of Analysis
 :layout: book
-:book_title: Book VII · The Treasury of Analysis, Centroid Rule & Projective Lemmas
 :book_subtitle: Pappus of Alexandria · Synagoge VII (ed. Hultsch II, pp. 634–894; App. IV, pp. 1257–1276)
 :author: Pappus of Alexandria
 :year: c. 340 CE
@@ -48,19 +47,6 @@ Table of Contents
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :caption: Sections & Propositions
-
-   preface_analysis/index
-   three_four_line_locus/index
-   pappus_guldinus_centroid/index
-   prop_129_cross_ratio/index
-   prop_131_harmonic/index
-   prop_138_parallel_hexagon/index
-   prop_139_intersecting_hexagon/index
 
 .. toctree::
    :hidden:
