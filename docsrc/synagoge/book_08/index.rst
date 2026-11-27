@@ -4,7 +4,6 @@
 :nav_title: Book VIII
 :breadcrumb_title: Book VIII · Architectonic Mechanics
 :layout: book
-:book_title: Book VIII · Architectonic Mechanics, the Baroulkos & Inscribed Hexagons
 :book_subtitle: Pappus of Alexandria · Synagoge VIII (ed. Hultsch III, pp. 1022–1102)
 :author: Pappus of Alexandria
 :year: c. 340 CE
@@ -48,20 +47,6 @@ Table of Contents
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :caption: Preface & Propositions
-
-   preface_mechanics/index
-   center_of_gravity/index
-   prop_02_cyclic_centroid/index
-   prop_03_similar_centroid/index
-   prop_09_inclined_plane/index
-   prop_10_baroulkos/index
-   heni_diastemati/index
-   prop_23_seven_hexagons/index
 
 .. toctree::
    :hidden:

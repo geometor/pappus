@@ -4,7 +4,6 @@
 :nav_title: Book III
 :breadcrumb_title: Book III · Three Means
 :layout: book
-:book_title: Book III · Problem Hierarchy, Cube Duplication & The Three Means
 :book_subtitle: Pappus of Alexandria · Synagoge III (ed. Hultsch I, pp. 30–84; App. IV, pp. 1212–1222)
 :author: Pappus of Alexandria
 :year: c. 340 CE
@@ -48,18 +47,6 @@ Table of Contents
 
 .. collection::
    :sort: order
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :caption: Sections & Propositions
-
-   preface/index
-   locus_hierarchy/index
-   cube_duplication/index
-   medieties_definitions/index
-   prop_01_three_means/index
-   golden_means/index
 
 .. toctree::
    :hidden:
